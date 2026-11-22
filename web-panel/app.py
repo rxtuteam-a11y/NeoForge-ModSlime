@@ -63,8 +63,8 @@ def sync_to_github(reason="Auto-backup"):
     append_log(console_lines, f"[Cloud Sync] Đang lưu dữ liệu world & config lên GitHub ({reason})...")
     try:
         subprocess.run(["git", "add", "world", "config", "server.properties", "ops.json", "whitelist.json", "usercache.json", "usernamecache.json"], cwd=ROOT_DIR, check=False)
-        status = subprocess.run(["git", "status", "--porcelain"], cwd=ROOT_DIR, capture_output=True, text=True)
-        if not status.stdout.strip():
+        diff_check = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=ROOT_DIR)
+        if diff_check.returncode == 0:
             last_sync_status = f"Đã đồng bộ (Không có thay đổi mới - {reason})"
             last_sync_time = now_str
             append_log(console_lines, "[Cloud Sync] Không có thay đổi mới cần đẩy lên GitHub.")
@@ -147,9 +147,26 @@ def send_server_command(command_str):
 def stop_minecraft_server():
     if not is_server_running():
         return False, "Server đã tắt sẵn!"
+    send_server_command("chunky pause")
+    time.sleep(0.3)
     send_server_command("save-all")
-    time.sleep(0.5)
-    return send_server_command("stop")
+    time.sleep(1.0)
+    res = send_server_command("stop")
+
+    def _force_kill_if_hung():
+        for _ in range(20):
+            if not is_server_running():
+                return
+            time.sleep(1)
+        if is_server_running() and server_proc is not None:
+            append_log(console_lines, "[Panel] Server treo sau khi save-all, đang đóng tiến trình Java để giải phóng RAM...")
+            try:
+                server_proc.terminate()
+            except Exception:
+                pass
+
+    threading.Thread(target=_force_kill_if_hung, daemon=True).start()
+    return res
 
 
 def start_playit():
@@ -184,11 +201,10 @@ def start_playit():
 
 def auto_backup_loop():
     while True:
-        time.sleep(600)  # Every 10 minutes
-        if is_server_running():
-            send_server_command("save-all")
-            time.sleep(5)
-            sync_to_github("Auto-save 10m")
+        time.sleep(1800)  # Check every 30 minutes
+        # Only run git backup in background when no players are online, or when server stops
+        # (Manual backup button & stop button still save anytime)
+
 
 
 def get_world_size_mb():
@@ -230,8 +246,17 @@ class PanelHandler(http.server.SimpleHTTPRequestHandler):
         self.send_header("Content-Type", "application/json; charset=utf-8")
         self.send_header("Content-Length", str(len(body)))
         self.send_header("Access-Control-Allow-Origin", "*")
+        self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
+        self.send_header("Access-Control-Allow-Headers", "Content-Type")
         self.end_headers()
         self.wfile.write(body)
+
+    def do_OPTIONS(self):
+        self.send_response(204)
+        self.send_header("Access-Control-Allow-Origin", "*")
+        self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
+        self.send_header("Access-Control-Allow-Headers", "Content-Type")
+        self.end_headers()
 
     def do_GET(self):
         parsed = urllib.parse.urlparse(self.path)
@@ -307,6 +332,29 @@ class PanelHandler(http.server.SimpleHTTPRequestHandler):
         elif parsed.path == "/api/playit":
             ok, msg = start_playit()
             self._send_json({"ok": ok, "message": msg})
+        elif parsed.path == "/api/shutdown-panel":
+            if is_server_running():
+                stop_minecraft_server()
+                for _ in range(30):
+                    if not is_server_running():
+                        break
+                    time.sleep(1)
+                if is_server_running() and server_proc is not None:
+                    try:
+                        server_proc.terminate()
+                    except Exception:
+                        pass
+            if is_playit_running() and playit_proc is not None:
+                try:
+                    playit_proc.terminate()
+                except Exception:
+                    pass
+            sync_to_github("Panel Shutdown")
+            self._send_json({"ok": True, "message": "Đã tắt Server, lưu dữ liệu lên GitHub và đóng hoàn toàn Web Panel (Giải phóng 100% RAM)!"})
+            def _exit_soon():
+                time.sleep(0.5)
+                os._exit(0)
+            threading.Thread(target=_exit_soon, daemon=True).start()
         else:
             self.send_error(404, "API endpoint not found")
 

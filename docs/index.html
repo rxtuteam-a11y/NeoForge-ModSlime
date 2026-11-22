@@ -3,82 +3,201 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NeoForge ModSlime — Bảng Điều Khiển Server & Lưu Trữ Đám Mây</title>
+  <title>NeoForge ModSlime 1.21.1 — Trung Tâm Điều Khiển & Cloud Portal (Zero-RAM / Zero-Token)</title>
   <style>
     :root {
-      --bg: #0b0f19;
-      --card: #131b2e;
-      --card-border: #23304d;
-      --text: #e2e8f0;
+      --bg: #070b14;
+      --bg-accent: #111c38;
+      --card: #111827;
+      --card-hover: #162033;
+      --card-border: #24324d;
+      --text: #f1f5f9;
       --muted: #94a3b8;
       --accent: #38bdf8;
       --green: #22c55e;
+      --emerald: #10b981;
       --red: #ef4444;
       --amber: #f59e0b;
       --purple: #a855f7;
+      --indigo: #6366f1;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-      background: radial-gradient(circle at top, #172554 0%, var(--bg) 60%);
+      background: radial-gradient(circle at 50% 0%, var(--bg-accent) 0%, var(--bg) 65%);
       color: var(--text);
       min-height: 100vh;
-      padding: 24px 16px 48px;
+      padding: 20px 16px 56px;
+      line-height: 1.5;
     }
-    .container { max-width: 1120px; margin: 0 auto; }
+    .container { max-width: 1240px; margin: 0 auto; }
+
+    /* Header */
     header {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
       gap: 16px;
-      padding: 20px 24px;
-      background: rgba(19, 27, 46, 0.85);
+      padding: 22px 26px;
+      background: rgba(17, 24, 39, 0.9);
       border: 1px solid var(--card-border);
-      border-radius: 16px;
+      border-radius: 18px;
       backdrop-filter: blur(12px);
-      margin-bottom: 20px;
+      margin-bottom: 18px;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
     }
-    .brand h1 { font-size: 1.5rem; color: #fff; display: flex; align-items: center; gap: 10px; }
-    .brand p { color: var(--muted); font-size: 0.9rem; margin-top: 4px; }
+    .brand h1 {
+      font-size: 1.45rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .brand p { color: var(--muted); font-size: 0.92rem; margin-top: 6px; }
+    .header-badges {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 8px;
+    }
     .badge {
       display: inline-flex;
       align-items: center;
       gap: 8px;
       padding: 8px 16px;
       border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.88rem;
+      letter-spacing: 0.01em;
+    }
+    .badge.online {
+      background: rgba(34, 197, 94, 0.16);
+      color: #4ade80;
+      border: 1px solid rgba(34, 197, 94, 0.45);
+    }
+    .badge.offline {
+      background: rgba(245, 158, 11, 0.16);
+      color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, 0.45);
+    }
+    .badge.zeroram {
+      background: rgba(56, 189, 248, 0.15);
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.45);
+    }
+    .sub-badge {
+      font-size: 0.8rem;
+      color: var(--muted);
+      background: rgba(255, 255, 255, 0.05);
+      padding: 4px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: currentColor;
+      box-shadow: 0 0 9px currentColor;
+    }
+
+    /* Status Banner */
+    .zero-ram-banner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 16px 20px;
+      border-radius: 14px;
+      margin-bottom: 20px;
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.14), rgba(56, 189, 248, 0.12));
+      border: 1px solid rgba(56, 189, 248, 0.35);
+    }
+    .zero-ram-banner.live-connected {
+      background: linear-gradient(135deg, rgba(34, 197, 94, 0.18), rgba(16, 185, 129, 0.1));
+      border-color: rgba(34, 197, 94, 0.45);
+    }
+    .banner-text { flex: 1; min-width: 260px; }
+    .banner-text h3 { font-size: 1.02rem; color: #fff; margin-bottom: 4px; display: flex; align-items: center; gap: 8px; }
+    .banner-text p { font-size: 0.88rem; color: #cbd5e1; }
+
+    /* Mode Filter Tabs */
+    .mode-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+    .tab-btn {
+      background: rgba(17, 24, 39, 0.85);
+      color: var(--muted);
+      border: 1px solid var(--card-border);
+      padding: 10px 18px;
+      border-radius: 12px;
       font-weight: 600;
       font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.15s ease;
     }
-    .badge.online { background: rgba(34, 197, 94, 0.15); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.4); }
-    .badge.offline { background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.4); }
-    .badge.cloud { background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.4); }
-    .dot { width: 10px; height: 10px; border-radius: 50%; background: currentColor; box-shadow: 0 0 8px currentColor; }
+    .tab-btn:hover { color: #fff; border-color: var(--accent); }
+    .tab-btn.active {
+      background: rgba(56, 189, 248, 0.16);
+      color: #38bdf8;
+      border-color: #38bdf8;
+      box-shadow: 0 0 15px rgba(56, 189, 248, 0.15);
+    }
 
-    .grid {
+    /* 3 Modes Grid */
+    .modes-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
       gap: 20px;
-      margin-bottom: 20px;
+      margin-bottom: 24px;
     }
     .card {
       background: var(--card);
       border: 1px solid var(--card-border);
       border-radius: 16px;
-      padding: 20px;
+      padding: 22px;
       display: flex;
       flex-direction: column;
       gap: 14px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
     }
+    .card-header {
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 12px;
+    }
+    .mode-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 999px;
+      margin-bottom: 6px;
+    }
+    .tag-cloud { background: rgba(168, 85, 247, 0.2); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.4); }
+    .tag-local { background: rgba(34, 197, 94, 0.2); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.4); }
+    .tag-storage { background: rgba(56, 189, 248, 0.2); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.4); }
+
     .card h2 {
-      font-size: 1.1rem;
+      font-size: 1.15rem;
       color: #fff;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      border-bottom: 1px solid var(--card-border);
-      padding-bottom: 10px;
+      gap: 8px;
     }
+    .card-desc {
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+
+    /* Buttons */
     .btn-row { display: flex; flex-wrap: wrap; gap: 10px; }
     button, .btn-link {
       cursor: pointer;
@@ -86,7 +205,7 @@
       border-radius: 10px;
       padding: 11px 16px;
       font-weight: 600;
-      font-size: 0.92rem;
+      font-size: 0.9rem;
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -94,44 +213,151 @@
       text-decoration: none;
       transition: all 0.15s ease;
     }
-    button:disabled { opacity: 0.45; cursor: not-allowed; }
+    button:disabled { opacity: 0.5; cursor: not-allowed; }
+    .btn-full { width: 100%; }
     .btn-green { background: var(--green); color: #052e16; }
     .btn-green:hover:not(:disabled) { filter: brightness(1.1); }
     .btn-red { background: var(--red); color: #fff; }
     .btn-red:hover:not(:disabled) { filter: brightness(1.1); }
+    .btn-amber { background: var(--amber); color: #1e1b18; }
+    .btn-amber:hover:not(:disabled) { filter: brightness(1.1); }
     .btn-blue { background: var(--accent); color: #082f49; }
     .btn-blue:hover:not(:disabled) { filter: brightness(1.1); }
     .btn-purple { background: var(--purple); color: #fff; }
     .btn-purple:hover:not(:disabled) { filter: brightness(1.1); }
     .btn-outline {
-      background: rgba(255,255,255,0.05);
+      background: rgba(255, 255, 255, 0.05);
       color: var(--text);
       border: 1px solid var(--card-border);
     }
-    .btn-outline:hover:not(:disabled) { background: rgba(255,255,255,0.1); }
+    .btn-outline:hover:not(:disabled) { background: rgba(255, 255, 255, 0.12); border-color: var(--accent); }
+    .btn-danger-outline {
+      background: rgba(239, 68, 68, 0.12);
+      color: #fca5a5;
+      border: 1px solid rgba(239, 68, 68, 0.45);
+    }
+    .btn-danger-outline:hover:not(:disabled) {
+      background: rgba(239, 68, 68, 0.25);
+      color: #fff;
+    }
 
-    .stat-list { display: flex; flex-direction: column; gap: 8px; font-size: 0.92rem; }
-    .stat-item { display: flex; justify-content: space-between; padding: 8px 12px; background: rgba(0,0,0,0.25); border-radius: 8px; }
+    /* Step list */
+    .step-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 0.87rem;
+      background: rgba(0, 0, 0, 0.28);
+      padding: 12px 14px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .step-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      color: #cbd5e1;
+    }
+    .step-num {
+      background: rgba(56, 189, 248, 0.2);
+      color: #38bdf8;
+      font-weight: 700;
+      font-size: 0.76rem;
+      min-width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1px;
+    }
+
+    /* Stats */
+    .stat-list { display: flex; flex-direction: column; gap: 7px; font-size: 0.88rem; }
+    .stat-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 12px;
+      background: rgba(0, 0, 0, 0.28);
+      border-radius: 8px;
+    }
     .stat-item span:first-child { color: var(--muted); }
-    .stat-item span:last-child { font-weight: 600; color: #fff; text-align: right; }
+    .stat-item span:last-child { font-weight: 600; color: #fff; text-align: right; word-break: break-all; }
 
+    /* Command Lookup Table */
+    .table-card {
+      background: var(--card);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 22px;
+      margin-bottom: 24px;
+    }
+    .table-card h2 {
+      font-size: 1.15rem;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+    .cmd-table-wrap {
+      overflow-x: auto;
+      margin-top: 14px;
+    }
+    table.cmd-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+    }
+    table.cmd-table th, table.cmd-table td {
+      padding: 11px 12px;
+      text-align: left;
+      border-bottom: 1px solid rgba(36, 50, 77, 0.7);
+    }
+    table.cmd-table th {
+      background: rgba(0, 0, 0, 0.35);
+      color: var(--accent);
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.78rem;
+    }
+    table.cmd-table tr:hover td {
+      background: rgba(255, 255, 255, 0.03);
+    }
+    .code-pill {
+      font-family: 'Cascadia Code', 'Consolas', monospace;
+      background: #060911;
+      color: #38bdf8;
+      padding: 5px 10px;
+      border-radius: 6px;
+      border: 1px solid #1e293b;
+      display: inline-block;
+      font-size: 0.84rem;
+    }
+    .btn-sm {
+      padding: 6px 11px;
+      font-size: 0.8rem;
+      border-radius: 7px;
+    }
+
+    /* Console Section */
     .console-card {
       background: var(--card);
       border: 1px solid var(--card-border);
       border-radius: 16px;
-      padding: 20px;
+      padding: 22px;
       margin-bottom: 20px;
     }
     .console-box {
-      background: #060911;
+      background: #050811;
       border: 1px solid #1e293b;
       border-radius: 10px;
-      height: 360px;
+      height: 340px;
       overflow-y: auto;
       padding: 14px;
       font-family: 'Cascadia Code', 'Consolas', monospace;
       font-size: 0.84rem;
-      line-height: 1.5;
+      line-height: 1.55;
       color: #cbd5e1;
       white-space: pre-wrap;
       word-break: break-word;
@@ -144,7 +370,7 @@
     }
     .cmd-form input {
       flex: 1;
-      background: #060911;
+      background: #050811;
       border: 1px solid var(--card-border);
       border-radius: 10px;
       padding: 11px 14px;
@@ -153,50 +379,157 @@
       font-size: 0.92rem;
     }
     .cmd-form input:focus { outline: 1px solid var(--accent); }
-    .notice {
-      background: rgba(245, 158, 11, 0.12);
-      border: 1px solid rgba(245, 158, 11, 0.4);
-      color: #fcd34d;
-      padding: 14px 18px;
-      border-radius: 12px;
-      margin-bottom: 20px;
-      font-size: 0.92rem;
-      line-height: 1.5;
-    }
     .quick-cmds { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
     .quick-cmds button { padding: 7px 12px; font-size: 0.82rem; }
+
+    /* Toast notification */
+    #toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #0f172a;
+      color: #38bdf8;
+      border: 1px solid #38bdf8;
+      padding: 12px 18px;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+      display: none;
+      z-index: 9999;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.84rem;
+      margin-top: 28px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255, 255, 255, 0.07);
+    }
+    footer a { color: var(--accent); text-decoration: none; }
   </style>
 </head>
 <body>
   <div class="container">
+    <!-- HEADER -->
     <header>
       <div class="brand">
-        <h1>🟢 NeoForge ModSlime 1.21.1 — Cloud Control Panel</h1>
-        <p>Quản lý Bật/Tắt Server • Tự động sao lưu World lên GitHub & Google Drive</p>
+        <h1>🟢 NeoForge ModSlime 1.21.1 — Trung Tâm Điều Khiển Độc Lập</h1>
+        <p>Hoạt động trực tiếp mọi lúc với <strong>0 AI Token</strong> & <strong>0 MB RAM chạy nền</strong> • Đồng bộ World tự động qua GitHub & Google Drive</p>
       </div>
-      <div id="statusBadge" class="badge cloud">
-        <span class="dot"></span>
-        <span id="statusText">Đang kiểm tra kết nối...</span>
+      <div class="header-badges">
+        <div id="ramModeBadge" class="badge zeroram">
+          <span class="dot"></span>
+          <span id="ramModeText">0 MB RAM sử dụng - Chế độ Web Tĩnh Tiết Kiệm RAM</span>
+        </div>
+        <div id="serverStateBadge" class="sub-badge">
+          Trạng thái Minecraft Server: <strong id="serverStateText">Đang kiểm tra localhost:8080...</strong>
+        </div>
       </div>
     </header>
 
-    <div id="staticModeNotice" class="notice" style="display: none;">
-      <strong>⚡ Bạn đang xem Cổng Web Tĩnh (GitHub Pages):</strong>
-      Để bật máy chủ đám mây (4 CPU - 16 GB RAM miễn phí) và mở Bảng Điều Khiển Trực Tiếp, hãy bấm nút <strong>"Mở Máy Chủ Đám Mây (GitHub Codespaces)"</strong> bên dưới. Khi máy chủ đám mây khởi chạy, cổng <code>8080</code> sẽ tự động mở đúng trang web điều khiển này ở chế độ <strong>Trực Tiếp (Live Mode)</strong>!
+    <!-- ZERO-RAM / LOCALHOST CONNECTION BANNER -->
+    <div id="connectionBanner" class="zero-ram-banner">
+      <div class="banner-text">
+        <h3 id="bannerTitle">⚡ Chế Độ Web Tĩnh Độc Lập (0 MB RAM Sử Dụng • Không Tốn Token AI)</h3>
+        <p id="bannerDesc">
+          Hiện tại Server và Web Panel trên máy đang TẮT hoàn toàn nên <strong>không tốn 1 MB RAM nào của máy tính</strong>. Bạn có thể mở Server miễn phí trên đám mây <strong>GitHub Codespaces</strong> (Chế độ 1) hoặc chạy file <code>web-panel\Start-Web-Panel.bat</code> trên máy (Chế độ 2) bất cứ lúc nào!
+        </p>
+      </div>
+      <div class="btn-row">
+        <button class="btn-outline" onclick="refreshStatus(true)">🔄 Kiểm Tra Kết Nối Localhost:8080</button>
+        <a class="btn-link btn-blue" href="https://rxtuteam-a11y.github.io/NeoForge-ModSlime/" target="_blank">🌐 Mở Trên GitHub Pages</a>
+      </div>
     </div>
 
-    <div class="grid">
-      <!-- Điều khiển Server -->
-      <div class="card">
-        <h2>🎮 Điều Khiển Máy Chủ (Start / Stop)</h2>
+    <!-- TABS CHỌN CHẾ ĐỘ -->
+    <div class="mode-tabs">
+      <button class="tab-btn active" onclick="switchModeTab('all', this)">📋 Hiển Thị Cả 3 Chế Độ</button>
+      <button class="tab-btn" onclick="switchModeTab('mode1', this)">☁️ Chế Độ 1: Đám Mây GitHub Codespaces (0% RAM Máy)</button>
+      <button class="tab-btn" onclick="switchModeTab('mode2', this)">🖥️ Chế Độ 2: Điều Khiển Trên Máy (Localhost:8080)</button>
+      <button class="tab-btn" onclick="switchModeTab('mode3', this)">📦 Chế Độ 3: Kho Tải File & Bảng Lệnh Nhanh</button>
+    </div>
+
+    <!-- 3 CHẾ ĐỘ MỞ SERVER -->
+    <div class="modes-grid">
+      <!-- CHẾ ĐỘ 1: GITHUB CODESPACES -->
+      <div id="cardMode1" class="card">
+        <div class="card-header">
+          <span class="mode-tag tag-cloud">Chế độ 1 • 0% RAM Máy Tính</span>
+          <h2>☁️ Mở Server Trên Đám Mây GitHub Codespaces</h2>
+        </div>
+        <p class="card-desc">
+          Chạy máy chủ NeoForge 266 Mods trực tiếp trên máy chủ ảo GitHub (4 CPU - 16 GB RAM miễn phí). Máy tính cá nhân của bạn không tốn RAM hay CPU!
+        </p>
+
+        <div class="btn-row">
+          <a class="btn-link btn-purple btn-full" href="https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=rxtuteam-a11y/NeoForge-ModSlime" target="_blank" rel="noopener">
+            🚀 MỞ GITHUB CODESPACES (4 CPU / 16GB RAM)
+          </a>
+        </div>
+
+        <ul class="step-list">
+          <li>
+            <span class="step-num">1</span>
+            <span>Bấm nút <strong>Mở GitHub Codespaces</strong> ở trên, chọn máy <strong>4-core (16GB RAM)</strong> rồi bấm <em>Create codespace</em>.</span>
+          </li>
+          <li>
+            <span class="step-num">2</span>
+            <span>Đợi Codespace tự động tải gói 266 Mods từ Google Drive và tự mở bảng điều khiển Web ở cổng <code>8080</code>.</span>
+          </li>
+          <li>
+            <span class="step-num">3</span>
+            <span>Trong Web Panel của Codespace, bấm <strong>▶ BẬT SERVER</strong> và <strong>🚀 Bật Playit.gg Tunnel</strong> để lấy địa chỉ IP Public cho cả nhóm vào chơi.</span>
+          </li>
+          <li>
+            <span class="step-num">4</span>
+            <span>Khi chơi xong, bấm <strong>⏹ TẮT & LƯU SERVER</strong> — toàn bộ dữ liệu <code>world/</code> sẽ tự động đẩy lên GitHub để lưu trữ an toàn!</span>
+          </li>
+        </ul>
+
+        <div class="stat-list">
+          <div class="stat-item">
+            <span>Cấu hình Cloud hỗ trợ</span>
+            <span>4 Cores • 16 GB RAM (JVM 12GB)</span>
+          </div>
+          <div class="stat-item">
+            <span>Kết nối mạng cho bạn bè</span>
+            <span>Playit.gg Tunnel (*.gl.joinmc.link)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHẾ ĐỘ 2: ĐIỀU KHIỂN TRÊN MÁY (LOCALHOST:8080) -->
+      <div id="cardMode2" class="card">
+        <div class="card-header">
+          <span class="mode-tag tag-local">Chế độ 2 • Localhost:8080</span>
+          <h2>🖥️ Điều Khiển Server Ngay Trên Máy Tính</h2>
+        </div>
+        <p class="card-desc">
+          Điều khiển trực tiếp khi bạn bật <code>Start-Web-Panel.bat</code> trên máy. Khi chơi xong có thể bấm <strong>Tắt Hẳn Web Panel</strong> để giải phóng 100% RAM.
+        </p>
+
         <div class="btn-row">
           <button id="btnStart" class="btn-green" onclick="apiCall('/api/start')">▶ BẬT SERVER</button>
           <button id="btnStop" class="btn-red" onclick="apiCall('/api/stop')">⏹ TẮT & LƯU SERVER</button>
-          <button id="btnBackup" class="btn-blue" onclick="apiCall('/api/backup')">☁️ LƯU DỮ LIỆU NGAY</button>
+          <button id="btnBackup" class="btn-blue" onclick="apiCall('/api/backup')">☁️ LƯU DỮ LIỆU LÊN GITHUB</button>
+          <button id="btnPlayit" class="btn-purple" onclick="apiCall('/api/playit')">🚀 Bật Playit.gg Tunnel</button>
         </div>
+
+        <div class="btn-row">
+          <button id="btnShutdownPanel" class="btn-danger-outline btn-full" onclick="shutdownPanel()">
+            🔌 TẮT HẲN WEB PANEL (GIẢI PHÓNG 100% RAM)
+          </button>
+        </div>
+
         <div class="stat-list">
           <div class="stat-item">
-            <span>Phiên bản</span>
+            <span>Kết nối Localhost:8080</span>
+            <span id="localConnText" style="color: #38bdf8;">0 MB RAM (Đang tắt)</span>
+          </div>
+          <div class="stat-item">
+            <span>Phiên bản Server</span>
             <span>NeoForge 21.1.267 (MC 1.21.1)</span>
           </div>
           <div class="stat-item">
@@ -204,85 +537,225 @@
             <span id="worldSize">99.3 MB</span>
           </div>
           <div class="stat-item">
-            <span>Trạng thái lưu Cloud (GitHub)</span>
-            <span id="syncStatus">Tự động lưu mỗi 10 phút & khi tắt</span>
+            <span>Trạng thái đồng bộ GitHub</span>
+            <span id="syncStatus">Đã đồng bộ lên GitHub</span>
           </div>
           <div class="stat-item">
             <span>Lần lưu gần nhất</span>
-            <span id="syncTime">-</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Kết nối & Playit.gg -->
-      <div class="card">
-        <h2>🌐 Địa Chỉ IP & Kết Nối Bạn Bè</h2>
-        <p style="font-size: 0.88rem; color: var(--muted); line-height: 1.45;">
-          Nếu chạy trên máy cá nhân trong mạng LAN/Radmin VPN thì dùng IP máy chủ <code>:25565</code>. Nếu chạy trên Cloud (GitHub Codespaces), bấm nút bên dưới để lấy IP qua <strong>Playit.gg</strong>:
-        </p>
-        <div class="btn-row">
-          <button id="btnPlayit" class="btn-purple" onclick="apiCall('/api/playit')">🚀 Bật Playit.gg Tunnel (Lấy IP Public)</button>
-        </div>
-        <div class="stat-list">
-          <div class="stat-item">
-            <span>Trạng thái Playit.gg</span>
-            <span id="playitStatus">Chưa bật</span>
+            <span id="syncTime">Tự động lưu khi tắt Server</span>
           </div>
           <div class="stat-item">
-            <span>Địa chỉ IP vào Server</span>
-            <span id="playitAddr">Xem trong log Playit hoặc Radmin/LAN:25565</span>
+            <span>Playit.gg / IP Kết nối</span>
+            <span id="playitAddr">Radmin VPN / LAN :25565</span>
           </div>
           <div class="stat-item" id="playitClaimRow" style="display:none;">
-            <span>Link kích hoạt Playit lần đầu</span>
+            <span>Kích hoạt Playit lần đầu</span>
             <span><a id="playitClaimLink" href="#" target="_blank" style="color: var(--accent);">Bấm vào đây để Claim Tunnel</a></span>
           </div>
         </div>
+
+        <div class="step-list">
+          <li>
+            <span class="step-num">💡</span>
+            <div>
+              <strong>Cách bật điều khiển trên máy:</strong> Mở file
+              <code>c:\Users\phankhang\Desktop\NeoForge-ModSlime\web-panel\Start-Web-Panel.bat</code>
+              <button class="btn-outline btn-sm" style="margin-top:6px;" onclick="copyText('c:\\Users\\phankhang\\Desktop\\NeoForge-ModSlime\\web-panel\\Start-Web-Panel.bat')">📋 Copy đường dẫn file .bat</button>
+            </div>
+          </li>
+        </div>
       </div>
 
-      <!-- Lưu trữ Đám mây Google Drive & GitHub -->
-      <div class="card">
-        <h2>☁️ Kho Lưu Trữ Google Drive & GitHub</h2>
-        <p style="font-size: 0.88rem; color: var(--muted); line-height: 1.45;">
-          Toàn bộ gói Server + 266 Mods (1.06 GB) được lưu trên <strong>Google Drive</strong>, và dữ liệu <strong>World + Config</strong> được tự động đồng bộ trực tiếp vào <strong>GitHub</strong> mỗi khi chơi xong.
+      <!-- CHẾ ĐỘ 3: KHO TẢI FILE & ĐỒNG BỘ (GOOGLE DRIVE & GITHUB) -->
+      <div id="cardMode3" class="card">
+        <div class="card-header">
+          <span class="mode-tag tag-storage">Chế độ 3 • Google Drive & GitHub</span>
+          <h2>📦 Kho Tải File & Đồng Bộ Dữ Liệu</h2>
+        </div>
+        <p class="card-desc">
+          Tải trọn bộ Server + 266 Mods từ Google Drive (1.06 GB) hoặc tải riêng bản lưu World mới nhất được đồng bộ tự động trên GitHub.
         </p>
+
         <div class="btn-row">
-          <a class="btn-link btn-blue" href="https://drive.google.com/file/d/1eKZVfJSo0c49VhZMonpZE5kURegY0V16/view?usp=sharing" target="_blank">
-            📥 Tải Full Server & Mods (Google Drive)
+          <a class="btn-link btn-blue btn-full" href="https://drive.google.com/file/d/1eKZVfJSo0c49VhZMonpZE5kURegY0V16/view?usp=sharing" target="_blank" rel="noopener">
+            📥 Tải Full Server + 266 Mods (Google Drive - 1.06 GB)
           </a>
-          <a class="btn-link btn-purple" href="https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=rxtuteam-a11y/NeoForge-ModSlime" target="_blank">
-            ☁️ Mở Máy Chủ Đám Mây (GitHub Codespaces)
+          <a class="btn-link btn-outline btn-full" href="https://github.com/rxtuteam-a11y/NeoForge-ModSlime" target="_blank" rel="noopener">
+            📂 Xem Kho Lưu Trữ World Trên GitHub (Repository)
           </a>
-          <a class="btn-link btn-outline" href="https://github.com/rxtuteam-a11y/NeoForge-ModSlime" target="_blank">
-            📂 Xem Kho Dữ Liệu World (GitHub Repo)
+          <a class="btn-link btn-green btn-full" href="https://github.com/rxtuteam-a11y/NeoForge-ModSlime/archive/refs/heads/main.zip" target="_blank" rel="noopener">
+            🌍 Tải Riêng World Mới Nhất Từ GitHub (.ZIP)
           </a>
         </div>
+
+        <ul class="step-list">
+          <li>
+            <span class="step-num">✔</span>
+            <span><strong>Google Drive:</strong> Chứa toàn bộ <code>mods/</code> (266 mods), <code>libraries/</code> và bộ cài NeoForge 1.21.1 hoàn chỉnh.</span>
+          </li>
+          <li>
+            <span class="step-num">✔</span>
+            <span><strong>GitHub Repo:</strong> Lưu trữ thư mục <code>world/</code>, <code>config/</code>, <code>server.properties</code> và trang điều khiển Web này.</span>
+          </li>
+          <li>
+            <span class="step-num">✔</span>
+            <div>
+              <strong>Lệnh kéo World mới nhất về máy:</strong><br/>
+              <span class="code-pill" style="margin-top:4px;">git pull origin main</span>
+              <button class="btn-outline btn-sm" style="margin-left:6px;" onclick="copyText('git pull origin main')">📋 Copy</button>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
 
-    <!-- Console trực tiếp -->
+    <!-- BẢNG TRA CỨU NHANH CÁC LỆNH (CHUNKY, SPARK, RADMIN VPN / PLAYIT.GG) -->
+    <div id="cmdLookupSection" class="table-card">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+        <div>
+          <h2>⚡ Bảng Tra Cứu Nhanh Các Lệnh Server (Chunky Pre-gen, Spark TPS, Kết Nối Mạng)</h2>
+          <p class="card-desc">Bấm <strong>📋 Copy</strong> để sao chép nhanh lệnh vào clipboard, hoặc bấm <strong>▶ Gửi lệnh</strong> khi Server Local đang chạy.</p>
+        </div>
+      </div>
+
+      <div class="cmd-table-wrap">
+        <table class="cmd-table">
+          <thead>
+            <tr>
+              <th>Nhóm / Tính Năng</th>
+              <th>Câu Lệnh / Địa Chỉ</th>
+              <th>Công Dụng Chi Tiết</th>
+              <th>Thao Tác Nhanh</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Chunky Pre-gen (Tạo Map Trước)</strong></td>
+              <td><span class="code-pill">chunky radius 3000</span></td>
+              <td>Đặt bán kính tạo trước địa hình 3000 blocks quanh tâm (giảm 90% lag khi khám phá map mới).</td>
+              <td>
+                <button class="btn-outline btn-sm" onclick="copyText('chunky radius 3000')">📋 Copy</button>
+                <button class="btn-blue btn-sm" onclick="sendQuickCmd('chunky radius 3000')">▶ Gửi</button>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Chunky Start (Bắt đầu chạy)</strong></td>
+              <td><span class="code-pill">chunky start</span></td>
+              <td>Bắt đầu quá trình tạo trước chunk ngầm. Nên chạy khi ít người chơi trong server.</td>
+              <td>
+                <button class="btn-outline btn-sm" onclick="copyText('chunky start')">📋 Copy</button>
+                <button class="btn-blue btn-sm" onclick="sendQuickCmd('chunky start')">▶ Gửi</button>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Chunky Pause / Continue</strong></td>
+              <td><span class="code-pill">chunky pause</span></td>
+              <td>Tạm dừng tạo chunk khi đông người chơi (dùng <code>chunky continue</code> để chạy tiếp).</td>
+              <td>
+                <button class="btn-outline btn-sm" onclick="copyText('chunky pause')">📋 Copy</button>
+                <button class="btn-blue btn-sm" onclick="sendQuickCmd('chunky pause')">▶ Gửi</button>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Chunky Progress (Tiến độ)</strong></td>
+              <td><span class="code-pill">chunky progress</span></td>
+              <td>Kiểm tra phần trăm (%) tiến độ tạo map và tốc độ CPS hiện tại.</td>
+              <td>
+                <button class="btn-outline btn-sm" onclick="copyText('chunky progress')">📋 Copy</button>
+                <button class="btn-blue btn-sm" onclick="sendQuickCmd('chunky progress')">▶ Gửi</button>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Spark TPS & RAM</strong></td>
+              <td><span class="code-pill">spark tps</span></td>
+              <td>Xem chỉ số TPS (chuẩn 20.0), MSPT và dung lượng CPU/RAM server đang tiêu thụ.</td>
+              <td>
+                <button class="btn-outline btn-sm" onclick="copyText('spark tps')">📋 Copy</button>
+                <button class="btn-blue btn-sm" onclick="sendQuickCmd('spark tps')">▶ Gửi</button>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Spark Profiler (Tìm nguyên nhân lag)</strong></td>
+              <td><span class="code-pill">spark profiler start --timeout 60</span></td>
+              <td>Đo hiệu năng server trong 60 giây và xuất link báo cáo chi tiết mod/entity nào gây lag.</td>
+              <td>
+                <button class="btn-outline btn-sm" onclick="copyText('spark profiler start --timeout 60')">📋 Copy</button>
+                <button class="btn-blue btn-sm" onclick="sendQuickCmd('spark profiler start --timeout 60')">▶ Gửi</button>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Spark Health Report</strong></td>
+              <td><span class="code-pill">spark healthreport</span></td>
+              <td>Kiểm tra tổng thể sức khỏe máy chủ, ổ cứng, RAM và các chỉ số JVM GC.</td>
+              <td>
+                <button class="btn-outline btn-sm" onclick="copyText('spark healthreport')">📋 Copy</button>
+                <button class="btn-blue btn-sm" onclick="sendQuickCmd('spark healthreport')">▶ Gửi</button>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Lưu World Tức Thì</strong></td>
+              <td><span class="code-pill">save-all flush</span></td>
+              <td>Ép lưu toàn bộ dữ liệu World và túi đồ người chơi xuống đĩa ngay lập tức.</td>
+              <td>
+                <button class="btn-outline btn-sm" onclick="copyText('save-all flush')">📋 Copy</button>
+                <button class="btn-blue btn-sm" onclick="sendQuickCmd('save-all flush')">▶ Gửi</button>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Radmin VPN / Mạng LAN</strong></td>
+              <td><span class="code-pill">&lt;IP_Radmin_Chủ_Host&gt;:25565</span></td>
+              <td>Khi mở server trên máy tính cá nhân: bạn bè vào cùng mạng Radmin VPN rồi nhập IPv4 của chủ phòng kèm <code>:25565</code>.</td>
+              <td>
+                <button class="btn-outline btn-sm" onclick="copyText('25565')">📋 Copy Port</button>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Playit.gg Public Tunnel</strong></td>
+              <td><span class="code-pill">playit.exe --stdout</span></td>
+              <td>Tạo địa chỉ IP Public miễn phí (dạng <code>*.gl.joinmc.link</code>) để bạn bè vào thẳng không cần cài Radmin VPN.</td>
+              <td>
+                <button class="btn-outline btn-sm" onclick="copyText('playit.exe --stdout')">📋 Copy</button>
+                <button class="btn-purple btn-sm" onclick="apiCall('/api/playit')">🚀 Bật Playit</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- CONSOLE TRỰC TIẾP -->
     <div class="console-card">
       <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
-        <h2 style="font-size:1.1rem;">💻 Server Console & Nhật Ký Thời Gian Thực</h2>
+        <h2 style="font-size:1.12rem;">💻 Server Console & Nhật Ký Thời Gian Thực</h2>
         <div class="quick-cmds">
           <button class="btn-outline" onclick="sendQuickCmd('chunky radius 3000')">Chunky Radius 3000</button>
           <button class="btn-outline" onclick="sendQuickCmd('chunky start')">▶ Bật Chunky Pre-gen</button>
           <button class="btn-outline" onclick="sendQuickCmd('chunky pause')">⏸ Tạm dừng Chunky</button>
           <button class="btn-outline" onclick="sendQuickCmd('chunky progress')">📊 Tiến độ Chunky</button>
-          <button class="btn-outline" onclick="sendQuickCmd('list')">👥 Xem người chơi online</button>
-          <button class="btn-outline" onclick="sendQuickCmd('save-all')">💾 Save-All</button>
+          <button class="btn-outline" onclick="sendQuickCmd('spark tps')">⚡ Spark TPS</button>
+          <button class="btn-outline" onclick="sendQuickCmd('list')">👥 Người chơi online</button>
+          <button class="btn-outline" onclick="sendQuickCmd('save-all flush')">💾 Save-All</button>
         </div>
       </div>
 
-      <div id="consoleBox" class="console-box">Đang tải nhật ký server...</div>
+      <div id="consoleBox" class="console-box">Đang kiểm tra trạng thái máy chủ...</div>
 
       <form class="cmd-form" onsubmit="handleCommand(event)">
-        <input id="cmdInput" type="text" placeholder="Nhập lệnh server (VD: op TenNguoiChoi, chunky start, time set day, say Hello)..." autocomplete="off" />
+        <input id="cmdInput" type="text" placeholder="Nhập lệnh server (VD: op TenNguoiChoi, chunky start, spark tps, time set day, say Hello)..." autocomplete="off" />
         <button type="submit" class="btn-blue">Gửi Lệnh</button>
       </form>
     </div>
+
+    <footer>
+      NeoForge ModSlime 1.21.1 Control Portal • Hoạt động độc lập từ File HTML, GitHub Pages (<a href="https://rxtuteam-a11y.github.io/NeoForge-ModSlime/" target="_blank">rxtuteam-a11y.github.io/NeoForge-ModSlime</a>) & Localhost:8080 • 0 AI Tokens
+    </footer>
   </div>
 
+  <div id="toast">Đã sao chép!</div>
+
   <script>
+    const API_BASE = window.location.protocol === 'file:' ? 'http://localhost:8080' : (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' ? '' : 'http://localhost:8080');
+
     let isLiveBackend = false;
     let autoScroll = true;
 
@@ -292,36 +765,154 @@
       autoScroll = atBottom;
     });
 
-    async function refreshStatus() {
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      t.textContent = msg;
+      t.style.display = 'block';
+      clearTimeout(window._toastTimer);
+      window._toastTimer = setTimeout(() => {
+        t.style.display = 'none';
+      }, 2600);
+    }
+
+    function copyText(text) {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(() => {
+          showToast('📋 Đã sao chép: ' + text);
+        }).catch(() => fallbackCopy(text));
+      } else {
+        fallbackCopy(text);
+      }
+    }
+
+    function fallbackCopy(text) {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+      showToast('📋 Đã sao chép: ' + text);
+    }
+
+    function switchModeTab(mode, btn) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      if (btn) btn.classList.add('active');
+
+      const c1 = document.getElementById('cardMode1');
+      const c2 = document.getElementById('cardMode2');
+      const c3 = document.getElementById('cardMode3');
+
+      if (mode === 'all') {
+        c1.style.display = 'flex';
+        c2.style.display = 'flex';
+        c3.style.display = 'flex';
+      } else if (mode === 'mode1') {
+        c1.style.display = 'flex';
+        c2.style.display = 'none';
+        c3.style.display = 'none';
+      } else if (mode === 'mode2') {
+        c1.style.display = 'none';
+        c2.style.display = 'flex';
+        c3.style.display = 'none';
+      } else if (mode === 'mode3') {
+        c1.style.display = 'none';
+        c2.style.display = 'none';
+        c3.style.display = 'flex';
+      }
+    }
+
+    function setZeroRamUI() {
+      isLiveBackend = false;
+
+      const ramBadge = document.getElementById('ramModeBadge');
+      const ramText = document.getElementById('ramModeText');
+      ramBadge.className = 'badge zeroram';
+      ramText.textContent = '0 MB RAM sử dụng - Chế độ Web Tĩnh Tiết Kiệm RAM';
+
+      document.getElementById('serverStateText').textContent = 'Đang Tắt hoàn toàn (0% CPU / 0 MB RAM)';
+      document.getElementById('localConnText').textContent = '0 MB RAM sử dụng - Chế độ Web Tĩnh Tiết Kiệm RAM';
+      document.getElementById('localConnText').style.color = '#38bdf8';
+
+      const banner = document.getElementById('connectionBanner');
+      banner.className = 'zero-ram-banner';
+      document.getElementById('bannerTitle').textContent = '⚡ 0 MB RAM sử dụng - Chế độ Web Tĩnh Tiết Kiệm RAM (Không Tốn Token AI)';
+      document.getElementById('bannerDesc').innerHTML =
+        'Server Minecraft và tiến trình Web Panel trên máy hiện đang <strong>TẮT hoàn toàn (0 MB RAM chạy nền)</strong>. Bạn có thể mở trang HTML này bất cứ lúc nào để khởi chạy Server trên đám mây <strong>GitHub Codespaces</strong> (Chế độ 1), tải file từ <strong>Google Drive / GitHub</strong> (Chế độ 3), hoặc mở <code>web-panel\\Start-Web-Panel.bat</code> khi muốn chạy Server trên máy (Chế độ 2).';
+
+      document.getElementById('btnStart').disabled = false;
+      document.getElementById('btnStop').disabled = false;
+
+      consoleBox.textContent =
+        '=== 🟢 TRUNG TÂM ĐIỀU KHIỂN NEOFORGE MODSLIME (CHẾ ĐỘ WEB TĨNH 0 MB RAM) ===\n\n' +
+        'Hiện tại không có bất kỳ tiến trình Java hay Python nào chạy ngầm trên máy tính của bạn (0 MB RAM sử dụng).\n\n' +
+        '👉 CÁCH 1 — MỞ SERVER TRÊN ĐÁM MÂY GITHUB CODESPACES (0% RAM MÁY TÍNH):\n' +
+        '   1. Bấm nút "🚀 MỞ GITHUB CODESPACES (4 CPU / 16GB RAM)" ở khung Chế độ 1.\n' +
+        '   2. Codespace sẽ tự động tải 266 Mods từ Google Drive và mở Web Panel ở cổng 8080.\n' +
+        '   3. Bấm "▶ BẬT SERVER" và "🚀 Bật Playit.gg Tunnel" để lấy IP cho bạn bè vào chơi.\n' +
+        '   4. Khi nghỉ chơi, bấm "⏹ TẮT & LƯU SERVER" để tự động lưu World về lại GitHub.\n\n' +
+        '👉 CÁCH 2 — MỞ SERVER TRÊN MÁY TÍNH CÁ NHÂN (LOCALHOST:8080):\n' +
+        '   1. Chạy file: c:\\Users\\phankhang\\Desktop\\NeoForge-ModSlime\\web-panel\\Start-Web-Panel.bat\n' +
+        '   2. Trang web này sẽ tự động chuyển sang trạng thái "🟢 Đang kết nối trực tiếp với Server Local".\n' +
+        '   3. Bấm "▶ BẬT SERVER" để chơi. Khi chơi xong bấm "🔌 TẮT HẲN WEB PANEL (GIẢI PHÓNG 100% RAM)".\n\n' +
+        '👉 CÁCH 3 — TẢI SERVER & WORLD ĐỒNG BỘ CHO BẠN BÈ:\n' +
+        '   - Link Google Drive Full Server + 266 Mods: https://drive.google.com/file/d/1eKZVfJSo0c49VhZMonpZE5kURegY0V16/view?usp=sharing\n' +
+        '   - Link GitHub chứa World mới nhất: https://github.com/rxtuteam-a11y/NeoForge-ModSlime';
+    }
+
+    async function refreshStatus(manual = false) {
       try {
-        const res = await fetch('/api/status', { cache: 'no-store' });
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 1800);
+        const res = await fetch(`${API_BASE}/api/status`, {
+          cache: 'no-store',
+          signal: controller.signal
+        });
+        clearTimeout(timeoutId);
         if (!res.ok) throw new Error('Not live');
         const data = await res.json();
         isLiveBackend = true;
-        document.getElementById('staticModeNotice').style.display = 'none';
 
-        const badge = document.getElementById('statusBadge');
-        const statusText = document.getElementById('statusText');
+        const ramBadge = document.getElementById('ramModeBadge');
+        const ramText = document.getElementById('ramModeText');
+        ramBadge.className = 'badge online';
+        ramText.textContent = '🟢 Đang kết nối trực tiếp với Server Local';
+
+        document.getElementById('localConnText').textContent = '🟢 Đang kết nối trực tiếp với Server Local';
+        document.getElementById('localConnText').style.color = '#4ade80';
+
+        const banner = document.getElementById('connectionBanner');
+        banner.className = 'zero-ram-banner live-connected';
+        document.getElementById('bannerTitle').textContent = '🟢 Đang kết nối trực tiếp với Server Local (http://localhost:8080)';
+        document.getElementById('bannerDesc').innerHTML =
+          'Bảng điều khiển đang kết nối thời gian thực với Web Panel trên máy. Khi chơi xong, hãy bấm nút <strong>"🔌 TẮT HẲN WEB PANEL (GIẢI PHÓNG 100% RAM)"</strong> ở Chế độ 2 để lưu World lên GitHub và giải phóng hoàn toàn RAM!';
+
         if (data.running) {
-          badge.className = 'badge online';
-          statusText.textContent = 'SERVER ĐANG MỞ (ONLINE)';
+          document.getElementById('serverStateText').textContent = '🟢 ĐANG MỞ (ONLINE)';
           document.getElementById('btnStart').disabled = true;
           document.getElementById('btnStop').disabled = false;
         } else {
-          badge.className = 'badge offline';
-          statusText.textContent = 'SERVER ĐANG TẮT (OFFLINE)';
+          document.getElementById('serverStateText').textContent = '⚪ ĐANG TẮT (Sẵn sàng bật)';
           document.getElementById('btnStart').disabled = false;
           document.getElementById('btnStop').disabled = true;
         }
 
-        document.getElementById('worldSize').textContent = data.world_size_mb + ' MB';
-        document.getElementById('syncStatus').textContent = data.last_sync_status;
-        document.getElementById('syncTime').textContent = data.last_sync_time;
+        if (data.world_size_mb !== undefined) {
+          document.getElementById('worldSize').textContent = data.world_size_mb + ' MB';
+        }
+        if (data.last_sync_status) {
+          document.getElementById('syncStatus').textContent = data.last_sync_status;
+        }
+        if (data.last_sync_time) {
+          document.getElementById('syncTime').textContent = data.last_sync_time;
+        }
 
-        document.getElementById('playitStatus').textContent = data.playit_running ? '🟢 Đang chạy' : '⚪ Đang tắt';
         if (data.playit_address) {
           document.getElementById('playitAddr').textContent = data.playit_address;
+        } else {
+          document.getElementById('playitAddr').textContent = data.playit_running ? '🟢 Playit đang chạy (Xem log)' : 'Radmin VPN / LAN :25565';
         }
+
         if (data.playit_claim_url) {
           document.getElementById('playitClaimRow').style.display = 'flex';
           document.getElementById('playitClaimLink').href = data.playit_claim_url;
@@ -337,51 +928,69 @@
             consoleBox.scrollTop = consoleBox.scrollHeight;
           }
         }
+        if (manual) showToast('🟢 Đã kết nối với localhost:8080!');
       } catch (e) {
-        isLiveBackend = false;
-        document.getElementById('staticModeNotice').style.display = 'block';
-        const badge = document.getElementById('statusBadge');
-        badge.className = 'badge cloud';
-        document.getElementById('statusText').textContent = 'CỔNG WEB CLOUD (GITHUB PAGES)';
-        consoleBox.textContent =
-          '=== HƯỚNG DẪN MỞ SERVER CHO BẠN BÈ ===\n\n' +
-          '1. CHẠY TRÊN ĐÁM MÂY GITHUB (Không cần bật máy tính cá nhân):\n' +
-          '   - Bấm nút "☁️ Mở Máy Chủ Đám Mây (GitHub Codespaces)" ở phía trên.\n' +
-          '   - Sau khi Codespace mở lên, bảng điều khiển web ở cổng 8080 sẽ tự động chạy.\n' +
-          '   - Bấm "▶ BẬT SERVER" và "🚀 Bật Playit.gg Tunnel" để lấy IP vào chơi.\n' +
-          '   - Khi chơi xong bấm "⏹ TẮT & LƯU SERVER", toàn bộ dữ liệu World sẽ tự động lưu lại vào GitHub!\n\n' +
-          '2. CHẠY TRÊN MÁY TÍNH CÁ NHÂN (Có giao diện Web điều khiển):\n' +
-          '   - Tải bản đầy đủ từ nút "📥 Tải Full Server & Mods (Google Drive)".\n' +
-          '   - Mở file "web-panel\\Start-Web-Panel.bat" để mở trang web điều khiển này tại http://localhost:8080.\n' +
-          '   - Bấm "▶ BẬT SERVER" trên web và bấm "☁️ LƯU DỮ LIỆU NGAY" để đồng bộ World lên GitHub cho bạn bè!';
+        setZeroRamUI();
+        if (manual) showToast('⚡ Localhost:8080 đang tắt (0 MB RAM sử dụng)');
       }
     }
 
     async function apiCall(endpoint) {
       if (!isLiveBackend) {
-        alert('Bạn đang ở trang cổng GitHub Pages tĩnh. Hãy bấm nút "☁️ Mở Máy Chủ Đám Mây (GitHub Codespaces)" hoặc mở Start-Web-Panel.bat trên máy để điều khiển Server trực tiếp!');
+        alert(
+          'Hiện tại Web Panel trên máy đang tắt (0 MB RAM).\n\n' +
+          '• Để điều khiển trên máy: Hãy chạy file "web-panel\\Start-Web-Panel.bat" trong thư mục NeoForge-ModSlime.\n' +
+          '• Để chạy trên đám mây 0% RAM máy: Hãy bấm nút "🚀 MỞ GITHUB CODESPACES" ở Chế độ 1!'
+        );
         return;
       }
       try {
-        const res = await fetch(endpoint, { method: 'POST' });
+        showToast('⏳ Đang gửi yêu cầu...');
+        const res = await fetch(`${API_BASE}${endpoint}`, { method: 'POST' });
         const data = await res.json();
+        if (data.message) showToast(data.message);
         await refreshStatus();
       } catch (err) {
         alert('Lỗi kết nối API: ' + err.message);
       }
     }
 
-    async function sendQuickCmd(cmd) {
+    async function shutdownPanel() {
       if (!isLiveBackend) {
-        alert('Hãy mở bảng điều khiển ở chế độ Live (qua Codespaces hoặc Start-Web-Panel.bat) để gửi lệnh!');
+        showToast('⚡ Web Panel đã tắt sẵn (0 MB RAM sử dụng)!');
         return;
       }
-      await fetch('/api/command', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ command: cmd })
-      });
-      await refreshStatus();
+      if (!confirm('Bạn có chắc muốn TẮT SERVER, LƯU WORLD LÊN GITHUB và ĐÓNG HẲN WEB PANEL để giải phóng 100% RAM không?')) {
+        return;
+      }
+      try {
+        showToast('🔌 Đang lưu World lên GitHub và tắt hẳn Web Panel...');
+        await fetch(`${API_BASE}/api/shutdown-panel`, { method: 'POST' });
+      } catch (e) {
+        // Khi tiến trình Python thoát bằng os._exit(0), kết nối có thể đóng ngay lập tức
+      }
+      setTimeout(() => {
+        setZeroRamUI();
+        showToast('✅ Đã tắt hẳn Web Panel — Giải phóng 100% RAM!');
+      }, 1200);
+    }
+
+    async function sendQuickCmd(cmd) {
+      if (!isLiveBackend) {
+        copyText(cmd);
+        alert('Localhost:8080 hiện đang tắt (0 MB RAM). Đã sao chép lệnh "' + cmd + '" vào clipboard cho bạn!');
+        return;
+      }
+      try {
+        await fetch(`${API_BASE}/api/command`, {
+          method: 'POST',
+          body: JSON.stringify({ command: cmd })
+        });
+        showToast('⚡ Đã gửi lệnh: ' + cmd);
+        await refreshStatus();
+      } catch (err) {
+        alert('Không thể gửi lệnh: ' + err.message);
+      }
     }
 
     async function handleCommand(e) {
@@ -394,7 +1003,7 @@
     }
 
     refreshStatus();
-    setInterval(refreshStatus, 2500);
+    setInterval(() => refreshStatus(false), 3000);
   </script>
 </body>
 </html>
