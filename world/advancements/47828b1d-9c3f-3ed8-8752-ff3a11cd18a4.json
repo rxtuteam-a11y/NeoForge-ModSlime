@@ -2583,9 +2583,39 @@
     },
     "done": true
   },
+  "minecraft:adventure/under_lock_and_key": {
+    "criteria": {
+      "under_lock_and_key": "2026-11-22 18:59:12 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/dispenser": {
+    "criteria": {
+      "has_bow": "2026-11-22 18:59:22 +0700"
+    },
+    "done": true
+  },
+  "tensura:forbidden_manual": {
+    "criteria": {
+      "manual": "2026-11-22 18:59:22 +0700"
+    },
+    "done": true
+  },
   "minecraft:adventure/shoot_arrow": {
     "criteria": {
       "shot_arrow": "2026-11-22 19:00:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bolt_armor_trim_smithing_template": {
+    "criteria": {
+      "has_bolt_armor_trim_smithing_template": "2026-11-22 19:04:57 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bolt_armor_trim_smithing_template_smithing_trim": {
+    "criteria": {
+      "has_smithing_trim_template": "2026-11-22 19:04:57 +0700"
     },
     "done": true
   },
@@ -2607,12 +2637,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/redstone/dispenser": {
-    "criteria": {
-      "has_bow": "2026-11-22 18:59:22 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/black_concrete_powder": {
     "criteria": {
       "has_gravel": "2026-11-22 19:09:52 +0700"
@@ -2631,21 +2655,9 @@
     },
     "done": true
   },
-  "minecraft:adventure/under_lock_and_key": {
-    "criteria": {
-      "under_lock_and_key": "2026-11-22 18:59:12 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/white_concrete_powder": {
     "criteria": {
       "has_gravel": "2026-11-22 19:09:52 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/bolt_armor_trim_smithing_template": {
-    "criteria": {
-      "has_bolt_armor_trim_smithing_template": "2026-11-22 19:04:57 +0700"
     },
     "done": true
   },
@@ -2658,12 +2670,6 @@
   "minecraft:recipes/building_blocks/red_concrete_powder": {
     "criteria": {
       "has_gravel": "2026-11-22 19:09:52 +0700"
-    },
-    "done": true
-  },
-  "tensura:forbidden_manual": {
-    "criteria": {
-      "manual": "2026-11-22 18:59:22 +0700"
     },
     "done": true
   },
@@ -2718,12 +2724,6 @@
   "regions_unexplored:recipes/building_blocks/silt_coarse_dirt": {
     "criteria": {
       "has_gravel": "2026-11-22 19:09:52 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/bolt_armor_trim_smithing_template_smithing_trim": {
-    "criteria": {
-      "has_smithing_trim_template": "2026-11-22 19:04:57 +0700"
     },
     "done": true
   },

@@ -4,8 +4,10 @@
 # OP-derived admins are stored as: op playerName
 pull Arcadeva
 pull batondacarinho
+pull bexuanmai
 pull HaJil
 pull Hajime
 pull HoangTuPacCy
+pull pacalaca
 pull pocoloco
 pull Yazmm
