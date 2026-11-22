@@ -205,7 +205,7 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
     </div>
     <div id="cloudBox">
       <label>GitHub token (chỉ cần để BẬT / huỷ server)</label>
-      <input type="password" id="ghToken" placeholder="github_pat_…">
+      <input type="password" id="ghToken" placeholder="github_pat_…" autocomplete="off" data-lpignore="true" data-1p-ignore>
       <ol>
         <li>Mở <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/new</a></li>
         <li>Repository access → <b>Only select repositories</b> → chọn repo server.</li>
@@ -221,9 +221,9 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
         <summary style="cursor:pointer;margin-top:14px;font-weight:600">🔧 Cấu hình server trên GitHub (Playit, địa chỉ game, Google Drive)</summary>
         <div class="sub" id="srvState" style="margin-top:8px">Đang đọc cấu hình…</div>
         <label>Playit SECRET_KEY <span class="sub">(playit.gg → Agents → Add agent → Docker)</span></label>
-        <input type="password" id="sPlayit" placeholder="để trống = giữ nguyên">
+        <input type="password" id="sPlayit" placeholder="để trống = giữ nguyên" autocomplete="new-password" data-lpignore="true" data-1p-ignore>
         <label>Địa chỉ vào game <span class="sub">(địa chỉ tunnel Minecraft Java trên playit.gg)</span></label>
-        <input type="text" id="sMcAddr" placeholder="vd: abc-def.joinmc.link">
+        <input type="text" id="sMcAddr" placeholder="vd: abc-def.joinmc.link" autocomplete="off">
         <label>Nội dung rclone.conf cho Google Drive <span class="sub">(tuỳ chọn)</span></label>
         <textarea id="sRclone" rows="4" placeholder="[gdrive]&#10;type = drive&#10;token = {...}&#10;(để trống = giữ nguyên)" style="width:100%;background:#0e1512;border:1px solid var(--line);color:var(--text);border-radius:10px;padding:9px 11px;font:12px var(--mono)"></textarea>
         <label>Thư mục Drive lưu backup</label>
@@ -622,6 +622,7 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
     const btn = $("btnSaveSrv"); btn.disabled = true;
     try {
       const pl = $("sPlayit").value.trim(), rc = $("sRclone").value.trim();
+      if (pl && (pl === cfg.pass || pl === $("pPass").value)) throw new Error("Ô Playit đang chứa mật khẩu Web Panel (trình duyệt tự điền). Xoá và dán SECRET_KEY của Playit.");
       const mc = $("sMcAddr").value.trim(), dp = $("sDrivePath").value.trim();
       if (pl) await putSecret("PLAYIT_SECRET", pl);
       if (rc) {
@@ -638,7 +639,7 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
     } finally { btn.disabled = false; }
   }
   $("btnSaveSrv").onclick = saveServerConfig;
-  $("srvDetails").addEventListener("toggle", (e) => { if (e.target.open) loadServerConfig(); });
+  $("srvDetails").addEventListener("toggle", (e) => { if (e.target.open) { setTimeout(() => { if ($("sPlayit").value === cfg.pass) $("sPlayit").value = ""; }, 300); loadServerConfig(); } });
 
   // ---------- Settings ----------
   let editMode = cfg.mode;
