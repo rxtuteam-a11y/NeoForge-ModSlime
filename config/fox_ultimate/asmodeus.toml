@@ -1,0 +1,159 @@
+[Asmodeus]
+	#Automatically evolve a permanent mastered Lust.
+	enableAutoAcquisition = true
+	#Require permanent, non-copied mastered Lust.
+	requireMasteredLust = true
+	#Consume Lust after successful acquisition.
+	consumeLust = true
+	#Permanent maximum magicules sacrificed on successful acquisition.
+	acquisitionMaximumMagiculeCost = 800000.0
+	#Ticks between acquisition checks.
+	acquisitionCheckIntervalTicks = 20
+	#Initial mastery granted on acquisition.
+	acquisitionGrantMastery = 0
+	#Desire Crystal chance for a player kill of a witch.
+	witchCrystalDropChance = 0.02
+	#Desire Crystal chance for a player kill of the configured Luminous entity.
+	luminousCrystalDropChance = 1.0
+	#Registry ID of the optional Luminous entity; no hard addon dependency.
+	luminousEntityId = "tensura_neb:luminous_valentine"
+	#Crystals eaten to unlock skill locking permission, not skill acquisition.
+	crystalsForLockPermission = 10
+	#One-time activation cost.
+	drainMagiculeCost = 300.0
+	#Duration of attack-attached drain.
+	drainBuffDurationTicks = 400
+	#Fixed drain from each current energy pool.
+	drainAmount = 1000.0
+	#Mastered fixed drain from each current energy pool.
+	drainAmountMastered = 1500.0
+	#Mastered attack drain fraction of each pool remaining after fixed drain.
+	drainAttackFractionMastered = 0.001
+	#Mastered direct drain fraction of each pool remaining after fixed drain.
+	drainDirectFractionMastered = 0.005
+	#Direct drain range in blocks.
+	drainRange = 5.0
+	#Mastered direct drain range in blocks.
+	drainRangeMastered = 8.0
+	#Direct/activation cooldown in seconds.
+	drainCooldownSeconds = 1
+	#Minimum ticks between attack drains on the same target.
+	drainTargetIntervalTicks = 10
+	#Allow current energy gains beyond capacity without raising permanent maximums.
+	drainAllowOverflow = true
+	#Preserve Lust's energy-exhaustion lethality using ordinary damage and death protection, never direct removal.
+	drainExhaustionCanKill = true
+	#Maximum-health multiplier for energy-exhaustion damage.
+	drainExhaustionDamageMultiplier = 10.0
+	#One-time cost after validating both participants.
+	embraceMagiculeCost = 1000.0
+	#Required starting distance.
+	embraceRange = 2.0
+	#Maximum duration.
+	embraceDurationTicks = 200
+	#Ticks between drain pulses.
+	embracePulseIntervalTicks = 20
+	#Fixed drain from each current energy pool per pulse.
+	embraceDrainAmount = 1000.0
+	#Mastered fixed drain per pool per pulse.
+	embraceDrainAmountMastered = 1000.0
+	#Mastered fraction of each remaining energy pool per pulse.
+	embraceDrainFractionMastered = 0.005
+	#Target's protection from repeated embraces after release.
+	embraceImmunityTicks = 100
+	#Pain ignores pain resistance/nullification only.
+	embraceBypassPainNullification = true
+	#Actual damage to the caster interrupts an embrace.
+	embraceInterruptOnCasterDamage = true
+	#Paid once when the moving field starts.
+	blessingMagiculeCost = 12000.0
+	#Total field duration.
+	blessingDurationTicks = 400
+	#First pulse after this delay, then repeated until duration ends.
+	blessingPulseIntervalTicks = 100
+	#Cooldown begins on activation.
+	blessingCooldownSeconds = 60
+	#Spherical range around the caster.
+	blessingRadius = 15.0
+	#Execute below this target maximum EP / caster maximum EP ratio.
+	blessingExecutionRatio = 0.75
+	#High tier begins at this maximum EP ratio.
+	blessingStrongRatio = 0.95
+	#Fraction of target's current energy drained in middle tier.
+	blessingMiddleDrainFraction = 0.25
+	#Fraction of target's current energy drained in high tier.
+	blessingStrongDrainFraction = 0.15
+	#Damage based on current health in middle tier.
+	blessingMiddleHealthFraction = 0.5
+	#Damage based on current health in high tier.
+	blessingStrongHealthFraction = 0.25
+	#Execution damage in multiples of target maximum health; respects damage/death processing.
+	blessingExecutionDamageMultiplier = 10.0
+	#Magicule share of successfully recovered energy; remainder becomes aura.
+	blessingMagiculeShare = 0.75
+	#Per-pulse cap for each restored pool, based on caster maximum pool.
+	blessingRecoveryCapFraction = 0.1
+	#Respect server PvP and team friendly-fire rules.
+	respectPvp = true
+	#Exclude allies, owned pets and non-hostile entities from offensive area effects.
+	excludeFriendlyTargets = true
+	#Magicules for one full held-healing pulse.
+	healingMagiculePerPulse = 80.0
+	#Ordinary health restored by one held-healing pulse.
+	healingHealthPerPulse = 2.0
+	#Also restore spiritual health, billed separately from ordinary healing.
+	healingSpiritualEnabled = true
+	#Magicules for one full spiritual-healing pulse.
+	healingSpiritualMagiculePerPulse = 80.0
+	#Spiritual health restored per held-healing pulse.
+	healingSpiritualHealthPerPulse = 2.0
+	#Ticks between held-healing pulses.
+	healingPulseIntervalTicks = 10
+	#Held healing ray distance; any living target is eligible.
+	healingRange = 5.0
+	#Fraction of caster maximum magicules paid from current magicules.
+	rebirthMagiculeFraction = 0.05
+	#Allow rebirth on the caster when no entity is targeted; owned pets remain valid targets.
+	rebirthAllowSelf = true
+	#Cooldown for every successful rebirth application.
+	rebirthCooldownSeconds = 90
+	#Self rebirth protection duration.
+	rebirthDurationTicks = 6000
+	#Pet rebirth duration; -1 means no expiry.
+	rebirthPetDurationTicks = 6000
+	#Rebirth target-selection range.
+	rebirthRange = 5.0
+	#Health after a totem-like save.
+	rebirthHealth = 1.0
+	#Vanilla-style regeneration duration.
+	rebirthRegenerationTicks = 900
+	#Regeneration amplifier after revival.
+	rebirthRegenerationAmplifier = 1
+	#Vanilla-style absorption duration.
+	rebirthAbsorptionTicks = 100
+	#Absorption amplifier after revival.
+	rebirthAbsorptionAmplifier = 1
+	#Vanilla-style fire resistance duration.
+	rebirthFireResistanceTicks = 800
+	#Allow the manually toggled regeneration passive.
+	regenerationEnabled = true
+	#Ticks between regeneration checks.
+	regenerationIntervalTicks = 10
+	#Magicules spent per actual ordinary health restored.
+	regenerationMagiculePerHealth = 100.0
+	#Mastered cost per actual health restored.
+	regenerationMagiculePerHealthMastered = 60.0
+	#Enable automatic healing of owned pets.
+	petProtectionEnabled = true
+	#Ticks between pet healing pulses.
+	petHealIntervalTicks = 20
+	#Pet healing range.
+	petHealRadius = 5.0
+	#Mastered pet healing range.
+	petHealRadiusMastered = 8.0
+	#Fraction of each pet's maximum health restored per pulse.
+	petHealHealthFraction = 0.05
+	#Caster magicules per actual pet health restored.
+	petHealMagiculePerHealth = 20.0
+	#Mastered magicules per actual pet health restored.
+	petHealMagiculePerHealthMastered = 10.0

@@ -1,0 +1,14 @@
+{
+	version: 1
+	uuid: "47828b1d9c3f3ed88752ff3a11cd18a4"
+	name: "HoangTuPacCy#47828b1d"
+	lock: false
+	rewards_blocked: false
+	task_progress: { }
+	started: { }
+	completed: { }
+	repeatable: { }
+	completion_count: { }
+	claimed_rewards: { }
+	player_data: { }
+}

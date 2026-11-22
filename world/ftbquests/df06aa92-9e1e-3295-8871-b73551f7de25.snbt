@@ -1,0 +1,14 @@
+{
+	version: 1
+	uuid: "df06aa929e1e32958871b73551f7de25"
+	name: "pocoloco#df06aa92"
+	lock: false
+	rewards_blocked: false
+	task_progress: { }
+	started: { }
+	completed: { }
+	repeatable: { }
+	completion_count: { }
+	claimed_rewards: { }
+	player_data: { }
+}

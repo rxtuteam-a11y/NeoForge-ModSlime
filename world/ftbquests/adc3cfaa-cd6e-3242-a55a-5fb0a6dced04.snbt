@@ -1,0 +1,14 @@
+{
+	version: 1
+	uuid: "adc3cfaacd6e3242a55a5fb0a6dced04"
+	name: "Yazmm#adc3cfaa"
+	lock: false
+	rewards_blocked: false
+	task_progress: { }
+	started: { }
+	completed: { }
+	repeatable: { }
+	completion_count: { }
+	claimed_rewards: { }
+	player_data: { }
+}

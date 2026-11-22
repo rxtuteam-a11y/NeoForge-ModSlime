@@ -1,0 +1,11 @@
+# Ponderer server permission allowlist
+# Format: role playerNameOrUuid
+# Roles: admin = manage/upload/pull, upload = upload/pull, pull = pull only
+# OP-derived admins are stored as: op playerName
+pull Arcadeva
+pull batondacarinho
+pull HaJil
+pull Hajime
+pull HoangTuPacCy
+pull pocoloco
+pull Yazmm

@@ -1,0 +1,9 @@
+{
+  "attackDamage": 6,
+  "attackSpeed": -2.7,
+  "durability": 1380,
+  "miningLevel": 4,
+  "miningSpeed": 7.0,
+  "materialAttackDamage": 0.5,
+  "enchantability": 20
+}
