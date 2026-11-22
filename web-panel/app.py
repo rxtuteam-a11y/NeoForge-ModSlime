@@ -49,7 +49,7 @@ def ensure_mods_on_linux_bg():
     script = (
         "set -e\n"
         "python3 -m pip install -q gdown\n"
-        f"gdown --id {GDRIVE_FILE_ID} -O /tmp/NeoForge-ModSlime.zip\n"
+        f"gdown {GDRIVE_FILE_ID} -O /tmp/NeoForge-ModSlime.zip\n"
         "echo '[Cloud Setup] Đã tải xong file nén! Đang giải nén 266 Mods & Libraries...'\n"
         "unzip -q -o /tmp/NeoForge-ModSlime.zip 'NeoForge-ModSlime/mods/*' 'NeoForge-ModSlime/libraries/*' -d /tmp/extract_modslime\n"
         "cp -rn /tmp/extract_modslime/NeoForge-ModSlime/mods ./ || true\n"

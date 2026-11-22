@@ -34,7 +34,7 @@ jobs:
       - name: 3. Tải gói 266 Mods & Libraries (1.06 GB) từ Google Drive
         run: |
           python3 -m pip install -q gdown
-          gdown --id 1eKZVfJSo0c49VhZMonpZE5kURegY0V16 -O /tmp/NeoForge-ModSlime.zip
+          gdown 1eKZVfJSo0c49VhZMonpZE5kURegY0V16 -O /tmp/NeoForge-ModSlime.zip
           unzip -q -o /tmp/NeoForge-ModSlime.zip "NeoForge-ModSlime/mods/*" "NeoForge-ModSlime/libraries/*" -d /tmp/extract_modslime
           cp -rn /tmp/extract_modslime/NeoForge-ModSlime/mods ./ || true
           cp -rn /tmp/extract_modslime/NeoForge-ModSlime/libraries ./ || true
@@ -59,13 +59,17 @@ jobs:
           echo "Đang khởi động NeoForge 1.21.1 (266 Mods)..."
           for i in $(seq 1 90); do
             sleep 2
+            cat playit.log 2>/dev/null | grep -E "claim|joinmc|ply\.gg" || true
             if grep -q "Done (" server_out.log; then
               echo "✅ SERVER ĐÃ KHỞI ĐỘNG THÀNH CÔNG!"
               break
             fi
           done
 
+          echo "=== THÔNG TIN KẾT NỐI PLAYIT.GG ==="
           cat playit.log || true
+          echo "=== NHẬT KÝ SERVER ==="
+          tail -n 30 server_out.log || true
 
           if [ "$PREGEN_RADIUS" != "0" ] && [ -n "$PREGEN_RADIUS" ]; then
             echo "chunky world minecraft:overworld" >&3
