@@ -1,0 +1,13 @@
+{
+  "session_secret": "",
+  "autosave_enabled": true,
+  "autosave_interval_min": 10,
+  "accounts": [
+    {
+      "username": "modslime",
+      "salt": "988c4a32b059a040a278cb41face4f24",
+      "password_hash": "f31208f3cd3ff4ed30627cca1525a2301afe622a5b15ec795b529949c10d131e",
+      "role": "admin"
+    }
+  ]
+}
