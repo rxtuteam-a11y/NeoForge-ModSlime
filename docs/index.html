@@ -438,8 +438,9 @@
         </p>
       </div>
       <div class="btn-row">
-        <button class="btn-outline" onclick="refreshStatus(true)">🔄 Kiểm Tra Kết Nối Localhost:8080</button>
-        <a class="btn-link btn-blue" href="https://rxtuteam-a11y.github.io/NeoForge-ModSlime/" target="_blank">🌐 Mở Trên GitHub Pages</a>
+        <button class="btn-outline" onclick="refreshStatus(true)">🔄 Kiểm Tra Kết Nối</button>
+        <button class="btn-outline" onclick="setCustomCloudBackend()">🔗 Gắn Link Cloud Port 8080</button>
+        <a class="btn-link btn-green" href="https://sturdy-zebra-5vr6jx7qrwjgfvq4w-8080.app.github.dev" target="_blank">☁️ Mở Web Panel Trên Codespace</a>
       </div>
     </div>
 
@@ -475,15 +476,20 @@
         <ul class="step-list">
           <li>
             <span class="step-num">1</span>
-            <span>Bấm nút <strong>Mở GitHub Codespaces</strong> ở trên, chọn máy <strong>4-core (16GB RAM)</strong> rồi bấm <em>Create codespace</em>.</span>
+            <div>
+              <strong>Khởi chạy hoặc Cập nhật Web Panel trên Codespaces:</strong><br/>
+              Trong tab Codespaces (<code>sturdy-zebra-...</code>), bấm vào <strong>Terminal</strong> ở khung dưới và dán lệnh này rồi nhấn Enter:<br/>
+              <span class="code-pill" style="margin-top:5px;">git pull origin main && pkill -f app.py; bash web-panel/start-panel.sh</span>
+              <button class="btn-outline btn-sm" style="margin-top:5px;" onclick="copyText('git pull origin main && pkill -f app.py; bash web-panel/start-panel.sh')">📋 Copy Lệnh Khởi Chạy</button>
+            </div>
           </li>
           <li>
             <span class="step-num">2</span>
-            <span>Đợi Codespace tự động tải gói 266 Mods từ Google Drive và tự mở bảng điều khiển Web ở cổng <code>8080</code>.</span>
+            <span>Bấm nút màu xanh lá <strong>🟢 MỞ BẢNG ĐIỀU KHIỂN CODESPACE CỦA BẠN (PORT 8080)</strong> ở ngay trên để mở giao diện điều khiển trực tiếp.</span>
           </li>
           <li>
             <span class="step-num">3</span>
-            <span>Trong Web Panel của Codespace, bấm <strong>▶ BẬT SERVER</strong> và <strong>🚀 Bật Playit.gg Tunnel</strong> để lấy địa chỉ IP Public cho cả nhóm vào chơi.</span>
+            <span>Đợi 25 giây để máy chủ tự tải 266 Mods từ Google Drive (xem tiến độ ở Console), sau đó bấm <strong>▶ BẬT SERVER</strong> và <strong>🚀 Bật Playit.gg Tunnel</strong> để lấy IP.</span>
           </li>
           <li>
             <span class="step-num">4</span>
@@ -759,8 +765,23 @@
   <script>
     const API_BASE = window.location.protocol === 'file:'
       ? 'http://localhost:8080'
-      : (window.location.hostname.endsWith('.github.io') ? 'http://localhost:8080' : '');
-    const IS_CODESPACE_LIVE = window.location.hostname.endsWith('.app.github.dev');
+      : (window.location.hostname.endsWith('.github.io')
+          ? (localStorage.getItem('modslime_api_base') || 'http://localhost:8080')
+          : '');
+    const IS_CODESPACE_LIVE = window.location.hostname.endsWith('.app.github.dev') || (API_BASE && API_BASE.includes('.app.github.dev'));
+
+    function setCustomCloudBackend() {
+      const current = localStorage.getItem('modslime_api_base') || 'https://sturdy-zebra-5vr6jx7qrwjgfvq4w-8080.app.github.dev';
+      const url = prompt('Nhập địa chỉ Port 8080 của GitHub Codespaces (hoặc để trống để dùng localhost:8080):\n(Lưu ý: Hãy chuột phải vào cổng 8080 trong Codespaces -> Port Visibility -> chọn Public để kết nối từ bên ngoài)', current);
+      if (url === null) return;
+      const clean = url.trim().replace(/\/+$/, '');
+      if (clean) {
+        localStorage.setItem('modslime_api_base', clean);
+      } else {
+        localStorage.removeItem('modslime_api_base');
+      }
+      window.location.reload();
+    }
 
 
     let isLiveBackend = false;
@@ -901,6 +922,10 @@
           document.getElementById('serverStateText').textContent = '🟢 ĐANG MỞ (ONLINE)';
           document.getElementById('btnStart').disabled = true;
           document.getElementById('btnStop').disabled = false;
+        } else if (data.setup_running) {
+          document.getElementById('serverStateText').textContent = '⏳ ĐANG TẢI 266 MODS TỪ GOOGLE DRIVE...';
+          document.getElementById('btnStart').disabled = false;
+          document.getElementById('btnStop').disabled = true;
         } else {
           document.getElementById('serverStateText').textContent = '⚪ ĐANG TẮT (Sẵn sàng bật)';
           document.getElementById('btnStart').disabled = false;

@@ -313,6 +313,7 @@ class PanelHandler(http.server.SimpleHTTPRequestHandler):
         parsed = urllib.parse.urlparse(self.path)
         if parsed.path == "/api/status":
             claim_url, tunnel_addr = get_playit_info()
+            setup_running = setup_proc is not None and setup_proc.poll() is None
             with lock:
                 logs_tail = console_lines[-180:]
                 playit_tail = playit_lines[-30:]
@@ -326,6 +327,7 @@ class PanelHandler(http.server.SimpleHTTPRequestHandler):
                         pass
             self._send_json({
                 "running": is_server_running(),
+                "setup_running": setup_running,
                 "playit_running": is_playit_running(),
                 "playit_claim_url": claim_url,
                 "playit_address": tunnel_addr,
