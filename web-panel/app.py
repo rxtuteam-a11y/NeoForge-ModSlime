@@ -20,11 +20,55 @@ GDRIVE_LINK = f"https://drive.google.com/file/d/{GDRIVE_FILE_ID}/view?usp=sharin
 
 server_proc = None
 playit_proc = None
+setup_proc = None
 console_lines = []
 playit_lines = []
 last_sync_status = "Chưa đồng bộ trong phiên này"
 last_sync_time = "-"
 lock = threading.Lock()
+
+
+def ensure_mods_on_linux_bg():
+    global setup_proc
+    if platform.system() != "Linux":
+        return
+    mods_dir = os.path.join(ROOT_DIR, "mods")
+    libs_dir = os.path.join(ROOT_DIR, "libraries")
+    jar_count = 0
+    if os.path.exists(mods_dir):
+        jar_count = len([f for f in os.listdir(mods_dir) if f.endswith(".jar")])
+    if jar_count >= 200 and os.path.exists(libs_dir):
+        return
+    if setup_proc is not None and setup_proc.poll() is None:
+        return
+
+    append_log(console_lines, "==================================================")
+    append_log(console_lines, "[Cloud Setup] Lần đầu khởi tạo máy chủ Cloud: Đang tự động tải gói 266 Mods & Libraries (1.06 GB) từ Google Drive của bạn...")
+    append_log(console_lines, "[Cloud Setup] Quá trình tải trên mạng Cloud GitHub chỉ mất khoảng 20 - 40 giây. Vui lòng đợi thông báo hoàn tất rồi bấm ▶ BẬT SERVER!")
+
+    script = (
+        "set -e\n"
+        "python3 -m pip install -q gdown\n"
+        f"gdown --id {GDRIVE_FILE_ID} -O /tmp/NeoForge-ModSlime.zip\n"
+        "echo '[Cloud Setup] Đã tải xong file nén! Đang giải nén 266 Mods & Libraries...'\n"
+        "unzip -q -o /tmp/NeoForge-ModSlime.zip 'NeoForge-ModSlime/mods/*' 'NeoForge-ModSlime/libraries/*' -d /tmp/extract_modslime\n"
+        "cp -rn /tmp/extract_modslime/NeoForge-ModSlime/mods ./ || true\n"
+        "cp -rn /tmp/extract_modslime/NeoForge-ModSlime/libraries ./ || true\n"
+        "rm -rf /tmp/NeoForge-ModSlime.zip /tmp/extract_modslime\n"
+        "echo '[Cloud Setup] ✅ ĐÃ TẢI XONG TOÀN BỘ 266 MODS & LIBRARIES! Bây giờ bạn có thể bấm nút ▶ BẬT SERVER!'\n"
+    )
+    setup_proc = subprocess.Popen(
+        ["bash", "-c", script],
+        cwd=ROOT_DIR,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+        text=True,
+        bufsize=1,
+        encoding="utf-8",
+        errors="replace",
+    )
+    threading.Thread(target=read_stream, args=(setup_proc, console_lines), daemon=True).start()
+
 
 
 def append_log(buf, line, max_lines=400):
@@ -92,9 +136,16 @@ def sync_to_github(reason="Auto-backup"):
 
 
 def start_minecraft_server():
-    global server_proc
+    global server_proc, setup_proc
     if is_server_running():
         return False, "Server đang chạy rồi!"
+    if setup_proc is not None and setup_proc.poll() is None:
+        return False, "Máy chủ Cloud đang tải gói 266 Mods từ Google Drive (xem tiến độ ở khung Console bên dưới), vui lòng đợi vài giây!"
+    if platform.system() == "Linux":
+        mods_dir = os.path.join(ROOT_DIR, "mods")
+        if not os.path.exists(mods_dir) or len([f for f in os.listdir(mods_dir) if f.endswith(".jar")]) < 200:
+            ensure_mods_on_linux_bg()
+            return False, "Đang bắt đầu tải gói 266 Mods từ Google Drive, hãy xem tiến độ trong Console và bấm lại sau 30 giây!"
 
     append_log(console_lines, "==========================================")
     append_log(console_lines, f"[Panel] Đang khởi động NeoForge ModSlime Server ({platform.system()})...")
@@ -361,6 +412,7 @@ class PanelHandler(http.server.SimpleHTTPRequestHandler):
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8080))
+    ensure_mods_on_linux_bg()
     t_backup = threading.Thread(target=auto_backup_loop, daemon=True)
     t_backup.start()
     socketserver.TCPServer.allow_reuse_address = True

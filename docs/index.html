@@ -464,8 +464,11 @@
         </p>
 
         <div class="btn-row">
-          <a class="btn-link btn-purple btn-full" href="https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=rxtuteam-a11y/NeoForge-ModSlime" target="_blank" rel="noopener">
-            🚀 MỞ GITHUB CODESPACES (4 CPU / 16GB RAM)
+          <a class="btn-link btn-green btn-full" href="https://sturdy-zebra-5vr6jx7qrwjgfvq4w-8080.app.github.dev" target="_blank" rel="noopener">
+            🟢 MỞ BẢNG ĐIỀU KHIỂN CODESPACE CỦA BẠN (PORT 8080)
+          </a>
+          <a class="btn-link btn-purple btn-full" href="https://github.com/codespaces" target="_blank" rel="noopener">
+            ☁️ QUẢN LÝ / MỞ CODESPACES TRÊN GITHUB
           </a>
         </div>
 
@@ -500,14 +503,14 @@
         </div>
       </div>
 
-      <!-- CHẾ ĐỘ 2: ĐIỀU KHIỂN TRÊN MÁY (LOCALHOST:8080) -->
+      <!-- CHẾ ĐỘ 2: ĐIỀU KHIỂN TRỰC TIẾP (CODESPACES PORT 8080 & LOCALHOST:8080) -->
       <div id="cardMode2" class="card">
         <div class="card-header">
-          <span class="mode-tag tag-local">Chế độ 2 • Localhost:8080</span>
-          <h2>🖥️ Điều Khiển Server Ngay Trên Máy Tính</h2>
+          <span class="mode-tag tag-local">Chế độ 2 • Bảng Điều Khiển Live (Cloud & Local)</span>
+          <h2>🎮 Bảng Điều Khiển Bật / Tắt Server Trực Tiếp</h2>
         </div>
         <p class="card-desc">
-          Điều khiển trực tiếp khi bạn bật <code>Start-Web-Panel.bat</code> trên máy. Khi chơi xong có thể bấm <strong>Tắt Hẳn Web Panel</strong> để giải phóng 100% RAM.
+          Dùng để bấm <strong>▶ BẬT SERVER</strong> và <strong>🚀 Bật Playit.gg</strong> khi mở từ cổng <code>8080</code> của GitHub Codespaces hoặc khi chạy <code>Start-Web-Panel.bat</code> trên máy.
         </p>
 
         <div class="btn-row">
@@ -754,7 +757,11 @@
   <div id="toast">Đã sao chép!</div>
 
   <script>
-    const API_BASE = window.location.protocol === 'file:' ? 'http://localhost:8080' : (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' ? '' : 'http://localhost:8080');
+    const API_BASE = window.location.protocol === 'file:'
+      ? 'http://localhost:8080'
+      : (window.location.hostname.endsWith('.github.io') ? 'http://localhost:8080' : '');
+    const IS_CODESPACE_LIVE = window.location.hostname.endsWith('.app.github.dev');
+
 
     let isLiveBackend = false;
     let autoScroll = true;
@@ -876,16 +883,19 @@
         const ramBadge = document.getElementById('ramModeBadge');
         const ramText = document.getElementById('ramModeText');
         ramBadge.className = 'badge online';
-        ramText.textContent = '🟢 Đang kết nối trực tiếp với Server Local';
+        const connLabel = IS_CODESPACE_LIVE
+          ? '🟢 Đang kết nối trực tiếp với Máy Chủ Đám Mây (GitHub Codespaces)'
+          : '🟢 Đang kết nối trực tiếp với Server Local';
+        ramText.textContent = connLabel;
 
-        document.getElementById('localConnText').textContent = '🟢 Đang kết nối trực tiếp với Server Local';
+        document.getElementById('localConnText').textContent = connLabel;
         document.getElementById('localConnText').style.color = '#4ade80';
 
         const banner = document.getElementById('connectionBanner');
         banner.className = 'zero-ram-banner live-connected';
-        document.getElementById('bannerTitle').textContent = '🟢 Đang kết nối trực tiếp với Server Local (http://localhost:8080)';
+        document.getElementById('bannerTitle').textContent = connLabel + ' (' + window.location.origin + ')';
         document.getElementById('bannerDesc').innerHTML =
-          'Bảng điều khiển đang kết nối thời gian thực với Web Panel trên máy. Khi chơi xong, hãy bấm nút <strong>"🔌 TẮT HẲN WEB PANEL (GIẢI PHÓNG 100% RAM)"</strong> ở Chế độ 2 để lưu World lên GitHub và giải phóng hoàn toàn RAM!';
+          'Bảng điều khiển đang kết nối thời gian thực với máy chủ! Bạn có thể bấm <strong>"▶ BẬT SERVER"</strong> và <strong>"🚀 Bật Playit.gg Tunnel"</strong> ngay ở khung <strong>Chế độ 2</strong> bên dưới. Khi chơi xong, hãy bấm nút <strong>"⏹ TẮT & LƯU SERVER"</strong> để lưu World lên GitHub!';
 
         if (data.running) {
           document.getElementById('serverStateText').textContent = '🟢 ĐANG MỞ (ONLINE)';
