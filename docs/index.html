@@ -209,11 +209,28 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
       <ol>
         <li>Mở <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/new</a></li>
         <li>Repository access → <b>Only select repositories</b> → chọn repo server.</li>
-        <li>Permissions → <b>Actions: Read and write</b>, <b>Contents: Read-only</b>.</li>
+        <li>Permissions → <b>Actions: Read and write</b>, <b>Contents: Read-only</b>.
+          Muốn cài Playit/Drive ngay trên trang này thì thêm <b>Secrets</b> và <b>Variables: Read and write</b>.</li>
         <li>Generate, chép token dán vào đây.</li>
       </ol>
       <label>Repo (chủ/tên)</label>
       <input type="text" id="ghRepo" placeholder="rxtuteam-a11y/NeoForge-ModSlime">
+    </div>
+    <div id="srvBox">
+      <details id="srvDetails">
+        <summary style="cursor:pointer;margin-top:14px;font-weight:600">🔧 Cấu hình server trên GitHub (Playit, địa chỉ game, Google Drive)</summary>
+        <div class="sub" id="srvState" style="margin-top:8px">Đang đọc cấu hình…</div>
+        <label>Playit SECRET_KEY <span class="sub">(playit.gg → Agents → Add agent → Docker)</span></label>
+        <input type="password" id="sPlayit" placeholder="để trống = giữ nguyên">
+        <label>Địa chỉ vào game <span class="sub">(địa chỉ tunnel Minecraft Java trên playit.gg)</span></label>
+        <input type="text" id="sMcAddr" placeholder="vd: abc-def.joinmc.link">
+        <label>Nội dung rclone.conf cho Google Drive <span class="sub">(tuỳ chọn)</span></label>
+        <textarea id="sRclone" rows="4" placeholder="[gdrive]&#10;type = drive&#10;token = {...}&#10;(để trống = giữ nguyên)" style="width:100%;background:#0e1512;border:1px solid var(--line);color:var(--text);border-radius:10px;padding:9px 11px;font:12px var(--mono)"></textarea>
+        <label>Thư mục Drive lưu backup</label>
+        <input type="text" id="sDrivePath" placeholder="gdrive:ModSlime-Backups">
+        <div class="row" style="margin-top:10px"><button class="btn" id="btnSaveSrv" type="button">Lưu cấu hình lên GitHub</button></div>
+        <div class="hint">Secret được mã hoá ngay trong trình duyệt (libsodium) rồi mới gửi lên GitHub; không ai đọc lại được, kể cả trang này.</div>
+      </details>
     </div>
     <div id="localBox" class="hide">
       <label>Địa chỉ Web Panel (máy đang chạy app.py)</label>
@@ -435,7 +452,7 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
     const mc = (panel && (panel.cloud_mc_address || panel.playit_address
         || (!panel.cloud_mode && (panel.radmin_mc_address || panel.lan_mc_address))))
       || (cloud.status && cloud.status.mc_address) || "";
-    $("mcAddr").textContent = mc || (cfg.mode === "cloud" ? "Chưa cấu hình (xem HUONG-DAN.md → Playit)" : "—");
+    $("mcAddr").textContent = mc || (cfg.mode === "cloud" ? "Chưa cấu hình Playit (⚙ Cài đặt → Cấu hình server)" : "—");
     $("btnCopy").disabled = !mc;
 
     if (panel && panelReachable) {
@@ -566,12 +583,69 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
     if (e.key === "ArrowDown") { histIdx = Math.min(cmdHistory.length, histIdx + 1); e.target.value = cmdHistory[histIdx] || ""; e.preventDefault(); }
   });
 
+  // ---------- GitHub secrets / variables ----------
+  function loadScript(src) {
+    return new Promise((ok, fail) => { const t = document.createElement("script"); t.src = src; t.onload = ok; t.onerror = () => fail(new Error("Không tải được " + src)); document.head.appendChild(t); });
+  }
+  async function getSodium() {
+    if (!window.sodium) {
+      await loadScript("https://cdn.jsdelivr.net/npm/libsodium@0.7.13/dist/modules/libsodium.js");
+      await loadScript("https://cdn.jsdelivr.net/npm/libsodium-wrappers@0.7.13/dist/modules/libsodium-wrappers.js");
+    }
+    await window.sodium.ready; return window.sodium;
+  }
+  async function putSecret(name, value) {
+    const k = await gh("/actions/secrets/public-key");
+    const so = await getSodium(), V = so.base64_variants.ORIGINAL;
+    const enc = so.to_base64(so.crypto_box_seal(so.from_string(value), so.from_base64(k.key, V)), V);
+    await gh("/actions/secrets/" + name, { method: "PUT", body: JSON.stringify({ encrypted_value: enc, key_id: k.key_id }) });
+  }
+  async function putVar(name, value) {
+    try { await gh("/actions/variables/" + name, { method: "PATCH", body: JSON.stringify({ name, value }) }); }
+    catch (e) { if (e.status === 404) await gh("/actions/variables", { method: "POST", body: JSON.stringify({ name, value }) }); else throw e; }
+  }
+  async function loadServerConfig() {
+    const el = $("srvState");
+    if (!cfg.token) { el.textContent = "Nhập GitHub token và bấm Lưu trước."; return; }
+    try {
+      const [sec, vars] = await Promise.all([gh("/actions/secrets?per_page=100"), gh("/actions/variables?per_page=100")]);
+      const names = (sec.secrets || []).map((x) => x.name);
+      const v = Object.fromEntries((vars.variables || []).map((x) => [x.name, x.value]));
+      $("sMcAddr").value = v.MC_ADDRESS || ""; $("sDrivePath").value = v.GDRIVE_BACKUP_PATH || "";
+      const ok = (b) => (b ? "✓" : "✗");
+      el.textContent = `Playit ${ok(names.includes("PLAYIT_SECRET"))} · Địa chỉ game ${ok(!!v.MC_ADDRESS)} · Google Drive ${ok(names.includes("RCLONE_CONFIG"))}`;
+    } catch (e) {
+      el.textContent = e.status === 403 ? "Token chưa có quyền Secrets/Variables (Read and write) — không đọc được cấu hình." : "Lỗi: " + e.message;
+    }
+  }
+  async function saveServerConfig() {
+    const btn = $("btnSaveSrv"); btn.disabled = true;
+    try {
+      const pl = $("sPlayit").value.trim(), rc = $("sRclone").value.trim();
+      const mc = $("sMcAddr").value.trim(), dp = $("sDrivePath").value.trim();
+      if (pl) await putSecret("PLAYIT_SECRET", pl);
+      if (rc) {
+        if (!/^\s*\[/.test(rc)) throw new Error("rclone.conf phải bắt đầu bằng [tên-remote]");
+        await putSecret("RCLONE_CONFIG", rc);
+      }
+      if (mc) await putVar("MC_ADDRESS", mc);
+      if (dp) await putVar("GDRIVE_BACKUP_PATH", dp);
+      $("sPlayit").value = ""; $("sRclone").value = "";
+      toast("Đã lưu cấu hình lên GitHub. Có hiệu lực từ lần bật server tiếp theo.");
+      loadServerConfig();
+    } catch (e) {
+      toast(e.status === 403 ? "Token thiếu quyền Secrets/Variables: Read and write." : "Lỗi: " + e.message, true);
+    } finally { btn.disabled = false; }
+  }
+  $("btnSaveSrv").onclick = saveServerConfig;
+  $("srvDetails").addEventListener("toggle", (e) => { if (e.target.open) loadServerConfig(); });
+
   // ---------- Settings ----------
   let editMode = cfg.mode;
   function setTab(m) {
     editMode = m;
     document.querySelectorAll(".tabs button").forEach((b) => b.classList.toggle("on", b.dataset.mode === m));
-    $("cloudBox").classList.toggle("hide", m !== "cloud"); $("localBox").classList.toggle("hide", m !== "local");
+    $("cloudBox").classList.toggle("hide", m !== "cloud"); $("srvBox").classList.toggle("hide", m !== "cloud"); $("localBox").classList.toggle("hide", m !== "local");
   }
   function openSettings() {
     $("ghToken").value = cfg.token; $("ghRepo").value = cfg.repo; $("localUrl").value = cfg.localUrl;
