@@ -1,0 +1,112 @@
+name: Cloud Minecraft Server (GitHub Actions)
+
+on:
+  workflow_dispatch:
+    inputs:
+      duration_minutes:
+        description: "Thời gian mở Server (phút, tối đa 330 phút / phiên)"
+        required: false
+        default: "240"
+      pregen_radius:
+        description: "Chạy Chunky tạo map trước bán kính (để 0 nếu không chạy)"
+        required: false
+        default: "0"
+
+permissions:
+  contents: write
+
+jobs:
+  run-minecraft-server:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - name: 1. Tải dữ liệu World & Config từ GitHub
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: 2. Cài đặt Java 21 (Temurin)
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+
+      - name: 3. Tải gói 266 Mods & Libraries (1.06 GB) từ Google Drive
+        run: |
+          python3 -m pip install -q gdown
+          gdown --id 1eKZVfJSo0c49VhZMonpZE5kURegY0V16 -O /tmp/NeoForge-ModSlime.zip
+          unzip -q -o /tmp/NeoForge-ModSlime.zip "NeoForge-ModSlime/mods/*" "NeoForge-ModSlime/libraries/*" -d /tmp/extract_modslime
+          cp -rn /tmp/extract_modslime/NeoForge-ModSlime/mods ./ || true
+          cp -rn /tmp/extract_modslime/NeoForge-ModSlime/libraries ./ || true
+          rm -rf /tmp/NeoForge-ModSlime.zip /tmp/extract_modslime
+          echo "Đã tải xong $(ls -1 mods/*.jar | wc -l) mods!"
+
+      - name: 4. Chạy Server & Tự động lưu World về GitHub khi tắt
+        env:
+          DURATION_MIN: ${{ github.event.inputs.duration_minutes || '240' }}
+          PREGEN_RADIUS: ${{ github.event.inputs.pregen_radius || '0' }}
+        run: |
+          chmod +x run.sh
+          curl -sSL https://github.com/playit-cloud/playit-agent/releases/latest/download/playit-linux-amd64 -o ./playit-linux-amd64
+          chmod +x ./playit-linux-amd64
+          ./playit-linux-amd64 --stdout > playit.log 2>&1 &
+          
+          mkfifo server_in
+          tail -f server_in | java @user_jvm_args.txt @libraries/net/neoforged/neoforge/21.1.267/unix_args.txt nogui > server_out.log 2>&1 &
+          SERVER_PID=$!
+          exec 3>server_in
+
+          echo "Đang khởi động NeoForge 1.21.1 (266 Mods)..."
+          for i in $(seq 1 90); do
+            sleep 2
+            if grep -q "Done (" server_out.log; then
+              echo "✅ SERVER ĐÃ KHỞI ĐỘNG THÀNH CÔNG!"
+              break
+            fi
+          done
+
+          cat playit.log || true
+
+          if [ "$PREGEN_RADIUS" != "0" ] && [ -n "$PREGEN_RADIUS" ]; then
+            echo "chunky world minecraft:overworld" >&3
+            echo "chunky center 0 -550" >&3
+            echo "chunky radius $PREGEN_RADIUS" >&3
+            echo "chunky start" >&3
+          fi
+
+          TOTAL_SEC=$(( DURATION_MIN * 60 ))
+          ELAPSED=0
+          while kill -0 $SERVER_PID 2>/dev/null && [ $ELAPSED -lt $TOTAL_SEC ]; do
+            sleep 30
+            ELAPSED=$(( ELAPSED + 30 ))
+            tail -n 5 server_out.log || true
+            if [ -f ".stop_server_signal" ]; then
+              echo "Nhận tín hiệu tắt server từ Web Panel!"
+              rm -f .stop_server_signal
+              break
+            fi
+          done
+
+          echo "Đang lưu World và tắt Server an toàn..."
+          echo "chunky pause" >&3 || true
+          sleep 1
+          echo "save-all flush" >&3 || true
+          sleep 3
+          echo "stop" >&3 || true
+          sleep 10
+          kill $SERVER_PID 2>/dev/null || true
+
+      - name: 5. Tự động lưu toàn bộ dữ liệu World lên GitHub
+        if: always()
+        run: |
+          git config user.name "ModSlime Cloud AutoSave"
+          git config user.email "rxtuteam@gmail.com"
+          git pull --rebase origin main || true
+          git add world config server.properties ops.json whitelist.json usercache.json usernamecache.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Cloud Auto-Save World & Config ($(date -u +'%Y-%m-%d %H:%M:%S UTC'))"
+            git push origin HEAD:main
+            echo "✅ ĐÃ LƯU TOÀN BỘ DỮ LIỆU CHƠI LÊN GITHUB THÀNH CÔNG!"
+          else
+            echo "Không có thay đổi dữ liệu World mới."
+          fi
