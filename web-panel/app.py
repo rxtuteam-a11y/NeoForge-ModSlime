@@ -296,6 +296,7 @@ class PanelHandler(http.server.SimpleHTTPRequestHandler):
         self.send_response(status)
         self.send_header("Content-Type", "application/json; charset=utf-8")
         self.send_header("Content-Length", str(len(body)))
+        self.send_header("Cache-Control", "no-store, no-cache, must-revalidate, max-age=0")
         self.send_header("Access-Control-Allow-Origin", "*")
         self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
         self.send_header("Access-Control-Allow-Headers", "Content-Type")
@@ -348,6 +349,7 @@ class PanelHandler(http.server.SimpleHTTPRequestHandler):
                 self.send_response(200)
                 self.send_header("Content-Type", "text/html; charset=utf-8")
                 self.send_header("Content-Length", str(len(content)))
+                self.send_header("Cache-Control", "no-store, no-cache, must-revalidate, max-age=0")
                 self.end_headers()
                 self.wfile.write(content)
                 return
@@ -417,7 +419,7 @@ if __name__ == "__main__":
     ensure_mods_on_linux_bg()
     t_backup = threading.Thread(target=auto_backup_loop, daemon=True)
     t_backup.start()
-    socketserver.TCPServer.allow_reuse_address = True
-    with socketserver.TCPServer(("0.0.0.0", port), PanelHandler) as httpd:
+    socketserver.ThreadingTCPServer.allow_reuse_address = True
+    with socketserver.ThreadingTCPServer(("0.0.0.0", port), PanelHandler) as httpd:
         print(f"ModSlime Web Control Panel running at http://localhost:{port}")
         httpd.serve_forever()

@@ -479,8 +479,8 @@
             <div>
               <strong>Khởi chạy hoặc Cập nhật Web Panel trên Codespaces:</strong><br/>
               Trong tab Codespaces (<code>sturdy-zebra-...</code>), bấm vào <strong>Terminal</strong> ở khung dưới và dán lệnh này rồi nhấn Enter:<br/>
-              <span class="code-pill" style="margin-top:5px;">git pull origin main && pkill -f app.py; bash web-panel/start-panel.sh</span>
-              <button class="btn-outline btn-sm" style="margin-top:5px;" onclick="copyText('git pull origin main && pkill -f app.py; bash web-panel/start-panel.sh')">📋 Copy Lệnh Khởi Chạy</button>
+              <span class="code-pill" style="margin-top:5px;">git reset --hard && git pull origin main && pkill -f app.py; bash web-panel/start-panel.sh</span>
+              <button class="btn-outline btn-sm" style="margin-top:5px;" onclick="copyText('git reset --hard && git pull origin main && pkill -f app.py; bash web-panel/start-panel.sh')">📋 Copy Lệnh Khởi Chạy</button>
             </div>
           </li>
           <li>
@@ -784,8 +784,9 @@
     }
 
 
-    let isLiveBackend = false;
+    let isLiveBackend = window.location.hostname.endsWith('.app.github.dev') || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
     let autoScroll = true;
+    let consecutiveFailures = 0;
 
     const consoleBox = document.getElementById('consoleBox');
     consoleBox.addEventListener('scroll', () => {
@@ -891,15 +892,21 @@
     async function refreshStatus(manual = false) {
       try {
         const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), 1800);
+        const timeoutId = setTimeout(() => controller.abort(), 8000);
         const res = await fetch(`${API_BASE}/api/status`, {
           cache: 'no-store',
+          credentials: 'same-origin',
           signal: controller.signal
         });
         clearTimeout(timeoutId);
-        if (!res.ok) throw new Error('Not live');
+        if (res.redirected && res.url && res.url.includes('github.dev')) {
+          window.location.reload();
+          return;
+        }
+        if (!res.ok) throw new Error('HTTP ' + res.status);
         const data = await res.json();
         isLiveBackend = true;
+        consecutiveFailures = 0;
 
         const ramBadge = document.getElementById('ramModeBadge');
         const ramText = document.getElementById('ramModeText');
@@ -965,28 +972,49 @@
         }
         if (manual) showToast('🟢 Đã kết nối với localhost:8080!');
       } catch (e) {
-        setZeroRamUI();
-        if (manual) showToast('⚡ Localhost:8080 đang tắt (0 MB RAM sử dụng)');
+        consecutiveFailures++;
+        if (!window.location.hostname.endsWith('.app.github.dev')) {
+          setZeroRamUI();
+          if (manual) showToast('⚡ Localhost:8080 đang tắt (0 MB RAM sử dụng)');
+        } else if (consecutiveFailures >= 3) {
+          consoleBox.textContent =
+            '⚠️ Cổng 8080 trên GitHub Codespaces đang chưa chạy hoặc phiên xác thực hết hạn.\n\n' +
+            '👉 Nếu bạn vừa mới mở Codespace, hãy vào tab Terminal của Codespace và chạy lệnh:\n' +
+            '   git reset --hard && git pull origin main && pkill -f app.py; bash web-panel/start-panel.sh\n\n' +
+            '👉 Hoặc bấm F5 (Tải lại trang) để làm mới phiên đăng nhập GitHub Codespaces!';
+        }
       }
     }
 
     async function apiCall(endpoint) {
-      if (!isLiveBackend) {
+      const onDirectHost = window.location.hostname.endsWith('.app.github.dev') || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+      if (!isLiveBackend && !onDirectHost) {
         alert(
           'Hiện tại Web Panel trên máy đang tắt (0 MB RAM).\n\n' +
           '• Để điều khiển trên máy: Hãy chạy file "web-panel\\Start-Web-Panel.bat" trong thư mục NeoForge-ModSlime.\n' +
-          '• Để chạy trên đám mây 0% RAM máy: Hãy bấm nút "🚀 MỞ GITHUB CODESPACES" ở Chế độ 1!'
+          '• Để chạy trên đám mây 0% RAM máy: Hãy bấm nút "🟢 MỞ BẢNG ĐIỀU KHIỂN CODESPACE CỦA BẠN (PORT 8080)" ở Chế độ 1!'
         );
         return;
       }
       try {
         showToast('⏳ Đang gửi yêu cầu...');
-        const res = await fetch(`${API_BASE}${endpoint}`, { method: 'POST' });
-        const data = await res.json();
+        const res = await fetch(`${API_BASE}${endpoint}`, {
+          method: 'POST',
+          credentials: 'same-origin',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({})
+        });
+        const text = await res.text();
+        let data = {};
+        try {
+          data = JSON.parse(text);
+        } catch (parseErr) {
+          throw new Error('Phiên xác thực cổng 8080 trên Codespaces cần làm mới hoặc bạn cần chuyển cổng 8080 sang Public trong tab Cổng (Ports) của Codespaces!');
+        }
         if (data.message) showToast(data.message);
         await refreshStatus();
       } catch (err) {
-        alert('Lỗi kết nối API: ' + err.message);
+        alert('Thông báo: ' + err.message);
       }
     }
 
