@@ -20,3 +20,5 @@ playit.log
 playit-linux-amd64
 playit.exe
 server_console.log
+world/session.lock
+
