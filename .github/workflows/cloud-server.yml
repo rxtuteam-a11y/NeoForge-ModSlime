@@ -94,7 +94,7 @@ jobs:
             echo "Chưa có secret RCLONE_CONFIG -> bỏ qua sao lưu Google Drive."
           fi
 
-      - name: 5. Chạy Server (xem log & gõ lệnh trên trang web)
+      - name: "5. SERVER ĐANG CHẠY — bước này kéo dài tới khi bạn bấm TẮT trên web (tối đa ~5h40)"
         env:
           DURATION_MIN: ${{ github.event.inputs.duration_minutes || '340' }}
           PLAYIT_SECRET: ${{ secrets.PLAYIT_SECRET }}
