@@ -3,7 +3,8 @@
 NeoForge ModSlime Minecraft Server - Web Control Panel Backend
 Zero external pip dependencies (Python 3 standard library only).
 Features:
-  - Shared account/password login with PBKDF2-HMAC-SHA256 + Cookie/Header session tokens
+  - No accounts/passwords: anyone can watch; on the cloud, control requires a GitHub token
+    with write access to the repo (verified against the GitHub API)
   - Automatic Radmin VPN (26.x.x.x) & LAN IPv4 detection
   - 24/7 real-time GitHub Auto-Save while server is running + guaranteed save on stop
   - One-click GitHub Pull Latest World when server is stopped
@@ -11,14 +12,11 @@ Features:
 """
 
 import hashlib
-import hmac
-import http.cookies
 import http.server
 import json
 import os
 import platform
 import re
-import secrets
 import shutil
 import socket
 import socketserver
@@ -26,21 +24,21 @@ import subprocess
 import threading
 import time
 import urllib.parse
+import urllib.request
 from datetime import datetime
 
 ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 WEB_DIR = os.path.abspath(os.path.dirname(__file__))
 AUTH_CONFIG_PATH = os.path.join(WEB_DIR, "auth_config.json")
-STATE_FILE_PATH = os.path.join(ROOT_DIR, ".panel_state.json")
 
 GDRIVE_FILE_ID = "1eKZVfJSo0c49VhZMonpZE5kURegY0V16"
 GDRIVE_LINK = f"https://drive.google.com/file/d/{GDRIVE_FILE_ID}/view?usp=sharing"
 GITHUB_REPO_URL = "https://github.com/rxtuteam-a11y/NeoForge-ModSlime"
 GITHUB_COMMITS_URL = f"{GITHUB_REPO_URL}/commits/main"
 
-PBKDF2_ITERATIONS = 120_000
-SESSION_TTL_SEC = 7 * 24 * 3600  # 7 days
-SESSION_COOKIE_NAME = "modslime_token"
+GITHUB_API = os.environ.get("MODSLIME_GH_API", "https://api.github.com").rstrip("/")
+GITHUB_REPOSITORY = os.environ.get("GITHUB_REPOSITORY", "rxtuteam-a11y/NeoForge-ModSlime")
+GH_VERIFY_TTL_SEC = 10 * 60
 WEB_PORT = int(os.environ.get("PORT", 8080))
 
 # ---- Cloud mode (GitHub Actions) ----
@@ -93,10 +91,9 @@ _world_size_cache = {"ts": 0.0, "mb": 0.0}
 _ram_cache = {"ts": 0.0, "mb": None}
 _props_cache = {"ts": 0.0, "mc_port": 25565, "max_players": 20}
 
-# Auth & session state
+# Panel settings (autosave) & verified GitHub tokens
 auth_config = {}
-active_sessions = {}  # token -> {"username": str, "created_at": float, "expires_at": float}
-runtime_session_secret = ""
+_gh_verified = {}  # sha256(token) -> (login or None, expires_at)
 
 lock = threading.Lock()
 git_lock = threading.Lock()
@@ -110,50 +107,6 @@ SUBPROCESS_FLAGS = getattr(subprocess, "CREATE_NO_WINDOW", 0) if platform.system
 # Authentication & Configuration Helpers
 # ============================================================
 
-def hash_password(password: str, salt: str = None):
-    if not salt:
-        salt = secrets.token_hex(16)
-    dk = hashlib.pbkdf2_hmac(
-        "sha256",
-        password.encode("utf-8"),
-        salt.encode("utf-8"),
-        PBKDF2_ITERATIONS,
-    )
-    return salt, dk.hex()
-
-
-def verify_password(account: dict, password: str) -> bool:
-    if not isinstance(account, dict) or not isinstance(password, str):
-        return False
-    # Support manual plaintext override if user edits auth_config.json directly
-    if "password" in account and isinstance(account["password"], str) and account["password"]:
-        if hmac.compare_digest(account["password"], password):
-            return True
-    salt = account.get("salt", "")
-    expected_hash = account.get("password_hash", "")
-    if salt and expected_hash:
-        _, actual_hash = hash_password(password, salt)
-        return hmac.compare_digest(actual_hash, expected_hash)
-    return False
-
-
-def _default_auth_config() -> dict:
-    salt, pw_hash = hash_password("modslime2026", "modslime_v1_salt_2026")
-    return {
-        "session_secret": "",
-        "autosave_enabled": True,
-        "autosave_interval_min": 10,
-        "accounts": [
-            {
-                "username": "modslime",
-                "salt": salt,
-                "password_hash": pw_hash,
-                "role": "admin",
-            }
-        ],
-    }
-
-
 def save_auth_config():
     with auth_lock:
         tmp_path = AUTH_CONFIG_PATH + ".tmp"
@@ -164,178 +117,67 @@ def save_auth_config():
 
 
 def load_auth_config():
-    global auth_config, autosave_enabled, autosave_interval_min, runtime_session_secret
+    """Load panel settings (autosave). The file no longer holds any accounts."""
+    global auth_config, autosave_enabled, autosave_interval_min
+    loaded = {}
+    if os.path.exists(AUTH_CONFIG_PATH):
+        try:
+            with open(AUTH_CONFIG_PATH, "r", encoding="utf-8") as f:
+                loaded = json.load(f)
+        except Exception:
+            loaded = {}
+    if not isinstance(loaded, dict):
+        loaded = {}
+    loaded.setdefault("autosave_enabled", True)
+    loaded.setdefault("autosave_interval_min", 10)
     with auth_lock:
-        if os.path.exists(AUTH_CONFIG_PATH):
-            try:
-                with open(AUTH_CONFIG_PATH, "r", encoding="utf-8") as f:
-                    loaded = json.load(f)
-                if not isinstance(loaded, dict):
-                    loaded = _default_auth_config()
-            except Exception:
-                loaded = _default_auth_config()
-        else:
-            loaded = _default_auth_config()
-            try:
-                with open(AUTH_CONFIG_PATH, "w", encoding="utf-8") as f:
-                    json.dump(loaded, f, ensure_ascii=False, indent=2)
-                    f.write("\n")
-            except Exception:
-                pass
-
-        if not loaded.get("accounts"):
-            loaded["accounts"] = _default_auth_config()["accounts"]
-
         auth_config = loaded
         autosave_enabled = bool(auth_config.get("autosave_enabled", True))
         try:
-            iv = int(auth_config.get("autosave_interval_min", 10))
-            autosave_interval_min = max(1, min(120, iv))
+            autosave_interval_min = max(1, min(120, int(auth_config.get("autosave_interval_min", 10))))
         except Exception:
             autosave_interval_min = 10
 
-        runtime_session_secret = auth_config.get("session_secret") or ""
 
-    _load_runtime_state()
-
-
-def _load_runtime_state():
-    global runtime_session_secret, active_sessions
+def verify_github_token(token: str):
+    """Return the GitHub login if the token belongs to someone with write access to the repo, else None."""
+    if not token:
+        return None
+    key = hashlib.sha256(token.encode("utf-8")).hexdigest()
     now = time.time()
-    if os.path.exists(STATE_FILE_PATH):
-        try:
-            with open(STATE_FILE_PATH, "r", encoding="utf-8") as f:
-                st = json.load(f)
-            if not runtime_session_secret and st.get("runtime_session_secret"):
-                runtime_session_secret = st["runtime_session_secret"]
-            saved_sessions = st.get("sessions", {})
-            if isinstance(saved_sessions, dict):
-                with auth_lock:
-                    for tok, info in saved_sessions.items():
-                        if isinstance(info, dict) and info.get("expires_at", 0) > now:
-                            active_sessions[tok] = info
-        except Exception:
-            pass
-    if not runtime_session_secret:
-        runtime_session_secret = secrets.token_hex(32)
-        _save_runtime_state()
+    with auth_lock:
+        hit = _gh_verified.get(key)
+        if hit and hit[1] > now:
+            return hit[0]
 
+    def _get(path):
+        req = urllib.request.Request(
+            GITHUB_API + path,
+            headers={
+                "Authorization": f"Bearer {token}",
+                "Accept": "application/vnd.github+json",
+                "User-Agent": "modslime-panel",
+            },
+        )
+        with urllib.request.urlopen(req, timeout=8) as r:
+            return json.loads(r.read().decode("utf-8"))
 
-def _save_runtime_state():
+    login = None
     try:
-        now = time.time()
-        with auth_lock:
-            valid = {
-                tok: info
-                for tok, info in active_sessions.items()
-                if info.get("expires_at", 0) > now
-            }
-            active_sessions.clear()
-            active_sessions.update(valid)
-            data = {
-                "runtime_session_secret": runtime_session_secret,
-                "sessions": valid,
-            }
-        tmp_path = STATE_FILE_PATH + ".tmp"
-        with open(tmp_path, "w", encoding="utf-8") as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
-        os.replace(tmp_path, STATE_FILE_PATH)
+        me = _get("/user").get("login") or ""
+        owner = GITHUB_REPOSITORY.split("/")[0]
+        if me and me.lower() == owner.lower():
+            login = me
+        elif me:
+            perm = _get(f"/repos/{GITHUB_REPOSITORY}/collaborators/{me}/permission").get("permission")
+            if perm in ("admin", "maintain", "write"):
+                login = me
     except Exception:
-        pass
-
-
-def create_session(username: str) -> str:
-    raw = secrets.token_urlsafe(32)
-    sig = hmac.new(
-        runtime_session_secret.encode("utf-8"),
-        f"{username}:{raw}".encode("utf-8"),
-        hashlib.sha256,
-    ).hexdigest()[:16]
-    token = f"{raw}.{sig}"
-    now = time.time()
+        login = None
     with auth_lock:
-        active_sessions[token] = {
-            "username": username,
-            "created_at": now,
-            "expires_at": now + SESSION_TTL_SEC,
-        }
-    _save_runtime_state()
-    return token
-
-
-def validate_session(token: str):
-    if not token:
-        return None
-    now = time.time()
-    with auth_lock:
-        info = active_sessions.get(token)
-        if not info:
-            return None
-        if info.get("expires_at", 0) <= now:
-            active_sessions.pop(token, None)
-            return None
-        return info.get("username")
-
-
-def revoke_session(token: str):
-    if not token:
-        return
-    with auth_lock:
-        active_sessions.pop(token, None)
-    _save_runtime_state()
-
-
-def authenticate_credentials(username: str, password: str):
-    uname = (username or "").strip()
-    if not uname or not isinstance(password, str) or not password:
-        return None
-    with auth_lock:
-        accounts = auth_config.get("accounts", [])
-        for acc in accounts:
-            if acc.get("username", "").strip() == uname:
-                if verify_password(acc, password):
-                    return acc.get("username", uname)
-    return None
-
-
-def update_credentials(current_username: str, current_password: str, new_username: str, new_password: str):
-    new_pw = (new_password or "").strip()
-    new_user = (new_username or "").strip() or current_username
-    if len(new_pw) < 4:
-        return False, "Mật khẩu mới phải có ít nhất 4 ký tự!", current_username
-    if len(new_user) < 2 or len(new_user) > 32:
-        return False, "Tên tài khoản phải từ 2 đến 32 ký tự!", current_username
-
-    with auth_lock:
-        accounts = auth_config.get("accounts", [])
-        target = None
-        for acc in accounts:
-            if acc.get("username", "").strip() == current_username:
-                target = acc
-                break
-        if target is None and accounts:
-            target = accounts[0]
-        if target is None:
-            return False, "Không tìm thấy tài khoản để cập nhật!", current_username
-
-        if current_password is not None and current_password != "":
-            if not verify_password(target, current_password):
-                return False, "Mật khẩu hiện tại không đúng!", current_username
-
-        salt, pw_hash = hash_password(new_pw)
-        target["username"] = new_user
-        target["salt"] = salt
-        target["password_hash"] = pw_hash
-        target.pop("password", None)
-
-        # Update active sessions for renamed user so current user stays logged in
-        for info in active_sessions.values():
-            if info.get("username") == current_username:
-                info["username"] = new_user
-
-    save_auth_config()
-    _save_runtime_state()
-    return True, f"Đã cập nhật tài khoản chung ({new_user}) & mật khẩu thành công!", new_user
+        # cache failures briefly so a wrong token does not hammer the GitHub API
+        _gh_verified[key] = (login, now + (GH_VERIFY_TTL_SEC if login else 30))
+    return login
 
 
 # ============================================================
@@ -1152,7 +994,7 @@ class PanelHandler(http.server.SimpleHTTPRequestHandler):
         else:
             self.send_header("Access-Control-Allow-Origin", "*")
         self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
-        self.send_header("Access-Control-Allow-Headers", "Content-Type, X-Auth-Token, Authorization")
+        self.send_header("Access-Control-Allow-Headers", "Content-Type, X-GitHub-Token")
         self.send_header("Access-Control-Allow-Private-Network", "true")
 
     def _send_json(self, data, status=200, extra_headers=None):
@@ -1168,45 +1010,27 @@ class PanelHandler(http.server.SimpleHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(body)
 
-    def _extract_token(self) -> str:
-        # 1. X-Auth-Token header
-        tok = self.headers.get("X-Auth-Token", "").strip()
-        if tok:
-            return tok
-        # 2. Authorization: Bearer <token>
-        auth_hdr = self.headers.get("Authorization", "").strip()
-        if auth_hdr.lower().startswith("bearer "):
-            return auth_hdr[7:].strip()
-        # 3. HttpOnly Cookie
-        cookie_hdr = self.headers.get("Cookie", "")
-        if cookie_hdr:
-            try:
-                c = http.cookies.SimpleCookie()
-                c.load(cookie_hdr)
-                if SESSION_COOKIE_NAME in c:
-                    return c[SESSION_COOKIE_NAME].value.strip()
-            except Exception:
-                pass
-        return ""
+    def _control_user(self):
+        """Who may control the server. Local/Radmin mode: everyone on the network.
+        Cloud mode: only holders of a GitHub token with write access to the repo."""
+        if not CLOUD_MODE:
+            return "local"
+        return verify_github_token(self.headers.get("X-GitHub-Token", "").strip())
 
-    def _get_auth_user(self):
-        tok = self._extract_token()
-        return validate_session(tok), tok
-
-    def _require_auth(self):
-        user, tok = self._get_auth_user()
+    def _require_control(self):
+        user = self._control_user()
         if not user:
             self._send_json(
                 {
                     "ok": False,
-                    "authenticated": False,
-                    "error": "unauthorized",
-                    "message": "Vui lòng đăng nhập bằng tài khoản chung để điều khiển Server!",
+                    "can_control": False,
+                    "error": "forbidden",
+                    "message": "Cần GitHub token của chủ server (⚙ Cài đặt) để điều khiển server.",
                 },
-                status=401,
+                status=403,
             )
-            return None, ""
-        return user, tok
+            return None
+        return user
 
     def do_OPTIONS(self):
         self.send_response(204)
@@ -1217,18 +1041,9 @@ class PanelHandler(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
         parsed = urllib.parse.urlparse(self.path)
 
-        if parsed.path == "/api/auth/check":
-            user, _ = self._get_auth_user()
-            self._send_json({
-                "ok": True,
-                "authenticated": bool(user),
-                "username": user,
-            })
-            return
-
         if parsed.path == "/api/status":
-            user, _ = self._get_auth_user()
-            is_auth = bool(user)
+            user = self._control_user() if self.headers.get("X-GitHub-Token") or not CLOUD_MODE else None
+            is_auth = True  # status & logs are public (read-only)
             running = is_server_running()
             radmin_ip, lan_ip = detect_network_info()
             mc_port, max_players = read_server_properties()
@@ -1264,7 +1079,7 @@ class PanelHandler(http.server.SimpleHTTPRequestHandler):
             setup_running = setup_proc is not None and setup_proc.poll() is None
 
             payload = {
-                "authenticated": is_auth,
+                "can_control": bool(user),
                 "username": user,
                 "running": running,
                 "server_ready": bool(running and server_ready),
@@ -1290,7 +1105,7 @@ class PanelHandler(http.server.SimpleHTTPRequestHandler):
                 "last_sync_time": last_sync_time,
                 "gdrive_link": GDRIVE_LINK,
                 "gdrive_enabled": bool(RCLONE_REMOTE),
-                "gdrive_remote": RCLONE_REMOTE if is_auth else None,
+                "gdrive_remote": RCLONE_REMOTE if user else None,
                 "gdrive_status": gdrive_status,
                 "gdrive_last_time": gdrive_last_time,
                 "gdrive_in_progress": gdrive_in_progress,
@@ -1305,7 +1120,7 @@ class PanelHandler(http.server.SimpleHTTPRequestHandler):
                 # Authenticated-only detailed operational data
                 "setup_running": setup_running if is_auth else False,
                 "playit_running": is_playit_running() if is_auth else False,
-                "playit_claim_url": claim_url,
+                "playit_claim_url": claim_url if user else None,
                 "playit_address": tunnel_addr,
                 "ram_mb": get_java_ram_mb() if is_auth else None,
                 "backup_history": hist_copy if is_auth else [],
@@ -1346,65 +1161,8 @@ class PanelHandler(http.server.SimpleHTTPRequestHandler):
         except Exception:
             payload = {}
 
-        # Public auth endpoints
-        if parsed.path == "/api/login":
-            username = payload.get("username", "")
-            password = payload.get("password", "")
-            authed_user = authenticate_credentials(username, password)
-            if not authed_user:
-                self._send_json(
-                    {
-                        "ok": False,
-                        "authenticated": False,
-                        "message": "Sai tài khoản hoặc mật khẩu! Vui lòng kiểm tra lại.",
-                    },
-                    status=401,
-                )
-                return
-            token = create_session(authed_user)
-            cookie_val = f"{SESSION_COOKIE_NAME}={token}; Path=/; HttpOnly; SameSite=Lax; Max-Age={SESSION_TTL_SEC}"
-            self._send_json(
-                {
-                    "ok": True,
-                    "authenticated": True,
-                    "token": token,
-                    "username": authed_user,
-                    "message": f"Đăng nhập thành công ({authed_user})!",
-                },
-                status=200,
-                extra_headers=[("Set-Cookie", cookie_val)],
-            )
-            return
-
-        if parsed.path == "/api/logout":
-            tok = self._extract_token()
-            revoke_session(tok)
-            clear_cookie = f"{SESSION_COOKIE_NAME}=; Path=/; HttpOnly; SameSite=Lax; Max-Age=0"
-            self._send_json(
-                {
-                    "ok": True,
-                    "authenticated": False,
-                    "message": "Đã đăng xuất thành công!",
-                },
-                status=200,
-                extra_headers=[("Set-Cookie", clear_cookie)],
-            )
-            return
-
-        # All endpoints below require authentication
-        user, _ = self._require_auth()
+        user = self._require_control()
         if not user:
-            return
-
-        if parsed.path == "/api/auth/change-password":
-            cur_pw = payload.get("current_password")
-            new_user = payload.get("new_username", user)
-            new_pw = payload.get("new_password", "")
-            ok, msg, updated_user = update_credentials(user, cur_pw, new_user, new_pw)
-            self._send_json(
-                {"ok": ok, "username": updated_user, "message": msg},
-                status=200 if ok else 400,
-            )
             return
 
         if parsed.path == "/api/start":

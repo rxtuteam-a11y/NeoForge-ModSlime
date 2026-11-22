@@ -101,6 +101,14 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
 .chip:hover{color:var(--slime);border-color:var(--slime-d)}
 .players{display:flex;flex-wrap:wrap;gap:6px}
 .players span{background:#0f1613;border:1px solid var(--line);padding:3px 9px;border-radius:8px;font-size:13px}
+.check{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;font-size:13.5px}
+.check li{display:flex;gap:10px;align-items:flex-start}
+.check li i{font-style:normal;width:20px;height:20px;border-radius:6px;display:grid;place-items:center;flex:none;font-size:12px;
+  background:#0e1512;border:1px solid var(--line);color:var(--faint)}
+.check li.ok i{background:var(--slime-d);border-color:var(--slime-d);color:#06100a}
+.check li.ok span{color:var(--muted)}
+.check li span small{display:block;color:var(--faint);font-size:12px}
+.viewer{padding:8px 14px;background:#1d1a0f;border-top:1px solid #3a3320;color:var(--amber);font-size:12.5px}
 .hist{list-style:none;padding:0;margin:10px 0 0;display:flex;flex-direction:column;gap:6px;font-size:12.5px;max-height:180px;overflow:auto}
 .hist li{display:flex;gap:8px;color:var(--muted)} .hist li b{color:var(--slime);font-weight:600} .hist li.bad b{color:var(--red)}
 
@@ -133,6 +141,12 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
 
   <div class="grid">
     <div class="col">
+      <section class="card hide" id="setupCard">
+        <h2>🧭 Thiết lập lần đầu</h2>
+        <ul class="check" id="setupList"></ul>
+        <button class="btn pri sm" id="btnSetupOpen" style="margin-top:10px">Mở cài đặt</button>
+      </section>
+
       <section class="card">
         <h2>⚡ Điều khiển</h2>
         <button class="power" id="btnPower">▶ BẬT SERVER</button>
@@ -181,9 +195,9 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
         <div class="grow"></div>
         <label class="sub" style="margin:0;display:flex;gap:6px;align-items:center"><input type="checkbox" id="autoscroll" checked> Tự cuộn</label>
         <button class="btn sm" id="btnClear">Xoá màn hình</button>
-        <button class="btn sm hide" id="btnLogin">Đăng nhập panel</button>
       </div>
       <pre id="log"><span class="empty">Log của server sẽ hiện ở đây khi server chạy.</span></pre>
+      <div class="viewer hide" id="viewerNote">👀 Chế độ chỉ xem. Nhập GitHub token của chủ server trong ⚙ Cài đặt để gõ lệnh, tắt và sao lưu.</div>
       <div class="quick" id="quick"></div>
       <form class="cmd" id="cmdForm" autocomplete="off">
         <span class="prompt">&gt;</span>
@@ -198,13 +212,13 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
 <div class="overlay" id="ovSettings">
   <div class="modal">
     <h3>Cài đặt</h3>
-    <div class="sub">Lưu trên trình duyệt này, không gửi đi đâu ngoài GitHub và Web Panel của bạn.</div>
+    <div class="sub">Không cần tài khoản. Ai mở trang cũng xem được log; chỉ người có GitHub token của chủ server mới bật/tắt, gõ lệnh và sao lưu được. Token chỉ lưu trên trình duyệt này.</div>
     <div class="tabs">
       <button data-mode="cloud" class="on">☁ Cloud (GitHub)</button>
       <button data-mode="local">🖥 Máy riêng / Radmin</button>
     </div>
     <div id="cloudBox">
-      <label>GitHub token (chỉ cần để BẬT / huỷ server)</label>
+      <label>GitHub token (để bật/tắt, gõ lệnh, sao lưu)</label>
       <input type="password" id="ghToken" placeholder="github_pat_…" autocomplete="off" data-lpignore="true" data-1p-ignore>
       <ol>
         <li>Mở <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/new</a></li>
@@ -220,7 +234,7 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
       <details id="srvDetails">
         <summary style="cursor:pointer;margin-top:14px;font-weight:600">🔧 Cấu hình server trên GitHub (Playit, địa chỉ game, Google Drive)</summary>
         <div class="sub" id="srvState" style="margin-top:8px">Đang đọc cấu hình…</div>
-        <label>Playit SECRET_KEY <span class="sub">(playit.gg → Agents → Add agent → Docker)</span></label>
+        <label>Playit SECRET_KEY <span class="sub">(phần sau SECRET_KEY= trong lệnh Docker của playit.gg)</span></label>
         <input type="password" id="sPlayit" placeholder="để trống = giữ nguyên" autocomplete="new-password" data-lpignore="true" data-1p-ignore>
         <label>Địa chỉ vào game <span class="sub">(địa chỉ tunnel Minecraft Java trên playit.gg)</span></label>
         <input type="text" id="sMcAddr" placeholder="vd: abc-def.joinmc.link" autocomplete="off">
@@ -237,12 +251,6 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
       <input type="url" id="localUrl" placeholder="http://26.x.x.x:8080 hoặc http://localhost:8080">
       <div class="hint">Trình duyệt chặn trang https gọi tới địa chỉ http. Nếu không kết nối được, mở thẳng địa chỉ Web Panel (vd. http://localhost:8080) — trang này có sẵn ở đó.</div>
     </div>
-    <label>Tài khoản Web Panel (để xem log và gõ lệnh)</label>
-    <div class="row" style="flex-wrap:nowrap">
-      <input type="text" id="pUser" placeholder="tài khoản" value="modslime">
-      <input type="password" id="pPass" placeholder="mật khẩu">
-    </div>
-    <label style="display:flex;gap:6px;align-items:center"><input type="checkbox" id="pRemember" checked> Nhớ mật khẩu để tự đăng nhập lại mỗi phiên mới</label>
     <div class="row" style="margin-top:16px;justify-content:flex-end">
       <button class="btn" id="btnCloseSet">Đóng</button>
       <button class="btn pri" id="btnSaveSet">Lưu</button>
@@ -279,13 +287,13 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
     token: LS.get("gh_token"),
     repo: LS.get("gh_repo") || defaultRepo(),
     localUrl: LS.get("local_url"),
-    user: LS.get("p_user", "modslime"),
-    pass: LS.get("p_pass"),
   };
+  ["p_pass", "p_token", "p_user"].forEach((k) => LS.del(k)); // dọn dữ liệu đăng nhập cũ
 
   // ---------- State ----------
   let panelBase = servedByPanel ? location.origin : "";
-  let panelToken = LS.get("p_token");
+  let tokenOk = null;        // GitHub token dùng được với repo?
+  let srvCfg = null;         // {playit, mc, drive} | {error}
   let cloud = { state: "unknown", run: null, status: null, jobs: null };
   let panel = null;          // last /api/status
   let panelReachable = false;
@@ -321,24 +329,12 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
   async function api(path, body) {
     if (!panelBase) throw new Error("Chưa có địa chỉ Web Panel");
     const headers = { "Content-Type": "application/json" };
-    if (panelToken) headers["X-Auth-Token"] = panelToken;
+    if (cfg.token) headers["X-GitHub-Token"] = cfg.token;
     const r = await fetch(panelBase + path, {
       method: body === undefined ? "GET" : "POST", headers, cache: "no-store",
       body: body === undefined ? undefined : JSON.stringify(body),
     });
-    const data = await r.json().catch(() => ({}));
-    if (r.status === 401) { data._unauth = true; }
-    return data;
-  }
-
-  async function panelLogin(silent) {
-    if (!cfg.pass) { if (!silent) openSettings(); return false; }
-    try {
-      const d = await api("/api/login", { username: cfg.user, password: cfg.pass });
-      if (d.ok && d.token) { panelToken = d.token; LS.set("p_token", d.token); if (!silent) toast("Đã đăng nhập Web Panel."); return true; }
-      if (!silent) toast(d.message || "Sai tài khoản hoặc mật khẩu", true);
-    } catch (e) { if (!silent) toast("Không kết nối được Web Panel: " + e.message, true); }
-    return false;
+    return await r.json().catch(() => ({}));
   }
 
   // ---------- Cloud polling ----------
@@ -352,7 +348,9 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
       } catch (e) { if (e.status === 404) cloud.status = null; else throw e; }
 
       if (cfg.token) {
-        const runs = await gh(`/actions/workflows/${WORKFLOW}/runs?per_page=1`);
+        let runs;
+        try { runs = await gh(`/actions/workflows/${WORKFLOW}/runs?per_page=1`); tokenOk = true; }
+        catch (e) { if (e.status === 401 || e.status === 403 || e.status === 404) { tokenOk = false; cloud.run = null; throw new Error("GitHub token không hợp lệ hoặc thiếu quyền Actions"); } throw e; }
         cloud.run = runs.workflow_runs && runs.workflow_runs[0] || null;
         if (cloud.run && cloud.run.status !== "completed") {
           const j = await gh(`/actions/runs/${cloud.run.id}/jobs`);
@@ -379,10 +377,8 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
   async function pollPanel() {
     if (!panelBase) { panel = null; panelReachable = false; return; }
     try {
-      let d = await api("/api/status");
+      panel = await api("/api/status");
       panelReachable = true;
-      if (!d.authenticated && cfg.pass) { if (await panelLogin(true)) d = await api("/api/status"); }
-      panel = d;
     } catch { panelReachable = false; }
   }
 
@@ -467,19 +463,36 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
       $("syncInfo").textContent = sync + drv;
       $("hist").innerHTML = (panel.backup_history || []).map((h) =>
         `<li class="${h.ok ? "" : "bad"}"><b>${h.ok ? "✓" : "✗"}</b><span>${esc(h.time)} · ${esc(h.reason)} — ${esc(h.message)}</span></li>`).join("");
-      $("btnGit").disabled = busy || !panel.authenticated;
-      $("btnDrive").disabled = busy || !panel.authenticated || !panel.gdrive_enabled;
-      $("btnDrive").title = panel.gdrive_enabled ? "" : "Thêm secret RCLONE_CONFIG trên GitHub (xem HUONG-DAN.md)";
-      $("btnLogin").classList.toggle("hide", !!panel.authenticated);
-      renderLog(panel.authenticated ? panel.logs || [] : null);
+      $("btnGit").disabled = busy || !panel.can_control;
+      $("btnDrive").disabled = busy || !panel.can_control || !panel.gdrive_enabled;
+      $("btnDrive").title = panel.gdrive_enabled ? "" : "Chưa cấu hình Google Drive (⚙ Cài đặt → Cấu hình server)";
+      $("viewerNote").classList.toggle("hide", !!panel.can_control);
+      renderLog(panel.logs || []);
     } else {
       ["sPlayers", "sUptime", "sRam", "sLeft"].forEach((k) => ($(k).textContent = "—"));
       $("playerList").innerHTML = "";
       $("btnGit").disabled = $("btnDrive").disabled = true;
-      $("btnLogin").classList.add("hide");
+      $("viewerNote").classList.add("hide");
       if (cloud.state !== "online") renderLog([]);
     }
-    $("cmdInput").disabled = !(panel && panelReachable && panel.authenticated && running);
+    $("cmdInput").disabled = !(panel && panelReachable && panel.can_control && running);
+    renderSetup();
+  }
+
+  function renderSetup() {
+    const card = $("setupCard");
+    if (cfg.mode !== "cloud" || servedByPanel) { card.classList.add("hide"); return; }
+    const mcKnown = srvCfg && !srvCfg.error ? srvCfg.mc : !!(cloud.status && cloud.status.mc_address);
+    const items = [
+      [!!cfg.token && tokenOk !== false, "GitHub token", tokenOk === false ? "Token sai hoặc thiếu quyền Actions: Read and write" : "Để bật/tắt server, gõ lệnh, sao lưu"],
+      [srvCfg && !srvCfg.error && srvCfg.playit, "Playit SECRET_KEY", srvCfg && srvCfg.error ? srvCfg.error : "Để bạn bè vào được game"],
+      [mcKnown, "Địa chỉ vào game", "Địa chỉ tunnel Minecraft Java trên playit.gg"],
+      [srvCfg && !srvCfg.error && srvCfg.drive, "Google Drive (tuỳ chọn)", "Lưu thêm bản zip world lên Drive"],
+    ];
+    const required = items.slice(0, 3).every((x) => x[0]);
+    card.classList.toggle("hide", required);
+    $("setupList").innerHTML = items.map(([ok, t, d]) =>
+      `<li class="${ok ? "ok" : ""}"><i>${ok ? "✓" : ""}</i><span>${t}<small>${esc(d)}</small></span></li>`).join("");
   }
 
   function classify(l) {
@@ -493,11 +506,6 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
   }
   function renderLog(lines) {
     const box = $("log");
-    if (lines === null) {
-      const sig = "auth";
-      if (lastLogSig !== sig) { box.innerHTML = '<span class="empty">Đăng nhập Web Panel (⚙ Cài đặt) để xem log và gõ lệnh.</span>'; lastLogSig = sig; }
-      return;
-    }
     const shown = lines.slice(Math.min(clearedAt, lines.length));
     const sig = lines.length + "|" + (lines[lines.length - 1] || "") + "|" + clearedAt;
     if (sig === lastLogSig) return;
@@ -531,10 +539,8 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
     try {
       const running = panel && panelReachable && ["running", "starting"].includes(panel.server_state);
       if (running) {
-        if (!panel.authenticated && !(await panelLogin(false))) return;
+        if (!panel.can_control) { toast("Cần GitHub token của chủ server để tắt (⚙ Cài đặt).", true); openSettings(); return; }
         await stopServer();
-      } else if ((cfg.mode === "local" || servedByPanel) && panel && !panel.authenticated && !(await panelLogin(false))) {
-        return;
       } else await startServer();
     } catch (e) { toast(e.message, true); }
     finally { busy = false; tick(); }
@@ -556,7 +562,7 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
   $("btnDrive").onclick = () => runBackup("/api/backup-gdrive", "lưu lên Google Drive");
   $("btnCopy").onclick = () => { navigator.clipboard?.writeText($("mcAddr").textContent).then(() => toast("Đã chép địa chỉ.")); };
   $("btnClear").onclick = () => { clearedAt = (panel && panel.logs) ? panel.logs.length : 0; lastLogSig = ""; render(); };
-  $("btnLogin").onclick = async () => { if (await panelLogin(false)) tick(); };
+  $("btnSetupOpen").onclick = () => { openSettings(); if (cfg.token) $("srvDetails").open = true; };
 
   // Console commands
   const QUICK = ["list", "save-all", "say Xin chào mọi người!", "time set day", "weather clear", "op ", "whitelist add ", "kick ", "neoforge tps"];
@@ -606,23 +612,26 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
   }
   async function loadServerConfig() {
     const el = $("srvState");
-    if (!cfg.token) { el.textContent = "Nhập GitHub token và bấm Lưu trước."; return; }
+    if (!cfg.token) { el.textContent = "Nhập GitHub token và bấm Lưu trước."; srvCfg = null; return; }
     try {
       const [sec, vars] = await Promise.all([gh("/actions/secrets?per_page=100"), gh("/actions/variables?per_page=100")]);
       const names = (sec.secrets || []).map((x) => x.name);
       const v = Object.fromEntries((vars.variables || []).map((x) => [x.name, x.value]));
       $("sMcAddr").value = v.MC_ADDRESS || ""; $("sDrivePath").value = v.GDRIVE_BACKUP_PATH || "";
+      srvCfg = { playit: names.includes("PLAYIT_SECRET"), mc: !!v.MC_ADDRESS, drive: names.includes("RCLONE_CONFIG") };
       const ok = (b) => (b ? "✓" : "✗");
-      el.textContent = `Playit ${ok(names.includes("PLAYIT_SECRET"))} · Địa chỉ game ${ok(!!v.MC_ADDRESS)} · Google Drive ${ok(names.includes("RCLONE_CONFIG"))}`;
+      el.textContent = `Playit ${ok(srvCfg.playit)} · Địa chỉ game ${ok(srvCfg.mc)} · Google Drive ${ok(srvCfg.drive)}`;
     } catch (e) {
-      el.textContent = e.status === 403 ? "Token chưa có quyền Secrets/Variables (Read and write) — không đọc được cấu hình." : "Lỗi: " + e.message;
+      const msg = e.status === 403 ? "Token chưa có quyền Secrets/Variables: Read and write" : "Lỗi: " + e.message;
+      srvCfg = { error: msg }; el.textContent = msg;
     }
+    renderSetup();
   }
   async function saveServerConfig() {
     const btn = $("btnSaveSrv"); btn.disabled = true;
     try {
       const pl = $("sPlayit").value.trim(), rc = $("sRclone").value.trim();
-      if (pl && (pl === cfg.pass || pl === $("pPass").value)) throw new Error("Ô Playit đang chứa mật khẩu Web Panel (trình duyệt tự điền). Xoá và dán SECRET_KEY của Playit.");
+      if (pl && !/^[A-Za-z0-9]{20,}$/.test(pl)) throw new Error("SECRET_KEY không đúng dạng: chỉ dán phần chữ-số sau SECRET_KEY= (không lấy cả lệnh docker).");
       const mc = $("sMcAddr").value.trim(), dp = $("sDrivePath").value.trim();
       if (pl) await putSecret("PLAYIT_SECRET", pl);
       if (rc) {
@@ -639,7 +648,7 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
     } finally { btn.disabled = false; }
   }
   $("btnSaveSrv").onclick = saveServerConfig;
-  $("srvDetails").addEventListener("toggle", (e) => { if (e.target.open) { setTimeout(() => { if ($("sPlayit").value === cfg.pass) $("sPlayit").value = ""; }, 300); loadServerConfig(); } });
+  $("srvDetails").addEventListener("toggle", (e) => { if (e.target.open) loadServerConfig(); });
 
   // ---------- Settings ----------
   let editMode = cfg.mode;
@@ -650,7 +659,7 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
   }
   function openSettings() {
     $("ghToken").value = cfg.token; $("ghRepo").value = cfg.repo; $("localUrl").value = cfg.localUrl;
-    $("pUser").value = cfg.user; $("pPass").value = cfg.pass; setTab(cfg.mode);
+    setTab(cfg.mode);
     $("ovSettings").classList.add("show");
   }
   document.querySelectorAll(".tabs button").forEach((b) => (b.onclick = () => setTab(b.dataset.mode)));
@@ -659,15 +668,13 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
   $("ovSettings").addEventListener("click", (e) => { if (e.target.id === "ovSettings") $("ovSettings").classList.remove("show"); });
   $("btnSaveSet").onclick = async () => {
     cfg.mode = editMode; cfg.token = $("ghToken").value.trim(); cfg.repo = $("ghRepo").value.trim() || defaultRepo();
-    cfg.localUrl = $("localUrl").value.trim().replace(/\/+$/, ""); cfg.user = $("pUser").value.trim() || "modslime";
-    cfg.pass = $("pPass").value;
-    LS.set("mode", cfg.mode); LS.set("gh_token", cfg.token); LS.set("gh_repo", cfg.repo); LS.set("local_url", cfg.localUrl); LS.set("p_user", cfg.user);
-    if ($("pRemember").checked) LS.set("p_pass", cfg.pass); else LS.del("p_pass");
+    cfg.localUrl = $("localUrl").value.trim().replace(/\/+$/, "");
+    LS.set("mode", cfg.mode); LS.set("gh_token", cfg.token); LS.set("gh_repo", cfg.repo); LS.set("local_url", cfg.localUrl);
+    tokenOk = null; srvCfg = null; cloudTimer = 0;
     if (!servedByPanel) panelBase = cfg.mode === "local" ? cfg.localUrl : "";
     $("ovSettings").classList.remove("show");
     lastLogSig = "";
-    if (cfg.pass) { await pollCloud(); if (panelBase) await panelLogin(false); }
-    toast("Đã lưu cài đặt."); tick();
+    toast("Đã lưu cài đặt."); await tick(); if (cfg.token) loadServerConfig();
   };
 
   // ---------- Loop ----------
@@ -681,7 +688,7 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
     render();
   }
   async function loop() { try { await tick(); } catch (e) { console.error(e); } setTimeout(loop, panelBase ? 2500 : 4000); }
-  if (!cfg.pass && !panelToken && cfg.mode === "cloud" && !cfg.token && !servedByPanel) setTimeout(openSettings, 600);
+  if (cfg.token && cfg.mode === "cloud" && !servedByPanel) loadServerConfig();
   loop();
 })();
 </script>

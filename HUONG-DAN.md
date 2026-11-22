@@ -24,9 +24,10 @@ Sau 3–5 phút trang tự chuyển sang "Đang chạy", console hiện log và 
 2. Repository access → Only select repositories → chọn `NeoForge-ModSlime`.
 3. Permissions → **Actions: Read and write**, **Contents: Read-only**.
 4. Generate, chép token, dán vào **⚙ Cài đặt** trên trang web. Token chỉ lưu trong trình duyệt của bạn.
-5. Cũng trong Cài đặt, nhập mật khẩu tài khoản Web Panel (`modslime`) để xem log và gõ lệnh.
 
-Bạn bè không có token vẫn mở được trang, xem trạng thái, đăng nhập tài khoản chung để xem log/gõ lệnh; chỉ không bấm bật được.
+**Không có tài khoản/mật khẩu nào.** Ai mở trang cũng xem được trạng thái, log, người chơi (chế độ chỉ xem).
+Chỉ người có GitHub token của chủ repo (hoặc người được thêm làm collaborator có quyền Write) mới bật/tắt,
+gõ lệnh và sao lưu được. Web Panel tự hỏi GitHub để xác minh token đó.
 
 > Mẹo: nếu token có thêm quyền **Secrets** và **Variables: Read and write**, bạn nhập Playit / địa chỉ game / rclone.conf
 > ngay trong **⚙ Cài đặt → Cấu hình server trên GitHub** của trang web, khỏi làm bước 3 của mục 2 và mục 3 bên dưới bằng tay.
