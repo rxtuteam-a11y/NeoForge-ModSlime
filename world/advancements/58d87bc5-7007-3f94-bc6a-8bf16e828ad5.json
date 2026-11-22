@@ -137,6 +137,12 @@
     },
     "done": true
   },
+  "royalvariations:bony_king": {
+    "criteria": {
+      "royal_skeleton": "2026-11-22 20:49:23 +0700"
+    },
+    "done": true
+  },
   "eternal_starlight:recipes/transportation/banyin_boat": {
     "criteria": {
       "in_water": "2026-11-22 20:43:16 +0700"
@@ -260,6 +266,12 @@
   "regions_unexplored:recipes/transportation/baobab_boat": {
     "criteria": {
       "in_water": "2026-11-22 20:43:16 +0700"
+    },
+    "done": true
+  },
+  "royalvariations:royal_variations": {
+    "criteria": {
+      "royal_skeleton": "2026-11-22 20:49:23 +0700"
     },
     "done": true
   },
