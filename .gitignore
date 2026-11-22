@@ -22,3 +22,7 @@ playit.exe
 server_console.log
 world/session.lock
 
+panel.log
+cloudflared.log
+server_out.log
+server_in

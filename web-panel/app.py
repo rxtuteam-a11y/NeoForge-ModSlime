@@ -43,12 +43,35 @@ SESSION_TTL_SEC = 7 * 24 * 3600  # 7 days
 SESSION_COOKIE_NAME = "modslime_token"
 WEB_PORT = int(os.environ.get("PORT", 8080))
 
+# ---- Cloud mode (GitHub Actions) ----
+# MODSLIME_CLOUD=1      : panel runs on a GitHub Actions runner (started from the website)
+# MODSLIME_AUTOSTART=1  : start the Minecraft server as soon as the panel boots
+# MODSLIME_DEADLINE     : unix time when the runner will be killed -> stop & save before it
+# MODSLIME_IDLE_EXIT_MIN: exit the panel (ends the Actions run) after the server stayed off this long
+# GIT_BRANCH            : branch that world saves are pushed to
+# RCLONE_REMOTE         : e.g. "gdrive:ModSlime-Backups" -> zip of world uploaded to Google Drive
+CLOUD_MODE = os.environ.get("MODSLIME_CLOUD", "") == "1"
+AUTOSTART = os.environ.get("MODSLIME_AUTOSTART", "") == "1"
+CLOUD_DEADLINE = float(os.environ.get("MODSLIME_DEADLINE", "0") or 0)
+IDLE_EXIT_MIN = float(os.environ.get("MODSLIME_IDLE_EXIT_MIN", "10") or 10)
+GIT_BRANCH = os.environ.get("GIT_BRANCH", "main") or "main"
+RCLONE_REMOTE = os.environ.get("RCLONE_REMOTE", "").strip()
+GDRIVE_KEEP_DAYS = int(os.environ.get("GDRIVE_KEEP_DAYS", "14") or 14)
+CLOUD_PUBLIC_URL = os.environ.get("MODSLIME_PUBLIC_URL", "")
+CLOUD_MC_ADDRESS = os.environ.get("MODSLIME_MC_ADDRESS", "")
+CLOUD_RUN_URL = os.environ.get("MODSLIME_RUN_URL", "")
+
 # Runtime process & state globals
 server_proc = None
 playit_proc = None
 setup_proc = None
 
 console_lines = []
+gdrive_status = "Chưa cấu hình Google Drive" if not RCLONE_REMOTE else "Chưa sao lưu trong phiên này"
+gdrive_last_time = "-"
+gdrive_in_progress = False
+gdrive_lock = threading.Lock()
+server_stopped_since = time.time()
 playit_lines = []
 
 server_ready = False
@@ -436,7 +459,7 @@ def detect_network_info(force=False):
 # Logging, Process Metrics & Minecraft Log Parser
 # ============================================================
 
-def append_log(buf, line, max_lines=400):
+def append_log(buf, line, max_lines=1500):
     clean = line.rstrip("\r\n")
     with lock:
         buf.append(clean)
@@ -592,7 +615,7 @@ def _record_backup_history(reason: str, ok: bool, message: str, timestamp: str =
 
 def ensure_mods_on_linux_bg():
     global setup_proc
-    if platform.system() != "Linux":
+    if platform.system() != "Linux" or CLOUD_MODE:
         return
     mods_dir = os.path.join(ROOT_DIR, "mods")
     libs_dir = os.path.join(ROOT_DIR, "libraries")
@@ -695,7 +718,7 @@ def sync_to_github(reason="Auto-backup"):
                 return False, last_sync_status
 
             push_res = subprocess.run(
-                ["git", "push", "origin", "main"],
+                ["git", "push", "origin", f"HEAD:{GIT_BRANCH}"],
                 cwd=ROOT_DIR,
                 capture_output=True,
                 text=True,
@@ -707,7 +730,7 @@ def sync_to_github(reason="Auto-backup"):
                 # Try safe pull --rebase --autostash before retrying push
                 append_log(console_lines, "[Cloud Sync] Remote có commit mới, đang thử git pull --rebase --autostash origin main...")
                 rebase_res = subprocess.run(
-                    ["git", "pull", "--rebase", "--autostash", "origin", "main"],
+                    ["git", "pull", "--rebase", "--autostash", "origin", GIT_BRANCH],
                     cwd=ROOT_DIR,
                     capture_output=True,
                     text=True,
@@ -717,7 +740,7 @@ def sync_to_github(reason="Auto-backup"):
                 )
                 if rebase_res.returncode == 0:
                     push_res = subprocess.run(
-                        ["git", "push", "origin", "main"],
+                        ["git", "push", "origin", f"HEAD:{GIT_BRANCH}"],
                         cwd=ROOT_DIR,
                         capture_output=True,
                         text=True,
@@ -769,7 +792,7 @@ def pull_world_from_github():
         append_log(console_lines, "[Cloud Pull] Đang tải World & Config mới nhất từ GitHub (origin main)...")
         try:
             res = subprocess.run(
-                ["git", "pull", "--autostash", "origin", "main"],
+                ["git", "pull", "--autostash", "origin", GIT_BRANCH],
                 cwd=ROOT_DIR,
                 capture_output=True,
                 text=True,
@@ -844,6 +867,110 @@ def auto_backup_loop():
 
 
 # ============================================================
+# Google Drive Backup (rclone)
+# ============================================================
+
+def backup_to_gdrive(reason="Manual"):
+    """Zip world + config and upload to Google Drive via rclone (remote from RCLONE_REMOTE)."""
+    global gdrive_status, gdrive_last_time, gdrive_in_progress
+    if not RCLONE_REMOTE:
+        return False, "Chưa cấu hình Google Drive (thiếu secret RCLONE_CONFIG trên GitHub)."
+    if not shutil.which("rclone"):
+        return False, "Máy chủ chưa cài rclone nên không thể lưu lên Google Drive."
+    if not gdrive_lock.acquire(blocking=False):
+        return False, "Đang có một lần sao lưu Google Drive khác chạy."
+    gdrive_in_progress = True
+    now_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    stamp = datetime.now().strftime("%Y%m%d-%H%M%S")
+    zip_base = os.path.join("/tmp" if os.path.isdir("/tmp") else ROOT_DIR, f"ModSlime-world-{stamp}")
+    zip_path = zip_base + ".zip"
+    try:
+        append_log(console_lines, f"[Google Drive] Đang nén world + config ({reason})...")
+        import zipfile
+        with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED, compresslevel=6) as zf:
+            for top in ("world", "config", "server.properties", "ops.json", "whitelist.json",
+                        "banned-players.json", "banned-ips.json", "usercache.json"):
+                full = os.path.join(ROOT_DIR, top)
+                if os.path.isfile(full):
+                    zf.write(full, top)
+                elif os.path.isdir(full):
+                    for root, _, files in os.walk(full):
+                        for f in files:
+                            if f == "session.lock":
+                                continue
+                            fp = os.path.join(root, f)
+                            try:
+                                zf.write(fp, os.path.relpath(fp, ROOT_DIR))
+                            except OSError:
+                                pass
+        size_mb = os.path.getsize(zip_path) / (1024 * 1024)
+        append_log(console_lines, f"[Google Drive] Đang tải {size_mb:.1f} MB lên {RCLONE_REMOTE} ...")
+        res = subprocess.run(
+            ["rclone", "copy", zip_path, RCLONE_REMOTE, "--retries", "3"],
+            capture_output=True, text=True, encoding="utf-8", errors="replace",
+            creationflags=SUBPROCESS_FLAGS,
+        )
+        if res.returncode != 0:
+            err = (res.stderr or res.stdout or "rclone lỗi").strip().splitlines()[-1:]
+            gdrive_status = f"Lỗi Google Drive: {' '.join(err)[:150]}"
+            gdrive_last_time = now_str
+            append_log(console_lines, f"[Google Drive] {gdrive_status}")
+            _record_backup_history(f"Google Drive ({reason})", False, gdrive_status, now_str)
+            return False, gdrive_status
+        # Remove old backups (keep GDRIVE_KEEP_DAYS days)
+        subprocess.run(
+            ["rclone", "delete", RCLONE_REMOTE, "--min-age", f"{GDRIVE_KEEP_DAYS}d", "--include", "ModSlime-world-*.zip"],
+            capture_output=True, text=True, creationflags=SUBPROCESS_FLAGS,
+        )
+        gdrive_status = f"Đã lưu {os.path.basename(zip_path)} ({size_mb:.1f} MB) lên Google Drive"
+        gdrive_last_time = now_str
+        append_log(console_lines, f"[Google Drive] {gdrive_status}")
+        _record_backup_history(f"Google Drive ({reason})", True, gdrive_status, now_str)
+        return True, gdrive_status
+    except Exception as e:
+        gdrive_status = f"Lỗi Google Drive: {e}"
+        gdrive_last_time = now_str
+        append_log(console_lines, f"[Google Drive] {gdrive_status}")
+        return False, gdrive_status
+    finally:
+        try:
+            if os.path.exists(zip_path):
+                os.remove(zip_path)
+        except OSError:
+            pass
+        gdrive_in_progress = False
+        gdrive_lock.release()
+
+
+# ============================================================
+# Cloud watchdog: save before the Actions runner time limit, end run when idle
+# ============================================================
+
+def cloud_watchdog_loop():
+    deadline_stop_sent = False
+    while True:
+        time.sleep(5)
+        try:
+            now = time.time()
+            running = is_server_running()
+            if CLOUD_DEADLINE and not deadline_stop_sent and running and now >= CLOUD_DEADLINE - 8 * 60:
+                deadline_stop_sent = True
+                append_log(console_lines, "[Cloud] Sắp hết thời gian của phiên GitHub Actions — đang báo người chơi, lưu world và tắt server...")
+                send_server_command("say Server se tat sau 60 giay de luu world (het gio phien cloud). Hay bat lai tren web!")
+                time.sleep(60)
+                stop_minecraft_server()
+            busy = backup_in_progress or gdrive_in_progress or (setup_proc is not None and setup_proc.poll() is None)
+            idle_for = now - server_stopped_since
+            if not running and not busy:
+                if (CLOUD_DEADLINE and now >= CLOUD_DEADLINE - 4 * 60) or idle_for >= IDLE_EXIT_MIN * 60:
+                    append_log(console_lines, "[Cloud] Server đã tắt và dữ liệu đã lưu — kết thúc phiên GitHub Actions.")
+                    time.sleep(3)
+                    os._exit(0)
+        except Exception as e:
+            append_log(console_lines, f"[Cloud Watchdog Error] {e}")
+
+
+# ============================================================
 # Minecraft Server & Playit.gg Control
 # ============================================================
 
@@ -877,15 +1004,19 @@ def start_minecraft_server():
         cmd = ["java", "@user_jvm_args.txt", "@libraries/net/neoforged/neoforge/21.1.267/unix_args.txt", "nogui"]
 
     def on_server_exit():
-        global server_ready, server_start_time, next_autosave_ts
+        global server_ready, server_start_time, next_autosave_ts, server_stopped_since
         with lock:
             server_ready = False
             server_start_time = None
             online_players.clear()
             next_autosave_ts = None
         _ram_cache["mb"] = 0.0
+        server_stopped_since = time.time()
         append_log(console_lines, "[Panel] Server đã tắt. Tự động đồng bộ bản lưu World cuối cùng lên GitHub...")
         sync_to_github("Server Stopped")
+        if RCLONE_REMOTE:
+            backup_to_gdrive("Server Stopped")
+        server_stopped_since = time.time()
 
     try:
         server_proc = subprocess.Popen(
@@ -966,8 +1097,12 @@ def start_playit():
         return False, "Chưa có file playit trên hệ thống này (khuyến nghị dùng Radmin VPN)."
 
     try:
+        playit_cmd = [playit_bin]
+        playit_secret = os.environ.get("PLAYIT_SECRET", "").strip()
+        if playit_secret:
+            playit_cmd += ["--secret", playit_secret]
         playit_proc = subprocess.Popen(
-            [playit_bin, "--stdout"],
+            playit_cmd,
             cwd=ROOT_DIR,
             stdout=subprocess.PIPE,
             stderr=subprocess.STDOUT,
@@ -1113,7 +1248,7 @@ class PanelHandler(http.server.SimpleHTTPRequestHandler):
             with lock:
                 players_list = sorted(online_players)
                 hist_copy = list(backup_history)
-                logs_tail = console_lines[-200:] if is_auth else []
+                logs_tail = console_lines[-400:] if is_auth else []
                 playit_tail = playit_lines[-30:] if is_auth else []
 
             if is_auth and not logs_tail:
@@ -1154,6 +1289,17 @@ class PanelHandler(http.server.SimpleHTTPRequestHandler):
                 "last_sync_status": last_sync_status,
                 "last_sync_time": last_sync_time,
                 "gdrive_link": GDRIVE_LINK,
+                "gdrive_enabled": bool(RCLONE_REMOTE),
+                "gdrive_remote": RCLONE_REMOTE if is_auth else None,
+                "gdrive_status": gdrive_status,
+                "gdrive_last_time": gdrive_last_time,
+                "gdrive_in_progress": gdrive_in_progress,
+                "cloud_mode": CLOUD_MODE,
+                "cloud_deadline": int(CLOUD_DEADLINE) if CLOUD_DEADLINE else None,
+                "cloud_public_url": CLOUD_PUBLIC_URL or None,
+                "cloud_mc_address": CLOUD_MC_ADDRESS or None,
+                "cloud_run_url": CLOUD_RUN_URL or None,
+                "server_time": int(time.time()),
                 "github_repo_url": GITHUB_REPO_URL,
                 "github_commits_url": GITHUB_COMMITS_URL,
                 # Authenticated-only detailed operational data
@@ -1296,6 +1442,15 @@ class PanelHandler(http.server.SimpleHTTPRequestHandler):
             })
             return
 
+        if parsed.path == "/api/backup-gdrive":
+            if is_server_running():
+                send_server_command("save-all flush")
+                time.sleep(3)
+            ok, msg = backup_to_gdrive(f"Thủ công ({user})")
+            self._send_json({"ok": ok, "message": msg, "gdrive_status": gdrive_status,
+                             "gdrive_last_time": gdrive_last_time}, status=200 if ok else 400)
+            return
+
         if parsed.path == "/api/pull-world":
             if is_server_running():
                 self._send_json(
@@ -1399,6 +1554,14 @@ if __name__ == "__main__":
     ensure_mods_on_linux_bg()
     t_backup = threading.Thread(target=auto_backup_loop, daemon=True)
     t_backup.start()
+    if CLOUD_MODE:
+        threading.Thread(target=cloud_watchdog_loop, daemon=True).start()
+    if AUTOSTART:
+        def _autostart():
+            time.sleep(1.5)
+            ok, msg = start_minecraft_server()
+            append_log(console_lines, f"[Cloud] Tự động bật server: {msg}")
+        threading.Thread(target=_autostart, daemon=True).start()
 
     radmin_ip, lan_ip = detect_network_info(force=True)
     mc_port, _ = read_server_properties(force=True)

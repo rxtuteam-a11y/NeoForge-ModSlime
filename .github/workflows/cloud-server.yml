@@ -1,116 +1,126 @@
-name: Cloud Minecraft Server (GitHub Actions)
+name: ModSlime Cloud Server
+
+# Bật từ trang web (nút "BẬT SERVER") hoặc tab Actions -> Run workflow.
+# Trình tự: tải world từ GitHub -> lấy 266 mod (cache, lần đầu tải Google Drive)
+# -> chạy Web Panel + NeoForge -> mở đường hầm Cloudflare cho Web Panel và Playit cho game
+# -> ghi địa chỉ vào nhánh server-status để trang web tự tìm thấy
+# -> khi tắt: lưu world lên GitHub (main) và Google Drive (nếu đã cấu hình).
 
 on:
   workflow_dispatch:
     inputs:
       duration_minutes:
-        description: "Thời gian mở Server (phút, tối đa 330 phút / phiên)"
+        description: "Thời gian tối đa của phiên (phút, tối đa 340)"
         required: false
-        default: "240"
-      pregen_radius:
-        description: "Chạy Chunky tạo map trước bán kính (để 0 nếu không chạy)"
-        required: false
-        default: "0"
+        default: "340"
 
 permissions:
   contents: write
+  actions: read
+
+concurrency:
+  group: modslime-server
+  cancel-in-progress: false
+
+env:
+  TZ: Asia/Ho_Chi_Minh
+  GDRIVE_MODS_ID: 1eKZVfJSo0c49VhZMonpZE5kURegY0V16
 
 jobs:
-  run-minecraft-server:
+  server:
     runs-on: ubuntu-latest
-    timeout-minutes: 350
+    timeout-minutes: 355
     steps:
-      - name: 1. Tải dữ liệu World & Config từ GitHub
+      - name: 1. Lấy world & config mới nhất
         uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 1
 
-      - name: 2. Cài đặt Java 21 (Temurin)
+      - name: 2. Cài Java 21
         uses: actions/setup-java@v4
         with:
-          distribution: 'temurin'
-          java-version: '21'
+          distribution: temurin
+          java-version: "21"
 
-      - name: 3. Tải gói 266 Mods & Libraries (1.06 GB) từ Google Drive
+      - name: 3a. Khôi phục mod & libraries từ cache
+        id: modcache
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            mods
+            libraries
+          key: modslime-mods-${{ env.GDRIVE_MODS_ID }}-v1
+
+      - name: 3b. Tải 266 mod & libraries từ Google Drive (khi chưa có cache)
+        if: steps.modcache.outputs.cache-hit != 'true'
         run: |
           python3 -m pip install -q gdown
-          gdown 1eKZVfJSo0c49VhZMonpZE5kURegY0V16 -O /tmp/NeoForge-ModSlime.zip
-          unzip -q -o /tmp/NeoForge-ModSlime.zip "NeoForge-ModSlime/mods/*" "NeoForge-ModSlime/libraries/*" -d /tmp/extract_modslime
-          cp -rn /tmp/extract_modslime/NeoForge-ModSlime/mods ./ || true
-          cp -rn /tmp/extract_modslime/NeoForge-ModSlime/libraries ./ || true
-          rm -rf /tmp/NeoForge-ModSlime.zip /tmp/extract_modslime
-          echo "Đã tải xong $(ls -1 mods/*.jar | wc -l) mods!"
+          gdown "$GDRIVE_MODS_ID" -O /tmp/modslime.zip
+          unzip -q -o /tmp/modslime.zip "NeoForge-ModSlime/mods/*" "NeoForge-ModSlime/libraries/*" -d /tmp/extract
+          cp -rn /tmp/extract/NeoForge-ModSlime/mods ./
+          cp -rn /tmp/extract/NeoForge-ModSlime/libraries ./
+          rm -rf /tmp/modslime.zip /tmp/extract
+          echo "Có $(ls -1 mods/*.jar | wc -l) mod."
 
-      - name: 4. Chạy Server & Tự động lưu World về GitHub khi tắt
+      - name: 3c. Lưu cache mod cho lần sau
+        if: steps.modcache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            mods
+            libraries
+          key: modslime-mods-${{ env.GDRIVE_MODS_ID }}-v1
+
+      - name: 4. Cài cloudflared, playit, rclone
         env:
-          DURATION_MIN: ${{ github.event.inputs.duration_minutes || '240' }}
-          PREGEN_RADIUS: ${{ github.event.inputs.pregen_radius || '0' }}
+          RCLONE_CONFIG_B64: ${{ secrets.RCLONE_CONFIG }}
         run: |
-          chmod +x run.sh
-          curl -sSL https://github.com/playit-cloud/playit-agent/releases/latest/download/playit-linux-amd64 -o ./playit-linux-amd64
+          curl -fsSL -o /usr/local/bin/cloudflared https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64
+          chmod +x /usr/local/bin/cloudflared
+          curl -fsSL -o ./playit-linux-amd64 https://github.com/playit-cloud/playit-agent/releases/latest/download/playit-linux-amd64
           chmod +x ./playit-linux-amd64
-          ./playit-linux-amd64 --stdout > playit.log 2>&1 &
-          
-          mkfifo server_in
-          tail -f server_in | java @user_jvm_args.txt @libraries/net/neoforged/neoforge/21.1.267/unix_args.txt nogui > server_out.log 2>&1 &
-          SERVER_PID=$!
-          exec 3>server_in
-
-          echo "Đang khởi động NeoForge 1.21.1 (266 Mods)..."
-          for i in $(seq 1 90); do
-            sleep 2
-            cat playit.log 2>/dev/null | grep -E "claim|joinmc|ply\.gg" || true
-            if grep -q "Done (" server_out.log; then
-              echo "✅ SERVER ĐÃ KHỞI ĐỘNG THÀNH CÔNG!"
-              break
+          if [ -n "$RCLONE_CONFIG_B64" ]; then
+            curl -fsSL https://rclone.org/install.sh | sudo bash >/dev/null 2>&1 || sudo apt-get install -y rclone
+            mkdir -p ~/.config/rclone
+            # Chấp nhận cả nội dung rclone.conf thô lẫn dạng base64
+            if echo "$RCLONE_CONFIG_B64" | grep -q '^\['; then
+              printf '%s\n' "$RCLONE_CONFIG_B64" > ~/.config/rclone/rclone.conf
+            else
+              echo "$RCLONE_CONFIG_B64" | base64 -d > ~/.config/rclone/rclone.conf
             fi
-          done
-
-          echo "=== THÔNG TIN KẾT NỐI PLAYIT.GG ==="
-          cat playit.log || true
-          echo "=== NHẬT KÝ SERVER ==="
-          tail -n 30 server_out.log || true
-
-          if [ "$PREGEN_RADIUS" != "0" ] && [ -n "$PREGEN_RADIUS" ]; then
-            echo "chunky world minecraft:overworld" >&3
-            echo "chunky center 0 -550" >&3
-            echo "chunky radius $PREGEN_RADIUS" >&3
-            echo "chunky start" >&3
+            rclone listremotes
+          else
+            echo "Chưa có secret RCLONE_CONFIG -> bỏ qua sao lưu Google Drive."
           fi
 
-          TOTAL_SEC=$(( DURATION_MIN * 60 ))
-          ELAPSED=0
-          while kill -0 $SERVER_PID 2>/dev/null && [ $ELAPSED -lt $TOTAL_SEC ]; do
-            sleep 30
-            ELAPSED=$(( ELAPSED + 30 ))
-            tail -n 5 server_out.log || true
-            if [ -f ".stop_server_signal" ]; then
-              echo "Nhận tín hiệu tắt server từ Web Panel!"
-              rm -f .stop_server_signal
-              break
-            fi
-          done
+      - name: 5. Chạy Server (xem log & gõ lệnh trên trang web)
+        env:
+          DURATION_MIN: ${{ github.event.inputs.duration_minutes || '340' }}
+          PLAYIT_SECRET: ${{ secrets.PLAYIT_SECRET }}
+          MC_ADDRESS: ${{ vars.MC_ADDRESS }}
+          RCLONE_REMOTE_SET: ${{ secrets.RCLONE_CONFIG != '' }}
+          GDRIVE_BACKUP_PATH: ${{ vars.GDRIVE_BACKUP_PATH }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash .github/scripts/cloud-run.sh
 
-          echo "Đang lưu World và tắt Server an toàn..."
-          echo "chunky pause" >&3 || true
-          sleep 1
-          echo "save-all flush" >&3 || true
-          sleep 3
-          echo "stop" >&3 || true
-          sleep 10
-          kill $SERVER_PID 2>/dev/null || true
-
-      - name: 5. Tự động lưu toàn bộ dữ liệu World lên GitHub
+      - name: 6. Lưu dự phòng world lên GitHub (nếu bước 5 bị ngắt)
         if: always()
         run: |
           git config user.name "ModSlime Cloud AutoSave"
-          git config user.email "rxtuteam@gmail.com"
-          git pull --rebase origin main || true
-          git add world config server.properties ops.json whitelist.json usercache.json usernamecache.json
+          git config user.email "modslime-bot@users.noreply.github.com"
+          rm -f world/session.lock
+          git add world config server.properties ops.json whitelist.json usercache.json usernamecache.json banned-players.json banned-ips.json 2>/dev/null || true
           if ! git diff --cached --quiet; then
-            git commit -m "Cloud Auto-Save World & Config ($(date -u +'%Y-%m-%d %H:%M:%S UTC'))"
-            git push origin HEAD:main
-            echo "✅ ĐÃ LƯU TOÀN BỘ DỮ LIỆU CHƠI LÊN GITHUB THÀNH CÔNG!"
+            git commit -q -m "Cloud save world ($(date +'%Y-%m-%d %H:%M:%S'))"
+            git pull --rebase --autostash -q origin main || true
+            git push origin HEAD:main && echo "Đã lưu world lên GitHub."
           else
-            echo "Không có thay đổi dữ liệu World mới."
+            echo "World đã được lưu trước đó, không có thay đổi mới."
           fi
+
+      - name: 7. Báo trạng thái offline cho trang web
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash .github/scripts/cloud-run.sh --offline
