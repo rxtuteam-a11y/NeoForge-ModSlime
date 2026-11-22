@@ -1,2145 +1,614 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NeoForge ModSlime 1.21.1 — Trung Tâm Điều Khiển Server Radmin VPN & Lưu Trữ 24/24</title>
-  <style>
-    :root {
-      --bg: #060a14;
-      --bg-surface: rgba(15, 23, 42, 0.88);
-      --bg-card: rgba(17, 25, 44, 0.92);
-      --bg-elevated: #0d1424;
-      --border: #233354;
-      --border-strong: rgba(56, 189, 248, 0.45);
-      --text: #f1f5f9;
-      --muted: #94a3b8;
-      --cyan: #38bdf8;
-      --green: #22c55e;
-      --emerald: #10b981;
-      --red: #ef4444;
-      --amber: #f59e0b;
-      --purple: #a855f7;
-      --radius: 16px;
-      --shadow: 0 18px 44px rgba(0, 0, 0, 0.48);
-    }
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ModSlime Server</title>
+<meta name="description" content="Bật/tắt server NeoForge ModSlime, xem log và gõ lệnh ngay trên trình duyệt.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Chakra+Petch:wght@500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0d1210; --bg2:#121a16; --card:#16201b; --card2:#1b2721; --line:#26362e;
+  --text:#e6efe9; --muted:#8fa69a; --faint:#5d7268;
+  --slime:#6fdc6f; --slime-d:#3fa84a; --slime-glow:rgba(111,220,111,.22);
+  --amber:#f2c14e; --red:#ff6b6b; --cyan:#6cc8e8; --violet:#b9a3ff;
+  --radius:14px; --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+  --head:"Chakra Petch","Be Vietnam Pro",sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:radial-gradient(1200px 600px at 85% -10%,#1a2b21 0,transparent 60%),var(--bg);color:var(--text);
+  font:15px/1.5 "Be Vietnam Pro",system-ui,sans-serif;min-height:100vh}
+a{color:var(--slime)}
+button{font:inherit;cursor:pointer}
+.wrap{max-width:1180px;margin:0 auto;padding:20px 16px 48px}
+header{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:18px}
+.logo{width:44px;height:44px;border-radius:12px;background:linear-gradient(145deg,var(--slime),var(--slime-d));
+  box-shadow:0 0 0 3px #0b0f0d inset,0 6px 22px var(--slime-glow);display:grid;place-items:center}
+.logo i{width:10px;height:10px;background:#0b0f0d;border-radius:2px;display:inline-block;margin:0 3px}
+h1{font-family:var(--head);font-size:24px;letter-spacing:.5px;margin:0;line-height:1.1}
+h1 small{display:block;font:500 12.5px "Be Vietnam Pro";color:var(--muted);letter-spacing:0;margin-top:3px}
+.grow{flex:1}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:7px 13px;border-radius:999px;background:var(--card);
+  border:1px solid var(--line);font-weight:600;font-size:13.5px;white-space:nowrap}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--faint)}
+.st-online .dot{background:var(--slime);box-shadow:0 0 10px var(--slime)}
+.st-booting .dot,.st-queued .dot,.st-stopping .dot{background:var(--amber);animation:pulse 1.1s infinite}
+.st-error .dot{background:var(--red)}
+@keyframes pulse{50%{opacity:.3}}
+.iconbtn{background:var(--card);border:1px solid var(--line);color:var(--text);border-radius:10px;padding:7px 12px;
+  transition:border-color .15s,background .15s}
+.iconbtn:hover{border-color:var(--slime-d);background:var(--card2)}
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+.grid{display:grid;grid-template-columns:340px 1fr;gap:16px}
+@media (max-width:900px){.grid{grid-template-columns:1fr}}
+.card{background:linear-gradient(180deg,var(--card),var(--bg2));border:1px solid var(--line);border-radius:var(--radius);padding:16px;
+  animation:rise .35s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(6px)}}
+.card h2{font-family:var(--head);font-size:15px;text-transform:uppercase;letter-spacing:1.2px;color:var(--muted);margin:0 0 12px;
+  display:flex;align-items:center;gap:8px}
+.col{display:flex;flex-direction:column;gap:16px;min-width:0}
 
-    body {
-      font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      background:
-        radial-gradient(circle at 12% 0%, rgba(16, 185, 129, 0.14) 0%, transparent 42%),
-        radial-gradient(circle at 88% 8%, rgba(56, 189, 248, 0.15) 0%, transparent 44%),
-        radial-gradient(circle at 50% 100%, rgba(168, 85, 247, 0.08) 0%, transparent 45%),
-        var(--bg);
-      color: var(--text);
-      min-height: 100vh;
-      padding: 20px 16px 64px;
-      line-height: 1.55;
-    }
+.power{width:100%;border:0;border-radius:12px;padding:16px;font:700 18px var(--head);letter-spacing:1px;color:#0b120d;
+  background:linear-gradient(180deg,var(--slime),var(--slime-d));box-shadow:0 8px 26px var(--slime-glow);transition:transform .1s,filter .15s}
+.power:hover{filter:brightness(1.07)} .power:active{transform:translateY(1px)}
+.power.stop{background:linear-gradient(180deg,#ff8a7a,#d9473e);box-shadow:0 8px 26px rgba(255,107,107,.2);color:#1a0806}
+.power:disabled{filter:grayscale(.8) brightness(.6);cursor:not-allowed}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.sub{color:var(--muted);font-size:13px}
+.hint{color:var(--faint);font-size:12.5px;margin-top:8px}
+select,input[type=text],input[type=password],input[type=url]{background:#0e1512;border:1px solid var(--line);color:var(--text);
+  border-radius:10px;padding:9px 11px;font:inherit;width:100%;outline:none;transition:border-color .15s}
+select:focus,input:focus{border-color:var(--slime-d)}
+label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
+.btn{background:var(--card2);border:1px solid var(--line);color:var(--text);border-radius:10px;padding:9px 13px;font-weight:600;font-size:14px;
+  transition:border-color .15s,background .15s,opacity .15s}
+.btn:hover{border-color:var(--slime-d)} .btn:disabled{opacity:.45;cursor:not-allowed}
+.btn.pri{background:var(--slime-d);border-color:var(--slime-d);color:#06100a}
+.btn.danger{border-color:#5a2a2a;color:#ffb3ad}
+.btn.sm{padding:6px 10px;font-size:13px}
 
-    .container { max-width: 1260px; margin: 0 auto; }
-    .hidden { display: none !important; }
+.addr{display:flex;align-items:center;gap:8px;background:#0e1512;border:1px dashed #2f4a3b;border-radius:10px;padding:10px 12px;
+  font:600 15px var(--mono);word-break:break-all}
+.addr span{flex:1}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.stat{background:#0f1613;border:1px solid var(--line);border-radius:10px;padding:10px}
+.stat b{display:block;font:600 18px var(--head)}
+.stat small{color:var(--muted);font-size:12px}
+.steps{list-style:none;margin:12px 0 0;padding:0;display:flex;flex-direction:column;gap:6px;font-size:13.5px}
+.steps li{display:flex;gap:9px;align-items:center;color:var(--muted)}
+.steps li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--faint);flex:none}
+.steps li.done{color:var(--text)} .steps li.done::before{background:var(--slime)}
+.steps li.run{color:var(--amber)} .steps li.run::before{background:var(--amber);animation:pulse 1s infinite}
+.steps li.fail{color:var(--red)} .steps li.fail::before{background:var(--red)}
 
-    /* ================= BUTTONS & INPUTS ================= */
-    button, .btn-link {
-      cursor: pointer;
-      border: none;
-      border-radius: 11px;
-      padding: 11px 16px;
-      font-weight: 650;
-      font-size: 0.9rem;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      text-decoration: none;
-      transition: transform 0.14s ease, filter 0.14s ease, border-color 0.14s ease, background 0.14s ease;
-      font-family: inherit;
-      white-space: nowrap;
-    }
-    button:disabled { opacity: 0.45; cursor: not-allowed; transform: none !important; }
-    .btn-full { width: 100%; }
-    .btn-sm { padding: 7px 12px; font-size: 0.81rem; border-radius: 8px; }
-    .btn-xs { padding: 5px 9px; font-size: 0.76rem; border-radius: 7px; }
-    .btn-lg { padding: 13px 20px; font-size: 0.96rem; }
+.console{display:flex;flex-direction:column;min-height:560px;padding:0;overflow:hidden}
+.console .bar{display:flex;align-items:center;gap:8px;padding:12px 14px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.console .bar h2{margin:0}
+#log{flex:1;overflow:auto;margin:0;padding:12px 14px;font:12.5px/1.55 var(--mono);background:#0a0f0c;white-space:pre-wrap;
+  word-break:break-word;min-height:380px;max-height:62vh}
+#log .w{color:var(--amber)} #log .e{color:var(--red)} #log .p{color:var(--cyan)} #log .c{color:var(--slime)}
+#log .j{color:var(--violet)} #log .d{color:#9fe59f;font-weight:600}
+#log .empty{color:var(--faint)}
+.cmd{display:flex;gap:8px;padding:12px 14px;border-top:1px solid var(--line);background:var(--bg2)}
+.cmd .prompt{font:700 15px var(--mono);color:var(--slime);align-self:center}
+.cmd input{font-family:var(--mono)}
+.quick{display:flex;gap:6px;flex-wrap:wrap;padding:0 14px 12px;background:var(--bg2)}
+.chip{background:#0f1613;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:4px 10px;font:12px var(--mono);
+  transition:color .15s,border-color .15s}
+.chip:hover{color:var(--slime);border-color:var(--slime-d)}
+.players{display:flex;flex-wrap:wrap;gap:6px}
+.players span{background:#0f1613;border:1px solid var(--line);padding:3px 9px;border-radius:8px;font-size:13px}
+.hist{list-style:none;padding:0;margin:10px 0 0;display:flex;flex-direction:column;gap:6px;font-size:12.5px;max-height:180px;overflow:auto}
+.hist li{display:flex;gap:8px;color:var(--muted)} .hist li b{color:var(--slime);font-weight:600} .hist li.bad b{color:var(--red)}
 
-    .btn-green { background: linear-gradient(135deg, #22c55e, #16a34a); color: #032612; font-weight: 700; }
-    .btn-green:hover:not(:disabled) { filter: brightness(1.08); transform: translateY(-1px); }
-    .btn-red { background: linear-gradient(135deg, #ef4444, #dc2626); color: #fff; }
-    .btn-red:hover:not(:disabled) { filter: brightness(1.08); transform: translateY(-1px); }
-    .btn-blue { background: linear-gradient(135deg, #38bdf8, #0284c7); color: #031f30; font-weight: 700; }
-    .btn-blue:hover:not(:disabled) { filter: brightness(1.08); transform: translateY(-1px); }
-    .btn-purple { background: linear-gradient(135deg, #a855f7, #7c3aed); color: #fff; }
-    .btn-purple:hover:not(:disabled) { filter: brightness(1.08); transform: translateY(-1px); }
-    .btn-amber { background: linear-gradient(135deg, #f59e0b, #d97706); color: #1f1102; font-weight: 700; }
-    .btn-amber:hover:not(:disabled) { filter: brightness(1.08); transform: translateY(-1px); }
-    .btn-outline {
-      background: rgba(255, 255, 255, 0.05);
-      color: var(--text);
-      border: 1px solid var(--border);
-    }
-    .btn-outline:hover:not(:disabled) { background: rgba(56, 189, 248, 0.12); border-color: var(--cyan); }
-    .btn-danger-outline {
-      background: rgba(239, 68, 68, 0.08);
-      color: #fca5a5;
-      border: 1px solid rgba(239, 68, 68, 0.42);
-    }
-    .btn-danger-outline:hover:not(:disabled) { background: rgba(239, 68, 68, 0.18); border-color: #ef4444; color: #fff; }
-
-    .btn-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
-
-    .input-group { display: flex; flex-direction: column; gap: 6px; }
-    .input-group label { font-size: 0.83rem; font-weight: 600; color: #cbd5e1; }
-    .input-wrap { position: relative; display: flex; align-items: center; gap: 8px; }
-    .input-field, .select-field {
-      width: 100%;
-      background: #050912;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 10px 13px;
-      color: #fff;
-      font-size: 0.9rem;
-      font-family: 'Cascadia Code', Consolas, monospace;
-      transition: border-color 0.15s ease, box-shadow 0.15s ease;
-    }
-    .input-field:focus, .select-field:focus {
-      outline: none;
-      border-color: var(--cyan);
-      box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.18);
-    }
-    .pw-toggle {
-      position: absolute;
-      right: 8px;
-      background: transparent;
-      color: var(--muted);
-      padding: 4px 8px;
-      font-size: 0.85rem;
-    }
-    .pw-toggle:hover { color: #fff; }
-
-    /* ================= STATUS PILLS & BADGES ================= */
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      padding: 5px 12px;
-      border-radius: 999px;
-      font-size: 0.8rem;
-      font-weight: 700;
-      letter-spacing: 0.01em;
-    }
-    .badge-green { background: rgba(34, 197, 94, 0.16); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.45); }
-    .badge-amber { background: rgba(245, 158, 11, 0.16); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.45); }
-    .badge-red { background: rgba(239, 68, 68, 0.16); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.45); }
-    .badge-cyan { background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.4); }
-    .badge-purple { background: rgba(168, 85, 247, 0.16); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.4); }
-
-    .dot {
-      width: 9px;
-      height: 9px;
-      border-radius: 50%;
-      background: currentColor;
-      box-shadow: 0 0 10px currentColor;
-      flex-shrink: 0;
-    }
-    .dot.pulse { animation: pulseGlow 1.6s infinite; }
-    @keyframes pulseGlow {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.45; transform: scale(0.85); }
-    }
-
-    /* ================= LOGIN SCREEN ================= */
-    .login-shell {
-      max-width: 1020px;
-      margin: 26px auto 24px;
-      display: grid;
-      grid-template-columns: 1.12fr 0.88fr;
-      gap: 20px;
-      align-items: stretch;
-    }
-    @media (max-width: 860px) {
-      .login-shell { grid-template-columns: 1fr; margin-top: 10px; }
-    }
-
-    .card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 22px;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      box-shadow: var(--shadow);
-    }
-    .card-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-      flex-wrap: wrap;
-      padding-bottom: 12px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    }
-    .card-header h2 { font-size: 1.14rem; color: #fff; display: flex; align-items: center; gap: 8px; }
-    .card.border-green { border-color: rgba(34, 197, 94, 0.42); }
-    .card.border-cyan { border-color: rgba(56, 189, 248, 0.42); }
-    .card.border-purple { border-color: rgba(168, 85, 247, 0.42); }
-
-    .alert-box {
-      padding: 11px 13px;
-      border-radius: 10px;
-      font-size: 0.85rem;
-      line-height: 1.5;
-      border: 1px solid transparent;
-    }
-    .alert-info { background: rgba(56, 189, 248, 0.1); border-color: rgba(56, 189, 248, 0.35); color: #bae6fd; }
-    .alert-warn { background: rgba(245, 158, 11, 0.12); border-color: rgba(245, 158, 11, 0.4); color: #fde68a; }
-    .alert-error { background: rgba(239, 68, 68, 0.14); border-color: rgba(239, 68, 68, 0.45); color: #fecaca; }
-    .alert-success { background: rgba(34, 197, 94, 0.14); border-color: rgba(34, 197, 94, 0.45); color: #bbf7d0; }
-
-    /* ================= HERO & NAVIGATION ================= */
-    .hero {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 20px 24px;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      box-shadow: var(--shadow);
-      margin-bottom: 16px;
-    }
-    .hero-left h1 {
-      font-size: 1.42rem;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-    .hero-left p { color: var(--muted); font-size: 0.89rem; margin-top: 5px; }
-    .hero-right {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      gap: 10px;
-    }
-    @media (max-width: 820px) { .hero-right { align-items: flex-start; } }
-
-    .nav-bar {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 18px;
-    }
-    .nav-tab {
-      background: rgba(15, 23, 42, 0.78);
-      color: var(--muted);
-      border: 1px solid var(--border);
-      padding: 10px 16px;
-      border-radius: 11px;
-      font-weight: 600;
-      font-size: 0.88rem;
-    }
-    .nav-tab:hover { color: #fff; border-color: var(--cyan); }
-    .nav-tab.active {
-      background: rgba(56, 189, 248, 0.16);
-      color: #38bdf8;
-      border-color: #38bdf8;
-      box-shadow: 0 0 18px rgba(56, 189, 248, 0.14);
-    }
-
-    /* ================= GRIDS & METRICS ================= */
-    .grid-2 {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 18px;
-      margin-bottom: 18px;
-    }
-    @media (max-width: 940px) { .grid-2 { grid-template-columns: 1fr; } }
-
-    .metrics-grid {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      gap: 10px;
-    }
-    @media (max-width: 600px) { .metrics-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-
-    .metric-box {
-      background: rgba(0, 0, 0, 0.3);
-      border: 1px solid rgba(255, 255, 255, 0.07);
-      border-radius: 11px;
-      padding: 10px 12px;
-      display: flex;
-      flex-direction: column;
-      gap: 3px;
-    }
-    .metric-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.03em; }
-    .metric-val { font-size: 1rem; font-weight: 700; color: #fff; font-family: 'Cascadia Code', Consolas, monospace; }
-
-    /* ADDRESS COPY BOXES */
-    .addr-box {
-      background: rgba(5, 9, 18, 0.78);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 12px 14px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-    .addr-box.featured {
-      border-color: rgba(34, 197, 94, 0.48);
-      background: linear-gradient(135deg, rgba(16, 185, 129, 0.12), rgba(5, 9, 18, 0.85));
-    }
-    .addr-box.featured-cyan {
-      border-color: rgba(56, 189, 248, 0.48);
-      background: linear-gradient(135deg, rgba(56, 189, 248, 0.12), rgba(5, 9, 18, 0.85));
-    }
-    .addr-meta { display: flex; flex-direction: column; gap: 2px; min-width: 0; flex: 1; }
-    .addr-label { font-size: 0.77rem; color: var(--muted); font-weight: 600; }
-    .addr-value {
-      font-family: 'Cascadia Code', Consolas, monospace;
-      font-size: 1.02rem;
-      font-weight: 700;
-      color: #fff;
-      word-break: break-all;
-    }
-
-    /* PLAYERS LIST */
-    .players-wrap {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 7px;
-      align-items: center;
-      background: rgba(0, 0, 0, 0.26);
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      border-radius: 10px;
-      padding: 10px 12px;
-      font-size: 0.84rem;
-    }
-    .player-chip {
-      background: rgba(34, 197, 94, 0.18);
-      color: #86efac;
-      border: 1px solid rgba(34, 197, 94, 0.4);
-      padding: 3px 10px;
-      border-radius: 999px;
-      font-weight: 600;
-      font-size: 0.8rem;
-    }
-
-    /* TOGGLE SWITCH */
-    .switch-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      background: rgba(0, 0, 0, 0.28);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      padding: 12px 14px;
-      border-radius: 12px;
-    }
-    .switch {
-      position: relative;
-      display: inline-block;
-      width: 52px;
-      height: 28px;
-      flex-shrink: 0;
-    }
-    .switch input { opacity: 0; width: 0; height: 0; }
-    .slider {
-      position: absolute;
-      cursor: pointer;
-      inset: 0;
-      background: #334155;
-      transition: 0.2s;
-      border-radius: 999px;
-    }
-    .slider::before {
-      position: absolute;
-      content: "";
-      height: 22px;
-      width: 22px;
-      left: 3px;
-      bottom: 3px;
-      background: #fff;
-      transition: 0.2s;
-      border-radius: 50%;
-    }
-    .switch input:checked + .slider { background: #22c55e; }
-    .switch input:checked + .slider::before { transform: translateX(24px); }
-
-    /* COUNTDOWN & BACKUP HISTORY */
-    .countdown-banner {
-      background: linear-gradient(135deg, rgba(168, 85, 247, 0.14), rgba(56, 189, 248, 0.12));
-      border: 1px solid rgba(168, 85, 247, 0.4);
-      border-radius: 12px;
-      padding: 12px 15px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    .countdown-timer {
-      font-family: 'Cascadia Code', Consolas, monospace;
-      font-size: 1.25rem;
-      font-weight: 800;
-      color: #e9d5ff;
-    }
-    .history-list {
-      max-height: 215px;
-      overflow-y: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 7px;
-      padding-right: 4px;
-    }
-    .history-item {
-      background: rgba(5, 9, 18, 0.72);
-      border: 1px solid rgba(255, 255, 255, 0.07);
-      border-radius: 10px;
-      padding: 9px 12px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 10px;
-      font-size: 0.82rem;
-    }
-    .history-time {
-      font-family: 'Cascadia Code', Consolas, monospace;
-      color: var(--cyan);
-      font-size: 0.77rem;
-      white-space: nowrap;
-    }
-
-    /* CONSOLE */
-    .console-box {
-      background: #04070e;
-      border: 1px solid #1e293b;
-      border-radius: 12px;
-      height: 340px;
-      overflow-y: auto;
-      padding: 14px;
-      font-family: 'Cascadia Code', Consolas, monospace;
-      font-size: 0.82rem;
-      line-height: 1.52;
-      color: #cbd5e1;
-      white-space: pre-wrap;
-      word-break: break-word;
-    }
-    .log-line { display: block; }
-    .log-err { color: #f87171; }
-    .log-warn { color: #fbbf24; }
-    .log-ok { color: #4ade80; font-weight: 600; }
-    .log-sync { color: #38bdf8; }
-    .log-cmd { color: #c084fc; font-weight: 600; }
-
-    /* STEP-BY-STEP RADMIN GUIDE */
-    .guide-section {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-      margin-bottom: 18px;
-    }
-    details.guide-part {
-      background: rgba(13, 20, 36, 0.92);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      overflow: hidden;
-      transition: border-color 0.15s ease;
-    }
-    details.guide-part[open] { border-color: rgba(56, 189, 248, 0.45); }
-    details.guide-part summary {
-      list-style: none;
-      cursor: pointer;
-      padding: 15px 18px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      font-weight: 700;
-      font-size: 1rem;
-      color: #fff;
-      background: rgba(255, 255, 255, 0.025);
-      user-select: none;
-    }
-    details.guide-part summary::-webkit-details-marker { display: none; }
-    details.guide-part summary:hover { background: rgba(56, 189, 248, 0.08); }
-    .guide-chevron { color: var(--cyan); font-size: 0.85rem; transition: transform 0.2s ease; }
-    details.guide-part[open] .guide-chevron { transform: rotate(180deg); }
-    .guide-body {
-      padding: 14px 18px 18px;
-      border-top: 1px solid rgba(255, 255, 255, 0.06);
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    .step-item {
-      display: flex;
-      gap: 12px;
-      align-items: flex-start;
-      background: rgba(0, 0, 0, 0.28);
-      border: 1px solid rgba(255, 255, 255, 0.06);
-      border-radius: 11px;
-      padding: 11px 14px;
-      font-size: 0.88rem;
-      color: #e2e8f0;
-    }
-    .step-num {
-      background: rgba(56, 189, 248, 0.2);
-      color: #38bdf8;
-      border: 1px solid rgba(56, 189, 248, 0.4);
-      font-weight: 800;
-      font-size: 0.78rem;
-      min-width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      margin-top: 1px;
-    }
-    .step-num.green { background: rgba(34, 197, 94, 0.2); color: #4ade80; border-color: rgba(34, 197, 94, 0.4); }
-    .step-num.purple { background: rgba(168, 85, 247, 0.2); color: #c084fc; border-color: rgba(168, 85, 247, 0.4); }
-    .step-num.amber { background: rgba(245, 158, 11, 0.2); color: #fbbf24; border-color: rgba(245, 158, 11, 0.4); }
-
-    .code-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: #050912;
-      border: 1px solid #283a61;
-      color: #38bdf8;
-      font-family: 'Cascadia Code', Consolas, monospace;
-      font-size: 0.82rem;
-      padding: 2px 8px;
-      border-radius: 6px;
-      word-break: break-all;
-    }
-
-    /* MODALS & TOASTS */
-    .modal-backdrop {
-      position: fixed;
-      inset: 0;
-      background: rgba(2, 6, 16, 0.78);
-      backdrop-filter: blur(5px);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      z-index: 9990;
-      padding: 16px;
-    }
-    .modal-backdrop.open { display: flex; }
-    .modal-box {
-      background: #10192d;
-      border: 1px solid var(--border-strong);
-      border-radius: 16px;
-      max-width: 480px;
-      width: 100%;
-      padding: 22px;
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-      box-shadow: 0 24px 64px rgba(0, 0, 0, 0.72);
-    }
-    .modal-box h3 { font-size: 1.12rem; color: #fff; }
-    .modal-box p { font-size: 0.88rem; color: var(--muted); }
-
-    #toastContainer {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      z-index: 9999;
-      max-width: 390px;
-    }
-    .toast {
-      background: #0f172a;
-      color: #e2e8f0;
-      border: 1px solid var(--cyan);
-      border-left: 4px solid var(--cyan);
-      padding: 12px 16px;
-      border-radius: 11px;
-      font-size: 0.88rem;
-      font-weight: 600;
-      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.65);
-      animation: slideIn 0.18s ease-out;
-    }
-    .toast.success { border-color: var(--green); border-left-color: var(--green); color: #dcfce7; }
-    .toast.error { border-color: var(--red); border-left-color: var(--red); color: #fee2e2; }
-    .toast.warn { border-color: var(--amber); border-left-color: var(--amber); color: #fef3c7; }
-    @keyframes slideIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    footer {
-      text-align: center;
-      color: var(--muted);
-      font-size: 0.82rem;
-      margin-top: 28px;
-      padding-top: 16px;
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-    }
-    footer a { color: var(--cyan); text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
-  </style>
+.overlay{position:fixed;inset:0;background:rgba(3,6,4,.72);backdrop-filter:blur(3px);display:none;align-items:flex-start;justify-content:center;
+  padding:40px 16px;z-index:20;overflow:auto}
+.overlay.show{display:flex}
+.modal{width:100%;max-width:520px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;animation:rise .25s ease both}
+.modal h3{font-family:var(--head);margin:0 0 4px;font-size:20px}
+.modal ol{padding-left:20px;color:var(--muted);font-size:13.5px} .modal ol li{margin:4px 0}
+.modal code{font-family:var(--mono);background:#0e1512;padding:1px 5px;border-radius:5px;color:var(--text)}
+.tabs{display:flex;gap:6px;margin:12px 0 4px}
+.tabs button{flex:1;background:#0e1512;border:1px solid var(--line);color:var(--muted);border-radius:10px;padding:8px;font-weight:600;font-size:13px}
+.tabs button.on{border-color:var(--slime-d);color:var(--text);background:var(--card2)}
+#toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(20px);background:var(--card2);border:1px solid var(--line);
+  padding:10px 16px;border-radius:12px;opacity:0;transition:.25s;z-index:30;max-width:calc(100% - 32px);font-size:14px}
+#toast.show{opacity:1;transform:translateX(-50%)}
+#toast.bad{border-color:#6a2c2c;color:#ffc1bb}
+.hide{display:none!important}
+</style>
 </head>
 <body>
-  <div class="container">
+<div class="wrap">
+  <header>
+    <div class="logo"><i></i><i></i></div>
+    <h1>MODSLIME SERVER<small>NeoForge 1.21.1 · 266 mod · bật/tắt ngay trên web</small></h1>
+    <div class="grow"></div>
+    <div id="statePill" class="pill"><span class="dot"></span><span id="stateText">Đang kiểm tra…</span></div>
+    <button class="iconbtn" id="btnSettings" title="Cài đặt">⚙ Cài đặt</button>
+  </header>
 
-    <!-- ========================================================== -->
-    <!-- LOGIN GATE VIEW (SHARED ACCOUNT / PASSWORD)                -->
-    <!-- ========================================================== -->
-    <div id="loginView">
-      <div class="hero" style="margin-bottom: 18px;">
-        <div class="hero-left">
-          <h1>🟢 NeoForge ModSlime 1.21.1 <span class="badge badge-cyan">Radmin VPN • Lưu World 24/24</span></h1>
-          <p>Bảng điều khiển Bật / Tắt Server Minecraft dùng chung cho cả nhóm qua <strong>Radmin VPN</strong> — tự động lưu dữ liệu 24/24 lên <strong>GitHub</strong> & đồng bộ 266 Mods trên <strong>Google Drive</strong>.</p>
+  <div class="grid">
+    <div class="col">
+      <section class="card">
+        <h2>⚡ Điều khiển</h2>
+        <button class="power" id="btnPower">▶ BẬT SERVER</button>
+        <div class="row" style="margin-top:10px" id="durRow">
+          <span class="sub" style="flex:none">Thời gian mở:</span>
+          <select id="duration" style="flex:1">
+            <option value="120">2 giờ</option><option value="240">4 giờ</option>
+            <option value="340" selected>~5 giờ 40 phút (tối đa)</option>
+          </select>
         </div>
-        <div class="hero-right">
-          <button type="button" class="btn-outline btn-sm" onclick="togglePublicGuide()">
-            📖 Xem Hướng Dẫn Radmin VPN Chi Tiết
-          </button>
+        <ul class="steps hide" id="steps"></ul>
+        <div class="hint" id="powerHint">Bấm bật: GitHub dựng máy chủ, nạp world mới nhất và 266 mod (khoảng 3–5 phút).</div>
+        <div class="row hide" style="margin-top:10px" id="forceRow">
+          <button class="btn sm danger" id="btnCancel">Huỷ phiên ngay (không lưu)</button>
+          <a class="sub" id="runLink" target="_blank" rel="noopener">Xem trên GitHub ↗</a>
         </div>
-      </div>
+      </section>
 
-      <div class="login-shell">
-        <!-- LEFT: LOGIN FORM -->
-        <div class="card border-cyan">
-          <div class="card-header">
-            <h2>🔐 Đăng Nhập Điều Khiển Server</h2>
-            <span id="probeBadge" class="badge badge-amber"><span class="dot pulse"></span> Đang kiểm tra kết nối...</span>
-          </div>
-
-          <form id="loginForm" onsubmit="handleLogin(event)" style="display:flex; flex-direction:column; gap:14px;">
-            <div class="input-group">
-              <label for="apiBaseInput">🌐 Địa chỉ Web Panel của Máy Chủ (Radmin VPN hoặc Localhost)</label>
-              <div class="input-wrap">
-                <input id="apiBaseInput" class="input-field" type="text" placeholder="http://26.x.x.x:8080 hoặc http://localhost:8080" autocomplete="url" />
-                <button type="button" class="btn-outline btn-sm" onclick="probeServerConnection(true)" title="Kiểm tra kết nối tới Web Panel">🔄 Thử</button>
-              </div>
-              <small style="color:var(--muted); font-size:0.78rem;">
-                Tự động điền khi mở từ <code>http://&lt;IP_Radmin&gt;:8080</code> hoặc <code>http://localhost:8080</code>. Nếu mở từ file HTML / GitHub Pages, nhập IP Radmin của Chủ Máy (VD: <code>26.12.34.56:8080</code>).
-              </small>
-            </div>
-
-            <div id="mixedContentWarn" class="alert-box alert-warn hidden">
-              <strong>⚠️ Lưu ý trình duyệt (HTTPS → HTTP):</strong> Bạn đang mở trang qua <code>https://</code> (GitHub Pages), trình duyệt có thể chặn kết nối ngầm tới địa chỉ <code>http://&lt;IP_Radmin&gt;:8080</code>.
-              <div class="btn-row" style="margin-top:8px;">
-                <a id="directOpenBtn" href="#" class="btn-link btn-amber btn-sm">🔗 Mở thẳng trang http://...:8080</a>
-              </div>
-            </div>
-
-            <div class="input-group">
-              <label for="loginUsername">👤 Tài khoản chung</label>
-              <input id="loginUsername" class="input-field" type="text" value="modslime" placeholder="modslime" required autocomplete="username" />
-            </div>
-
-            <div class="input-group">
-              <label for="loginPassword">🔑 Mật khẩu chung</label>
-              <div class="input-wrap">
-                <input id="loginPassword" class="input-field" type="password" placeholder="Nhập mật khẩu (mặc định: modslime2026)" required autocomplete="current-password" style="padding-right:46px;" />
-                <button type="button" class="pw-toggle" onclick="togglePasswordVisibility('loginPassword', this)" title="Hiện/ẩn mật khẩu">👁</button>
-              </div>
-            </div>
-
-            <div id="loginErrorBox" class="alert-box alert-error hidden"></div>
-
-            <button id="loginSubmitBtn" type="submit" class="btn-green btn-lg btn-full">
-              🔓 ĐĂNG NHẬP BẢNG ĐIỀU KHIỂN
-            </button>
-          </form>
+      <section class="card">
+        <h2>🎮 Vào game</h2>
+        <div class="addr"><span id="mcAddr">—</span><button class="btn sm" id="btnCopy">Chép</button></div>
+        <div class="hint" id="addrHint">Minecraft Java 1.21.1 + bộ mod ModSlime → Multiplayer → Add Server.</div>
+        <div class="stats" style="margin-top:12px">
+          <div class="stat"><small>Người chơi</small><b id="sPlayers">—</b></div>
+          <div class="stat"><small>Đã chạy</small><b id="sUptime">—</b></div>
+          <div class="stat"><small>RAM Java</small><b id="sRam">—</b></div>
+          <div class="stat"><small>Tự tắt sau</small><b id="sLeft">—</b></div>
         </div>
+        <div class="players" id="playerList" style="margin-top:10px"></div>
+      </section>
 
-        <!-- RIGHT: SHARED ACCESS INSTRUCTIONS FOR FRIENDS -->
-        <div class="card border-green">
-          <div class="card-header">
-            <h2>👥 Nhiều Người Cùng Bật / Tắt 1 Server</h2>
-            <span class="badge badge-green">Chung Tài Khoản</span>
-          </div>
-
-          <div class="alert-box alert-info">
-            Cả nhóm dùng <strong>chung 1 Tài khoản & Mật khẩu</strong> để ai rảnh cũng có thể tự bật Server chơi hoặc tắt lưu World mà không cần chờ Chủ Máy thao tác!
-            <div style="margin-top:8px; display:flex; flex-wrap:wrap; gap:8px;">
-              <span class="code-pill">Tài khoản mặc định: <strong>modslime</strong></span>
-              <span class="code-pill">Mật khẩu mặc định: <strong>modslime2026</strong></span>
-            </div>
-          </div>
-
-          <div style="display:flex; flex-direction:column; gap:9px;">
-            <div class="step-item">
-              <span class="step-num green">1</span>
-              <div><strong>Chủ Máy (Host):</strong> Mở Radmin VPN, chạy <span class="code-pill">web-panel\Mo-Cong-Firewall-Radmin.bat</span> (Run as Administrator) lần đầu, rồi mở <span class="code-pill">web-panel\Start-Web-Panel.bat</span>.</div>
-            </div>
-            <div class="step-item">
-              <span class="step-num">2</span>
-              <div><strong>Bạn bè điều khiển từ xa:</strong> Vào chung phòng <strong>Radmin VPN</strong> → mở trình duyệt nhập <span class="code-pill">http://&lt;IP_Radmin&gt;:8080</span> (hoặc mở file <span class="code-pill">ModSlime-Server-Control.html</span> rồi nhập địa chỉ trên) → đăng nhập bằng tài khoản chung.</div>
-            </div>
-            <div class="step-item">
-              <span class="step-num purple">3</span>
-              <div><strong>Tự động lưu 24/24:</strong> Khi server mở, hệ thống tự động lưu World lên <strong>GitHub</strong> định kỳ (mặc định 10 phút/lần) và lưu lần cuối khi tắt — không bao giờ mất đồ hay kỹ năng Tensura!</div>
-            </div>
-          </div>
-
-          <div class="btn-row" style="margin-top:auto;">
-            <a class="btn-link btn-outline btn-sm" style="flex:1;" href="https://drive.google.com/file/d/1eKZVfJSo0c49VhZMonpZE5kURegY0V16/view?usp=sharing" target="_blank" rel="noopener">
-              📥 Tải 266 Mods (Google Drive)
-            </a>
-            <a class="btn-link btn-outline btn-sm" style="flex:1;" href="https://github.com/rxtuteam-a11y/NeoForge-ModSlime" target="_blank" rel="noopener">
-              📂 Kho World GitHub
-            </a>
-          </div>
+      <section class="card">
+        <h2>💾 Lưu trữ</h2>
+        <div class="row">
+          <button class="btn" id="btnGit">Lưu lên GitHub</button>
+          <button class="btn" id="btnDrive">Lưu lên Google Drive</button>
         </div>
-      </div>
-
-      <!-- PUBLIC GUIDE PREVIEW CONTAINER ON LOGIN SCREEN -->
-      <div id="publicGuideSlot" class="hidden" style="margin-top: 22px;"></div>
+        <div class="hint" id="syncInfo">World tự lưu lên GitHub mỗi 10 phút và khi tắt server.</div>
+        <ul class="hist" id="hist"></ul>
+      </section>
     </div>
 
-    <!-- ========================================================== -->
-    <!-- AUTHENTICATED DASHBOARD VIEW                               -->
-    <!-- ========================================================== -->
-    <div id="dashboardView" class="hidden">
-      <!-- TOP HERO -->
-      <div class="hero">
-        <div class="hero-left">
-          <h1>🟢 NeoForge ModSlime 1.21.1 — Bảng Điều Khiển Server</h1>
-          <p>
-            Đang kết nối: <span id="connectedHostPill" class="code-pill">http://localhost:8080</span>
-            • Tài khoản: <strong id="loggedUserLabel" style="color:#4ade80;">modslime</strong>
-          </p>
-        </div>
-        <div class="hero-right">
-          <div id="serverStatusPill" class="badge badge-red" style="font-size:0.9rem; padding:7px 15px;">
-            <span class="dot"></span>
-            <span id="serverStatusText">🔴 ĐANG TẮT</span>
-          </div>
-          <div class="btn-row">
-            <button type="button" class="btn-outline btn-sm" onclick="openChangePassModal()">🔑 Đổi Mật Khẩu Chung</button>
-            <button type="button" class="btn-danger-outline btn-sm" onclick="handleLogout()">🚪 Đăng Xuất</button>
-          </div>
-        </div>
+    <section class="card console">
+      <div class="bar">
+        <h2>🖥 Console</h2>
+        <div class="grow"></div>
+        <label class="sub" style="margin:0;display:flex;gap:6px;align-items:center"><input type="checkbox" id="autoscroll" checked> Tự cuộn</label>
+        <button class="btn sm" id="btnClear">Xoá màn hình</button>
+        <button class="btn sm hide" id="btnLogin">Đăng nhập panel</button>
       </div>
-
-      <!-- NAVIGATION TABS -->
-      <div class="nav-bar">
-        <button type="button" class="nav-tab active" data-tab="all" onclick="switchTab('all', this)">📋 Tổng Quan Đầy Đủ</button>
-        <button type="button" class="nav-tab" data-tab="control" onclick="switchTab('control', this)">🎮 Điều Khiển & Radmin VPN</button>
-        <button type="button" class="nav-tab" data-tab="autosave" onclick="switchTab('autosave', this)">☁️ Lưu Trữ 24/24 & Kho File</button>
-        <button type="button" class="nav-tab" data-tab="console" onclick="switchTab('console', this)">💻 Console & Lệnh Nhanh</button>
-        <button type="button" class="nav-tab" data-tab="guide" onclick="switchTab('guide', this)">📖 Hướng Dẫn Radmin VPN (Chi Tiết A–Z)</button>
-      </div>
-
-      <!-- SECTION 1: CONTROL & RADMIN VPN -->
-      <div id="secControl" class="grid-2">
-        <!-- CARD A: SERVER CONTROLS -->
-        <div class="card border-green">
-          <div class="card-header">
-            <h2>🎮 Bật / Tắt & Đồng Bộ Server</h2>
-            <span id="readyStateBadge" class="badge badge-red">Chưa chạy</span>
-          </div>
-
-          <div class="btn-row">
-            <button id="btnStart" type="button" class="btn-green btn-lg" style="flex:1;" onclick="triggerAction('/api/start', 'Đang gửi lệnh bật Server NeoForge ModSlime...')">
-              ▶ BẬT SERVER
-            </button>
-            <button id="btnStop" type="button" class="btn-red btn-lg" style="flex:1;" onclick="triggerAction('/api/stop', 'Đang gửi lệnh lưu World & tắt Server an toàn...')">
-              ⏹ TẮT & LƯU SERVER
-            </button>
-          </div>
-
-          <div class="btn-row">
-            <button id="btnPullWorld" type="button" class="btn-blue" style="flex:1;" onclick="triggerAction('/api/pull-world', 'Đang tải bản World mới nhất từ GitHub...')">
-              ⬇ TẢI WORLD MỚI NHẤT TỪ GITHUB
-            </button>
-            <button id="btnBackupNow" type="button" class="btn-purple" style="flex:1;" onclick="triggerAction('/api/backup', 'Đang chạy save-all flush & đẩy World lên GitHub...')">
-              ☁️ LƯU WORLD NGAY
-            </button>
-          </div>
-
-          <button id="btnShutdownPanel" type="button" class="btn-danger-outline btn-full" onclick="confirmShutdownPanel()">
-            🔌 TẮT HẲN WEB PANEL (Tắt Server, Lưu GitHub & Giải Phóng 100% RAM)
-          </button>
-
-          <!-- LIVE METRICS -->
-          <div class="metrics-grid">
-            <div class="metric-box">
-              <span class="metric-label">Trạng Thái</span>
-              <span id="metricState" class="metric-val" style="color:#f87171;">ĐANG TẮT</span>
-            </div>
-            <div class="metric-box">
-              <span class="metric-label">Dung Lượng World</span>
-              <span id="metricWorldSize" class="metric-val">-- MB</span>
-            </div>
-            <div class="metric-box">
-              <span class="metric-label">Thời Gian Mở</span>
-              <span id="metricUptime" class="metric-val">00:00:00</span>
-            </div>
-            <div class="metric-box">
-              <span class="metric-label">RAM / Online</span>
-              <span id="metricRamPlayers" class="metric-val">0 người</span>
-            </div>
-          </div>
-
-          <!-- ACTIVE PLAYERS -->
-          <div class="players-wrap">
-            <span style="color:var(--muted); font-weight:600;">👥 Người chơi đang online:</span>
-            <div id="playersList" style="display:flex; flex-wrap:wrap; gap:6px; align-items:center;">
-              <span style="color:var(--muted);">Chưa có người chơi trong game</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- CARD B: RADMIN VPN CONNECTION HUB -->
-        <div class="card border-cyan">
-          <div class="card-header">
-            <h2>🌐 Địa Chỉ Radmin VPN & Mời Bạn Bè</h2>
-            <span id="radminDetectBadge" class="badge badge-cyan">Đang dò Radmin IP...</span>
-          </div>
-
-          <div class="addr-box featured">
-            <div class="addr-meta">
-              <span class="addr-label">🎮 Địa chỉ vào Game Minecraft (Radmin VPN — Cổng 25565)</span>
-              <span id="radminMcText" class="addr-value" style="color:#4ade80;">Chưa phát hiện IP Radmin (26.x.x.x)</span>
-            </div>
-            <button type="button" class="btn-green btn-sm" onclick="copyDynamicValue('radminMcText', 'IP Minecraft Radmin')">📋 Copy IP</button>
-          </div>
-
-          <div class="addr-box featured-cyan">
-            <div class="addr-meta">
-              <span class="addr-label">🔗 Link Web Panel gửi cho Bạn Bè cùng Bật/Tắt Server (Cổng 8080)</span>
-              <span id="radminWebText" class="addr-value" style="color:#38bdf8;">http://&lt;IP_Radmin&gt;:8080</span>
-            </div>
-            <button type="button" class="btn-blue btn-sm" onclick="copyDynamicValue('radminWebText', 'Link Web Panel Radmin')">📋 Copy Link</button>
-          </div>
-
-          <div class="addr-box">
-            <div class="addr-meta">
-              <span class="addr-label">🏠 Địa chỉ LAN / Chơi ngay trên máy Chủ</span>
-              <span id="lanMcText" class="addr-value" style="font-size:0.9rem;">localhost:25565</span>
-            </div>
-            <button type="button" class="btn-outline btn-sm" onclick="copyText('localhost:25565')">📋 Copy localhost</button>
-          </div>
-
-          <div class="btn-row">
-            <button type="button" class="btn-purple btn-full" onclick="copyFriendInviteMessage()">
-              📨 Copy Tin Nhắn Mời Bạn Bè Đầy Đủ (IP Game + Link Web + Tài Khoản Chung)
-            </button>
-          </div>
-
-          <div id="radminHintBox" class="alert-box alert-info" style="font-size:0.82rem;">
-            💡 <strong>Mẹo nhanh:</strong> Nếu bạn bè không kết nối được vào cổng <code>8080</code> hoặc <code>25565</code>, Chủ Máy hãy chuột phải chạy <span class="code-pill">web-panel\Mo-Cong-Firewall-Radmin.bat</span> bằng quyền <strong>Run as administrator</strong>.
-          </div>
-        </div>
-      </div>
-
-      <!-- SECTION 2: 24/7 AUTO-SAVE & CLOUD STORAGE -->
-      <div id="secAutosave" class="grid-2">
-        <!-- CARD C: 24/7 CLOUD AUTO-SAVE -->
-        <div class="card border-purple">
-          <div class="card-header">
-            <h2>☁️ Lưu Trữ Dữ Liệu 24/24 Lên GitHub</h2>
-            <span id="autosaveStateBadge" class="badge badge-green">Đang BẬT 24/24</span>
-          </div>
-
-          <div class="switch-row">
-            <div>
-              <div style="font-weight:700; color:#fff; font-size:0.94rem;">Tự động lưu World 24/24 khi Server mở</div>
-              <div style="color:var(--muted); font-size:0.8rem;">Tự chạy <code>save-all flush</code> và đẩy tiến trình chơi lên GitHub theo chu kỳ.</div>
-            </div>
-            <label class="switch" title="Bật/Tắt tự động lưu 24/24">
-              <input id="autosaveToggle" type="checkbox" checked onchange="markAutosaveDirty()" />
-              <span class="slider"></span>
-            </label>
-          </div>
-
-          <div style="display:flex; gap:10px; flex-wrap:wrap; align-items:flex-end;">
-            <div class="input-group" style="flex:1; min-width:170px;">
-              <label for="autosaveIntervalSelect">⏱ Chu kỳ tự động lưu lên GitHub</label>
-              <select id="autosaveIntervalSelect" class="select-field" onchange="markAutosaveDirty()">
-                <option value="5">Mỗi 5 phút (Siêu an toàn)</option>
-                <option value="10" selected>Mỗi 10 phút (Khuyên dùng)</option>
-                <option value="15">Mỗi 15 phút</option>
-                <option value="30">Mỗi 30 phút</option>
-              </select>
-            </div>
-            <button id="btnSaveAutosave" type="button" class="btn-purple" onclick="saveAutosaveConfig()">
-              💾 Lưu Cài Đặt
-            </button>
-          </div>
-
-          <div class="countdown-banner">
-            <div>
-              <div style="font-size:0.78rem; color:#cbd5e1; font-weight:600;">⏳ Đếm ngược tới lần tự động lưu tiếp theo</div>
-              <div id="lastSyncSummary" style="font-size:0.8rem; color:var(--muted); margin-top:2px;">Lần lưu gần nhất: Chưa có trong phiên này</div>
-            </div>
-            <div id="autosaveCountdown" class="countdown-timer">--:--</div>
-          </div>
-
-          <div>
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
-              <span style="font-size:0.84rem; font-weight:700; color:#cbd5e1;">📜 Nhật Ký Tự Động Lưu Lên GitHub (Live)</span>
-              <span id="backupCountLabel" style="font-size:0.77rem; color:var(--muted);">0 bản ghi</span>
-            </div>
-            <div id="backupHistoryList" class="history-list">
-              <div class="history-item" style="color:var(--muted);">Chưa có lịch sử sao lưu trong phiên này. Bấm "☁️ LƯU WORLD NGAY" hoặc bật Server để tự động sao lưu 24/24.</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- CARD D: GITHUB & GOOGLE DRIVE REPOSITORIES -->
-        <div class="card border-cyan">
-          <div class="card-header">
-            <h2>📦 Kho Lưu Trữ Đám Mây (GitHub & Google Drive)</h2>
-            <span class="badge badge-cyan">Bảo Vệ Kép</span>
-          </div>
-
-          <p style="color:var(--muted); font-size:0.88rem;">
-            Toàn bộ hệ thống NeoForge ModSlime được bảo vệ song song trên 2 đám mây: <strong>GitHub</strong> tự động lưu <code>world/</code>, <code>config/</code>, túi đồ, 575 kỹ năng Tensura & nhiệm vụ FTB Quests 24/24; <strong>Google Drive</strong> lưu bản gốc Full Server + 266 Mods (1.06 GB).
-          </p>
-
-          <div style="display:flex; flex-direction:column; gap:10px;">
-            <a class="btn-link btn-blue btn-full" href="https://drive.google.com/file/d/1eKZVfJSo0c49VhZMonpZE5kURegY0V16/view?usp=sharing" target="_blank" rel="noopener">
-              📥 Tải Full Server + 266 Mods (Google Drive — 1.06 GB)
-            </a>
-            <a class="btn-link btn-green btn-full" href="https://github.com/rxtuteam-a11y/NeoForge-ModSlime/commits/main" target="_blank" rel="noopener">
-              🕒 Xem Lịch Sử Tự Động Lưu World Trên GitHub (Commits)
-            </a>
-            <a class="btn-link btn-outline btn-full" href="https://github.com/rxtuteam-a11y/NeoForge-ModSlime" target="_blank" rel="noopener">
-              📂 Mở Kho Lưu Trữ GitHub (rxtuteam-a11y/NeoForge-ModSlime)
-            </a>
-            <a class="btn-link btn-outline btn-full" href="https://github.com/rxtuteam-a11y/NeoForge-ModSlime/archive/refs/heads/main.zip" target="_blank" rel="noopener">
-              🌍 Tải File .ZIP World & Config Mới Nhất Từ GitHub
-            </a>
-          </div>
-
-          <div class="alert-box alert-success" style="font-size:0.83rem; margin-top:auto;">
-            <strong>✅ An toàn khi đổi Chủ Máy (Chuyển Host):</strong><br />
-            Khi Chủ Máy hiện tại tắt Server, World mới nhất tự động đẩy lên GitHub. Bạn bè ở máy khác chỉ cần bấm nút <strong>⬇ TẢI WORLD MỚI NHẤT TỪ GITHUB</strong> rồi bấm <strong>▶ BẬT SERVER</strong> là chơi tiếp y nguyên toàn bộ tiến độ!
-          </div>
-        </div>
-      </div>
-
-      <!-- SECTION 3: LIVE CONSOLE & QUICK COMMANDS -->
-      <div id="secConsole" class="card" style="margin-bottom: 18px;">
-        <div class="card-header">
-          <h2>💻 Server Console Thời Gian Thực & Lệnh Nhanh</h2>
-          <div class="btn-row">
-            <label style="display:inline-flex; align-items:center; gap:6px; font-size:0.82rem; color:var(--muted); cursor:pointer;">
-              <input id="autoScrollChk" type="checkbox" checked /> Tự cuộn xuống cuối
-            </label>
-            <button type="button" class="btn-outline btn-xs" onclick="scrollConsoleBottom()">⬇ Xuống cuối</button>
-          </div>
-        </div>
-
-        <div class="btn-row">
-          <button type="button" class="btn-outline btn-sm" onclick="sendQuickCommand('chunky center 0 -550')">📍 chunky center 0 -550</button>
-          <button type="button" class="btn-outline btn-sm" onclick="sendQuickCommand('chunky radius 2000')">🗺 chunky radius 2000</button>
-          <button type="button" class="btn-outline btn-sm" onclick="sendQuickCommand('chunky start')">▶ chunky start</button>
-          <button type="button" class="btn-outline btn-sm" onclick="sendQuickCommand('chunky pause')">⏸ chunky pause</button>
-          <button type="button" class="btn-outline btn-sm" onclick="sendQuickCommand('spark tps')">⚡ spark tps</button>
-          <button type="button" class="btn-outline btn-sm" onclick="sendQuickCommand('list')">👥 list</button>
-          <button type="button" class="btn-outline btn-sm" onclick="sendQuickCommand('save-all flush')">💾 save-all flush</button>
-          <button type="button" class="btn-amber btn-sm" onclick="openOpModal()">👑 Cấp quyền OP (op ...)</button>
-        </div>
-
-        <div id="consoleBox" class="console-box">Đang tải nhật ký Console từ Server...</div>
-
-        <form class="input-wrap" onsubmit="handleSendCommand(event)">
-          <input id="cmdInput" class="input-field" type="text" placeholder="Nhập lệnh Minecraft Server (VD: op TenNguoiChoi, time set day, gamerule keepInventory true, spark tps)..." autocomplete="off" />
-          <button type="submit" class="btn-blue">Gửi Lệnh</button>
-        </form>
-      </div>
-
-      <!-- SECTION 4: DEDICATED STEP-BY-STEP RADMIN VPN GUIDE -->
-      <div id="dashboardGuideSlot"></div>
-    </div>
-
-    <!-- ========================================================== -->
-    <!-- REUSABLE DETAILED RADMIN VPN GUIDE TEMPLATE                -->
-    <!-- ========================================================== -->
-    <div id="secGuide" class="card border-cyan hidden">
-      <div class="card-header">
-        <h2>📖 Hướng Dẫn Mở Server Bằng Radmin VPN Chi Tiết Từng Bước (Không Bỏ Bước)</h2>
-        <div class="btn-row">
-          <button type="button" class="btn-outline btn-xs" onclick="setAllGuideParts(true)">📂 Mở tất cả</button>
-          <button type="button" class="btn-outline btn-xs" onclick="setAllGuideParts(false)">📁 Thu gọn</button>
-        </div>
-      </div>
-
-      <p style="color:var(--muted); font-size:0.89rem;">
-        Làm đúng lần lượt từng bước dưới đây để Chủ Máy mở server mượt mà và Bạn Bè có thể vừa <strong>điều khiển Bật/Tắt Server từ xa</strong>, vừa <strong>vào chơi Minecraft 266 Mods</strong> qua mạng ảo miễn phí <strong>Radmin VPN</strong>.
-      </p>
-
-      <div class="guide-section">
-        <!-- PHẦN 1 -->
-        <details class="guide-part" open>
-          <summary>
-            <span>🛠️ Phần 1: Chuẩn bị cho Chủ Máy (Host) lần đầu tiên</span>
-            <span class="guide-chevron">▼</span>
-          </summary>
-          <div class="guide-body">
-            <div class="step-item">
-              <span class="step-num">1.1</span>
-              <div>
-                <strong>Tải và cài đặt Radmin VPN miễn phí:</strong> Truy cập <a href="https://www.radmin-vpn.com/" target="_blank" rel="noopener" style="color:#38bdf8; font-weight:600;">https://www.radmin-vpn.com/</a> → bấm <strong>Free Download</strong> → chạy file cài đặt và bấm Next đến khi hoàn tất.
-              </div>
-            </div>
-            <div class="step-item">
-              <span class="step-num">1.2</span>
-              <div>
-                <strong>Tạo mạng Radmin VPN riêng cho nhóm:</strong> Mở phần mềm <strong>Radmin VPN</strong> → bấm nút nguồn <strong>Bật (Power)</strong> nếu đang tắt → trên thanh menu chọn <strong>Network (Mạng)</strong> → chọn <strong>Create network (Tạo mạng mới)</strong> → đặt <em>Tên mạng</em> (VD: <span class="code-pill">ModSlime-Team</span>) và <em>Mật khẩu</em> (VD: <span class="code-pill">12345678</span>) → bấm <strong>Create</strong>.
-              </div>
-            </div>
-            <div class="step-item">
-              <span class="step-num">1.3</span>
-              <div>
-                <strong>Xem địa chỉ IPv4 Radmin VPN của bạn:</strong> Ngay dòng đầu tiên bên cạnh tên máy tính trong cửa sổ Radmin VPN sẽ hiện địa chỉ dạng <span class="code-pill" data-dyn-ip>26.x.x.x</span>. Đây là IP mạng ảo để bạn bè kết nối cả Web Panel lẫn Minecraft.
-              </div>
-            </div>
-            <div class="step-item">
-              <span class="step-num amber">1.4</span>
-              <div>
-                <strong>Mở cổng Windows Firewall (Cực kỳ quan trọng — làm 1 lần duy nhất):</strong> Mở thư mục <span class="code-pill">c:\Users\phankhang\Desktop\NeoForge-ModSlime\web-panel\</span> → chuột phải vào file <span class="code-pill">Mo-Cong-Firewall-Radmin.bat</span> → chọn <strong>Run as administrator (Chạy với quyền Quản trị viên)</strong>. Script sẽ tự động mở cổng TCP/UDP <strong>25565</strong> (Minecraft) và <strong>8080</strong> (Web Panel) để bạn bè kết nối không bị Windows chặn.
-                <div style="margin-top:6px;">
-                  <button type="button" class="btn-outline btn-xs" onclick="copyText('c:\\Users\\phankhang\\Desktop\\NeoForge-ModSlime\\web-panel\\Mo-Cong-Firewall-Radmin.bat')">📋 Copy đường dẫn file Firewall</button>
-                </div>
-              </div>
-            </div>
-            <div class="step-item">
-              <span class="step-num green">1.5</span>
-              <div>
-                <strong>Khởi chạy Web Control Panel:</strong> Nhấp đúp mở file <span class="code-pill">web-panel\Start-Web-Panel.bat</span>. Màn hình đen nhỏ sẽ chạy nền và tự mở trình duyệt tại <span class="code-pill">http://localhost:8080</span> (đồng thời mở sẵn cho bạn bè truy cập tại <span class="code-pill" data-dyn-web>http://26.x.x.x:8080</span>).
-                <div style="margin-top:6px;">
-                  <button type="button" class="btn-outline btn-xs" onclick="copyText('c:\\Users\\phankhang\\Desktop\\NeoForge-ModSlime\\web-panel\\Start-Web-Panel.bat')">📋 Copy đường dẫn Start-Web-Panel.bat</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </details>
-
-        <!-- PHẦN 2 -->
-        <details class="guide-part" open>
-          <summary>
-            <span>👥 Phần 2: Cách Bạn Bè cùng điều khiển Bật / Tắt Server từ xa qua Radmin VPN</span>
-            <span class="guide-chevron">▼</span>
-          </summary>
-          <div class="guide-body">
-            <div class="step-item">
-              <span class="step-num">2.1</span>
-              <div>
-                <strong>Cài đặt Radmin VPN:</strong> Bạn bè tải và cài <strong>Radmin VPN</strong> từ <a href="https://www.radmin-vpn.com/" target="_blank" rel="noopener" style="color:#38bdf8; font-weight:600;">radmin-vpn.com</a> (hoàn toàn miễn phí, không cần tạo tài khoản).
-              </div>
-            </div>
-            <div class="step-item">
-              <span class="step-num">2.2</span>
-              <div>
-                <strong>Tham gia mạng của Chủ Máy:</strong> Mở Radmin VPN → chọn menu <strong>Network (Mạng)</strong> → chọn <strong>Join network (Tham gia mạng có sẵn)</strong> → nhập đúng <strong>Tên mạng</strong> và <strong>Mật khẩu mạng</strong> do Chủ Máy gửi → bấm <strong>Join</strong>. Chờ thấy tên Chủ Máy hiện dấu chấm <strong>xanh lá</strong> là đã thông mạng.
-              </div>
-            </div>
-            <div class="step-item">
-              <span class="step-num">2.3</span>
-              <div>
-                <strong>Mở trang Web Điều Khiển Server:</strong> Có 2 cách đều dùng được:
-                <ul style="margin:6px 0 0 18px; display:flex; flex-direction:column; gap:4px;">
-                  <li><strong>Cách nhanh nhất (Khuyên dùng):</strong> Mở Chrome/Edge và gõ thẳng link <span class="code-pill" data-dyn-web>http://26.x.x.x:8080</span> vào thanh địa chỉ.</li>
-                  <li><strong>Cách mở từ file tải về / Website chính thức:</strong> Mở file <span class="code-pill">ModSlime-Server-Control.html</span> (hoặc trang web GitHub Pages), ở ô <em>Địa chỉ Web Panel</em> nhập <span class="code-pill" data-dyn-web>http://26.x.x.x:8080</span>.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="step-item">
-              <span class="step-num green">2.4</span>
-              <div>
-                <strong>Đăng nhập bằng Tài khoản & Mật khẩu chung:</strong> Nhập tài khoản <span class="code-pill">modslime</span> và mật khẩu <span class="code-pill">modslime2026</span> (hoặc mật khẩu mới nếu Chủ Máy đã đổi) → bấm <strong>🔓 ĐĂNG NHẬP BẢNG ĐIỀU KHIỂN</strong>.
-              </div>
-            </div>
-            <div class="step-item">
-              <span class="step-num green">2.5</span>
-              <div>
-                <strong>Bật / Tắt Server thoải mái:</strong> Bấm <strong>▶ BẬT SERVER</strong>, đợi khoảng 30–60 giây cho đến khi trạng thái chuyển sang <strong>🟢 ĐANG MỞ</strong> (Console hiện dòng <span class="code-pill">Done (...s)!</span>) là cả nhóm vào chiến! Khi chơi xong nhớ bấm <strong>⏹ TẮT & LƯU SERVER</strong> để lưu toàn bộ tiến trình lên GitHub.
-              </div>
-            </div>
-          </div>
-        </details>
-
-        <!-- PHẦN 3 -->
-        <details class="guide-part" open>
-          <summary>
-            <span>🎮 Phần 3: Cách vào chơi Minecraft (266 Mods NeoForge 1.21.1) bằng Radmin VPN</span>
-            <span class="guide-chevron">▼</span>
-          </summary>
-          <div class="guide-body">
-            <div class="step-item">
-              <span class="step-num">3.1</span>
-              <div>
-                <strong>Kiểm tra phiên bản Minecraft & Modpack khớp 100% Server:</strong>
-                <ul style="margin:6px 0 0 18px; display:flex; flex-direction:column; gap:4px;">
-                  <li>Dùng <strong>Minecraft Java Edition 1.21.1</strong>, loader <strong>NeoForge 21.1.267</strong>, chạy bằng <strong>Java 21</strong> (nên cấp 4–6 GB RAM trong Launcher).</li>
-                  <li>Cài đúng <strong>bộ 266 Mods ModSlime</strong> (tải từ link <a href="https://drive.google.com/file/d/1eKZVfJSo0c49VhZMonpZE5kURegY0V16/view?usp=sharing" target="_blank" rel="noopener" style="color:#38bdf8;">Google Drive 1.06 GB</a>). Lưu ý: bỏ <code>spear-backport</code>, giữ <code>pondererlib</code>, <code>mebahel-elder-scrolls-core</code> và dùng bản vá <code>tensura_tno-1.0.6.5-modslime-fix.jar</code>.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="step-item">
-              <span class="step-num">3.2</span>
-              <div>
-                <strong>Kiểm tra Radmin VPN & trạng thái Server:</strong> Đảm bảo phần mềm Radmin VPN đang bật (thấy Chủ Máy xanh lá) và trên Web Panel hiện trạng thái <strong>🟢 ĐANG MỞ</strong>.
-              </div>
-            </div>
-            <div class="step-item">
-              <span class="step-num">3.3</span>
-              <div>
-                <strong>Thêm Server trong Minecraft:</strong> Mở Minecraft → chọn <strong>Multiplayer (Chơi mạng)</strong> → bấm <strong>Add Server (Thêm máy chủ)</strong>:
-                <ul style="margin:6px 0 0 18px; display:flex; flex-direction:column; gap:4px;">
-                  <li><strong>Server Name:</strong> <span class="code-pill">ModSlime Radmin</span></li>
-                  <li><strong>Server Address (Bạn bè):</strong> <span class="code-pill" data-dyn-mc>26.x.x.x:25565</span></li>
-                  <li><strong>Server Address (Nếu chơi ngay trên máy Chủ):</strong> <span class="code-pill">localhost:25565</span></li>
-                </ul>
-                Sau đó bấm <strong>Done</strong> → nhấp đúp chọn <strong>Join Server</strong>!
-              </div>
-            </div>
-            <div class="step-item">
-              <span class="step-num amber">3.4</span>
-              <div>
-                <strong>Lưu ý cực kỳ quan trọng khi vừa vào game (Tensura ModSlime):</strong> Trong <strong>5–10 giây đầu tiên</strong> khi mới kết nối vào thế giới, server sẽ đồng bộ <strong>575 kỹ năng Tensura</strong>, bảng nhiệm vụ FTB Quests và dữ liệu Waystones về máy bạn. Hãy đứng yên đợi tải xong hoàn toàn, <strong>không bấm thoát game đột ngột</strong> trong lúc đang nạp!
-              </div>
-            </div>
-          </div>
-        </details>
-
-        <!-- PHẦN 4 -->
-        <details class="guide-part" open>
-          <summary>
-            <span>☁️ Phần 4: Cơ chế Lưu World 24/24 & Chuyển Host cho bạn bè không mất dữ liệu</span>
-            <span class="guide-chevron">▼</span>
-          </summary>
-          <div class="guide-body">
-            <div class="step-item">
-              <span class="step-num purple">4.1</span>
-              <div>
-                <strong>Tự động lưu 24/24 lên GitHub khi Server đang mở:</strong> Chỉ cần bật công tắc <em>Tự động lưu 24/24</em> ở trên, hệ thống sẽ tự động chạy <code>save-all flush</code> mỗi <strong>10 phút</strong> (tùy chỉnh được 5/10/15/30 phút) và đẩy toàn bộ thư mục <code>world/</code>, <code>config/</code>, <code>ops.json</code>, <code>whitelist.json</code> lên kho GitHub <a href="https://github.com/rxtuteam-a11y/NeoForge-ModSlime/commits/main" target="_blank" rel="noopener" style="color:#38bdf8;">rxtuteam-a11y/NeoForge-ModSlime</a>. Khi bấm <strong>⏹ TẮT & LƯU SERVER</strong>, hệ thống tiếp tục lưu lần cuối 100% an toàn.
-              </div>
-            </div>
-            <div class="step-item">
-              <span class="step-num purple">4.2</span>
-              <div>
-                <strong>Cách chuyển quyền làm Chủ Máy (Host) sang máy Bạn Bè khi Chủ Máy cũ nghỉ:</strong>
-                <ol style="margin:6px 0 0 18px; display:flex; flex-direction:column; gap:5px;">
-                  <li><strong>Chủ Máy cũ:</strong> Bấm <strong>⏹ TẮT & LƯU SERVER</strong> (hoặc <strong>☁️ LƯU WORLD NGAY</strong>) và đợi Nhật ký báo <em>Lưu lên GitHub thành công</em>.</li>
-                  <li><strong>Bạn bè (Chủ Máy mới — lần đầu cài):</strong> Tải bộ Full Server + 266 Mods từ <a href="https://drive.google.com/file/d/1eKZVfJSo0c49VhZMonpZE5kURegY0V16/view?usp=sharing" target="_blank" rel="noopener" style="color:#38bdf8;">Google Drive</a> và kết nối thư mục với kho GitHub <span class="code-pill">rxtuteam-a11y/NeoForge-ModSlime</span>.</li>
-                  <li><strong>Bạn bè mở Web Panel:</strong> Chạy <span class="code-pill">web-panel\Start-Web-Panel.bat</span> → đăng nhập → khi Server đang tắt, bấm nút <strong>⬇ TẢI WORLD MỚI NHẤT TỪ GITHUB</strong> để kéo bản World mới nhất về máy chỉ trong 1 cú click.</li>
-                  <li><strong>Bật Server & chơi tiếp:</strong> Bấm <strong>▶ BẬT SERVER</strong> và copy IP Radmin mới của mình gửi cả nhóm — toàn bộ nhà cửa, đồ đạc, kỹ năng Tensura giữ nguyên 100%!</li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </details>
-
-        <!-- PHẦN 5 -->
-        <details class="guide-part" open>
-          <summary>
-            <span>🧯 Phần 5: Xử lý lỗi thường gặp & Mẹo chống lag bằng Chunky</span>
-            <span class="guide-chevron">▼</span>
-          </summary>
-          <div class="guide-body">
-            <div class="step-item">
-              <span class="step-num amber">5.1</span>
-              <div>
-                <strong>Lỗi: Bạn bè không vào được Web Panel (<code>:8080</code>) hoặc Minecraft báo <code>Connection timed out / getsockopt</code>:</strong>
-                <ul style="margin:6px 0 0 18px; display:flex; flex-direction:column; gap:4px;">
-                  <li>Kiểm tra cả 2 máy đã bật Radmin VPN và đang nằm chung 1 phòng (đèn báo xanh lá, không bị gạch đỏ).</li>
-                  <li>Trên máy Chủ, chuột phải file <span class="code-pill">web-panel\Mo-Cong-Firewall-Radmin.bat</span> → chọn <strong>Run as administrator</strong> để mở thông cổng <code>25565</code> và <code>8080</code>.</li>
-                  <li>Nếu mạng công ty/ký túc xá hoặc Windows Defender vẫn chặn, tạm tắt <strong>Windows Defender Firewall</strong> cho mạng Private/Public hoặc cho phép ngoại lệ <code>java.exe</code> & <code>python.exe</code>.</li>
-                  <li>Kiểm tra trong Console đã hiện dòng <span class="code-pill">Done (...s)! For help, type "help"</span> chưa.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="step-item">
-              <span class="step-num amber">5.2</span>
-              <div>
-                <strong>Lỗi: Mở link GitHub Pages (<code>https://...</code>) không kết nối được Web Panel Radmin (<code>http://26.x.x.x:8080</code>):</strong>
-                Do quy định bảo mật Mixed Content của trình duyệt (chặn trang <code>https://</code> gọi API sang <code>http://</code>). <strong>Cách xử lý:</strong> Bạn bè chỉ cần gõ thẳng <span class="code-pill" data-dyn-web>http://26.x.x.x:8080</span> vào thanh địa chỉ trình duyệt, hoặc mở trực tiếp file <span class="code-pill">ModSlime-Server-Control.html</span> trên máy tính!
-              </div>
-            </div>
-            <div class="step-item">
-              <span class="step-num amber">5.3</span>
-              <div>
-                <strong>Chống lag / tụt TPS khi khám phá map mới bằng Chunky:</strong>
-                <ul style="margin:6px 0 0 18px; display:flex; flex-direction:column; gap:4px;">
-                  <li>Khi chưa có người chơi online, bấm lần lượt các nút nhanh ở khung Console: <span class="code-pill">chunky center 0 -550</span> → <span class="code-pill">chunky radius 2000</span> → <span class="code-pill">chunky start</span> để máy chủ dựng sẵn map.</li>
-                  <li><strong>Quan trọng:</strong> Khi bạn bè chuẩn bị vào chơi, nhớ bấm <span class="code-pill">chunky pause</span> để dừng tạo map, giúp Server giữ <strong>20.0 TPS</strong> siêu mượt!</li>
-                  <li>Kiểm tra độ mượt bất kỳ lúc nào bằng nút <span class="code-pill">spark tps</span>.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="step-item">
-              <span class="step-num amber">5.4</span>
-              <div>
-                <strong>Lưu ý khi tạo World mới tinh lần đầu:</strong> Sau khi Console hiện <code>Done</code>, nên đợi ít nhất <strong>45 giây</strong> trước khi tắt server để mod Tensura dựng xong dữ liệu mê cung (Labyrinth).
-              </div>
-            </div>
-          </div>
-        </details>
-      </div>
-    </div>
-
-    <footer>
-      NeoForge ModSlime 1.21.1 — Radmin VPN & 24/7 Cloud Control Panel •
-      <a href="https://rxtuteam-a11y.github.io/NeoForge-ModSlime/" target="_blank" rel="noopener">GitHub Pages</a> •
-      <a href="https://github.com/rxtuteam-a11y/NeoForge-ModSlime" target="_blank" rel="noopener">GitHub Repository</a> •
-      <a href="https://drive.google.com/file/d/1eKZVfJSo0c49VhZMonpZE5kURegY0V16/view?usp=sharing" target="_blank" rel="noopener">Google Drive (266 Mods - 1.06 GB)</a>
-    </footer>
-  </div>
-
-  <!-- ================= MODAL: ĐỔI MẬT KHẨU CHUNG ================= -->
-  <div id="changePassModal" class="modal-backdrop" onclick="if(event.target===this) closeModal('changePassModal')">
-    <div class="modal-box">
-      <h3>🔑 Đổi Tài Khoản & Mật Khẩu Dùng Chung</h3>
-      <p>Sau khi đổi, tất cả bạn bè trong nhóm sẽ đăng nhập Web Panel bằng tài khoản và mật khẩu mới này.</p>
-      <form id="changePassForm" onsubmit="handleChangePassword(event)" style="display:flex; flex-direction:column; gap:12px;">
-        <div class="input-group">
-          <label for="cpOldPass">Mật khẩu hiện tại</label>
-          <input id="cpOldPass" class="input-field" type="password" required placeholder="Nhập mật khẩu hiện tại" />
-        </div>
-        <div class="input-group">
-          <label for="cpNewUser">Tài khoản chung (giữ nguyên hoặc đổi mới)</label>
-          <input id="cpNewUser" class="input-field" type="text" required placeholder="modslime" />
-        </div>
-        <div class="input-group">
-          <label for="cpNewPass">Mật khẩu mới (ít nhất 4 ký tự)</label>
-          <input id="cpNewPass" class="input-field" type="password" required minlength="4" placeholder="Nhập mật khẩu mới" />
-        </div>
-        <div class="input-group">
-          <label for="cpConfirmPass">Xác nhận mật khẩu mới</label>
-          <input id="cpConfirmPass" class="input-field" type="password" required minlength="4" placeholder="Nhập lại mật khẩu mới" />
-        </div>
-        <div id="cpErrorBox" class="alert-box alert-error hidden"></div>
-        <div class="btn-row" style="justify-content:flex-end; margin-top:4px;">
-          <button type="button" class="btn-outline" onclick="closeModal('changePassModal')">Hủy</button>
-          <button id="cpSubmitBtn" type="submit" class="btn-green">💾 Lưu Mật Khẩu Mới</button>
-        </div>
+      <pre id="log"><span class="empty">Log của server sẽ hiện ở đây khi server chạy.</span></pre>
+      <div class="quick" id="quick"></div>
+      <form class="cmd" id="cmdForm" autocomplete="off">
+        <span class="prompt">&gt;</span>
+        <input type="text" id="cmdInput" placeholder="Gõ lệnh server (vd: list, op TenBan, time set day) — ↑↓ xem lệnh cũ" spellcheck="false">
+        <button class="btn pri" type="submit">Gửi</button>
       </form>
+    </section>
+  </div>
+</div>
+
+<!-- Settings -->
+<div class="overlay" id="ovSettings">
+  <div class="modal">
+    <h3>Cài đặt</h3>
+    <div class="sub">Lưu trên trình duyệt này, không gửi đi đâu ngoài GitHub và Web Panel của bạn.</div>
+    <div class="tabs">
+      <button data-mode="cloud" class="on">☁ Cloud (GitHub)</button>
+      <button data-mode="local">🖥 Máy riêng / Radmin</button>
+    </div>
+    <div id="cloudBox">
+      <label>GitHub token (chỉ cần để BẬT / huỷ server)</label>
+      <input type="password" id="ghToken" placeholder="github_pat_…">
+      <ol>
+        <li>Mở <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/new</a></li>
+        <li>Repository access → <b>Only select repositories</b> → chọn repo server.</li>
+        <li>Permissions → <b>Actions: Read and write</b>, <b>Contents: Read-only</b>.</li>
+        <li>Generate, chép token dán vào đây.</li>
+      </ol>
+      <label>Repo (chủ/tên)</label>
+      <input type="text" id="ghRepo" placeholder="rxtuteam-a11y/NeoForge-ModSlime">
+    </div>
+    <div id="localBox" class="hide">
+      <label>Địa chỉ Web Panel (máy đang chạy app.py)</label>
+      <input type="url" id="localUrl" placeholder="http://26.x.x.x:8080 hoặc http://localhost:8080">
+      <div class="hint">Trình duyệt chặn trang https gọi tới địa chỉ http. Nếu không kết nối được, mở thẳng địa chỉ Web Panel (vd. http://localhost:8080) — trang này có sẵn ở đó.</div>
+    </div>
+    <label>Tài khoản Web Panel (để xem log và gõ lệnh)</label>
+    <div class="row" style="flex-wrap:nowrap">
+      <input type="text" id="pUser" placeholder="tài khoản" value="modslime">
+      <input type="password" id="pPass" placeholder="mật khẩu">
+    </div>
+    <label style="display:flex;gap:6px;align-items:center"><input type="checkbox" id="pRemember" checked> Nhớ mật khẩu để tự đăng nhập lại mỗi phiên mới</label>
+    <div class="row" style="margin-top:16px;justify-content:flex-end">
+      <button class="btn" id="btnCloseSet">Đóng</button>
+      <button class="btn pri" id="btnSaveSet">Lưu</button>
     </div>
   </div>
+</div>
 
-  <!-- ================= MODAL: XÁC NHẬN HÀNH ĐỘNG ================= -->
-  <div id="confirmModal" class="modal-backdrop" onclick="if(event.target===this) closeModal('confirmModal')">
-    <div class="modal-box">
-      <h3 id="confirmTitle">Xác nhận</h3>
-      <p id="confirmDesc">Bạn có chắc chắn muốn thực hiện thao tác này?</p>
-      <div class="btn-row" style="justify-content:flex-end; margin-top:6px;">
-        <button type="button" class="btn-outline" onclick="closeModal('confirmModal')">Hủy bỏ</button>
-        <button id="confirmOkBtn" type="button" class="btn-red">Xác nhận</button>
-      </div>
-    </div>
-  </div>
+<div id="toast"></div>
 
-  <!-- ================= MODAL: CẤP QUYỀN OP ================= -->
-  <div id="opModal" class="modal-backdrop" onclick="if(event.target===this) closeModal('opModal')">
-    <div class="modal-box">
-      <h3>👑 Cấp Quyền Quản Trị (OP) Cho Người Chơi</h3>
-      <p>Nhập đúng tên nhân vật Minecraft (In-game Name) để gửi lệnh <code>op &lt;tên&gt;</code> vào Server.</p>
-      <form onsubmit="handleGrantOp(event)" style="display:flex; flex-direction:column; gap:12px;">
-        <div class="input-group">
-          <label for="opPlayerInput">Tên nhân vật Minecraft</label>
-          <input id="opPlayerInput" class="input-field" type="text" required placeholder="VD: SteveVN" autocomplete="off" />
-        </div>
-        <div class="btn-row" style="justify-content:flex-end;">
-          <button type="button" class="btn-outline" onclick="closeModal('opModal')">Đóng</button>
-          <button type="submit" class="btn-amber">👑 Cấp Quyền OP</button>
-        </div>
-      </form>
-    </div>
-  </div>
+<script>
+(() => {
+  "use strict";
+  const $ = (id) => document.getElementById(id);
+  const LS = {
+    get(k, d = "") { try { return localStorage.getItem("ms_" + k) ?? d; } catch { return d; } },
+    set(k, v) { try { localStorage.setItem("ms_" + k, v); } catch {} },
+    del(k) { try { localStorage.removeItem("ms_" + k); } catch {} },
+  };
+  const WORKFLOW = "cloud-server.yml";
 
-  <div id="toastContainer"></div>
-
-  <script>
-    /* ================================================================
-       CONFIGURATION & STATE
-    ================================================================ */
-    const STORAGE_TOKEN_KEY = 'modslime_auth_token';
-    const STORAGE_USER_KEY = 'modslime_auth_user';
-    const STORAGE_API_KEY = 'modslime_api_base';
-
-    let apiBase = detectInitialApiBase();
-    let authToken = localStorage.getItem(STORAGE_TOKEN_KEY) || '';
-    let currentUser = localStorage.getItem(STORAGE_USER_KEY) || 'modslime';
-    let isAuthenticated = false;
-    let pollTimer = null;
-    let countdownTimer = null;
-    let localCountdownSec = null;
-    let autosaveDirty = false;
-    let lastStatus = null;
-    let cmdHistory = [];
-    let cmdHistoryIdx = -1;
-    let activeTab = 'all';
-
-    function detectInitialApiBase() {
-      const proto = window.location.protocol;
-      const host = window.location.hostname;
-      // When served directly by web-panel/app.py (localhost, 127.0.0.1, Radmin 26.x.x.x, LAN 192.168.x.x, or Codespaces)
-      if ((proto === 'http:' || proto === 'https:') && host && !host.endsWith('github.io')) {
-        return window.location.origin;
-      }
-      // When opened from GitHub Pages (https://*.github.io) or standalone local file (file:///)
-      const saved = localStorage.getItem(STORAGE_API_KEY);
-      return saved ? normalizeApiBase(saved) : 'http://localhost:8080';
+  // ---------- Config ----------
+  function defaultRepo() {
+    const h = location.hostname;
+    if (h.endsWith(".github.io")) {
+      const seg = location.pathname.split("/").filter(Boolean)[0];
+      if (seg) return h.split(".")[0] + "/" + seg;
     }
-
-    function normalizeApiBase(raw) {
-      let s = (raw || '').trim();
-      if (!s) return 'http://localhost:8080';
-      if (!/^https?:\/\//i.test(s)) {
-        s = 'http://' + s;
-      }
-      // If bare IP/hostname without port (e.g. http://26.1.2.3), append :8080
-      try {
-        const u = new URL(s);
-        if (!u.port && u.protocol === 'http:' && !u.hostname.endsWith('.app.github.dev')) {
-          u.port = '8080';
-        }
-        return u.origin;
-      } catch (_) {
-        return s.replace(/\/+$/, '');
-      }
-    }
-
-    function getApiUrl(path) {
-      const base = (window.location.origin === apiBase && window.location.protocol !== 'file:')
-        ? ''
-        : apiBase;
-      return base + path;
-    }
-
-    function authHeaders(extra = {}) {
-      const h = Object.assign({ 'Content-Type': 'application/json' }, extra);
-      if (authToken) {
-        h['X-Auth-Token'] = authToken;
-      }
-      return h;
-    }
-
-    async function apiFetch(path, options = {}) {
-      const opts = Object.assign({
-        method: 'GET',
-        credentials: 'same-origin',
-      }, options);
-      opts.headers = authHeaders(options.headers || {});
-      return fetch(getApiUrl(path), opts);
-    }
-
-    /* ================================================================
-       UI UTILITIES: TOASTS, MODALS, CLIPBOARD, FORMATTING
-    ================================================================ */
-    function showToast(msg, type = 'info') {
-      const container = document.getElementById('toastContainer');
-      const el = document.createElement('div');
-      el.className = 'toast ' + type;
-      el.textContent = msg;
-      container.appendChild(el);
-      setTimeout(() => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(8px)';
-        el.style.transition = 'all 0.2s ease';
-        setTimeout(() => el.remove(), 220);
-      }, 3600);
-    }
-
-    function openModal(id) {
-      document.getElementById(id).classList.add('open');
-    }
-
-    function closeModal(id) {
-      document.getElementById(id).classList.remove('open');
-    }
-
-    function togglePasswordVisibility(inputId, btn) {
-      const inp = document.getElementById(inputId);
-      if (inp.type === 'password') {
-        inp.type = 'text';
-        btn.textContent = '🙈';
-      } else {
-        inp.type = 'password';
-        btn.textContent = '👁';
-      }
-    }
-
-    function copyText(text, label) {
-      if (!text) return;
-      const done = () => showToast('📋 Đã sao chép ' + (label ? label + ': ' : '') + text, 'success');
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(text).then(done).catch(() => fallbackCopy(text, done));
-      } else {
-        fallbackCopy(text, done);
-      }
-    }
-
-    function fallbackCopy(text, cb) {
-      const ta = document.createElement('textarea');
-      ta.value = text;
-      ta.style.position = 'fixed';
-      ta.style.opacity = '0';
-      document.body.appendChild(ta);
-      ta.select();
-      try { document.execCommand('copy'); } catch (_) {}
-      document.body.removeChild(ta);
-      if (cb) cb();
-    }
-
-    function copyDynamicValue(elementId, label) {
-      const val = (document.getElementById(elementId).textContent || '').trim();
-      if (!val || val.includes('Chưa phát hiện') || val.includes('<IP_Radmin>')) {
-        showToast('⚠️ Chưa phát hiện IP Radmin VPN. Hãy bật Radmin VPN trên máy Chủ trước!', 'warn');
-        return;
-      }
-      copyText(val, label);
-    }
-
-    function formatDuration(sec) {
-      if (sec === null || sec === undefined || sec < 0 || Number.isNaN(Number(sec))) return '00:00:00';
-      const s = Math.floor(Number(sec));
-      const h = Math.floor(s / 3600);
-      const m = Math.floor((s % 3600) / 60);
-      const r = s % 60;
-      const pad = n => String(n).padStart(2, '0');
-      return `${pad(h)}:${pad(m)}:${pad(r)}`;
-    }
-
-    function formatCountdown(sec) {
-      if (sec === null || sec === undefined || sec < 0 || Number.isNaN(Number(sec))) return '--:--';
-      const s = Math.floor(Number(sec));
-      const m = Math.floor(s / 60);
-      const r = s % 60;
-      return `${String(m).padStart(2, '0')}:${String(r).padStart(2, '0')}`;
-    }
-
-    function escapeHtml(str) {
-      return String(str || '')
-        .replace(/&/g, '&amp;')
-        .replace(/</g, '&lt;')
-        .replace(/>/g, '&gt;')
-        .replace(/"/g, '&quot;');
-    }
-
-    /* ================================================================
-       GUIDE PLACEMENT & INTERACTIVITY
-    ================================================================ */
-    function mountGuideInto(slotId) {
-      const guide = document.getElementById('secGuide');
-      const slot = document.getElementById(slotId);
-      if (guide && slot && guide.parentElement !== slot) {
-        slot.appendChild(guide);
-      }
-      guide.classList.remove('hidden');
-    }
-
-    function togglePublicGuide() {
-      const slot = document.getElementById('publicGuideSlot');
-      if (slot.classList.contains('hidden')) {
-        mountGuideInto('publicGuideSlot');
-        slot.classList.remove('hidden');
-        slot.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      } else {
-        slot.classList.add('hidden');
-      }
-    }
-
-    function setAllGuideParts(openState) {
-      document.querySelectorAll('#secGuide details.guide-part').forEach(d => {
-        d.open = openState;
-      });
-    }
-
-    function updateGuideDynamicAddresses(radminIp, mcAddr, webUrl) {
-      if (radminIp) {
-        document.querySelectorAll('[data-dyn-ip]').forEach(el => { el.textContent = radminIp; });
-      }
-      if (mcAddr) {
-        document.querySelectorAll('[data-dyn-mc]').forEach(el => { el.textContent = mcAddr; });
-      }
-      if (webUrl) {
-        document.querySelectorAll('[data-dyn-web]').forEach(el => { el.textContent = webUrl; });
-      }
-    }
-
-    /* ================================================================
-       LOGIN & AUTHENTICATION FLOW
-    ================================================================ */
-    function updateMixedContentWarning() {
-      const warn = document.getElementById('mixedContentWarn');
-      const directBtn = document.getElementById('directOpenBtn');
-      const inputVal = normalizeApiBase(document.getElementById('apiBaseInput').value);
-      if (window.location.protocol === 'https:' && inputVal.startsWith('http://')) {
-        warn.classList.remove('hidden');
-        directBtn.href = inputVal;
-        directBtn.textContent = '🔗 Mở thẳng trang ' + inputVal;
-      } else {
-        warn.classList.add('hidden');
-      }
-    }
-
-    async function probeServerConnection(showNotice = false) {
-      const input = document.getElementById('apiBaseInput');
-      apiBase = normalizeApiBase(input.value);
-      input.value = apiBase;
-      localStorage.setItem(STORAGE_API_KEY, apiBase);
-      updateMixedContentWarning();
-
-      const badge = document.getElementById('probeBadge');
-      badge.className = 'badge badge-amber';
-      badge.innerHTML = '<span class="dot pulse"></span> Đang kết nối...';
-
-      try {
-        const ctrl = new AbortController();
-        const tid = setTimeout(() => ctrl.abort(), 3500);
-        const res = await apiFetch('/api/auth/check', { signal: ctrl.signal });
-        clearTimeout(tid);
-        if (!res.ok) throw new Error('HTTP ' + res.status);
-        const data = await res.json();
-
-        badge.className = 'badge badge-green';
-        badge.innerHTML = '<span class="dot"></span> Đã kết nối Web Panel';
-
-        if (data.authenticated) {
-          currentUser = data.username || currentUser || 'modslime';
-          localStorage.setItem(STORAGE_USER_KEY, currentUser);
-          enterDashboard();
-          return true;
-        }
-        // Fetch public status to preview server state & Radmin IP on login screen
-        try {
-          const stRes = await apiFetch('/api/status');
-          if (stRes.ok) {
-            const st = await stRes.json();
-            const stateLabel = st.server_state === 'running' ? '🟢 Đang mở' : (st.server_state === 'starting' ? '🟡 Đang khởi động' : '🔴 Đang tắt');
-            badge.innerHTML = `<span class="dot"></span> Đã kết nối • Server: ${stateLabel}`;
-            if (st.radmin_ip) {
-              updateGuideDynamicAddresses(st.radmin_ip, st.radmin_mc_address, st.radmin_web_url);
-            }
-          }
-        } catch (_) {}
-        if (showNotice) showToast('✅ Kết nối thành công tới ' + apiBase + '! Hãy đăng nhập để điều khiển.', 'success');
-        return true;
-      } catch (err) {
-        badge.className = 'badge badge-red';
-        badge.innerHTML = '<span class="dot"></span> Chưa kết nối được';
-        if (showNotice) {
-          showToast('⚠️ Không kết nối được tới ' + apiBase + '. Kiểm tra Chủ Máy đã mở Start-Web-Panel.bat & Radmin VPN chưa!', 'warn');
-        }
-        return false;
-      }
-    }
-
-    async function handleLogin(event) {
-      event.preventDefault();
-      const errBox = document.getElementById('loginErrorBox');
-      errBox.classList.add('hidden');
-
-      const rawBase = document.getElementById('apiBaseInput').value;
-      apiBase = normalizeApiBase(rawBase);
-      document.getElementById('apiBaseInput').value = apiBase;
-      localStorage.setItem(STORAGE_API_KEY, apiBase);
-      updateMixedContentWarning();
-
-      const username = document.getElementById('loginUsername').value.trim();
-      const password = document.getElementById('loginPassword').value;
-
-      const btn = document.getElementById('loginSubmitBtn');
-      btn.disabled = true;
-      btn.textContent = '⏳ Đang đăng nhập...';
-
-      try {
-        const res = await fetch(getApiUrl('/api/login'), {
-          method: 'POST',
-          credentials: 'same-origin',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ username, password }),
-        });
-        const data = await res.json().catch(() => ({}));
-        if (!res.ok || !data.ok) {
-          errBox.textContent = '❌ ' + (data.message || data.error || 'Sai tài khoản hoặc mật khẩu chung!');
-          errBox.classList.remove('hidden');
-          return;
-        }
-
-        authToken = data.token || '';
-        currentUser = data.username || username;
-        if (authToken) localStorage.setItem(STORAGE_TOKEN_KEY, authToken);
-        localStorage.setItem(STORAGE_USER_KEY, currentUser);
-        document.getElementById('loginPassword').value = '';
-
-        showToast('🔓 Đăng nhập thành công! Chào mừng ' + currentUser + '.', 'success');
-        enterDashboard();
-      } catch (err) {
-        errBox.innerHTML = '❌ Không thể kết nối tới <code>' + escapeHtml(apiBase) + '</code>. Hãy đảm bảo Chủ Máy đã mở <strong>Start-Web-Panel.bat</strong>, đã bật <strong>Radmin VPN</strong> và đã mở cổng Firewall <strong>8080</strong>.';
-        errBox.classList.remove('hidden');
-      } finally {
-        btn.disabled = false;
-        btn.textContent = '🔓 ĐĂNG NHẬP BẢNG ĐIỀU KHIỂN';
-      }
-    }
-
-    async function handleLogout() {
-      try {
-        await apiFetch('/api/logout', { method: 'POST', body: '{}' });
-      } catch (_) {}
-      clearAuthAndShowLogin('🚪 Đã đăng xuất khỏi bảng điều khiển.');
-    }
-
-    function clearAuthAndShowLogin(toastMsg) {
-      isAuthenticated = false;
-      authToken = '';
-      localStorage.removeItem(STORAGE_TOKEN_KEY);
-      stopPolling();
-
-      document.getElementById('dashboardView').classList.add('hidden');
-      document.getElementById('loginView').classList.remove('hidden');
-      document.getElementById('publicGuideSlot').classList.add('hidden');
-      document.getElementById('apiBaseInput').value = apiBase;
-      if (toastMsg) showToast(toastMsg, 'info');
-      probeServerConnection(false);
-    }
-
-    function enterDashboard() {
-      isAuthenticated = true;
-      document.getElementById('loginView').classList.add('hidden');
-      document.getElementById('dashboardView').classList.remove('hidden');
-      document.getElementById('connectedHostPill').textContent = apiBase;
-      document.getElementById('loggedUserLabel').textContent = currentUser;
-      mountGuideInto('dashboardGuideSlot');
-      applyTabVisibility();
-      startPolling();
-    }
-
-    /* ================================================================
-       CHANGE SHARED PASSWORD
-    ================================================================ */
-    function openChangePassModal() {
-      document.getElementById('cpOldPass').value = '';
-      document.getElementById('cpNewUser').value = currentUser || 'modslime';
-      document.getElementById('cpNewPass').value = '';
-      document.getElementById('cpConfirmPass').value = '';
-      document.getElementById('cpErrorBox').classList.add('hidden');
-      openModal('changePassModal');
-    }
-
-    async function handleChangePassword(event) {
-      event.preventDefault();
-      const errBox = document.getElementById('cpErrorBox');
-      errBox.classList.add('hidden');
-
-      const oldPassword = document.getElementById('cpOldPass').value;
-      const newUsername = document.getElementById('cpNewUser').value.trim();
-      const newPassword = document.getElementById('cpNewPass').value;
-      const confirmPass = document.getElementById('cpConfirmPass').value;
-
-      if (newPassword !== confirmPass) {
-        errBox.textContent = '❌ Mật khẩu xác nhận không khớp!';
-        errBox.classList.remove('hidden');
-        return;
-      }
-
-      const btn = document.getElementById('cpSubmitBtn');
-      btn.disabled = true;
-      try {
-        const res = await apiFetch('/api/auth/change-password', {
-          method: 'POST',
-          body: JSON.stringify({
-            current_password: oldPassword,
-            new_username: newUsername,
-            new_password: newPassword,
-          }),
-        });
-        if (res.status === 401) {
-          closeModal('changePassModal');
-          clearAuthAndShowLogin('⚠️ Phiên đăng nhập đã hết hạn. Vui lòng đăng nhập lại.');
-          return;
-        }
-        const data = await res.json().catch(() => ({}));
-        if (!res.ok || !data.ok) {
-          errBox.textContent = '❌ ' + (data.message || data.error || 'Đổi mật khẩu thất bại!');
-          errBox.classList.remove('hidden');
-          return;
-        }
-        if (data.token) {
-          authToken = data.token;
-          localStorage.setItem(STORAGE_TOKEN_KEY, authToken);
-        }
-        currentUser = data.username || newUsername;
-        localStorage.setItem(STORAGE_USER_KEY, currentUser);
-        document.getElementById('loggedUserLabel').textContent = currentUser;
-        closeModal('changePassModal');
-        showToast('✅ ' + (data.message || 'Đã cập nhật tài khoản & mật khẩu chung thành công!'), 'success');
-      } catch (e) {
-        errBox.textContent = '❌ Lỗi kết nối: ' + e.message;
-        errBox.classList.remove('hidden');
-      } finally {
-        btn.disabled = false;
-      }
-    }
-
-    /* ================================================================
-       NAVIGATION TABS
-    ================================================================ */
-    function switchTab(tab, btn) {
-      activeTab = tab;
-      document.querySelectorAll('.nav-tab').forEach(b => b.classList.remove('active'));
-      if (btn) btn.classList.add('active');
-      applyTabVisibility();
-    }
-
-    function applyTabVisibility() {
-      const sControl = document.getElementById('secControl');
-      const sAutosave = document.getElementById('secAutosave');
-      const sConsole = document.getElementById('secConsole');
-      const sGuide = document.getElementById('secGuide');
-
-      sControl.classList.toggle('hidden', !(activeTab === 'all' || activeTab === 'control'));
-      sAutosave.classList.toggle('hidden', !(activeTab === 'all' || activeTab === 'autosave'));
-      sConsole.classList.toggle('hidden', !(activeTab === 'all' || activeTab === 'console'));
-      sGuide.classList.toggle('hidden', !(activeTab === 'all' || activeTab === 'guide'));
-    }
-
-    /* ================================================================
-       STATUS POLLING & DASHBOARD RENDERING
-    ================================================================ */
-    function startPolling() {
-      stopPolling();
-      fetchStatus();
-      pollTimer = setInterval(fetchStatus, 2500);
-      countdownTimer = setInterval(tickLocalCountdown, 1000);
-    }
-
-    function stopPolling() {
-      if (pollTimer) { clearInterval(pollTimer); pollTimer = null; }
-      if (countdownTimer) { clearInterval(countdownTimer); countdownTimer = null; }
-    }
-
-    function tickLocalCountdown() {
-      const el = document.getElementById('autosaveCountdown');
-      if (!lastStatus) return;
-      if (!lastStatus.autosave_enabled) {
-        el.textContent = 'Đang TẮT';
-        return;
-      }
-      if (!lastStatus.running) {
-        el.textContent = 'Chờ Server bật';
-        return;
-      }
-      if (localCountdownSec !== null && localCountdownSec > 0) {
-        localCountdownSec -= 1;
-        el.textContent = formatCountdown(localCountdownSec);
-      }
-    }
-
-    async function fetchStatus() {
-      if (!isAuthenticated) return;
-      try {
-        const res = await apiFetch('/api/status');
-        if (res.status === 401) {
-          clearAuthAndShowLogin('⚠️ Phiên đăng nhập hết hạn. Vui lòng đăng nhập lại.');
-          return;
-        }
-        if (!res.ok) return;
-        const data = await res.json();
-        if (data.authenticated === false) {
-          clearAuthAndShowLogin('⚠️ Phiên đăng nhập đã hết hạn.');
-          return;
-        }
-        lastStatus = data;
-        renderStatus(data);
-      } catch (_) {
-        // Transient network error while panel is restarting or offline
-      }
-    }
-
-    function renderStatus(d) {
-      const running = !!d.running;
-      const ready = !!d.server_ready;
-
-      // 1. Server Status Pills & Metrics
-      const statusPill = document.getElementById('serverStatusPill');
-      const statusText = document.getElementById('serverStatusText');
-      const readyBadge = document.getElementById('readyStateBadge');
-      const metricState = document.getElementById('metricState');
-
-      if (running && ready) {
-        statusPill.className = 'badge badge-green';
-        statusText.textContent = '🟢 ĐANG MỞ — SẴN SÀNG VÀO GAME';
-        readyBadge.className = 'badge badge-green';
-        readyBadge.textContent = 'Đang mở (Online)';
-        metricState.textContent = 'ĐANG MỞ';
-        metricState.style.color = '#4ade80';
-      } else if (running) {
-        statusPill.className = 'badge badge-amber';
-        statusText.textContent = '🟡 ĐANG KHỞI ĐỘNG (Vui lòng đợi Done...)';
-        readyBadge.className = 'badge badge-amber';
-        readyBadge.textContent = 'Đang khởi động...';
-        metricState.textContent = 'KHỞI ĐỘNG';
-        metricState.style.color = '#fbbf24';
-      } else {
-        statusPill.className = 'badge badge-red';
-        statusText.textContent = '🔴 ĐANG TẮT';
-        readyBadge.className = 'badge badge-red';
-        readyBadge.textContent = 'Đang tắt';
-        metricState.textContent = 'ĐANG TẮT';
-        metricState.style.color = '#f87171';
-      }
-
-      document.getElementById('btnStart').disabled = running;
-      document.getElementById('btnStop').disabled = !running;
-      document.getElementById('btnPullWorld').disabled = running;
-
-      // Metrics
-      const worldMb = d.world_size_mb !== undefined ? d.world_size_mb : '--';
-      document.getElementById('metricWorldSize').textContent = worldMb + ' MB';
-      document.getElementById('metricUptime').textContent = running ? formatDuration(d.uptime_sec) : '00:00:00';
-
-      const players = Array.isArray(d.online_players) ? d.online_players : [];
-      const pCount = d.player_count !== undefined ? d.player_count : players.length;
-      const maxP = d.max_players !== undefined ? d.max_players : 20;
-      const ramPart = d.ram_mb ? `${d.ram_mb} MB • ` : '';
-      document.getElementById('metricRamPlayers').textContent = `${ramPart}${pCount}/${maxP} người`;
-
-      // Online Players chips
-      const playersList = document.getElementById('playersList');
-      if (players.length > 0) {
-        playersList.innerHTML = players.map(p => `<span class="player-chip">🟢 ${escapeHtml(p)}</span>`).join('');
-      } else {
-        playersList.innerHTML = running
-          ? '<span style="color:var(--muted);">Server đang mở — Chưa có người chơi vào game</span>'
-          : '<span style="color:var(--muted);">Server đang tắt</span>';
-      }
-
-      // 2. Radmin VPN Info
-      const radminIp = d.radmin_ip || '';
-      const mcPort = d.mc_port || 25565;
-      const radminMc = d.radmin_mc_address || (radminIp ? `${radminIp}:${mcPort}` : '');
-      const radminWeb = d.radmin_web_url || (radminIp ? `http://${radminIp}:8080` : '');
-      const lanMc = d.lan_mc_address || (d.lan_ip ? `${d.lan_ip}:${mcPort}` : '');
-      const lanWeb = d.lan_web_url || (d.lan_ip ? `http://${d.lan_ip}:8080` : '');
-
-      const radminBadge = document.getElementById('radminDetectBadge');
-      if (radminIp) {
-        radminBadge.className = 'badge badge-green';
-        radminBadge.textContent = '✅ Đã kết nối Radmin (' + radminIp + ')';
-        document.getElementById('radminMcText').textContent = radminMc;
-        document.getElementById('radminWebText').textContent = radminWeb;
-        updateGuideDynamicAddresses(radminIp, radminMc, radminWeb);
-      } else {
-        radminBadge.className = 'badge badge-amber';
-        radminBadge.textContent = '⚠️ Chưa bật Radmin VPN';
-        document.getElementById('radminMcText').textContent = 'Chưa phát hiện IP Radmin (26.x.x.x) — Hãy bật Radmin VPN';
-        document.getElementById('radminWebText').textContent = lanWeb || 'http://<IP_Radmin>:8080';
-      }
-      document.getElementById('lanMcText').textContent = lanMc
-        ? `${lanMc}  (hoặc localhost:${mcPort})`
-        : `localhost:${mcPort}`;
-
-      // 3. 24/7 Cloud Auto-Save Section
-      const asEnabled = d.autosave_enabled !== undefined ? !!d.autosave_enabled : true;
-      const asInterval = d.autosave_interval_min || 10;
-      const asBadge = document.getElementById('autosaveStateBadge');
-      const backupBusy = !!d.backup_in_progress;
-
-      if (backupBusy) {
-        asBadge.className = 'badge badge-cyan';
-        asBadge.textContent = '⏳ Đang đẩy lên GitHub...';
-      } else if (asEnabled) {
-        asBadge.className = 'badge badge-green';
-        asBadge.textContent = `Đang BẬT (Mỗi ${asInterval} phút)`;
-      } else {
-        asBadge.className = 'badge badge-amber';
-        asBadge.textContent = 'Đang TẮT';
-      }
-
-      document.getElementById('btnBackupNow').disabled = backupBusy;
-
-      if (!autosaveDirty) {
-        document.getElementById('autosaveToggle').checked = asEnabled;
-        const sel = document.getElementById('autosaveIntervalSelect');
-        if ([...sel.options].some(o => Number(o.value) === Number(asInterval))) {
-          sel.value = String(asInterval);
-        }
-      }
-
-      if (backupBusy) {
-        localCountdownSec = null;
-        document.getElementById('autosaveCountdown').textContent = 'Đang lưu...';
-      } else if (!asEnabled) {
-        localCountdownSec = null;
-        document.getElementById('autosaveCountdown').textContent = 'Đang TẮT';
-      } else if (!running) {
-        localCountdownSec = null;
-        document.getElementById('autosaveCountdown').textContent = 'Chờ Server bật';
-      } else if (d.next_autosave_sec !== null && d.next_autosave_sec !== undefined) {
-        localCountdownSec = Number(d.next_autosave_sec);
-        document.getElementById('autosaveCountdown').textContent = formatCountdown(localCountdownSec);
-      }
-
-      const syncTime = d.last_sync_time && d.last_sync_time !== '-' ? ` (${d.last_sync_time})` : '';
-      document.getElementById('lastSyncSummary').textContent =
-        'Lần lưu gần nhất: ' + (d.last_sync_status || 'Chưa có') + syncTime;
-
-      renderBackupHistory(Array.isArray(d.backup_history) ? d.backup_history : []);
-
-      // 4. Console Logs
-      if (Array.isArray(d.logs)) {
-        renderConsoleLogs(d.logs);
-      }
-    }
-
-    function renderBackupHistory(items) {
-      const box = document.getElementById('backupHistoryList');
-      document.getElementById('backupCountLabel').textContent = items.length + ' bản ghi';
-      if (!items.length) {
-        box.innerHTML = '<div class="history-item" style="color:var(--muted);">Chưa có bản ghi tự động lưu trong phiên này. Khi Server mở, hệ thống sẽ tự động đẩy lên GitHub theo chu kỳ.</div>';
-        return;
-      }
-      box.innerHTML = items.map(item => {
-        const ok = item.ok !== undefined ? !!item.ok : (item.success !== undefined ? !!item.success : true);
-        const timeStr = item.time || item.timestamp || '-';
-        const reason = item.reason || 'Auto-Save';
-        const msg = item.message || item.status || (ok ? 'Đã đồng bộ GitHub' : 'Lỗi đồng bộ');
-        return `
-          <div class="history-item">
-            <div style="display:flex; flex-direction:column; gap:2px; min-width:0;">
-              <div style="display:flex; align-items:center; gap:7px; flex-wrap:wrap;">
-                <span class="history-time">${escapeHtml(timeStr)}</span>
-                <strong style="color:#fff;">${escapeHtml(reason)}</strong>
-              </div>
-              <span style="color:var(--muted); font-size:0.79rem; word-break:break-word;">${escapeHtml(msg)}</span>
-            </div>
-            <span class="badge ${ok ? 'badge-green' : 'badge-red'}" style="padding:3px 9px; font-size:0.73rem;">
-              ${ok ? '✅ OK' : '❌ Lỗi'}
-            </span>
-          </div>
-        `;
-      }).join('');
-    }
-
-    let lastRenderedLogSig = '';
-    function renderConsoleLogs(lines) {
-      const sig = lines.length + '|' + (lines[lines.length - 1] || '');
-      if (sig === lastRenderedLogSig) return;
-      lastRenderedLogSig = sig;
-
-      const box = document.getElementById('consoleBox');
-      if (!lines.length) {
-        box.textContent = 'Chưa có nhật ký Console. Bấm "▶ BẬT SERVER" để khởi động NeoForge ModSlime.';
-        return;
-      }
-      const html = lines.map(raw => {
-        const esc = escapeHtml(raw);
-        let cls = 'log-line';
-        if (/ERROR|Exception|FATAL|Lỗi/i.test(raw)) cls += ' log-err';
-        else if (/WARN/i.test(raw)) cls += ' log-warn';
-        else if (/Done \(|thành công|✅/i.test(raw)) cls += ' log-ok';
-        else if (/\[Cloud Sync\]|\[Auto-Save\]|\[GitHub\]|\[Panel\]/i.test(raw)) cls += ' log-sync';
-        else if (raw.startsWith('> ')) cls += ' log-cmd';
-        return `<span class="${cls}">${esc}</span>`;
-      }).join('\n');
-
-      box.innerHTML = html;
-      if (document.getElementById('autoScrollChk').checked) {
-        box.scrollTop = box.scrollHeight;
-      }
-    }
-
-    function scrollConsoleBottom() {
-      const box = document.getElementById('consoleBox');
-      box.scrollTop = box.scrollHeight;
-    }
-
-    /* ================================================================
-       SERVER ACTIONS, AUTOSAVE CONFIG & COMMANDS
-    ================================================================ */
-    async function triggerAction(endpoint, pendingMsg) {
-      showToast('⏳ ' + pendingMsg, 'info');
-      try {
-        const res = await apiFetch(endpoint, { method: 'POST', body: '{}' });
-        if (res.status === 401) {
-          clearAuthAndShowLogin('⚠️ Phiên đăng nhập hết hạn.');
-          return;
-        }
-        const data = await res.json().catch(() => ({}));
-        if (Array.isArray(data.backup_history)) {
-          renderBackupHistory(data.backup_history);
-        }
-        if (data.last_sync_status) {
-          const tStr = data.last_sync_time && data.last_sync_time !== '-' ? ` (${data.last_sync_time})` : '';
-          document.getElementById('lastSyncSummary').textContent = 'Lần lưu gần nhất: ' + data.last_sync_status + tStr;
-        }
-        if (res.ok && data.ok !== false) {
-          showToast('✅ ' + (data.message || 'Thao tác thành công!'), 'success');
-        } else {
-          showToast('❌ ' + (data.message || data.error || 'Thao tác thất bại!'), 'error');
-        }
-        setTimeout(fetchStatus, 500);
-      } catch (e) {
-        showToast('❌ Lỗi kết nối tới Server: ' + e.message, 'error');
-      }
-    }
-
-    function markAutosaveDirty() {
-      autosaveDirty = true;
-    }
-
-    async function saveAutosaveConfig() {
-      const enabled = document.getElementById('autosaveToggle').checked;
-      const intervalMin = parseInt(document.getElementById('autosaveIntervalSelect').value, 10) || 10;
-      const btn = document.getElementById('btnSaveAutosave');
-      btn.disabled = true;
-      try {
-        const res = await apiFetch('/api/autosave-config', {
-          method: 'POST',
-          body: JSON.stringify({
-            enabled: enabled,
-            interval_min: intervalMin,
-          }),
-        });
-        if (res.status === 401) {
-          clearAuthAndShowLogin('⚠️ Phiên đăng nhập hết hạn.');
-          return;
-        }
-        const data = await res.json().catch(() => ({}));
-        if (res.ok && data.ok !== false) {
-          autosaveDirty = false;
-          if (data.next_autosave_sec !== undefined && data.next_autosave_sec !== null) {
-            localCountdownSec = Number(data.next_autosave_sec);
-          }
-          showToast('✅ ' + (data.message || `Đã lưu cài đặt tự động lưu 24/24 (${enabled ? 'BẬT mỗi ' + intervalMin + ' phút' : 'TẮT'})!`), 'success');
-          fetchStatus();
-        } else {
-          showToast('❌ ' + (data.message || 'Không thể lưu cài đặt!'), 'error');
-        }
-      } catch (e) {
-        showToast('❌ Lỗi kết nối: ' + e.message, 'error');
-      } finally {
-        btn.disabled = false;
-      }
-    }
-
-    async function sendQuickCommand(cmd) {
-      if (!cmd || !cmd.trim()) return;
-      try {
-        const res = await apiFetch('/api/command', {
-          method: 'POST',
-          body: JSON.stringify({ command: cmd.trim() }),
-        });
-        if (res.status === 401) {
-          clearAuthAndShowLogin('⚠️ Phiên đăng nhập hết hạn.');
-          return;
-        }
-        const data = await res.json().catch(() => ({}));
-        if (res.ok && data.ok) {
-          showToast('📨 ' + (data.message || ('Đã gửi lệnh: ' + cmd)), 'success');
-          setTimeout(fetchStatus, 450);
-        } else {
-          showToast('⚠️ ' + (data.message || 'Không gửi được lệnh (Server đang tắt?)'), 'warn');
-        }
-      } catch (e) {
-        showToast('❌ Lỗi gửi lệnh: ' + e.message, 'error');
-      }
-    }
-
-    function handleSendCommand(event) {
-      event.preventDefault();
-      const inp = document.getElementById('cmdInput');
-      const cmd = inp.value.trim();
-      if (!cmd) return;
-      cmdHistory.unshift(cmd);
-      if (cmdHistory.length > 30) cmdHistory.pop();
-      cmdHistoryIdx = -1;
-      inp.value = '';
-      sendQuickCommand(cmd);
-    }
-
-    function openOpModal() {
-      document.getElementById('opPlayerInput').value = '';
-      openModal('opModal');
-      setTimeout(() => document.getElementById('opPlayerInput').focus(), 60);
-    }
-
-    function handleGrantOp(event) {
-      event.preventDefault();
-      const player = document.getElementById('opPlayerInput').value.trim();
-      if (!player) return;
-      closeModal('opModal');
-      sendQuickCommand('op ' + player);
-    }
-
-    function confirmShutdownPanel() {
-      document.getElementById('confirmTitle').textContent = '🔌 Tắt Hẳn Web Control Panel?';
-      document.getElementById('confirmDesc').innerHTML =
-        'Hệ thống sẽ <strong>tắt an toàn Minecraft Server</strong> (nếu đang mở), <strong>tự động lưu World mới nhất lên GitHub</strong>, và <strong>đóng hoàn toàn tiến trình Web Panel</strong> để giải phóng 100% RAM máy tính. Khi muốn mở lại, Chủ Máy chỉ cần chạy <code>Start-Web-Panel.bat</code>.';
-      const okBtn = document.getElementById('confirmOkBtn');
-      okBtn.textContent = '🔌 Tắt Hẳn Web Panel';
-      okBtn.onclick = async () => {
-        closeModal('confirmModal');
-        showToast('⏳ Đang tắt Server, đẩy World lên GitHub và đóng Web Panel...', 'warn');
-        try {
-          const res = await apiFetch('/api/shutdown-panel', { method: 'POST', body: '{}' });
-          const data = await res.json().catch(() => ({}));
-          stopPolling();
-          showToast('✅ ' + (data.message || 'Đã tắt hẳn Web Panel & giải phóng 100% RAM!'), 'success');
-          setTimeout(() => clearAuthAndShowLogin('🔌 Web Panel đã đóng hoàn toàn (0 MB RAM).'), 1600);
-        } catch (_) {
-          stopPolling();
-          clearAuthAndShowLogin('🔌 Web Panel đã đóng hoàn toàn.');
-        }
-      };
-      openModal('confirmModal');
-    }
-
-    function copyFriendInviteMessage() {
-      const radminMc = (lastStatus && lastStatus.radmin_mc_address) || document.getElementById('radminMcText').textContent.trim();
-      const radminWeb = (lastStatus && lastStatus.radmin_web_url) || document.getElementById('radminWebText').textContent.trim();
-      const msg = [
-        '🟢 MỜI CHƠI SERVER MINECRAFT NEOFORGE MODSLIME 1.21.1 (266 MODS)',
-        '1️⃣ Vào chung mạng Radmin VPN của nhóm.',
-        `2️⃣ Link Web Bật/Tắt Server từ xa: ${radminWeb}`,
-        `   • Tài khoản chung: ${currentUser || 'modslime'}`,
-        '   • Mật khẩu chung: (hỏi Chủ Máy / mặc định modslime2026)',
-        `3️⃣ Địa chỉ vào Game (Multiplayer → Add Server): ${radminMc}`,
-        '4️⃣ Link tải bộ 266 Mods (Google Drive): https://drive.google.com/file/d/1eKZVfJSo0c49VhZMonpZE5kURegY0V16/view?usp=sharing'
-      ].join('\n');
-      copyText(msg, 'Tin nhắn mời bạn bè');
-    }
-
-    /* ================================================================
-       KEYBOARD SHORTCUTS & INITIALIZATION
-    ================================================================ */
-    document.getElementById('cmdInput').addEventListener('keydown', (e) => {
-      if (e.key === 'ArrowUp' && cmdHistory.length) {
-        e.preventDefault();
-        cmdHistoryIdx = Math.min(cmdHistoryIdx + 1, cmdHistory.length - 1);
-        e.target.value = cmdHistory[cmdHistoryIdx];
-      } else if (e.key === 'ArrowDown') {
-        e.preventDefault();
-        cmdHistoryIdx = Math.max(cmdHistoryIdx - 1, -1);
-        e.target.value = cmdHistoryIdx >= 0 ? cmdHistory[cmdHistoryIdx] : '';
-      }
+    return "rxtuteam-a11y/NeoForge-ModSlime";
+  }
+  // Trang đang được chính Web Panel phục vụ (link trycloudflare / http://ip:8080)?
+  const servedByPanel = location.protocol.startsWith("http") && !location.hostname.endsWith("github.io");
+  const cfg = {
+    mode: LS.get("mode", "cloud"),
+    token: LS.get("gh_token"),
+    repo: LS.get("gh_repo") || defaultRepo(),
+    localUrl: LS.get("local_url"),
+    user: LS.get("p_user", "modslime"),
+    pass: LS.get("p_pass"),
+  };
+
+  // ---------- State ----------
+  let panelBase = servedByPanel ? location.origin : "";
+  let panelToken = LS.get("p_token");
+  let cloud = { state: "unknown", run: null, status: null, jobs: null };
+  let panel = null;          // last /api/status
+  let panelReachable = false;
+  let busy = false;
+  let lastLogSig = "";
+  let clearedAt = 0;         // number of lines hidden by "Xoá màn hình"
+  const cmdHistory = JSON.parse(LS.get("cmd_hist", "[]") || "[]");
+  let histIdx = cmdHistory.length;
+
+  // ---------- Helpers ----------
+  function toast(msg, bad = false) {
+    const t = $("toast"); t.textContent = msg; t.className = "show" + (bad ? " bad" : "");
+    clearTimeout(t._h); t._h = setTimeout(() => (t.className = ""), 3800);
+  }
+  const fmtDur = (s) => {
+    if (s == null || s < 0) return "—";
+    const h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60);
+    return h ? `${h}g ${m}p` : `${m}p ${Math.floor(s % 60)}s`;
+  };
+  const esc = (s) => s.replace(/[&<>]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
+
+  async function gh(path, opts = {}) {
+    const headers = { Accept: "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28", ...(opts.headers || {}) };
+    if (cfg.token) headers.Authorization = "Bearer " + cfg.token;
+    const r = await fetch("https://api.github.com/repos/" + cfg.repo + path, { ...opts, headers, cache: "no-store" });
+    if (r.status === 204) return null;
+    const body = await r.text();
+    let data = null; try { data = body ? JSON.parse(body) : null; } catch { data = body; }
+    if (!r.ok) { const e = new Error((data && data.message) || ("GitHub lỗi " + r.status)); e.status = r.status; throw e; }
+    return data;
+  }
+
+  async function api(path, body) {
+    if (!panelBase) throw new Error("Chưa có địa chỉ Web Panel");
+    const headers = { "Content-Type": "application/json" };
+    if (panelToken) headers["X-Auth-Token"] = panelToken;
+    const r = await fetch(panelBase + path, {
+      method: body === undefined ? "GET" : "POST", headers, cache: "no-store",
+      body: body === undefined ? undefined : JSON.stringify(body),
     });
+    const data = await r.json().catch(() => ({}));
+    if (r.status === 401) { data._unauth = true; }
+    return data;
+  }
 
-    document.getElementById('apiBaseInput').addEventListener('input', updateMixedContentWarning);
+  async function panelLogin(silent) {
+    if (!cfg.pass) { if (!silent) openSettings(); return false; }
+    try {
+      const d = await api("/api/login", { username: cfg.user, password: cfg.pass });
+      if (d.ok && d.token) { panelToken = d.token; LS.set("p_token", d.token); if (!silent) toast("Đã đăng nhập Web Panel."); return true; }
+      if (!silent) toast(d.message || "Sai tài khoản hoặc mật khẩu", true);
+    } catch (e) { if (!silent) toast("Không kết nối được Web Panel: " + e.message, true); }
+    return false;
+  }
 
-    (function init() {
-      document.getElementById('apiBaseInput').value = apiBase;
-      document.getElementById('loginUsername').value = currentUser || 'modslime';
-      updateMixedContentWarning();
-      probeServerConnection(false);
-    })();
-  </script>
+  // ---------- Cloud polling ----------
+  async function pollCloud() {
+    if (cfg.mode !== "cloud" || servedByPanel) return;
+    try {
+      // status.json do workflow ghi ở nhánh server-status
+      try {
+        const st = await gh("/contents/status.json?ref=server-status", { headers: { Accept: "application/vnd.github.raw+json" } });
+        cloud.status = typeof st === "string" ? JSON.parse(st) : st;
+      } catch (e) { if (e.status === 404) cloud.status = null; else throw e; }
+
+      if (cfg.token) {
+        const runs = await gh(`/actions/workflows/${WORKFLOW}/runs?per_page=1`);
+        cloud.run = runs.workflow_runs && runs.workflow_runs[0] || null;
+        if (cloud.run && cloud.run.status !== "completed") {
+          const j = await gh(`/actions/runs/${cloud.run.id}/jobs`);
+          cloud.jobs = j.jobs && j.jobs[0] || null;
+        } else cloud.jobs = null;
+      }
+
+      const s = cloud.status, now = Date.now() / 1000;
+      const run = cloud.run, runActive = run && run.status !== "completed";
+      let online = !!(s && s.state === "online" && s.panel_url);
+      if (online && run) online = runActive && s.run_id === run.id;        // có token: đối chiếu với phiên thật
+      else if (online) online = (!s.deadline || now < s.deadline + 300);    // không token: dựa vào hạn giờ
+      if (online) {
+        if (panelBase !== s.panel_url) { panelBase = s.panel_url; lastLogSig = ""; clearedAt = 0; }
+        cloud.state = "online";
+      } else if (runActive) {
+        cloud.state = run.status === "queued" ? "queued" : "booting"; panelBase = "";
+      } else { cloud.state = "offline"; panelBase = ""; }
+    } catch (e) {
+      cloud.state = "error"; cloud.error = e.message;
+    }
+  }
+
+  async function pollPanel() {
+    if (!panelBase) { panel = null; panelReachable = false; return; }
+    try {
+      let d = await api("/api/status");
+      panelReachable = true;
+      if (!d.authenticated && cfg.pass) { if (await panelLogin(true)) d = await api("/api/status"); }
+      panel = d;
+    } catch { panelReachable = false; }
+  }
+
+  // ---------- Render ----------
+  const STEP_LABELS = [
+    [/^Set up job/, "Dựng máy chủ GitHub"], [/^1\./, "Lấy world mới nhất"], [/^2\./, "Cài Java 21"],
+    [/^3a\./, "Khôi phục mod từ cache"], [/^3b\./, "Tải mod từ Google Drive"], [/^4\./, "Cài đường hầm & công cụ"],
+    [/^5\./, "Chạy server"], [/^6\./, "Lưu world lên GitHub"],
+  ];
+  function renderSteps() {
+    const ul = $("steps");
+    const job = cloud.jobs;
+    if (!job || cfg.mode !== "cloud" || servedByPanel) { ul.classList.add("hide"); return; }
+    const items = [];
+    for (const st of job.steps || []) {
+      const m = STEP_LABELS.find(([re]) => re.test(st.name)); if (!m) continue;
+      if (st.conclusion === "skipped") continue;
+      const cls = st.status === "completed" ? (st.conclusion === "success" ? "done" : "fail") : st.status === "in_progress" ? "run" : "";
+      items.push(`<li class="${cls}">${m[1]}</li>`);
+    }
+    ul.innerHTML = items.join(""); ul.classList.toggle("hide", !items.length);
+  }
+
+  function overallState() {
+    if (panel && panelReachable) {
+      if (panel.server_state === "running") return ["online", "Đang chạy"];
+      if (panel.server_state === "starting") return ["booting", "Đang khởi động server…"];
+      if (panel.backup_in_progress || panel.gdrive_in_progress) return ["stopping", "Đang lưu world…"];
+      return ["offline", panel.cloud_mode ? "Server đã tắt (đang đóng phiên)" : "Server đang tắt"];
+    }
+    if (cfg.mode === "local" && !servedByPanel) return cfg.localUrl ? ["error", "Không thấy Web Panel"] : ["offline", "Chưa nhập địa chỉ"];
+    switch (cloud.state) {
+      case "queued": return ["queued", "Đang chờ máy GitHub…"];
+      case "booting": return ["booting", "Đang chuẩn bị máy…"];
+      case "online": return ["booting", "Đang kết nối Web Panel…"];
+      case "error": return ["error", "Lỗi: " + (cloud.error || "")];
+      case "offline": return ["offline", "Server đang tắt"];
+      default: return ["", "Đang kiểm tra…"];
+    }
+  }
+
+  function render() {
+    const [st, label] = overallState();
+    $("statePill").className = "pill st-" + st; $("stateText").textContent = label;
+
+    const running = panel && panelReachable && (panel.server_state === "running" || panel.server_state === "starting");
+    const cloudActive = ["queued", "booting", "online"].includes(cloud.state) && cfg.mode === "cloud";
+    const pw = $("btnPower");
+    pw.disabled = busy;
+    if (running) { pw.textContent = "■ TẮT SERVER (lưu world)"; pw.className = "power stop"; }
+    else if (cloudActive && !servedByPanel && !(panel && panelReachable)) { pw.textContent = "⏳ ĐANG MỞ…"; pw.className = "power"; pw.disabled = true; }
+    else { pw.textContent = "▶ BẬT SERVER"; pw.className = "power"; }
+    $("durRow").classList.toggle("hide", !!running || cfg.mode !== "cloud" || servedByPanel || cloudActive);
+    $("forceRow").classList.toggle("hide", !(cloudActive && cloud.run && cfg.token));
+    if (cloud.run) $("runLink").href = cloud.run.html_url;
+    renderSteps();
+
+    let hint;
+    if (running && panel.server_state === "starting") hint = "Server đang nạp 266 mod, thường mất 2–4 phút. Xem console bên phải.";
+    else if (running) hint = "Bấm tắt: server báo save-all, lưu world lên GitHub" + (panel.gdrive_enabled ? " và Google Drive" : "") + " rồi mới tắt.";
+    else if (cloud.state === "queued" || cloud.state === "booting") hint = "GitHub đang dựng máy và nạp mod. Trang tự cập nhật, không cần tải lại.";
+    else if (cfg.mode === "cloud" && !cfg.token && !servedByPanel) hint = "Cần GitHub token để bật server: bấm ⚙ Cài đặt.";
+    else hint = "Bấm bật: GitHub dựng máy chủ, nạp world mới nhất và 266 mod (khoảng 3–5 phút).";
+    $("powerHint").textContent = hint;
+
+    // Game address
+    const mc = (panel && (panel.cloud_mc_address || panel.playit_address
+        || (!panel.cloud_mode && (panel.radmin_mc_address || panel.lan_mc_address))))
+      || (cloud.status && cloud.status.mc_address) || "";
+    $("mcAddr").textContent = mc || (cfg.mode === "cloud" ? "Chưa cấu hình (xem HUONG-DAN.md → Playit)" : "—");
+    $("btnCopy").disabled = !mc;
+
+    if (panel && panelReachable) {
+      $("sPlayers").textContent = running ? `${panel.player_count}/${panel.max_players}` : "—";
+      $("sUptime").textContent = running ? fmtDur(panel.uptime_sec) : "—";
+      $("sRam").textContent = panel.ram_mb ? (panel.ram_mb / 1024).toFixed(1) + " GB" : "—";
+      const left = panel.cloud_deadline ? panel.cloud_deadline - 8 * 60 - (panel.server_time || Date.now() / 1000) : null;
+      $("sLeft").textContent = panel.cloud_deadline ? fmtDur(left) : "Không giới hạn";
+      $("playerList").innerHTML = (panel.online_players || []).map((p) => `<span>${esc(p)}</span>`).join("");
+      const sync = `GitHub: ${panel.last_sync_status} (${panel.last_sync_time})`;
+      const drv = panel.gdrive_enabled ? ` · Drive: ${panel.gdrive_status} (${panel.gdrive_last_time})` : " · Google Drive: chưa cấu hình";
+      $("syncInfo").textContent = sync + drv;
+      $("hist").innerHTML = (panel.backup_history || []).map((h) =>
+        `<li class="${h.ok ? "" : "bad"}"><b>${h.ok ? "✓" : "✗"}</b><span>${esc(h.time)} · ${esc(h.reason)} — ${esc(h.message)}</span></li>`).join("");
+      $("btnGit").disabled = busy || !panel.authenticated;
+      $("btnDrive").disabled = busy || !panel.authenticated || !panel.gdrive_enabled;
+      $("btnDrive").title = panel.gdrive_enabled ? "" : "Thêm secret RCLONE_CONFIG trên GitHub (xem HUONG-DAN.md)";
+      $("btnLogin").classList.toggle("hide", !!panel.authenticated);
+      renderLog(panel.authenticated ? panel.logs || [] : null);
+    } else {
+      ["sPlayers", "sUptime", "sRam", "sLeft"].forEach((k) => ($(k).textContent = "—"));
+      $("playerList").innerHTML = "";
+      $("btnGit").disabled = $("btnDrive").disabled = true;
+      $("btnLogin").classList.add("hide");
+      if (cloud.state !== "online") renderLog([]);
+    }
+    $("cmdInput").disabled = !(panel && panelReachable && panel.authenticated && running);
+  }
+
+  function classify(l) {
+    if (/^> /.test(l)) return "c";
+    if (/Done \(.*\)!/.test(l)) return "d";
+    if (/\b(ERROR|FATAL|Exception)\b|Lỗi/.test(l)) return "e";
+    if (/\bWARN\b/.test(l)) return "w";
+    if (/joined the game|left the game|<[^>]+>/.test(l)) return "j";
+    if (/^\[(Panel|Cloud|Cloud Sync|Google Drive|Auto-Save|Cloud Pull|Cloud Setup)/.test(l)) return "p";
+    return "";
+  }
+  function renderLog(lines) {
+    const box = $("log");
+    if (lines === null) {
+      const sig = "auth";
+      if (lastLogSig !== sig) { box.innerHTML = '<span class="empty">Đăng nhập Web Panel (⚙ Cài đặt) để xem log và gõ lệnh.</span>'; lastLogSig = sig; }
+      return;
+    }
+    const shown = lines.slice(Math.min(clearedAt, lines.length));
+    const sig = lines.length + "|" + (lines[lines.length - 1] || "") + "|" + clearedAt;
+    if (sig === lastLogSig) return;
+    lastLogSig = sig;
+    const atBottom = box.scrollHeight - box.scrollTop - box.clientHeight < 40;
+    box.innerHTML = shown.length
+      ? shown.map((l) => { const c = classify(l); return c ? `<span class="${c}">${esc(l)}</span>` : esc(l); }).join("\n")
+      : '<span class="empty">Log của server sẽ hiện ở đây khi server chạy.</span>';
+    if ($("autoscroll").checked && (atBottom || shown.length < 50)) box.scrollTop = box.scrollHeight;
+  }
+
+  // ---------- Actions ----------
+  async function startServer() {
+    if (cfg.mode === "local" || servedByPanel) {
+      const d = await api("/api/start", {}); toast(d.message || "Đã gửi lệnh", !d.ok); return;
+    }
+    if (!cfg.token) { toast("Hãy nhập GitHub token trong Cài đặt trước.", true); openSettings(); return; }
+    await gh(`/actions/workflows/${WORKFLOW}/dispatches`, {
+      method: "POST", body: JSON.stringify({ ref: "main", inputs: { duration_minutes: $("duration").value } }),
+    });
+    toast("Đã yêu cầu GitHub bật server. Chờ khoảng 3–5 phút…");
+    cloud.state = "queued";
+  }
+  async function stopServer() {
+    if (!confirm("Tắt server? World sẽ được lưu trước khi tắt.")) return;
+    const d = await api("/api/stop", {}); toast(d.message || "Đã gửi lệnh tắt", !d.ok);
+  }
+
+  $("btnPower").onclick = async () => {
+    busy = true; render();
+    try {
+      const running = panel && panelReachable && ["running", "starting"].includes(panel.server_state);
+      if (running) {
+        if (!panel.authenticated && !(await panelLogin(false))) return;
+        await stopServer();
+      } else if ((cfg.mode === "local" || servedByPanel) && panel && !panel.authenticated && !(await panelLogin(false))) {
+        return;
+      } else await startServer();
+    } catch (e) { toast(e.message, true); }
+    finally { busy = false; tick(); }
+  };
+
+  $("btnCancel").onclick = async () => {
+    if (!confirm("Huỷ ngay phiên GitHub? Server bị tắt đột ngột, có thể mất tiến trình chưa lưu (tối đa ~10 phút). Chỉ dùng khi server bị treo.")) return;
+    try { await gh(`/actions/runs/${cloud.run.id}/cancel`, { method: "POST" }); toast("Đã gửi lệnh huỷ phiên."); }
+    catch (e) { toast(e.message, true); }
+  };
+
+  async function runBackup(path, label) {
+    busy = true; render(); toast("Đang " + label + "…");
+    try { const d = await api(path, {}); toast(d.message || "Xong", !d.ok); }
+    catch (e) { toast(e.message, true); }
+    finally { busy = false; tick(); }
+  }
+  $("btnGit").onclick = () => runBackup("/api/backup", "lưu lên GitHub");
+  $("btnDrive").onclick = () => runBackup("/api/backup-gdrive", "lưu lên Google Drive");
+  $("btnCopy").onclick = () => { navigator.clipboard?.writeText($("mcAddr").textContent).then(() => toast("Đã chép địa chỉ.")); };
+  $("btnClear").onclick = () => { clearedAt = (panel && panel.logs) ? panel.logs.length : 0; lastLogSig = ""; render(); };
+  $("btnLogin").onclick = async () => { if (await panelLogin(false)) tick(); };
+
+  // Console commands
+  const QUICK = ["list", "save-all", "say Xin chào mọi người!", "time set day", "weather clear", "op ", "whitelist add ", "kick ", "neoforge tps"];
+  $("quick").innerHTML = QUICK.map((q) => `<button type="button" class="chip">${esc(q.trim())}</button>`).join("");
+  $("quick").addEventListener("click", (e) => {
+    const b = e.target.closest(".chip"); if (!b) return;
+    const q = QUICK.find((x) => x.trim() === b.textContent);
+    const inp = $("cmdInput");
+    if (q.endsWith(" ")) { inp.value = q; inp.focus(); } else { inp.value = q; $("cmdForm").requestSubmit(); }
+  });
+  $("cmdForm").onsubmit = async (e) => {
+    e.preventDefault();
+    const inp = $("cmdInput"); const c = inp.value.trim().replace(/^\//, ""); if (!c) return;
+    try {
+      const d = await api("/api/command", { command: c });
+      if (!d.ok) toast(d.message || "Không gửi được lệnh", true);
+      if (cmdHistory[cmdHistory.length - 1] !== c) { cmdHistory.push(c); if (cmdHistory.length > 50) cmdHistory.shift(); LS.set("cmd_hist", JSON.stringify(cmdHistory)); }
+      histIdx = cmdHistory.length; inp.value = "";
+      setTimeout(tick, 400);
+    } catch (err) { toast(err.message, true); }
+  };
+  $("cmdInput").addEventListener("keydown", (e) => {
+    if (e.key === "ArrowUp" && histIdx > 0) { histIdx--; e.target.value = cmdHistory[histIdx]; e.preventDefault(); }
+    if (e.key === "ArrowDown") { histIdx = Math.min(cmdHistory.length, histIdx + 1); e.target.value = cmdHistory[histIdx] || ""; e.preventDefault(); }
+  });
+
+  // ---------- Settings ----------
+  let editMode = cfg.mode;
+  function setTab(m) {
+    editMode = m;
+    document.querySelectorAll(".tabs button").forEach((b) => b.classList.toggle("on", b.dataset.mode === m));
+    $("cloudBox").classList.toggle("hide", m !== "cloud"); $("localBox").classList.toggle("hide", m !== "local");
+  }
+  function openSettings() {
+    $("ghToken").value = cfg.token; $("ghRepo").value = cfg.repo; $("localUrl").value = cfg.localUrl;
+    $("pUser").value = cfg.user; $("pPass").value = cfg.pass; setTab(cfg.mode);
+    $("ovSettings").classList.add("show");
+  }
+  document.querySelectorAll(".tabs button").forEach((b) => (b.onclick = () => setTab(b.dataset.mode)));
+  $("btnSettings").onclick = openSettings;
+  $("btnCloseSet").onclick = () => $("ovSettings").classList.remove("show");
+  $("ovSettings").addEventListener("click", (e) => { if (e.target.id === "ovSettings") $("ovSettings").classList.remove("show"); });
+  $("btnSaveSet").onclick = async () => {
+    cfg.mode = editMode; cfg.token = $("ghToken").value.trim(); cfg.repo = $("ghRepo").value.trim() || defaultRepo();
+    cfg.localUrl = $("localUrl").value.trim().replace(/\/+$/, ""); cfg.user = $("pUser").value.trim() || "modslime";
+    cfg.pass = $("pPass").value;
+    LS.set("mode", cfg.mode); LS.set("gh_token", cfg.token); LS.set("gh_repo", cfg.repo); LS.set("local_url", cfg.localUrl); LS.set("p_user", cfg.user);
+    if ($("pRemember").checked) LS.set("p_pass", cfg.pass); else LS.del("p_pass");
+    if (!servedByPanel) panelBase = cfg.mode === "local" ? cfg.localUrl : "";
+    $("ovSettings").classList.remove("show");
+    lastLogSig = "";
+    if (cfg.pass) { await pollCloud(); if (panelBase) await panelLogin(false); }
+    toast("Đã lưu cài đặt."); tick();
+  };
+
+  // ---------- Loop ----------
+  let cloudTimer = 0;
+  async function tick() {
+    if (!servedByPanel && cfg.mode === "local") panelBase = cfg.localUrl;
+    if (!servedByPanel && cfg.mode === "cloud" && Date.now() - cloudTimer > (cfg.token ? 5000 : 60000)) {
+      cloudTimer = Date.now(); await pollCloud();
+    }
+    await pollPanel();
+    render();
+  }
+  async function loop() { try { await tick(); } catch (e) { console.error(e); } setTimeout(loop, panelBase ? 2500 : 4000); }
+  if (!cfg.pass && !panelToken && cfg.mode === "cloud" && !cfg.token && !servedByPanel) setTimeout(openSettings, 600);
+  loop();
+})();
+</script>
 </body>
 </html>
