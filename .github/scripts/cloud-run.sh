@@ -84,8 +84,19 @@ publish_status "online" "$PANEL_URL" "${MC_ADDRESS:-}" "$DEADLINE"
 
 # Giữ step chạy tới khi Web Panel tự thoát (server tắt + đã lưu, hoặc hết giờ)
 LAST_PRINTED=0
+READY_SHOWN=0
 while kill -0 "$PANEL_PID" 2>/dev/null; do
   sleep 20
+  if [ "$READY_SHOWN" = 0 ] && grep -q "Done (" logs/latest.log 2>/dev/null; then
+    READY_SHOWN=1
+    echo "::notice title=Server đã sẵn sàng::Vào game: ${MC_ADDRESS:-chưa cấu hình Playit} · Log & lệnh: ${PANEL_URL}"
+    echo "=================================================================="
+    echo "  ✅ SERVER ĐÃ SẴN SÀNG. Bước này sẽ tiếp tục chạy cho tới khi tắt."
+    echo "  Web Panel : ${PANEL_URL}"
+    echo "  Vào game  : ${MC_ADDRESS:-chưa cấu hình Playit -> chưa ai vào được}"
+    echo "  Tự tắt lúc: $(date -d @$(( DEADLINE - 480 )) +'%H:%M %d/%m')"
+    echo "=================================================================="
+  fi
   N=$(wc -l < logs/latest.log 2>/dev/null || echo 0)
   if [ "$N" -gt "$LAST_PRINTED" ]; then
     sed -n "$((LAST_PRINTED + 1)),${N}p" logs/latest.log | tail -n 40
