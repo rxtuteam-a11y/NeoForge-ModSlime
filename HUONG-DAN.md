@@ -28,6 +28,9 @@ Sau 3–5 phút trang tự chuyển sang "Đang chạy", console hiện log và 
 
 Bạn bè không có token vẫn mở được trang, xem trạng thái, đăng nhập tài khoản chung để xem log/gõ lệnh; chỉ không bấm bật được.
 
+> Mẹo: nếu token có thêm quyền **Secrets** và **Variables: Read and write**, bạn nhập Playit / địa chỉ game / rclone.conf
+> ngay trong **⚙ Cài đặt → Cấu hình server trên GitHub** của trang web, khỏi làm bước 3 của mục 2 và mục 3 bên dưới bằng tay.
+
 **2. Playit.gg** (để người chơi vào được game, vì máy GitHub không có IP công khai)
 1. Đăng nhập https://playit.gg → Agents → thêm agent mới kiểu **Docker / self-managed** → chép giá trị **SECRET_KEY**.
 2. Tạo tunnel **Minecraft Java** trỏ về agent đó, địa chỉ nội bộ `127.0.0.1:25565`. Chép địa chỉ tunnel (vd. `abc.joinmc.link`).
