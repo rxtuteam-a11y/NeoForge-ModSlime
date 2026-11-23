@@ -53,8 +53,10 @@
       "highland_fields": "2026-11-23 22:33:58 +0700",
       "frozen_pine_taiga": "2026-11-22 17:27:42 +0700",
       "magnolia_woodland": "2026-11-23 21:16:25 +0700",
+      "muddy_river": "2026-11-24 01:11:25 +0700",
       "hyacinth_deeps": "2026-11-22 18:35:27 +0700",
       "icy_heights": "2026-11-22 19:05:02 +0700",
+      "prismachasm": "2026-11-24 01:10:42 +0700",
       "cold_boreal_taiga": "2026-11-22 19:02:02 +0700"
     },
     "done": false
@@ -71,6 +73,7 @@
       "highland_fields": "2026-11-23 22:33:58 +0700",
       "frozen_pine_taiga": "2026-11-22 17:27:42 +0700",
       "magnolia_woodland": "2026-11-23 21:16:25 +0700",
+      "muddy_river": "2026-11-24 01:11:25 +0700",
       "hyacinth_deeps": "2026-11-22 18:35:27 +0700",
       "icy_heights": "2026-11-22 19:05:02 +0700",
       "cold_boreal_taiga": "2026-11-22 19:02:02 +0700"
@@ -4877,6 +4880,12 @@
       "has_bleeding_heart": "2026-11-23 23:53:48 +0700"
     },
     "done": true
+  },
+  "regions_unexplored:spelunker": {
+    "criteria": {
+      "prismachasm": "2026-11-24 01:10:42 +0700"
+    },
+    "done": false
   },
   "minecraft:recipes/misc/copper_ingot_from_smelting_copper_ore": {
     "criteria": {
