@@ -47,8 +47,16 @@ chmod +x run.sh
 
 # ---- Playit.gg (cổng game) ----
 if [ -n "${PLAYIT_SECRET:-}" ]; then
-  ./playit-linux-amd64 --secret "$PLAYIT_SECRET" > playit.log 2>&1 &
-  echo "Đã bật Playit.gg."
+  # Giống image Docker chính thức: playitd --secret=... --platform-docker
+  # socket/cert đặt trong /tmp vì runner không có quyền ghi /run/playit
+  mkdir -p /tmp/playit-certs
+  PLAYIT_LOG=info ./playit-linux-amd64 --secret="$PLAYIT_SECRET" --platform-docker \
+    --socket-path /tmp/playitd.sock --cert-dir /tmp/playit-certs > playit.log 2>&1 &
+  PLAYIT_PID=$!
+  sleep 8
+  if kill -0 "$PLAYIT_PID" 2>/dev/null; then echo "Đã bật Playit.gg (agent đang chạy)."
+  else echo "::error::Playit agent dừng ngay khi khởi động:"; fi
+  sed -E 's/[0-9a-f]{40,}/***/g' playit.log | head -n 20
 else
   echo "::warning::Chưa có secret PLAYIT_SECRET -> người chơi chưa vào game được (xem HUONG-DAN.md)."
 fi
@@ -101,6 +109,9 @@ while kill -0 "$PANEL_PID" 2>/dev/null; do
   if [ "$N" -gt "$LAST_PRINTED" ]; then
     sed -n "$((LAST_PRINTED + 1)),${N}p" logs/latest.log | tail -n 40
     LAST_PRINTED=$N
+  fi
+  if [ -n "${PLAYIT_PID:-}" ] && ! kill -0 "$PLAYIT_PID" 2>/dev/null && [ -z "${PLAYIT_DEAD:-}" ]; then
+    PLAYIT_DEAD=1; echo "::warning::Playit agent đã dừng:"; sed -E 's/[0-9a-f]{40,}/***/g' playit.log | tail -n 20
   fi
   if [ "$(date +%s)" -gt $(( DEADLINE + 300 )) ]; then
     echo "Quá giờ, dừng Web Panel."; kill "$PANEL_PID"; break
