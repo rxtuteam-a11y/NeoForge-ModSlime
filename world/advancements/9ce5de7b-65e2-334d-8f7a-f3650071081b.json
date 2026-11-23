@@ -5321,6 +5321,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/raw_iron_block": {
+    "criteria": {
+      "has_raw_iron": "2026-11-24 04:05:19 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/smooth_sandstone_slab_from_smooth_sandstone_stonecutting": {
     "criteria": {
       "has_smooth_sandstone": "2026-11-24 03:45:37 +0700"
@@ -5447,6 +5453,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/cooked_porkchop": {
+    "criteria": {
+      "has_porkchop": "2026-11-24 04:03:57 +0700"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/tame_an_animal": {
+    "criteria": {
+      "tamed_animal": "2026-11-24 04:02:52 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/cut_sandstone_from_sandstone_stonecutting": {
     "criteria": {
       "has_sandstone": "2026-11-24 03:45:16 +0700"
@@ -5495,9 +5513,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/iron_ingot_from_blasting_raw_iron": {
+    "criteria": {
+      "has_raw_iron": "2026-11-24 04:05:19 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/stick_from_jungle_log_woodcutting": {
     "criteria": {
       "has_jungle_log": "2026-11-24 03:21:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_porkchop_from_smoking": {
+    "criteria": {
+      "has_porkchop": "2026-11-24 04:03:57 +0700"
     },
     "done": true
   },
@@ -5609,6 +5639,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/iron_ingot_from_smelting_raw_iron": {
+    "criteria": {
+      "has_raw_iron": "2026-11-24 04:05:19 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/flint_and_steel": {
     "criteria": {
       "has_obsidian": "2026-11-24 03:38:22 +0700"
@@ -5651,6 +5687,12 @@
     },
     "done": true
   },
+  "tensura:name_a_mob": {
+    "criteria": {
+      "name": "2026-11-24 04:02:52 +0700"
+    },
+    "done": true
+  },
   "mowziesmobs:kill_foliaath": {
     "criteria": {
       "foliaath": "2026-11-24 03:20:29 +0700"
@@ -5672,6 +5714,12 @@
   "minecraft:recipes/building_blocks/low_quality_magic_crystal_bricks_from_low_quality_magic_crystal_block_stonecutting": {
     "criteria": {
       "has_low_quality_magic_crystal_block": "2026-11-24 02:25:05 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_giant_bat_meat_from_smelting": {
+    "criteria": {
+      "has_raw_giant_bat_meat": "2026-11-24 04:01:15 +0700"
     },
     "done": true
   },
@@ -5771,11 +5819,29 @@
     },
     "done": true
   },
+  "tensura:recipes/food/cooked_giant_bat_meat_from_smoking": {
+    "criteria": {
+      "has_raw_giant_bat_meat": "2026-11-24 04:01:15 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/drying/pork_jerky": {
+    "criteria": {
+      "has_meat": "2026-11-24 04:03:57 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/stripped_jungle_wood_from_jungle_log_woodcutting": {
     "criteria": {
       "has_jungle_log": "2026-11-24 03:21:53 +0700"
     },
     "done": true
+  },
+  "tensura:ruler_of_monster": {
+    "criteria": {
+      "orc": "2026-11-24 04:02:52 +0700"
+    },
+    "done": false
   },
   "minecraft:recipes/food/cooked_armorsaurus_meat_from_smelting": {
     "criteria": {
@@ -5828,6 +5894,12 @@
   "tensura:recipes/food/cooked_armorsaurus_meat_from_campfire_cooking": {
     "criteria": {
       "has_raw_armorsaurus_meat": "2026-11-24 03:58:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_porkchop_from_campfire_cooking": {
+    "criteria": {
+      "has_porkchop": "2026-11-24 04:03:57 +0700"
     },
     "done": true
   },
@@ -5924,6 +5996,12 @@
   "minecraft:recipes/building_blocks/stripped_jungle_log_from_jungle_log_woodcutting": {
     "criteria": {
       "has_jungle_log": "2026-11-24 03:21:53 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/food/cooked_giant_bat_meat_from_campfire_cooking": {
+    "criteria": {
+      "has_raw_giant_bat_meat": "2026-11-24 04:01:15 +0700"
     },
     "done": true
   },
