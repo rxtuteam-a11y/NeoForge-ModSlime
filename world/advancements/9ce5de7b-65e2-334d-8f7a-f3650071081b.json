@@ -979,6 +979,7 @@
       "minecraft:husk": "2026-11-23 13:30:36 +0700",
       "minecraft:cave_spider": "2026-11-23 21:31:24 +0700",
       "minecraft:vindicator": "2026-11-23 13:32:31 +0700",
+      "minecraft:breeze": "2026-11-23 23:54:02 +0700",
       "minecraft:stray": "2026-11-23 13:41:24 +0700",
       "minecraft:enderman": "2026-11-23 19:24:21 +0700",
       "minecraft:spider": "2026-11-23 13:16:59 +0700",
@@ -3845,6 +3846,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_deepslate": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-24 00:01:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/waxed_copper_grate": {
+    "criteria": {
+      "has_waxed_copper_block": "2026-11-23 23:53:46 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/bowl_from_oak_wood_woodcutting": {
     "criteria": {
       "has_oak_wood": "2026-11-23 22:26:37 +0700"
@@ -3893,6 +3906,18 @@
     },
     "done": true
   },
+  "enhanced_ore_variety:recipes/misc/gold_ingot_from_blasting": {
+    "criteria": {
+      "TagKey[minecraft:item / minecraft:gold_ores]": "2026-11-23 23:45:06 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_slab_from_oak_planks_woodcutting": {
+    "criteria": {
+      "has_oak_planks": "2026-11-24 00:01:00 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/granite_slab_from_granite_stonecutting": {
     "criteria": {
       "has_granite": "2026-11-23 23:21:23 +0700"
@@ -3908,6 +3933,12 @@
   "royalvariations:teleporting_king": {
     "criteria": {
       "royal_enderman": "2026-11-23 22:39:48 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/dripstone_pillar_trim": {
+    "criteria": {
+      "has_dripstone_pillar_trim": "2026-11-23 23:43:39 +0700"
     },
     "done": true
   },
@@ -3929,15 +3960,33 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/oak_drawer": {
+    "criteria": {
+      "has_oak_drawer": "2026-11-24 00:01:00 +0700"
+    },
+    "done": true
+  },
   "sophisticatedcore:recipes/misc/ender_linker": {
     "criteria": {
       "has_ender_pearl": "2026-11-23 22:39:48 +0700"
     },
     "done": true
   },
+  "minecraft:recipes/misc/copper_ingot_from_waxed_copper_block": {
+    "criteria": {
+      "has_waxed_copper_block": "2026-11-23 23:53:46 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/granite_slab": {
     "criteria": {
       "has_granite": "2026-11-23 23:21:23 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/oak_shelf": {
+    "criteria": {
+      "has_oak_shelf": "2026-11-24 00:01:00 +0700"
     },
     "done": true
   },
@@ -3950,6 +3999,18 @@
   "minecraft:recipes/building_blocks/poplar_wood": {
     "criteria": {
       "has_log": "2026-11-23 22:24:12 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_deepslate_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-24 00:01:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_slab": {
+    "criteria": {
+      "has_planks": "2026-11-24 00:01:00 +0700"
     },
     "done": true
   },
@@ -3971,6 +4032,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/waxed_chiseled_copper_from_waxed_copper_block_stonecutting": {
+    "criteria": {
+      "has_waxed_copper_block": "2026-11-23 23:53:46 +0700"
+    },
+    "done": true
+  },
   "handcrafted:recipes/misc/granite_corner_trim": {
     "criteria": {
       "has_granite_corner_trim": "2026-11-23 23:21:23 +0700"
@@ -3986,6 +4053,18 @@
   "netherman:enter_maze": {
     "criteria": {
       "in_mansion": "2026-11-23 22:31:20 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/tuff_brick_stairs_from_tuff_bricks_stonecutting": {
+    "criteria": {
+      "has_tuff_bricks": "2026-11-23 23:53:43 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_door": {
+    "criteria": {
+      "has_planks": "2026-11-24 00:01:00 +0700"
     },
     "done": true
   },
@@ -4013,15 +4092,33 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/oak_counter": {
+    "criteria": {
+      "has_oak_counter": "2026-11-24 00:01:00 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/oak_button_from_oak_wood_woodcutting": {
     "criteria": {
       "has_oak_wood": "2026-11-23 22:26:37 +0700"
     },
     "done": true
   },
+  "artifacts:chest_slayer": {
+    "criteria": {
+      "kill_mimic": "2026-11-23 23:46:33 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/copper_ingot_from_smelting_copper_ore": {
     "criteria": {
       "has_copper_ore": "2026-11-23 23:20:27 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_trapdoor": {
+    "criteria": {
+      "has_planks": "2026-11-24 00:01:00 +0700"
     },
     "done": true
   },
@@ -4055,6 +4152,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/stick_from_oak_planks_woodcutting": {
+    "criteria": {
+      "has_oak_planks": "2026-11-24 00:01:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/smoker": {
+    "criteria": {
+      "has_furnace": "2026-11-24 00:01:00 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/ladder_from_oak_wood_woodcutting": {
     "criteria": {
       "has_oak_wood": "2026-11-23 22:26:37 +0700"
@@ -4064,6 +4173,18 @@
   "minecraft:recipes/building_blocks/stick_from_oak_wood_woodcutting": {
     "criteria": {
       "has_oak_wood": "2026-11-23 22:26:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/tuff_brick_slab_from_tuff_bricks_stonecutting": {
+    "criteria": {
+      "has_tuff_bricks": "2026-11-23 23:53:43 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/oak_bench": {
+    "criteria": {
+      "has_oak_bench": "2026-11-24 00:01:00 +0700"
     },
     "done": true
   },
@@ -4079,9 +4200,39 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/cobbled_deepslate_wall": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-24 00:01:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/polished_deepslate_wall_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-24 00:01:01 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/diorite_wall": {
     "criteria": {
       "has_diorite": "2026-11-23 23:20:35 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/dripstone_corner_trim": {
+    "criteria": {
+      "has_dripstone_corner_trim": "2026-11-23 23:43:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/waxed_cut_copper_slab_from_waxed_copper_block_stonecutting": {
+    "criteria": {
+      "has_waxed_copper_block": "2026-11-23 23:53:46 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/oak_couch": {
+    "criteria": {
+      "has_oak_couch": "2026-11-24 00:01:00 +0700"
     },
     "done": true
   },
@@ -4091,9 +4242,33 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/oak_stairs_from_oak_planks_woodcutting": {
+    "criteria": {
+      "has_oak_planks": "2026-11-24 00:01:00 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/oak_chair": {
+    "criteria": {
+      "has_oak_chair": "2026-11-24 00:01:00 +0700"
+    },
+    "done": true
+  },
   "handcrafted:recipes/misc/deepslate_pillar_trim": {
     "criteria": {
       "has_deepslate_pillar_trim": "2026-11-23 23:21:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_deepslate_slab_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-24 00:01:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bowl_from_oak_planks_woodcutting": {
+    "criteria": {
+      "has_oak_planks": "2026-11-24 00:01:00 +0700"
     },
     "done": true
   },
@@ -4127,15 +4302,39 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/waxed_cut_copper_from_waxed_copper_block_stonecutting": {
+    "criteria": {
+      "has_waxed_copper_block": "2026-11-23 23:53:46 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/diorite_wall_from_diorite_stonecutting": {
     "criteria": {
       "has_diorite": "2026-11-23 23:20:35 +0700"
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/cobbled_deepslate_stairs": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-24 00:01:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_pressure_plate": {
+    "criteria": {
+      "has_planks": "2026-11-24 00:01:00 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/polished_granite": {
     "criteria": {
       "has_granite": "2026-11-23 23:21:23 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/oak_cupboard": {
+    "criteria": {
+      "has_oak_cupboard": "2026-11-24 00:01:00 +0700"
     },
     "done": true
   },
@@ -4148,6 +4347,12 @@
   "enhanced_ore_variety:recipes/misc/copper_ingot_from_blasting": {
     "criteria": {
       "TagKey[minecraft:item / minecraft:copper_ores]": "2026-11-23 23:20:27 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dripstone_block": {
+    "criteria": {
+      "has_pointed_dripstone": "2026-11-23 23:44:31 +0700"
     },
     "done": true
   },
@@ -4187,6 +4392,30 @@
     },
     "done": true
   },
+  "sophisticatedbackpacks:recipes/misc/gold_backpack": {
+    "criteria": {
+      "has_iron_backpack": "2026-11-24 00:03:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_bricks_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-24 00:01:01 +0700"
+    },
+    "done": true
+  },
+  "lootr:100loot": {
+    "criteria": {
+      "opened_100": "2026-11-23 23:59:55 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/waxed_cut_copper_stairs_from_waxed_copper_block_stonecutting": {
+    "criteria": {
+      "has_waxed_copper_block": "2026-11-23 23:53:46 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/mushroom_stew": {
     "criteria": {
       "has_red_mushroom": "2026-11-23 22:29:08 +0700"
@@ -4198,6 +4427,18 @@
       "spider_eye": "2026-11-23 23:11:23 +0700"
     },
     "done": false
+  },
+  "kaleidoscope_cookery:recipes/decorations/chopping_board": {
+    "criteria": {
+      "has_wood": "2026-11-24 00:01:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/tuff_brick_slab": {
+    "criteria": {
+      "has_tuff_bricks": "2026-11-23 23:53:43 +0700"
+    },
+    "done": true
   },
   "minecraft:recipes/building_blocks/diorite_stairs": {
     "criteria": {
@@ -4211,9 +4452,21 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/oak_nightstand": {
+    "criteria": {
+      "has_oak_nightstand": "2026-11-24 00:01:00 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/chiseled_tuff_bricks_from_tuff_stonecutting": {
     "criteria": {
       "has_tuff": "2026-11-23 22:28:35 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_tile_stairs_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-24 00:01:01 +0700"
     },
     "done": true
   },
@@ -4229,9 +4482,27 @@
     },
     "done": true
   },
+  "enhanced_ore_variety:recipes/misc/redstone_from_blasting": {
+    "criteria": {
+      "TagKey[minecraft:item / minecraft:redstone_ores]": "2026-11-23 23:38:57 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/oak_sign": {
+    "criteria": {
+      "has_planks": "2026-11-24 00:01:00 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/building_blocks/deepslate_warp_pad": {
     "criteria": {
       "has_deepslate": "2026-11-23 23:21:50 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/oak_fancy_bed": {
+    "criteria": {
+      "has_oak_fancy_bed": "2026-11-24 00:01:00 +0700"
     },
     "done": true
   },
@@ -4247,9 +4518,33 @@
     },
     "done": true
   },
+  "kaleidoscope_cookery:recipes/decorations/long_bench": {
+    "criteria": {
+      "has_oak_planks": "2026-11-24 00:01:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobbled_deepslate_slab": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-24 00:01:01 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/oak_table": {
+    "criteria": {
+      "has_oak_table": "2026-11-24 00:01:00 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/tuff_brick_wall_from_tuff_stonecutting": {
     "criteria": {
       "has_tuff": "2026-11-23 22:28:35 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/oak_corner_trim": {
+    "criteria": {
+      "has_oak_corner_trim": "2026-11-24 00:01:00 +0700"
     },
     "done": true
   },
@@ -4271,6 +4566,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/combat/mace": {
+    "criteria": {
+      "has_breeze_rod": "2026-11-23 23:54:02 +0700"
+    },
+    "done": true
+  },
   "waystones:recipes/decorations/warp_dust": {
     "criteria": {
       "has_ender_pearl": "2026-11-23 22:39:48 +0700"
@@ -4286,6 +4587,18 @@
   "minecraft:recipes/building_blocks/polished_diorite_stairs_from_diorite_stonecutting": {
     "criteria": {
       "has_diorite": "2026-11-23 23:20:35 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/tuff_brick_wall": {
+    "criteria": {
+      "has_tuff_bricks": "2026-11-23 23:53:43 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_deepslate_stairs_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-24 00:01:01 +0700"
     },
     "done": true
   },
@@ -4307,6 +4620,24 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/silver_ingot_from_blasting_silver_ore": {
+    "criteria": {
+      "has_silver_ore": "2026-11-23 23:35:19 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/deepslate_brick_wall_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-24 00:01:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/diamond_from_smelting_deepslate_diamond_ore": {
+    "criteria": {
+      "has_deepslate_diamond_ore": "2026-11-23 23:49:59 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/granite_stairs": {
     "criteria": {
       "has_granite": "2026-11-23 23:21:23 +0700"
@@ -4316,6 +4647,12 @@
   "enhanced_ore_variety:recipes/misc/lapis_lazuli_from_smelting": {
     "criteria": {
       "TagKey[minecraft:item / minecraft:lapis_ores]": "2026-11-23 23:24:41 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_ingot_from_blasting_deepslate_gold_ore": {
+    "criteria": {
+      "has_deepslate_gold_ore": "2026-11-23 23:45:06 +0700"
     },
     "done": true
   },
@@ -4331,15 +4668,57 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/cobbled_deepslate_slab_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-24 00:01:01 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/tuff_wall": {
     "criteria": {
       "has_tuff": "2026-11-23 22:28:35 +0700"
     },
     "done": true
   },
+  "minecraft:recipes/decorations/tuff_brick_wall_from_tuff_bricks_stonecutting": {
+    "criteria": {
+      "has_tuff_bricks": "2026-11-23 23:53:43 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_tile_slab_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-24 00:01:01 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/oak_dining_bench": {
+    "criteria": {
+      "has_oak_dining_bench": "2026-11-24 00:01:00 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/granite_wall": {
     "criteria": {
       "has_granite": "2026-11-23 23:21:23 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_fence_gate": {
+    "criteria": {
+      "has_planks": "2026-11-24 00:01:00 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/oak_desk": {
+    "criteria": {
+      "has_oak_desk": "2026-11-24 00:01:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/tuff_brick_stairs": {
+    "criteria": {
+      "has_tuff_bricks": "2026-11-23 23:53:43 +0700"
     },
     "done": true
   },
@@ -4373,6 +4752,24 @@
     },
     "done": true
   },
+  "kaleidoscope_cookery:recipes/decorations/cook_stool_oak": {
+    "criteria": {
+      "has_wood": "2026-11-24 00:01:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/deepslate_tile_wall_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-24 00:01:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_button_from_oak_planks_woodcutting": {
+    "criteria": {
+      "has_oak_planks": "2026-11-24 00:01:00 +0700"
+    },
+    "done": true
+  },
   "handcrafted:recipes/misc/diorite_corner_trim": {
     "criteria": {
       "has_diorite_corner_trim": "2026-11-23 23:20:35 +0700"
@@ -4394,6 +4791,18 @@
   "minecraft:recipes/building_blocks/polished_tuff": {
     "criteria": {
       "has_tuff": "2026-11-23 22:28:35 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_ingot_from_smelting_deepslate_gold_ore": {
+    "criteria": {
+      "has_deepslate_gold_ore": "2026-11-23 23:45:06 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/redstone_from_blasting_deepslate_redstone_ore": {
+    "criteria": {
+      "has_deepslate_redstone_ore": "2026-11-23 23:38:57 +0700"
     },
     "done": true
   },
@@ -4421,15 +4830,33 @@
     },
     "done": true
   },
+  "enhanced_ore_variety:recipes/misc/diamond_from_blasting": {
+    "criteria": {
+      "TagKey[minecraft:item / minecraft:diamond_ores]": "2026-11-23 23:49:59 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/oak_wood": {
     "criteria": {
       "has_log": "2026-11-23 22:34:04 +0700"
     },
     "done": true
   },
+  "minecraft:adventure/minecraft_trials_edition": {
+    "criteria": {
+      "minecraft_trials_edition": "2026-11-23 23:53:48 +0700"
+    },
+    "done": true
+  },
   "waystones:recipes/decorations/deepslate_shard": {
     "criteria": {
       "has_deepslate": "2026-11-23 23:21:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_brick_stairs_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-24 00:01:01 +0700"
     },
     "done": true
   },
@@ -4445,9 +4872,57 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/waxed_copper_bulb": {
+    "criteria": {
+      "has_waxed_copper_block": "2026-11-23 23:53:46 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/tuff_stairs": {
     "criteria": {
       "has_tuff": "2026-11-23 22:28:35 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/waxed_cut_copper": {
+    "criteria": {
+      "has_waxed_copper_block": "2026-11-23 23:53:46 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/basalt_warp_pad": {
+    "criteria": {
+      "has_smooth_basalt": "2026-11-23 23:46:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_deepslate_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-24 00:01:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/cobbled_deepslate_wall_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-24 00:01:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_stairs": {
+    "criteria": {
+      "has_planks": "2026-11-24 00:01:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/oak_fence": {
+    "criteria": {
+      "has_planks": "2026-11-24 00:01:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/redstone_from_smelting_deepslate_redstone_ore": {
+    "criteria": {
+      "has_deepslate_redstone_ore": "2026-11-23 23:38:57 +0700"
     },
     "done": true
   },
@@ -4460,6 +4935,18 @@
   "waystones:recipes/decorations/warp_stone": {
     "criteria": {
       "has_ender_pearl": "2026-11-23 22:39:48 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobbled_deepslate_stairs_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-24 00:01:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-24 00:01:01 +0700"
     },
     "done": true
   },
@@ -4481,15 +4968,93 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/oak_button": {
+    "criteria": {
+      "has_planks": "2026-11-24 00:01:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/diamond_from_blasting_deepslate_diamond_ore": {
+    "criteria": {
+      "has_deepslate_diamond_ore": "2026-11-23 23:49:59 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/oak_pillar_trim": {
+    "criteria": {
+      "has_oak_pillar_trim": "2026-11-24 00:01:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_tuff_bricks_from_tuff_bricks_stonecutting": {
+    "criteria": {
+      "has_tuff_bricks": "2026-11-23 23:53:43 +0700"
+    },
+    "done": true
+  },
+  "lootr:trapped_chest": {
+    "criteria": {
+      "trapped_opened": "2026-11-23 23:46:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/wind_charge": {
+    "criteria": {
+      "has_breeze_rod": "2026-11-23 23:54:02 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_brick_slab_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-24 00:01:01 +0700"
+    },
+    "done": true
+  },
   "enhanced_ore_variety:recipes/misc/lapis_lazuli_from_blasting": {
     "criteria": {
       "TagKey[minecraft:item / minecraft:lapis_ores]": "2026-11-23 23:24:41 +0700"
     },
     "done": true
   },
+  "enhanced_ore_variety:recipes/misc/gold_ingot_from_smelting": {
+    "criteria": {
+      "TagKey[minecraft:item / minecraft:gold_ores]": "2026-11-23 23:45:06 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/building_blocks/tuff_warp_pad": {
     "criteria": {
       "has_tuff": "2026-11-23 22:28:35 +0700"
+    },
+    "done": true
+  },
+  "enhanced_ore_variety:recipes/misc/diamond_from_smelting": {
+    "criteria": {
+      "TagKey[minecraft:item / minecraft:diamond_ores]": "2026-11-23 23:49:59 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/ladder_from_oak_planks_woodcutting": {
+    "criteria": {
+      "has_oak_planks": "2026-11-24 00:01:00 +0700"
+    },
+    "done": true
+  },
+  "enhanced_ore_variety:recipes/misc/redstone_from_smelting": {
+    "criteria": {
+      "TagKey[minecraft:item / minecraft:redstone_ores]": "2026-11-23 23:38:57 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/oak_side_table": {
+    "criteria": {
+      "has_oak_side_table": "2026-11-24 00:01:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/silver_ingot_from_smelting_silver_ore": {
+    "criteria": {
+      "has_silver_ore": "2026-11-23 23:35:19 +0700"
     },
     "done": true
   },
@@ -4502,6 +5067,24 @@
   "vanillabackport:recipes/food/mushroom_stew": {
     "criteria": {
       "has_mushrooms": "2026-11-23 22:29:08 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_tiles_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-24 00:01:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/waxed_copper_grate_from_waxed_copper_block_stonecutting": {
+    "criteria": {
+      "has_waxed_copper_block": "2026-11-23 23:53:46 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_fence_from_oak_planks_woodcutting": {
+    "criteria": {
+      "has_oak_planks": "2026-11-24 00:01:00 +0700"
     },
     "done": true
   },

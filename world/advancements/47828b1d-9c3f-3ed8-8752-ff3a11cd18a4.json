@@ -46,16 +46,21 @@
       "willow_forest": "2026-11-23 13:08:42 +0700",
       "cold_river": "2026-11-23 21:06:07 +0700",
       "shrubland": "2026-11-23 21:06:03 +0700",
+      "poppy_fields": "2026-11-23 23:45:33 +0700",
       "spires": "2026-11-23 13:24:02 +0700",
+      "grassland": "2026-11-23 23:50:23 +0700",
+      "prairie": "2026-11-23 23:47:16 +0700",
       "flower_fields": "2026-11-23 22:41:21 +0700",
       "highland_fields": "2026-11-23 21:10:02 +0700",
       "frozen_pine_taiga": "2026-11-22 17:27:12 +0700",
       "magnolia_woodland": "2026-11-23 21:03:43 +0700",
+      "chalk_cliffs": "2026-11-23 23:35:36 +0700",
       "icy_heights": "2026-11-23 13:23:44 +0700",
       "hyacinth_deeps": "2026-11-23 13:21:56 +0700",
       "boreal_taiga": "2026-11-23 13:27:40 +0700",
       "cold_boreal_taiga": "2026-11-23 19:28:48 +0700",
-      "marsh": "2026-11-23 13:08:37 +0700"
+      "marsh": "2026-11-23 13:08:37 +0700",
+      "clover_plains": "2026-11-23 23:46:56 +0700"
     },
     "done": false
   },
@@ -64,16 +69,21 @@
       "willow_forest": "2026-11-23 13:08:42 +0700",
       "cold_river": "2026-11-23 21:06:07 +0700",
       "shrubland": "2026-11-23 21:06:03 +0700",
+      "poppy_fields": "2026-11-23 23:45:33 +0700",
       "spires": "2026-11-23 13:24:02 +0700",
+      "grassland": "2026-11-23 23:50:23 +0700",
+      "prairie": "2026-11-23 23:47:16 +0700",
       "flower_fields": "2026-11-23 22:41:21 +0700",
       "highland_fields": "2026-11-23 21:10:02 +0700",
       "frozen_pine_taiga": "2026-11-22 17:27:12 +0700",
       "magnolia_woodland": "2026-11-23 21:03:43 +0700",
+      "chalk_cliffs": "2026-11-23 23:35:36 +0700",
       "icy_heights": "2026-11-23 13:23:44 +0700",
       "hyacinth_deeps": "2026-11-23 13:21:56 +0700",
       "boreal_taiga": "2026-11-23 13:27:40 +0700",
       "cold_boreal_taiga": "2026-11-23 19:28:48 +0700",
-      "marsh": "2026-11-23 13:08:37 +0700"
+      "marsh": "2026-11-23 13:08:37 +0700",
+      "clover_plains": "2026-11-23 23:46:56 +0700"
     },
     "done": false
   },
@@ -892,16 +902,22 @@
     "criteria": {
       "minecraft:snowy_slopes": "2026-11-23 23:30:03 +0700",
       "minecraft:forest": "2026-11-23 13:08:05 +0700",
+      "minecraft:sparse_jungle": "2026-11-23 23:50:46 +0700",
       "minecraft:river": "2026-11-23 20:59:57 +0700",
+      "minecraft:lukewarm_ocean": "2026-11-23 23:51:31 +0700",
       "minecraft:snowy_plains": "2026-11-23 12:57:28 +0700",
+      "minecraft:stony_shore": "2026-11-23 23:51:26 +0700",
       "minecraft:snowy_taiga": "2026-11-23 12:53:16 +0700",
+      "minecraft:frozen_peaks": "2026-11-23 23:34:49 +0700",
       "minecraft:ice_spikes": "2026-11-23 19:18:51 +0700",
       "minecraft:frozen_ocean": "2026-11-22 17:48:03 +0700",
       "minecraft:frozen_river": "2026-11-22 19:16:03 +0700",
       "minecraft:cherry_grove": "2026-11-23 23:29:56 +0700",
+      "minecraft:sunflower_plains": "2026-11-23 23:34:50 +0700",
       "minecraft:swamp": "2026-11-23 13:08:17 +0700",
       "minecraft:windswept_hills": "2026-11-23 19:32:36 +0700",
       "minecraft:snowy_beach": "2026-11-22 19:16:01 +0700",
+      "minecraft:savanna": "2026-11-23 23:50:01 +0700",
       "minecraft:plains": "2026-11-23 12:59:08 +0700"
     },
     "done": false
@@ -4041,6 +4057,156 @@
   "tensura:arachnophobic": {
     "criteria": {
       "black_spider": "2026-11-23 23:17:23 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/pink_dye_from_pink_petals": {
+    "criteria": {
+      "has_pink_petals": "2026-11-23 23:33:54 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/misc/rift_armor_trim_smithing_template": {
+    "criteria": {
+      "has_coast_armor_trim_smithing_template": "2026-11-23 23:35:33 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/soul_lantern": {
+    "criteria": {
+      "has_soul_torch": "2026-11-23 23:55:18 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/combat/silver_boots": {
+    "criteria": {
+      "has_silver_ingot": "2026-11-23 23:51:43 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/tools/silver_axe": {
+    "criteria": {
+      "has_diamond": "2026-11-23 23:51:43 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_porkchop": {
+    "criteria": {
+      "has_porkchop": "2026-11-23 23:55:10 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/tools/silver_pickaxe": {
+    "criteria": {
+      "has_diamond": "2026-11-23 23:51:43 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_porkchop_from_smoking": {
+    "criteria": {
+      "has_porkchop": "2026-11-23 23:55:10 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/combat/silver_sword": {
+    "criteria": {
+      "has_diamond": "2026-11-23 23:51:43 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/combat/silver_chestplate": {
+    "criteria": {
+      "has_silver_ingot": "2026-11-23 23:51:43 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/combat/silver_helmet": {
+    "criteria": {
+      "has_silver_ingot": "2026-11-23 23:51:43 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/food/raw_meatball": {
+    "criteria": {
+      "has_raw_meats": "2026-11-23 23:55:10 +0700"
+    },
+    "done": true
+  },
+  "tensura:acquire_silverware": {
+    "criteria": {
+      "silver": "2026-11-23 23:51:43 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/spellbinding_table": {
+    "criteria": {
+      "has_silver": "2026-11-23 23:51:43 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/combat/silver_leggings": {
+    "criteria": {
+      "has_silver_ingot": "2026-11-23 23:51:43 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/mojang_banner_pattern": {
+    "criteria": {
+      "has_enchanted_golden_apple": "2026-11-23 23:55:20 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/tools/silver_shovel": {
+    "criteria": {
+      "has_diamond": "2026-11-23 23:51:43 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/silver_nugget": {
+    "criteria": {
+      "has_silver_ingot": "2026-11-23 23:51:43 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/drying/pork_jerky": {
+    "criteria": {
+      "has_meat": "2026-11-23 23:55:10 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_porkchop_from_campfire_cooking": {
+    "criteria": {
+      "has_porkchop": "2026-11-23 23:55:10 +0700"
+    },
+    "done": true
+  },
+  "friendsandfoes:adventure/it_bites": {
+    "criteria": {
+      "killed_mauler": "2026-11-23 23:50:05 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/building_blocks/sapphire_gem_to_sapphire_block": {
+    "criteria": {
+      "has_sapphire_gem": "2026-11-23 23:51:48 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/silver_blockfrom_silver_ingot": {
+    "criteria": {
+      "has_silver_ingot": "2026-11-23 23:51:43 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/tools/silver_hoe": {
+    "criteria": {
+      "has_diamond": "2026-11-23 23:51:43 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/tools/silver_sickle": {
+    "criteria": {
+      "has_material_for_silver_sickle": "2026-11-23 23:51:43 +0700"
     },
     "done": true
   },

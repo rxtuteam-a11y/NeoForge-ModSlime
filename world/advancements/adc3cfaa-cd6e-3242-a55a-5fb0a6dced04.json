@@ -2352,6 +2352,12 @@
     },
     "done": true
   },
+  "tensura:recipes/misc/low_quality_magic_crystalfrom_low_quality_magic_crystal_block": {
+    "criteria": {
+      "has_low_quality_magic_crystal_block": "2026-11-23 23:47:39 +0700"
+    },
+    "done": true
+  },
   "handcrafted:recipes/misc/spruce_counter": {
     "criteria": {
       "has_spruce_counter": "2026-11-23 21:23:58 +0700"
@@ -2460,6 +2466,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/medium_quality_magic_crystal_stairs_from_medium_quality_magic_crystal_block_stonecutting": {
+    "criteria": {
+      "has_medium_quality_magic_crystal_block": "2026-11-23 23:47:40 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/leather_chestplate": {
     "criteria": {
       "has_leather": "2026-11-23 22:22:41 +0700"
@@ -2532,6 +2544,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/red_dye_from_poppy": {
+    "criteria": {
+      "has_poppy": "2026-11-23 23:46:47 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/clay": {
     "criteria": {
       "has_clay_ball": "2026-11-23 22:21:41 +0700"
@@ -2598,6 +2616,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/name_tag_from_monster_leather": {
+    "criteria": {
+      "has_monster_leather_d": "2026-11-23 23:36:11 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/medium_quality_magic_crystalfrom_medium_quality_magic_crystal_block": {
+    "criteria": {
+      "has_medium_quality_magic_crystal_block": "2026-11-23 23:47:40 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/oak_shelf": {
     "criteria": {
       "has_stripped_oak_log": "2026-11-23 22:46:37 +0700"
@@ -2607,6 +2637,12 @@
   "handcrafted:recipes/misc/oak_shelf": {
     "criteria": {
       "has_oak_shelf": "2026-11-23 22:26:26 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/meidum_quality_magic_crystal_slab": {
+    "criteria": {
+      "has_medium_quality_magic_crystal_block": "2026-11-23 23:47:40 +0700"
     },
     "done": true
   },
@@ -2814,6 +2850,18 @@
     },
     "done": true
   },
+  "chronodawn:recipes/redstone/temporal_sand_to_tnt": {
+    "criteria": {
+      "has_gunpowder": "2026-11-23 23:36:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/firework_rocket_simple": {
+    "criteria": {
+      "has_gunpowder": "2026-11-23 23:36:09 +0700"
+    },
+    "done": true
+  },
   "handcrafted:recipes/misc/blue_plate": {
     "criteria": {
       "has_blue_plate": "2026-11-23 22:30:39 +0700"
@@ -2922,6 +2970,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/low_quality_magic_crystal_stairs_from_low_quality_magic_crystal_block_stonecutting": {
+    "criteria": {
+      "has_low_quality_magic_crystal_block": "2026-11-23 23:47:39 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/blue_candle": {
     "criteria": {
       "has_blue_dye": "2026-11-23 22:30:39 +0700"
@@ -2934,9 +2988,21 @@
     },
     "done": true
   },
+  "regions_unexplored:recipes/misc/magenta_dye_from_bleeding_heart": {
+    "criteria": {
+      "has_bleeding_heart": "2026-11-23 23:53:48 +0700"
+    },
+    "done": true
+  },
   "dungeons_arise:find_kisegi_sanctuary": {
     "criteria": {
       "location0": "2026-11-23 21:18:33 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/prismarine_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-23 23:47:42 +0700"
     },
     "done": true
   },
@@ -3060,6 +3126,13 @@
     },
     "done": true
   },
+  "yungscavebiomes:recipes/redstone/tnt_from_ancient_sand": {
+    "criteria": {
+      "has_gunpowder": "2026-11-23 23:36:09 +0700",
+      "has_the_recipe": "2026-11-23 23:36:09 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/tools/diamond_sickle": {
     "criteria": {
       "has_material_for_diamond_sickle": "2026-11-23 21:25:44 +0700"
@@ -3078,9 +3151,21 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/medium_quality_magic_crystal_stairs": {
+    "criteria": {
+      "has_medium_quality_magic_crystal_block": "2026-11-23 23:47:40 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/stick_from_spruce_planks_woodcutting": {
     "criteria": {
       "has_spruce_planks": "2026-11-23 21:23:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/meidum_quality_magic_crystal_slab_from_medium_quality_magic_crystal_block_stonecutting": {
+    "criteria": {
+      "has_medium_quality_magic_crystal_block": "2026-11-23 23:47:40 +0700"
     },
     "done": true
   },
@@ -3105,6 +3190,18 @@
   "minecraft:recipes/building_blocks/smooth_quartz_stairs_from_smooth_quartz_stonecutting": {
     "criteria": {
       "has_smooth_quartz": "2026-11-23 22:21:34 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/low_quality_magic_crystal_stairs": {
+    "criteria": {
+      "has_low_quality_magic_crystal_block": "2026-11-23 23:47:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/magenta_dye_from_allium": {
+    "criteria": {
+      "has_allium": "2026-11-23 23:53:39 +0700"
     },
     "done": true
   },
@@ -3240,6 +3337,12 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/low_quality_magic_crystal_slab": {
+    "criteria": {
+      "has_low_quality_magic_crystal_block": "2026-11-23 23:47:39 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/baked_potato_from_smoking": {
     "criteria": {
       "has_potato": "2026-11-23 21:42:25 +0700"
@@ -3303,6 +3406,12 @@
   "minecraft:recipes/decorations/soul_campfire": {
     "criteria": {
       "has_soul_sand": "2026-11-23 22:21:39 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/end_stone_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-23 23:47:42 +0700"
     },
     "done": true
   },
@@ -3480,6 +3589,18 @@
     },
     "done": true
   },
+  "regions_unexplored:recipes/misc/pink_dye_from_salmon_poppy_bush": {
+    "criteria": {
+      "has_salmon_poppy_bush": "2026-11-23 23:53:46 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/purpur_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-23 23:47:42 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/chiseled_tuff_bricks_from_tuff_stonecutting": {
     "criteria": {
       "has_tuff": "2026-11-23 22:21:37 +0700"
@@ -3501,6 +3622,12 @@
   "minecraft:recipes/building_blocks/tuff_bricks_from_tuff_stonecutting": {
     "criteria": {
       "has_tuff": "2026-11-23 22:21:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/low_quality_magic_crystal_bricks_from_low_quality_magic_crystal_block_stonecutting": {
+    "criteria": {
+      "has_low_quality_magic_crystal_block": "2026-11-23 23:47:39 +0700"
     },
     "done": true
   },
@@ -3528,6 +3655,12 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/tuff_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-23 23:47:42 +0700"
+    },
+    "done": true
+  },
   "twilightforest:recipes/building_blocks/stonecutting/stone/twisted_stone_pillar": {
     "criteria": {
       "has_block": "2026-11-23 23:08:19 +0700"
@@ -3537,6 +3670,12 @@
   "minecraft:recipes/building_blocks/lapis_block": {
     "criteria": {
       "has_lapis_lazuli": "2026-11-23 21:27:58 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/misc/purple_dye_from_hyssop": {
+    "criteria": {
+      "has_hyssop": "2026-11-23 23:53:39 +0700"
     },
     "done": true
   },
@@ -3582,6 +3721,12 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/quartz_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-23 23:47:42 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/building_blocks/slime_chunk_blockfrom_slime_chunk": {
     "criteria": {
       "has_slime_chunk": "2026-11-23 23:23:20 +0700"
@@ -3603,6 +3748,12 @@
   "minecraft:recipes/misc/gold_nugget_from_blasting": {
     "criteria": {
       "has_golden_boots": "2026-11-23 21:36:42 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/low_quality_magic_crystal_bricks": {
+    "criteria": {
+      "has_low_quality_magic_crystal_block": "2026-11-23 23:47:39 +0700"
     },
     "done": true
   },
@@ -3666,6 +3817,12 @@
     },
     "done": true
   },
+  "regions_unexplored:recipes/misc/white_dye_from_white_trillium": {
+    "criteria": {
+      "has_white_trillium": "2026-11-23 23:53:46 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/chiseled_tuff_from_tuff_stonecutting": {
     "criteria": {
       "has_tuff": "2026-11-23 22:21:37 +0700"
@@ -3696,6 +3853,12 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/high_quality_magic_crystal_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-23 23:47:42 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/soul_torch": {
     "criteria": {
       "has_soul_sand": "2026-11-23 22:21:39 +0700"
@@ -3711,6 +3874,18 @@
   "minecraft:recipes/building_blocks/tuff_slab_from_tuff_stonecutting": {
     "criteria": {
       "has_tuff": "2026-11-23 22:21:37 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/ash": {
+    "criteria": {
+      "has_gunpowder": "2026-11-23 23:36:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bottles_of_high_crystal": {
+    "criteria": {
+      "has_high_crystal": "2026-11-23 23:47:42 +0700"
     },
     "done": true
   },
@@ -3852,6 +4027,12 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/stone_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-23 23:47:42 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/deepslate_tile_slab_from_cobbled_deepslate_stonecutting": {
     "criteria": {
       "has_cobbled_deepslate": "2026-11-23 22:21:36 +0700"
@@ -3942,6 +4123,12 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/mud_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-23 23:47:42 +0700"
+    },
+    "done": true
+  },
   "handcrafted:recipes/misc/evoker_trophy": {
     "criteria": {
       "has_evoker_trophy": "2026-11-23 23:08:19 +0700"
@@ -4002,6 +4189,12 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/high_quality_magic_crystal_blockfrom_high_quality_magic_crystal": {
+    "criteria": {
+      "has_high_quality_magic_crystal": "2026-11-23 23:47:42 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/orange_dye_from_orange_tulip": {
     "criteria": {
       "has_orange_tulip": "2026-11-23 23:16:54 +0700"
@@ -4026,6 +4219,12 @@
     },
     "done": true
   },
+  "tensura:b_rank": {
+    "criteria": {
+      "ep": "2026-11-23 23:35:50 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/polished_tuff": {
     "criteria": {
       "has_tuff": "2026-11-23 22:21:37 +0700"
@@ -4047,6 +4246,12 @@
   "handcrafted:recipes/misc/oven": {
     "criteria": {
       "has_oven": "2026-11-23 21:51:07 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/medium_quality_magic_crystal_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-23 23:47:42 +0700"
     },
     "done": true
   },
@@ -4194,9 +4399,21 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/low_quality_magic_crystal_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-23 23:47:42 +0700"
+    },
+    "done": true
+  },
   "twilightforest:recipes/building_blocks/stonecutting/stone/terrorcotta_curves": {
     "criteria": {
       "has_block": "2026-11-23 23:08:19 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/medium_quality_magic_crystal_bricks": {
+    "criteria": {
+      "has_medium_quality_magic_crystal_block": "2026-11-23 23:47:40 +0700"
     },
     "done": true
   },
@@ -4218,6 +4435,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/medium_quality_magic_crystal_bricks_from_medium_quality_magic_crystal_block_stonecutting": {
+    "criteria": {
+      "has_medium_quality_magic_crystal_block": "2026-11-23 23:47:40 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/chiseled_deepslate_from_cobbled_deepslate_stonecutting": {
     "criteria": {
       "has_cobbled_deepslate": "2026-11-23 22:21:36 +0700"
@@ -4236,6 +4459,12 @@
     },
     "done": true
   },
+  "regions_unexplored:recipes/misc/blue_dye_from_blue_lupine": {
+    "criteria": {
+      "has_blue_lupine": "2026-11-23 23:53:42 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/oak_stairs": {
     "criteria": {
       "has_planks": "2026-11-23 22:26:26 +0700"
@@ -4248,9 +4477,27 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/polished_blackstone_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-23 23:47:42 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/diamond_spear": {
     "criteria": {
       "has_diamond": "2026-11-23 21:25:44 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/saddle_crafting": {
+    "criteria": {
+      "has_monster_leather_d": "2026-11-23 23:36:11 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-23 23:47:42 +0700"
     },
     "done": true
   },
@@ -4332,6 +4579,12 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/deepslate_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-23 23:47:42 +0700"
+    },
+    "done": true
+  },
   "handcrafted:recipes/misc/oak_pillar_trim": {
     "criteria": {
       "has_oak_pillar_trim": "2026-11-23 22:26:26 +0700"
@@ -4347,6 +4600,12 @@
   "minecraft:recipes/building_blocks/spruce_planks": {
     "criteria": {
       "has_logs": "2026-11-23 21:19:21 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/red_nether_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-23 23:47:42 +0700"
     },
     "done": true
   },
@@ -4377,6 +4636,12 @@
   "minecraft:recipes/building_blocks/deepslate_brick_slab_from_cobbled_deepslate_stonecutting": {
     "criteria": {
       "has_cobbled_deepslate": "2026-11-23 22:21:36 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/low_quality_magic_crystal_slab_from_low_quality_magic_crystal_block_stonecutting": {
+    "criteria": {
+      "has_low_quality_magic_crystal_block": "2026-11-23 23:47:39 +0700"
     },
     "done": true
   },
@@ -4449,6 +4714,12 @@
   "minecraft:recipes/redstone/spruce_fence_gate": {
     "criteria": {
       "has_planks": "2026-11-23 21:23:58 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/nether_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-23 23:47:42 +0700"
     },
     "done": true
   },
@@ -4542,6 +4813,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/tnt": {
+    "criteria": {
+      "has_gunpowder": "2026-11-23 23:36:09 +0700"
+    },
+    "done": true
+  },
   "block_factorys_bosses:recipes/building_blocks/lighting/wall_torch": {
     "criteria": {
       "has_item": "2026-11-23 21:42:33 +0700"
@@ -4563,6 +4840,12 @@
   "minecraft:recipes/decorations/scaffolding": {
     "criteria": {
       "has_bamboo": "2026-11-23 21:51:38 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/misc/magenta_dye_from_fireweed": {
+    "criteria": {
+      "has_fireweed": "2026-11-23 23:53:46 +0700"
     },
     "done": true
   },
