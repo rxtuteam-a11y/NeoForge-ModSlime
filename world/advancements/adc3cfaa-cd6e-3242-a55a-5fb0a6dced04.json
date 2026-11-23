@@ -44,32 +44,36 @@
   "regions_unexplored:regions_explored": {
     "criteria": {
       "willow_forest": "2026-11-23 21:05:14 +0700",
+      "cold_river": "2026-11-24 00:48:57 +0700",
+      "shrubland": "2026-11-23 21:38:23 +0700",
+      "grassy_beach": "2026-11-23 21:06:25 +0700",
+      "spires": "2026-11-22 18:37:19 +0700",
       "flower_fields": "2026-11-23 22:45:08 +0700",
+      "gravel_beach": "2026-11-24 00:48:11 +0700",
       "highland_fields": "2026-11-23 22:33:58 +0700",
       "frozen_pine_taiga": "2026-11-22 17:27:42 +0700",
       "magnolia_woodland": "2026-11-23 21:16:25 +0700",
-      "shrubland": "2026-11-23 21:38:23 +0700",
       "hyacinth_deeps": "2026-11-22 18:35:27 +0700",
       "icy_heights": "2026-11-22 19:05:02 +0700",
-      "grassy_beach": "2026-11-23 21:06:25 +0700",
-      "cold_boreal_taiga": "2026-11-22 19:02:02 +0700",
-      "spires": "2026-11-22 18:37:19 +0700"
+      "cold_boreal_taiga": "2026-11-22 19:02:02 +0700"
     },
     "done": false
   },
   "regions_unexplored:pioneer": {
     "criteria": {
       "willow_forest": "2026-11-23 21:05:14 +0700",
+      "cold_river": "2026-11-24 00:48:57 +0700",
+      "shrubland": "2026-11-23 21:38:23 +0700",
+      "grassy_beach": "2026-11-23 21:06:25 +0700",
+      "spires": "2026-11-22 18:37:19 +0700",
       "flower_fields": "2026-11-23 22:45:08 +0700",
+      "gravel_beach": "2026-11-24 00:48:11 +0700",
       "highland_fields": "2026-11-23 22:33:58 +0700",
       "frozen_pine_taiga": "2026-11-22 17:27:42 +0700",
       "magnolia_woodland": "2026-11-23 21:16:25 +0700",
-      "shrubland": "2026-11-23 21:38:23 +0700",
       "hyacinth_deeps": "2026-11-22 18:35:27 +0700",
       "icy_heights": "2026-11-22 19:05:02 +0700",
-      "grassy_beach": "2026-11-23 21:06:25 +0700",
-      "cold_boreal_taiga": "2026-11-22 19:02:02 +0700",
-      "spires": "2026-11-22 18:37:19 +0700"
+      "cold_boreal_taiga": "2026-11-22 19:02:02 +0700"
     },
     "done": false
   },
@@ -689,6 +693,7 @@
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "minecraft:cold_ocean": "2026-11-23 21:05:37 +0700",
+      "minecraft:beach": "2026-11-24 00:48:48 +0700",
       "minecraft:forest": "2026-11-22 18:33:25 +0700",
       "minecraft:river": "2026-11-23 21:06:32 +0700",
       "minecraft:snowy_plains": "2026-11-22 18:30:22 +0700",
