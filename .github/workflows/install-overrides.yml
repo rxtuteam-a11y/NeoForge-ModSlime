@@ -1,0 +1,104 @@
+name: Cài overrides (nhiệm vụ, config, kubejs)
+
+# Tải overrides.zip từ Google Drive và chép vào server.
+#  - che_do = xem : chỉ liệt kê nội dung file zip (không đổi gì)
+#  - che_do = cai : chép các thư mục trong "thu_muc" vào server rồi lưu lên GitHub (main)
+# Dùng chung hàng đợi với server nên không chạy cùng lúc với server.
+
+on:
+  workflow_dispatch:
+    inputs:
+      che_do:
+        description: "xem = chỉ liệt kê, cai = cài vào server"
+        required: true
+        default: "xem"
+        type: choice
+        options: [xem, cai]
+      file_id:
+        description: "ID file overrides.zip trên Google Drive (chia sẻ: bất kỳ ai có link)"
+        required: true
+        default: "1CEKMBnrY-gRZyKCWtSZnASPQyDO9Y-Dz"
+      thu_muc:
+        description: "Các thư mục trong overrides sẽ chép vào server (cách nhau bởi dấu cách)"
+        required: false
+        default: "config kubejs defaultconfigs"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: modslime-server
+  cancel-in-progress: false
+
+jobs:
+  overrides:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Tải overrides.zip
+        env:
+          FILE_ID: ${{ inputs.file_id }}
+        run: |
+          python3 -m pip install -q gdown
+          gdown "$FILE_ID" -O /tmp/overrides.zip
+          ls -la /tmp/overrides.zip
+
+      - name: Liệt kê nội dung
+        run: |
+          python3 - <<'PY'
+          import zipfile, collections
+          z = zipfile.ZipFile('/tmp/overrides.zip')
+          names = [n for n in z.namelist() if not n.endswith('/')]
+          tops = collections.Counter(n.split('/')[0] for n in names)
+          print("Tổng số file:", len(names))
+          print("== Thư mục cấp 1 ==")
+          for t, c in tops.most_common(): print(f"  {t}: {c} file")
+          lvl2 = collections.Counter('/'.join(n.split('/')[:2]) for n in names if n.count('/') >= 1)
+          lvl3 = collections.Counter('/'.join(n.split('/')[:3]) for n in names if n.count('/') >= 2)
+          print("== Cấp 2 (nhiều nhất 150) ==")
+          for t, c in sorted(lvl2.items())[:150]: print(f"  {t}: {c}")
+          print("== Liên quan nhiệm vụ ==")
+          for n in names:
+              l = n.lower()
+              if any(k in l for k in ("quest", "heracles", "odyssey", "questbook")):
+                  print("  ", n)
+          print("== Các jar (nếu có) ==")
+          for n in names:
+              if n.endswith('.jar'): print("  ", n)
+          PY
+
+      - name: Cài vào server và lưu lên GitHub
+        if: inputs.che_do == 'cai'
+        env:
+          THU_MUC: ${{ inputs.thu_muc }}
+        run: |
+          set -e
+          STATUS=$(curl -fsSL "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/server-status/status.json" 2>/dev/null || echo '{}')
+          if echo "$STATUS" | grep -q '"state": "online"'; then
+            echo "::error::Server đang chạy. Hãy TẮT server trên web rồi chạy lại."; exit 1
+          fi
+          rm -rf /tmp/ov && mkdir -p /tmp/ov && unzip -q -o /tmp/overrides.zip -d /tmp/ov
+          ROOT=/tmp/ov
+          # Nếu zip bọc trong 1 thư mục (vd. overrides/) thì vào bên trong
+          if [ "$(ls -A $ROOT | wc -l)" = 1 ] && [ -d "$ROOT/$(ls -A $ROOT)" ]; then ROOT="$ROOT/$(ls -A $ROOT)"; fi
+          echo "Gốc overrides: $ROOT"
+          for d in $THU_MUC; do
+            if [ -e "$ROOT/$d" ]; then
+              echo "Chép $d ..."; mkdir -p "$d"; cp -a "$ROOT/$d/." "$d/"
+            else
+              echo "::warning::Không có thư mục $d trong overrides"
+            fi
+          done
+          git config user.name "ModSlime Cloud"
+          git config user.email "modslime-bot@users.noreply.github.com"
+          git add -A -- $THU_MUC
+          if git diff --cached --quiet; then echo "Không có thay đổi."; exit 0; fi
+          git diff --cached --stat | tail -n 5
+          git commit -q -m "Cài overrides: $THU_MUC"
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 5; done
+          echo "✅ Đã cài overrides vào server. Bật server trên web để áp dụng."
