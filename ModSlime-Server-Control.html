@@ -246,6 +246,22 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
         <div class="hint">Secret được mã hoá ngay trong trình duyệt (libsodium) rồi mới gửi lên GitHub; không ai đọc lại được, kể cả trang này.</div>
       </details>
     </div>
+    <div id="shareBox">
+      <details id="shareDetails">
+        <summary style="cursor:pointer;margin-top:14px;font-weight:600">📲 Cho thiết bị khác điều khiển server (không cần cài lại)</summary>
+        <div class="sub" style="margin-top:8px">Tạo link (hoặc mã QR) chứa quyền điều khiển. Máy khác mở link là bật/tắt, gõ lệnh được ngay.
+          <b>Ai có link đều điều khiển được</b> — chỉ gửi cho người tin tưởng.</div>
+        <label>Token dùng cho link</label>
+        <input type="password" id="shareToken" placeholder="để trống = dùng token của máy này" autocomplete="off" data-lpignore="true" data-1p-ignore>
+        <div class="hint">Nên tạo <b>token riêng</b> cho bạn bè chỉ với quyền <b>Actions: Read and write</b> + <b>Contents: Read-only</b> (không có Secrets/Variables) và đặt ngày hết hạn. Muốn thu hồi thì xoá token đó trên GitHub.</div>
+        <div class="row" style="margin-top:10px">
+          <button class="btn" id="btnMakeShare" type="button">Tạo link chia sẻ</button>
+          <button class="btn hide" id="btnCopyShare" type="button">Chép link</button>
+        </div>
+        <input type="text" id="shareLink" class="hide" readonly style="margin-top:8px;font:12px var(--mono)">
+        <div id="shareQr" class="hide" style="margin-top:10px;background:#fff;padding:10px;border-radius:10px;width:max-content;max-width:100%"></div>
+      </details>
+    </div>
     <div id="localBox" class="hide">
       <label>Địa chỉ Web Panel (máy đang chạy app.py)</label>
       <input type="url" id="localUrl" placeholder="http://26.x.x.x:8080 hoặc http://localhost:8080">
@@ -289,6 +305,20 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
     localUrl: LS.get("local_url"),
   };
   ["p_pass", "p_token", "p_user"].forEach((k) => LS.del(k)); // dọn dữ liệu đăng nhập cũ
+  // Link chia sẻ: ...#k=<token base64url>&r=<repo>. Phần sau dấu # không bao giờ gửi lên máy chủ nào.
+  let importedFromLink = false;
+  (function importShareLink() {
+    const h = new URLSearchParams(location.hash.replace(/^#/, ""));
+    const k = h.get("k"); if (!k) return;
+    try {
+      const tok = atob(k.replace(/-/g, "+").replace(/_/g, "/"));
+      if (!/^(github_pat_|ghp_)[A-Za-z0-9_]+$/.test(tok)) throw new Error("bad");
+      cfg.token = tok; cfg.mode = "cloud"; LS.set("gh_token", tok); LS.set("mode", "cloud");
+      if (h.get("r")) { cfg.repo = h.get("r"); LS.set("gh_repo", cfg.repo); }
+      importedFromLink = true;
+    } catch {}
+    history.replaceState(null, "", location.pathname + location.search);
+  })();
 
   // ---------- State ----------
   let panelBase = servedByPanel ? location.origin : "";
@@ -669,12 +699,32 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
   $("btnSaveSrv").onclick = saveServerConfig;
   $("srvDetails").addEventListener("toggle", (e) => { if (e.target.open) loadServerConfig(); });
 
+  // ---------- Share link ----------
+  function pageUrl() {
+    if (location.hostname.endsWith("github.io")) return location.origin + location.pathname;
+    const [o, r] = cfg.repo.split("/"); return `https://${o}.github.io/${r}/`;
+  }
+  $("btnMakeShare").onclick = async () => {
+    const tok = $("shareToken").value.trim() || cfg.token;
+    if (!tok) { toast("Chưa có token. Nhập GitHub token trước.", true); return; }
+    if (!/^(github_pat_|ghp_)[A-Za-z0-9_]+$/.test(tok)) { toast("Token không đúng dạng github_pat_… / ghp_…", true); return; }
+    const k = btoa(tok).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+    const link = `${pageUrl()}#k=${k}&r=${encodeURIComponent(cfg.repo)}`;
+    $("shareLink").value = link; $("shareLink").classList.remove("hide"); $("btnCopyShare").classList.remove("hide");
+    const box = $("shareQr"); box.innerHTML = ""; box.classList.remove("hide");
+    try {
+      if (!window.QRCode) await loadScript("https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js");
+      new window.QRCode(box, { text: link, width: 220, height: 220, correctLevel: window.QRCode.CorrectLevel.L });
+    } catch { box.classList.add("hide"); }
+  };
+  $("btnCopyShare").onclick = () => navigator.clipboard?.writeText($("shareLink").value).then(() => toast("Đã chép link. Gửi riêng cho người tin tưởng."));
+
   // ---------- Settings ----------
   let editMode = cfg.mode;
   function setTab(m) {
     editMode = m;
     document.querySelectorAll(".tabs button").forEach((b) => b.classList.toggle("on", b.dataset.mode === m));
-    $("cloudBox").classList.toggle("hide", m !== "cloud"); $("srvBox").classList.toggle("hide", m !== "cloud"); $("localBox").classList.toggle("hide", m !== "local");
+    $("cloudBox").classList.toggle("hide", m !== "cloud"); $("srvBox").classList.toggle("hide", m !== "cloud"); $("shareBox").classList.toggle("hide", m !== "cloud"); $("localBox").classList.toggle("hide", m !== "local");
   }
   function openSettings() {
     $("ghToken").value = cfg.token; $("ghRepo").value = cfg.repo; $("localUrl").value = cfg.localUrl;
@@ -708,6 +758,7 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
   }
   async function loop() { try { await tick(); } catch (e) { console.error(e); } setTimeout(loop, panelBase ? 2500 : 4000); }
   if (cfg.token && cfg.mode === "cloud" && !servedByPanel) loadServerConfig();
+  if (importedFromLink) setTimeout(() => toast("Đã nhận quyền điều khiển từ link chia sẻ — thiết bị này đã sẵn sàng bật/tắt server."), 300);
   loop();
 })();
 </script>
