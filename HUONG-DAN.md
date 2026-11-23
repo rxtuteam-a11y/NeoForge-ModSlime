@@ -49,6 +49,16 @@ gõ lệnh và sao lưu được. Web Panel tự hỏi GitHub để xác minh to
 Sau đó mỗi lần tắt server, và khi bấm **Lưu lên Google Drive**, file `ModSlime-world-<ngày-giờ>.zip` được tải lên thư mục đó.
 Các bản cũ hơn 14 ngày tự bị xoá.
 
+## Cho thiết bị khác / bạn bè bật server (không cần cài lại)
+
+1. Trên máy đã cài: **⚙ Cài đặt → 📲 Cho thiết bị khác điều khiển server → Tạo link chia sẻ**.
+2. Gửi link (hoặc cho quét mã QR bằng điện thoại). Mở link là thiết bị đó bật/tắt, gõ lệnh được ngay.
+3. Ai có link đều điều khiển được server. Với bạn bè, nên tạo **token riêng** chỉ có quyền
+   *Actions: Read and write* + *Contents: Read-only*, đặt ngày hết hạn, dán vào ô "Token dùng cho link" rồi mới tạo link.
+   Muốn thu hồi: xoá token đó ở https://github.com/settings/personal-access-tokens.
+
+Chỉ cần **xem** trạng thái/log/địa chỉ game thì gửi link trang web bình thường, không cần token.
+
 ## Chạy trên máy riêng (Radmin VPN)
 
 Vẫn dùng được như trước: chạy `web-panel/Start-Web-Panel.bat`, mở http://localhost:8080.
