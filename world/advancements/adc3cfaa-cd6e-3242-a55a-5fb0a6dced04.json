@@ -5353,6 +5353,12 @@
     },
     "done": false
   },
+  "minecraft:recipes/misc/diamond_from_smelting_deepslate_diamond_ore": {
+    "criteria": {
+      "has_deepslate_diamond_ore": "2026-11-24 03:28:18 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/stone_brick_slab": {
     "criteria": {
       "has_stone_bricks": "2026-11-24 03:00:01 +0700"
@@ -5362,6 +5368,12 @@
   "explorerscompass:repair_explorers_compass": {
     "criteria": {
       "has_explorers_compass": "2026-11-24 03:02:09 +0700"
+    },
+    "done": true
+  },
+  "enhanced_ore_variety:recipes/misc/diamond_from_blasting": {
+    "criteria": {
+      "TagKey[minecraft:item / minecraft:diamond_ores]": "2026-11-24 03:28:18 +0700"
     },
     "done": true
   },
@@ -5392,6 +5404,18 @@
   "minecraft:recipes/decorations/stone_brick_wall_from_stone_bricks_stonecutting": {
     "criteria": {
       "has_stone_bricks": "2026-11-24 03:00:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/diamond_from_blasting_deepslate_diamond_ore": {
+    "criteria": {
+      "has_deepslate_diamond_ore": "2026-11-24 03:28:18 +0700"
+    },
+    "done": true
+  },
+  "enhanced_ore_variety:recipes/misc/diamond_from_smelting": {
+    "criteria": {
+      "TagKey[minecraft:item / minecraft:diamond_ores]": "2026-11-24 03:28:18 +0700"
     },
     "done": true
   },

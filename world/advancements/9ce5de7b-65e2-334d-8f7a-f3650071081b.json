@@ -45,11 +45,14 @@
     "criteria": {
       "willow_forest": "2026-11-23 14:04:03 +0700",
       "cold_river": "2026-11-24 02:32:29 +0700",
+      "rocky_reef": "2026-11-24 03:33:18 +0700",
       "shrubland": "2026-11-23 13:08:21 +0700",
       "poppy_fields": "2026-11-24 02:10:30 +0700",
       "grassy_beach": "2026-11-24 01:49:00 +0700",
       "spires": "2026-11-23 13:22:56 +0700",
+      "prairie": "2026-11-24 03:37:56 +0700",
       "tundra": "2026-11-23 20:01:28 +0700",
+      "sparse_rainforest": "2026-11-24 03:31:14 +0700",
       "flower_fields": "2026-11-23 22:58:42 +0700",
       "gravel_beach": "2026-11-23 13:06:49 +0700",
       "highland_fields": "2026-11-23 21:25:30 +0700",
@@ -58,8 +61,11 @@
       "magnolia_woodland": "2026-11-23 22:47:50 +0700",
       "icy_heights": "2026-11-23 13:40:49 +0700",
       "hyacinth_deeps": "2026-11-23 13:35:39 +0700",
+      "rainforest": "2026-11-24 03:31:07 +0700",
+      "bamboo_forest": "2026-11-24 03:18:09 +0700",
       "cold_boreal_taiga": "2026-11-23 13:27:20 +0700",
-      "marsh": "2026-11-23 14:04:02 +0700"
+      "marsh": "2026-11-23 14:04:02 +0700",
+      "outback": "2026-11-24 03:32:52 +0700"
     },
     "done": false
   },
@@ -67,11 +73,14 @@
     "criteria": {
       "willow_forest": "2026-11-23 14:04:03 +0700",
       "cold_river": "2026-11-24 02:32:29 +0700",
+      "rocky_reef": "2026-11-24 03:33:18 +0700",
       "shrubland": "2026-11-23 13:08:21 +0700",
       "poppy_fields": "2026-11-24 02:10:30 +0700",
       "grassy_beach": "2026-11-24 01:49:00 +0700",
       "spires": "2026-11-23 13:22:56 +0700",
+      "prairie": "2026-11-24 03:37:56 +0700",
       "tundra": "2026-11-23 20:01:28 +0700",
+      "sparse_rainforest": "2026-11-24 03:31:14 +0700",
       "flower_fields": "2026-11-23 22:58:42 +0700",
       "gravel_beach": "2026-11-23 13:06:49 +0700",
       "highland_fields": "2026-11-23 21:25:30 +0700",
@@ -80,8 +89,11 @@
       "magnolia_woodland": "2026-11-23 22:47:50 +0700",
       "icy_heights": "2026-11-23 13:40:49 +0700",
       "hyacinth_deeps": "2026-11-23 13:35:39 +0700",
+      "rainforest": "2026-11-24 03:31:07 +0700",
+      "bamboo_forest": "2026-11-24 03:18:09 +0700",
       "cold_boreal_taiga": "2026-11-23 13:27:20 +0700",
-      "marsh": "2026-11-23 14:04:02 +0700"
+      "marsh": "2026-11-23 14:04:02 +0700",
+      "outback": "2026-11-24 03:32:52 +0700"
     },
     "done": false
   },
@@ -282,24 +294,28 @@
     "criteria": {
       "minecraft:cold_ocean": "2026-11-23 13:15:39 +0700",
       "minecraft:snowy_slopes": "2026-11-24 03:03:44 +0700",
-      "minecraft:beach": "2026-11-23 13:09:25 +0700",
       "minecraft:forest": "2026-11-23 13:09:11 +0700",
-      "minecraft:sparse_jungle": "2026-11-24 03:08:21 +0700",
-      "minecraft:river": "2026-11-23 13:10:31 +0700",
-      "minecraft:snowy_plains": "2026-11-23 13:06:35 +0700",
-      "minecraft:snowy_taiga": "2026-11-23 13:06:23 +0700",
-      "minecraft:dripstone_caves": "2026-11-23 23:20:20 +0700",
-      "minecraft:frozen_peaks": "2026-11-24 03:03:45 +0700",
       "minecraft:ice_spikes": "2026-11-23 19:25:31 +0700",
       "minecraft:frozen_ocean": "2026-11-23 13:31:09 +0700",
       "minecraft:frozen_river": "2026-11-23 13:20:15 +0700",
       "minecraft:deep_frozen_ocean": "2026-11-23 13:34:07 +0700",
-      "minecraft:deep_dark": "2026-11-24 00:21:04 +0700",
+      "minecraft:jungle": "2026-11-24 03:09:10 +0700",
       "minecraft:cherry_grove": "2026-11-23 23:04:36 +0700",
       "minecraft:sunflower_plains": "2026-11-24 02:10:29 +0700",
-      "minecraft:swamp": "2026-11-23 14:02:47 +0700",
       "minecraft:windswept_hills": "2026-11-23 13:27:35 +0700",
       "minecraft:snowy_beach": "2026-11-23 13:29:27 +0700",
+      "minecraft:bamboo_jungle": "2026-11-24 03:18:25 +0700",
+      "minecraft:warm_ocean": "2026-11-24 03:33:17 +0700",
+      "minecraft:beach": "2026-11-23 13:09:25 +0700",
+      "minecraft:sparse_jungle": "2026-11-24 03:08:21 +0700",
+      "minecraft:river": "2026-11-23 13:10:31 +0700",
+      "minecraft:snowy_plains": "2026-11-23 13:06:35 +0700",
+      "minecraft:stony_shore": "2026-11-24 03:33:25 +0700",
+      "minecraft:snowy_taiga": "2026-11-23 13:06:23 +0700",
+      "minecraft:dripstone_caves": "2026-11-23 23:20:20 +0700",
+      "minecraft:frozen_peaks": "2026-11-24 03:03:45 +0700",
+      "minecraft:deep_dark": "2026-11-24 00:21:04 +0700",
+      "minecraft:swamp": "2026-11-23 14:02:47 +0700",
       "minecraft:plains": "2026-11-23 13:06:38 +0700"
     },
     "done": false
@@ -1071,6 +1087,7 @@
   },
   "tensura:otherworldly_biomes": {
     "criteria": {
+      "barren_land": "2026-11-24 03:33:12 +0700",
       "ancient_forest": "2026-11-23 19:29:41 +0700",
       "miasmic_plains": "2026-11-23 13:23:40 +0700"
     },
@@ -5264,9 +5281,33 @@
     },
     "done": true
   },
+  "waystones:recipes/tools/twinbound_feather": {
+    "criteria": {
+      "has_feather": "2026-11-24 03:37:39 +0700"
+    },
+    "done": true
+  },
   "tensura:just_a_test": {
     "criteria": {
       "colossus": "2026-11-24 02:26:33 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/jungle_wood": {
+    "criteria": {
+      "has_log": "2026-11-24 03:21:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/ladder_from_jungle_log_woodcutting": {
+    "criteria": {
+      "has_jungle_log": "2026-11-24 03:21:53 +0700"
+    },
+    "done": true
+  },
+  "ironchest:recipes/decorations/chests/diamond_obsidian_chest": {
+    "criteria": {
+      "has_obsidian": "2026-11-24 03:38:22 +0700"
     },
     "done": true
   },
@@ -5285,6 +5326,12 @@
   "minecraft:recipes/building_blocks/medium_quality_magic_crystal_stairs_from_medium_quality_magic_crystal_block_stonecutting": {
     "criteria": {
       "has_medium_quality_magic_crystal_block": "2026-11-24 02:25:08 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/jungle_planks_from_jungle_log_woodcutting": {
+    "criteria": {
+      "has_jungle_log": "2026-11-24 03:21:53 +0700"
     },
     "done": true
   },
@@ -5324,9 +5371,33 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/terracotta": {
+    "criteria": {
+      "has_clay_block": "2026-11-24 03:24:49 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/building_blocks/high_quality_magic_crystal_slab": {
     "criteria": {
       "has_high_quality_magic_crystal_block": "2026-11-24 02:41:20 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/jungle_branch_from_jungle_log": {
+    "criteria": {
+      "has_log": "2026-11-24 03:21:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stick_from_jungle_log_woodcutting": {
+    "criteria": {
+      "has_jungle_log": "2026-11-24 03:21:53 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/building_blocks/stonecutting/jungle_log/hollow_jungle_log": {
+    "criteria": {
+      "has_block": "2026-11-24 03:21:53 +0700"
     },
     "done": true
   },
@@ -5339,6 +5410,24 @@
   "minecraft:recipes/building_blocks/low_quality_magic_crystal_stairs_from_low_quality_magic_crystal_block_stonecutting": {
     "criteria": {
       "has_low_quality_magic_crystal_block": "2026-11-24 02:25:05 +0700"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/misc/diamond_backpack": {
+    "criteria": {
+      "has_gold_backpack": "2026-11-24 03:24:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/jungle_fence_from_jungle_log_woodcutting": {
+    "criteria": {
+      "has_jungle_log": "2026-11-24 03:21:53 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/kiln": {
+    "criteria": {
+      "has_obsidian": "2026-11-24 03:38:22 +0700"
     },
     "done": true
   },
@@ -5360,9 +5449,21 @@
     },
     "done": true
   },
+  "vanillabackport:recipes/food/cake": {
+    "criteria": {
+      "has_egg": "2026-11-24 03:22:33 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/magenta_dye_from_allium": {
     "criteria": {
       "has_allium": "2026-11-24 02:11:24 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/flint_and_steel": {
+    "criteria": {
+      "has_obsidian": "2026-11-24 03:38:22 +0700"
     },
     "done": true
   },
@@ -5378,9 +5479,27 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/kiln_mithril": {
+    "criteria": {
+      "has_obsidian": "2026-11-24 03:38:22 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/misc/pure_magisteel_ingotfrom_pure_magisteel_block": {
     "criteria": {
       "has_pure_magisteel_block": "2026-11-24 02:40:45 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/jungle_slab_from_jungle_log_woodcutting": {
+    "criteria": {
+      "has_jungle_log": "2026-11-24 03:21:53 +0700"
+    },
+    "done": true
+  },
+  "mowziesmobs:kill_foliaath": {
+    "criteria": {
+      "foliaath": "2026-11-24 03:20:29 +0700"
     },
     "done": true
   },
@@ -5414,9 +5533,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/jungle_button_from_jungle_log_woodcutting": {
+    "criteria": {
+      "has_jungle_log": "2026-11-24 03:21:53 +0700"
+    },
+    "done": true
+  },
   "tensura:elementalist": {
     "criteria": {
       "spirit": "2026-11-24 02:41:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:story/form_obsidian": {
+    "criteria": {
+      "obsidian": "2026-11-24 03:38:22 +0700"
     },
     "done": true
   },
@@ -5432,9 +5563,27 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/jungle_stairs_from_jungle_log_woodcutting": {
+    "criteria": {
+      "has_jungle_log": "2026-11-24 03:21:53 +0700"
+    },
+    "done": true
+  },
   "tensura:spirit_protector": {
     "criteria": {
       "colossus": "2026-11-24 02:40:45 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_jungle_wood_from_jungle_log_woodcutting": {
+    "criteria": {
+      "has_jungle_log": "2026-11-24 03:21:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/arrow": {
+    "criteria": {
+      "has_feather": "2026-11-24 03:37:39 +0700"
     },
     "done": true
   },
@@ -5468,6 +5617,18 @@
     },
     "done": true
   },
+  "constructionwand:recipes/misc/core_angel": {
+    "criteria": {
+      "has_item": "2026-11-24 03:37:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/jungle_planks": {
+    "criteria": {
+      "has_logs": "2026-11-24 03:21:53 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/high_quality_magic_crystal_slab_from_high_quality_magic_crystal_block_stonecutting": {
     "criteria": {
       "has_high_quality_magic_crystal_block": "2026-11-24 02:41:20 +0700"
@@ -5483,6 +5644,36 @@
   "minecraft:recipes/building_blocks/high_quality_magic_crystal_bricks_from_high_quality_magic_crystal_block_stonecutting": {
     "criteria": {
       "has_high_quality_magic_crystal_block": "2026-11-24 02:41:20 +0700"
+    },
+    "done": true
+  },
+  "mowziesmobs:kill_elokosa_howler": {
+    "criteria": {
+      "elokosa_howler": "2026-11-24 03:21:05 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/kiln_orichalcum": {
+    "criteria": {
+      "has_obsidian": "2026-11-24 03:38:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_jungle_log_from_jungle_log_woodcutting": {
+    "criteria": {
+      "has_jungle_log": "2026-11-24 03:21:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/enchanting_table": {
+    "criteria": {
+      "has_obsidian": "2026-11-24 03:38:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bowl_from_jungle_log_woodcutting": {
+    "criteria": {
+      "has_jungle_log": "2026-11-24 03:21:53 +0700"
     },
     "done": true
   },
