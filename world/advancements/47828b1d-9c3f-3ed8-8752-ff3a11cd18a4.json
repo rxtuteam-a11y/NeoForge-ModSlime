@@ -3534,5 +3534,11 @@
     },
     "done": true
   },
+  "tensura:grow_spurt": {
+    "criteria": {
+      "evolve": "2026-11-23 20:49:28 +0700"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }
