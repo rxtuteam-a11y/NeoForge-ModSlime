@@ -3982,6 +3982,12 @@
     },
     "done": true
   },
+  "tensura:master_unique_skill": {
+    "criteria": {
+      "skill": "2026-11-23 23:03:59 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/mossy_cobblestone_stairs": {
     "criteria": {
       "has_mossy_cobblestone": "2026-11-23 22:47:20 +0700"
