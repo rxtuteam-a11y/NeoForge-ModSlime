@@ -5267,6 +5267,12 @@
     },
     "done": true
   },
+  "tensura:recipes/misc/high_quality_magic_crystalfrom_high_quality_magic_crystal_block": {
+    "criteria": {
+      "has_high_quality_magic_crystal_block": "2026-11-24 02:41:20 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/decorations/maple_shrub": {
     "criteria": {
       "has_maple_sapling": "2026-11-24 02:07:54 +0700"
@@ -5285,6 +5291,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/netherite_ingot": {
+    "criteria": {
+      "has_netherite_scrap": "2026-11-24 02:41:09 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/misc/medium_quality_magic_crystalfrom_medium_quality_magic_crystal_block": {
     "criteria": {
       "has_medium_quality_magic_crystal_block": "2026-11-24 02:25:08 +0700"
@@ -5294,6 +5306,24 @@
   "tensura:recipes/building_blocks/meidum_quality_magic_crystal_slab": {
     "criteria": {
       "has_medium_quality_magic_crystal_block": "2026-11-24 02:25:08 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/high_quality_magic_crystal_bricks": {
+    "criteria": {
+      "has_high_quality_magic_crystal_block": "2026-11-24 02:41:20 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/low_magisteel_ingotfrom_low_magisteel_block": {
+    "criteria": {
+      "has_low_magisteel_block": "2026-11-24 02:40:45 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/high_quality_magic_crystal_slab": {
+    "criteria": {
+      "has_high_quality_magic_crystal_block": "2026-11-24 02:41:20 +0700"
     },
     "done": true
   },
@@ -5345,9 +5375,21 @@
     },
     "done": true
   },
+  "tensura:recipes/misc/pure_magisteel_ingotfrom_pure_magisteel_block": {
+    "criteria": {
+      "has_pure_magisteel_block": "2026-11-24 02:40:45 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/low_quality_magic_crystal_bricks_from_low_quality_magic_crystal_block_stonecutting": {
     "criteria": {
       "has_low_quality_magic_crystal_block": "2026-11-24 02:25:05 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/high_quality_magic_crystal_stairs": {
+    "criteria": {
+      "has_high_quality_magic_crystal_block": "2026-11-24 02:41:20 +0700"
     },
     "done": true
   },
@@ -5357,9 +5399,33 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/high_quality_magic_crystal_stairs_from_high_quality_magic_crystal_block_stonecutting": {
+    "criteria": {
+      "has_high_quality_magic_crystal_block": "2026-11-24 02:41:20 +0700"
+    },
+    "done": true
+  },
+  "tensura:elementalist": {
+    "criteria": {
+      "spirit": "2026-11-24 02:41:53 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/building_blocks/maple_wood": {
     "criteria": {
       "has_log": "2026-11-24 02:07:54 +0700"
+    },
+    "done": true
+  },
+  "bosses_of_mass_destruction:recipes/brimstone_nectar": {
+    "criteria": {
+      "has_netherite_scrap": "2026-11-24 02:41:09 +0700"
+    },
+    "done": true
+  },
+  "tensura:spirit_protector": {
+    "criteria": {
+      "colossus": "2026-11-24 02:40:45 +0700"
     },
     "done": true
   },
@@ -5393,9 +5459,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/high_quality_magic_crystal_slab_from_high_quality_magic_crystal_block_stonecutting": {
+    "criteria": {
+      "has_high_quality_magic_crystal_block": "2026-11-24 02:41:20 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/low_quality_magic_crystal_slab_from_low_quality_magic_crystal_block_stonecutting": {
     "criteria": {
       "has_low_quality_magic_crystal_block": "2026-11-24 02:25:05 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/high_quality_magic_crystal_bricks_from_high_quality_magic_crystal_block_stonecutting": {
+    "criteria": {
+      "has_high_quality_magic_crystal_block": "2026-11-24 02:41:20 +0700"
     },
     "done": true
   },

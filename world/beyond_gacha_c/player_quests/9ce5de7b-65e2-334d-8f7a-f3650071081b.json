@@ -1,9 +1,12 @@
 {
   "mxp": 0,
   "completed": [
+    "trbeyond:boss_elemental_colossus",
     "trbeyond:daily_day_1_cattledeer_1"
   ],
-  "repeatable_timers": {},
+  "repeatable_timers": {
+    "trbeyond:boss_elemental_colossus": 1151984
+  },
   "active": [
     {
       "questId": "trbeyond:repeatable_skill_shogo_taguchi",
@@ -121,7 +124,9 @@
     },
     {
       "questId": "trbeyond:boss_elemental_colossus",
-      "progress": {}
+      "progress": {
+        "kill_elemental_colossus": 1
+      }
     },
     {
       "questId": "trbeyond:weekly_day_1_arch_daemon_2",
