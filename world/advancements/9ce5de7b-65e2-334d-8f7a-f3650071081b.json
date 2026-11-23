@@ -3839,5 +3839,335 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/bowl_from_oak_wood_woodcutting": {
+    "criteria": {
+      "has_oak_wood": "2026-11-23 22:26:37 +0700"
+    },
+    "done": true
+  },
+  "waystones:recipes/decorations/warp_scroll": {
+    "criteria": {
+      "has_ender_pearl": "2026-11-23 22:39:48 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/deepslate_viridescent_nylium": {
+    "criteria": {
+      "has_mushroom": "2026-11-23 22:29:08 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/building_blocks/stonecutting/oak_log/hollow_oak_log": {
+    "criteria": {
+      "has_block": "2026-11-23 22:34:04 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/poplar_planks": {
+    "criteria": {
+      "has_log": "2026-11-23 22:24:12 +0700"
+    },
+    "done": true
+  },
+  "royalvariations:teleporting_king": {
+    "criteria": {
+      "royal_enderman": "2026-11-23 22:39:48 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/tuff_brick_stairs_from_tuff_stonecutting": {
+    "criteria": {
+      "has_tuff": "2026-11-23 22:28:35 +0700"
+    },
+    "done": true
+  },
+  "sophisticatedcore:recipes/misc/ender_linker": {
+    "criteria": {
+      "has_ender_pearl": "2026-11-23 22:39:48 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_stairs_from_oak_log_woodcutting": {
+    "criteria": {
+      "has_oak_log": "2026-11-23 22:34:04 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/poplar_wood": {
+    "criteria": {
+      "has_log": "2026-11-23 22:24:12 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_slab_from_oak_wood_woodcutting": {
+    "criteria": {
+      "has_oak_wood": "2026-11-23 22:26:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_button_from_oak_log_woodcutting": {
+    "criteria": {
+      "has_oak_log": "2026-11-23 22:34:04 +0700"
+    },
+    "done": true
+  },
+  "netherman:enter_maze": {
+    "criteria": {
+      "in_mansion": "2026-11-23 22:31:20 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_planks": {
+    "criteria": {
+      "has_logs": "2026-11-23 22:26:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_planks_from_oak_wood_woodcutting": {
+    "criteria": {
+      "has_oak_wood": "2026-11-23 22:26:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_button_from_oak_wood_woodcutting": {
+    "criteria": {
+      "has_oak_wood": "2026-11-23 22:26:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_tuff_slab_from_tuff_stonecutting": {
+    "criteria": {
+      "has_tuff": "2026-11-23 22:28:35 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_fence_from_oak_wood_woodcutting": {
+    "criteria": {
+      "has_oak_wood": "2026-11-23 22:26:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_stairs_from_oak_wood_woodcutting": {
+    "criteria": {
+      "has_oak_wood": "2026-11-23 22:26:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/ladder_from_oak_wood_woodcutting": {
+    "criteria": {
+      "has_oak_wood": "2026-11-23 22:26:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stick_from_oak_wood_woodcutting": {
+    "criteria": {
+      "has_oak_wood": "2026-11-23 22:26:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_tuff_stairs_from_tuff_stonecutting": {
+    "criteria": {
+      "has_tuff": "2026-11-23 22:28:35 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/yellow_dye_from_dandelion": {
+    "criteria": {
+      "has_dandelion": "2026-11-23 22:42:56 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/tuff_slab": {
+    "criteria": {
+      "has_tuff": "2026-11-23 22:28:35 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/tuff_brick_slab_from_tuff_stonecutting": {
+    "criteria": {
+      "has_tuff": "2026-11-23 22:28:35 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/polished_tuff_wall_from_tuff_stonecutting": {
+    "criteria": {
+      "has_tuff": "2026-11-23 22:28:35 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/ladder_from_oak_log_woodcutting": {
+    "criteria": {
+      "has_oak_log": "2026-11-23 22:34:04 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_oak_wood_from_oak_log_woodcutting": {
+    "criteria": {
+      "has_oak_log": "2026-11-23 22:34:04 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_oak_log_from_oak_log_woodcutting": {
+    "criteria": {
+      "has_oak_log": "2026-11-23 22:34:04 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/tuff_stairs_from_tuff_stonecutting": {
+    "criteria": {
+      "has_tuff": "2026-11-23 22:28:35 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_slab_from_oak_log_woodcutting": {
+    "criteria": {
+      "has_oak_log": "2026-11-23 22:34:04 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/mushroom_stew": {
+    "criteria": {
+      "has_red_mushroom": "2026-11-23 22:29:08 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_fence_from_oak_log_woodcutting": {
+    "criteria": {
+      "has_oak_log": "2026-11-23 22:34:04 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_tuff_bricks_from_tuff_stonecutting": {
+    "criteria": {
+      "has_tuff": "2026-11-23 22:28:35 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/tuff_bricks_from_tuff_stonecutting": {
+    "criteria": {
+      "has_tuff": "2026-11-23 22:28:35 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/tuff_brick_wall_from_tuff_stonecutting": {
+    "criteria": {
+      "has_tuff": "2026-11-23 22:28:35 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_tuff_from_tuff_stonecutting": {
+    "criteria": {
+      "has_tuff": "2026-11-23 22:28:35 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/tuff_slab_from_tuff_stonecutting": {
+    "criteria": {
+      "has_tuff": "2026-11-23 22:28:35 +0700"
+    },
+    "done": true
+  },
+  "waystones:recipes/decorations/warp_dust": {
+    "criteria": {
+      "has_ender_pearl": "2026-11-23 22:39:48 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/strung_mushrooms": {
+    "criteria": {
+      "has_brown_mushroom": "2026-11-23 22:29:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_planks_from_oak_log_woodcutting": {
+    "criteria": {
+      "has_oak_log": "2026-11-23 22:34:04 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/tuff_wall": {
+    "criteria": {
+      "has_tuff": "2026-11-23 22:28:35 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/tuff_wall_from_tuff_stonecutting": {
+    "criteria": {
+      "has_tuff": "2026-11-23 22:28:35 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/oak_branch_from_oak_log": {
+    "criteria": {
+      "has_log": "2026-11-23 22:34:04 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bowl_from_oak_log_woodcutting": {
+    "criteria": {
+      "has_oak_log": "2026-11-23 22:34:04 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_tuff": {
+    "criteria": {
+      "has_tuff": "2026-11-23 22:28:35 +0700"
+    },
+    "done": true
+  },
+  "waystones:recipes/decorations/portal_scroll": {
+    "criteria": {
+      "has_ender_pearl": "2026-11-23 22:39:48 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_wood": {
+    "criteria": {
+      "has_log": "2026-11-23 22:34:04 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bowl": {
+    "criteria": {
+      "has_red_mushroom": "2026-11-23 22:29:08 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/tuff_stairs": {
+    "criteria": {
+      "has_tuff": "2026-11-23 22:28:35 +0700"
+    },
+    "done": true
+  },
+  "waystones:recipes/decorations/warp_stone": {
+    "criteria": {
+      "has_ender_pearl": "2026-11-23 22:39:48 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stick_from_oak_log_woodcutting": {
+    "criteria": {
+      "has_oak_log": "2026-11-23 22:34:04 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_tuff_from_tuff_stonecutting": {
+    "criteria": {
+      "has_tuff": "2026-11-23 22:28:35 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/tuff_warp_pad": {
+    "criteria": {
+      "has_tuff": "2026-11-23 22:28:35 +0700"
+    },
+    "done": true
+  },
+  "vanillabackport:recipes/food/mushroom_stew": {
+    "criteria": {
+      "has_mushrooms": "2026-11-23 22:29:08 +0700"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }
