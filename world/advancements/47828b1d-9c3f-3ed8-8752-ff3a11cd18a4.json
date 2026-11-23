@@ -888,6 +888,7 @@
     "criteria": {
       "minecraft:pillager": "2026-11-23 09:00:08 +0700",
       "minecraft:breeze": "2026-11-22 18:37:11 +0700",
+      "minecraft:vindicator": "2026-11-23 09:02:59 +0700",
       "minecraft:drowned": "2026-11-22 19:17:02 +0700",
       "minecraft:husk": "2026-11-22 17:50:13 +0700",
       "minecraft:bogged": "2026-11-22 18:32:26 +0700",
@@ -1420,6 +1421,7 @@
   },
   "minecraft:husbandry/balanced_diet": {
     "criteria": {
+      "apple": "2026-11-23 09:00:33 +0700",
       "cookie": "2026-11-22 18:32:32 +0700",
       "mushroom_stew": "2026-11-22 17:58:01 +0700",
       "baked_potato": "2026-11-22 18:47:23 +0700"
@@ -2737,6 +2739,247 @@
   "dungeons_arise:find_illager_corsair_or_illager_galley": {
     "criteria": {
       "location1": "2026-11-23 08:59:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_slab_from_oak_planks_woodcutting": {
+    "criteria": {
+      "has_oak_planks": "2026-11-23 09:02:37 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/oak_drawer": {
+    "criteria": {
+      "has_oak_drawer": "2026-11-23 09:02:37 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/oak_shelf": {
+    "criteria": {
+      "has_oak_shelf": "2026-11-23 09:02:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_slab": {
+    "criteria": {
+      "has_planks": "2026-11-23 09:02:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_door": {
+    "criteria": {
+      "has_planks": "2026-11-23 09:02:37 +0700"
+    },
+    "done": true
+  },
+  "chronodawn:recipes/redstone/temporal_sand_to_tnt": {
+    "criteria": {
+      "has_gunpowder": "2026-11-23 09:01:41 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/firework_rocket_simple": {
+    "criteria": {
+      "has_gunpowder": "2026-11-23 09:01:41 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/oak_counter": {
+    "criteria": {
+      "has_oak_counter": "2026-11-23 09:02:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_trapdoor": {
+    "criteria": {
+      "has_planks": "2026-11-23 09:02:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stick_from_oak_planks_woodcutting": {
+    "criteria": {
+      "has_oak_planks": "2026-11-23 09:02:37 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/oak_bench": {
+    "criteria": {
+      "has_oak_bench": "2026-11-23 09:02:37 +0700"
+    },
+    "done": true
+  },
+  "yungscavebiomes:recipes/redstone/tnt_from_ancient_sand": {
+    "criteria": {
+      "has_gunpowder": "2026-11-23 09:01:41 +0700",
+      "has_the_recipe": "2026-11-23 09:01:41 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/oak_couch": {
+    "criteria": {
+      "has_oak_couch": "2026-11-23 09:02:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_stairs_from_oak_planks_woodcutting": {
+    "criteria": {
+      "has_oak_planks": "2026-11-23 09:02:37 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/oak_chair": {
+    "criteria": {
+      "has_oak_chair": "2026-11-23 09:02:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bowl_from_oak_planks_woodcutting": {
+    "criteria": {
+      "has_oak_planks": "2026-11-23 09:02:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_pressure_plate": {
+    "criteria": {
+      "has_planks": "2026-11-23 09:02:37 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/oak_cupboard": {
+    "criteria": {
+      "has_oak_cupboard": "2026-11-23 09:02:37 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/chopping_board": {
+    "criteria": {
+      "has_wood": "2026-11-23 09:02:37 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/oak_nightstand": {
+    "criteria": {
+      "has_oak_nightstand": "2026-11-23 09:02:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/oak_sign": {
+    "criteria": {
+      "has_planks": "2026-11-23 09:02:37 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/oak_fancy_bed": {
+    "criteria": {
+      "has_oak_fancy_bed": "2026-11-23 09:02:37 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/long_bench": {
+    "criteria": {
+      "has_oak_planks": "2026-11-23 09:02:37 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/oak_table": {
+    "criteria": {
+      "has_oak_table": "2026-11-23 09:02:37 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/oak_corner_trim": {
+    "criteria": {
+      "has_oak_corner_trim": "2026-11-23 09:02:37 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/ash": {
+    "criteria": {
+      "has_gunpowder": "2026-11-23 09:01:41 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/oak_dining_bench": {
+    "criteria": {
+      "has_oak_dining_bench": "2026-11-23 09:02:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_fence_gate": {
+    "criteria": {
+      "has_planks": "2026-11-23 09:02:37 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/oak_desk": {
+    "criteria": {
+      "has_oak_desk": "2026-11-23 09:02:37 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/cook_stool_oak": {
+    "criteria": {
+      "has_wood": "2026-11-23 09:02:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_button_from_oak_planks_woodcutting": {
+    "criteria": {
+      "has_oak_planks": "2026-11-23 09:02:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_stairs": {
+    "criteria": {
+      "has_planks": "2026-11-23 09:02:37 +0700"
+    },
+    "done": true
+  },
+  "illagerinvasion:recipes/misc/platinum_sheet": {
+    "criteria": {
+      "has_platinum_chunk": "2026-11-23 09:00:56 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/oak_fence": {
+    "criteria": {
+      "has_planks": "2026-11-23 09:02:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/oak_button": {
+    "criteria": {
+      "has_planks": "2026-11-23 09:02:37 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/oak_pillar_trim": {
+    "criteria": {
+      "has_oak_pillar_trim": "2026-11-23 09:02:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/ladder_from_oak_planks_woodcutting": {
+    "criteria": {
+      "has_oak_planks": "2026-11-23 09:02:37 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/oak_side_table": {
+    "criteria": {
+      "has_oak_side_table": "2026-11-23 09:02:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/tnt": {
+    "criteria": {
+      "has_gunpowder": "2026-11-23 09:01:41 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_fence_from_oak_planks_woodcutting": {
+    "criteria": {
+      "has_oak_planks": "2026-11-23 09:02:37 +0700"
     },
     "done": true
   },
