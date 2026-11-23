@@ -4878,5 +4878,29 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/copper_ingot_from_smelting_copper_ore": {
+    "criteria": {
+      "has_copper_ore": "2026-11-24 01:03:35 +0700"
+    },
+    "done": true
+  },
+  "enhanced_ore_variety:recipes/misc/copper_ingot_from_blasting": {
+    "criteria": {
+      "TagKey[minecraft:item / minecraft:copper_ores]": "2026-11-24 01:03:35 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/copper_ingot_from_blasting_copper_ore": {
+    "criteria": {
+      "has_copper_ore": "2026-11-24 01:03:35 +0700"
+    },
+    "done": true
+  },
+  "enhanced_ore_variety:recipes/misc/copper_ingot_from_smelting": {
+    "criteria": {
+      "TagKey[minecraft:item / minecraft:copper_ores]": "2026-11-24 01:03:35 +0700"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }
