@@ -1,0 +1,14 @@
+{
+	version: 1
+	uuid: "8ce6a24f2fe531c0b0666aab4b83cdbd"
+	name: "narubolo#8ce6a24f"
+	lock: false
+	rewards_blocked: false
+	task_progress: { }
+	started: { }
+	completed: { }
+	repeatable: { }
+	completion_count: { }
+	claimed_rewards: { }
+	player_data: { }
+}

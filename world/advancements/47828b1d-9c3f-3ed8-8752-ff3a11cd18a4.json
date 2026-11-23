@@ -878,6 +878,7 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
+      "minecraft:ice_spikes": "2026-11-23 19:18:51 +0700",
       "minecraft:frozen_ocean": "2026-11-22 17:48:03 +0700",
       "minecraft:frozen_river": "2026-11-22 19:16:03 +0700",
       "minecraft:forest": "2026-11-23 13:08:05 +0700",
@@ -3245,6 +3246,24 @@
       "has_item": "2026-11-23 13:28:11 +0700"
     },
     "done": true
+  },
+  "minecraft:recipes/misc/paper": {
+    "criteria": {
+      "has_reeds": "2026-11-23 19:13:20 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/sugar_from_sugar_cane": {
+    "criteria": {
+      "has_sugar_cane": "2026-11-23 19:13:20 +0700"
+    },
+    "done": true
+  },
+  "tensura:otherworldly_biomes": {
+    "criteria": {
+      "miasmic_plains": "2026-11-23 19:13:38 +0700"
+    },
+    "done": false
   },
   "DataVersion": 3955
 }

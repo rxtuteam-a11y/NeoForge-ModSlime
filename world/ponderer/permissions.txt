@@ -4,6 +4,7 @@
 # OP-derived admins are stored as: op playerName
 op Pacala
 pull Arcadeva
+pull bakaluku
 pull batondacarinho
 pull bexuanmai
 pull BigAsshole
@@ -13,6 +14,7 @@ pull HoangTuPacCy
 pull KhangDitTo
 pull Kumalala
 pull lucaku
+pull narubolo
 pull pacalaca
 pull picilici
 pull Picolo
