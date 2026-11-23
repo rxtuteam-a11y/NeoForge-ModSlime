@@ -868,7 +868,10 @@
     "criteria": {
       "minecraft:frozen_ocean": "2026-11-22 17:48:03 +0700",
       "minecraft:frozen_river": "2026-11-22 19:16:03 +0700",
-      "minecraft:snowy_beach": "2026-11-22 19:16:01 +0700"
+      "minecraft:snowy_plains": "2026-11-23 12:57:28 +0700",
+      "minecraft:snowy_taiga": "2026-11-23 12:53:16 +0700",
+      "minecraft:snowy_beach": "2026-11-22 19:16:01 +0700",
+      "minecraft:plains": "2026-11-23 12:59:08 +0700"
     },
     "done": false
   },
@@ -2980,6 +2983,30 @@
   "minecraft:recipes/building_blocks/oak_fence_from_oak_planks_woodcutting": {
     "criteria": {
       "has_oak_planks": "2026-11-23 09:02:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/slime_chunk_from_smelting": {
+    "criteria": {
+      "has_chilled_slime": "2026-11-23 12:57:33 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/slime_chunk_from_campfire_cooking": {
+    "criteria": {
+      "has_chilled_slime": "2026-11-23 12:57:33 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/slime_chunk_from_smoking": {
+    "criteria": {
+      "has_chilled_slime": "2026-11-23 12:57:33 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/chilled_slime_blockfrom_chilled_slime": {
+    "criteria": {
+      "has_chilled_slime": "2026-11-23 12:57:33 +0700"
     },
     "done": true
   },

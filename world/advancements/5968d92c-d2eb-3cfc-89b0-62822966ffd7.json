@@ -167,6 +167,12 @@
     },
     "done": true
   },
+  "minecraft:adventure/root": {
+    "criteria": {
+      "killed_by_something": "2026-11-23 12:53:08 +0700"
+    },
+    "done": true
+  },
   "netherexp:recipes/misc/magma_cream_block": {
     "criteria": {
       "has_item": "2026-11-23 12:49:21 +0700"
