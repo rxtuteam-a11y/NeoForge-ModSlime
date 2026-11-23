@@ -46,6 +46,7 @@
       "gravel_beach": "2026-11-23 13:06:49 +0700",
       "frozen_pine_taiga": "2026-11-23 13:02:42 +0700",
       "shrubland": "2026-11-23 13:08:21 +0700",
+      "icy_heights": "2026-11-23 13:40:49 +0700",
       "hyacinth_deeps": "2026-11-23 13:35:39 +0700",
       "cold_boreal_taiga": "2026-11-23 13:27:20 +0700",
       "spires": "2026-11-23 13:22:56 +0700"
@@ -57,6 +58,7 @@
       "gravel_beach": "2026-11-23 13:06:49 +0700",
       "frozen_pine_taiga": "2026-11-23 13:02:42 +0700",
       "shrubland": "2026-11-23 13:08:21 +0700",
+      "icy_heights": "2026-11-23 13:40:49 +0700",
       "hyacinth_deeps": "2026-11-23 13:35:39 +0700",
       "cold_boreal_taiga": "2026-11-23 13:27:20 +0700",
       "spires": "2026-11-23 13:22:56 +0700"
@@ -826,6 +828,12 @@
     },
     "done": true
   },
+  "eternal_starlight:challenge_gatekeeper": {
+    "criteria": {
+      "challenged": "2026-11-23 13:45:24 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/redstone/pine_door": {
     "criteria": {
       "has_pine_planks": "2026-11-23 13:30:18 +0700"
@@ -1023,6 +1031,7 @@
       "minecraft:pillager": "2026-11-23 13:11:29 +0700",
       "minecraft:skeleton": "2026-11-23 13:23:59 +0700",
       "minecraft:vindicator": "2026-11-23 13:32:31 +0700",
+      "minecraft:stray": "2026-11-23 13:41:24 +0700",
       "minecraft:witch": "2026-11-23 13:17:25 +0700",
       "minecraft:spider": "2026-11-23 13:16:59 +0700",
       "minecraft:zombie": "2026-11-23 13:16:43 +0700",
@@ -1161,6 +1170,12 @@
   "tensura:gold_rush": {
     "criteria": {
       "gold": "2026-11-23 13:32:02 +0700"
+    },
+    "done": true
+  },
+  "dungeons_arise:find_abandoned_temple": {
+    "criteria": {
+      "location0": "2026-11-23 13:41:36 +0700"
     },
     "done": true
   },
