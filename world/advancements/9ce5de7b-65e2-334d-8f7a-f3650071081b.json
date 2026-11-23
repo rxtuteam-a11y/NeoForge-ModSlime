@@ -601,9 +601,10 @@
   "lootr:social": {
     "criteria": {
       "opened_barrel": "2026-11-23 13:13:01 +0700",
-      "opened_chest": "2026-11-23 13:09:42 +0700"
+      "opened_chest": "2026-11-23 13:09:42 +0700",
+      "opened_cart": "2026-11-24 00:30:50 +0700"
     },
-    "done": false
+    "done": true
   },
   "lootr:1chest": {
     "criteria": {
@@ -3943,6 +3944,12 @@
     },
     "done": true
   },
+  "lootr:1cart": {
+    "criteria": {
+      "opened_cart": "2026-11-24 00:30:50 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/granite_wall_from_granite_stonecutting": {
     "criteria": {
       "has_granite": "2026-11-23 23:21:23 +0700"
@@ -4063,6 +4070,12 @@
     },
     "done": true
   },
+  "mowziesmobs:recipes/building_blocks/thatch_block": {
+    "criteria": {
+      "has_thatch_material": "2026-11-24 00:25:25 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/oak_door": {
     "criteria": {
       "has_planks": "2026-11-24 00:01:00 +0700"
@@ -4180,6 +4193,12 @@
   "minecraft:recipes/building_blocks/tuff_brick_slab_from_tuff_bricks_stonecutting": {
     "criteria": {
       "has_tuff_bricks": "2026-11-23 23:53:43 +0700"
+    },
+    "done": true
+  },
+  "bosses_of_mass_destruction:adventure/void_blossom_defeat": {
+    "criteria": {
+      "bosses_of_mass_destruction:void_blossom": "2026-11-24 00:25:19 +0700"
     },
     "done": true
   },
@@ -4603,6 +4622,12 @@
     },
     "done": true
   },
+  "minecraft:nether/netherite_armor": {
+    "criteria": {
+      "netherite_armor": "2026-11-24 00:25:19 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/oak_planks_from_oak_log_woodcutting": {
     "criteria": {
       "has_oak_log": "2026-11-23 22:34:04 +0700"
@@ -4843,6 +4868,12 @@
     },
     "done": true
   },
+  "bosses_of_mass_destruction:recipes/charged_ender_pearl": {
+    "criteria": {
+      "has_void_thorn": "2026-11-24 00:25:26 +0700"
+    },
+    "done": true
+  },
   "minecraft:adventure/minecraft_trials_edition": {
     "criteria": {
       "minecraft_trials_edition": "2026-11-23 23:53:48 +0700"
@@ -5008,6 +5039,12 @@
   "minecraft:recipes/building_blocks/deepslate_brick_slab_from_cobbled_deepslate_stonecutting": {
     "criteria": {
       "has_cobbled_deepslate": "2026-11-24 00:01:01 +0700"
+    },
+    "done": true
+  },
+  "bosses_of_mass_destruction:recipes/earthdive_spear": {
+    "criteria": {
+      "has_void_thorn": "2026-11-24 00:25:26 +0700"
     },
     "done": true
   },
