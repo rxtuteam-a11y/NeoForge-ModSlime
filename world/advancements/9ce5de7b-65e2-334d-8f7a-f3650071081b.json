@@ -43,25 +43,29 @@
   },
   "regions_unexplored:regions_explored": {
     "criteria": {
+      "willow_forest": "2026-11-23 14:04:03 +0700",
       "gravel_beach": "2026-11-23 13:06:49 +0700",
       "frozen_pine_taiga": "2026-11-23 13:02:42 +0700",
       "shrubland": "2026-11-23 13:08:21 +0700",
       "icy_heights": "2026-11-23 13:40:49 +0700",
       "hyacinth_deeps": "2026-11-23 13:35:39 +0700",
       "cold_boreal_taiga": "2026-11-23 13:27:20 +0700",
-      "spires": "2026-11-23 13:22:56 +0700"
+      "spires": "2026-11-23 13:22:56 +0700",
+      "marsh": "2026-11-23 14:04:02 +0700"
     },
     "done": false
   },
   "regions_unexplored:pioneer": {
     "criteria": {
+      "willow_forest": "2026-11-23 14:04:03 +0700",
       "gravel_beach": "2026-11-23 13:06:49 +0700",
       "frozen_pine_taiga": "2026-11-23 13:02:42 +0700",
       "shrubland": "2026-11-23 13:08:21 +0700",
       "icy_heights": "2026-11-23 13:40:49 +0700",
       "hyacinth_deeps": "2026-11-23 13:35:39 +0700",
       "cold_boreal_taiga": "2026-11-23 13:27:20 +0700",
-      "spires": "2026-11-23 13:22:56 +0700"
+      "spires": "2026-11-23 13:22:56 +0700",
+      "marsh": "2026-11-23 14:04:02 +0700"
     },
     "done": false
   },
@@ -354,6 +358,12 @@
     },
     "done": true
   },
+  "block_factorys_bosses:recipes/building_blocks/rope_roll": {
+    "criteria": {
+      "has_item": "2026-11-23 14:01:13 +0700"
+    },
+    "done": true
+  },
   "ironchest:recipes/decorations/chests/copper_iron_chest": {
     "criteria": {
       "has_iron_ingot": "2026-11-23 13:09:48 +0700"
@@ -399,6 +409,24 @@
   "eternal_starlight:recipes/transportation/cradlewood_boat": {
     "criteria": {
       "in_water": "2026-11-23 13:06:38 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/tripwire_hook": {
+    "criteria": {
+      "has_string": "2026-11-23 14:01:13 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:recipes/building_blocks/net": {
+    "criteria": {
+      "has_item": "2026-11-23 14:01:13 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/candle": {
+    "criteria": {
+      "has_string": "2026-11-23 14:01:13 +0700"
     },
     "done": true
   },
@@ -492,6 +520,30 @@
     },
     "done": true
   },
+  "tensura:recipes/misc/pouch_a": {
+    "criteria": {
+      "has_string": "2026-11-23 14:01:13 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/pouch_b": {
+    "criteria": {
+      "has_string": "2026-11-23 14:01:13 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/pouch_c": {
+    "criteria": {
+      "has_string": "2026-11-23 14:01:13 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/pouch_d": {
+    "criteria": {
+      "has_string": "2026-11-23 14:01:13 +0700"
+    },
+    "done": true
+  },
   "kaleidoscope_cookery:recipes/tools/straw_hat_flower": {
     "criteria": {
       "has_ingot_iron": "2026-11-23 13:09:48 +0700"
@@ -561,6 +613,18 @@
   "minecraft:recipes/building_blocks/polished_andesite_stairs_from_andesite_stonecutting": {
     "criteria": {
       "has_andesite": "2026-11-23 13:30:18 +0700"
+    },
+    "done": true
+  },
+  "chronodawn:recipes/redstone/temporal_sand_to_tnt": {
+    "criteria": {
+      "has_gunpowder": "2026-11-23 14:01:12 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/firework_rocket_simple": {
+    "criteria": {
+      "has_gunpowder": "2026-11-23 14:01:12 +0700"
     },
     "done": true
   },
@@ -690,6 +754,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/combat/bow": {
+    "criteria": {
+      "has_string": "2026-11-23 14:01:13 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/golden_helmet": {
     "criteria": {
       "has_gold_ingot": "2026-11-23 13:32:02 +0700"
@@ -735,6 +805,12 @@
   "tensura:recipes/transportation/palm_boat": {
     "criteria": {
       "in_water": "2026-11-23 13:06:38 +0700"
+    },
+    "done": true
+  },
+  "yungscavebiomes:recipes/redstone/tnt_from_ancient_sand": {
+    "criteria": {
+      "has_gunpowder": "2026-11-23 14:01:12 +0700"
     },
     "done": true
   },
@@ -837,6 +913,12 @@
   "regions_unexplored:recipes/redstone/pine_door": {
     "criteria": {
       "has_pine_planks": "2026-11-23 13:30:18 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/fermented_spider_eye": {
+    "criteria": {
+      "has_spider_eye": "2026-11-23 14:01:16 +0700"
     },
     "done": true
   },
@@ -1100,6 +1182,18 @@
     },
     "done": true
   },
+  "regions_unexplored:recipes/building_blocks/ash": {
+    "criteria": {
+      "has_gunpowder": "2026-11-23 14:01:12 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/pouch_special_a": {
+    "criteria": {
+      "has_string": "2026-11-23 14:01:13 +0700"
+    },
+    "done": true
+  },
   "handcrafted:recipes/misc/salmon_trophy": {
     "criteria": {
       "has_salmon_trophy": "2026-11-23 13:30:18 +0700"
@@ -1275,6 +1369,12 @@
     },
     "done": true
   },
+  "vanillabackport:recipes/tools/bundle": {
+    "criteria": {
+      "has_string": "2026-11-23 14:01:13 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/stone_shovel": {
     "criteria": {
       "has_cobblestone": "2026-11-23 13:30:18 +0700"
@@ -1377,6 +1477,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/tools/fishing_rod": {
+    "criteria": {
+      "has_string": "2026-11-23 14:01:13 +0700"
+    },
+    "done": true
+  },
   "chronodawn:recipes/transportation/time_wood_boat": {
     "criteria": {
       "in_water": "2026-11-23 13:06:38 +0700"
@@ -1464,6 +1570,12 @@
   "handcrafted:recipes/misc/tropical_fish_trophy": {
     "criteria": {
       "has_tropical_fish_trophy": "2026-11-23 13:30:18 +0700"
+    },
+    "done": true
+  },
+  "vanillabackport:recipes/tools/lead": {
+    "criteria": {
+      "has_string": "2026-11-23 14:01:13 +0700"
     },
     "done": true
   },
@@ -1563,6 +1675,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/white_wool_from_string": {
+    "criteria": {
+      "has_string": "2026-11-23 14:01:13 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/iron_nugget_from_blasting": {
     "criteria": {
       "has_iron_leggings": "2026-11-23 13:13:25 +0700"
@@ -1572,15 +1690,16 @@
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "minecraft:cold_ocean": "2026-11-23 13:15:39 +0700",
-      "minecraft:frozen_ocean": "2026-11-23 13:31:09 +0700",
       "minecraft:beach": "2026-11-23 13:09:25 +0700",
-      "minecraft:frozen_river": "2026-11-23 13:20:15 +0700",
       "minecraft:forest": "2026-11-23 13:09:11 +0700",
-      "minecraft:deep_frozen_ocean": "2026-11-23 13:34:07 +0700",
       "minecraft:river": "2026-11-23 13:10:31 +0700",
       "minecraft:snowy_plains": "2026-11-23 13:06:35 +0700",
-      "minecraft:windswept_hills": "2026-11-23 13:27:35 +0700",
       "minecraft:snowy_taiga": "2026-11-23 13:06:23 +0700",
+      "minecraft:frozen_ocean": "2026-11-23 13:31:09 +0700",
+      "minecraft:frozen_river": "2026-11-23 13:20:15 +0700",
+      "minecraft:deep_frozen_ocean": "2026-11-23 13:34:07 +0700",
+      "minecraft:swamp": "2026-11-23 14:02:47 +0700",
+      "minecraft:windswept_hills": "2026-11-23 13:27:35 +0700",
       "minecraft:snowy_beach": "2026-11-23 13:29:27 +0700",
       "minecraft:plains": "2026-11-23 13:06:38 +0700"
     },
@@ -1604,6 +1723,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/tnt": {
+    "criteria": {
+      "has_gunpowder": "2026-11-23 14:01:12 +0700"
+    },
+    "done": true
+  },
   "block_factorys_bosses:recipes/building_blocks/lighting/wall_torch": {
     "criteria": {
       "has_item": "2026-11-23 13:09:49 +0700"
@@ -1619,6 +1744,12 @@
   "regions_unexplored:recipes/transportation/willow_boat": {
     "criteria": {
       "in_water": "2026-11-23 13:06:38 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/loom": {
+    "criteria": {
+      "has_string": "2026-11-23 14:01:13 +0700"
     },
     "done": true
   },
