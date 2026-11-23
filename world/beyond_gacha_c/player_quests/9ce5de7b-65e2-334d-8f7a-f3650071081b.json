@@ -14,7 +14,9 @@
     },
     {
       "questId": "trbeyond:repeatable_skill_shinji_tanimura",
-      "progress": {}
+      "progress": {
+        "kill_shinji_tanimura": 1
+      }
     },
     {
       "questId": "trbeyond:repeatable_material_greater_daemon_essence",

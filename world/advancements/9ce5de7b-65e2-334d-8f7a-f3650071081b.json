@@ -63,6 +63,7 @@
       "hyacinth_deeps": "2026-11-23 13:35:39 +0700",
       "rainforest": "2026-11-24 03:31:07 +0700",
       "bamboo_forest": "2026-11-24 03:18:09 +0700",
+      "eucalyptus_forest": "2026-11-24 03:54:55 +0700",
       "cold_boreal_taiga": "2026-11-23 13:27:20 +0700",
       "marsh": "2026-11-23 14:04:02 +0700",
       "outback": "2026-11-24 03:32:52 +0700"
@@ -91,6 +92,7 @@
       "hyacinth_deeps": "2026-11-23 13:35:39 +0700",
       "rainforest": "2026-11-24 03:31:07 +0700",
       "bamboo_forest": "2026-11-24 03:18:09 +0700",
+      "eucalyptus_forest": "2026-11-24 03:54:55 +0700",
       "cold_boreal_taiga": "2026-11-23 13:27:20 +0700",
       "marsh": "2026-11-23 14:04:02 +0700",
       "outback": "2026-11-24 03:32:52 +0700"
@@ -5307,6 +5309,12 @@
     },
     "done": true
   },
+  "tensura:recipes/food/cooked_knight_spider_leg_from_campfire_cooking": {
+    "criteria": {
+      "has_knight_spider_leg": "2026-11-24 03:52:39 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/ladder_from_jungle_log_woodcutting": {
     "criteria": {
       "has_jungle_log": "2026-11-24 03:21:53 +0700"
@@ -5358,6 +5366,12 @@
   "minecraft:recipes/building_blocks/cut_sandstone": {
     "criteria": {
       "has_sandstone": "2026-11-24 03:45:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/voluntary_exile": {
+    "criteria": {
+      "voluntary_exile": "2026-11-24 03:54:29 +0700"
     },
     "done": true
   },
@@ -5460,6 +5474,12 @@
   "tensura:recipes/building_blocks/high_quality_magic_crystal_slab": {
     "criteria": {
       "has_high_quality_magic_crystal_block": "2026-11-24 02:41:20 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_knight_spider_leg_from_smelting": {
+    "criteria": {
+      "has_knight_spider_leg": "2026-11-24 03:52:39 +0700"
     },
     "done": true
   },
@@ -5583,6 +5603,12 @@
     },
     "done": true
   },
+  "tensura:recipes/food/cooked_armorsaurus_meat_from_smoking": {
+    "criteria": {
+      "has_raw_armorsaurus_meat": "2026-11-24 03:58:49 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/flint_and_steel": {
     "criteria": {
       "has_obsidian": "2026-11-24 03:38:22 +0700"
@@ -5598,6 +5624,12 @@
   "regions_unexplored:recipes/decorations/dark_oak_shrub": {
     "criteria": {
       "has_dark_oak_sapling": "2026-11-24 01:48:31 +0700"
+    },
+    "done": true
+  },
+  "tensura:goodnight_spider": {
+    "criteria": {
+      "knight_spider_carapace": "2026-11-24 03:52:36 +0700"
     },
     "done": true
   },
@@ -5745,6 +5777,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/cooked_armorsaurus_meat_from_smelting": {
+    "criteria": {
+      "has_raw_armorsaurus_meat": "2026-11-24 03:58:49 +0700"
+    },
+    "done": true
+  },
   "iceandfire:recipes/combat/deathworm_yellow_boots": {
     "criteria": {
       "has_item": "2026-11-24 03:40:06 +0700"
@@ -5787,6 +5825,12 @@
     },
     "done": true
   },
+  "tensura:recipes/food/cooked_armorsaurus_meat_from_campfire_cooking": {
+    "criteria": {
+      "has_raw_armorsaurus_meat": "2026-11-24 03:58:49 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/sandstone_stairs_from_sandstone_stonecutting": {
     "criteria": {
       "has_sandstone": "2026-11-24 03:45:16 +0700"
@@ -5817,6 +5861,12 @@
     },
     "done": true
   },
+  "tensura:recipes/food/cooked_knight_spider_leg_from_smoking": {
+    "criteria": {
+      "has_knight_spider_leg": "2026-11-24 03:52:39 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/high_quality_magic_crystal_slab_from_high_quality_magic_crystal_block_stonecutting": {
     "criteria": {
       "has_high_quality_magic_crystal_block": "2026-11-24 02:41:20 +0700"
@@ -5832,6 +5882,12 @@
   "minecraft:recipes/building_blocks/smooth_sandstone_stairs": {
     "criteria": {
       "has_smooth_sandstone": "2026-11-24 03:45:37 +0700"
+    },
+    "done": true
+  },
+  "tensura:shell_lizard": {
+    "criteria": {
+      "armorsaurus_scale": "2026-11-24 03:58:49 +0700"
     },
     "done": true
   },
