@@ -43,58 +43,66 @@
   },
   "regions_unexplored:regions_explored": {
     "criteria": {
+      "shrubland": "2026-11-23 13:08:21 +0700",
+      "pine_taiga": "2026-11-24 04:17:24 +0700",
+      "sparse_rainforest": "2026-11-24 03:31:14 +0700",
+      "magnolia_woodland": "2026-11-23 22:47:50 +0700",
+      "muddy_river": "2026-11-24 04:12:52 +0700",
+      "autumnal_maple_forest": "2026-11-24 04:15:49 +0700",
+      "bamboo_forest": "2026-11-24 03:18:09 +0700",
+      "cold_boreal_taiga": "2026-11-23 13:27:20 +0700",
+      "marsh": "2026-11-23 14:04:02 +0700",
       "willow_forest": "2026-11-23 14:04:03 +0700",
       "cold_river": "2026-11-24 02:32:29 +0700",
       "rocky_reef": "2026-11-24 03:33:18 +0700",
-      "shrubland": "2026-11-23 13:08:21 +0700",
       "poppy_fields": "2026-11-24 02:10:30 +0700",
       "grassy_beach": "2026-11-24 01:49:00 +0700",
       "spires": "2026-11-23 13:22:56 +0700",
+      "grassland": "2026-11-24 04:12:53 +0700",
       "prairie": "2026-11-24 03:37:56 +0700",
       "tundra": "2026-11-23 20:01:28 +0700",
-      "sparse_rainforest": "2026-11-24 03:31:14 +0700",
       "flower_fields": "2026-11-23 22:58:42 +0700",
       "gravel_beach": "2026-11-23 13:06:49 +0700",
       "highland_fields": "2026-11-23 21:25:30 +0700",
       "frozen_pine_taiga": "2026-11-23 13:02:42 +0700",
       "maple_forest": "2026-11-24 02:07:29 +0700",
-      "magnolia_woodland": "2026-11-23 22:47:50 +0700",
       "icy_heights": "2026-11-23 13:40:49 +0700",
       "hyacinth_deeps": "2026-11-23 13:35:39 +0700",
       "rainforest": "2026-11-24 03:31:07 +0700",
-      "bamboo_forest": "2026-11-24 03:18:09 +0700",
       "eucalyptus_forest": "2026-11-24 03:54:55 +0700",
-      "cold_boreal_taiga": "2026-11-23 13:27:20 +0700",
-      "marsh": "2026-11-23 14:04:02 +0700",
       "outback": "2026-11-24 03:32:52 +0700"
     },
     "done": false
   },
   "regions_unexplored:pioneer": {
     "criteria": {
+      "shrubland": "2026-11-23 13:08:21 +0700",
+      "pine_taiga": "2026-11-24 04:17:24 +0700",
+      "sparse_rainforest": "2026-11-24 03:31:14 +0700",
+      "magnolia_woodland": "2026-11-23 22:47:50 +0700",
+      "muddy_river": "2026-11-24 04:12:52 +0700",
+      "autumnal_maple_forest": "2026-11-24 04:15:49 +0700",
+      "bamboo_forest": "2026-11-24 03:18:09 +0700",
+      "cold_boreal_taiga": "2026-11-23 13:27:20 +0700",
+      "marsh": "2026-11-23 14:04:02 +0700",
       "willow_forest": "2026-11-23 14:04:03 +0700",
       "cold_river": "2026-11-24 02:32:29 +0700",
       "rocky_reef": "2026-11-24 03:33:18 +0700",
-      "shrubland": "2026-11-23 13:08:21 +0700",
       "poppy_fields": "2026-11-24 02:10:30 +0700",
       "grassy_beach": "2026-11-24 01:49:00 +0700",
       "spires": "2026-11-23 13:22:56 +0700",
+      "grassland": "2026-11-24 04:12:53 +0700",
       "prairie": "2026-11-24 03:37:56 +0700",
       "tundra": "2026-11-23 20:01:28 +0700",
-      "sparse_rainforest": "2026-11-24 03:31:14 +0700",
       "flower_fields": "2026-11-23 22:58:42 +0700",
       "gravel_beach": "2026-11-23 13:06:49 +0700",
       "highland_fields": "2026-11-23 21:25:30 +0700",
       "frozen_pine_taiga": "2026-11-23 13:02:42 +0700",
       "maple_forest": "2026-11-24 02:07:29 +0700",
-      "magnolia_woodland": "2026-11-23 22:47:50 +0700",
       "icy_heights": "2026-11-23 13:40:49 +0700",
       "hyacinth_deeps": "2026-11-23 13:35:39 +0700",
       "rainforest": "2026-11-24 03:31:07 +0700",
-      "bamboo_forest": "2026-11-24 03:18:09 +0700",
       "eucalyptus_forest": "2026-11-24 03:54:55 +0700",
-      "cold_boreal_taiga": "2026-11-23 13:27:20 +0700",
-      "marsh": "2026-11-23 14:04:02 +0700",
       "outback": "2026-11-24 03:32:52 +0700"
     },
     "done": false
@@ -301,18 +309,22 @@
       "minecraft:frozen_ocean": "2026-11-23 13:31:09 +0700",
       "minecraft:frozen_river": "2026-11-23 13:20:15 +0700",
       "minecraft:deep_frozen_ocean": "2026-11-23 13:34:07 +0700",
+      "minecraft:ocean": "2026-11-24 04:16:41 +0700",
       "minecraft:jungle": "2026-11-24 03:09:10 +0700",
       "minecraft:cherry_grove": "2026-11-23 23:04:36 +0700",
       "minecraft:sunflower_plains": "2026-11-24 02:10:29 +0700",
+      "minecraft:birch_forest": "2026-11-24 04:16:35 +0700",
       "minecraft:windswept_hills": "2026-11-23 13:27:35 +0700",
       "minecraft:snowy_beach": "2026-11-23 13:29:27 +0700",
       "minecraft:wooded_badlands": "2026-11-24 03:46:52 +0700",
       "minecraft:bamboo_jungle": "2026-11-24 03:18:25 +0700",
       "minecraft:warm_ocean": "2026-11-24 03:33:17 +0700",
+      "minecraft:deep_lukewarm_ocean": "2026-11-24 04:14:29 +0700",
       "minecraft:badlands": "2026-11-24 03:41:50 +0700",
       "minecraft:beach": "2026-11-23 13:09:25 +0700",
       "minecraft:sparse_jungle": "2026-11-24 03:08:21 +0700",
       "minecraft:river": "2026-11-23 13:10:31 +0700",
+      "minecraft:lukewarm_ocean": "2026-11-24 04:13:21 +0700",
       "minecraft:snowy_plains": "2026-11-23 13:06:35 +0700",
       "minecraft:stony_shore": "2026-11-24 03:33:25 +0700",
       "minecraft:snowy_taiga": "2026-11-23 13:06:23 +0700",
@@ -5339,6 +5351,12 @@
     },
     "done": true
   },
+  "iceandfire:recipes/combat/tide_deepblue_helmet": {
+    "criteria": {
+      "has_item": "2026-11-24 04:17:05 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/misc/high_quality_magic_crystalfrom_high_quality_magic_crystal_block": {
     "criteria": {
       "has_high_quality_magic_crystal_block": "2026-11-24 02:41:20 +0700"
@@ -5462,6 +5480,18 @@
   "minecraft:husbandry/tame_an_animal": {
     "criteria": {
       "tamed_animal": "2026-11-24 04:02:52 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/building_blocks/sea_serpent_scales_deepblue_to_sea_serpent_scale_block_deepblue": {
+    "criteria": {
+      "has_sea_serpent_scales_deepblue": "2026-11-24 04:17:05 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:iceandfire/kill_sea_serpent": {
+    "criteria": {
+      "killed_fire_dragon": "2026-11-24 04:17:05 +0700"
     },
     "done": true
   },
@@ -5591,6 +5621,12 @@
     },
     "done": true
   },
+  "iceandfire:recipes/combat/tide_deepblue_chestplate": {
+    "criteria": {
+      "has_item": "2026-11-24 04:17:05 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/building_blocks/medium_quality_magic_crystal_stairs": {
     "criteria": {
       "has_medium_quality_magic_crystal_block": "2026-11-24 02:25:08 +0700"
@@ -5630,6 +5666,12 @@
   "minecraft:recipes/building_blocks/smooth_sandstone_stairs_from_smooth_sandstone_stonecutting": {
     "criteria": {
       "has_smooth_sandstone": "2026-11-24 03:45:37 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/tide_trident": {
+    "criteria": {
+      "has_item": "2026-11-24 04:17:05 +0700"
     },
     "done": true
   },
@@ -5681,6 +5723,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/sea_lantern": {
+    "criteria": {
+      "has_prismarine_crystals": "2026-11-24 04:14:58 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/jungle_slab_from_jungle_log_woodcutting": {
     "criteria": {
       "has_jungle_log": "2026-11-24 03:21:53 +0700"
@@ -5696,6 +5744,12 @@
   "mowziesmobs:kill_foliaath": {
     "criteria": {
       "foliaath": "2026-11-24 03:20:29 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/sea_serpent_arrow": {
+    "criteria": {
+      "has_item": "2026-11-24 04:17:05 +0700"
     },
     "done": true
   },
@@ -5795,6 +5849,12 @@
     },
     "done": true
   },
+  "iceandfire:recipes/combat/tide_deepblue_leggings": {
+    "criteria": {
+      "has_item": "2026-11-24 04:17:05 +0700"
+    },
+    "done": true
+  },
   "bosses_of_mass_destruction:recipes/brimstone_nectar": {
     "criteria": {
       "has_netherite_scrap": "2026-11-24 02:41:09 +0700"
@@ -5891,6 +5951,12 @@
     },
     "done": true
   },
+  "iceandfire:iceandfire/kill_siren": {
+    "criteria": {
+      "killed_fire_dragon": "2026-11-24 04:14:58 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/food/cooked_armorsaurus_meat_from_campfire_cooking": {
     "criteria": {
       "has_raw_armorsaurus_meat": "2026-11-24 03:58:49 +0700"
@@ -5984,6 +6050,12 @@
   "tensura:recipes/building_blocks/kiln_orichalcum": {
     "criteria": {
       "has_obsidian": "2026-11-24 03:38:22 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/tide_deepblue_boots": {
+    "criteria": {
+      "has_item": "2026-11-24 04:17:05 +0700"
     },
     "done": true
   },
