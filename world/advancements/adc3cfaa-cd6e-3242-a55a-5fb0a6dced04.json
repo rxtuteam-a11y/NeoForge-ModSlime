@@ -4881,15 +4881,57 @@
     },
     "done": true
   },
+  "tensura:pure_magisteel": {
+    "criteria": {
+      "pure_magisteel": "2026-11-24 01:55:55 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:spelunker": {
     "criteria": {
       "prismachasm": "2026-11-24 01:10:42 +0700"
     },
     "done": false
   },
+  "minecraft:recipes/food/cooked_salmon_from_campfire_cooking": {
+    "criteria": {
+      "has_salmon": "2026-11-24 01:50:56 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/copper_ingot_from_smelting_copper_ore": {
     "criteria": {
       "has_copper_ore": "2026-11-24 01:03:35 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/pure_magisteel_blockfrom_pure_magisteel_ingot": {
+    "criteria": {
+      "has_pure_magisteel_ingot": "2026-11-24 01:55:55 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/hihiirokane_bone_golem": {
+    "criteria": {
+      "has_hihiirokane_ingot": "2026-11-24 01:55:55 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/orichalcum_bone_golem": {
+    "criteria": {
+      "has_orichalcum_ingot": "2026-11-24 01:55:55 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/adamantite_bone_golem": {
+    "criteria": {
+      "has_adamantite_ingot": "2026-11-24 01:55:55 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_salmon_from_smoking": {
+    "criteria": {
+      "has_salmon": "2026-11-24 01:50:56 +0700"
     },
     "done": true
   },
@@ -4899,15 +4941,51 @@
     },
     "done": true
   },
+  "tensura:recipes/misc/mithril_bone_golem": {
+    "criteria": {
+      "has_mithril_ingot": "2026-11-24 01:55:55 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/drying/salmon_jerky": {
+    "criteria": {
+      "has_meat": "2026-11-24 01:50:56 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/black_dye": {
+    "criteria": {
+      "has_ink_sac": "2026-11-24 01:51:16 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/copper_ingot_from_blasting_copper_ore": {
     "criteria": {
       "has_copper_ore": "2026-11-24 01:03:35 +0700"
     },
     "done": true
   },
+  "minecraft:recipes/food/cooked_salmon": {
+    "criteria": {
+      "has_salmon": "2026-11-24 01:50:56 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/pure_magisteel_bone_golem": {
+    "criteria": {
+      "has_pure_magisteel_ingot": "2026-11-24 01:55:55 +0700"
+    },
+    "done": true
+  },
   "enhanced_ore_variety:recipes/misc/copper_ingot_from_smelting": {
     "criteria": {
       "TagKey[minecraft:item / minecraft:copper_ores]": "2026-11-24 01:03:35 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/pure_magisteel_nugget": {
+    "criteria": {
+      "has_pure_magisteel_ingot": "2026-11-24 01:55:55 +0700"
     },
     "done": true
   },

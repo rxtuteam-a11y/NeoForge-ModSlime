@@ -45,6 +45,7 @@
     "criteria": {
       "willow_forest": "2026-11-23 14:04:03 +0700",
       "shrubland": "2026-11-23 13:08:21 +0700",
+      "grassy_beach": "2026-11-24 01:49:00 +0700",
       "spires": "2026-11-23 13:22:56 +0700",
       "tundra": "2026-11-23 20:01:28 +0700",
       "flower_fields": "2026-11-23 22:58:42 +0700",
@@ -63,6 +64,7 @@
     "criteria": {
       "willow_forest": "2026-11-23 14:04:03 +0700",
       "shrubland": "2026-11-23 13:08:21 +0700",
+      "grassy_beach": "2026-11-24 01:49:00 +0700",
       "spires": "2026-11-23 13:22:56 +0700",
       "tundra": "2026-11-23 20:01:28 +0700",
       "flower_fields": "2026-11-23 22:58:42 +0700",
@@ -5186,33 +5188,9 @@
     },
     "done": true
   },
-  "sophisticatedbackpacks:recipes/misc/stack_upgrade_tier_1_to_tier_2_conversion": {
-    "criteria": {
-      "has_stack_upgrade_tier_1": "2026-11-24 01:35:15 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/emerald_block": {
-    "criteria": {
-      "has_emerald": "2026-11-24 01:23:51 +0700"
-    },
-    "done": true
-  },
-  "tensura:sa_rank": {
-    "criteria": {
-      "ep": "2026-11-24 01:31:01 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/oak_fence_from_stripped_oak_log_woodcutting": {
     "criteria": {
       "has_stripped_oak_log": "2026-11-24 00:48:32 +0700"
-    },
-    "done": true
-  },
-  "sophisticatedbackpacks:recipes/misc/stack_upgrade_tier_2": {
-    "criteria": {
-      "has_stack_upgrade_tier_1": "2026-11-24 01:35:15 +0700"
     },
     "done": true
   },
@@ -5234,15 +5212,57 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/oak_stairs_from_stripped_oak_log_woodcutting": {
+    "criteria": {
+      "has_stripped_oak_log": "2026-11-24 00:48:32 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/emerald_block": {
+    "criteria": {
+      "has_emerald": "2026-11-24 01:23:51 +0700"
+    },
+    "done": true
+  },
   "minecraft:adventure/trade": {
     "criteria": {
       "traded": "2026-11-24 01:24:08 +0700"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/oak_stairs_from_stripped_oak_log_woodcutting": {
+  "tensura:sa_rank": {
     "criteria": {
-      "has_stripped_oak_log": "2026-11-24 00:48:32 +0700"
+      "ep": "2026-11-24 01:31:01 +0700"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/misc/stack_upgrade_tier_1_to_tier_2_conversion": {
+    "criteria": {
+      "has_stack_upgrade_tier_1": "2026-11-24 01:35:15 +0700"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/misc/stack_upgrade_tier_2": {
+    "criteria": {
+      "has_stack_upgrade_tier_1": "2026-11-24 01:35:15 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/dark_oak_shrub": {
+    "criteria": {
+      "has_dark_oak_sapling": "2026-11-24 01:48:31 +0700"
+    },
+    "done": true
+  },
+  "waystones:recipes/decorations/mossy_waystone_from_vines": {
+    "criteria": {
+      "has_waystone": "2026-11-24 01:50:55 +0700"
+    },
+    "done": true
+  },
+  "waystones:recipes/decorations/mossy_waystone_from_moss_blocks": {
+    "criteria": {
+      "has_waystone": "2026-11-24 01:50:55 +0700"
     },
     "done": true
   },
