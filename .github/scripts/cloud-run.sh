@@ -73,7 +73,7 @@ echo "Web Panel: ${PANEL_URL:-không lấy được link Cloudflare}"
 
 # ---- Web Panel + tự bật NeoForge ----
 export MODSLIME_CLOUD=1 MODSLIME_AUTOSTART=1 MODSLIME_DEADLINE="$DEADLINE"
-export MODSLIME_IDLE_EXIT_MIN="${IDLE_EXIT_MIN:-10}" GIT_BRANCH=main
+export MODSLIME_IDLE_EXIT_MIN="${IDLE_EXIT_MIN:-3}" GIT_BRANCH=main
 export MODSLIME_PUBLIC_URL="$PANEL_URL" MODSLIME_MC_ADDRESS="${MC_ADDRESS:-}" MODSLIME_RUN_URL="$RUN_URL"
 if [ "${RCLONE_REMOTE_SET:-false}" = "true" ]; then
   REMOTE_NAME="$(rclone listremotes | head -n1)"

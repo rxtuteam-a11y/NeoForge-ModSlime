@@ -298,6 +298,7 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
   let panel = null;          // last /api/status
   let panelReachable = false;
   let busy = false;
+  let dispatchedAt = 0;      // thời điểm vừa yêu cầu GitHub mở phiên mới
   let lastLogSig = "";
   let clearedAt = 0;         // number of lines hidden by "Xoá màn hình"
   const cmdHistory = JSON.parse(LS.get("cmd_hist", "[]") || "[]");
@@ -407,9 +408,10 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
       if (panel.server_state === "running") return ["online", "Đang chạy"];
       if (panel.server_state === "starting") return ["booting", "Đang khởi động server…"];
       if (panel.backup_in_progress || panel.gdrive_in_progress) return ["stopping", "Đang lưu world…"];
-      return ["offline", panel.cloud_mode ? "Server đã tắt (đang đóng phiên)" : "Server đang tắt"];
+      return ["offline", panel.cloud_mode ? "Server đã tắt — phiên sẽ tự đóng sau ~3 phút" : "Server đang tắt"];
     }
     if (cfg.mode === "local" && !servedByPanel) return cfg.localUrl ? ["error", "Không thấy Web Panel"] : ["offline", "Chưa nhập địa chỉ"];
+    if (justDispatched() && (cloud.state === "offline" || cloud.state === "unknown")) return ["queued", "Đang chờ máy GitHub…"];
     switch (cloud.state) {
       case "queued": return ["queued", "Đang chờ máy GitHub…"];
       case "booting": return ["booting", "Đang chuẩn bị máy…"];
@@ -429,9 +431,11 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
     const pw = $("btnPower");
     pw.disabled = busy;
     if (running) { pw.textContent = "■ TẮT SERVER (lưu world)"; pw.className = "power stop"; }
-    else if (cloudActive && !servedByPanel && !(panel && panelReachable)) { pw.textContent = "⏳ ĐANG MỞ…"; pw.className = "power"; pw.disabled = true; }
+    else if (justDispatched() || (cloudActive && !servedByPanel && !(panel && panelReachable))) { pw.textContent = "⏳ ĐANG MỞ…"; pw.className = "power"; pw.disabled = true; }
+    else if (panel && panelReachable && (panel.backup_in_progress || panel.gdrive_in_progress)) { pw.textContent = "⏳ ĐANG LƯU WORLD…"; pw.className = "power"; pw.disabled = true; }
+    else if (panel && panelReachable && panel.cloud_mode) { pw.textContent = "▶ BẬT LẠI SERVER"; pw.className = "power"; }
     else { pw.textContent = "▶ BẬT SERVER"; pw.className = "power"; }
-    $("durRow").classList.toggle("hide", !!running || cfg.mode !== "cloud" || servedByPanel || cloudActive);
+    $("durRow").classList.toggle("hide", !!running || cfg.mode !== "cloud" || servedByPanel || cloudActive || justDispatched());
     $("forceRow").classList.toggle("hide", !(cloudActive && cloud.run && cfg.token));
     if (cloud.run) $("runLink").href = cloud.run.html_url;
     renderSteps();
@@ -439,7 +443,8 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
     let hint;
     if (running && panel.server_state === "starting") hint = "Server đang nạp 266 mod, thường mất 2–4 phút. Xem console bên phải.";
     else if (running) hint = "Bấm tắt: server báo save-all, lưu world lên GitHub" + (panel.gdrive_enabled ? " và Google Drive" : "") + " rồi mới tắt.";
-    else if (cloud.state === "queued" || cloud.state === "booting") hint = "GitHub đang dựng máy và nạp mod. Trang tự cập nhật, không cần tải lại.";
+    else if (panel && panelReachable && panel.cloud_mode) hint = "Phiên GitHub vẫn mở thêm vài phút sau khi tắt: bấm BẬT LẠI để chạy tiếp ngay trên phiên này (không tạo phiên mới). Không bấm gì thì phiên tự đóng.";
+    else if (justDispatched() || cloud.state === "queued" || cloud.state === "booting") hint = "GitHub đang dựng máy và nạp mod. Trang tự cập nhật, không cần tải lại.";
     else if (cfg.mode === "cloud" && !cfg.token && !servedByPanel) hint = "Cần GitHub token để bật server: bấm ⚙ Cài đặt.";
     else hint = "Bấm bật: GitHub dựng máy chủ, nạp world mới nhất và 266 mod (khoảng 3–5 phút).";
     $("powerHint").textContent = hint;
@@ -518,16 +523,30 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
   }
 
   // ---------- Actions ----------
+  const justDispatched = () => Date.now() - dispatchedAt < 90000;
   async function startServer() {
-    if (cfg.mode === "local" || servedByPanel) {
+    // Đã có Web Panel đang sống (máy riêng, hoặc phiên cloud vừa tắt server): bật lại trên đó, không tạo phiên mới
+    if (cfg.mode === "local" || servedByPanel || (panel && panelReachable)) {
+      if (panel && panelReachable && panel.cloud_mode && !panel.can_control) { toast("Cần GitHub token của chủ server (⚙ Cài đặt).", true); openSettings(); return; }
       const d = await api("/api/start", {}); toast(d.message || "Đã gửi lệnh", !d.ok); return;
     }
     if (!cfg.token) { toast("Hãy nhập GitHub token trong Cài đặt trước.", true); openSettings(); return; }
-    await gh(`/actions/workflows/${WORKFLOW}/dispatches`, {
-      method: "POST", body: JSON.stringify({ ref: "main", inputs: { duration_minutes: $("duration").value } }),
-    });
+    if (justDispatched()) { toast("Đã yêu cầu mở rồi, đang chờ GitHub…"); return; }
+    // Kiểm tra lại trên GitHub: nếu đang có phiên chạy/chờ thì không tạo thêm
+    const runs = await gh(`/actions/workflows/${WORKFLOW}/runs?per_page=5`);
+    const active = (runs.workflow_runs || []).find((r) => r.status !== "completed");
+    if (active) {
+      toast(active.status === "in_progress" ? "Đang có một phiên chạy, đợi nó kết nối hoặc tự đóng (vài phút)." : "Đang có phiên chờ GitHub cấp máy, không tạo thêm.");
+      cloudTimer = 0; return;
+    }
+    dispatchedAt = Date.now();
+    try {
+      await gh(`/actions/workflows/${WORKFLOW}/dispatches`, {
+        method: "POST", body: JSON.stringify({ ref: "main", inputs: { duration_minutes: $("duration").value } }),
+      });
+    } catch (e) { dispatchedAt = 0; throw e; }
     toast("Đã yêu cầu GitHub bật server. Chờ khoảng 3–5 phút…");
-    cloud.state = "queued";
+    cloud.state = "queued"; cloudTimer = 0;
   }
   async function stopServer() {
     if (!confirm("Tắt server? World sẽ được lưu trước khi tắt.")) return;
