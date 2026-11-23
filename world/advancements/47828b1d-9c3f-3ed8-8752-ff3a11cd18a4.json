@@ -2742,6 +2742,43 @@
     },
     "done": true
   },
+  "illagerinvasion:recipes/misc/platinum_sheet": {
+    "criteria": {
+      "has_platinum_chunk": "2026-11-23 09:00:56 +0700"
+    },
+    "done": true
+  },
+  "chronodawn:recipes/redstone/temporal_sand_to_tnt": {
+    "criteria": {
+      "has_gunpowder": "2026-11-23 09:01:41 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/firework_rocket_simple": {
+    "criteria": {
+      "has_gunpowder": "2026-11-23 09:01:41 +0700"
+    },
+    "done": true
+  },
+  "yungscavebiomes:recipes/redstone/tnt_from_ancient_sand": {
+    "criteria": {
+      "has_gunpowder": "2026-11-23 09:01:41 +0700",
+      "has_the_recipe": "2026-11-23 09:01:41 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/ash": {
+    "criteria": {
+      "has_gunpowder": "2026-11-23 09:01:41 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/tnt": {
+    "criteria": {
+      "has_gunpowder": "2026-11-23 09:01:41 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/oak_slab_from_oak_planks_woodcutting": {
     "criteria": {
       "has_oak_planks": "2026-11-23 09:02:37 +0700"
@@ -2772,18 +2809,6 @@
     },
     "done": true
   },
-  "chronodawn:recipes/redstone/temporal_sand_to_tnt": {
-    "criteria": {
-      "has_gunpowder": "2026-11-23 09:01:41 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/firework_rocket_simple": {
-    "criteria": {
-      "has_gunpowder": "2026-11-23 09:01:41 +0700"
-    },
-    "done": true
-  },
   "handcrafted:recipes/misc/oak_counter": {
     "criteria": {
       "has_oak_counter": "2026-11-23 09:02:37 +0700"
@@ -2805,13 +2830,6 @@
   "handcrafted:recipes/misc/oak_bench": {
     "criteria": {
       "has_oak_bench": "2026-11-23 09:02:37 +0700"
-    },
-    "done": true
-  },
-  "yungscavebiomes:recipes/redstone/tnt_from_ancient_sand": {
-    "criteria": {
-      "has_gunpowder": "2026-11-23 09:01:41 +0700",
-      "has_the_recipe": "2026-11-23 09:01:41 +0700"
     },
     "done": true
   },
@@ -2893,12 +2911,6 @@
     },
     "done": true
   },
-  "regions_unexplored:recipes/building_blocks/ash": {
-    "criteria": {
-      "has_gunpowder": "2026-11-23 09:01:41 +0700"
-    },
-    "done": true
-  },
   "handcrafted:recipes/misc/oak_dining_bench": {
     "criteria": {
       "has_oak_dining_bench": "2026-11-23 09:02:37 +0700"
@@ -2935,12 +2947,6 @@
     },
     "done": true
   },
-  "illagerinvasion:recipes/misc/platinum_sheet": {
-    "criteria": {
-      "has_platinum_chunk": "2026-11-23 09:00:56 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/oak_fence": {
     "criteria": {
       "has_planks": "2026-11-23 09:02:37 +0700"
@@ -2968,12 +2974,6 @@
   "handcrafted:recipes/misc/oak_side_table": {
     "criteria": {
       "has_oak_side_table": "2026-11-23 09:02:37 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/tnt": {
-    "criteria": {
-      "has_gunpowder": "2026-11-23 09:01:41 +0700"
     },
     "done": true
   },
