@@ -5186,15 +5186,33 @@
     },
     "done": true
   },
+  "sophisticatedbackpacks:recipes/misc/stack_upgrade_tier_1_to_tier_2_conversion": {
+    "criteria": {
+      "has_stack_upgrade_tier_1": "2026-11-24 01:35:15 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/emerald_block": {
     "criteria": {
       "has_emerald": "2026-11-24 01:23:51 +0700"
     },
     "done": true
   },
+  "tensura:sa_rank": {
+    "criteria": {
+      "ep": "2026-11-24 01:31:01 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/oak_fence_from_stripped_oak_log_woodcutting": {
     "criteria": {
       "has_stripped_oak_log": "2026-11-24 00:48:32 +0700"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/misc/stack_upgrade_tier_2": {
+    "criteria": {
+      "has_stack_upgrade_tier_1": "2026-11-24 01:35:15 +0700"
     },
     "done": true
   },
