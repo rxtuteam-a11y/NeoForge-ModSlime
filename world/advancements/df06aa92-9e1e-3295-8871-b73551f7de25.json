@@ -1,4 +1,64 @@
 {
+  "yungscavebiomes:root": {
+    "criteria": {
+      "always": "2026-11-22 17:34:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2026-11-22 17:34:01 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:iceandfire/root": {
+    "criteria": {
+      "tick": "2026-11-22 17:34:01 +0700"
+    },
+    "done": true
+  },
+  "betterdeserttemples:root": {
+    "criteria": {
+      "always": "2026-11-22 17:34:01 +0700"
+    },
+    "done": true
+  },
+  "mowziesmobs:root": {
+    "criteria": {
+      "custom_test_name": "2026-11-22 17:34:01 +0700"
+    },
+    "done": true
+  },
+  "dungeons_arise:wda_root": {
+    "criteria": {
+      "WDA": "2026-11-22 17:34:01 +0700"
+    },
+    "done": true
+  },
+  "lootr:root": {
+    "criteria": {
+      "always_true": "2026-11-22 17:34:01 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:regions_explored": {
+    "criteria": {
+      "frozen_pine_taiga": "2026-11-22 17:34:02 +0700"
+    },
+    "done": false
+  },
+  "regions_unexplored:pioneer": {
+    "criteria": {
+      "frozen_pine_taiga": "2026-11-22 17:34:02 +0700"
+    },
+    "done": false
+  },
+  "regions_unexplored:parent": {
+    "criteria": {
+      "load_in_world": "2026-11-22 17:34:02 +0700"
+    },
+    "done": true
+  },
   "netherexp:recipes/misc/soul_torch_from_fossil_fuel": {
     "criteria": {
       "has_item": "2026-11-22 17:34:26 +0700"
@@ -8,12 +68,6 @@
   "netherexp:recipes/misc/soul_skeleton_skull_candle": {
     "criteria": {
       "has_item": "2026-11-22 17:34:26 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/crafting_table": {
-    "criteria": {
-      "unlock_right_away": "2026-11-22 17:34:01 +0700"
     },
     "done": true
   },
@@ -44,12 +98,6 @@
   "iceandfire:recipes/misc/skull_to_bone_meal": {
     "criteria": {
       "has_item": "2026-11-22 17:34:26 +0700"
-    },
-    "done": true
-  },
-  "iceandfire:iceandfire/root": {
-    "criteria": {
-      "tick": "2026-11-22 17:34:01 +0700"
     },
     "done": true
   },
@@ -95,12 +143,6 @@
     },
     "done": true
   },
-  "betterdeserttemples:root": {
-    "criteria": {
-      "always": "2026-11-22 17:34:01 +0700"
-    },
-    "done": true
-  },
   "tensura:fast_learner": {
     "criteria": {
       "skill": "2026-11-22 17:34:26 +0700"
@@ -112,18 +154,6 @@
       "has_item": "2026-11-22 17:34:26 +0700"
     },
     "done": true
-  },
-  "regions_unexplored:regions_explored": {
-    "criteria": {
-      "frozen_pine_taiga": "2026-11-22 17:34:02 +0700"
-    },
-    "done": false
-  },
-  "regions_unexplored:pioneer": {
-    "criteria": {
-      "frozen_pine_taiga": "2026-11-22 17:34:02 +0700"
-    },
-    "done": false
   },
   "iceandfire:recipes/misc/dragon_stick": {
     "criteria": {
@@ -140,18 +170,6 @@
   "iceandfire:recipes/misc/dragon_ice": {
     "criteria": {
       "has_item": "2026-11-22 17:34:26 +0700"
-    },
-    "done": true
-  },
-  "mowziesmobs:root": {
-    "criteria": {
-      "custom_test_name": "2026-11-22 17:34:01 +0700"
-    },
-    "done": true
-  },
-  "dungeons_arise:wda_root": {
-    "criteria": {
-      "WDA": "2026-11-22 17:34:01 +0700"
     },
     "done": true
   },
@@ -173,12 +191,6 @@
     },
     "done": true
   },
-  "regions_unexplored:parent": {
-    "criteria": {
-      "load_in_world": "2026-11-22 17:34:02 +0700"
-    },
-    "done": true
-  },
   "iceandfire:recipes/misc/dragon_meal": {
     "criteria": {
       "has_item": "2026-11-22 17:34:26 +0700"
@@ -194,12 +206,6 @@
   "netherexp:recipes/misc/soul_magma_block": {
     "criteria": {
       "has_item2": "2026-11-22 17:34:26 +0700"
-    },
-    "done": true
-  },
-  "lootr:root": {
-    "criteria": {
-      "always_true": "2026-11-22 17:34:01 +0700"
     },
     "done": true
   },
@@ -225,12 +231,6 @@
     "criteria": {
       "has_gold_ingot": "2026-11-22 17:34:26 +0700",
       "has_magic_ore_shard": "2026-11-22 17:34:26 +0700"
-    },
-    "done": true
-  },
-  "yungscavebiomes:root": {
-    "criteria": {
-      "always": "2026-11-22 17:34:00 +0700"
     },
     "done": true
   },

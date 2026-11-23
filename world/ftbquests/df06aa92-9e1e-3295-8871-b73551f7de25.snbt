@@ -4,9 +4,19 @@
 	name: "pocoloco#df06aa92"
 	lock: false
 	rewards_blocked: false
-	task_progress: { }
-	started: { }
-	completed: { }
+	task_progress: {
+		0BEF29E3BDEB4489: 1L
+	}
+	started: {
+		0BEF29E3BDEB4489: 1795435617628L
+		67E535BC4659333A: 1795435617628L
+		0000000000000001: 1795435617628L
+		354AEEAF0EC057C7: 1795435617628L
+	}
+	completed: {
+		0BEF29E3BDEB4489: 1795435617631L
+		67E535BC4659333A: 1795435617631L
+	}
 	repeatable: { }
 	completion_count: { }
 	claimed_rewards: { }

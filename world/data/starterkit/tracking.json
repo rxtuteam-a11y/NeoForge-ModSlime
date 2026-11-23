@@ -2,6 +2,7 @@
   "singleplayer": {},
   "multiplayer": {
     "8ce51a0c-1eea-3303-bf5e-cadc0d8433c9": true,
+    "3b8864c7-0dfc-37ca-8dc5-a62519df2f73": true,
     "47eadd5d-d805-3c40-be0f-a422d46edce6": true,
     "7f5311ec-c4ec-32c4-9f22-4cda7646a7ca": true,
     "9ce5de7b-65e2-334d-8f7a-f3650071081b": true,
@@ -13,7 +14,9 @@
     "47828b1d-9c3f-3ed8-8752-ff3a11cd18a4": true,
     "5ee242a7-a54d-3674-a2e7-77e8e4db17f7": true,
     "58d87bc5-7007-3f94-bc6a-8bf16e828ad5": true,
+    "c331cb7c-35dd-35cb-9ada-20788b6f4518": true,
     "df06aa92-9e1e-3295-8871-b73551f7de25": true,
-    "5968d92c-d2eb-3cfc-89b0-62822966ffd7": true
+    "5968d92c-d2eb-3cfc-89b0-62822966ffd7": true,
+    "8995e956-66ac-3a98-939c-d748c21f5e24": true
   }
 }

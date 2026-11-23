@@ -1,0 +1,14 @@
+{
+	version: 1
+	uuid: "3b8864c70dfc37ca8dc5a62519df2f73"
+	name: "Picolo#3b8864c7"
+	lock: false
+	rewards_blocked: false
+	task_progress: { }
+	started: { }
+	completed: { }
+	repeatable: { }
+	completion_count: { }
+	claimed_rewards: { }
+	player_data: { }
+}
