@@ -48,6 +48,7 @@
       "icy_heights": "2026-11-23 13:23:44 +0700",
       "hyacinth_deeps": "2026-11-23 13:21:56 +0700",
       "boreal_taiga": "2026-11-23 13:27:40 +0700",
+      "cold_boreal_taiga": "2026-11-23 19:28:48 +0700",
       "spires": "2026-11-23 13:24:02 +0700",
       "marsh": "2026-11-23 13:08:37 +0700"
     },
@@ -60,6 +61,7 @@
       "icy_heights": "2026-11-23 13:23:44 +0700",
       "hyacinth_deeps": "2026-11-23 13:21:56 +0700",
       "boreal_taiga": "2026-11-23 13:27:40 +0700",
+      "cold_boreal_taiga": "2026-11-23 19:28:48 +0700",
       "spires": "2026-11-23 13:24:02 +0700",
       "marsh": "2026-11-23 13:08:37 +0700"
     },
@@ -907,6 +909,7 @@
       "minecraft:pillager": "2026-11-23 09:00:08 +0700",
       "minecraft:breeze": "2026-11-22 18:37:11 +0700",
       "minecraft:vindicator": "2026-11-23 09:02:59 +0700",
+      "minecraft:stray": "2026-11-23 19:23:01 +0700",
       "minecraft:drowned": "2026-11-22 19:17:02 +0700",
       "minecraft:husk": "2026-11-22 17:50:13 +0700",
       "minecraft:bogged": "2026-11-22 18:32:26 +0700",
@@ -3264,6 +3267,24 @@
       "miasmic_plains": "2026-11-23 19:13:38 +0700"
     },
     "done": false
+  },
+  "minecraft:recipes/decorations/snow": {
+    "criteria": {
+      "has_snowball": "2026-11-23 19:22:16 +0700"
+    },
+    "done": true
+  },
+  "mowziesmobs:kill_frostmaw": {
+    "criteria": {
+      "frostmaw": "2026-11-23 19:26:02 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/snow_block": {
+    "criteria": {
+      "has_snowball": "2026-11-23 19:22:16 +0700"
+    },
+    "done": true
   },
   "DataVersion": 3955
 }
