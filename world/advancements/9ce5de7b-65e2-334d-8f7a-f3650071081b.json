@@ -1043,6 +1043,7 @@
   },
   "tensura:otherworldly_biomes": {
     "criteria": {
+      "ancient_forest": "2026-11-23 19:29:41 +0700",
       "miasmic_plains": "2026-11-23 13:23:40 +0700"
     },
     "done": false
@@ -1767,15 +1768,63 @@
     },
     "done": true
   },
+  "minecraft:recipes/combat/diamond_sword": {
+    "criteria": {
+      "has_diamond": "2026-11-23 19:31:48 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/jukebox": {
+    "criteria": {
+      "has_diamond": "2026-11-23 19:31:48 +0700"
+    },
+    "done": true
+  },
   "minecraft:adventure/sleep_in_bed": {
     "criteria": {
       "slept_in_bed": "2026-11-23 19:26:38 +0700"
     },
     "done": true
   },
+  "minecraft:recipes/tools/diamond_pickaxe": {
+    "criteria": {
+      "has_diamond": "2026-11-23 19:31:48 +0700"
+    },
+    "done": true
+  },
+  "tensura:master_skill": {
+    "criteria": {
+      "skill": "2026-11-23 19:35:18 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/slime_chunk_from_smelting": {
+    "criteria": {
+      "has_chilled_slime": "2026-11-23 19:34:58 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/building_blocks/peat_coarse_dirt": {
     "criteria": {
       "has_gravel": "2026-11-23 19:22:52 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_hoe": {
+    "criteria": {
+      "has_diamond": "2026-11-23 19:31:48 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/name_tag_from_monster_leather": {
+    "criteria": {
+      "has_monster_leather_d": "2026-11-23 19:35:13 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/slime_chunk_from_campfire_cooking": {
+    "criteria": {
+      "has_chilled_slime": "2026-11-23 19:34:58 +0700"
     },
     "done": true
   },
@@ -1791,15 +1840,45 @@
     },
     "done": true
   },
+  "constructionwand:recipes/tools/diamond_wand": {
+    "criteria": {
+      "has_item": "2026-11-23 19:31:48 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/cooked_salmon_from_campfire_cooking": {
     "criteria": {
       "has_salmon": "2026-11-23 19:23:00 +0700"
     },
     "done": true
   },
+  "twilightforest:recipes/drying/drying/sapling_to_dead_bush": {
+    "criteria": {
+      "has_sapling": "2026-11-23 19:39:38 +0700"
+    },
+    "done": true
+  },
+  "naturescompass:natures_compass_sapling": {
+    "criteria": {
+      "has_sapling": "2026-11-23 19:39:38 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/black_concrete_powder": {
     "criteria": {
       "has_gravel": "2026-11-23 19:22:52 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/diamond_block": {
+    "criteria": {
+      "has_diamond": "2026-11-23 19:31:48 +0700"
+    },
+    "done": true
+  },
+  "ironchest:recipes/decorations/chests/gold_diamond_chest": {
+    "criteria": {
+      "has_diamonds": "2026-11-23 19:31:48 +0700"
     },
     "done": true
   },
@@ -1833,9 +1912,33 @@
     },
     "done": true
   },
+  "tensura:recipes/tools/diamond_sickle": {
+    "criteria": {
+      "has_material_for_diamond_sickle": "2026-11-23 19:31:48 +0700"
+    },
+    "done": true
+  },
   "block_factorys_bosses:recipes/building_blocks/coin_pile": {
     "criteria": {
       "has_item": "2026-11-23 19:22:59 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/paper": {
+    "criteria": {
+      "has_reeds": "2026-11-23 19:30:38 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_boots": {
+    "criteria": {
+      "has_diamond": "2026-11-23 19:31:48 +0700"
+    },
+    "done": true
+  },
+  "tensura:getcha_better_leathers": {
+    "criteria": {
+      "monster_leathers": "2026-11-23 19:35:13 +0700"
     },
     "done": true
   },
@@ -1845,9 +1948,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/sugar_from_sugar_cane": {
+    "criteria": {
+      "has_sugar_cane": "2026-11-23 19:30:38 +0700"
+    },
+    "done": true
+  },
   "tensura:magic_ore": {
     "criteria": {
       "magic_ore": "2026-11-23 19:19:14 +0700"
+    },
+    "done": true
+  },
+  "toms_storage:unlock_dia_pearl": {
+    "criteria": {
+      "inv_changed-diamond": "2026-11-23 19:31:48 +0700"
     },
     "done": true
   },
@@ -1860,6 +1975,18 @@
   "tensura:recipes/building_blocks/end_stone_bricks_magic_engine": {
     "criteria": {
       "has_magic_crystal": "2026-11-23 19:19:14 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/slime_chunk_from_smoking": {
+    "criteria": {
+      "has_chilled_slime": "2026-11-23 19:34:58 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/chilled_slime_blockfrom_chilled_slime": {
+    "criteria": {
+      "has_chilled_slime": "2026-11-23 19:34:58 +0700"
     },
     "done": true
   },
@@ -1887,6 +2014,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/combat/diamond_chestplate": {
+    "criteria": {
+      "has_diamond": "2026-11-23 19:31:48 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_ingot_from_blasting_raw_gold": {
+    "criteria": {
+      "has_raw_gold": "2026-11-23 19:31:51 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/green_concrete_powder": {
     "criteria": {
       "has_gravel": "2026-11-23 19:22:52 +0700"
@@ -1902,6 +2041,12 @@
   "minecraft:recipes/building_blocks/blue_concrete_powder": {
     "criteria": {
       "has_gravel": "2026-11-23 19:22:52 +0700"
+    },
+    "done": true
+  },
+  "naturescompass:natures_compass": {
+    "criteria": {
+      "has_recipe": "2026-11-23 19:39:38 +0700"
     },
     "done": true
   },
@@ -1929,9 +2074,27 @@
     },
     "done": true
   },
+  "minecraft:recipes/tools/diamond_shovel": {
+    "criteria": {
+      "has_diamond": "2026-11-23 19:31:48 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_ingot_from_smelting_raw_gold": {
+    "criteria": {
+      "has_raw_gold": "2026-11-23 19:31:51 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/orange_concrete_powder": {
     "criteria": {
       "has_gravel": "2026-11-23 19:22:52 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/raw_gold_block": {
+    "criteria": {
+      "has_raw_gold": "2026-11-23 19:31:51 +0700"
     },
     "done": true
   },
@@ -1944,6 +2107,18 @@
   "tensura:recipes/building_blocks/stone_bricks_magic_engine": {
     "criteria": {
       "has_magic_crystal": "2026-11-23 19:19:14 +0700"
+    },
+    "done": true
+  },
+  "naturescompass:natures_compass_log": {
+    "criteria": {
+      "has_recipe": "2026-11-23 19:39:38 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_helmet": {
+    "criteria": {
+      "has_diamond": "2026-11-23 19:31:48 +0700"
     },
     "done": true
   },
@@ -1971,6 +2146,12 @@
     },
     "done": true
   },
+  "minecraft:story/mine_diamond": {
+    "criteria": {
+      "diamond": "2026-11-23 19:31:48 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/coarse_dirt": {
     "criteria": {
       "has_gravel": "2026-11-23 19:22:52 +0700"
@@ -1980,6 +2161,12 @@
   "minecraft:recipes/building_blocks/light_gray_concrete_powder": {
     "criteria": {
       "has_gravel": "2026-11-23 19:22:52 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_leggings": {
+    "criteria": {
+      "has_diamond": "2026-11-23 19:31:48 +0700"
     },
     "done": true
   },
@@ -2028,6 +2215,18 @@
   "tensura:recipes/building_blocks/polished_blackstone_bricks_magic_engine": {
     "criteria": {
       "has_magic_crystal": "2026-11-23 19:19:14 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_spear": {
+    "criteria": {
+      "has_diamond": "2026-11-23 19:31:48 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/saddle_crafting": {
+    "criteria": {
+      "has_monster_leather_d": "2026-11-23 19:35:13 +0700"
     },
     "done": true
   },
@@ -2082,6 +2281,12 @@
   "minecraft:recipes/building_blocks/gray_concrete_powder": {
     "criteria": {
       "has_gravel": "2026-11-23 19:22:52 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_axe": {
+    "criteria": {
+      "has_diamond": "2026-11-23 19:31:48 +0700"
     },
     "done": true
   },
