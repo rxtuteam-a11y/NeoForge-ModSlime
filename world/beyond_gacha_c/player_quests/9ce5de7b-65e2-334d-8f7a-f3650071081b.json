@@ -25,7 +25,9 @@
     },
     {
       "questId": "trbeyond:daily_day_1_cattledeer_1",
-      "progress": {}
+      "progress": {
+        "kill_cattledeer_1_1": 2
+      }
     },
     {
       "questId": "trbeyond:boss_carrion",
