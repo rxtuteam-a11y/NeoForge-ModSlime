@@ -44,6 +44,7 @@
   "regions_unexplored:regions_explored": {
     "criteria": {
       "willow_forest": "2026-11-23 21:05:14 +0700",
+      "flower_fields": "2026-11-23 22:45:08 +0700",
       "highland_fields": "2026-11-23 22:33:58 +0700",
       "frozen_pine_taiga": "2026-11-22 17:27:42 +0700",
       "magnolia_woodland": "2026-11-23 21:16:25 +0700",
@@ -59,6 +60,7 @@
   "regions_unexplored:pioneer": {
     "criteria": {
       "willow_forest": "2026-11-23 21:05:14 +0700",
+      "flower_fields": "2026-11-23 22:45:08 +0700",
       "highland_fields": "2026-11-23 22:33:58 +0700",
       "frozen_pine_taiga": "2026-11-22 17:27:42 +0700",
       "magnolia_woodland": "2026-11-23 21:16:25 +0700",
@@ -2374,6 +2376,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/oak_button_from_stripped_oak_log_woodcutting": {
+    "criteria": {
+      "has_stripped_oak_log": "2026-11-23 22:46:37 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/building_blocks/medium_quality_magic_crystal_blockfrom_medium_quality_magic_crystal": {
     "criteria": {
       "has_medium_quality_magic_crystal": "2026-11-23 22:28:07 +0700"
@@ -2524,6 +2532,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/oak_hanging_sign": {
+    "criteria": {
+      "has_stripped_logs": "2026-11-23 22:46:37 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/leather_horse_armor": {
     "criteria": {
       "has_leather": "2026-11-23 22:22:41 +0700"
@@ -2551,6 +2565,12 @@
   "kaleidoscope_cookery:recipes/decorations/farmer_chest_plate": {
     "criteria": {
       "has_leather": "2026-11-23 22:22:41 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/oak_shelf": {
+    "criteria": {
+      "has_stripped_oak_log": "2026-11-23 22:46:37 +0700"
     },
     "done": true
   },
@@ -2716,6 +2736,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/oak_planks_from_stripped_oak_log_woodcutting": {
+    "criteria": {
+      "has_stripped_oak_log": "2026-11-23 22:46:37 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/rib_armor_trim_smithing_template": {
     "criteria": {
       "has_rib_armor_trim_smithing_template": "2026-11-23 21:25:45 +0700"
@@ -2731,6 +2757,12 @@
   "minecraft:recipes/building_blocks/diamond_block": {
     "criteria": {
       "has_diamond": "2026-11-23 21:25:44 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_oak_wood": {
+    "criteria": {
+      "has_log": "2026-11-23 22:46:37 +0700"
     },
     "done": true
   },
@@ -2764,6 +2796,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/bowl_from_stripped_oak_log_woodcutting": {
+    "criteria": {
+      "has_stripped_oak_log": "2026-11-23 22:46:37 +0700"
+    },
+    "done": true
+  },
   "handcrafted:recipes/misc/spruce_desk": {
     "criteria": {
       "has_spruce_desk": "2026-11-23 21:23:58 +0700"
@@ -2773,6 +2811,12 @@
   "minecraft:recipes/misc/iron_ingot_from_nuggets": {
     "criteria": {
       "has_iron_nugget": "2026-11-23 21:42:33 +0700"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/misc/stack_upgrade_tier_1_to_tier_2_conversion": {
+    "criteria": {
+      "has_stack_upgrade_tier_1": "2026-11-23 22:51:18 +0700"
     },
     "done": true
   },
@@ -3178,6 +3222,12 @@
     },
     "done": true
   },
+  "regions_unexplored:recipes/misc/purple_dye_from_purple_lupine": {
+    "criteria": {
+      "has_purple_lupine": "2026-11-23 23:02:18 +0700"
+    },
+    "done": true
+  },
   "minecraft:adventure/avoid_vibration": {
     "criteria": {
       "avoid_vibration": "2026-11-23 21:41:27 +0700"
@@ -3406,6 +3456,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/oak_fence_from_stripped_oak_log_woodcutting": {
+    "criteria": {
+      "has_stripped_oak_log": "2026-11-23 22:46:37 +0700"
+    },
+    "done": true
+  },
   "kaleidoscope_cookery:recipes/decorations/long_bench": {
     "criteria": {
       "has_oak_planks": "2026-11-23 22:26:26 +0700"
@@ -3499,6 +3555,12 @@
   "vanillabackport:recipes/combat/saddle": {
     "criteria": {
       "has_leather": "2026-11-23 22:22:41 +0700"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/misc/stack_upgrade_tier_2": {
+    "criteria": {
+      "has_stack_upgrade_tier_1": "2026-11-23 22:51:18 +0700"
     },
     "done": true
   },
@@ -3670,6 +3732,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/stick_from_stripped_oak_log_woodcutting": {
+    "criteria": {
+      "has_stripped_oak_log": "2026-11-23 22:46:37 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/diamond_helmet": {
     "criteria": {
       "has_diamond": "2026-11-23 21:25:44 +0700"
@@ -3748,6 +3816,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/ladder_from_stripped_oak_log_woodcutting": {
+    "criteria": {
+      "has_stripped_oak_log": "2026-11-23 22:46:37 +0700"
+    },
+    "done": true
+  },
   "handcrafted:recipes/misc/andesite_pillar_trim": {
     "criteria": {
       "has_andesite_pillar_trim": "2026-11-23 22:21:39 +0700"
@@ -3787,6 +3861,12 @@
   "minecraft:story/mine_diamond": {
     "criteria": {
       "diamond": "2026-11-23 21:25:44 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_slab_from_stripped_oak_log_woodcutting": {
+    "criteria": {
+      "has_stripped_oak_log": "2026-11-23 22:46:37 +0700"
     },
     "done": true
   },
@@ -4189,6 +4269,12 @@
   "block_factorys_bosses:recipes/building_blocks/lighting/underworld_candles_extra": {
     "criteria": {
       "has_item": "2026-11-23 22:21:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_stairs_from_stripped_oak_log_woodcutting": {
+    "criteria": {
+      "has_stripped_oak_log": "2026-11-23 22:46:37 +0700"
     },
     "done": true
   },
