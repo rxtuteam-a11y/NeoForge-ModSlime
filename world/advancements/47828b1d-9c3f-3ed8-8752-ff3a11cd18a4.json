@@ -3336,6 +3336,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/gold_nugget_from_smelting": {
+    "criteria": {
+      "has_golden_helmet": "2026-11-23 19:50:02 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/building_blocks/prismarine_bricks_magic_engine": {
     "criteria": {
       "has_magic_crystal": "2026-11-23 19:48:12 +0700"
@@ -3399,6 +3405,12 @@
   "tensura:recipes/building_blocks/quartz_bricks_magic_engine": {
     "criteria": {
       "has_magic_crystal": "2026-11-23 19:48:12 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_nugget_from_blasting": {
+    "criteria": {
+      "has_golden_helmet": "2026-11-23 19:50:02 +0700"
     },
     "done": true
   },
