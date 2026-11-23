@@ -44,7 +44,11 @@
   "regions_unexplored:regions_explored": {
     "criteria": {
       "willow_forest": "2026-11-23 13:08:42 +0700",
+      "highland_fields": "2026-11-23 21:10:02 +0700",
+      "cold_river": "2026-11-23 21:06:07 +0700",
       "frozen_pine_taiga": "2026-11-22 17:27:12 +0700",
+      "magnolia_woodland": "2026-11-23 21:03:43 +0700",
+      "shrubland": "2026-11-23 21:06:03 +0700",
       "icy_heights": "2026-11-23 13:23:44 +0700",
       "hyacinth_deeps": "2026-11-23 13:21:56 +0700",
       "boreal_taiga": "2026-11-23 13:27:40 +0700",
@@ -57,7 +61,11 @@
   "regions_unexplored:pioneer": {
     "criteria": {
       "willow_forest": "2026-11-23 13:08:42 +0700",
+      "highland_fields": "2026-11-23 21:10:02 +0700",
+      "cold_river": "2026-11-23 21:06:07 +0700",
       "frozen_pine_taiga": "2026-11-22 17:27:12 +0700",
+      "magnolia_woodland": "2026-11-23 21:03:43 +0700",
+      "shrubland": "2026-11-23 21:06:03 +0700",
       "icy_heights": "2026-11-23 13:23:44 +0700",
       "hyacinth_deeps": "2026-11-23 13:21:56 +0700",
       "boreal_taiga": "2026-11-23 13:27:40 +0700",
@@ -909,9 +917,11 @@
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
       "minecraft:pillager": "2026-11-23 09:00:08 +0700",
+      "minecraft:skeleton": "2026-11-23 21:11:24 +0700",
       "minecraft:breeze": "2026-11-22 18:37:11 +0700",
       "minecraft:vindicator": "2026-11-23 09:02:59 +0700",
       "minecraft:stray": "2026-11-23 19:23:01 +0700",
+      "minecraft:spider": "2026-11-23 21:14:59 +0700",
       "minecraft:drowned": "2026-11-22 19:17:02 +0700",
       "minecraft:husk": "2026-11-22 17:50:13 +0700",
       "minecraft:bogged": "2026-11-22 18:32:26 +0700",
@@ -1445,6 +1455,8 @@
   "minecraft:husbandry/balanced_diet": {
     "criteria": {
       "apple": "2026-11-23 09:00:33 +0700",
+      "bread": "2026-11-23 21:08:26 +0700",
+      "cooked_chicken": "2026-11-23 21:16:22 +0700",
       "cookie": "2026-11-22 18:32:32 +0700",
       "mushroom_stew": "2026-11-22 17:58:01 +0700",
       "baked_potato": "2026-11-22 18:47:23 +0700"
@@ -3535,6 +3547,12 @@
     },
     "done": true
   },
+  "tensura:grow_spurt": {
+    "criteria": {
+      "evolve": "2026-11-23 20:49:28 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/poplar_planks": {
     "criteria": {
       "has_log": "2026-11-23 20:53:26 +0700"
@@ -3553,9 +3571,69 @@
     },
     "done": true
   },
-  "tensura:grow_spurt": {
+  "naturesaura:positive_imbalance": {
     "criteria": {
-      "evolve": "2026-11-23 20:49:28 +0700"
+      "triggered_in_code": "2026-11-23 21:04:18 +0700"
+    },
+    "done": true
+  },
+  "dungeons_arise:find_kisegi_sanctuary": {
+    "criteria": {
+      "location0": "2026-11-23 21:10:31 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bone_meal": {
+    "criteria": {
+      "has_bone": "2026-11-23 21:26:08 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_diorite_slab_from_polished_diorite_stonecutting": {
+    "criteria": {
+      "has_polished_diorite": "2026-11-23 21:20:53 +0700"
+    },
+    "done": true
+  },
+  "lootr:100loot": {
+    "criteria": {
+      "opened_100": "2026-11-23 21:30:12 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_diorite_stairs": {
+    "criteria": {
+      "has_polished_diorite": "2026-11-23 21:20:53 +0700"
+    },
+    "done": true
+  },
+  "netherexp:nether/soul_sand_valley/ghosts_busted": {
+    "criteria": {
+      "minecraft:skeleton": "2026-11-23 21:11:24 +0700"
+    },
+    "done": false
+  },
+  "netherexp:recipes/bone_blocks/bone_pike": {
+    "criteria": {
+      "has_item": "2026-11-23 21:26:08 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/bone_blocks/bone_fence": {
+    "criteria": {
+      "has_item": "2026-11-23 21:26:08 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_diorite_slab": {
+    "criteria": {
+      "has_polished_diorite": "2026-11-23 21:20:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_diorite_stairs_from_polished_diorite_stonecutting": {
+    "criteria": {
+      "has_polished_diorite": "2026-11-23 21:20:53 +0700"
     },
     "done": true
   },

@@ -46,6 +46,7 @@
       "tundra": "2026-11-23 20:01:28 +0700",
       "willow_forest": "2026-11-23 14:04:03 +0700",
       "gravel_beach": "2026-11-23 13:06:49 +0700",
+      "highland_fields": "2026-11-23 21:25:30 +0700",
       "frozen_pine_taiga": "2026-11-23 13:02:42 +0700",
       "shrubland": "2026-11-23 13:08:21 +0700",
       "icy_heights": "2026-11-23 13:40:49 +0700",
@@ -61,6 +62,7 @@
       "tundra": "2026-11-23 20:01:28 +0700",
       "willow_forest": "2026-11-23 14:04:03 +0700",
       "gravel_beach": "2026-11-23 13:06:49 +0700",
+      "highland_fields": "2026-11-23 21:25:30 +0700",
       "frozen_pine_taiga": "2026-11-23 13:02:42 +0700",
       "shrubland": "2026-11-23 13:08:21 +0700",
       "icy_heights": "2026-11-23 13:40:49 +0700",
@@ -965,6 +967,7 @@
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
       "minecraft:pillager": "2026-11-23 13:11:29 +0700",
+      "minecraft:cave_spider": "2026-11-23 21:31:24 +0700",
       "minecraft:skeleton": "2026-11-23 13:23:59 +0700",
       "minecraft:vindicator": "2026-11-23 13:32:31 +0700",
       "minecraft:stray": "2026-11-23 13:41:24 +0700",
@@ -2683,9 +2686,153 @@
     },
     "done": true
   },
+  "iceandfire:recipes/misc/dragon_bone_wall": {
+    "criteria": {
+      "has_item": "2026-11-23 21:15:04 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_button_from_spruce_log_woodcutting": {
+    "criteria": {
+      "has_spruce_log": "2026-11-23 21:17:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_slab_from_spruce_log_woodcutting": {
+    "criteria": {
+      "has_spruce_log": "2026-11-23 21:17:39 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/oak_tool_rack": {
+    "criteria": {
+      "has_oak_fence": "2026-11-23 21:15:28 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/white_sheet": {
+    "criteria": {
+      "has_white_sheet": "2026-11-23 21:15:00 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/food/dubious_food": {
+    "criteria": {
+      "has_dubious_ingredient": "2026-11-23 21:19:05 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:iceandfire/kill_if_dragon": {
+    "criteria": {
+      "killed_ice_dragon": "2026-11-23 21:13:44 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dye_black_wool_slab": {
+    "criteria": {
+      "has_needed_dye": "2026-11-23 21:31:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_stairs_from_spruce_log_woodcutting": {
+    "criteria": {
+      "has_spruce_log": "2026-11-23 21:17:39 +0700"
+    },
+    "done": true
+  },
+  "lootr:50loot": {
+    "criteria": {
+      "opened_50": "2026-11-23 21:02:10 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/white_wool_stairs": {
+    "criteria": {
+      "has_white_wool": "2026-11-23 21:15:00 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/building_blocks/dragon_bone_block": {
+    "criteria": {
+      "has_dragonbone": "2026-11-23 21:15:04 +0700"
+    },
+    "done": true
+  },
+  "eternal_starlight:recipes/building_blocks/dye_black_yeti_fur": {
+    "criteria": {
+      "has_needed_dye": "2026-11-23 21:31:17 +0700"
+    },
+    "done": true
+  },
+  "eternal_starlight:recipes/building_blocks/dye_black_yeti_fur_carpet": {
+    "criteria": {
+      "has_needed_dye": "2026-11-23 21:31:17 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/baked_potato_from_campfire_cooking": {
     "criteria": {
       "has_potato": "2026-11-23 20:52:50 +0700"
+    },
+    "done": true
+  },
+  "royalvariations:bony_king": {
+    "criteria": {
+      "royal_skeleton": "2026-11-23 21:16:10 +0700"
+    },
+    "done": true
+  },
+  "dungeons_arise:find_kisegi_sanctuary": {
+    "criteria": {
+      "location0": "2026-11-23 21:25:33 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/armor_silver_helmet": {
+    "criteria": {
+      "has_item": "2026-11-23 21:15:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_fence_from_spruce_log_woodcutting": {
+    "criteria": {
+      "has_spruce_log": "2026-11-23 21:17:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dye_black_harness": {
+    "criteria": {
+      "has_needed_dye": "2026-11-23 21:31:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/ladder_from_spruce_log_woodcutting": {
+    "criteria": {
+      "has_spruce_log": "2026-11-23 21:17:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_wood": {
+    "criteria": {
+      "has_log": "2026-11-23 21:17:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bone_meal": {
+    "criteria": {
+      "has_bone": "2026-11-23 21:26:45 +0700"
+    },
+    "done": true
+  },
+  "friendsandfoes:adventure/kill_iceologer": {
+    "criteria": {
+      "killed_iceologer": "2026-11-23 21:16:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_planks_from_spruce_log_woodcutting": {
+    "criteria": {
+      "has_spruce_log": "2026-11-23 21:17:39 +0700"
     },
     "done": true
   },
@@ -2695,15 +2842,327 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/black_stained_glass_pane_from_glass_pane": {
+    "criteria": {
+      "has_black_dye": "2026-11-23 21:31:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_mutton_from_campfire_cooking": {
+    "criteria": {
+      "has_mutton": "2026-11-23 21:15:10 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/building_blocks/dragonscales_silver_to_dragonscale_silver": {
+    "criteria": {
+      "has_dragonscales_silver": "2026-11-23 21:15:00 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/building_blocks/stonecutting/spruce_log/hollow_spruce_log": {
+    "criteria": {
+      "has_block": "2026-11-23 21:17:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_spruce_log_from_spruce_log_woodcutting": {
+    "criteria": {
+      "has_spruce_log": "2026-11-23 21:17:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dye_black_cushion": {
+    "criteria": {
+      "has_needed_dye": "2026-11-23 21:31:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/light_gray_dye_from_black_white_dye": {
+    "criteria": {
+      "has_black_dye": "2026-11-23 21:31:17 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/misc/dragon_horn": {
+    "criteria": {
+      "has_item": "2026-11-23 21:15:04 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dye_black_wool_stairs": {
+    "criteria": {
+      "has_needed_dye": "2026-11-23 21:31:17 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/drying/mutton_jerky": {
+    "criteria": {
+      "has_meat": "2026-11-23 21:15:10 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_mutton_from_smoking": {
+    "criteria": {
+      "has_mutton": "2026-11-23 21:15:10 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/armor_silver_boots": {
+    "criteria": {
+      "has_item": "2026-11-23 21:15:00 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/armor_silver_chestplate": {
+    "criteria": {
+      "has_item": "2026-11-23 21:15:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/white_wool_slab": {
+    "criteria": {
+      "has_white_wool": "2026-11-23 21:15:00 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/eight_immortals_table": {
+    "criteria": {
+      "has_oak_fence": "2026-11-23 21:15:28 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_giant_ant_leg_from_smelting": {
+    "criteria": {
+      "has_giant_ant_leg": "2026-11-23 21:19:05 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/misc/dragon_flute": {
+    "criteria": {
+      "has_item": "2026-11-23 21:15:04 +0700"
+    },
+    "done": true
+  },
   "tensura:master_unique_skill": {
     "criteria": {
       "skill": "2026-11-23 20:51:53 +0700"
     },
     "done": true
   },
+  "tensura:recipes/food/cooked_giant_ant_leg_from_smoking": {
+    "criteria": {
+      "has_giant_ant_leg": "2026-11-23 21:19:05 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dye_black_carpet": {
+    "criteria": {
+      "has_needed_dye": "2026-11-23 21:31:17 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/armor_silver_leggings": {
+    "criteria": {
+      "has_item": "2026-11-23 21:15:00 +0700"
+    },
+    "done": true
+  },
+  "tensura:vigilant": {
+    "criteria": {
+      "giant_ant_carapace": "2026-11-23 21:19:05 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/misc/nest": {
+    "criteria": {
+      "has_item": "2026-11-23 21:15:04 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dye_black_bed": {
+    "criteria": {
+      "has_needed_dye": "2026-11-23 21:31:17 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/dragonbone_bow": {
+    "criteria": {
+      "has_item": "2026-11-23 21:15:04 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/charcoal": {
+    "criteria": {
+      "has_log": "2026-11-23 21:17:39 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/spruce_branch_from_spruce_log": {
+    "criteria": {
+      "has_log": "2026-11-23 21:17:39 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/table_oak": {
+    "criteria": {
+      "has_fence": "2026-11-23 21:15:28 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bowl_from_spruce_log_woodcutting": {
+    "criteria": {
+      "has_spruce_log": "2026-11-23 21:17:39 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/tools/dragonbone_hoe": {
+    "criteria": {
+      "has_item": "2026-11-23 21:15:04 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gray_dye": {
+    "criteria": {
+      "has_black_dye": "2026-11-23 21:31:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/white_bed": {
+    "criteria": {
+      "has_white_wool": "2026-11-23 21:15:00 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/bone_blocks/bone_pike": {
+    "criteria": {
+      "has_item": "2026-11-23 21:26:45 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/food/cooked_giant_ant_leg_from_campfire_cooking": {
+    "criteria": {
+      "has_giant_ant_leg": "2026-11-23 21:19:05 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stick_from_spruce_log_woodcutting": {
+    "criteria": {
+      "has_spruce_log": "2026-11-23 21:17:39 +0700"
+    },
+    "done": true
+  },
+  "friendsandfoes:adventure/the_magicians": {
+    "criteria": {
+      "killed_iceologer": "2026-11-23 21:16:01 +0700"
+    },
+    "done": false
+  },
+  "iceandfire:recipes/tools/dragonbone_shovel": {
+    "criteria": {
+      "has_item": "2026-11-23 21:15:04 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/baked_potato": {
     "criteria": {
       "has_potato": "2026-11-23 20:52:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/painting": {
+    "criteria": {
+      "has_wool": "2026-11-23 21:15:00 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:iceandfire/kill_cyclops": {
+    "criteria": {
+      "killed_fire_dragon": "2026-11-23 21:13:24 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/bone_blocks/bone_fence": {
+    "criteria": {
+      "has_item": "2026-11-23 21:26:45 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/tools/dragonbone_axe": {
+    "criteria": {
+      "has_item": "2026-11-23 21:15:04 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/white_cushion": {
+    "criteria": {
+      "has_white_cushion": "2026-11-23 21:15:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/white_carpet": {
+    "criteria": {
+      "has_white_wool": "2026-11-23 21:15:00 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/tools/dragonbone_pickaxe": {
+    "criteria": {
+      "has_item": "2026-11-23 21:15:04 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_planks": {
+    "criteria": {
+      "has_logs": "2026-11-23 21:17:39 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/chair_oak": {
+    "criteria": {
+      "has_fence": "2026-11-23 21:15:28 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_mutton": {
+    "criteria": {
+      "has_mutton": "2026-11-23 21:15:10 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/white_banner": {
+    "criteria": {
+      "has_white_wool": "2026-11-23 21:15:00 +0700"
+    },
+    "done": true
+  },
+  "netherexp:nether/overkill": {
+    "criteria": {
+      "overkill": "2026-11-23 21:16:06 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/tools/dragonbone_sword": {
+    "criteria": {
+      "has_item": "2026-11-23 21:15:04 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_spruce_wood_from_spruce_log_woodcutting": {
+    "criteria": {
+      "has_spruce_log": "2026-11-23 21:17:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/black_candle": {
+    "criteria": {
+      "has_black_dye": "2026-11-23 21:31:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dye_black_wool": {
+    "criteria": {
+      "has_needed_dye": "2026-11-23 21:31:17 +0700"
     },
     "done": true
   },
