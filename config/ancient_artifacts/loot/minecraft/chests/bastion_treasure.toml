@@ -1,0 +1,3 @@
+loot_id = "minecraft:chests/bastion_treasure"
+chance = 0.051
+itemWeights = ["ancient_artifacts:shadowbind_bracelet:5", "ancient_artifacts:lion_emblem:5", "ancient_artifacts:war_pendant:7", "ancient_artifacts:crimson_mizuhiki:7", "ancient_artifacts:amulet_of_the_sylphs:7", "ancient_artifacts:titanstride_greaves:10", "ancient_artifacts:magicule_conduit_belt:10"]

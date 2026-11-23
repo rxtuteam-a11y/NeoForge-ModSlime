@@ -1,0 +1,19 @@
+#Replace the title screen buttons with animated text.
+enabled = true
+#AUTO: Chinese game language or a CN/HK/MO/TW system region shows Chinese; everything else shows English.
+#Allowed Values: AUTO, ZH_CN, ZH_TW, EN_US
+language = "AUTO"
+#Written automatically when a game language is picked in the Language screen (works with Chloride's fast
+#language reload too). While the game uses this language, AUTO follows it instead of the system region.
+#Leave empty to always use the region rule.
+chosenGameLanguage = ""
+#true: otherworld wording. false: plain button names.
+flavorLabels = true
+#Floating motes and the rune circle behind the menu.
+ambientEffects = true
+#Rift transition when a menu entry opens another screen.
+screenTransitions = true
+#Hover and press sounds, and the opening's music.
+sounds = true
+#Play the entrance animation when the game has loaded, before the first title screen. Any key skips it.
+openingAnimation = true

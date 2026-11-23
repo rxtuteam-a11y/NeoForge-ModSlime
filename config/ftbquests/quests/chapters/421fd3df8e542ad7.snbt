@@ -1,0 +1,86 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "421fd3df8e542ad7"
+	group: "3535525D866EB536"
+	icon: {
+		components: {
+			"ftbquests:icon": "ftblibrary:icons/notes"
+		}
+		id: "ftbquests:custom_icon"
+	}
+	id: "421FD3DF8E542AD7"
+	images: [ ]
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			id: "5B92703EF242240B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3DDCB9375DD29CC3"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "gear"
+			tasks: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "tensura_guild:item/guild_task"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "715D2EAA45E04A6F"
+				type: "tensura_guild:join_guild"
+			}]
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5B92703EF242240B"]
+			id: "23BB2D872B6C5991"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5C4B634D270EADAB"
+				table_id: 6682925850089026690L
+				type: "random"
+			}]
+			shape: "gear"
+			tasks: [{
+				icon: {
+					components: {
+						"ftbquests:icon": "tensura_guild:textures/entity/dwarf/task_icon.png"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "24FBF342E8CC746B"
+				rank_filter: "any"
+				type: "tensura_guild:complete_guild_task"
+			}]
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5B92703EF242240B"]
+			id: "008CCF15712A0E0A"
+			invisible: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "314C707533CDDFDB"
+				table_id: 5836709222417088324L
+				type: "random"
+			}]
+			tasks: [{
+				advancement: "tensura_guild:false_alliance"
+				criterion: ""
+				icon: {
+					id: "eternal_starlight:unrealium_sword"
+				}
+				id: "5873CF9F387161F0"
+				type: "advancement"
+			}]
+			x: -3.5d
+			y: 4.0d
+		}
+	]
+}

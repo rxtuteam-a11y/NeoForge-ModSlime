@@ -1,0 +1,13 @@
+[gpu]
+	#Enable GPU checking
+	enabled = false
+
+[ui]
+	#Button countdown time in seconds (0 = no countdown, button is immediately active)
+	# Default: 9
+	# Range: 0 ~ 60
+	buttonCountdownSeconds = 9
+
+[updates]
+	#Show modpack update notifications. Set to true to restore notices after permanently dismissing them.
+	notificationsEnabled = true
