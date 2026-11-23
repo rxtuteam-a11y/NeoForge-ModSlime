@@ -10,5 +10,7 @@ pull HaJil
 pull Hajime
 pull HoangTuPacCy
 pull pacalaca
+pull picilici
 pull pocoloco
+pull puculucu
 pull Yazmm
