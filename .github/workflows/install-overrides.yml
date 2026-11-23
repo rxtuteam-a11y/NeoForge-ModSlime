@@ -70,6 +70,25 @@ jobs:
           print("== Các jar (nếu có) ==")
           for n in names:
               if n.endswith('.jar'): print("  ", n)
+          # So sánh với file đang có trên server (repo)
+          import os, hashlib
+          pre = 'overrides/' if all(n.startswith('overrides/') for n in names) else ''
+          stats = collections.defaultdict(lambda: [0, 0, 0])
+          changed = collections.defaultdict(list)
+          for n in names:
+              rel = n[len(pre):]
+              top = rel.split('/')[0]
+              if os.path.isfile(rel):
+                  same = hashlib.md5(open(rel, 'rb').read()).digest() == hashlib.md5(z.read(n)).digest()
+                  stats[top][1 if same else 2] += 1
+                  if not same: changed[top].append(rel)
+              else:
+                  stats[top][0] += 1
+          print("== So sánh với server: [mới, giống, khác] ==")
+          for t, v in stats.items(): print(f"  {t}: mới={v[0]} giống={v[1]} khác={v[2]}")
+          for t, lst in changed.items():
+              print(f"== File KHÁC trong {t} ({len(lst)}) ==")
+              for r in sorted(lst)[:200]: print("   ", r)
           PY
 
       - name: Cài vào server và lưu lên GitHub
