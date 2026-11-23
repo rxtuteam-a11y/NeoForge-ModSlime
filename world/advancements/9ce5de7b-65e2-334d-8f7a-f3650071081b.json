@@ -1762,9 +1762,21 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/spruce_counter": {
+    "criteria": {
+      "has_spruce_counter": "2026-11-23 19:43:58 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/building_blocks/medium_quality_magic_crystal_blockfrom_medium_quality_magic_crystal": {
     "criteria": {
       "has_medium_quality_magic_crystal": "2026-11-23 19:19:14 +0700"
+    },
+    "done": true
+  },
+  "tensura:pure_magisteel": {
+    "criteria": {
+      "pure_magisteel": "2026-11-23 19:47:19 +0700"
     },
     "done": true
   },
@@ -1780,6 +1792,12 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/spruce_table": {
+    "criteria": {
+      "has_spruce_table": "2026-11-23 19:43:58 +0700"
+    },
+    "done": true
+  },
   "minecraft:adventure/sleep_in_bed": {
     "criteria": {
       "slept_in_bed": "2026-11-23 19:26:38 +0700"
@@ -1789,6 +1807,12 @@
   "minecraft:recipes/tools/diamond_pickaxe": {
     "criteria": {
       "has_diamond": "2026-11-23 19:31:48 +0700"
+    },
+    "done": true
+  },
+  "tensura:youre_a_wizard": {
+    "criteria": {
+      "tome": "2026-11-23 19:40:49 +0700"
     },
     "done": true
   },
@@ -1810,6 +1834,12 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/spruce_dining_bench": {
+    "criteria": {
+      "has_spruce_dining_bench": "2026-11-23 19:43:58 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/diamond_hoe": {
     "criteria": {
       "has_diamond": "2026-11-23 19:31:48 +0700"
@@ -1822,6 +1852,12 @@
     },
     "done": true
   },
+  "bosses_of_mass_destruction:recipes/void_lily": {
+    "criteria": {
+      "has_amethyst_shard": "2026-11-23 19:43:37 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/misc/slime_chunk_from_campfire_cooking": {
     "criteria": {
       "has_chilled_slime": "2026-11-23 19:34:58 +0700"
@@ -1831,6 +1867,36 @@
   "minecraft:recipes/building_blocks/lime_concrete_powder": {
     "criteria": {
       "has_gravel": "2026-11-23 19:22:52 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/spruce_button": {
+    "criteria": {
+      "has_planks": "2026-11-23 19:43:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/calibrated_sculk_sensor": {
+    "criteria": {
+      "has_amethyst_shard": "2026-11-23 19:43:37 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/daemon_core": {
+    "criteria": {
+      "has_magic_stone": "2026-11-23 19:39:57 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/tinted_glass": {
+    "criteria": {
+      "has_amethyst_shard": "2026-11-23 19:43:37 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/cook_stool_spruce": {
+    "criteria": {
+      "has_wood": "2026-11-23 19:43:58 +0700"
     },
     "done": true
   },
@@ -1855,6 +1921,12 @@
   "twilightforest:recipes/drying/drying/sapling_to_dead_bush": {
     "criteria": {
       "has_sapling": "2026-11-23 19:39:38 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/ladder_from_spruce_planks_woodcutting": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-23 19:43:58 +0700"
     },
     "done": true
   },
@@ -1888,15 +1960,57 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/spruce_corner_trim": {
+    "criteria": {
+      "has_spruce_corner_trim": "2026-11-23 19:43:58 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_desk": {
+    "criteria": {
+      "has_spruce_desk": "2026-11-23 19:43:58 +0700"
+    },
+    "done": true
+  },
+  "waystones:recipes/combat/epitaph": {
+    "criteria": {
+      "has_amethyst_shard": "2026-11-23 19:43:37 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/pink_concrete_powder": {
     "criteria": {
       "has_gravel": "2026-11-23 19:22:52 +0700"
     },
     "done": true
   },
+  "twilightforest:recipes/drying/beef_jerky": {
+    "criteria": {
+      "has_meat": "2026-11-23 19:40:40 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_nugget_from_smelting": {
+    "criteria": {
+      "has_golden_helmet": "2026-11-23 19:40:41 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/building_blocks/prismarine_bricks_magic_engine": {
     "criteria": {
       "has_magic_crystal": "2026-11-23 19:19:14 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/pure_magisteel_blockfrom_pure_magisteel_ingot": {
+    "criteria": {
+      "has_pure_magisteel_ingot": "2026-11-23 19:47:19 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/spruce_sign": {
+    "criteria": {
+      "has_planks": "2026-11-23 19:43:58 +0700"
     },
     "done": true
   },
@@ -1912,6 +2026,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/spruce_slab_from_spruce_planks_woodcutting": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-23 19:43:58 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/hihiirokane_bone_golem": {
+    "criteria": {
+      "has_hihiirokane_ingot": "2026-11-23 19:47:19 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/tools/diamond_sickle": {
     "criteria": {
       "has_material_for_diamond_sickle": "2026-11-23 19:31:48 +0700"
@@ -1924,9 +2050,27 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/stick_from_spruce_planks_woodcutting": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-23 19:43:58 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/paper": {
     "criteria": {
       "has_reeds": "2026-11-23 19:30:38 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/orichalcum_bone_golem": {
+    "criteria": {
+      "has_orichalcum_ingot": "2026-11-23 19:47:19 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/adamantite_bone_golem": {
+    "criteria": {
+      "has_adamantite_ingot": "2026-11-23 19:47:19 +0700"
     },
     "done": true
   },
@@ -1954,6 +2098,18 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/spellbinding_table": {
+    "criteria": {
+      "has_magic_stone": "2026-11-23 19:39:57 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_drawer": {
+    "criteria": {
+      "has_spruce_drawer": "2026-11-23 19:43:58 +0700"
+    },
+    "done": true
+  },
   "tensura:magic_ore": {
     "criteria": {
       "magic_ore": "2026-11-23 19:19:14 +0700"
@@ -1963,6 +2119,18 @@
   "toms_storage:unlock_dia_pearl": {
     "criteria": {
       "inv_changed-diamond": "2026-11-23 19:31:48 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/tools/transmutation_lunch_bag": {
+    "criteria": {
+      "has_amethyst_shard": "2026-11-23 19:43:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/spruce_trapdoor": {
+    "criteria": {
+      "has_planks": "2026-11-23 19:43:58 +0700"
     },
     "done": true
   },
@@ -1984,15 +2152,45 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/amethyst_block": {
+    "criteria": {
+      "has_amethyst_shard": "2026-11-23 19:43:37 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_fancy_bed": {
+    "criteria": {
+      "has_spruce_fancy_bed": "2026-11-23 19:43:58 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_cupboard": {
+    "criteria": {
+      "has_spruce_cupboard": "2026-11-23 19:43:58 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/building_blocks/chilled_slime_blockfrom_chilled_slime": {
     "criteria": {
       "has_chilled_slime": "2026-11-23 19:34:58 +0700"
     },
     "done": true
   },
+  "tensura:recipes/misc/mithril_bone_golem": {
+    "criteria": {
+      "has_mithril_ingot": "2026-11-23 19:47:19 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/building_blocks/purpur_bricks_magic_engine": {
     "criteria": {
       "has_magic_crystal": "2026-11-23 19:19:14 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/warp_core": {
+    "criteria": {
+      "has_magic_stone": "2026-11-23 19:39:57 +0700"
     },
     "done": true
   },
@@ -2038,9 +2236,27 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/slime_chunk_blockfrom_slime_chunk": {
+    "criteria": {
+      "has_slime_chunk": "2026-11-23 19:47:47 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_nugget_from_blasting": {
+    "criteria": {
+      "has_golden_helmet": "2026-11-23 19:40:41 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/blue_concrete_powder": {
     "criteria": {
       "has_gravel": "2026-11-23 19:22:52 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_fence_from_spruce_planks_woodcutting": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-23 19:43:58 +0700"
     },
     "done": true
   },
@@ -2053,6 +2269,18 @@
   "minecraft:recipes/brewing/golden_carrot": {
     "criteria": {
       "has_gold_nugget": "2026-11-23 19:22:59 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_shelf": {
+    "criteria": {
+      "has_spruce_shelf": "2026-11-23 19:43:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/spyglass": {
+    "criteria": {
+      "has_amethyst_shard": "2026-11-23 19:43:37 +0700"
     },
     "done": true
   },
@@ -2074,6 +2302,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/spruce_fence": {
+    "criteria": {
+      "has_planks": "2026-11-23 19:43:58 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/diamond_shovel": {
     "criteria": {
       "has_diamond": "2026-11-23 19:31:48 +0700"
@@ -2083,6 +2317,12 @@
   "minecraft:recipes/misc/gold_ingot_from_smelting_raw_gold": {
     "criteria": {
       "has_raw_gold": "2026-11-23 19:31:51 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_beef_from_smoking": {
+    "criteria": {
+      "has_beef": "2026-11-23 19:40:40 +0700"
     },
     "done": true
   },
@@ -2098,6 +2338,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/spruce_pressure_plate": {
+    "criteria": {
+      "has_planks": "2026-11-23 19:43:58 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_pillar_trim": {
+    "criteria": {
+      "has_spruce_pillar_trim": "2026-11-23 19:43:58 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/black_dye": {
     "criteria": {
       "has_ink_sac": "2026-11-23 19:22:52 +0700"
@@ -2107,6 +2359,12 @@
   "tensura:recipes/building_blocks/stone_bricks_magic_engine": {
     "criteria": {
       "has_magic_crystal": "2026-11-23 19:19:14 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_stairs_from_spruce_planks_woodcutting": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-23 19:43:58 +0700"
     },
     "done": true
   },
@@ -2152,6 +2410,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/cooked_beef": {
+    "criteria": {
+      "has_beef": "2026-11-23 19:40:40 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/coarse_dirt": {
     "criteria": {
       "has_gravel": "2026-11-23 19:22:52 +0700"
@@ -2179,6 +2443,12 @@
   "minecraft:recipes/misc/bottles_of_medium_crystal": {
     "criteria": {
       "has_medium_crystal": "2026-11-23 19:19:14 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/slime_chunk_from_snowball": {
+    "criteria": {
+      "has_material": "2026-11-23 19:47:47 +0700"
     },
     "done": true
   },
@@ -2236,6 +2506,24 @@
     },
     "done": true
   },
+  "tensura:recipes/misc/pure_magisteel_bone_golem": {
+    "criteria": {
+      "has_pure_magisteel_ingot": "2026-11-23 19:47:19 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_couch": {
+    "criteria": {
+      "has_spruce_couch": "2026-11-23 19:43:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bowl_from_spruce_planks_woodcutting": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-23 19:43:58 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/building_blocks/silt_coarse_dirt": {
     "criteria": {
       "has_gravel": "2026-11-23 19:22:52 +0700"
@@ -2245,6 +2533,12 @@
   "minecraft:recipes/food/apple_from_silver_ingot": {
     "criteria": {
       "has_material": "2026-11-23 19:23:03 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_slab": {
+    "criteria": {
+      "has_planks": "2026-11-23 19:43:58 +0700"
     },
     "done": true
   },
@@ -2260,9 +2554,45 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/spruce_nightstand": {
+    "criteria": {
+      "has_spruce_nightstand": "2026-11-23 19:43:58 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_bench": {
+    "criteria": {
+      "has_spruce_bench": "2026-11-23 19:43:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/pure_magisteel_nugget": {
+    "criteria": {
+      "has_pure_magisteel_ingot": "2026-11-23 19:47:19 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_button_from_spruce_planks_woodcutting": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-23 19:43:58 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/carrot_on_a_stick": {
     "criteria": {
       "has_carrot": "2026-11-23 19:23:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/spruce_door": {
+    "criteria": {
+      "has_planks": "2026-11-23 19:43:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/spruce_fence_gate": {
+    "criteria": {
+      "has_planks": "2026-11-23 19:43:58 +0700"
     },
     "done": true
   },
@@ -2284,9 +2614,39 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/slime_ball_from_chunks": {
+    "criteria": {
+      "has_slime_chunks": "2026-11-23 19:47:47 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_chair": {
+    "criteria": {
+      "has_spruce_chair": "2026-11-23 19:43:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_stairs": {
+    "criteria": {
+      "has_planks": "2026-11-23 19:43:58 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/diamond_axe": {
     "criteria": {
       "has_diamond": "2026-11-23 19:31:48 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_side_table": {
+    "criteria": {
+      "has_spruce_side_table": "2026-11-23 19:43:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_beef_from_campfire_cooking": {
+    "criteria": {
+      "has_beef": "2026-11-23 19:40:40 +0700"
     },
     "done": true
   },

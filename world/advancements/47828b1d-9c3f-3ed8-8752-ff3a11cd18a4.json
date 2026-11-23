@@ -3336,6 +3336,12 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/prismarine_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-23 19:48:12 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/rib_armor_trim_smithing_template_smithing_trim": {
     "criteria": {
       "has_smithing_trim_template": "2026-11-23 19:36:19 +0700"
@@ -3366,6 +3372,18 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/end_stone_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-23 19:48:12 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/purpur_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-23 19:48:12 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/diamond_chestplate": {
     "criteria": {
       "has_diamond": "2026-11-23 19:36:18 +0700"
@@ -3375,6 +3393,24 @@
   "minecraft:recipes/misc/gold_ingot_from_blasting_raw_gold": {
     "criteria": {
       "has_raw_gold": "2026-11-23 19:36:19 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/quartz_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-23 19:48:12 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/high_quality_magic_crystal_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-23 19:48:12 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bottles_of_high_crystal": {
+    "criteria": {
+      "has_high_crystal": "2026-11-23 19:48:12 +0700"
     },
     "done": true
   },
@@ -3396,9 +3432,33 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/stone_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-23 19:48:12 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/diamond_helmet": {
     "criteria": {
       "has_diamond": "2026-11-23 19:36:18 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/mud_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-23 19:48:12 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/high_quality_magic_crystal_blockfrom_high_quality_magic_crystal": {
+    "criteria": {
+      "has_high_quality_magic_crystal": "2026-11-23 19:48:12 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/medium_quality_magic_crystal_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-23 19:48:12 +0700"
     },
     "done": true
   },
@@ -3414,9 +3474,45 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/low_quality_magic_crystal_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-23 19:48:12 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/polished_blackstone_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-23 19:48:12 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/diamond_spear": {
     "criteria": {
       "has_diamond": "2026-11-23 19:36:18 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-23 19:48:12 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/deepslate_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-23 19:48:12 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/red_nether_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-23 19:48:12 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/nether_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-23 19:48:12 +0700"
     },
     "done": true
   },
