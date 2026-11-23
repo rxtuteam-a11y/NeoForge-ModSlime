@@ -43,6 +43,7 @@
   },
   "regions_unexplored:regions_explored": {
     "criteria": {
+      "wisteria_grove": "2026-11-24 02:33:03 +0700",
       "willow_forest": "2026-11-23 21:05:14 +0700",
       "cold_river": "2026-11-24 00:48:57 +0700",
       "shrubland": "2026-11-23 21:38:23 +0700",
@@ -63,6 +64,7 @@
   },
   "regions_unexplored:pioneer": {
     "criteria": {
+      "wisteria_grove": "2026-11-24 02:33:03 +0700",
       "willow_forest": "2026-11-23 21:05:14 +0700",
       "cold_river": "2026-11-24 00:48:57 +0700",
       "shrubland": "2026-11-23 21:38:23 +0700",
@@ -696,6 +698,7 @@
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "minecraft:cold_ocean": "2026-11-23 21:05:37 +0700",
+      "minecraft:flower_forest": "2026-11-24 02:19:24 +0700",
       "minecraft:beach": "2026-11-24 00:48:48 +0700",
       "minecraft:forest": "2026-11-22 18:33:25 +0700",
       "minecraft:river": "2026-11-23 21:06:32 +0700",
@@ -704,6 +707,7 @@
       "minecraft:ice_spikes": "2026-11-22 19:05:21 +0700",
       "minecraft:frozen_ocean": "2026-11-22 18:17:02 +0700",
       "minecraft:frozen_river": "2026-11-22 18:33:06 +0700",
+      "minecraft:sunflower_plains": "2026-11-24 02:19:31 +0700",
       "minecraft:swamp": "2026-11-22 18:34:22 +0700",
       "minecraft:windswept_gravelly_hills": "2026-11-23 21:21:28 +0700",
       "minecraft:windswept_hills": "2026-11-22 19:10:41 +0700",
@@ -5001,15 +5005,93 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/cooked_chicken_from_campfire_cooking": {
+    "criteria": {
+      "has_chicken": "2026-11-24 02:24:34 +0700"
+    },
+    "done": true
+  },
+  "ironchest:recipes/decorations/chests/diamond_obsidian_chest": {
+    "criteria": {
+      "has_obsidian": "2026-11-24 02:35:44 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/brown_glazed_terracotta": {
+    "criteria": {
+      "has_brown_terracotta": "2026-11-24 02:35:59 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:iceandfire/kill_if_dragon": {
+    "criteria": {
+      "killed_fire_dragon": "2026-11-24 02:30:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/flour_from_1_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-24 02:33:13 +0700"
+    },
+    "done": true
+  },
+  "tensura:a_rank": {
+    "criteria": {
+      "ep": "2026-11-24 02:31:10 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/flour_from_2_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-24 02:33:13 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_chicken_from_smoking": {
+    "criteria": {
+      "has_chicken": "2026-11-24 02:24:34 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/armor_gray_boots": {
+    "criteria": {
+      "has_item": "2026-11-24 02:31:37 +0700"
+    },
+    "done": true
+  },
+  "tensura:way_stone": {
+    "criteria": {
+      "block": "2026-11-24 02:27:03 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/kiln": {
+    "criteria": {
+      "has_blast_furnace": "2026-11-24 02:35:29 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/paper": {
     "criteria": {
       "has_reeds": "2026-11-24 02:13:35 +0700"
     },
     "done": true
   },
+  "minecraft:recipes/food/flour_from_5_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-24 02:33:13 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/sugar_from_sugar_cane": {
     "criteria": {
       "has_sugar_cane": "2026-11-24 02:13:35 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/kiln_mithril": {
+    "criteria": {
+      "has_obsidian": "2026-11-24 02:35:44 +0700"
     },
     "done": true
   },
@@ -5025,9 +5107,75 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/bread": {
+    "criteria": {
+      "has_wheat": "2026-11-24 02:33:13 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/hay_block": {
+    "criteria": {
+      "has_wheat": "2026-11-24 02:33:13 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/flour_from_7_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-24 02:33:13 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/flour_from_6_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-24 02:33:13 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/drying/chicken_jerky": {
+    "criteria": {
+      "has_meat": "2026-11-24 02:24:34 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/armor_gray_helmet": {
+    "criteria": {
+      "has_item": "2026-11-24 02:31:37 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/armor_gray_chestplate": {
+    "criteria": {
+      "has_item": "2026-11-24 02:31:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:story/form_obsidian": {
+    "criteria": {
+      "obsidian": "2026-11-24 02:35:44 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/cauldron": {
+    "criteria": {
+      "has_water_bucket": "2026-11-24 02:33:37 +0700"
+    },
+    "done": true
+  },
   "waystones:recipes/decorations/blank_scroll": {
     "criteria": {
       "has_paper": "2026-11-24 02:14:19 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/armor_gray_leggings": {
+    "criteria": {
+      "has_item": "2026-11-24 02:31:37 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/phantom_trophy": {
+    "criteria": {
+      "has_phantom_trophy": "2026-11-24 02:24:24 +0700"
     },
     "done": true
   },
@@ -5037,9 +5185,57 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/cooked_chicken": {
+    "criteria": {
+      "has_chicken": "2026-11-24 02:24:34 +0700"
+    },
+    "done": true
+  },
+  "eternal_starlight:recipes/brewing/cauldron_from_deepsilver_ingot": {
+    "criteria": {
+      "has_water_bucket": "2026-11-24 02:33:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/flour_from_8_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-24 02:33:13 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/building_blocks/dragonscales_gray_to_dragonscale_gray": {
+    "criteria": {
+      "has_dragonscales_gray": "2026-11-24 02:31:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/flour_from_4_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-24 02:33:13 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/flour_from_3_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-24 02:33:13 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/kiln_orichalcum": {
+    "criteria": {
+      "has_obsidian": "2026-11-24 02:35:44 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/cartography_table": {
     "criteria": {
       "has_paper": "2026-11-24 02:14:19 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/enchanting_table": {
+    "criteria": {
+      "has_obsidian": "2026-11-24 02:35:44 +0700"
     },
     "done": true
   },

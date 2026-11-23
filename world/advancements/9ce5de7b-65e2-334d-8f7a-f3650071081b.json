@@ -44,6 +44,7 @@
   "regions_unexplored:regions_explored": {
     "criteria": {
       "willow_forest": "2026-11-23 14:04:03 +0700",
+      "cold_river": "2026-11-24 02:32:29 +0700",
       "shrubland": "2026-11-23 13:08:21 +0700",
       "poppy_fields": "2026-11-24 02:10:30 +0700",
       "grassy_beach": "2026-11-24 01:49:00 +0700",
@@ -65,6 +66,7 @@
   "regions_unexplored:pioneer": {
     "criteria": {
       "willow_forest": "2026-11-23 14:04:03 +0700",
+      "cold_river": "2026-11-24 02:32:29 +0700",
       "shrubland": "2026-11-23 13:08:21 +0700",
       "poppy_fields": "2026-11-24 02:10:30 +0700",
       "grassy_beach": "2026-11-24 01:49:00 +0700",
@@ -5253,9 +5255,27 @@
     },
     "done": true
   },
+  "tensura:recipes/misc/low_quality_magic_crystalfrom_low_quality_magic_crystal_block": {
+    "criteria": {
+      "has_low_quality_magic_crystal_block": "2026-11-24 02:25:05 +0700"
+    },
+    "done": true
+  },
+  "tensura:just_a_test": {
+    "criteria": {
+      "colossus": "2026-11-24 02:26:33 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/decorations/maple_shrub": {
     "criteria": {
       "has_maple_sapling": "2026-11-24 02:07:54 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/medium_quality_magic_crystal_stairs_from_medium_quality_magic_crystal_block_stonecutting": {
+    "criteria": {
+      "has_medium_quality_magic_crystal_block": "2026-11-24 02:25:08 +0700"
     },
     "done": true
   },
@@ -5265,11 +5285,47 @@
     },
     "done": true
   },
+  "tensura:recipes/misc/medium_quality_magic_crystalfrom_medium_quality_magic_crystal_block": {
+    "criteria": {
+      "has_medium_quality_magic_crystal_block": "2026-11-24 02:25:08 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/meidum_quality_magic_crystal_slab": {
+    "criteria": {
+      "has_medium_quality_magic_crystal_block": "2026-11-24 02:25:08 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:got_wood": {
     "criteria": {
       "maple_log": "2026-11-24 02:07:54 +0700"
     },
     "done": false
+  },
+  "minecraft:recipes/building_blocks/low_quality_magic_crystal_stairs_from_low_quality_magic_crystal_block_stonecutting": {
+    "criteria": {
+      "has_low_quality_magic_crystal_block": "2026-11-24 02:25:05 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/medium_quality_magic_crystal_stairs": {
+    "criteria": {
+      "has_medium_quality_magic_crystal_block": "2026-11-24 02:25:08 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/meidum_quality_magic_crystal_slab_from_medium_quality_magic_crystal_block_stonecutting": {
+    "criteria": {
+      "has_medium_quality_magic_crystal_block": "2026-11-24 02:25:08 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/low_quality_magic_crystal_stairs": {
+    "criteria": {
+      "has_low_quality_magic_crystal_block": "2026-11-24 02:25:05 +0700"
+    },
+    "done": true
   },
   "minecraft:recipes/misc/magenta_dye_from_allium": {
     "criteria": {
@@ -5277,9 +5333,27 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/low_quality_magic_crystal_slab": {
+    "criteria": {
+      "has_low_quality_magic_crystal_block": "2026-11-24 02:25:05 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/decorations/dark_oak_shrub": {
     "criteria": {
       "has_dark_oak_sapling": "2026-11-24 01:48:31 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/low_quality_magic_crystal_bricks_from_low_quality_magic_crystal_block_stonecutting": {
+    "criteria": {
+      "has_low_quality_magic_crystal_block": "2026-11-24 02:25:05 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/low_quality_magic_crystal_bricks": {
+    "criteria": {
+      "has_low_quality_magic_crystal_block": "2026-11-24 02:25:05 +0700"
     },
     "done": true
   },
@@ -5295,6 +5369,18 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/medium_quality_magic_crystal_bricks": {
+    "criteria": {
+      "has_medium_quality_magic_crystal_block": "2026-11-24 02:25:08 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/medium_quality_magic_crystal_bricks_from_medium_quality_magic_crystal_block_stonecutting": {
+    "criteria": {
+      "has_medium_quality_magic_crystal_block": "2026-11-24 02:25:08 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/building_blocks/maple_planks": {
     "criteria": {
       "has_logs": "2026-11-24 02:07:54 +0700"
@@ -5304,6 +5390,12 @@
   "waystones:recipes/decorations/mossy_waystone_from_moss_blocks": {
     "criteria": {
       "has_waystone": "2026-11-24 01:50:55 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/low_quality_magic_crystal_slab_from_low_quality_magic_crystal_block_stonecutting": {
+    "criteria": {
+      "has_low_quality_magic_crystal_block": "2026-11-24 02:25:05 +0700"
     },
     "done": true
   },
