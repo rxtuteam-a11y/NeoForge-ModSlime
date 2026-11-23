@@ -917,6 +917,7 @@
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
       "minecraft:pillager": "2026-11-23 09:00:08 +0700",
+      "minecraft:cave_spider": "2026-11-23 21:51:05 +0700",
       "minecraft:skeleton": "2026-11-23 21:11:24 +0700",
       "minecraft:breeze": "2026-11-22 18:37:11 +0700",
       "minecraft:vindicator": "2026-11-23 09:02:59 +0700",
@@ -3571,6 +3572,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/beetroot_soup": {
+    "criteria": {
+      "has_beetroot": "2026-11-23 21:51:32 +0700"
+    },
+    "done": true
+  },
   "block_factorys_bosses:recipes/building_blocks/rope_roll": {
     "criteria": {
       "has_item": "2026-11-23 21:34:28 +0700"
@@ -3595,6 +3602,12 @@
     },
     "done": true
   },
+  "kaleidoscope_cookery:recipes/tools/steamer": {
+    "criteria": {
+      "has_bamboo": "2026-11-23 21:51:03 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/misc/pouch_a": {
     "criteria": {
       "has_string": "2026-11-23 21:34:28 +0700"
@@ -3607,9 +3620,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/iron_ingot_from_nuggets": {
+    "criteria": {
+      "has_iron_nugget": "2026-11-23 21:42:37 +0700"
+    },
+    "done": true
+  },
   "naturesaura:positive_imbalance": {
     "criteria": {
       "triggered_in_code": "2026-11-23 21:04:18 +0700"
+    },
+    "done": true
+  },
+  "mowziesmobs:recipes/combat/blowgun": {
+    "criteria": {
+      "has_bamboo": "2026-11-23 21:51:03 +0700"
     },
     "done": true
   },
@@ -3631,9 +3656,21 @@
     },
     "done": true
   },
+  "block_factorys_bosses:recipes/building_blocks/coin_pile": {
+    "criteria": {
+      "has_item": "2026-11-23 21:50:43 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/brewing/fermented_spider_eye": {
     "criteria": {
       "has_spider_eye": "2026-11-23 21:35:48 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/flint_and_steel": {
+    "criteria": {
+      "has_flint": "2026-11-23 21:42:49 +0700"
     },
     "done": true
   },
@@ -3649,15 +3686,45 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/stick_from_bamboo_item": {
+    "criteria": {
+      "has_bamboo": "2026-11-23 21:51:03 +0700"
+    },
+    "done": true
+  },
   "lootr:100loot": {
     "criteria": {
       "opened_100": "2026-11-23 21:30:12 +0700"
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/bamboo_block": {
+    "criteria": {
+      "has_bamboo": "2026-11-23 21:51:03 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/fletching_table": {
+    "criteria": {
+      "has_flint": "2026-11-23 21:42:49 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/polished_diorite_stairs": {
     "criteria": {
       "has_polished_diorite": "2026-11-23 21:20:53 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/tools/sickle": {
+    "criteria": {
+      "has_flint": "2026-11-23 21:42:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/golden_carrot": {
+    "criteria": {
+      "has_gold_nugget": "2026-11-23 21:50:43 +0700"
     },
     "done": true
   },
@@ -3673,6 +3740,18 @@
     },
     "done": false
   },
+  "minecraft:recipes/misc/red_dye_from_beetroot": {
+    "criteria": {
+      "has_beetroot": "2026-11-23 21:51:32 +0700"
+    },
+    "done": true
+  },
+  "mowziesmobs:recipes/combat/spear": {
+    "criteria": {
+      "has_flint": "2026-11-23 21:42:49 +0700"
+    },
+    "done": true
+  },
   "netherexp:recipes/bone_blocks/bone_pike": {
     "criteria": {
       "has_item": "2026-11-23 21:26:08 +0700"
@@ -3682,6 +3761,12 @@
   "vanillabackport:recipes/tools/bundle": {
     "criteria": {
       "has_string": "2026-11-23 21:34:28 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_ingot_from_nuggets": {
+    "criteria": {
+      "has_gold_nugget": "2026-11-23 21:50:43 +0700"
     },
     "done": true
   },
@@ -3709,6 +3794,18 @@
     },
     "done": true
   },
+  "kaleidoscope_cookery:recipes/food/raw_bamboo_tube_rice": {
+    "criteria": {
+      "has_bamboo": "2026-11-23 21:51:03 +0700"
+    },
+    "done": true
+  },
+  "netherexp:nether/overkill": {
+    "criteria": {
+      "overkill": "2026-11-23 21:51:17 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/white_wool_from_string": {
     "criteria": {
       "has_string": "2026-11-23 21:34:28 +0700"
@@ -3721,9 +3818,21 @@
     },
     "done": true
   },
+  "block_factorys_bosses:recipes/building_blocks/lighting/wall_torch": {
+    "criteria": {
+      "has_item": "2026-11-23 21:42:37 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/loom": {
     "criteria": {
       "has_string": "2026-11-23 21:34:28 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/scaffolding": {
+    "criteria": {
+      "has_bamboo": "2026-11-23 21:51:03 +0700"
     },
     "done": true
   },

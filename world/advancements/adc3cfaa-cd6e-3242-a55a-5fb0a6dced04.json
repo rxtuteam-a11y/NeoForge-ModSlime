@@ -720,6 +720,7 @@
   },
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
+      "minecraft:cave_spider": "2026-11-23 21:51:38 +0700",
       "minecraft:spider": "2026-11-22 18:46:00 +0700",
       "minecraft:zombie": "2026-11-22 18:07:03 +0700",
       "minecraft:creeper": "2026-11-22 18:51:18 +0700",
@@ -1746,6 +1747,8 @@
     "criteria": {
       "apple": "2026-11-22 18:35:20 +0700",
       "bread": "2026-11-22 18:46:27 +0700",
+      "golden_apple": "2026-11-23 21:43:08 +0700",
+      "cooked_cod": "2026-11-23 21:42:25 +0700",
       "mushroom_stew": "2026-11-22 18:48:23 +0700"
     },
     "done": false
@@ -2381,6 +2384,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/lectern": {
+    "criteria": {
+      "has_book": "2026-11-23 21:42:58 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/diamond_pickaxe": {
     "criteria": {
       "has_diamond": "2026-11-23 21:25:44 +0700"
@@ -2390,6 +2399,12 @@
   "tensura:youre_a_wizard": {
     "criteria": {
       "tome": "2026-11-23 21:28:05 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/tools/steamer": {
+    "criteria": {
+      "has_bamboo": "2026-11-23 21:51:38 +0700"
     },
     "done": true
   },
@@ -2483,6 +2498,42 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/iron_ingot_from_nuggets": {
+    "criteria": {
+      "has_iron_nugget": "2026-11-23 21:42:33 +0700"
+    },
+    "done": true
+  },
+  "minecraft:story/obtain_armor": {
+    "criteria": {
+      "iron_chestplate": "2026-11-23 21:42:19 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/baked_potato_from_campfire_cooking": {
+    "criteria": {
+      "has_potato": "2026-11-23 21:42:25 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bookshelf": {
+    "criteria": {
+      "has_book": "2026-11-23 21:42:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:story/iron_tools": {
+    "criteria": {
+      "iron_pickaxe": "2026-11-23 21:43:59 +0700"
+    },
+    "done": true
+  },
+  "mowziesmobs:recipes/combat/blowgun": {
+    "criteria": {
+      "has_bamboo": "2026-11-23 21:51:38 +0700"
+    },
+    "done": true
+  },
   "twilightforest:recipes/drying/beef_jerky": {
     "criteria": {
       "has_meat": "2026-11-23 21:35:59 +0700"
@@ -2513,6 +2564,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/emerald_block": {
+    "criteria": {
+      "has_emerald": "2026-11-23 21:45:37 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/spruce_fence_from_spruce_log_woodcutting": {
     "criteria": {
       "has_spruce_log": "2026-11-23 21:19:21 +0700"
@@ -2522,6 +2579,12 @@
   "minecraft:recipes/misc/music_disc_5": {
     "criteria": {
       "has_disc_fragment_5": "2026-11-23 21:25:45 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_bookshelf": {
+    "criteria": {
+      "has_book": "2026-11-23 21:42:58 +0700"
     },
     "done": true
   },
@@ -2561,6 +2624,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/decorated_pot_simple": {
+    "criteria": {
+      "has_brick": "2026-11-23 21:51:07 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/diamond_boots": {
     "criteria": {
       "has_diamond": "2026-11-23 21:25:44 +0700"
@@ -2585,6 +2654,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/baked_potato_from_smoking": {
+    "criteria": {
+      "has_potato": "2026-11-23 21:42:25 +0700"
+    },
+    "done": true
+  },
   "handcrafted:recipes/misc/spruce_drawer": {
     "criteria": {
       "has_spruce_drawer": "2026-11-23 21:23:58 +0700"
@@ -2594,6 +2669,12 @@
   "minecraft:recipes/redstone/dropper": {
     "criteria": {
       "has_redstone": "2026-11-23 21:27:48 +0700"
+    },
+    "done": true
+  },
+  "lootr:pot_opened": {
+    "criteria": {
+      "pot_opened": "2026-11-23 21:51:22 +0700"
     },
     "done": true
   },
@@ -2608,6 +2689,12 @@
       "has_planks": "2026-11-23 21:23:58 +0700"
     },
     "done": true
+  },
+  "lootr:archaeologist": {
+    "criteria": {
+      "got_pot": "2026-11-23 21:51:22 +0700"
+    },
+    "done": false
   },
   "minecraft:adventure/avoid_vibration": {
     "criteria": {
@@ -2633,9 +2720,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/stick_from_bamboo_item": {
+    "criteria": {
+      "has_bamboo": "2026-11-23 21:51:38 +0700"
+    },
+    "done": true
+  },
   "handcrafted:recipes/misc/spruce_cupboard": {
     "criteria": {
       "has_spruce_cupboard": "2026-11-23 21:23:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bamboo_block": {
+    "criteria": {
+      "has_bamboo": "2026-11-23 21:51:38 +0700"
     },
     "done": true
   },
@@ -2729,6 +2828,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/writable_book": {
+    "criteria": {
+      "has_book": "2026-11-23 21:42:58 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/spruce_fence": {
     "criteria": {
       "has_planks": "2026-11-23 21:23:58 +0700"
@@ -2744,6 +2849,12 @@
   "minecraft:recipes/tools/compass": {
     "criteria": {
       "has_redstone": "2026-11-23 21:27:48 +0700"
+    },
+    "done": true
+  },
+  "explorerscompass:explorers_compass": {
+    "criteria": {
+      "has_recipe": "2026-11-23 21:44:54 +0700"
     },
     "done": true
   },
@@ -2801,6 +2912,12 @@
     },
     "done": true
   },
+  "lootr:25loot": {
+    "criteria": {
+      "opened_25": "2026-11-23 21:46:11 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/diamond_helmet": {
     "criteria": {
       "has_diamond": "2026-11-23 21:25:44 +0700"
@@ -2834,6 +2951,18 @@
   "iceandfire:recipes/tools/dragonbone_hoe": {
     "criteria": {
       "has_item": "2026-11-23 21:12:29 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/stackable_book": {
+    "criteria": {
+      "has_stackable_book": "2026-11-23 21:42:58 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/oven": {
+    "criteria": {
+      "has_oven": "2026-11-23 21:51:07 +0700"
     },
     "done": true
   },
@@ -2879,6 +3008,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/baked_potato": {
+    "criteria": {
+      "has_potato": "2026-11-23 21:42:25 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bricks": {
+    "criteria": {
+      "has_brick": "2026-11-23 21:51:07 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/arrow": {
     "criteria": {
       "has_flint": "2026-11-23 21:27:05 +0700"
@@ -2900,6 +3041,12 @@
   "iceandfire:recipes/tools/dragonbone_axe": {
     "criteria": {
       "has_item": "2026-11-23 21:12:29 +0700"
+    },
+    "done": true
+  },
+  "explorerscompass:explorers_compass_cobweb": {
+    "criteria": {
+      "has_cobweb": "2026-11-23 21:44:54 +0700"
     },
     "done": true
   },
@@ -2939,9 +3086,21 @@
     },
     "done": true
   },
+  "kaleidoscope_cookery:recipes/food/raw_bamboo_tube_rice": {
+    "criteria": {
+      "has_bamboo": "2026-11-23 21:51:38 +0700"
+    },
+    "done": true
+  },
   "handcrafted:recipes/misc/spruce_bench": {
     "criteria": {
       "has_spruce_bench": "2026-11-23 21:23:58 +0700"
+    },
+    "done": true
+  },
+  "explorerscompass:explorers_compass_cracked_stone_bricks": {
+    "criteria": {
+      "has_recipe": "2026-11-23 21:44:54 +0700"
     },
     "done": true
   },
@@ -2981,6 +3140,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/flower_pot": {
+    "criteria": {
+      "has_brick": "2026-11-23 21:51:07 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:recipes/building_blocks/lighting/wall_torch": {
+    "criteria": {
+      "has_item": "2026-11-23 21:42:33 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/spruce_stairs": {
     "criteria": {
       "has_planks": "2026-11-23 21:23:58 +0700"
@@ -2990,6 +3161,12 @@
   "minecraft:recipes/tools/diamond_axe": {
     "criteria": {
       "has_diamond": "2026-11-23 21:25:44 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/scaffolding": {
+    "criteria": {
+      "has_bamboo": "2026-11-23 21:51:38 +0700"
     },
     "done": true
   },

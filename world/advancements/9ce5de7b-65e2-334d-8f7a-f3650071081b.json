@@ -2692,6 +2692,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/ladder": {
+    "criteria": {
+      "has_stick": "2026-11-23 21:42:51 +0700"
+    },
+    "done": true
+  },
   "twilightforest:recipes/building_blocks/stonecutting/stone/spiral_bricks": {
     "criteria": {
       "has_block": "2026-11-23 21:40:47 +0700"
@@ -2710,6 +2716,12 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/calcite_pillar_trim": {
+    "criteria": {
+      "has_calcite_pillar_trim": "2026-11-23 21:49:15 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/spruce_slab_from_spruce_log_woodcutting": {
     "criteria": {
       "has_spruce_log": "2026-11-23 21:17:39 +0700"
@@ -2722,9 +2734,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/tools/wooden_axe": {
+    "criteria": {
+      "has_stick": "2026-11-23 21:42:51 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/building_blocks/oak_tool_rack": {
     "criteria": {
       "has_oak_fence": "2026-11-23 21:15:28 +0700"
+    },
+    "done": true
+  },
+  "minecraft:story/shiny_gear": {
+    "criteria": {
+      "diamond_boots": "2026-11-23 21:49:30 +0700"
     },
     "done": true
   },
@@ -2800,6 +2824,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/combat/wooden_sword": {
+    "criteria": {
+      "has_stick": "2026-11-23 21:42:51 +0700"
+    },
+    "done": true
+  },
   "handcrafted:recipes/misc/skeleton_trophy": {
     "criteria": {
       "has_skeleton_trophy": "2026-11-23 21:40:47 +0700"
@@ -2830,6 +2860,12 @@
     },
     "done": true
   },
+  "chronodawn:recipes/misc/ancient_time_wood_fence_gate": {
+    "criteria": {
+      "has_item": "2026-11-23 21:42:51 +0700"
+    },
+    "done": true
+  },
   "dungeons_arise:find_kisegi_sanctuary": {
     "criteria": {
       "location0": "2026-11-23 21:25:33 +0700"
@@ -2839,6 +2875,12 @@
   "iceandfire:recipes/combat/armor_silver_helmet": {
     "criteria": {
       "has_item": "2026-11-23 21:15:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/wooden_spear": {
+    "criteria": {
+      "has_stick": "2026-11-23 21:42:51 +0700"
     },
     "done": true
   },
@@ -2890,6 +2932,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/decorated_pot_simple": {
+    "criteria": {
+      "has_brick": "2026-11-23 21:45:36 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/stone_brick_walls_from_stone_stonecutting": {
     "criteria": {
       "has_stone": "2026-11-23 21:40:47 +0700"
@@ -2905,6 +2953,12 @@
   "minecraft:recipes/building_blocks/stone_brick_slab_from_stone_stonecutting": {
     "criteria": {
       "has_stone": "2026-11-23 21:40:47 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/calcite_warp_pad": {
+    "criteria": {
+      "has_calcite": "2026-11-23 21:49:15 +0700"
     },
     "done": true
   },
@@ -2926,6 +2980,18 @@
     },
     "done": true
   },
+  "chronodawn:recipes/misc/time_wood_fence_gate": {
+    "criteria": {
+      "has_item": "2026-11-23 21:42:51 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_pickaxe": {
+    "criteria": {
+      "has_stick": "2026-11-23 21:42:51 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/baked_potato_from_smoking": {
     "criteria": {
       "has_potato": "2026-11-23 20:52:50 +0700"
@@ -2943,6 +3009,18 @@
       "has_redstone": "2026-11-23 21:39:38 +0700"
     },
     "done": true
+  },
+  "lootr:pot_opened": {
+    "criteria": {
+      "pot_opened": "2026-11-23 21:45:33 +0700"
+    },
+    "done": true
+  },
+  "lootr:archaeologist": {
+    "criteria": {
+      "got_pot": "2026-11-23 21:45:33 +0700"
+    },
+    "done": false
   },
   "minecraft:recipes/food/cooked_mutton_from_campfire_cooking": {
     "criteria": {
@@ -3184,6 +3262,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/tools/wooden_hoe": {
+    "criteria": {
+      "has_stick": "2026-11-23 21:42:51 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/charcoal": {
     "criteria": {
       "has_log": "2026-11-23 21:17:39 +0700"
@@ -3211,6 +3295,12 @@
   "minecraft:recipes/building_blocks/bowl_from_spruce_log_woodcutting": {
     "criteria": {
       "has_spruce_log": "2026-11-23 21:17:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_shovel": {
+    "criteria": {
+      "has_stick": "2026-11-23 21:42:51 +0700"
     },
     "done": true
   },
@@ -3244,9 +3334,21 @@
     },
     "done": true
   },
+  "eternal_starlight:recipes/decorations/torreya_campfire": {
+    "criteria": {
+      "has_stick": "2026-11-23 21:42:51 +0700"
+    },
+    "done": true
+  },
   "netherexp:recipes/bone_blocks/bone_pike": {
     "criteria": {
       "has_item": "2026-11-23 21:26:45 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/oven": {
+    "criteria": {
+      "has_oven": "2026-11-23 21:45:36 +0700"
     },
     "done": true
   },
@@ -3289,6 +3391,12 @@
   "minecraft:recipes/food/baked_potato": {
     "criteria": {
       "has_potato": "2026-11-23 20:52:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bricks": {
+    "criteria": {
+      "has_brick": "2026-11-23 21:45:36 +0700"
     },
     "done": true
   },
@@ -3376,6 +3484,12 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/calcite_corner_trim": {
+    "criteria": {
+      "has_calcite_corner_trim": "2026-11-23 21:49:15 +0700"
+    },
+    "done": true
+  },
   "handcrafted:recipes/misc/witch_trophy": {
     "criteria": {
       "has_witch_trophy": "2026-11-23 21:40:47 +0700"
@@ -3412,6 +3526,12 @@
     },
     "done": true
   },
+  "chronodawn:recipes/misc/dark_time_wood_fence_gate": {
+    "criteria": {
+      "has_item": "2026-11-23 21:42:51 +0700"
+    },
+    "done": true
+  },
   "iceandfire:recipes/tools/dragonbone_sword": {
     "criteria": {
       "has_item": "2026-11-23 21:15:04 +0700"
@@ -3421,6 +3541,12 @@
   "minecraft:recipes/building_blocks/stripped_spruce_wood_from_spruce_log_woodcutting": {
     "criteria": {
       "has_spruce_log": "2026-11-23 21:17:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/flower_pot": {
+    "criteria": {
+      "has_brick": "2026-11-23 21:45:36 +0700"
     },
     "done": true
   },
