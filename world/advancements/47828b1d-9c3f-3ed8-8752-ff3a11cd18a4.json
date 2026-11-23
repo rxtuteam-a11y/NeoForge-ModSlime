@@ -886,6 +886,7 @@
   },
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
+      "minecraft:pillager": "2026-11-23 09:00:08 +0700",
       "minecraft:breeze": "2026-11-22 18:37:11 +0700",
       "minecraft:drowned": "2026-11-22 19:17:02 +0700",
       "minecraft:husk": "2026-11-22 17:50:13 +0700",
@@ -2730,6 +2731,12 @@
   "minecraft:recipes/building_blocks/gray_concrete_powder": {
     "criteria": {
       "has_gravel": "2026-11-22 19:09:52 +0700"
+    },
+    "done": true
+  },
+  "dungeons_arise:find_illager_corsair_or_illager_galley": {
+    "criteria": {
+      "location1": "2026-11-23 08:59:53 +0700"
     },
     "done": true
   },
