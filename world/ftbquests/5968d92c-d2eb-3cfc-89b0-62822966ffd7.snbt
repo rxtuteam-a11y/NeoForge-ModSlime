@@ -1,0 +1,24 @@
+{
+	version: 1
+	uuid: "5968d92cd2eb3cfc89b062822966ffd7"
+	name: "Kumalala#5968d92c"
+	lock: false
+	rewards_blocked: false
+	task_progress: {
+		5EB1249AA0B237EA: 1L
+	}
+	started: {
+		3E1D1380BCF77B3C: 1795412962832L
+		5EB1249AA0B237EA: 1795412962832L
+		0000000000000001: 1795412962832L
+		4FEF19D8C1E2829A: 1795412962832L
+	}
+	completed: {
+		5EB1249AA0B237EA: 1795412962834L
+		4FEF19D8C1E2829A: 1795412962834L
+	}
+	repeatable: { }
+	completion_count: { }
+	claimed_rewards: { }
+	player_data: { }
+}

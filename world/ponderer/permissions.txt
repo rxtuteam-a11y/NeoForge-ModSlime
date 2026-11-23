@@ -9,6 +9,8 @@ pull bexuanmai
 pull HaJil
 pull Hajime
 pull HoangTuPacCy
+pull KhangDitTo
+pull Kumalala
 pull pacalaca
 pull picilici
 pull pocoloco
