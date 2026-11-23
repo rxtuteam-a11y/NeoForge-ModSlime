@@ -5281,9 +5281,33 @@
     },
     "done": true
   },
+  "iceandfire:recipes/building_blocks/dragonforge_ice_brick": {
+    "criteria": {
+      "has_item": "2026-11-24 03:00:01 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/building_blocks/dragonforge_fire_brick": {
+    "criteria": {
+      "has_item": "2026-11-24 03:00:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_stone_bricks_from_stone_bricks_stonecutting": {
+    "criteria": {
+      "has_stone_bricks": "2026-11-24 03:00:01 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/blade_tiger_steak_from_smelting": {
     "criteria": {
       "has_raw_blade_tiger_meat": "2026-11-24 02:52:19 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/building_blocks/dragonforge_lightning_brick": {
+    "criteria": {
+      "has_item": "2026-11-24 03:00:01 +0700"
     },
     "done": true
   },
@@ -5305,11 +5329,71 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/stone_brick_slab_from_stone_bricks_stonecutting": {
+    "criteria": {
+      "has_stone_bricks": "2026-11-24 03:00:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_brick_stairs": {
+    "criteria": {
+      "has_stone_bricks": "2026-11-24 03:00:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/map": {
+    "criteria": {
+      "has_compass": "2026-11-24 02:59:41 +0700"
+    },
+    "done": true
+  },
   "tensura:monstrous_diet": {
     "criteria": {
       "raw_blade_tiger_meat": "2026-11-24 02:52:26 +0700"
     },
     "done": false
+  },
+  "minecraft:recipes/building_blocks/stone_brick_slab": {
+    "criteria": {
+      "has_stone_bricks": "2026-11-24 03:00:01 +0700"
+    },
+    "done": true
+  },
+  "explorerscompass:repair_explorers_compass": {
+    "criteria": {
+      "has_explorers_compass": "2026-11-24 03:02:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/stone_brick_wall": {
+    "criteria": {
+      "has_stone_bricks": "2026-11-24 03:00:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cracked_stone_bricks": {
+    "criteria": {
+      "has_stone_bricks": "2026-11-24 03:00:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_brick_stairs_from_stone_bricks_stonecutting": {
+    "criteria": {
+      "has_stone_bricks": "2026-11-24 03:00:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_stone_bricks": {
+    "criteria": {
+      "has_tag": "2026-11-24 03:00:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/stone_brick_wall_from_stone_bricks_stonecutting": {
+    "criteria": {
+      "has_stone_bricks": "2026-11-24 03:00:01 +0700"
+    },
+    "done": true
   },
   "DataVersion": 3955
 }
