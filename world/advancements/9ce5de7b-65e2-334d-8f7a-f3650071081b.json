@@ -43,6 +43,7 @@
   },
   "regions_unexplored:regions_explored": {
     "criteria": {
+      "tundra": "2026-11-23 20:01:28 +0700",
       "willow_forest": "2026-11-23 14:04:03 +0700",
       "gravel_beach": "2026-11-23 13:06:49 +0700",
       "frozen_pine_taiga": "2026-11-23 13:02:42 +0700",
@@ -57,6 +58,7 @@
   },
   "regions_unexplored:pioneer": {
     "criteria": {
+      "tundra": "2026-11-23 20:01:28 +0700",
       "willow_forest": "2026-11-23 14:04:03 +0700",
       "gravel_beach": "2026-11-23 13:06:49 +0700",
       "frozen_pine_taiga": "2026-11-23 13:02:42 +0700",
