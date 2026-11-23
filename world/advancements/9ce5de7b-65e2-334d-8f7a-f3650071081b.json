@@ -876,6 +876,12 @@
     },
     "done": true
   },
+  "artifacts:amateur_archaeologist": {
+    "criteria": {
+      "find_artifact": "2026-11-23 13:53:46 +0700"
+    },
+    "done": true
+  },
   "minecraft:adventure/kill_a_mob": {
     "criteria": {
       "minecraft:pillager": "2026-11-23 13:11:29 +0700"
@@ -897,6 +903,12 @@
   "regions_unexplored:recipes/transportation/wisteria_boat": {
     "criteria": {
       "in_water": "2026-11-23 13:06:38 +0700"
+    },
+    "done": true
+  },
+  "eternal_starlight:obtain_seeking_eye": {
+    "criteria": {
+      "has_item": "2026-11-23 13:51:17 +0700"
     },
     "done": true
   },
@@ -1458,6 +1470,12 @@
   "vanillabackport:recipes/decorations/lodestone": {
     "criteria": {
       "has_iron_ingot": "2026-11-23 13:09:48 +0700"
+    },
+    "done": true
+  },
+  "mowziesmobs:kill_frostmaw": {
+    "criteria": {
+      "frostmaw": "2026-11-23 13:53:14 +0700"
     },
     "done": true
   },

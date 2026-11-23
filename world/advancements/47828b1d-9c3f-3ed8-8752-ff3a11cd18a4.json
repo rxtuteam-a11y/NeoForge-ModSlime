@@ -3000,15 +3000,99 @@
     },
     "done": true
   },
-  "waystones:recipes/tools/twinbound_feather": {
+  "minecraft:recipes/misc/slime_chunk_from_smelting": {
     "criteria": {
-      "has_feather": "2026-11-23 13:28:11 +0700"
+      "has_chilled_slime": "2026-11-23 12:57:33 +0700"
     },
     "done": true
   },
-  "yungscavebiomes:recipes/building_blocks/brittle_sandstone": {
+  "tensura:recipes/misc/slime_chunk_from_campfire_cooking": {
     "criteria": {
-      "has_sand": "2026-11-23 13:24:47 +0700"
+      "has_chilled_slime": "2026-11-23 12:57:33 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/slime_chunk_from_smoking": {
+    "criteria": {
+      "has_chilled_slime": "2026-11-23 12:57:33 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/chilled_slime_blockfrom_chilled_slime": {
+    "criteria": {
+      "has_chilled_slime": "2026-11-23 12:57:33 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/name_tag_from_monster_leather": {
+    "criteria": {
+      "has_monster_leather_d": "2026-11-23 13:07:05 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/pouch_d": {
+    "criteria": {
+      "has_monster_leather_d": "2026-11-23 13:07:05 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/food/cattledeer_steak_from_smoking": {
+    "criteria": {
+      "has_cattledeer_beef": "2026-11-23 13:07:05 +0700"
+    },
+    "done": true
+  },
+  "tensura:getcha_better_leathers": {
+    "criteria": {
+      "monster_leathers": "2026-11-23 13:07:05 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cattledeer_steak_from_smelting": {
+    "criteria": {
+      "has_cattledeer_beef": "2026-11-23 13:07:05 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/saddle_crafting": {
+    "criteria": {
+      "has_monster_leather_d": "2026-11-23 13:07:05 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/food/cattledeer_steak_from_campfire_cooking": {
+    "criteria": {
+      "has_cattledeer_beef": "2026-11-23 13:07:05 +0700"
+    },
+    "done": true
+  },
+  "tensura:start_smithing": {
+    "criteria": {
+      "schematic": "2026-11-23 13:07:07 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/slime_chunk_blockfrom_slime_chunk": {
+    "criteria": {
+      "has_slime_chunk": "2026-11-23 13:07:26 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/slime_chunk_from_snowball": {
+    "criteria": {
+      "has_material": "2026-11-23 13:07:26 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/slime_ball_from_chunks": {
+    "criteria": {
+      "has_slime_chunks": "2026-11-23 13:07:26 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/pouch_c": {
+    "criteria": {
+      "has_monster_leather_c": "2026-11-23 13:07:37 +0700"
     },
     "done": true
   },
@@ -3018,15 +3102,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/slime_chunk_from_smelting": {
+  "minecraft:recipes/misc/bottles_of_medium_crystal": {
     "criteria": {
-      "has_chilled_slime": "2026-11-23 12:57:33 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/name_tag_from_monster_leather": {
-    "criteria": {
-      "has_monster_leather_d": "2026-11-23 13:07:05 +0700"
+      "has_medium_crystal": "2026-11-23 13:07:38 +0700"
     },
     "done": true
   },
@@ -3042,87 +3120,9 @@
     },
     "done": true
   },
-  "tensura:recipes/misc/slime_chunk_from_campfire_cooking": {
-    "criteria": {
-      "has_chilled_slime": "2026-11-23 12:57:33 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/misc/pouch_c": {
-    "criteria": {
-      "has_monster_leather_c": "2026-11-23 13:07:37 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/misc/pouch_d": {
-    "criteria": {
-      "has_monster_leather_d": "2026-11-23 13:07:05 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/building_blocks/thatch_bed": {
-    "criteria": {
-      "has_thatch_item": "2026-11-23 13:27:02 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/food/cattledeer_steak_from_smoking": {
-    "criteria": {
-      "has_cattledeer_beef": "2026-11-23 13:07:05 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/food/baked_potato_from_campfire_cooking": {
-    "criteria": {
-      "has_potato": "2026-11-23 13:12:00 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/food/flour_from_5_wheat": {
     "criteria": {
       "has_wheat": "2026-11-23 13:11:17 +0700"
-    },
-    "done": true
-  },
-  "tensura:getcha_better_leathers": {
-    "criteria": {
-      "monster_leathers": "2026-11-23 13:07:05 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/food/baked_potato_from_smoking": {
-    "criteria": {
-      "has_potato": "2026-11-23 13:12:00 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/misc/slime_chunk_from_smoking": {
-    "criteria": {
-      "has_chilled_slime": "2026-11-23 12:57:33 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/sandstone": {
-    "criteria": {
-      "has_sand": "2026-11-23 13:24:47 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/building_blocks/chilled_slime_blockfrom_chilled_slime": {
-    "criteria": {
-      "has_chilled_slime": "2026-11-23 12:57:33 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/building_blocks/thatch_blockfrom_thatch": {
-    "criteria": {
-      "has_thatch": "2026-11-23 13:27:02 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/building_blocks/slime_chunk_blockfrom_slime_chunk": {
-    "criteria": {
-      "has_slime_chunk": "2026-11-23 13:07:26 +0700"
     },
     "done": true
   },
@@ -3150,66 +3150,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/food/cattledeer_steak_from_smelting": {
-    "criteria": {
-      "has_cattledeer_beef": "2026-11-23 13:07:05 +0700"
-    },
-    "done": true
-  },
-  "tensura:start_smithing": {
-    "criteria": {
-      "schematic": "2026-11-23 13:07:07 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/building_blocks/tatami_block": {
-    "criteria": {
-      "has_thatch": "2026-11-23 13:27:02 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/bottles_of_medium_crystal": {
-    "criteria": {
-      "has_medium_crystal": "2026-11-23 13:07:38 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/food/slime_chunk_from_snowball": {
-    "criteria": {
-      "has_material": "2026-11-23 13:07:26 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/glass": {
-    "criteria": {
-      "has_smelts_to_glass": "2026-11-23 13:24:47 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/food/baked_potato": {
-    "criteria": {
-      "has_potato": "2026-11-23 13:12:00 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/arrow": {
-    "criteria": {
-      "has_feather": "2026-11-23 13:28:11 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/saddle_crafting": {
-    "criteria": {
-      "has_monster_leather_d": "2026-11-23 13:07:05 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/misc/training_dummy": {
-    "criteria": {
-      "has_thatch_item": "2026-11-23 13:27:02 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/food/flour_from_8_wheat": {
     "criteria": {
       "has_wheat": "2026-11-23 13:11:17 +0700"
@@ -3228,21 +3168,81 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/baked_potato_from_campfire_cooking": {
+    "criteria": {
+      "has_potato": "2026-11-23 13:12:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/baked_potato_from_smoking": {
+    "criteria": {
+      "has_potato": "2026-11-23 13:12:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/baked_potato": {
+    "criteria": {
+      "has_potato": "2026-11-23 13:12:00 +0700"
+    },
+    "done": true
+  },
+  "yungscavebiomes:recipes/building_blocks/brittle_sandstone": {
+    "criteria": {
+      "has_sand": "2026-11-23 13:24:47 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/sandstone": {
+    "criteria": {
+      "has_sand": "2026-11-23 13:24:47 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/glass": {
+    "criteria": {
+      "has_smelts_to_glass": "2026-11-23 13:24:47 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/thatch_bed": {
+    "criteria": {
+      "has_thatch_item": "2026-11-23 13:27:02 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/thatch_blockfrom_thatch": {
+    "criteria": {
+      "has_thatch": "2026-11-23 13:27:02 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/tatami_block": {
+    "criteria": {
+      "has_thatch": "2026-11-23 13:27:02 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/training_dummy": {
+    "criteria": {
+      "has_thatch_item": "2026-11-23 13:27:02 +0700"
+    },
+    "done": true
+  },
+  "waystones:recipes/tools/twinbound_feather": {
+    "criteria": {
+      "has_feather": "2026-11-23 13:28:11 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/arrow": {
+    "criteria": {
+      "has_feather": "2026-11-23 13:28:11 +0700"
+    },
+    "done": true
+  },
   "constructionwand:recipes/misc/core_angel": {
     "criteria": {
       "has_item": "2026-11-23 13:28:11 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/food/cattledeer_steak_from_campfire_cooking": {
-    "criteria": {
-      "has_cattledeer_beef": "2026-11-23 13:07:05 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/slime_ball_from_chunks": {
-    "criteria": {
-      "has_slime_chunks": "2026-11-23 13:07:26 +0700"
     },
     "done": true
   },
