@@ -2770,6 +2770,12 @@
     },
     "done": true
   },
+  "tensura:my_precious": {
+    "criteria": {
+      "coin": "2026-11-23 21:55:59 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/food/dubious_food": {
     "criteria": {
       "has_dubious_ingredient": "2026-11-23 21:19:05 +0700"
@@ -2881,6 +2887,12 @@
   "minecraft:recipes/combat/wooden_spear": {
     "criteria": {
       "has_stick": "2026-11-23 21:42:51 +0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/under_lock_and_key": {
+    "criteria": {
+      "under_lock_and_key": "2026-11-23 21:53:51 +0700"
     },
     "done": true
   },
@@ -3358,6 +3370,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/golden_apple_from_orichalcum_ingot": {
+    "criteria": {
+      "has_material": "2026-11-23 21:57:18 +0700"
+    },
+    "done": true
+  },
   "handcrafted:recipes/misc/stone_corner_trim": {
     "criteria": {
       "has_stone_corner_trim": "2026-11-23 21:40:47 +0700"
@@ -3457,6 +3475,12 @@
   "iceandfire:recipes/tools/dragonbone_pickaxe": {
     "criteria": {
       "has_item": "2026-11-23 21:15:04 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/food/golden_salad": {
+    "criteria": {
+      "has_golden_apple": "2026-11-23 21:57:18 +0700"
     },
     "done": true
   },
