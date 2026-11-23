@@ -45,6 +45,7 @@
     "criteria": {
       "willow_forest": "2026-11-23 14:04:03 +0700",
       "shrubland": "2026-11-23 13:08:21 +0700",
+      "poppy_fields": "2026-11-24 02:10:30 +0700",
       "grassy_beach": "2026-11-24 01:49:00 +0700",
       "spires": "2026-11-23 13:22:56 +0700",
       "tundra": "2026-11-23 20:01:28 +0700",
@@ -52,6 +53,7 @@
       "gravel_beach": "2026-11-23 13:06:49 +0700",
       "highland_fields": "2026-11-23 21:25:30 +0700",
       "frozen_pine_taiga": "2026-11-23 13:02:42 +0700",
+      "maple_forest": "2026-11-24 02:07:29 +0700",
       "magnolia_woodland": "2026-11-23 22:47:50 +0700",
       "icy_heights": "2026-11-23 13:40:49 +0700",
       "hyacinth_deeps": "2026-11-23 13:35:39 +0700",
@@ -64,6 +66,7 @@
     "criteria": {
       "willow_forest": "2026-11-23 14:04:03 +0700",
       "shrubland": "2026-11-23 13:08:21 +0700",
+      "poppy_fields": "2026-11-24 02:10:30 +0700",
       "grassy_beach": "2026-11-24 01:49:00 +0700",
       "spires": "2026-11-23 13:22:56 +0700",
       "tundra": "2026-11-23 20:01:28 +0700",
@@ -71,6 +74,7 @@
       "gravel_beach": "2026-11-23 13:06:49 +0700",
       "highland_fields": "2026-11-23 21:25:30 +0700",
       "frozen_pine_taiga": "2026-11-23 13:02:42 +0700",
+      "maple_forest": "2026-11-24 02:07:29 +0700",
       "magnolia_woodland": "2026-11-23 22:47:50 +0700",
       "icy_heights": "2026-11-23 13:40:49 +0700",
       "hyacinth_deeps": "2026-11-23 13:35:39 +0700",
@@ -287,6 +291,7 @@
       "minecraft:deep_frozen_ocean": "2026-11-23 13:34:07 +0700",
       "minecraft:deep_dark": "2026-11-24 00:21:04 +0700",
       "minecraft:cherry_grove": "2026-11-23 23:04:36 +0700",
+      "minecraft:sunflower_plains": "2026-11-24 02:10:29 +0700",
       "minecraft:swamp": "2026-11-23 14:02:47 +0700",
       "minecraft:windswept_hills": "2026-11-23 13:27:35 +0700",
       "minecraft:snowy_beach": "2026-11-23 13:29:27 +0700",
@@ -5248,15 +5253,51 @@
     },
     "done": true
   },
+  "regions_unexplored:recipes/decorations/maple_shrub": {
+    "criteria": {
+      "has_maple_sapling": "2026-11-24 02:07:54 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/maple_branch_from_maple_log": {
+    "criteria": {
+      "has_log": "2026-11-24 02:07:54 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:got_wood": {
+    "criteria": {
+      "maple_log": "2026-11-24 02:07:54 +0700"
+    },
+    "done": false
+  },
+  "minecraft:recipes/misc/magenta_dye_from_allium": {
+    "criteria": {
+      "has_allium": "2026-11-24 02:11:24 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/decorations/dark_oak_shrub": {
     "criteria": {
       "has_dark_oak_sapling": "2026-11-24 01:48:31 +0700"
     },
     "done": true
   },
+  "regions_unexplored:recipes/building_blocks/maple_wood": {
+    "criteria": {
+      "has_log": "2026-11-24 02:07:54 +0700"
+    },
+    "done": true
+  },
   "waystones:recipes/decorations/mossy_waystone_from_vines": {
     "criteria": {
       "has_waystone": "2026-11-24 01:50:55 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/maple_planks": {
+    "criteria": {
+      "has_logs": "2026-11-24 02:07:54 +0700"
     },
     "done": true
   },
