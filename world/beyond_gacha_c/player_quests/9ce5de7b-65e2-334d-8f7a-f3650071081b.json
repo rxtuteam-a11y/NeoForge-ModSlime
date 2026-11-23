@@ -120,7 +120,9 @@
     },
     {
       "questId": "trbeyond:repeatable_material_giant_bat_zane_blood",
-      "progress": {}
+      "progress": {
+        "kill_giant_bat_zane_blood": 1
+      }
     },
     {
       "questId": "trbeyond:boss_elemental_colossus",

@@ -304,8 +304,10 @@
       "minecraft:sunflower_plains": "2026-11-24 02:10:29 +0700",
       "minecraft:windswept_hills": "2026-11-23 13:27:35 +0700",
       "minecraft:snowy_beach": "2026-11-23 13:29:27 +0700",
+      "minecraft:wooded_badlands": "2026-11-24 03:46:52 +0700",
       "minecraft:bamboo_jungle": "2026-11-24 03:18:25 +0700",
       "minecraft:warm_ocean": "2026-11-24 03:33:17 +0700",
+      "minecraft:badlands": "2026-11-24 03:41:50 +0700",
       "minecraft:beach": "2026-11-23 13:09:25 +0700",
       "minecraft:sparse_jungle": "2026-11-24 03:08:21 +0700",
       "minecraft:river": "2026-11-23 13:10:31 +0700",
@@ -5299,9 +5301,21 @@
     },
     "done": true
   },
+  "yungscavebiomes:recipes/building_blocks/brittle_sandstone": {
+    "criteria": {
+      "has_sandstone": "2026-11-24 03:45:16 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/ladder_from_jungle_log_woodcutting": {
     "criteria": {
       "has_jungle_log": "2026-11-24 03:21:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/smooth_sandstone_slab_from_smooth_sandstone_stonecutting": {
+    "criteria": {
+      "has_smooth_sandstone": "2026-11-24 03:45:37 +0700"
     },
     "done": true
   },
@@ -5317,9 +5331,21 @@
     },
     "done": true
   },
+  "iceandfire:recipes/combat/deathworm_yellow_helmet": {
+    "criteria": {
+      "has_item": "2026-11-24 03:40:06 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/decorations/maple_shrub": {
     "criteria": {
       "has_maple_sapling": "2026-11-24 02:07:54 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/sandstone_wall_from_sandstone_stonecutting": {
+    "criteria": {
+      "has_sandstone": "2026-11-24 03:45:16 +0700"
     },
     "done": true
   },
@@ -5329,9 +5355,27 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/cut_sandstone": {
+    "criteria": {
+      "has_sandstone": "2026-11-24 03:45:16 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/jungle_planks_from_jungle_log_woodcutting": {
     "criteria": {
       "has_jungle_log": "2026-11-24 03:21:53 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/sandstone_corner_trim": {
+    "criteria": {
+      "has_sandstone_corner_trim": "2026-11-24 03:45:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/smooth_sandstone_slab": {
+    "criteria": {
+      "has_smooth_sandstone": "2026-11-24 03:45:37 +0700"
     },
     "done": true
   },
@@ -5347,9 +5391,27 @@
     },
     "done": true
   },
+  "iceandfire:recipes/combat/deathworm_white_chestplate": {
+    "criteria": {
+      "has_item": "2026-11-24 03:42:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cut_sandstone_slab_from_cut_sandstone_stonecutting": {
+    "criteria": {
+      "has_cut_sandstone": "2026-11-24 03:45:38 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/misc/medium_quality_magic_crystalfrom_medium_quality_magic_crystal_block": {
     "criteria": {
       "has_medium_quality_magic_crystal_block": "2026-11-24 02:25:08 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/misc/yellow_dye_from_yellow_lupine": {
+    "criteria": {
+      "has_yellow_lupine": "2026-11-24 03:39:47 +0700"
     },
     "done": true
   },
@@ -5371,9 +5433,27 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/cut_sandstone_from_sandstone_stonecutting": {
+    "criteria": {
+      "has_sandstone": "2026-11-24 03:45:16 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/terracotta": {
     "criteria": {
       "has_clay_block": "2026-11-24 03:24:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_sandstone_from_sandstone_stonecutting": {
+    "criteria": {
+      "has_sandstone": "2026-11-24 03:45:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/sandstone_slab_from_sandstone_stonecutting": {
+    "criteria": {
+      "has_sandstone": "2026-11-24 03:45:16 +0700"
     },
     "done": true
   },
@@ -5386,6 +5466,12 @@
   "regions_unexplored:recipes/decorations/jungle_branch_from_jungle_log": {
     "criteria": {
       "has_log": "2026-11-24 03:21:53 +0700"
+    },
+    "done": true
+  },
+  "yungscavebiomes:recipes/building_blocks/layered_sandstone_from_stonecutting": {
+    "criteria": {
+      "has_sandstone": "2026-11-24 03:45:16 +0700"
     },
     "done": true
   },
@@ -5407,9 +5493,33 @@
     },
     "done": false
   },
+  "minecraft:recipes/building_blocks/sandstone_slab": {
+    "criteria": {
+      "has_sandstone": "2026-11-24 03:45:16 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/deathworm_white_helmet": {
+    "criteria": {
+      "has_item": "2026-11-24 03:42:49 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/deathworm_white_leggings": {
+    "criteria": {
+      "has_item": "2026-11-24 03:42:49 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/low_quality_magic_crystal_stairs_from_low_quality_magic_crystal_block_stonecutting": {
     "criteria": {
       "has_low_quality_magic_crystal_block": "2026-11-24 02:25:05 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/smooth_sandstone": {
+    "criteria": {
+      "has_sandstone": "2026-11-24 03:45:16 +0700"
     },
     "done": true
   },
@@ -5443,6 +5553,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/blue_glazed_terracotta": {
+    "criteria": {
+      "has_blue_terracotta": "2026-11-24 03:45:28 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/building_blocks/low_quality_magic_crystal_stairs": {
     "criteria": {
       "has_low_quality_magic_crystal_block": "2026-11-24 02:25:05 +0700"
@@ -5458,6 +5574,12 @@
   "minecraft:recipes/misc/magenta_dye_from_allium": {
     "criteria": {
       "has_allium": "2026-11-24 02:11:24 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/smooth_sandstone_stairs_from_smooth_sandstone_stonecutting": {
+    "criteria": {
+      "has_smooth_sandstone": "2026-11-24 03:45:37 +0700"
     },
     "done": true
   },
@@ -5509,6 +5631,12 @@
     },
     "done": true
   },
+  "iceandfire:recipes/combat/deathworm_yellow_chestplate": {
+    "criteria": {
+      "has_item": "2026-11-24 03:40:06 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/low_quality_magic_crystal_bricks_from_low_quality_magic_crystal_block_stonecutting": {
     "criteria": {
       "has_low_quality_magic_crystal_block": "2026-11-24 02:25:05 +0700"
@@ -5527,6 +5655,12 @@
     },
     "done": true
   },
+  "iceandfire:iceandfire/kill_deathworm": {
+    "criteria": {
+      "killed_fire_dragon": "2026-11-24 03:40:06 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/high_quality_magic_crystal_stairs_from_high_quality_magic_crystal_block_stonecutting": {
     "criteria": {
       "has_high_quality_magic_crystal_block": "2026-11-24 02:41:20 +0700"
@@ -5542,6 +5676,30 @@
   "tensura:elementalist": {
     "criteria": {
       "spirit": "2026-11-24 02:41:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/sandstone_stairs": {
+    "criteria": {
+      "has_sandstone": "2026-11-24 03:45:16 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/deathworm_white_boots": {
+    "criteria": {
+      "has_item": "2026-11-24 03:42:49 +0700"
+    },
+    "done": true
+  },
+  "yungscavebiomes:recipes/building_blocks/layered_sandstone": {
+    "criteria": {
+      "has_sandstone": "2026-11-24 03:45:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cut_sandstone_slab_from_sandstone_stonecutting": {
+    "criteria": {
+      "has_sandstone": "2026-11-24 03:45:16 +0700"
     },
     "done": true
   },
@@ -5575,9 +5733,27 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/sandstone_warp_pad": {
+    "criteria": {
+      "has_smooth_sandstone": "2026-11-24 03:45:37 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/stripped_jungle_wood_from_jungle_log_woodcutting": {
     "criteria": {
       "has_jungle_log": "2026-11-24 03:21:53 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/deathworm_yellow_boots": {
+    "criteria": {
+      "has_item": "2026-11-24 03:40:06 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/sandstone_pillar_trim": {
+    "criteria": {
+      "has_sandstone_pillar_trim": "2026-11-24 03:45:16 +0700"
     },
     "done": true
   },
@@ -5611,6 +5787,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/sandstone_stairs_from_sandstone_stonecutting": {
+    "criteria": {
+      "has_sandstone": "2026-11-24 03:45:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cut_sandstone_slab": {
+    "criteria": {
+      "has_cut_sandstone": "2026-11-24 03:45:38 +0700"
+    },
+    "done": true
+  },
   "waystones:recipes/decorations/mossy_waystone_from_moss_blocks": {
     "criteria": {
       "has_waystone": "2026-11-24 01:50:55 +0700"
@@ -5641,9 +5829,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/smooth_sandstone_stairs": {
+    "criteria": {
+      "has_smooth_sandstone": "2026-11-24 03:45:37 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/high_quality_magic_crystal_bricks_from_high_quality_magic_crystal_block_stonecutting": {
     "criteria": {
       "has_high_quality_magic_crystal_block": "2026-11-24 02:41:20 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/deathworm_yellow_leggings": {
+    "criteria": {
+      "has_item": "2026-11-24 03:40:06 +0700"
     },
     "done": true
   },
@@ -5656,6 +5856,12 @@
   "tensura:recipes/building_blocks/kiln_orichalcum": {
     "criteria": {
       "has_obsidian": "2026-11-24 03:38:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/sandstone_wall": {
+    "criteria": {
+      "has_sandstone": "2026-11-24 03:45:16 +0700"
     },
     "done": true
   },
