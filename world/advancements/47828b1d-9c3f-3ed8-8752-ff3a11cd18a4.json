@@ -884,6 +884,7 @@
       "minecraft:frozen_ocean": "2026-11-22 17:48:03 +0700",
       "minecraft:frozen_river": "2026-11-22 19:16:03 +0700",
       "minecraft:forest": "2026-11-23 13:08:05 +0700",
+      "minecraft:river": "2026-11-23 20:59:57 +0700",
       "minecraft:swamp": "2026-11-23 13:08:17 +0700",
       "minecraft:snowy_plains": "2026-11-23 12:57:28 +0700",
       "minecraft:windswept_hills": "2026-11-23 19:32:36 +0700",
@@ -3531,6 +3532,24 @@
   "minecraft:recipes/misc/gold_nugget_from_blasting": {
     "criteria": {
       "has_golden_helmet": "2026-11-23 19:50:02 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/poplar_planks": {
+    "criteria": {
+      "has_log": "2026-11-23 20:53:26 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/poplar_wood": {
+    "criteria": {
+      "has_log": "2026-11-23 20:53:26 +0700"
+    },
+    "done": true
+  },
+  "netherman:enter_maze": {
+    "criteria": {
+      "in_mansion": "2026-11-23 21:00:04 +0700"
     },
     "done": true
   },
