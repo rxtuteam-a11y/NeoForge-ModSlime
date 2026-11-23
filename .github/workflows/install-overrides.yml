@@ -18,10 +18,14 @@ on:
         description: "ID file overrides.zip trên Google Drive (chia sẻ: bất kỳ ai có link)"
         required: true
         default: "1CEKMBnrY-gRZyKCWtSZnASPQyDO9Y-Dz"
-      thu_muc:
-        description: "Các thư mục trong overrides sẽ chép vào server (cách nhau bởi dấu cách)"
+      ghi_de:
+        description: "Thư mục được GHI ĐÈ hoàn toàn (vd. bộ nhiệm vụ)"
         required: false
-        default: "config kubejs defaultconfigs"
+        default: "config/ftbquests config/ExtraQuests"
+      chi_them:
+        description: "Thư mục chỉ THÊM file còn thiếu, không đụng file server đang có"
+        required: false
+        default: "config kubejs scripts defaultconfigs"
 
 permissions:
   contents: write
@@ -94,7 +98,8 @@ jobs:
       - name: Cài vào server và lưu lên GitHub
         if: inputs.che_do == 'cai'
         env:
-          THU_MUC: ${{ inputs.thu_muc }}
+          GHI_DE: ${{ inputs.ghi_de }}
+          CHI_THEM: ${{ inputs.chi_them }}
         run: |
           set -e
           STATUS=$(curl -fsSL "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/server-status/status.json" 2>/dev/null || echo '{}')
@@ -106,18 +111,23 @@ jobs:
           # Nếu zip bọc trong 1 thư mục (vd. overrides/) thì vào bên trong
           if [ "$(ls -A $ROOT | wc -l)" = 1 ] && [ -d "$ROOT/$(ls -A $ROOT)" ]; then ROOT="$ROOT/$(ls -A $ROOT)"; fi
           echo "Gốc overrides: $ROOT"
-          for d in $THU_MUC; do
+          for d in $GHI_DE; do
             if [ -e "$ROOT/$d" ]; then
-              echo "Chép $d ..."; mkdir -p "$d"; cp -a "$ROOT/$d/." "$d/"
-            else
-              echo "::warning::Không có thư mục $d trong overrides"
-            fi
+              echo "Ghi đè $d ..."; rm -rf "$d"; mkdir -p "$(dirname "$d")"; cp -a "$ROOT/$d" "$d"
+            else echo "::warning::Không có $d trong overrides"; fi
           done
+          for d in $CHI_THEM; do
+            if [ -e "$ROOT/$d" ]; then
+              echo "Thêm file mới trong $d ..."; mkdir -p "$d"; cp -a -n "$ROOT/$d/." "$d/"
+            else echo "Bỏ qua $d (không có trong overrides)"; fi
+          done
+          THU_MUC="$GHI_DE $CHI_THEM"
           git config user.name "ModSlime Cloud"
           git config user.email "modslime-bot@users.noreply.github.com"
-          git add -A -- $THU_MUC
+          EXIST=""; for d in $THU_MUC; do [ -e "$d" ] && EXIST="$EXIST $d"; done
+          git add -A -- $EXIST
           if git diff --cached --quiet; then echo "Không có thay đổi."; exit 0; fi
           git diff --cached --stat | tail -n 5
-          git commit -q -m "Cài overrides: $THU_MUC"
+          git commit -q -m "Cài overrides: ghi đè [$GHI_DE], thêm file mới [$CHI_THEM]"
           for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 5; done
           echo "✅ Đã cài overrides vào server. Bật server trên web để áp dụng."
