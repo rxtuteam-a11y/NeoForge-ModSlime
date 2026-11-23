@@ -2686,6 +2686,18 @@
     },
     "done": true
   },
+  "regions_unexplored:recipes/building_blocks/prismoss": {
+    "criteria": {
+      "has_stone": "2026-11-23 21:40:47 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/building_blocks/stonecutting/stone/spiral_bricks": {
+    "criteria": {
+      "has_block": "2026-11-23 21:40:47 +0700"
+    },
+    "done": true
+  },
   "iceandfire:recipes/misc/dragon_bone_wall": {
     "criteria": {
       "has_item": "2026-11-23 21:15:04 +0700"
@@ -2704,9 +2716,27 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/creeper_trophy": {
+    "criteria": {
+      "has_creeper_trophy": "2026-11-23 21:40:47 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/building_blocks/oak_tool_rack": {
     "criteria": {
       "has_oak_fence": "2026-11-23 21:15:28 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_stairs_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2026-11-23 21:40:47 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/building_blocks/stonecutting/stone/terrorcotta_arcs": {
+    "criteria": {
+      "has_block": "2026-11-23 21:40:47 +0700"
     },
     "done": true
   },
@@ -2746,6 +2776,12 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/vindicator_trophy": {
+    "criteria": {
+      "has_vindicator_trophy": "2026-11-23 21:40:47 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/white_wool_stairs": {
     "criteria": {
       "has_white_wool": "2026-11-23 21:15:00 +0700"
@@ -2761,6 +2797,18 @@
   "eternal_starlight:recipes/building_blocks/dye_black_yeti_fur": {
     "criteria": {
       "has_needed_dye": "2026-11-23 21:31:17 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/skeleton_trophy": {
+    "criteria": {
+      "has_skeleton_trophy": "2026-11-23 21:40:47 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_stairs": {
+    "criteria": {
+      "has_stone": "2026-11-23 21:40:47 +0700"
     },
     "done": true
   },
@@ -2806,6 +2854,12 @@
     },
     "done": true
   },
+  "twilightforest:recipes/building_blocks/stonecutting/stone/bold_stone_pillar": {
+    "criteria": {
+      "has_block": "2026-11-23 21:40:47 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/ladder_from_spruce_log_woodcutting": {
     "criteria": {
       "has_spruce_log": "2026-11-23 21:17:39 +0700"
@@ -2824,15 +2878,51 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/stonecutter": {
+    "criteria": {
+      "has_stone": "2026-11-23 21:40:47 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/note_block": {
+    "criteria": {
+      "has_redstone": "2026-11-23 21:39:38 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/stone_brick_walls_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2026-11-23 21:40:47 +0700"
+    },
+    "done": true
+  },
   "friendsandfoes:adventure/kill_iceologer": {
     "criteria": {
       "killed_iceologer": "2026-11-23 21:16:01 +0700"
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/stone_brick_slab_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2026-11-23 21:40:47 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_brick_stairs_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2026-11-23 21:40:47 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/spruce_planks_from_spruce_log_woodcutting": {
     "criteria": {
       "has_spruce_log": "2026-11-23 21:17:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_slab_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2026-11-23 21:40:47 +0700"
     },
     "done": true
   },
@@ -2848,6 +2938,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/dropper": {
+    "criteria": {
+      "has_redstone": "2026-11-23 21:39:38 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/cooked_mutton_from_campfire_cooking": {
     "criteria": {
       "has_mutton": "2026-11-23 21:15:10 +0700"
@@ -2857,6 +2953,12 @@
   "iceandfire:recipes/building_blocks/dragonscales_silver_to_dragonscale_silver": {
     "criteria": {
       "has_dragonscales_silver": "2026-11-23 21:15:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/avoid_vibration": {
+    "criteria": {
+      "avoid_vibration": "2026-11-23 21:40:56 +0700"
     },
     "done": true
   },
@@ -2884,15 +2986,45 @@
     },
     "done": true
   },
+  "regions_unexplored:recipes/building_blocks/mossy_stone": {
+    "criteria": {
+      "has_stone": "2026-11-23 21:40:47 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/building_blocks/stonecutting/stone/terrorcotta_lines": {
+    "criteria": {
+      "has_block": "2026-11-23 21:40:47 +0700"
+    },
+    "done": true
+  },
   "iceandfire:recipes/misc/dragon_horn": {
     "criteria": {
       "has_item": "2026-11-23 21:15:04 +0700"
     },
     "done": true
   },
+  "regions_unexplored:recipes/redstone/redstone_bud": {
+    "criteria": {
+      "has_redstone": "2026-11-23 21:39:38 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/dye_black_wool_stairs": {
     "criteria": {
       "has_needed_dye": "2026-11-23 21:31:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/piston": {
+    "criteria": {
+      "has_redstone": "2026-11-23 21:39:38 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_bricks": {
+    "criteria": {
+      "has_stone": "2026-11-23 21:40:47 +0700"
     },
     "done": true
   },
@@ -2914,6 +3046,12 @@
     },
     "done": true
   },
+  "twilightforest:recipes/building_blocks/stonecutting/stone/twisted_stone_pillar": {
+    "criteria": {
+      "has_block": "2026-11-23 21:40:47 +0700"
+    },
+    "done": true
+  },
   "iceandfire:recipes/combat/armor_silver_chestplate": {
     "criteria": {
       "has_item": "2026-11-23 21:15:00 +0700"
@@ -2923,6 +3061,36 @@
   "minecraft:recipes/building_blocks/white_wool_slab": {
     "criteria": {
       "has_white_wool": "2026-11-23 21:15:00 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/building_blocks/stonecutting/stone/twisted_stone": {
+    "criteria": {
+      "has_block": "2026-11-23 21:40:47 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/redstone_torch": {
+    "criteria": {
+      "has_redstone": "2026-11-23 21:39:38 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/stone_grass_block": {
+    "criteria": {
+      "has_stone": "2026-11-23 21:40:47 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_bricks_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2026-11-23 21:40:47 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_slab": {
+    "criteria": {
+      "has_stone": "2026-11-23 21:40:47 +0700"
     },
     "done": true
   },
@@ -2944,9 +3112,27 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/stone_button": {
+    "criteria": {
+      "has_stone": "2026-11-23 21:40:47 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/stone_pressure_plate": {
+    "criteria": {
+      "has_stone": "2026-11-23 21:40:47 +0700"
+    },
+    "done": true
+  },
   "tensura:master_unique_skill": {
     "criteria": {
       "skill": "2026-11-23 20:51:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/target": {
+    "criteria": {
+      "has_redstone": "2026-11-23 21:39:38 +0700"
     },
     "done": true
   },
@@ -2971,6 +3157,12 @@
   "tensura:vigilant": {
     "criteria": {
       "giant_ant_carapace": "2026-11-23 21:19:05 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/compass": {
+    "criteria": {
+      "has_redstone": "2026-11-23 21:39:38 +0700"
     },
     "done": true
   },
@@ -3010,9 +3202,21 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/evoker_trophy": {
+    "criteria": {
+      "has_evoker_trophy": "2026-11-23 21:40:47 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/bowl_from_spruce_log_woodcutting": {
     "criteria": {
       "has_spruce_log": "2026-11-23 21:17:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/redstone_block": {
+    "criteria": {
+      "has_redstone": "2026-11-23 21:39:38 +0700"
     },
     "done": true
   },
@@ -3025,6 +3229,12 @@
   "minecraft:recipes/misc/gray_dye": {
     "criteria": {
       "has_black_dye": "2026-11-23 21:31:17 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/pillager_trophy": {
+    "criteria": {
+      "has_pillager_trophy": "2026-11-23 21:40:47 +0700"
     },
     "done": true
   },
@@ -3046,6 +3256,12 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/stone_corner_trim": {
+    "criteria": {
+      "has_stone_corner_trim": "2026-11-23 21:40:47 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/stick_from_spruce_log_woodcutting": {
     "criteria": {
       "has_spruce_log": "2026-11-23 21:17:39 +0700"
@@ -3064,6 +3280,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/tools/clock": {
+    "criteria": {
+      "has_redstone": "2026-11-23 21:39:38 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/baked_potato": {
     "criteria": {
       "has_potato": "2026-11-23 20:52:50 +0700"
@@ -3073,6 +3295,12 @@
   "minecraft:recipes/decorations/painting": {
     "criteria": {
       "has_wool": "2026-11-23 21:15:00 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/building_blocks/stonecutting/stone/terrorcotta_curves": {
+    "criteria": {
+      "has_block": "2026-11-23 21:40:47 +0700"
     },
     "done": true
   },
@@ -3088,6 +3316,12 @@
     },
     "done": true
   },
+  "regions_unexplored:recipes/redstone/raw_redstone_block": {
+    "criteria": {
+      "has_redstone": "2026-11-23 21:39:38 +0700"
+    },
+    "done": true
+  },
   "iceandfire:recipes/tools/dragonbone_axe": {
     "criteria": {
       "has_item": "2026-11-23 21:15:04 +0700"
@@ -3097,6 +3331,12 @@
   "handcrafted:recipes/misc/white_cushion": {
     "criteria": {
       "has_white_cushion": "2026-11-23 21:15:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/smooth_stone": {
+    "criteria": {
+      "has_stone": "2026-11-23 21:40:47 +0700"
     },
     "done": true
   },
@@ -3136,9 +3376,39 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/witch_trophy": {
+    "criteria": {
+      "has_witch_trophy": "2026-11-23 21:40:47 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/stone_warp_pad": {
+    "criteria": {
+      "has_stone": "2026-11-23 21:40:47 +0700"
+    },
+    "done": true
+  },
   "netherexp:nether/overkill": {
     "criteria": {
       "overkill": "2026-11-23 21:16:06 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/viridescent_nylium": {
+    "criteria": {
+      "has_stone": "2026-11-23 21:40:47 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_stone_bricks_stone_from_stonecutting": {
+    "criteria": {
+      "has_stone": "2026-11-23 21:40:47 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/stone_pillar_trim": {
+    "criteria": {
+      "has_stone_pillar_trim": "2026-11-23 21:40:47 +0700"
     },
     "done": true
   },

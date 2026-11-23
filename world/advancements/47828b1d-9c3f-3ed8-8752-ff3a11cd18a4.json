@@ -3571,9 +3571,51 @@
     },
     "done": true
   },
+  "block_factorys_bosses:recipes/building_blocks/rope_roll": {
+    "criteria": {
+      "has_item": "2026-11-23 21:34:28 +0700"
+    },
+    "done": true
+  },
+  "tensura:master_skill": {
+    "criteria": {
+      "skill": "2026-11-23 21:34:13 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/tripwire_hook": {
+    "criteria": {
+      "has_string": "2026-11-23 21:34:28 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:recipes/building_blocks/net": {
+    "criteria": {
+      "has_item": "2026-11-23 21:34:28 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/pouch_a": {
+    "criteria": {
+      "has_string": "2026-11-23 21:34:28 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/pouch_b": {
+    "criteria": {
+      "has_string": "2026-11-23 21:34:28 +0700"
+    },
+    "done": true
+  },
   "naturesaura:positive_imbalance": {
     "criteria": {
       "triggered_in_code": "2026-11-23 21:04:18 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/bow": {
+    "criteria": {
+      "has_string": "2026-11-23 21:34:28 +0700"
     },
     "done": true
   },
@@ -3586,6 +3628,18 @@
   "minecraft:recipes/misc/bone_meal": {
     "criteria": {
       "has_bone": "2026-11-23 21:26:08 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/fermented_spider_eye": {
+    "criteria": {
+      "has_spider_eye": "2026-11-23 21:35:48 +0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/avoid_vibration": {
+    "criteria": {
+      "avoid_vibration": "2026-11-23 21:31:43 +0700"
     },
     "done": true
   },
@@ -3607,6 +3661,12 @@
     },
     "done": true
   },
+  "tensura:recipes/misc/pouch_special_a": {
+    "criteria": {
+      "has_string": "2026-11-23 21:34:28 +0700"
+    },
+    "done": true
+  },
   "netherexp:nether/soul_sand_valley/ghosts_busted": {
     "criteria": {
       "minecraft:skeleton": "2026-11-23 21:11:24 +0700"
@@ -3619,9 +3679,27 @@
     },
     "done": true
   },
+  "vanillabackport:recipes/tools/bundle": {
+    "criteria": {
+      "has_string": "2026-11-23 21:34:28 +0700"
+    },
+    "done": true
+  },
   "netherexp:recipes/bone_blocks/bone_fence": {
     "criteria": {
       "has_item": "2026-11-23 21:26:08 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/fishing_rod": {
+    "criteria": {
+      "has_string": "2026-11-23 21:34:28 +0700"
+    },
+    "done": true
+  },
+  "vanillabackport:recipes/tools/lead": {
+    "criteria": {
+      "has_string": "2026-11-23 21:34:28 +0700"
     },
     "done": true
   },
@@ -3631,9 +3709,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/white_wool_from_string": {
+    "criteria": {
+      "has_string": "2026-11-23 21:34:28 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/polished_diorite_stairs_from_polished_diorite_stonecutting": {
     "criteria": {
       "has_polished_diorite": "2026-11-23 21:20:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/loom": {
+    "criteria": {
+      "has_string": "2026-11-23 21:34:28 +0700"
     },
     "done": true
   },
