@@ -3030,6 +3030,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/yellow_dye_from_dandelion": {
+    "criteria": {
+      "has_dandelion": "2026-11-23 23:20:51 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/bone_meal": {
     "criteria": {
       "has_bone": "2026-11-23 21:57:39 +0700"
@@ -3123,6 +3129,12 @@
   "minecraft:recipes/building_blocks/oak_stairs_from_oak_planks_woodcutting": {
     "criteria": {
       "has_oak_planks": "2026-11-23 22:26:26 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/light_gray_dye_from_white_tulip": {
+    "criteria": {
+      "has_white_tulip": "2026-11-23 23:17:36 +0700"
     },
     "done": true
   },
@@ -3318,6 +3330,12 @@
     },
     "done": true
   },
+  "tensura:arachnophobic": {
+    "criteria": {
+      "black_spider": "2026-11-23 23:17:29 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/stripped_oak_log_from_oak_log_woodcutting": {
     "criteria": {
       "has_oak_log": "2026-11-23 22:26:23 +0700"
@@ -3417,6 +3435,12 @@
   "regions_unexplored:recipes/redstone/redstone_bud": {
     "criteria": {
       "has_redstone": "2026-11-23 21:27:48 +0700"
+    },
+    "done": true
+  },
+  "tensura:grow_spurt": {
+    "criteria": {
+      "evolve": "2026-11-23 23:27:57 +0700"
     },
     "done": true
   },
@@ -3555,6 +3579,12 @@
   "regions_unexplored:recipes/building_blocks/stone_grass_block": {
     "criteria": {
       "has_stone": "2026-11-23 23:08:19 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/slime_chunk_blockfrom_slime_chunk": {
+    "criteria": {
+      "has_slime_chunk": "2026-11-23 23:23:20 +0700"
     },
     "done": true
   },
@@ -3972,6 +4002,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/orange_dye_from_orange_tulip": {
+    "criteria": {
+      "has_orange_tulip": "2026-11-23 23:16:54 +0700"
+    },
+    "done": true
+  },
   "handcrafted:recipes/misc/pillager_trophy": {
     "criteria": {
       "has_pillager_trophy": "2026-11-23 23:08:19 +0700"
@@ -4089,6 +4125,12 @@
   "minecraft:recipes/misc/cyan_dye": {
     "criteria": {
       "has_blue_dye": "2026-11-23 22:30:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/slime_chunk_from_snowball": {
+    "criteria": {
+      "has_material": "2026-11-23 23:23:20 +0700"
     },
     "done": true
   },
@@ -4380,6 +4422,12 @@
     },
     "done": true
   },
+  "netherexp:nether/overkill": {
+    "criteria": {
+      "overkill": "2026-11-23 23:17:28 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/building_blocks/viridescent_nylium": {
     "criteria": {
       "has_stone": "2026-11-23 23:08:19 +0700"
@@ -4443,6 +4491,12 @@
   "handcrafted:recipes/misc/oak_side_table": {
     "criteria": {
       "has_oak_side_table": "2026-11-23 22:26:26 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/slime_ball_from_chunks": {
+    "criteria": {
+      "has_slime_chunks": "2026-11-23 23:23:20 +0700"
     },
     "done": true
   },

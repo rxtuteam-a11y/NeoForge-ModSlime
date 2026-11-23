@@ -278,6 +278,7 @@
       "minecraft:river": "2026-11-23 13:10:31 +0700",
       "minecraft:snowy_plains": "2026-11-23 13:06:35 +0700",
       "minecraft:snowy_taiga": "2026-11-23 13:06:23 +0700",
+      "minecraft:dripstone_caves": "2026-11-23 23:20:20 +0700",
       "minecraft:ice_spikes": "2026-11-23 19:25:31 +0700",
       "minecraft:frozen_ocean": "2026-11-23 13:31:09 +0700",
       "minecraft:frozen_river": "2026-11-23 13:20:15 +0700",
@@ -3850,9 +3851,27 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/copper_ingot_from_blasting_deepslate_copper_ore": {
+    "criteria": {
+      "has_deepslate_copper_ore": "2026-11-23 23:24:11 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/lapis_lazuli_from_blasting_lapis_ore": {
+    "criteria": {
+      "has_lapis_ore": "2026-11-23 23:26:28 +0700"
+    },
+    "done": true
+  },
   "waystones:recipes/decorations/warp_scroll": {
     "criteria": {
       "has_ender_pearl": "2026-11-23 22:39:48 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_diorite": {
+    "criteria": {
+      "has_diorite": "2026-11-23 23:20:35 +0700"
     },
     "done": true
   },
@@ -3874,9 +3893,33 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/granite_slab_from_granite_stonecutting": {
+    "criteria": {
+      "has_granite": "2026-11-23 23:21:23 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/deepslate_prismoss": {
+    "criteria": {
+      "has_deepslate": "2026-11-23 23:21:50 +0700"
+    },
+    "done": true
+  },
   "royalvariations:teleporting_king": {
     "criteria": {
       "royal_enderman": "2026-11-23 22:39:48 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/granite_wall_from_granite_stonecutting": {
+    "criteria": {
+      "has_granite": "2026-11-23 23:21:23 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/silver_ingot_from_smelting_deepslate_silver_ore": {
+    "criteria": {
+      "has_deepslate_silver_ore": "2026-11-23 23:23:23 +0700"
     },
     "done": true
   },
@@ -3892,6 +3935,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/granite_slab": {
+    "criteria": {
+      "has_granite": "2026-11-23 23:21:23 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/oak_stairs_from_oak_log_woodcutting": {
     "criteria": {
       "has_oak_log": "2026-11-23 22:34:04 +0700"
@@ -3904,9 +3953,27 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/granite_pillar_trim": {
+    "criteria": {
+      "has_granite_pillar_trim": "2026-11-23 23:21:23 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/diorite_stairs_from_diorite_stonecutting": {
+    "criteria": {
+      "has_diorite": "2026-11-23 23:20:35 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/oak_slab_from_oak_wood_woodcutting": {
     "criteria": {
       "has_oak_wood": "2026-11-23 22:26:37 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/granite_corner_trim": {
+    "criteria": {
+      "has_granite_corner_trim": "2026-11-23 23:21:23 +0700"
     },
     "done": true
   },
@@ -3934,9 +4001,39 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/lapis_lazuli_from_blasting_deepslate_lapis_ore": {
+    "criteria": {
+      "has_deepslate_lapis_ore": "2026-11-23 23:24:41 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_granite_stairs_from_granite_stonecutting": {
+    "criteria": {
+      "has_granite": "2026-11-23 23:21:23 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/oak_button_from_oak_wood_woodcutting": {
     "criteria": {
       "has_oak_wood": "2026-11-23 22:26:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/copper_ingot_from_smelting_copper_ore": {
+    "criteria": {
+      "has_copper_ore": "2026-11-23 23:20:27 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_ingot_from_blasting_iron_ore": {
+    "criteria": {
+      "has_iron_ore": "2026-11-23 23:21:32 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/diorite_slab": {
+    "criteria": {
+      "has_diorite": "2026-11-23 23:20:35 +0700"
     },
     "done": true
   },
@@ -3982,6 +4079,30 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/diorite_wall": {
+    "criteria": {
+      "has_diorite": "2026-11-23 23:20:35 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_ingot_from_smelting_deepslate_iron_ore": {
+    "criteria": {
+      "has_deepslate_iron_ore": "2026-11-23 23:22:00 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/deepslate_pillar_trim": {
+    "criteria": {
+      "has_deepslate_pillar_trim": "2026-11-23 23:21:50 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/diorite_warp_pad": {
+    "criteria": {
+      "has_diorite": "2026-11-23 23:20:35 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/tuff_slab": {
     "criteria": {
       "has_tuff": "2026-11-23 22:28:35 +0700"
@@ -4006,9 +4127,33 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/diorite_wall_from_diorite_stonecutting": {
+    "criteria": {
+      "has_diorite": "2026-11-23 23:20:35 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_granite": {
+    "criteria": {
+      "has_granite": "2026-11-23 23:21:23 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/stripped_oak_wood_from_oak_log_woodcutting": {
     "criteria": {
       "has_oak_log": "2026-11-23 22:34:04 +0700"
+    },
+    "done": true
+  },
+  "enhanced_ore_variety:recipes/misc/copper_ingot_from_blasting": {
+    "criteria": {
+      "TagKey[minecraft:item / minecraft:copper_ores]": "2026-11-23 23:20:27 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_ingot_from_blasting_deepslate_iron_ore": {
+    "criteria": {
+      "has_deepslate_iron_ore": "2026-11-23 23:22:00 +0700"
     },
     "done": true
   },
@@ -4036,6 +4181,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_diorite_from_diorite_stonecutting": {
+    "criteria": {
+      "has_diorite": "2026-11-23 23:20:35 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/mushroom_stew": {
     "criteria": {
       "has_red_mushroom": "2026-11-23 22:29:08 +0700"
@@ -4047,6 +4198,12 @@
       "spider_eye": "2026-11-23 23:11:23 +0700"
     },
     "done": false
+  },
+  "minecraft:recipes/building_blocks/diorite_stairs": {
+    "criteria": {
+      "has_diorite": "2026-11-23 23:20:35 +0700"
+    },
+    "done": true
   },
   "minecraft:recipes/building_blocks/oak_fence_from_oak_log_woodcutting": {
     "criteria": {
@@ -4060,9 +4217,33 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/lapis_lazuli_from_smelting_deepslate_lapis_ore": {
+    "criteria": {
+      "has_deepslate_lapis_ore": "2026-11-23 23:24:41 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/tuff_bricks_from_tuff_stonecutting": {
     "criteria": {
       "has_tuff": "2026-11-23 22:28:35 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/deepslate_warp_pad": {
+    "criteria": {
+      "has_deepslate": "2026-11-23 23:21:50 +0700"
+    },
+    "done": true
+  },
+  "enhanced_ore_variety:recipes/misc/iron_ingot_from_smelting": {
+    "criteria": {
+      "TagKey[minecraft:item / minecraft:iron_ores]": "2026-11-23 23:21:32 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/granite_warp_pad": {
+    "criteria": {
+      "has_granite": "2026-11-23 23:21:23 +0700"
     },
     "done": true
   },
@@ -4084,6 +4265,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_granite_from_granite_stonecutting": {
+    "criteria": {
+      "has_granite": "2026-11-23 23:21:23 +0700"
+    },
+    "done": true
+  },
   "waystones:recipes/decorations/warp_dust": {
     "criteria": {
       "has_ender_pearl": "2026-11-23 22:39:48 +0700"
@@ -4096,9 +4283,51 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_diorite_stairs_from_diorite_stonecutting": {
+    "criteria": {
+      "has_diorite": "2026-11-23 23:20:35 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/oak_planks_from_oak_log_woodcutting": {
     "criteria": {
       "has_oak_log": "2026-11-23 22:34:04 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/deepslate_grass_block": {
+    "criteria": {
+      "has_deepslate": "2026-11-23 23:21:50 +0700"
+    },
+    "done": true
+  },
+  "lootr:emergency_escape_hatch": {
+    "criteria": {
+      "trapdoor_triggered": "2026-11-23 23:28:43 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/granite_stairs": {
+    "criteria": {
+      "has_granite": "2026-11-23 23:21:23 +0700"
+    },
+    "done": true
+  },
+  "enhanced_ore_variety:recipes/misc/lapis_lazuli_from_smelting": {
+    "criteria": {
+      "TagKey[minecraft:item / minecraft:lapis_ores]": "2026-11-23 23:24:41 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/granite_stairs_from_granite_stonecutting": {
+    "criteria": {
+      "has_granite": "2026-11-23 23:21:23 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_ingot_from_smelting_iron_ore": {
+    "criteria": {
+      "has_iron_ore": "2026-11-23 23:21:32 +0700"
     },
     "done": true
   },
@@ -4108,9 +4337,33 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/granite_wall": {
+    "criteria": {
+      "has_granite": "2026-11-23 23:21:23 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_granite_slab_from_granite_stonecutting": {
+    "criteria": {
+      "has_granite": "2026-11-23 23:21:23 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/tuff_wall_from_tuff_stonecutting": {
     "criteria": {
       "has_tuff": "2026-11-23 22:28:35 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/deepslate_corner_trim": {
+    "criteria": {
+      "has_deepslate_corner_trim": "2026-11-23 23:21:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/andesite": {
+    "criteria": {
+      "has_stone": "2026-11-23 23:20:35 +0700"
     },
     "done": true
   },
@@ -4120,9 +4373,21 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/diorite_corner_trim": {
+    "criteria": {
+      "has_diorite_corner_trim": "2026-11-23 23:20:35 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/bowl_from_oak_log_woodcutting": {
     "criteria": {
       "has_oak_log": "2026-11-23 22:34:04 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/copper_ingot_from_smelting_deepslate_copper_ore": {
+    "criteria": {
+      "has_deepslate_copper_ore": "2026-11-23 23:24:11 +0700"
     },
     "done": true
   },
@@ -4138,9 +4403,33 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/silver_ingot_from_blasting_deepslate_silver_ore": {
+    "criteria": {
+      "has_deepslate_silver_ore": "2026-11-23 23:23:23 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/copper_ingot_from_blasting_copper_ore": {
+    "criteria": {
+      "has_copper_ore": "2026-11-23 23:20:27 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_diorite_slab_from_diorite_stonecutting": {
+    "criteria": {
+      "has_diorite": "2026-11-23 23:20:35 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/oak_wood": {
     "criteria": {
       "has_log": "2026-11-23 22:34:04 +0700"
+    },
+    "done": true
+  },
+  "waystones:recipes/decorations/deepslate_shard": {
+    "criteria": {
+      "has_deepslate": "2026-11-23 23:21:50 +0700"
     },
     "done": true
   },
@@ -4150,9 +4439,21 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/diorite_pillar_trim": {
+    "criteria": {
+      "has_diorite_pillar_trim": "2026-11-23 23:20:35 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/tuff_stairs": {
     "criteria": {
       "has_tuff": "2026-11-23 22:28:35 +0700"
+    },
+    "done": true
+  },
+  "enhanced_ore_variety:recipes/misc/iron_ingot_from_blasting": {
+    "criteria": {
+      "TagKey[minecraft:item / minecraft:iron_ores]": "2026-11-23 23:21:32 +0700"
     },
     "done": true
   },
@@ -4168,9 +4469,21 @@
     },
     "done": true
   },
+  "enhanced_ore_variety:recipes/misc/copper_ingot_from_smelting": {
+    "criteria": {
+      "TagKey[minecraft:item / minecraft:copper_ores]": "2026-11-23 23:20:27 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/polished_tuff_from_tuff_stonecutting": {
     "criteria": {
       "has_tuff": "2026-11-23 22:28:35 +0700"
+    },
+    "done": true
+  },
+  "enhanced_ore_variety:recipes/misc/lapis_lazuli_from_blasting": {
+    "criteria": {
+      "TagKey[minecraft:item / minecraft:lapis_ores]": "2026-11-23 23:24:41 +0700"
     },
     "done": true
   },
@@ -4180,9 +4493,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/diorite_slab_from_diorite_stonecutting": {
+    "criteria": {
+      "has_diorite": "2026-11-23 23:20:35 +0700"
+    },
+    "done": true
+  },
   "vanillabackport:recipes/food/mushroom_stew": {
     "criteria": {
       "has_mushrooms": "2026-11-23 22:29:08 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/lapis_lazuli_from_smelting_lapis_ore": {
+    "criteria": {
+      "has_lapis_ore": "2026-11-23 23:26:28 +0700"
     },
     "done": true
   },

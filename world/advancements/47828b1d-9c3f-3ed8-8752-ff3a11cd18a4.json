@@ -890,15 +890,17 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
+      "minecraft:snowy_slopes": "2026-11-23 23:30:03 +0700",
+      "minecraft:forest": "2026-11-23 13:08:05 +0700",
+      "minecraft:river": "2026-11-23 20:59:57 +0700",
+      "minecraft:snowy_plains": "2026-11-23 12:57:28 +0700",
+      "minecraft:snowy_taiga": "2026-11-23 12:53:16 +0700",
       "minecraft:ice_spikes": "2026-11-23 19:18:51 +0700",
       "minecraft:frozen_ocean": "2026-11-22 17:48:03 +0700",
       "minecraft:frozen_river": "2026-11-22 19:16:03 +0700",
-      "minecraft:forest": "2026-11-23 13:08:05 +0700",
-      "minecraft:river": "2026-11-23 20:59:57 +0700",
+      "minecraft:cherry_grove": "2026-11-23 23:29:56 +0700",
       "minecraft:swamp": "2026-11-23 13:08:17 +0700",
-      "minecraft:snowy_plains": "2026-11-23 12:57:28 +0700",
       "minecraft:windswept_hills": "2026-11-23 19:32:36 +0700",
-      "minecraft:snowy_taiga": "2026-11-23 12:53:16 +0700",
       "minecraft:snowy_beach": "2026-11-22 19:16:01 +0700",
       "minecraft:plains": "2026-11-23 12:59:08 +0700"
     },
@@ -3850,51 +3852,39 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/oak_button_from_stripped_oak_log_woodcutting": {
-    "criteria": {
-      "has_stripped_oak_log": "2026-11-23 22:46:40 +0700"
-    },
-    "done": true
-  },
   "tensura:recipes/building_blocks/oak_tool_rack": {
     "criteria": {
       "has_oak_fence": "2026-11-23 22:42:51 +0700"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/mossy_cobblestone_stairs_from_mossy_cobblestone_stonecutting": {
+  "kaleidoscope_cookery:recipes/decorations/eight_immortals_table": {
     "criteria": {
-      "has_mossy_cobblestone": "2026-11-23 22:47:20 +0700"
+      "has_oak_fence": "2026-11-23 22:42:51 +0700"
     },
     "done": true
   },
-  "minecraft:recipes/misc/red_dye_from_poppy": {
+  "kaleidoscope_cookery:recipes/decorations/table_oak": {
     "criteria": {
-      "has_poppy": "2026-11-23 22:47:14 +0700"
+      "has_fence": "2026-11-23 22:42:51 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/chair_oak": {
+    "criteria": {
+      "has_fence": "2026-11-23 22:42:51 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/oak_button_from_stripped_oak_log_woodcutting": {
+    "criteria": {
+      "has_stripped_oak_log": "2026-11-23 22:46:40 +0700"
     },
     "done": true
   },
   "minecraft:recipes/decorations/oak_hanging_sign": {
     "criteria": {
       "has_stripped_logs": "2026-11-23 22:46:40 +0700"
-    },
-    "done": true
-  },
-  "regions_unexplored:recipes/building_blocks/mossy_stone_from_blasting_mossy_cobblestone": {
-    "criteria": {
-      "has_mossy_cobblestone": "2026-11-23 22:47:20 +0700"
-    },
-    "done": true
-  },
-  "toms_storage:unlock_chest": {
-    "criteria": {
-      "inv_changed-chest": "2026-11-23 22:46:45 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/mossy_cobblestone_slab": {
-    "criteria": {
-      "has_mossy_cobblestone": "2026-11-23 22:47:20 +0700"
     },
     "done": true
   },
@@ -3928,87 +3918,15 @@
     },
     "done": true
   },
-  "regions_unexplored:recipes/building_blocks/mossy_stone_from_smelting_mossy_cobblestone": {
-    "criteria": {
-      "has_mossy_cobblestone": "2026-11-23 22:47:20 +0700"
-    },
-    "done": true
-  },
-  "kaleidoscope_cookery:recipes/decorations/fruit_basket": {
-    "criteria": {
-      "has_chest": "2026-11-23 22:46:45 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/smoker": {
-    "criteria": {
-      "has_furnace": "2026-11-23 22:46:42 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/yellow_dye_from_dandelion": {
-    "criteria": {
-      "has_dandelion": "2026-11-23 22:46:58 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/mossy_cobblestone_wall": {
-    "criteria": {
-      "has_mossy_cobblestone": "2026-11-23 22:47:20 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/mossy_cobblestone_wall_from_mossy_cobblestone_stonecutting": {
-    "criteria": {
-      "has_mossy_cobblestone": "2026-11-23 22:47:20 +0700"
-    },
-    "done": true
-  },
-  "kaleidoscope_cookery:recipes/food/empty_cup": {
-    "criteria": {
-      "has_flower_pot": "2026-11-23 22:46:58 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/oak_fence_from_stripped_oak_log_woodcutting": {
     "criteria": {
       "has_stripped_oak_log": "2026-11-23 22:46:40 +0700"
     },
     "done": true
   },
-  "kaleidoscope_cookery:recipes/decorations/eight_immortals_table": {
-    "criteria": {
-      "has_oak_fence": "2026-11-23 22:42:51 +0700"
-    },
-    "done": true
-  },
-  "tensura:master_unique_skill": {
-    "criteria": {
-      "skill": "2026-11-23 23:03:59 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/mossy_cobblestone_stairs": {
-    "criteria": {
-      "has_mossy_cobblestone": "2026-11-23 22:47:20 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/stick_from_stripped_oak_log_woodcutting": {
     "criteria": {
       "has_stripped_oak_log": "2026-11-23 22:46:40 +0700"
-    },
-    "done": true
-  },
-  "kaleidoscope_cookery:recipes/decorations/table_oak": {
-    "criteria": {
-      "has_fence": "2026-11-23 22:42:51 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/mossy_cobblestone_slab_from_mossy_cobblestone_stonecutting": {
-    "criteria": {
-      "has_mossy_cobblestone": "2026-11-23 22:47:20 +0700"
     },
     "done": true
   },
@@ -4024,15 +3942,105 @@
     },
     "done": true
   },
-  "kaleidoscope_cookery:recipes/decorations/chair_oak": {
-    "criteria": {
-      "has_fence": "2026-11-23 22:42:51 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/oak_stairs_from_stripped_oak_log_woodcutting": {
     "criteria": {
       "has_stripped_oak_log": "2026-11-23 22:46:40 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/smoker": {
+    "criteria": {
+      "has_furnace": "2026-11-23 22:46:42 +0700"
+    },
+    "done": true
+  },
+  "toms_storage:unlock_chest": {
+    "criteria": {
+      "inv_changed-chest": "2026-11-23 22:46:45 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/fruit_basket": {
+    "criteria": {
+      "has_chest": "2026-11-23 22:46:45 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/yellow_dye_from_dandelion": {
+    "criteria": {
+      "has_dandelion": "2026-11-23 22:46:58 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/food/empty_cup": {
+    "criteria": {
+      "has_flower_pot": "2026-11-23 22:46:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/red_dye_from_poppy": {
+    "criteria": {
+      "has_poppy": "2026-11-23 22:47:14 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mossy_cobblestone_stairs_from_mossy_cobblestone_stonecutting": {
+    "criteria": {
+      "has_mossy_cobblestone": "2026-11-23 22:47:20 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/mossy_stone_from_blasting_mossy_cobblestone": {
+    "criteria": {
+      "has_mossy_cobblestone": "2026-11-23 22:47:20 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mossy_cobblestone_slab": {
+    "criteria": {
+      "has_mossy_cobblestone": "2026-11-23 22:47:20 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/mossy_stone_from_smelting_mossy_cobblestone": {
+    "criteria": {
+      "has_mossy_cobblestone": "2026-11-23 22:47:20 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/mossy_cobblestone_wall": {
+    "criteria": {
+      "has_mossy_cobblestone": "2026-11-23 22:47:20 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/mossy_cobblestone_wall_from_mossy_cobblestone_stonecutting": {
+    "criteria": {
+      "has_mossy_cobblestone": "2026-11-23 22:47:20 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mossy_cobblestone_stairs": {
+    "criteria": {
+      "has_mossy_cobblestone": "2026-11-23 22:47:20 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mossy_cobblestone_slab_from_mossy_cobblestone_stonecutting": {
+    "criteria": {
+      "has_mossy_cobblestone": "2026-11-23 22:47:20 +0700"
+    },
+    "done": true
+  },
+  "tensura:master_unique_skill": {
+    "criteria": {
+      "skill": "2026-11-23 23:03:59 +0700"
+    },
+    "done": true
+  },
+  "tensura:arachnophobic": {
+    "criteria": {
+      "black_spider": "2026-11-23 23:17:23 +0700"
     },
     "done": true
   },
