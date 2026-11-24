@@ -7642,27 +7642,21 @@
     },
     "done": true
   },
-  "tensura:hiss_tory": {
-    "criteria": {
-      "serpent_scale": "2026-11-24 18:09:32 +0700"
-    },
-    "done": true
-  },
   "tensura:recipes/misc/magic_ore_shardfrom_magic_ore_block": {
     "criteria": {
       "has_magic_ore_block": "2026-11-24 16:54:25 +0700"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/quartz_stairs": {
+  "explorerscompass:repair_explorers_compass": {
     "criteria": {
-      "has_quartz_block": "2026-11-24 17:20:52 +0700"
+      "has_explorers_compass": "2026-11-24 17:05:04 +0700"
     },
     "done": true
   },
-  "minecraft:recipes/food/cooked_serpent_meat_from_smelting": {
+  "minecraft:recipes/building_blocks/quartz_stairs": {
     "criteria": {
-      "has_raw_serpent_meat": "2026-11-24 18:09:32 +0700"
+      "has_quartz_block": "2026-11-24 17:20:52 +0700"
     },
     "done": true
   },
@@ -7678,30 +7672,6 @@
     },
     "done": true
   },
-  "cataclysm:find_frosted_prison": {
-    "criteria": {
-      "prison": "2026-11-24 18:54:17 +0700"
-    },
-    "done": true
-  },
-  "tensura:conqueror_of_flames": {
-    "criteria": {
-      "ifrit": "2026-11-24 17:21:43 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/white_concrete_stairs": {
-    "criteria": {
-      "has_white_concrete": "2026-11-24 17:20:57 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/white_concrete_slab": {
-    "criteria": {
-      "has_white_concrete": "2026-11-24 17:20:57 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/quartz_pillar_from_quartz_block_stonecutting": {
     "criteria": {
       "has_quartz_block": "2026-11-24 17:20:52 +0700"
@@ -7714,33 +7684,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/smooth_stone_slab": {
-    "criteria": {
-      "has_smooth_stone": "2026-11-24 19:00:18 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/quartz_bricks_from_quartz_block_stonecutting": {
     "criteria": {
       "has_quartz_block": "2026-11-24 17:20:52 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/white_concrete_stairs_from_white_concrete_stonecutting": {
-    "criteria": {
-      "has_white_concrete": "2026-11-24 17:20:57 +0700"
-    },
-    "done": true
-  },
-  "cataclysm:kill_maledictus": {
-    "criteria": {
-      "ignis": "2026-11-24 18:59:58 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/blast_furnace": {
-    "criteria": {
-      "has_smooth_stone": "2026-11-24 19:00:18 +0700"
     },
     "done": true
   },
@@ -7756,39 +7702,9 @@
     },
     "done": true
   },
-  "tensura:hihiirokane": {
-    "criteria": {
-      "items": "2026-11-24 17:29:06 +0700"
-    },
-    "done": true
-  },
-  "kaleidoscope_cookery:recipes/decorations/millstone": {
-    "criteria": {
-      "has_smooth_stone": "2026-11-24 19:00:18 +0700"
-    },
-    "done": true
-  },
-  "iceandfire:recipes/misc/chain": {
-    "criteria": {
-      "has_item": "2026-11-24 19:01:31 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/food/cooked_serpent_meat_from_campfire_cooking": {
-    "criteria": {
-      "has_raw_serpent_meat": "2026-11-24 18:09:32 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/quartz_slab_from_stonecutting": {
     "criteria": {
       "has_quartz_block": "2026-11-24 17:20:52 +0700"
-    },
-    "done": true
-  },
-  "explorerscompass:repair_explorers_compass": {
-    "criteria": {
-      "has_explorers_compass": "2026-11-24 17:05:04 +0700"
     },
     "done": true
   },
@@ -7798,27 +7714,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/hihiirokane_nugget": {
-    "criteria": {
-      "has_hihiirokane_ingot": "2026-11-24 17:29:06 +0700"
-    },
-    "done": true
-  },
-  "tensura:labyrinth": {
-    "criteria": {
-      "labyrinth": "2026-11-24 18:41:19 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/quartz_stairs_from_quartz_block_stonecutting": {
     "criteria": {
       "has_quartz_block": "2026-11-24 17:20:52 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/smooth_stone_slab_from_smooth_stone_stonecutting": {
-    "criteria": {
-      "has_smooth_stone": "2026-11-24 19:00:18 +0700"
     },
     "done": true
   },
@@ -7828,21 +7726,9 @@
     },
     "done": true
   },
-  "tensura:recipes/building_blocks/hihiirokane_blockfrom_hihiirokane_ingot": {
-    "criteria": {
-      "has_hihiirokane_ingot": "2026-11-24 17:29:06 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/chiseled_quartz_block": {
     "criteria": {
       "has_quartz_block": "2026-11-24 17:20:52 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/food/cooked_serpent_meat_from_smoking": {
-    "criteria": {
-      "has_raw_serpent_meat": "2026-11-24 18:09:32 +0700"
     },
     "done": true
   },
@@ -7852,15 +7738,129 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/white_concrete_stairs": {
+    "criteria": {
+      "has_white_concrete": "2026-11-24 17:20:57 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/white_concrete_slab": {
+    "criteria": {
+      "has_white_concrete": "2026-11-24 17:20:57 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/white_concrete_stairs_from_white_concrete_stonecutting": {
+    "criteria": {
+      "has_white_concrete": "2026-11-24 17:20:57 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/white_concrete_slab_from_white_concrete_stonecutting": {
     "criteria": {
       "has_white_concrete": "2026-11-24 17:20:57 +0700"
     },
     "done": true
   },
+  "tensura:conqueror_of_flames": {
+    "criteria": {
+      "ifrit": "2026-11-24 17:21:43 +0700"
+    },
+    "done": true
+  },
   "tensura_tno:farewell_shizu": {
     "criteria": {
       "trigger": "2026-11-24 17:21:48 +0700"
+    },
+    "done": true
+  },
+  "tensura:hihiirokane": {
+    "criteria": {
+      "items": "2026-11-24 17:29:06 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/hihiirokane_nugget": {
+    "criteria": {
+      "has_hihiirokane_ingot": "2026-11-24 17:29:06 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/hihiirokane_blockfrom_hihiirokane_ingot": {
+    "criteria": {
+      "has_hihiirokane_ingot": "2026-11-24 17:29:06 +0700"
+    },
+    "done": true
+  },
+  "tensura:hiss_tory": {
+    "criteria": {
+      "serpent_scale": "2026-11-24 18:09:32 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_serpent_meat_from_smelting": {
+    "criteria": {
+      "has_raw_serpent_meat": "2026-11-24 18:09:32 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/food/cooked_serpent_meat_from_campfire_cooking": {
+    "criteria": {
+      "has_raw_serpent_meat": "2026-11-24 18:09:32 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/food/cooked_serpent_meat_from_smoking": {
+    "criteria": {
+      "has_raw_serpent_meat": "2026-11-24 18:09:32 +0700"
+    },
+    "done": true
+  },
+  "tensura:labyrinth": {
+    "criteria": {
+      "labyrinth": "2026-11-24 18:41:19 +0700"
+    },
+    "done": true
+  },
+  "cataclysm:find_frosted_prison": {
+    "criteria": {
+      "prison": "2026-11-24 18:54:17 +0700"
+    },
+    "done": true
+  },
+  "cataclysm:kill_maledictus": {
+    "criteria": {
+      "ignis": "2026-11-24 18:59:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/smooth_stone_slab": {
+    "criteria": {
+      "has_smooth_stone": "2026-11-24 19:00:18 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/blast_furnace": {
+    "criteria": {
+      "has_smooth_stone": "2026-11-24 19:00:18 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/millstone": {
+    "criteria": {
+      "has_smooth_stone": "2026-11-24 19:00:18 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/smooth_stone_slab_from_smooth_stone_stonecutting": {
+    "criteria": {
+      "has_smooth_stone": "2026-11-24 19:00:18 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/misc/chain": {
+    "criteria": {
+      "has_item": "2026-11-24 19:01:31 +0700"
     },
     "done": true
   },

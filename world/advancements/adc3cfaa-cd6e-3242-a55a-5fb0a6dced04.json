@@ -44,28 +44,29 @@
   "regions_unexplored:regions_explored": {
     "criteria": {
       "wisteria_grove": "2026-11-24 02:33:03 +0700",
-      "willow_forest": "2026-11-23 21:05:14 +0700",
+      "sparse_redwoods": "2026-11-24 19:21:11 +0700",
       "silver_birch_forest": "2026-11-24 18:48:25 +0700",
-      "cold_river": "2026-11-24 00:48:57 +0700",
       "shrubland": "2026-11-23 21:38:23 +0700",
+      "pine_taiga": "2026-11-24 18:48:39 +0700",
+      "magnolia_woodland": "2026-11-23 21:16:25 +0700",
+      "muddy_river": "2026-11-24 01:11:25 +0700",
+      "prismachasm": "2026-11-24 01:10:42 +0700",
+      "old_growth_boreal_taiga": "2026-11-24 18:07:28 +0700",
+      "cold_boreal_taiga": "2026-11-22 19:02:02 +0700",
+      "boreal_taiga": "2026-11-24 18:07:25 +0700",
+      "willow_forest": "2026-11-23 21:05:14 +0700",
+      "cold_river": "2026-11-24 00:48:57 +0700",
       "pine_slopes": "2026-11-24 18:48:40 +0700",
       "poppy_fields": "2026-11-24 17:45:53 +0700",
       "grassy_beach": "2026-11-23 21:06:25 +0700",
       "spires": "2026-11-22 18:37:19 +0700",
       "tundra": "2026-11-24 16:51:04 +0700",
-      "pine_taiga": "2026-11-24 18:48:39 +0700",
       "flower_fields": "2026-11-23 22:45:08 +0700",
       "gravel_beach": "2026-11-24 00:48:11 +0700",
       "highland_fields": "2026-11-23 22:33:58 +0700",
       "frozen_pine_taiga": "2026-11-22 17:27:42 +0700",
-      "magnolia_woodland": "2026-11-23 21:16:25 +0700",
-      "muddy_river": "2026-11-24 01:11:25 +0700",
       "hyacinth_deeps": "2026-11-22 18:35:27 +0700",
       "icy_heights": "2026-11-22 19:05:02 +0700",
-      "prismachasm": "2026-11-24 01:10:42 +0700",
-      "old_growth_boreal_taiga": "2026-11-24 18:07:28 +0700",
-      "cold_boreal_taiga": "2026-11-22 19:02:02 +0700",
-      "boreal_taiga": "2026-11-24 18:07:25 +0700",
       "clover_plains": "2026-11-24 18:21:21 +0700"
     },
     "done": false
@@ -74,6 +75,7 @@
     "criteria": {
       "wisteria_grove": "2026-11-24 02:33:03 +0700",
       "willow_forest": "2026-11-23 21:05:14 +0700",
+      "sparse_redwoods": "2026-11-24 19:21:11 +0700",
       "silver_birch_forest": "2026-11-24 18:48:25 +0700",
       "cold_river": "2026-11-24 00:48:57 +0700",
       "shrubland": "2026-11-23 21:38:23 +0700",
@@ -6117,15 +6119,45 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/birch_tool_rack": {
+    "criteria": {
+      "has_birch_fence": "2026-11-24 18:56:53 +0700"
+    },
+    "done": true
+  },
   "mowziesmobs:kill_bluff": {
     "criteria": {
       "bluff": "2026-11-24 18:58:04 +0700"
     },
     "done": true
   },
-  "tensura:recipes/building_blocks/birch_tool_rack": {
+  "minecraft:recipes/misc/slime_chunk_from_smelting": {
     "criteria": {
-      "has_birch_fence": "2026-11-24 18:56:53 +0700"
+      "has_chilled_slime": "2026-11-24 19:18:07 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/slime_chunk_from_campfire_cooking": {
+    "criteria": {
+      "has_chilled_slime": "2026-11-24 19:18:07 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/slime_chunk_from_smoking": {
+    "criteria": {
+      "has_chilled_slime": "2026-11-24 19:18:07 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/chilled_slime_blockfrom_chilled_slime": {
+    "criteria": {
+      "has_chilled_slime": "2026-11-24 19:18:07 +0700"
+    },
+    "done": true
+  },
+  "yungscavebiomes:frosted_caves": {
+    "criteria": {
+      "frosted_caves": "2026-11-24 19:22:34 +0700"
     },
     "done": true
   },
