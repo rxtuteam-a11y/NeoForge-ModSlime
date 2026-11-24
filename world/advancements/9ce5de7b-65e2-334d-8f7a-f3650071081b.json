@@ -56,6 +56,7 @@
       "willow_forest": "2026-11-23 14:04:03 +0700",
       "cold_river": "2026-11-24 02:32:29 +0700",
       "rocky_reef": "2026-11-24 03:33:18 +0700",
+      "redstone_caves": "2026-11-24 11:13:59 +0700",
       "poppy_fields": "2026-11-24 02:10:30 +0700",
       "grassy_beach": "2026-11-24 01:49:00 +0700",
       "spires": "2026-11-23 13:22:56 +0700",
@@ -339,8 +340,11 @@
       "minecraft:old_growth_birch_forest": "2026-11-24 10:59:48 +0700",
       "minecraft:deep_dark": "2026-11-24 00:21:04 +0700",
       "minecraft:swamp": "2026-11-23 14:02:47 +0700",
+      "minecraft:grove": "2026-11-24 11:14:46 +0700",
+      "minecraft:meadow": "2026-11-24 11:14:39 +0700",
       "minecraft:windswept_gravelly_hills": "2026-11-24 08:33:42 +0700",
-      "minecraft:plains": "2026-11-23 13:06:38 +0700"
+      "minecraft:plains": "2026-11-23 13:06:38 +0700",
+      "minecraft:jagged_peaks": "2026-11-24 11:14:41 +0700"
     },
     "done": false
   },
@@ -6241,6 +6245,12 @@
     },
     "done": true
   },
+  "regions_unexplored:spelunker": {
+    "criteria": {
+      "redstone_caves": "2026-11-24 11:13:59 +0700"
+    },
+    "done": false
+  },
   "minecraft:recipes/building_blocks/chiseled_stone_bricks_from_stone_bricks_stonecutting": {
     "criteria": {
       "has_stone_bricks": "2026-11-24 11:07:44 +0700"
@@ -6334,6 +6344,12 @@
   "kaleidoscope_cookery:recipes/decorations/recipe_item": {
     "criteria": {
       "has_paper": "2026-11-24 10:26:55 +0700"
+    },
+    "done": true
+  },
+  "mowziesmobs:kill_ferrous_wroughtnaut": {
+    "criteria": {
+      "ferrous_wroughtnaut": "2026-11-24 11:21:02 +0700"
     },
     "done": true
   },
