@@ -1138,11 +1138,12 @@
   },
   "tensura:otherworldly_biomes": {
     "criteria": {
+      "desert_of_death": "2026-11-24 16:32:09 +0700",
       "barren_land": "2026-11-24 03:33:12 +0700",
       "ancient_forest": "2026-11-23 19:29:41 +0700",
       "miasmic_plains": "2026-11-23 13:23:40 +0700"
     },
-    "done": false
+    "done": true
   },
   "netherexp:nether/soul_sand_valley/ghosts_busted": {
     "criteria": {
@@ -7393,6 +7394,12 @@
     },
     "done": true
   },
+  "dungeons_arise:find_typhon": {
+    "criteria": {
+      "location0": "2026-11-24 16:30:38 +0700"
+    },
+    "done": true
+  },
   "ironchest:recipes/decorations/upgrades/gold_to_diamond_chest_upgrade": {
     "criteria": {
       "has_glass": "2026-11-24 16:12:20 +0700"
@@ -7504,6 +7511,12 @@
   "minecraft:recipes/building_blocks/mossy_cobblestone_stairs": {
     "criteria": {
       "has_mossy_cobblestone": "2026-11-24 15:53:31 +0700"
+    },
+    "done": true
+  },
+  "tensura:s_rank": {
+    "criteria": {
+      "ep": "2026-11-24 16:28:32 +0700"
     },
     "done": true
   },
