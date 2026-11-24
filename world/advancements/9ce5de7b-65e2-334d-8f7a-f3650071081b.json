@@ -8268,5 +8268,35 @@
     },
     "done": true
   },
+  "toms_storage:unlock_chest": {
+    "criteria": {
+      "inv_changed-chest": "2026-11-24 23:29:50 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/fruit_basket": {
+    "criteria": {
+      "has_chest": "2026-11-24 23:29:50 +0700"
+    },
+    "done": true
+  },
+  "tensura:eat_or_be_eaten": {
+    "criteria": {
+      "orc_disaster": "2026-11-24 23:23:12 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/pink_dye_from_cactus_flower": {
+    "criteria": {
+      "has_cactus_flower": "2026-11-24 23:27:29 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/green_dye": {
+    "criteria": {
+      "has_cactus": "2026-11-24 23:27:29 +0700"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }

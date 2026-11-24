@@ -2,9 +2,11 @@
   "mxp": 0,
   "completed": [
     "trbeyond:boss_elemental_colossus",
+    "trbeyond:boss_orc_disaster",
     "trbeyond:daily_day_1_cattledeer_1"
   ],
   "repeatable_timers": {
+    "trbeyond:boss_orc_disaster": 2457139,
     "trbeyond:boss_elemental_colossus": 1151984
   },
   "active": [
@@ -72,7 +74,9 @@
     },
     {
       "questId": "trbeyond:boss_orc_disaster",
-      "progress": {}
+      "progress": {
+        "kill_orc_disaster": 1
+      }
     },
     {
       "questId": "trbeyond:rep_sub_foundational_growth_1",
