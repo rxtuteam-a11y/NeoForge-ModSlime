@@ -52,6 +52,7 @@
       "blackstone_basin": "2026-11-24 21:56:04 +0700",
       "magnolia_woodland": "2026-11-23 21:16:25 +0700",
       "muddy_river": "2026-11-24 01:11:25 +0700",
+      "chalk_cliffs": "2026-11-24 23:50:06 +0700",
       "prismachasm": "2026-11-24 01:10:42 +0700",
       "old_growth_boreal_taiga": "2026-11-24 18:07:28 +0700",
       "infernal_holt": "2026-11-24 21:52:09 +0700",
@@ -63,6 +64,7 @@
       "poppy_fields": "2026-11-24 17:45:53 +0700",
       "grassy_beach": "2026-11-23 21:06:25 +0700",
       "spires": "2026-11-22 18:37:19 +0700",
+      "prairie": "2026-11-24 23:50:11 +0700",
       "mycotoxic_undergrowth": "2026-11-24 21:55:50 +0700",
       "tundra": "2026-11-24 16:51:04 +0700",
       "flower_fields": "2026-11-23 22:45:08 +0700",
@@ -78,28 +80,30 @@
   "regions_unexplored:pioneer": {
     "criteria": {
       "wisteria_grove": "2026-11-24 02:33:03 +0700",
-      "willow_forest": "2026-11-23 21:05:14 +0700",
       "sparse_redwoods": "2026-11-24 19:21:11 +0700",
       "silver_birch_forest": "2026-11-24 18:48:25 +0700",
-      "cold_river": "2026-11-24 00:48:57 +0700",
       "shrubland": "2026-11-23 21:38:23 +0700",
+      "pine_taiga": "2026-11-24 18:48:39 +0700",
+      "magnolia_woodland": "2026-11-23 21:16:25 +0700",
+      "muddy_river": "2026-11-24 01:11:25 +0700",
+      "chalk_cliffs": "2026-11-24 23:50:06 +0700",
+      "old_growth_boreal_taiga": "2026-11-24 18:07:28 +0700",
+      "cold_boreal_taiga": "2026-11-22 19:02:02 +0700",
+      "boreal_taiga": "2026-11-24 18:07:25 +0700",
+      "willow_forest": "2026-11-23 21:05:14 +0700",
+      "cold_river": "2026-11-24 00:48:57 +0700",
       "pine_slopes": "2026-11-24 18:48:40 +0700",
       "poppy_fields": "2026-11-24 17:45:53 +0700",
       "grassy_beach": "2026-11-23 21:06:25 +0700",
       "spires": "2026-11-22 18:37:19 +0700",
+      "prairie": "2026-11-24 23:50:11 +0700",
       "tundra": "2026-11-24 16:51:04 +0700",
-      "pine_taiga": "2026-11-24 18:48:39 +0700",
       "flower_fields": "2026-11-23 22:45:08 +0700",
       "gravel_beach": "2026-11-24 00:48:11 +0700",
       "highland_fields": "2026-11-23 22:33:58 +0700",
       "frozen_pine_taiga": "2026-11-22 17:27:42 +0700",
-      "magnolia_woodland": "2026-11-23 21:16:25 +0700",
-      "muddy_river": "2026-11-24 01:11:25 +0700",
       "hyacinth_deeps": "2026-11-22 18:35:27 +0700",
       "icy_heights": "2026-11-22 19:05:02 +0700",
-      "old_growth_boreal_taiga": "2026-11-24 18:07:28 +0700",
-      "cold_boreal_taiga": "2026-11-22 19:02:02 +0700",
-      "boreal_taiga": "2026-11-24 18:07:25 +0700",
       "clover_plains": "2026-11-24 18:21:21 +0700"
     },
     "done": false
@@ -729,14 +733,18 @@
       "minecraft:frozen_ocean": "2026-11-22 18:17:02 +0700",
       "minecraft:frozen_river": "2026-11-22 18:33:06 +0700",
       "minecraft:deep_frozen_ocean": "2026-11-24 17:51:27 +0700",
+      "minecraft:ocean": "2026-11-24 23:49:59 +0700",
       "minecraft:sunflower_plains": "2026-11-24 02:19:31 +0700",
+      "minecraft:cherry_grove": "2026-11-24 23:49:43 +0700",
       "minecraft:birch_forest": "2026-11-24 18:09:50 +0700",
       "minecraft:windswept_hills": "2026-11-22 19:10:41 +0700",
       "minecraft:old_growth_spruce_taiga": "2026-11-24 18:15:56 +0700",
       "minecraft:snowy_beach": "2026-11-22 17:45:07 +0700",
       "minecraft:flower_forest": "2026-11-24 02:19:24 +0700",
+      "minecraft:savanna_plateau": "2026-11-24 23:51:12 +0700",
       "minecraft:beach": "2026-11-24 00:48:48 +0700",
       "minecraft:dark_forest": "2026-11-24 18:16:07 +0700",
+      "minecraft:stony_peaks": "2026-11-24 23:56:32 +0700",
       "minecraft:river": "2026-11-23 21:06:32 +0700",
       "minecraft:snowy_plains": "2026-11-22 18:30:22 +0700",
       "minecraft:stony_shore": "2026-11-24 17:55:06 +0700",
@@ -747,6 +755,7 @@
       "minecraft:grove": "2026-11-24 18:08:58 +0700",
       "minecraft:meadow": "2026-11-24 18:09:32 +0700",
       "minecraft:windswept_gravelly_hills": "2026-11-23 21:21:28 +0700",
+      "minecraft:savanna": "2026-11-24 23:50:36 +0700",
       "minecraft:plains": "2026-11-22 18:32:27 +0700",
       "minecraft:jagged_peaks": "2026-11-24 18:09:10 +0700"
     },
@@ -6169,58 +6178,39 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/slime_block": {
+    "criteria": {
+      "has_slime_ball": "2026-11-24 21:35:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/lead": {
+    "criteria": {
+      "has_slime_ball": "2026-11-24 21:35:50 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/drying/gelatinous_slime_drop": {
+    "criteria": {
+      "has_slime_ball": "2026-11-24 21:35:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/sticky_piston": {
+    "criteria": {
+      "has_slime_ball": "2026-11-24 21:35:50 +0700"
+    },
+    "done": true
+  },
   "sophisticatedbackpacks:recipes/misc/deposit_upgrade": {
     "criteria": {
       "has_upgrade_base": "2026-11-24 21:36:38 +0700"
     },
     "done": true
   },
-  "minecraft:recipes/brewing/magma_cream": {
-    "criteria": {
-      "has_blaze_powder": "2026-11-24 22:22:23 +0700"
-    },
-    "done": true
-  },
-  "minecraft:nether/explore_nether": {
-    "criteria": {
-      "minecraft:crimson_forest": "2026-11-24 22:02:37 +0700",
-      "minecraft:nether_wastes": "2026-11-24 21:55:39 +0700",
-      "minecraft:soul_sand_valley": "2026-11-24 22:19:43 +0700",
-      "minecraft:basalt_deltas": "2026-11-24 21:55:37 +0700",
-      "minecraft:warped_forest": "2026-11-24 22:03:14 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/end_crystal": {
-    "criteria": {
-      "has_ender_eye": "2026-11-24 22:23:18 +0700"
-    },
-    "done": true
-  },
-  "minecraft:nether/obtain_blaze_rod": {
-    "criteria": {
-      "blaze_rod": "2026-11-24 21:57:25 +0700"
-    },
-    "done": true
-  },
-  "regions_unexplored:eternal_expedition": {
-    "criteria": {
-      "mycotoxic_undergrowth": "2026-11-24 21:55:50 +0700",
-      "blackstone_basin": "2026-11-24 21:56:04 +0700",
-      "infernal_holt": "2026-11-24 21:52:09 +0700",
-      "glistering_meadow": "2026-11-24 22:21:11 +0700"
-    },
-    "done": true
-  },
   "sophisticatedbackpacks:recipes/misc/feeding_upgrade": {
     "criteria": {
       "has_upgrade_base": "2026-11-24 21:36:38 +0700"
-    },
-    "done": true
-  },
-  "regions_unexplored:recipes/building_blocks/larch_wood": {
-    "criteria": {
-      "has_log": "2026-11-24 21:46:38 +0700"
     },
     "done": true
   },
@@ -6242,33 +6232,9 @@
     },
     "done": true
   },
-  "block_factorys_bosses:recipes/building_blocks/lighting/ship_lantern": {
-    "criteria": {
-      "has_item": "2026-11-24 22:22:23 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/slime_block": {
-    "criteria": {
-      "has_slime_ball": "2026-11-24 21:35:50 +0700"
-    },
-    "done": true
-  },
-  "netherexp:nether/soul_sand_valley/soul_sand_valley": {
-    "criteria": {
-      "condition": "2026-11-24 22:19:43 +0700"
-    },
-    "done": true
-  },
   "sophisticatedbackpacks:recipes/misc/smoking_upgrade": {
     "criteria": {
       "has_upgrade_base": "2026-11-24 21:36:38 +0700"
-    },
-    "done": true
-  },
-  "minecraft:story/enter_the_nether": {
-    "criteria": {
-      "entered_nether": "2026-11-24 21:52:05 +0700"
     },
     "done": true
   },
@@ -6278,21 +6244,9 @@
     },
     "done": true
   },
-  "handcrafted:recipes/misc/golden_thin_pot": {
-    "criteria": {
-      "has_golden_thin_pot": "2026-11-24 21:49:30 +0700"
-    },
-    "done": true
-  },
   "sophisticatedbackpacks:recipes/misc/alchemy_upgrade": {
     "criteria": {
       "has_upgrade_base": "2026-11-24 21:36:38 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/lead": {
-    "criteria": {
-      "has_slime_ball": "2026-11-24 21:35:50 +0700"
     },
     "done": true
   },
@@ -6302,57 +6256,15 @@
     },
     "done": true
   },
-  "sophisticatedbackpacks:recipes/misc/advanced_mob_catcher_upgrade": {
-    "criteria": {
-      "has_mob_catcher_upgrade": "2026-11-24 21:36:49 +0700"
-    },
-    "done": true
-  },
   "sophisticatedbackpacks:recipes/misc/tank_upgrade": {
     "criteria": {
       "has_upgrade_base": "2026-11-24 21:36:38 +0700"
     },
     "done": true
   },
-  "minecraft:recipes/brewing/brewing_stand": {
-    "criteria": {
-      "has_blaze_rod": "2026-11-24 21:57:25 +0700"
-    },
-    "done": true
-  },
-  "twilightforest:recipes/drying/gelatinous_slime_drop": {
-    "criteria": {
-      "has_slime_ball": "2026-11-24 21:35:50 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/gold_ingot_from_gold_block": {
-    "criteria": {
-      "has_gold_block": "2026-11-24 21:49:30 +0700"
-    },
-    "done": true
-  },
-  "kaleidoscope_cookery:recipes/food/empty_cup": {
-    "criteria": {
-      "has_flower_pot": "2026-11-24 23:32:21 +0700"
-    },
-    "done": true
-  },
   "sophisticatedbackpacks:recipes/misc/filter_upgrade": {
     "criteria": {
       "has_upgrade_base": "2026-11-24 21:36:38 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/fire_charge": {
-    "criteria": {
-      "has_blaze_powder": "2026-11-24 22:22:23 +0700"
-    },
-    "done": true
-  },
-  "sophisticatedbackpacks:recipes/misc/netherite_backpack": {
-    "criteria": {
-      "has_diamond_backpack": "2026-11-24 21:37:51 +0700"
     },
     "done": true
   },
@@ -6374,18 +6286,6 @@
     },
     "done": true
   },
-  "constructionwand:recipes/misc/core_destruction": {
-    "criteria": {
-      "has_item": "2026-11-24 23:30:38 +0700"
-    },
-    "done": true
-  },
-  "handcrafted:recipes/misc/golden_medium_pot": {
-    "criteria": {
-      "has_golden_medium_pot": "2026-11-24 21:49:30 +0700"
-    },
-    "done": true
-  },
   "sophisticatedbackpacks:recipes/misc/pickup_upgrade": {
     "criteria": {
       "has_upgrade_base": "2026-11-24 21:36:38 +0700"
@@ -6395,18 +6295,6 @@
   "sophisticatedbackpacks:recipes/misc/jukebox_upgrade": {
     "criteria": {
       "has_upgrade_base": "2026-11-24 21:36:38 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/ender_eye": {
-    "criteria": {
-      "has_blaze_powder": "2026-11-24 22:22:23 +0700"
-    },
-    "done": true
-  },
-  "twilightforest:recipes/brewing/magma_cream_maze_ver": {
-    "criteria": {
-      "has_blaze_powder": "2026-11-24 22:22:23 +0700"
     },
     "done": true
   },
@@ -6422,45 +6310,9 @@
     },
     "done": true
   },
-  "regions_unexplored:recipes/decorations/larch_branch_from_larch_log": {
-    "criteria": {
-      "has_log": "2026-11-24 21:46:38 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/ender_chest": {
-    "criteria": {
-      "has_ender_eye": "2026-11-24 22:23:18 +0700"
-    },
-    "done": true
-  },
-  "minecraft:nether/find_fortress": {
-    "criteria": {
-      "in_fortress": "2026-11-24 21:56:43 +0700"
-    },
-    "done": true
-  },
   "sophisticatedbackpacks:recipes/misc/everlasting_upgrade": {
     "criteria": {
       "has_upgrade_base": "2026-11-24 21:36:38 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/diamond": {
-    "criteria": {
-      "has_diamond_block": "2026-11-24 23:30:38 +0700"
-    },
-    "done": true
-  },
-  "handcrafted:recipes/misc/golden_thick_pot": {
-    "criteria": {
-      "has_golden_thick_pot": "2026-11-24 21:49:30 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/nether_wart_block": {
-    "criteria": {
-      "has_nether_wart": "2026-11-24 22:00:55 +0700"
     },
     "done": true
   },
@@ -6470,33 +6322,9 @@
     },
     "done": true
   },
-  "regions_unexplored:downer": {
-    "criteria": {
-      "dorcel": "2026-11-24 21:55:01 +0700"
-    },
-    "done": true
-  },
-  "regions_unexplored:light_snack": {
-    "criteria": {
-      "earlight": "2026-11-24 22:06:46 +0700"
-    },
-    "done": true
-  },
   "sophisticatedbackpacks:recipes/misc/compacting_upgrade": {
     "criteria": {
       "has_upgrade_base": "2026-11-24 21:36:38 +0700"
-    },
-    "done": true
-  },
-  "regions_unexplored:recipes/building_blocks/larch_planks": {
-    "criteria": {
-      "has_logs": "2026-11-24 21:46:38 +0700"
-    },
-    "done": true
-  },
-  "naturescompass:repair_natures_compass": {
-    "criteria": {
-      "has_item": "2026-11-24 21:46:47 +0700"
     },
     "done": true
   },
@@ -6530,30 +6358,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/redstone/sticky_piston": {
-    "criteria": {
-      "has_slime_ball": "2026-11-24 21:35:50 +0700"
-    },
-    "done": true
-  },
-  "minecraft:nether/root": {
-    "criteria": {
-      "entered_nether": "2026-11-24 21:52:05 +0700"
-    },
-    "done": true
-  },
-  "handcrafted:recipes/misc/golden_wide_pot": {
-    "criteria": {
-      "has_golden_wide_pot": "2026-11-24 21:49:30 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/brewing/blaze_powder": {
-    "criteria": {
-      "has_blaze_rod": "2026-11-24 21:57:25 +0700"
-    },
-    "done": true
-  },
   "sophisticatedbackpacks:recipes/misc/restock_upgrade": {
     "criteria": {
       "has_upgrade_base": "2026-11-24 21:36:38 +0700"
@@ -6572,9 +6376,268 @@
     },
     "done": true
   },
+  "sophisticatedbackpacks:recipes/misc/advanced_mob_catcher_upgrade": {
+    "criteria": {
+      "has_mob_catcher_upgrade": "2026-11-24 21:36:49 +0700"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/misc/netherite_backpack": {
+    "criteria": {
+      "has_diamond_backpack": "2026-11-24 21:37:51 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/larch_wood": {
+    "criteria": {
+      "has_log": "2026-11-24 21:46:38 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/larch_branch_from_larch_log": {
+    "criteria": {
+      "has_log": "2026-11-24 21:46:38 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/larch_planks": {
+    "criteria": {
+      "has_logs": "2026-11-24 21:46:38 +0700"
+    },
+    "done": true
+  },
+  "naturescompass:repair_natures_compass": {
+    "criteria": {
+      "has_item": "2026-11-24 21:46:47 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/golden_thin_pot": {
+    "criteria": {
+      "has_golden_thin_pot": "2026-11-24 21:49:30 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_ingot_from_gold_block": {
+    "criteria": {
+      "has_gold_block": "2026-11-24 21:49:30 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/golden_medium_pot": {
+    "criteria": {
+      "has_golden_medium_pot": "2026-11-24 21:49:30 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/golden_thick_pot": {
+    "criteria": {
+      "has_golden_thick_pot": "2026-11-24 21:49:30 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/golden_wide_pot": {
+    "criteria": {
+      "has_golden_wide_pot": "2026-11-24 21:49:30 +0700"
+    },
+    "done": true
+  },
+  "minecraft:story/enter_the_nether": {
+    "criteria": {
+      "entered_nether": "2026-11-24 21:52:05 +0700"
+    },
+    "done": true
+  },
+  "minecraft:nether/root": {
+    "criteria": {
+      "entered_nether": "2026-11-24 21:52:05 +0700"
+    },
+    "done": true
+  },
   "eternalnether:root": {
     "criteria": {
       "entered_nether": "2026-11-24 21:52:05 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:eternal_expedition": {
+    "criteria": {
+      "mycotoxic_undergrowth": "2026-11-24 21:55:50 +0700",
+      "blackstone_basin": "2026-11-24 21:56:04 +0700",
+      "infernal_holt": "2026-11-24 21:52:09 +0700",
+      "glistering_meadow": "2026-11-24 22:21:11 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:downer": {
+    "criteria": {
+      "dorcel": "2026-11-24 21:55:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:nether/explore_nether": {
+    "criteria": {
+      "minecraft:crimson_forest": "2026-11-24 22:02:37 +0700",
+      "minecraft:nether_wastes": "2026-11-24 21:55:39 +0700",
+      "minecraft:soul_sand_valley": "2026-11-24 22:19:43 +0700",
+      "minecraft:basalt_deltas": "2026-11-24 21:55:37 +0700",
+      "minecraft:warped_forest": "2026-11-24 22:03:14 +0700"
+    },
+    "done": true
+  },
+  "minecraft:nether/find_fortress": {
+    "criteria": {
+      "in_fortress": "2026-11-24 21:56:43 +0700"
+    },
+    "done": true
+  },
+  "minecraft:nether/obtain_blaze_rod": {
+    "criteria": {
+      "blaze_rod": "2026-11-24 21:57:25 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/brewing_stand": {
+    "criteria": {
+      "has_blaze_rod": "2026-11-24 21:57:25 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/blaze_powder": {
+    "criteria": {
+      "has_blaze_rod": "2026-11-24 21:57:25 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/nether_wart_block": {
+    "criteria": {
+      "has_nether_wart": "2026-11-24 22:00:55 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:light_snack": {
+    "criteria": {
+      "earlight": "2026-11-24 22:06:46 +0700"
+    },
+    "done": true
+  },
+  "netherexp:nether/soul_sand_valley/soul_sand_valley": {
+    "criteria": {
+      "condition": "2026-11-24 22:19:43 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/magma_cream": {
+    "criteria": {
+      "has_blaze_powder": "2026-11-24 22:22:23 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:recipes/building_blocks/lighting/ship_lantern": {
+    "criteria": {
+      "has_item": "2026-11-24 22:22:23 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/fire_charge": {
+    "criteria": {
+      "has_blaze_powder": "2026-11-24 22:22:23 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/ender_eye": {
+    "criteria": {
+      "has_blaze_powder": "2026-11-24 22:22:23 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/brewing/magma_cream_maze_ver": {
+    "criteria": {
+      "has_blaze_powder": "2026-11-24 22:22:23 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/end_crystal": {
+    "criteria": {
+      "has_ender_eye": "2026-11-24 22:23:18 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/ender_chest": {
+    "criteria": {
+      "has_ender_eye": "2026-11-24 22:23:18 +0700"
+    },
+    "done": true
+  },
+  "constructionwand:recipes/misc/core_destruction": {
+    "criteria": {
+      "has_item": "2026-11-24 23:30:38 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/diamond": {
+    "criteria": {
+      "has_diamond_block": "2026-11-24 23:30:38 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/food/empty_cup": {
+    "criteria": {
+      "has_flower_pot": "2026-11-24 23:32:21 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/redstone/larch_door": {
+    "criteria": {
+      "has_larch_planks": "2026-11-24 23:59:23 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/larch_stairs": {
+    "criteria": {
+      "has_larch_planks": "2026-11-24 23:59:23 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/redstone/larch_button": {
+    "criteria": {
+      "has_larch_planks": "2026-11-24 23:59:23 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/larch_slab": {
+    "criteria": {
+      "has_larch_planks": "2026-11-24 23:59:23 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/redstone/larch_trapdoor": {
+    "criteria": {
+      "has_larch_planks": "2026-11-24 23:59:23 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/redstone/larch_fence_gate": {
+    "criteria": {
+      "has_larch_planks": "2026-11-24 23:59:23 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/redstone/larch_pressure_plate": {
+    "criteria": {
+      "has_larch_planks": "2026-11-24 23:59:23 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/larch_fence": {
+    "criteria": {
+      "has_larch_planks": "2026-11-24 23:59:23 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/larch_sign": {
+    "criteria": {
+      "has_larch_planks": "2026-11-24 23:59:23 +0700"
     },
     "done": true
   },
