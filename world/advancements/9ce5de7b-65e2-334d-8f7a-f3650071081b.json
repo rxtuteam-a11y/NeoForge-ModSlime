@@ -5374,6 +5374,7 @@
   },
   "regions_unexplored:got_wood": {
     "criteria": {
+      "silver_birch_log": "2026-11-25 00:08:33 +0700",
       "maple_log": "2026-11-24 02:07:54 +0700"
     },
     "done": false
@@ -8274,6 +8275,18 @@
     },
     "done": true
   },
+  "regions_unexplored:recipes/decorations/silver_birch_branch_from_silver_birch_log": {
+    "criteria": {
+      "has_log": "2026-11-25 00:08:33 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_planks": {
+    "criteria": {
+      "has_logs": "2026-11-25 00:08:33 +0700"
+    },
+    "done": true
+  },
   "kaleidoscope_cookery:recipes/decorations/fruit_basket": {
     "criteria": {
       "has_chest": "2026-11-24 23:29:50 +0700"
@@ -8295,6 +8308,12 @@
   "minecraft:recipes/misc/pink_dye_from_cactus_flower": {
     "criteria": {
       "has_cactus_flower": "2026-11-24 23:27:29 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/silver_birch_wood": {
+    "criteria": {
+      "has_log": "2026-11-25 00:08:33 +0700"
     },
     "done": true
   },
