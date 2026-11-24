@@ -7639,5 +7639,11 @@
     },
     "done": true
   },
+  "tensura:recipes/misc/magic_ore_shardfrom_magic_ore_block": {
+    "criteria": {
+      "has_magic_ore_block": "2026-11-24 16:54:25 +0700"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }

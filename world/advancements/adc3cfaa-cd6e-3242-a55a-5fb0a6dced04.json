@@ -49,6 +49,7 @@
       "shrubland": "2026-11-23 21:38:23 +0700",
       "grassy_beach": "2026-11-23 21:06:25 +0700",
       "spires": "2026-11-22 18:37:19 +0700",
+      "tundra": "2026-11-24 16:51:04 +0700",
       "flower_fields": "2026-11-23 22:45:08 +0700",
       "gravel_beach": "2026-11-24 00:48:11 +0700",
       "highland_fields": "2026-11-23 22:33:58 +0700",
@@ -70,6 +71,7 @@
       "shrubland": "2026-11-23 21:38:23 +0700",
       "grassy_beach": "2026-11-23 21:06:25 +0700",
       "spires": "2026-11-22 18:37:19 +0700",
+      "tundra": "2026-11-24 16:51:04 +0700",
       "flower_fields": "2026-11-23 22:45:08 +0700",
       "gravel_beach": "2026-11-24 00:48:11 +0700",
       "highland_fields": "2026-11-23 22:33:58 +0700",
@@ -740,6 +742,8 @@
       "minecraft:cave_spider": "2026-11-23 21:51:38 +0700",
       "minecraft:skeleton": "2026-11-23 22:00:00 +0700",
       "minecraft:phantom": "2026-11-23 22:41:15 +0700",
+      "minecraft:enderman": "2026-11-24 16:56:13 +0700",
+      "minecraft:stray": "2026-11-24 16:49:39 +0700",
       "minecraft:spider": "2026-11-22 18:46:00 +0700",
       "minecraft:wither_skeleton": "2026-11-23 22:17:00 +0700",
       "minecraft:zombie": "2026-11-22 18:07:03 +0700",
@@ -5459,6 +5463,90 @@
   "tensura:recipes/building_blocks/magic_ore_blockfrom_magic_ore_shard": {
     "criteria": {
       "has_magic_ore_shard": "2026-11-24 15:29:48 +0700"
+    },
+    "done": true
+  },
+  "chronodawn:recipes/misc/time_compass": {
+    "criteria": {
+      "has_item": "2026-11-24 16:48:11 +0700"
+    },
+    "done": true
+  },
+  "chronodawn:recipes/misc/chronite_block": {
+    "criteria": {
+      "has_item": "2026-11-24 16:48:11 +0700"
+    },
+    "done": true
+  },
+  "chronodawn:recipes/misc/time_arrow_from_chronite": {
+    "criteria": {
+      "has_item": "2026-11-24 16:48:11 +0700"
+    },
+    "done": true
+  },
+  "chronodawn:recipes/misc/clock_from_chronite": {
+    "criteria": {
+      "has_item": "2026-11-24 16:48:11 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/deepslate_viridescent_nylium": {
+    "criteria": {
+      "has_mushroom": "2026-11-24 16:57:44 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/netherite_ingot": {
+    "criteria": {
+      "has_netherite_scrap": "2026-11-24 16:52:53 +0700"
+    },
+    "done": true
+  },
+  "friendsandfoes:adventure/kill_iceologer": {
+    "criteria": {
+      "killed_iceologer": "2026-11-24 16:51:17 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/tools/oil_pot": {
+    "criteria": {
+      "has_bucket": "2026-11-24 16:50:43 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/strung_mushrooms": {
+    "criteria": {
+      "has_brown_mushroom": "2026-11-24 16:57:44 +0700"
+    },
+    "done": true
+  },
+  "bosses_of_mass_destruction:recipes/brimstone_nectar": {
+    "criteria": {
+      "has_netherite_scrap": "2026-11-24 16:52:53 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/enamel_basin": {
+    "criteria": {
+      "has_bucket": "2026-11-24 16:50:43 +0700"
+    },
+    "done": true
+  },
+  "friendsandfoes:adventure/the_magicians": {
+    "criteria": {
+      "killed_iceologer": "2026-11-24 16:51:17 +0700"
+    },
+    "done": false
+  },
+  "netherexp:recipes/misc/rift_armor_trim_smithing_template": {
+    "criteria": {
+      "has_coast_armor_trim_smithing_template": "2026-11-24 16:53:51 +0700"
+    },
+    "done": true
+  },
+  "mowziesmobs:kill_frostmaw": {
+    "criteria": {
+      "frostmaw": "2026-11-24 16:50:45 +0700"
     },
     "done": true
   },
