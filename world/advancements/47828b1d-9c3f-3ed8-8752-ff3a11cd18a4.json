@@ -46,6 +46,7 @@
       "sparse_redwoods": "2026-11-24 10:34:53 +0700",
       "silver_birch_forest": "2026-11-24 10:17:24 +0700",
       "shrubland": "2026-11-23 21:06:03 +0700",
+      "dry_bushland": "2026-11-24 12:57:35 +0700",
       "old_growth_golden_boreal_taiga": "2026-11-24 10:34:25 +0700",
       "pine_taiga": "2026-11-24 10:20:07 +0700",
       "magnolia_woodland": "2026-11-23 21:03:43 +0700",
@@ -54,6 +55,7 @@
       "old_growth_boreal_taiga": "2026-11-24 10:22:55 +0700",
       "boreal_taiga": "2026-11-23 13:27:40 +0700",
       "cold_boreal_taiga": "2026-11-23 19:28:48 +0700",
+      "old_growth_forest": "2026-11-24 13:00:19 +0700",
       "marsh": "2026-11-23 13:08:37 +0700",
       "willow_forest": "2026-11-23 13:08:42 +0700",
       "cold_river": "2026-11-23 21:06:07 +0700",
@@ -67,6 +69,7 @@
       "flower_fields": "2026-11-23 22:41:21 +0700",
       "highland_fields": "2026-11-23 21:10:02 +0700",
       "frozen_pine_taiga": "2026-11-22 17:27:12 +0700",
+      "maple_forest": "2026-11-24 13:00:20 +0700",
       "icy_heights": "2026-11-23 13:23:44 +0700",
       "hyacinth_deeps": "2026-11-23 13:21:56 +0700",
       "clover_plains": "2026-11-23 23:46:56 +0700"
@@ -78,6 +81,7 @@
       "sparse_redwoods": "2026-11-24 10:34:53 +0700",
       "silver_birch_forest": "2026-11-24 10:17:24 +0700",
       "shrubland": "2026-11-23 21:06:03 +0700",
+      "dry_bushland": "2026-11-24 12:57:35 +0700",
       "old_growth_golden_boreal_taiga": "2026-11-24 10:34:25 +0700",
       "pine_taiga": "2026-11-24 10:20:07 +0700",
       "magnolia_woodland": "2026-11-23 21:03:43 +0700",
@@ -86,6 +90,7 @@
       "old_growth_boreal_taiga": "2026-11-24 10:22:55 +0700",
       "boreal_taiga": "2026-11-23 13:27:40 +0700",
       "cold_boreal_taiga": "2026-11-23 19:28:48 +0700",
+      "old_growth_forest": "2026-11-24 13:00:19 +0700",
       "marsh": "2026-11-23 13:08:37 +0700",
       "willow_forest": "2026-11-23 13:08:42 +0700",
       "cold_river": "2026-11-23 21:06:07 +0700",
@@ -99,6 +104,7 @@
       "flower_fields": "2026-11-23 22:41:21 +0700",
       "highland_fields": "2026-11-23 21:10:02 +0700",
       "frozen_pine_taiga": "2026-11-22 17:27:12 +0700",
+      "maple_forest": "2026-11-24 13:00:20 +0700",
       "icy_heights": "2026-11-23 13:23:44 +0700",
       "hyacinth_deeps": "2026-11-23 13:21:56 +0700",
       "clover_plains": "2026-11-23 23:46:56 +0700"
@@ -928,12 +934,15 @@
       "minecraft:frozen_ocean": "2026-11-22 17:48:03 +0700",
       "minecraft:frozen_river": "2026-11-22 19:16:03 +0700",
       "minecraft:ocean": "2026-11-24 10:18:21 +0700",
+      "minecraft:jungle": "2026-11-24 12:57:11 +0700",
       "minecraft:cherry_grove": "2026-11-23 23:29:56 +0700",
       "minecraft:sunflower_plains": "2026-11-23 23:34:50 +0700",
       "minecraft:birch_forest": "2026-11-24 10:17:34 +0700",
       "minecraft:windswept_hills": "2026-11-23 19:32:36 +0700",
+      "minecraft:old_growth_spruce_taiga": "2026-11-24 12:44:22 +0700",
       "minecraft:snowy_beach": "2026-11-22 19:16:01 +0700",
       "minecraft:beach": "2026-11-24 10:18:15 +0700",
+      "minecraft:dark_forest": "2026-11-24 12:45:00 +0700",
       "minecraft:sparse_jungle": "2026-11-23 23:50:46 +0700",
       "minecraft:river": "2026-11-23 20:59:57 +0700",
       "minecraft:lukewarm_ocean": "2026-11-23 23:51:31 +0700",
@@ -4935,6 +4944,366 @@
       "diamond_chestplate": "2026-11-24 11:57:51 +0700"
     },
     "done": true
+  },
+  "minecraft:recipes/decorations/deepslate_brick_wall_from_deepslate_bricks_stonecutting": {
+    "criteria": {
+      "has_deepslate_bricks": "2026-11-24 12:50:38 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_brick_stairs": {
+    "criteria": {
+      "has_deepslate_bricks": "2026-11-24 12:50:38 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_brick_slab_from_deepslate_bricks_stonecutting": {
+    "criteria": {
+      "has_deepslate_bricks": "2026-11-24 12:50:38 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_tile_stairs_from_deepslate_bricks_stonecutting": {
+    "criteria": {
+      "has_deepslate_bricks": "2026-11-24 12:50:38 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/deepslate_tile_wall_from_deepslate_bricks_stonecutting": {
+    "criteria": {
+      "has_deepslate_bricks": "2026-11-24 12:50:38 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/deepslate_brick_wall": {
+    "criteria": {
+      "has_deepslate_bricks": "2026-11-24 12:50:38 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cracked_deepslate_bricks": {
+    "criteria": {
+      "has_deepslate_bricks": "2026-11-24 12:50:38 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_tiles": {
+    "criteria": {
+      "has_deepslate_bricks": "2026-11-24 12:50:38 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_brick_stairs_from_deepslate_bricks_stonecutting": {
+    "criteria": {
+      "has_deepslate_bricks": "2026-11-24 12:50:38 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_tiles_from_deepslate_bricks_stonecutting": {
+    "criteria": {
+      "has_deepslate_bricks": "2026-11-24 12:50:38 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_brick_slab": {
+    "criteria": {
+      "has_deepslate_bricks": "2026-11-24 12:50:38 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_tile_slab_from_deepslate_bricks_stonecutting": {
+    "criteria": {
+      "has_deepslate_bricks": "2026-11-24 12:50:38 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/dark_oak_side_table": {
+    "criteria": {
+      "has_dark_oak_side_table": "2026-11-24 12:50:39 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/dark_oak_fancy_bed": {
+    "criteria": {
+      "has_dark_oak_fancy_bed": "2026-11-24 12:50:39 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/dark_oak_table": {
+    "criteria": {
+      "has_dark_oak_table": "2026-11-24 12:50:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_oak_stairs": {
+    "criteria": {
+      "has_planks": "2026-11-24 12:50:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/dark_oak_door": {
+    "criteria": {
+      "has_planks": "2026-11-24 12:50:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stick_from_dark_oak_planks_woodcutting": {
+    "criteria": {
+      "has_dark_oak_planks": "2026-11-24 12:50:39 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/cook_stool_dark_oak": {
+    "criteria": {
+      "has_wood": "2026-11-24 12:50:39 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/dark_oak_bench": {
+    "criteria": {
+      "has_dark_oak_bench": "2026-11-24 12:50:39 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/dark_oak_drawer": {
+    "criteria": {
+      "has_dark_oak_drawer": "2026-11-24 12:50:39 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/dark_oak_couch": {
+    "criteria": {
+      "has_dark_oak_couch": "2026-11-24 12:50:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/dark_oak_pressure_plate": {
+    "criteria": {
+      "has_planks": "2026-11-24 12:50:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_oak_slab": {
+    "criteria": {
+      "has_planks": "2026-11-24 12:50:39 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/dark_oak_chair": {
+    "criteria": {
+      "has_dark_oak_chair": "2026-11-24 12:50:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bowl_from_dark_oak_planks_woodcutting": {
+    "criteria": {
+      "has_dark_oak_planks": "2026-11-24 12:50:39 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/dark_oak_desk": {
+    "criteria": {
+      "has_dark_oak_desk": "2026-11-24 12:50:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_oak_slab_from_dark_oak_planks_woodcutting": {
+    "criteria": {
+      "has_dark_oak_planks": "2026-11-24 12:50:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_oak_button_from_dark_oak_planks_woodcutting": {
+    "criteria": {
+      "has_dark_oak_planks": "2026-11-24 12:50:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_oak_fence_from_dark_oak_planks_woodcutting": {
+    "criteria": {
+      "has_dark_oak_planks": "2026-11-24 12:50:39 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/dark_oak_nightstand": {
+    "criteria": {
+      "has_dark_oak_nightstand": "2026-11-24 12:50:39 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/dark_oak_shelf": {
+    "criteria": {
+      "has_dark_oak_shelf": "2026-11-24 12:50:39 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/dark_oak_dining_bench": {
+    "criteria": {
+      "has_dark_oak_dining_bench": "2026-11-24 12:50:39 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/dark_oak_cupboard": {
+    "criteria": {
+      "has_dark_oak_cupboard": "2026-11-24 12:50:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_oak_stairs_from_dark_oak_planks_woodcutting": {
+    "criteria": {
+      "has_dark_oak_planks": "2026-11-24 12:50:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/dark_oak_sign": {
+    "criteria": {
+      "has_planks": "2026-11-24 12:50:39 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/dark_oak_corner_trim": {
+    "criteria": {
+      "has_dark_oak_corner_trim": "2026-11-24 12:50:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/dark_oak_fence_gate": {
+    "criteria": {
+      "has_planks": "2026-11-24 12:50:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/dark_oak_trapdoor": {
+    "criteria": {
+      "has_planks": "2026-11-24 12:50:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/ladder_from_dark_oak_planks_woodcutting": {
+    "criteria": {
+      "has_dark_oak_planks": "2026-11-24 12:50:39 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/dark_oak_counter": {
+    "criteria": {
+      "has_dark_oak_counter": "2026-11-24 12:50:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/dark_oak_button": {
+    "criteria": {
+      "has_planks": "2026-11-24 12:50:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/dark_oak_fence": {
+    "criteria": {
+      "has_planks": "2026-11-24 12:50:39 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/dark_oak_pillar_trim": {
+    "criteria": {
+      "has_dark_oak_pillar_trim": "2026-11-24 12:50:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_oak_planks_from_dark_oak_log_woodcutting": {
+    "criteria": {
+      "has_dark_oak_log": "2026-11-24 12:51:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_dark_oak_log_from_dark_oak_log_woodcutting": {
+    "criteria": {
+      "has_dark_oak_log": "2026-11-24 12:51:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_dark_oak_wood_from_dark_oak_log_woodcutting": {
+    "criteria": {
+      "has_dark_oak_log": "2026-11-24 12:51:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/ladder_from_dark_oak_log_woodcutting": {
+    "criteria": {
+      "has_dark_oak_log": "2026-11-24 12:51:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_oak_stairs_from_dark_oak_log_woodcutting": {
+    "criteria": {
+      "has_dark_oak_log": "2026-11-24 12:51:58 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/building_blocks/stonecutting/dark_oak_log/hollow_dark_oak_log": {
+    "criteria": {
+      "has_block": "2026-11-24 12:51:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stick_from_dark_oak_log_woodcutting": {
+    "criteria": {
+      "has_dark_oak_log": "2026-11-24 12:51:58 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/dark_oak_branch_from_dark_oak_log": {
+    "criteria": {
+      "has_log": "2026-11-24 12:51:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_oak_slab_from_dark_oak_log_woodcutting": {
+    "criteria": {
+      "has_dark_oak_log": "2026-11-24 12:51:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_oak_button_from_dark_oak_log_woodcutting": {
+    "criteria": {
+      "has_dark_oak_log": "2026-11-24 12:51:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_oak_fence_from_dark_oak_log_woodcutting": {
+    "criteria": {
+      "has_dark_oak_log": "2026-11-24 12:51:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_oak_planks": {
+    "criteria": {
+      "has_log": "2026-11-24 12:51:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_oak_wood": {
+    "criteria": {
+      "has_log": "2026-11-24 12:51:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bowl_from_dark_oak_log_woodcutting": {
+    "criteria": {
+      "has_dark_oak_log": "2026-11-24 12:51:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/tame_an_animal": {
+    "criteria": {
+      "tamed_animal": "2026-11-24 12:59:44 +0700"
+    },
+    "done": true
+  },
+  "tensura:ruler_of_monster": {
+    "criteria": {
+      "goblin": "2026-11-24 12:59:44 +0700"
+    },
+    "done": false
   },
   "DataVersion": 3955
 }
