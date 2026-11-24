@@ -1036,6 +1036,7 @@
       "minecraft:phantom": "2026-11-23 22:17:34 +0700",
       "minecraft:witch": "2026-11-23 13:17:25 +0700",
       "minecraft:husk": "2026-11-23 13:30:36 +0700",
+      "minecraft:bogged": "2026-11-24 11:34:41 +0700",
       "minecraft:cave_spider": "2026-11-23 21:31:24 +0700",
       "minecraft:vindicator": "2026-11-23 13:32:31 +0700",
       "minecraft:breeze": "2026-11-23 23:54:02 +0700",
@@ -1046,6 +1047,7 @@
       "minecraft:zombie": "2026-11-23 13:16:43 +0700",
       "minecraft:creeper": "2026-11-23 13:17:07 +0700",
       "minecraft:drowned": "2026-11-23 19:56:24 +0700",
+      "minecraft:zombie_villager": "2026-11-24 11:34:51 +0700",
       "minecraft:evoker": "2026-11-24 11:23:37 +0700"
     },
     "done": false
@@ -6237,6 +6239,12 @@
     },
     "done": true
   },
+  "constructionwand:recipes/misc/energy_upgrade": {
+    "criteria": {
+      "has_item": "2026-11-24 11:33:13 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/mossy_stone_brick_wall": {
     "criteria": {
       "has_mossy_stone_bricks": "2026-11-24 11:07:46 +0700"
@@ -6255,11 +6263,41 @@
     },
     "done": true
   },
+  "minecraft:recipes/combat/copper_helmet": {
+    "criteria": {
+      "has_copper_ingot": "2026-11-24 11:33:13 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/brush": {
+    "criteria": {
+      "has_copper_ingot": "2026-11-24 11:33:13 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:iceandfire/kill_stymphalian_bird": {
+    "criteria": {
+      "killed_fire_dragon": "2026-11-24 11:33:13 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:spelunker": {
     "criteria": {
       "redstone_caves": "2026-11-24 11:13:59 +0700"
     },
     "done": false
+  },
+  "minecraft:recipes/tools/copper_shovel": {
+    "criteria": {
+      "has_copper_ingot": "2026-11-24 11:33:13 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/copper_pickaxe": {
+    "criteria": {
+      "has_copper_ingot": "2026-11-24 11:33:13 +0700"
+    },
+    "done": true
   },
   "minecraft:recipes/building_blocks/chiseled_stone_bricks_from_stone_bricks_stonecutting": {
     "criteria": {
@@ -6282,6 +6320,12 @@
   "iceandfire:recipes/combat/tide_teal_boots": {
     "criteria": {
       "has_item": "2026-11-24 11:08:21 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/copper_bars": {
+    "criteria": {
+      "has_copper_ingot": "2026-11-24 11:33:13 +0700"
     },
     "done": true
   },
@@ -6351,9 +6395,27 @@
     },
     "done": true
   },
+  "ironchest:recipes/decorations/chests/vanilla_copper_chest": {
+    "criteria": {
+      "has_copper_ingot": "2026-11-24 11:33:13 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/ladder_from_dark_oak_log_woodcutting": {
     "criteria": {
       "has_dark_oak_log": "2026-11-24 11:23:38 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/misc/copper_nuggets_to_ingot": {
+    "criteria": {
+      "has_item": "2026-11-24 11:33:13 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/copper_trapdoor": {
+    "criteria": {
+      "has_copper_ingot": "2026-11-24 11:33:13 +0700"
     },
     "done": true
   },
@@ -6381,9 +6443,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/copper_door": {
+    "criteria": {
+      "has_copper_ingot": "2026-11-24 11:33:13 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/mossy_stone_brick_stairs": {
     "criteria": {
       "has_mossy_stone_bricks": "2026-11-24 11:07:46 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/copper_axe": {
+    "criteria": {
+      "has_copper_ingot": "2026-11-24 11:33:13 +0700"
     },
     "done": true
   },
@@ -6393,9 +6467,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/combat/copper_spear": {
+    "criteria": {
+      "has_copper_ingot": "2026-11-24 11:33:13 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/polished_andesite_slab_from_polished_andesite_stonecutting": {
     "criteria": {
       "has_polished_andesite": "2026-11-24 11:23:38 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/mojang_banner_pattern": {
+    "criteria": {
+      "has_enchanted_golden_apple": "2026-11-24 11:37:23 +0700"
     },
     "done": true
   },
@@ -6465,9 +6551,33 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/lightning_rod": {
+    "criteria": {
+      "has_copper_ingot": "2026-11-24 11:33:13 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/copper_chestplate": {
+    "criteria": {
+      "has_copper_ingot": "2026-11-24 11:33:13 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/deepslate_tile_wall_from_deepslate_bricks_stonecutting": {
     "criteria": {
       "has_deepslate_bricks": "2026-11-24 10:58:17 +0700"
+    },
+    "done": true
+  },
+  "ironchest:recipes/decorations/upgrades/wood_to_copper_chest_upgrade": {
+    "criteria": {
+      "has_copper_ingot": "2026-11-24 11:33:13 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/copper_leggings": {
+    "criteria": {
+      "has_copper_ingot": "2026-11-24 11:33:13 +0700"
     },
     "done": true
   },
@@ -6477,9 +6587,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/copper_block": {
+    "criteria": {
+      "has_copper_ingot": "2026-11-24 11:33:13 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/low_magisteel_nugget": {
     "criteria": {
       "has_low_magisteel_ingot": "2026-11-24 10:25:07 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/copper_nugget": {
+    "criteria": {
+      "has_copper_ingot": "2026-11-24 11:33:13 +0700"
     },
     "done": true
   },
@@ -6501,6 +6623,12 @@
     },
     "done": true
   },
+  "twilightforest:recipes/misc/copper_ingot_to_nuggets": {
+    "criteria": {
+      "has_item": "2026-11-24 11:33:13 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/cracked_deepslate_bricks": {
     "criteria": {
       "has_deepslate_bricks": "2026-11-24 10:58:17 +0700"
@@ -6513,6 +6641,12 @@
     },
     "done": true
   },
+  "constructionwand:recipes/tools/copper_wand": {
+    "criteria": {
+      "has_item": "2026-11-24 11:33:13 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/mossy_stone_brick_stairs_from_mossy_stone_brick_stonecutting": {
     "criteria": {
       "has_mossy_stone_bricks": "2026-11-24 11:07:46 +0700"
@@ -6522,6 +6656,12 @@
   "tensura:recipes/building_blocks/low_magisteel_blockfrom_low_magisteel_ingot": {
     "criteria": {
       "has_low_magisteel_ingot": "2026-11-24 10:25:07 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/food/teapot": {
+    "criteria": {
+      "has_ingot_copper": "2026-11-24 11:33:13 +0700"
     },
     "done": true
   },
@@ -6573,6 +6713,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/copper_torch": {
+    "criteria": {
+      "has_copper_nugget": "2026-11-24 11:33:13 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/copper_chain": {
+    "criteria": {
+      "has_copper_nugget": "2026-11-24 11:33:13 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/low_magisteel_nugget_from_blasting_low_magisteel_boots": {
     "criteria": {
       "has_low_magisteel_boots": "2026-11-24 10:33:05 +0700"
@@ -6588,6 +6740,12 @@
   "minecraft:recipes/building_blocks/dark_oak_button_from_dark_oak_log_woodcutting": {
     "criteria": {
       "has_dark_oak_log": "2026-11-24 11:23:38 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/copper_sword": {
+    "criteria": {
+      "has_copper_ingot": "2026-11-24 11:33:13 +0700"
     },
     "done": true
   },
@@ -6627,6 +6785,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/combat/copper_boots": {
+    "criteria": {
+      "has_copper_ingot": "2026-11-24 11:33:13 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/misc/low_magisteel_bone_golem": {
     "criteria": {
       "has_low_magisteel_ingot": "2026-11-24 10:25:07 +0700"
@@ -6636,6 +6800,12 @@
   "minecraft:recipes/building_blocks/polished_andesite_stairs": {
     "criteria": {
       "has_polished_andesite": "2026-11-24 11:23:38 +0700"
+    },
+    "done": true
+  },
+  "friendsandfoes:recipes/redstone/copper_button": {
+    "criteria": {
+      "has_copper_ingot": "2026-11-24 11:33:13 +0700"
     },
     "done": true
   },
@@ -6654,6 +6824,12 @@
   "minecraft:recipes/building_blocks/deepslate_tiles_from_deepslate_bricks_stonecutting": {
     "criteria": {
       "has_deepslate_bricks": "2026-11-24 10:58:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/copper_hoe": {
+    "criteria": {
+      "has_copper_ingot": "2026-11-24 11:33:13 +0700"
     },
     "done": true
   },

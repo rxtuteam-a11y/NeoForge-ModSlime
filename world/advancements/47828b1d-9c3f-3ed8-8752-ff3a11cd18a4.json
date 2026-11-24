@@ -4743,24 +4743,6 @@
     },
     "done": true
   },
-  "eternal_starlight:obtain_orb_of_prophecy": {
-    "criteria": {
-      "has_item": "2026-11-24 11:26:38 +0700"
-    },
-    "done": true
-  },
-  "eternal_starlight:challenge_gatekeeper": {
-    "criteria": {
-      "challenged": "2026-11-24 11:25:36 +0700"
-    },
-    "done": true
-  },
-  "eternal_starlight:obtain_seeking_eye": {
-    "criteria": {
-      "has_item": "2026-11-24 11:26:38 +0700"
-    },
-    "done": true
-  },
   "kaleidoscope_cookery:recipes/decorations/recipe_item": {
     "criteria": {
       "has_paper": "2026-11-24 11:06:19 +0700"
@@ -4770,18 +4752,6 @@
   "waystones:recipes/decorations/return_scroll": {
     "criteria": {
       "has_paper": "2026-11-24 11:06:19 +0700"
-    },
-    "done": true
-  },
-  "yungscavebiomes:frosted_caves": {
-    "criteria": {
-      "frosted_caves": "2026-11-24 11:29:36 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/brewing/cauldron": {
-    "criteria": {
-      "has_water_bucket": "2026-11-24 11:16:59 +0700"
     },
     "done": true
   },
@@ -4797,15 +4767,45 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/cartography_table": {
+    "criteria": {
+      "has_paper": "2026-11-24 11:06:19 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/cauldron": {
+    "criteria": {
+      "has_water_bucket": "2026-11-24 11:16:59 +0700"
+    },
+    "done": true
+  },
   "eternal_starlight:recipes/brewing/cauldron_from_deepsilver_ingot": {
     "criteria": {
       "has_water_bucket": "2026-11-24 11:16:59 +0700"
     },
     "done": true
   },
-  "minecraft:recipes/decorations/cartography_table": {
+  "eternal_starlight:challenge_gatekeeper": {
     "criteria": {
-      "has_paper": "2026-11-24 11:06:19 +0700"
+      "challenged": "2026-11-24 11:25:36 +0700"
+    },
+    "done": true
+  },
+  "eternal_starlight:obtain_orb_of_prophecy": {
+    "criteria": {
+      "has_item": "2026-11-24 11:26:38 +0700"
+    },
+    "done": true
+  },
+  "eternal_starlight:obtain_seeking_eye": {
+    "criteria": {
+      "has_item": "2026-11-24 11:26:38 +0700"
+    },
+    "done": true
+  },
+  "yungscavebiomes:frosted_caves": {
+    "criteria": {
+      "frosted_caves": "2026-11-24 11:29:36 +0700"
     },
     "done": true
   },
