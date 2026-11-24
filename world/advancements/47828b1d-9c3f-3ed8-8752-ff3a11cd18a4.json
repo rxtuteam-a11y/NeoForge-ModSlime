@@ -4743,5 +4743,35 @@
     },
     "done": true
   },
+  "kaleidoscope_cookery:recipes/decorations/recipe_item": {
+    "criteria": {
+      "has_paper": "2026-11-24 11:06:19 +0700"
+    },
+    "done": true
+  },
+  "waystones:recipes/decorations/return_scroll": {
+    "criteria": {
+      "has_paper": "2026-11-24 11:06:19 +0700"
+    },
+    "done": true
+  },
+  "waystones:recipes/decorations/blank_scroll": {
+    "criteria": {
+      "has_paper": "2026-11-24 11:06:19 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/book": {
+    "criteria": {
+      "has_paper": "2026-11-24 11:06:19 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/cartography_table": {
+    "criteria": {
+      "has_paper": "2026-11-24 11:06:19 +0700"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }
