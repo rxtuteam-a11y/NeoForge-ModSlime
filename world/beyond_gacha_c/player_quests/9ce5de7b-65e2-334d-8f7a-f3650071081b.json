@@ -10,7 +10,9 @@
   "active": [
     {
       "questId": "trbeyond:repeatable_skill_shogo_taguchi",
-      "progress": {}
+      "progress": {
+        "kill_shogo_taguchi": 2
+      }
     },
     {
       "questId": "trbeyond:repeatable_skill_shinji_tanimura",
@@ -120,7 +122,9 @@
     },
     {
       "questId": "trbeyond:repeatable_skill_mai_furuki",
-      "progress": {}
+      "progress": {
+        "kill_mai_furuki": 2
+      }
     },
     {
       "questId": "trbeyond:boss_charybdis",
@@ -180,7 +184,9 @@
     },
     {
       "questId": "trbeyond:repeatable_skill_kirara_mizutani",
-      "progress": {}
+      "progress": {
+        "kill_kirara_mizutani": 2
+      }
     }
   ]
 }

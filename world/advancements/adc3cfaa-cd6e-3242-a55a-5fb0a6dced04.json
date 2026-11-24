@@ -5490,39 +5490,9 @@
     },
     "done": true
   },
-  "regions_unexplored:recipes/building_blocks/deepslate_viridescent_nylium": {
-    "criteria": {
-      "has_mushroom": "2026-11-24 16:57:44 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/netherite_ingot": {
-    "criteria": {
-      "has_netherite_scrap": "2026-11-24 16:52:53 +0700"
-    },
-    "done": true
-  },
-  "friendsandfoes:adventure/kill_iceologer": {
-    "criteria": {
-      "killed_iceologer": "2026-11-24 16:51:17 +0700"
-    },
-    "done": true
-  },
   "kaleidoscope_cookery:recipes/tools/oil_pot": {
     "criteria": {
       "has_bucket": "2026-11-24 16:50:43 +0700"
-    },
-    "done": true
-  },
-  "kaleidoscope_cookery:recipes/decorations/strung_mushrooms": {
-    "criteria": {
-      "has_brown_mushroom": "2026-11-24 16:57:44 +0700"
-    },
-    "done": true
-  },
-  "bosses_of_mass_destruction:recipes/brimstone_nectar": {
-    "criteria": {
-      "has_netherite_scrap": "2026-11-24 16:52:53 +0700"
     },
     "done": true
   },
@@ -5532,11 +5502,35 @@
     },
     "done": true
   },
+  "mowziesmobs:kill_frostmaw": {
+    "criteria": {
+      "frostmaw": "2026-11-24 16:50:45 +0700"
+    },
+    "done": true
+  },
+  "friendsandfoes:adventure/kill_iceologer": {
+    "criteria": {
+      "killed_iceologer": "2026-11-24 16:51:17 +0700"
+    },
+    "done": true
+  },
   "friendsandfoes:adventure/the_magicians": {
     "criteria": {
       "killed_iceologer": "2026-11-24 16:51:17 +0700"
     },
     "done": false
+  },
+  "minecraft:recipes/misc/netherite_ingot": {
+    "criteria": {
+      "has_netherite_scrap": "2026-11-24 16:52:53 +0700"
+    },
+    "done": true
+  },
+  "bosses_of_mass_destruction:recipes/brimstone_nectar": {
+    "criteria": {
+      "has_netherite_scrap": "2026-11-24 16:52:53 +0700"
+    },
+    "done": true
   },
   "netherexp:recipes/misc/rift_armor_trim_smithing_template": {
     "criteria": {
@@ -5544,9 +5538,135 @@
     },
     "done": true
   },
-  "mowziesmobs:kill_frostmaw": {
+  "regions_unexplored:recipes/building_blocks/deepslate_viridescent_nylium": {
     "criteria": {
-      "frostmaw": "2026-11-24 16:50:45 +0700"
+      "has_mushroom": "2026-11-24 16:57:44 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/strung_mushrooms": {
+    "criteria": {
+      "has_brown_mushroom": "2026-11-24 16:57:44 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/granite_slab_from_granite_stonecutting": {
+    "criteria": {
+      "has_granite": "2026-11-24 17:11:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/granite_wall_from_granite_stonecutting": {
+    "criteria": {
+      "has_granite": "2026-11-24 17:11:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/granite_slab": {
+    "criteria": {
+      "has_granite": "2026-11-24 17:11:49 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/granite_pillar_trim": {
+    "criteria": {
+      "has_granite_pillar_trim": "2026-11-24 17:11:49 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/granite_corner_trim": {
+    "criteria": {
+      "has_granite_corner_trim": "2026-11-24 17:11:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_granite_stairs_from_granite_stonecutting": {
+    "criteria": {
+      "has_granite": "2026-11-24 17:11:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_granite": {
+    "criteria": {
+      "has_granite": "2026-11-24 17:11:49 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/granite_warp_pad": {
+    "criteria": {
+      "has_granite": "2026-11-24 17:11:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_granite_from_granite_stonecutting": {
+    "criteria": {
+      "has_granite": "2026-11-24 17:11:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/granite_stairs": {
+    "criteria": {
+      "has_granite": "2026-11-24 17:11:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/granite_stairs_from_granite_stonecutting": {
+    "criteria": {
+      "has_granite": "2026-11-24 17:11:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/granite_wall": {
+    "criteria": {
+      "has_granite": "2026-11-24 17:11:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_granite_slab_from_granite_stonecutting": {
+    "criteria": {
+      "has_granite": "2026-11-24 17:11:49 +0700"
+    },
+    "done": true
+  },
+  "dungeons_arise:find_wishing_well": {
+    "criteria": {
+      "location0": "2026-11-24 17:17:05 +0700"
+    },
+    "done": true
+  },
+  "waystones:recipes/decorations/mossy_waystone_from_vines": {
+    "criteria": {
+      "has_waystone": "2026-11-24 17:19:27 +0700"
+    },
+    "done": true
+  },
+  "waystones:recipes/decorations/mossy_waystone_from_moss_blocks": {
+    "criteria": {
+      "has_waystone": "2026-11-24 17:19:27 +0700"
+    },
+    "done": true
+  },
+  "tensura:light_as_horned_rabbit": {
+    "criteria": {
+      "boots": "2026-11-24 17:20:39 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/diamond_hippogryph_armor": {
+    "criteria": {
+      "has_item": "2026-11-24 17:21:04 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/iron_hippogryph_armor": {
+    "criteria": {
+      "has_item": "2026-11-24 17:22:10 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/raw_gold": {
+    "criteria": {
+      "has_raw_gold_block": "2026-11-24 17:23:30 +0700"
     },
     "done": true
   },
