@@ -5365,12 +5365,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/high_magisteel_nugget_from_smelting_high_magisteel_boots": {
-    "criteria": {
-      "has_high_magisteel_boots": "2026-11-24 13:39:55 +0700"
-    },
-    "done": true
-  },
   "regions_unexplored:recipes/transportation/larch_chest_boat": {
     "criteria": {
       "has_boat": "2026-11-24 13:32:52 +0700"
@@ -5392,12 +5386,6 @@
   "minecraft:recipes/transportation/spruce_chest_boat": {
     "criteria": {
       "has_boat": "2026-11-24 13:32:52 +0700"
-    },
-    "done": true
-  },
-  "tensura:youre_a_wizard": {
-    "criteria": {
-      "tome": "2026-11-24 13:39:45 +0700"
     },
     "done": true
   },
@@ -5491,12 +5479,6 @@
     },
     "done": true
   },
-  "tensura:booked_on_magic": {
-    "criteria": {
-      "grimoires": "2026-11-24 13:43:20 +0700"
-    },
-    "done": true
-  },
   "twilightforest:recipes/transportation/sorting_chest_boat": {
     "criteria": {
       "has_boat": "2026-11-24 13:32:52 +0700"
@@ -5527,21 +5509,9 @@
     },
     "done": true
   },
-  "eternal_starlight:hammer_critical_hit": {
-    "criteria": {
-      "critical_hit": "2026-11-24 13:43:03 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/transportation/bamboo_chest_raft": {
     "criteria": {
       "has_boat": "2026-11-24 13:32:52 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/high_magisteel_nugget_from_blasting_high_magisteel_boots": {
-    "criteria": {
-      "has_high_magisteel_boots": "2026-11-24 13:39:55 +0700"
     },
     "done": true
   },
@@ -5662,6 +5632,324 @@
   "eternal_starlight:recipes/transportation/cradlewood_chest_boat": {
     "criteria": {
       "has_boat": "2026-11-24 13:32:52 +0700"
+    },
+    "done": true
+  },
+  "tensura:youre_a_wizard": {
+    "criteria": {
+      "tome": "2026-11-24 13:39:45 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/high_magisteel_nugget_from_smelting_high_magisteel_boots": {
+    "criteria": {
+      "has_high_magisteel_boots": "2026-11-24 13:39:55 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/high_magisteel_nugget_from_blasting_high_magisteel_boots": {
+    "criteria": {
+      "has_high_magisteel_boots": "2026-11-24 13:39:55 +0700"
+    },
+    "done": true
+  },
+  "eternal_starlight:hammer_critical_hit": {
+    "criteria": {
+      "critical_hit": "2026-11-24 13:43:03 +0700"
+    },
+    "done": true
+  },
+  "tensura:booked_on_magic": {
+    "criteria": {
+      "grimoires": "2026-11-24 13:43:20 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/brick_wall": {
+    "criteria": {
+      "has_bricks": "2026-11-24 14:00:12 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/cook_stool_birch": {
+    "criteria": {
+      "has_wood": "2026-11-24 13:58:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/birch_button": {
+    "criteria": {
+      "has_planks": "2026-11-24 13:58:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/ladder_from_birch_planks_woodcutting": {
+    "criteria": {
+      "has_birch_planks": "2026-11-24 13:58:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/birch_fence": {
+    "criteria": {
+      "has_planks": "2026-11-24 13:58:22 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/birch_shelf": {
+    "criteria": {
+      "has_birch_shelf": "2026-11-24 13:58:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/brick_stairs_from_bricks_stonecutting": {
+    "criteria": {
+      "has_bricks": "2026-11-24 14:00:12 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_slab_from_birch_planks_woodcutting": {
+    "criteria": {
+      "has_birch_planks": "2026-11-24 13:58:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/birch_sign": {
+    "criteria": {
+      "has_planks": "2026-11-24 13:58:22 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/birch_nightstand": {
+    "criteria": {
+      "has_birch_nightstand": "2026-11-24 13:58:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_slab": {
+    "criteria": {
+      "has_planks": "2026-11-24 13:58:22 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/chair_jungle": {
+    "criteria": {
+      "has_fence": "2026-11-24 13:57:40 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_button_from_birch_planks_woodcutting": {
+    "criteria": {
+      "has_birch_planks": "2026-11-24 13:58:22 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/jungle_tool_rack": {
+    "criteria": {
+      "has_jungle_fence": "2026-11-24 13:57:40 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/birch_cupboard": {
+    "criteria": {
+      "has_birch_cupboard": "2026-11-24 13:58:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/brick_slab": {
+    "criteria": {
+      "has_bricks": "2026-11-24 14:00:12 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/birch_counter": {
+    "criteria": {
+      "has_birch_counter": "2026-11-24 13:58:22 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/table_dark_oak": {
+    "criteria": {
+      "has_fence": "2026-11-24 13:56:40 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/birch_desk": {
+    "criteria": {
+      "has_birch_desk": "2026-11-24 13:58:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/brick_slab_from_bricks_stonecutting": {
+    "criteria": {
+      "has_bricks": "2026-11-24 14:00:12 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/brick_warp_pad": {
+    "criteria": {
+      "has_bricks": "2026-11-24 14:00:12 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/birch_fancy_bed": {
+    "criteria": {
+      "has_birch_fancy_bed": "2026-11-24 13:58:22 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/dark_oak_tool_rack": {
+    "criteria": {
+      "has_dark_oak_fence": "2026-11-24 13:56:40 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/birch_trapdoor": {
+    "criteria": {
+      "has_planks": "2026-11-24 13:58:22 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/birch_drawer": {
+    "criteria": {
+      "has_birch_drawer": "2026-11-24 13:58:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_stairs_from_birch_planks_woodcutting": {
+    "criteria": {
+      "has_birch_planks": "2026-11-24 13:58:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/brick_wall_from_bricks_stonecutting": {
+    "criteria": {
+      "has_bricks": "2026-11-24 14:00:12 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/chair_dark_oak": {
+    "criteria": {
+      "has_fence": "2026-11-24 13:56:40 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/brick_stairs": {
+    "criteria": {
+      "has_bricks": "2026-11-24 14:00:12 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/birch_door": {
+    "criteria": {
+      "has_planks": "2026-11-24 13:58:22 +0700"
+    },
+    "done": true
+  },
+  "constructionwand:recipes/tools/wood_wand": {
+    "criteria": {
+      "has_item": "2026-11-24 13:58:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/birch_fence_gate": {
+    "criteria": {
+      "has_planks": "2026-11-24 13:58:22 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/birch_table": {
+    "criteria": {
+      "has_birch_table": "2026-11-24 13:58:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_stairs": {
+    "criteria": {
+      "has_planks": "2026-11-24 13:58:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_fence_from_birch_planks_woodcutting": {
+    "criteria": {
+      "has_birch_planks": "2026-11-24 13:58:22 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/birch_side_table": {
+    "criteria": {
+      "has_birch_side_table": "2026-11-24 13:58:22 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/birch_corner_trim": {
+    "criteria": {
+      "has_birch_corner_trim": "2026-11-24 13:58:22 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/birch_couch": {
+    "criteria": {
+      "has_birch_couch": "2026-11-24 13:58:22 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/bricks_corner_trim": {
+    "criteria": {
+      "has_bricks_corner_trim": "2026-11-24 14:00:12 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bowl_from_birch_planks_woodcutting": {
+    "criteria": {
+      "has_birch_planks": "2026-11-24 13:58:22 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/table_jungle": {
+    "criteria": {
+      "has_fence": "2026-11-24 13:57:40 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/birch_pillar_trim": {
+    "criteria": {
+      "has_birch_pillar_trim": "2026-11-24 13:58:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stick_from_birch_planks_woodcutting": {
+    "criteria": {
+      "has_birch_planks": "2026-11-24 13:58:22 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/birch_dining_bench": {
+    "criteria": {
+      "has_birch_dining_bench": "2026-11-24 13:58:22 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/birch_chair": {
+    "criteria": {
+      "has_birch_chair": "2026-11-24 13:58:22 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/birch_bench": {
+    "criteria": {
+      "has_birch_bench": "2026-11-24 13:58:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/birch_pressure_plate": {
+    "criteria": {
+      "has_planks": "2026-11-24 13:58:22 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/bricks_pillar_trim": {
+    "criteria": {
+      "has_bricks_pillar_trim": "2026-11-24 14:00:12 +0700"
     },
     "done": true
   },
