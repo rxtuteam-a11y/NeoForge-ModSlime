@@ -6332,6 +6332,12 @@
     },
     "done": true
   },
+  "kaleidoscope_cookery:recipes/food/empty_cup": {
+    "criteria": {
+      "has_flower_pot": "2026-11-24 23:32:21 +0700"
+    },
+    "done": true
+  },
   "sophisticatedbackpacks:recipes/misc/filter_upgrade": {
     "criteria": {
       "has_upgrade_base": "2026-11-24 21:36:38 +0700"
@@ -6365,6 +6371,12 @@
   "sophisticatedbackpacks:recipes/misc/refill_upgrade": {
     "criteria": {
       "has_upgrade_base": "2026-11-24 21:36:38 +0700"
+    },
+    "done": true
+  },
+  "constructionwand:recipes/misc/core_destruction": {
+    "criteria": {
+      "has_item": "2026-11-24 23:30:38 +0700"
     },
     "done": true
   },
@@ -6431,6 +6443,12 @@
   "sophisticatedbackpacks:recipes/misc/everlasting_upgrade": {
     "criteria": {
       "has_upgrade_base": "2026-11-24 21:36:38 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/diamond": {
+    "criteria": {
+      "has_diamond_block": "2026-11-24 23:30:38 +0700"
     },
     "done": true
   },

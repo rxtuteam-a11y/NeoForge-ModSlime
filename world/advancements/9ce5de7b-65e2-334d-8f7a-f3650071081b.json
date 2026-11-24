@@ -8286,15 +8286,39 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/prismarine_bricks": {
+    "criteria": {
+      "has_prismarine_shard": "2026-11-24 23:31:34 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/pink_dye_from_cactus_flower": {
     "criteria": {
       "has_cactus_flower": "2026-11-24 23:27:29 +0700"
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/prismarine": {
+    "criteria": {
+      "has_prismarine_shard": "2026-11-24 23:31:34 +0700"
+    },
+    "done": true
+  },
+  "illagerinvasion:recipes/misc/platinum_sheet": {
+    "criteria": {
+      "has_platinum_chunk": "2026-11-24 23:32:10 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/green_dye": {
     "criteria": {
       "has_cactus": "2026-11-24 23:27:29 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_prismarine": {
+    "criteria": {
+      "has_prismarine_shard": "2026-11-24 23:31:34 +0700"
     },
     "done": true
   },
