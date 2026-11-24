@@ -4072,9 +4072,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/decorations/soul_lantern": {
+  "friendsandfoes:adventure/it_bites": {
     "criteria": {
-      "has_soul_torch": "2026-11-23 23:55:18 +0700"
+      "killed_mauler": "2026-11-23 23:50:05 +0700"
     },
     "done": true
   },
@@ -4090,21 +4090,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/food/cooked_porkchop": {
-    "criteria": {
-      "has_porkchop": "2026-11-23 23:55:10 +0700"
-    },
-    "done": true
-  },
   "tensura:recipes/tools/silver_pickaxe": {
     "criteria": {
       "has_diamond": "2026-11-23 23:51:43 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/food/cooked_porkchop_from_smoking": {
-    "criteria": {
-      "has_porkchop": "2026-11-23 23:55:10 +0700"
     },
     "done": true
   },
@@ -4126,12 +4114,6 @@
     },
     "done": true
   },
-  "kaleidoscope_cookery:recipes/food/raw_meatball": {
-    "criteria": {
-      "has_raw_meats": "2026-11-23 23:55:10 +0700"
-    },
-    "done": true
-  },
   "tensura:acquire_silverware": {
     "criteria": {
       "silver": "2026-11-23 23:51:43 +0700"
@@ -4150,12 +4132,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/mojang_banner_pattern": {
-    "criteria": {
-      "has_enchanted_golden_apple": "2026-11-23 23:55:20 +0700"
-    },
-    "done": true
-  },
   "tensura:recipes/tools/silver_shovel": {
     "criteria": {
       "has_diamond": "2026-11-23 23:51:43 +0700"
@@ -4165,30 +4141,6 @@
   "minecraft:recipes/misc/silver_nugget": {
     "criteria": {
       "has_silver_ingot": "2026-11-23 23:51:43 +0700"
-    },
-    "done": true
-  },
-  "twilightforest:recipes/drying/pork_jerky": {
-    "criteria": {
-      "has_meat": "2026-11-23 23:55:10 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/food/cooked_porkchop_from_campfire_cooking": {
-    "criteria": {
-      "has_porkchop": "2026-11-23 23:55:10 +0700"
-    },
-    "done": true
-  },
-  "friendsandfoes:adventure/it_bites": {
-    "criteria": {
-      "killed_mauler": "2026-11-23 23:50:05 +0700"
-    },
-    "done": true
-  },
-  "iceandfire:recipes/building_blocks/sapphire_gem_to_sapphire_block": {
-    "criteria": {
-      "has_sapphire_gem": "2026-11-23 23:51:48 +0700"
     },
     "done": true
   },
@@ -4207,6 +4159,54 @@
   "tensura:recipes/tools/silver_sickle": {
     "criteria": {
       "has_material_for_silver_sickle": "2026-11-23 23:51:43 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/building_blocks/sapphire_gem_to_sapphire_block": {
+    "criteria": {
+      "has_sapphire_gem": "2026-11-23 23:51:48 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_porkchop": {
+    "criteria": {
+      "has_porkchop": "2026-11-23 23:55:10 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_porkchop_from_smoking": {
+    "criteria": {
+      "has_porkchop": "2026-11-23 23:55:10 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/food/raw_meatball": {
+    "criteria": {
+      "has_raw_meats": "2026-11-23 23:55:10 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/drying/pork_jerky": {
+    "criteria": {
+      "has_meat": "2026-11-23 23:55:10 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_porkchop_from_campfire_cooking": {
+    "criteria": {
+      "has_porkchop": "2026-11-23 23:55:10 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/soul_lantern": {
+    "criteria": {
+      "has_soul_torch": "2026-11-23 23:55:18 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/mojang_banner_pattern": {
+    "criteria": {
+      "has_enchanted_golden_apple": "2026-11-23 23:55:20 +0700"
     },
     "done": true
   },
