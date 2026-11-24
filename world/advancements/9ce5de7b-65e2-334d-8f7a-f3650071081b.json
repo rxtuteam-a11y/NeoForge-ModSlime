@@ -6203,6 +6203,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/cooked_chicken_from_campfire_cooking": {
+    "criteria": {
+      "has_chicken": "2026-11-24 11:49:31 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/pure_magisteel_nugget_from_blasting_pure_magisteel_helmet": {
     "criteria": {
       "has_pure_magisteel_helmet": "2026-11-24 10:33:01 +0700"
@@ -6218,6 +6224,12 @@
   "minecraft:recipes/decorations/end_crystal": {
     "criteria": {
       "has_ender_eye": "2026-11-24 11:05:14 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/copper_nugget_from_blasting": {
+    "criteria": {
+      "has_copper_horse_armor": "2026-11-24 11:51:23 +0700"
     },
     "done": true
   },
@@ -6263,6 +6275,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/resin_block": {
+    "criteria": {
+      "has_resin_clump": "2026-11-24 11:50:34 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/copper_helmet": {
     "criteria": {
       "has_copper_ingot": "2026-11-24 11:33:13 +0700"
@@ -6290,6 +6308,12 @@
   "minecraft:recipes/tools/copper_shovel": {
     "criteria": {
       "has_copper_ingot": "2026-11-24 11:33:13 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_chicken_from_smoking": {
+    "criteria": {
+      "has_chicken": "2026-11-24 11:49:31 +0700"
     },
     "done": true
   },
@@ -6350,6 +6374,12 @@
   "minecraft:recipes/building_blocks/stripped_dark_oak_log_from_dark_oak_log_woodcutting": {
     "criteria": {
       "has_dark_oak_log": "2026-11-24 11:23:38 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/copper_nugget_from_smelting": {
+    "criteria": {
+      "has_copper_horse_armor": "2026-11-24 11:51:23 +0700"
     },
     "done": true
   },
@@ -6587,6 +6617,12 @@
     },
     "done": true
   },
+  "twilightforest:recipes/drying/chicken_jerky": {
+    "criteria": {
+      "has_meat": "2026-11-24 11:49:31 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/copper_block": {
     "criteria": {
       "has_copper_ingot": "2026-11-24 11:33:13 +0700"
@@ -6695,6 +6731,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/cooked_chicken": {
+    "criteria": {
+      "has_chicken": "2026-11-24 11:49:31 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/cracked_stone_bricks": {
     "criteria": {
       "has_stone_bricks": "2026-11-24 11:07:44 +0700"
@@ -6746,6 +6788,12 @@
   "minecraft:recipes/combat/copper_sword": {
     "criteria": {
       "has_copper_ingot": "2026-11-24 11:33:13 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/resin_brick": {
+    "criteria": {
+      "has_resin_clump": "2026-11-24 11:50:34 +0700"
     },
     "done": true
   },

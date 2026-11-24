@@ -1504,6 +1504,7 @@
     "criteria": {
       "apple": "2026-11-23 09:00:33 +0700",
       "bread": "2026-11-23 21:08:26 +0700",
+      "golden_apple": "2026-11-24 11:43:46 +0700",
       "cooked_chicken": "2026-11-23 21:16:22 +0700",
       "cookie": "2026-11-22 18:32:32 +0700",
       "potato": "2026-11-24 10:40:24 +0700",
@@ -4806,6 +4807,24 @@
   "yungscavebiomes:frosted_caves": {
     "criteria": {
       "frosted_caves": "2026-11-24 11:29:36 +0700"
+    },
+    "done": true
+  },
+  "eternal_starlight:all_starlight_biomes": {
+    "criteria": {
+      "in_starlight_permafrost_forest": "2026-11-24 11:46:25 +0700"
+    },
+    "done": false
+  },
+  "eternal_starlight:root": {
+    "criteria": {
+      "in_dim": "2026-11-24 11:46:25 +0700"
+    },
+    "done": true
+  },
+  "eternal_starlight:enter_starlight": {
+    "criteria": {
+      "in_dim": "2026-11-24 11:46:25 +0700"
     },
     "done": true
   },
