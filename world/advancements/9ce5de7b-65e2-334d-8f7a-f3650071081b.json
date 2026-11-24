@@ -6217,6 +6217,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/mossy_stone_bricks_from_vine": {
+    "criteria": {
+      "has_vine": "2026-11-24 12:17:08 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/pure_magisteel_nugget_from_blasting_pure_magisteel_helmet": {
     "criteria": {
       "has_pure_magisteel_helmet": "2026-11-24 10:33:01 +0700"
@@ -6292,6 +6298,18 @@
   "minecraft:recipes/building_blocks/polished_andesite_stairs_from_polished_andesite_stonecutting": {
     "criteria": {
       "has_polished_andesite": "2026-11-24 11:23:38 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mossy_cobblestone_from_vine": {
+    "criteria": {
+      "has_vine": "2026-11-24 12:17:08 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/yellow_wool_slab": {
+    "criteria": {
+      "has_yellow_wool": "2026-11-24 12:18:58 +0700"
     },
     "done": true
   },
@@ -6373,6 +6391,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/yellow_carpet": {
+    "criteria": {
+      "has_yellow_wool": "2026-11-24 12:18:58 +0700"
+    },
+    "done": true
+  },
   "iceandfire:recipes/building_blocks/sea_serpent_scales_purple_to_sea_serpent_scale_block_purple": {
     "criteria": {
       "has_sea_serpent_scales_purple": "2026-11-24 11:53:52 +0700"
@@ -6400,6 +6424,12 @@
   "minecraft:recipes/building_blocks/stripped_dark_oak_log_from_dark_oak_log_woodcutting": {
     "criteria": {
       "has_dark_oak_log": "2026-11-24 11:23:38 +0700"
+    },
+    "done": true
+  },
+  "minecraft:nether/obtain_crying_obsidian": {
+    "criteria": {
+      "crying_obsidian": "2026-11-24 12:17:39 +0700"
     },
     "done": true
   },
@@ -6451,6 +6481,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/yellow_bed": {
+    "criteria": {
+      "has_yellow_wool": "2026-11-24 12:18:58 +0700"
+    },
+    "done": true
+  },
   "ironchest:recipes/decorations/chests/vanilla_copper_chest": {
     "criteria": {
       "has_copper_ingot": "2026-11-24 11:33:13 +0700"
@@ -6466,6 +6502,12 @@
   "twilightforest:recipes/misc/copper_nuggets_to_ingot": {
     "criteria": {
       "has_item": "2026-11-24 11:33:13 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/yellow_wool_stairs": {
+    "criteria": {
+      "has_yellow_wool": "2026-11-24 12:18:58 +0700"
     },
     "done": true
   },
@@ -6499,6 +6541,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/respawn_anchor": {
+    "criteria": {
+      "has_obsidian": "2026-11-24 12:17:39 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/copper_door": {
     "criteria": {
       "has_copper_ingot": "2026-11-24 11:33:13 +0700"
@@ -6526,6 +6574,18 @@
   "minecraft:recipes/combat/copper_spear": {
     "criteria": {
       "has_copper_ingot": "2026-11-24 11:33:13 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/yellow_cushion": {
+    "criteria": {
+      "has_yellow_cushion": "2026-11-24 12:18:58 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/yellow_sheet": {
+    "criteria": {
+      "has_yellow_sheet": "2026-11-24 12:18:58 +0700"
     },
     "done": true
   },
@@ -6817,6 +6877,12 @@
     },
     "done": true
   },
+  "tensura:recipes/food/cooked_spear_toro_meat_from_campfire_cooking": {
+    "criteria": {
+      "has_raw_spear_toro_meat": "2026-11-24 12:18:59 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/copper_chain": {
     "criteria": {
       "has_copper_nugget": "2026-11-24 11:33:13 +0700"
@@ -6961,6 +7027,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/yellow_banner": {
+    "criteria": {
+      "has_yellow_wool": "2026-11-24 12:18:58 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/deepslate_brick_slab": {
     "criteria": {
       "has_deepslate_bricks": "2026-11-24 10:58:17 +0700"
@@ -6985,6 +7057,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/cooked_spear_toro_meat_from_smelting": {
+    "criteria": {
+      "has_raw_spear_toro_meat": "2026-11-24 12:18:59 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/bowl_from_dark_oak_log_woodcutting": {
     "criteria": {
       "has_dark_oak_log": "2026-11-24 11:23:38 +0700"
@@ -7000,6 +7078,12 @@
   "minecraft:recipes/building_blocks/deepslate_tile_slab_from_deepslate_bricks_stonecutting": {
     "criteria": {
       "has_deepslate_bricks": "2026-11-24 10:58:17 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/food/cooked_spear_toro_meat_from_smoking": {
+    "criteria": {
+      "has_raw_spear_toro_meat": "2026-11-24 12:18:59 +0700"
     },
     "done": true
   },
