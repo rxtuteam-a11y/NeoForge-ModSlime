@@ -8013,6 +8013,54 @@
     },
     "done": true
   },
+  "block_factorys_bosses:recipes/building_blocks/plank/sawmill/wet_oak_planks_variation": {
+    "criteria": {
+      "has_item": "2026-11-24 21:51:34 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_sissie_fin_from_smelting": {
+    "criteria": {
+      "has_sissie_fin": "2026-11-24 21:48:09 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/food/cooked_sissie_fin_from_smoking": {
+    "criteria": {
+      "has_sissie_fin": "2026-11-24 21:48:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_spruce_wood": {
+    "criteria": {
+      "has_log": "2026-11-24 21:52:20 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:recipes/building_blocks/plank/sawmill/wet_oak_planks_cracked": {
+    "criteria": {
+      "has_item": "2026-11-24 21:51:34 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_fence_from_stripped_spruce_log_woodcutting": {
+    "criteria": {
+      "has_stripped_spruce_log": "2026-11-24 21:52:20 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:recipes/building_blocks/plank/sawmill/oak_planks_broken": {
+    "criteria": {
+      "has_item": "2026-11-24 21:52:57 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/spruce_shelf": {
+    "criteria": {
+      "has_stripped_spruce_log": "2026-11-24 21:52:20 +0700"
+    },
+    "done": true
+  },
   "block_factorys_bosses:kill_boss_under_minute": {
     "criteria": {
       "kill_boss_under_minute_0": "2026-11-24 21:29:12 +0700"
@@ -8025,9 +8073,33 @@
     },
     "done": true
   },
+  "block_factorys_bosses:recipes/building_blocks/plank/wet_plank_block_broken": {
+    "criteria": {
+      "has_item": "2026-11-24 21:51:32 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:recipes/building_blocks/plank/sawmill/oak_planks_variation": {
+    "criteria": {
+      "has_item": "2026-11-24 21:52:57 +0700"
+    },
+    "done": true
+  },
   "block_factorys_bosses:no_hit_yeti": {
     "criteria": {
       "no_hit_yeti_0": "2026-11-24 21:29:12 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:recipes/building_blocks/plank/sawmill/wet_oak_planks_straight": {
+    "criteria": {
+      "has_item": "2026-11-24 21:51:34 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:recipes/building_blocks/plank/wet_plank_block": {
+    "criteria": {
+      "has_item": "2026-11-24 21:52:57 +0700"
     },
     "done": true
   },
@@ -8043,9 +8115,27 @@
     },
     "done": true
   },
+  "block_factorys_bosses:recipes/building_blocks/plank/sawmill/wet_oak_planks_broken": {
+    "criteria": {
+      "has_item": "2026-11-24 21:51:34 +0700"
+    },
+    "done": true
+  },
   "iceandfire:recipes/building_blocks/sea_serpent_scales_green_to_sea_serpent_scale_block_green": {
     "criteria": {
       "has_sea_serpent_scales_green": "2026-11-24 21:17:09 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:recipes/building_blocks/plank/plank_block": {
+    "criteria": {
+      "has_item": "2026-11-24 21:52:38 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/spruce_hanging_sign": {
+    "criteria": {
+      "has_stripped_logs": "2026-11-24 21:52:20 +0700"
     },
     "done": true
   },
@@ -8055,15 +8145,119 @@
     },
     "done": true
   },
+  "tensura:recipes/food/cooked_sissie_meat_from_smoking": {
+    "criteria": {
+      "has_raw_sissie_meat": "2026-11-24 21:48:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_button_from_stripped_spruce_log_woodcutting": {
+    "criteria": {
+      "has_stripped_spruce_log": "2026-11-24 21:52:20 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:recipes/building_blocks/plank/wet_plank_block_cracked": {
+    "criteria": {
+      "has_item": "2026-11-24 21:51:32 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/food/cooked_sissie_fin_from_campfire_cooking": {
+    "criteria": {
+      "has_sissie_fin": "2026-11-24 21:48:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_slab_from_stripped_spruce_log_woodcutting": {
+    "criteria": {
+      "has_stripped_spruce_log": "2026-11-24 21:52:20 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:no_hit_sandworm": {
+    "criteria": {
+      "no_hit_sandworm_0": "2026-11-24 21:56:52 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:kill_sandworm": {
+    "criteria": {
+      "kill": "2026-11-24 21:56:52 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/ladder_from_stripped_spruce_log_woodcutting": {
+    "criteria": {
+      "has_stripped_spruce_log": "2026-11-24 21:52:20 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/food/cooked_sissie_meat_from_campfire_cooking": {
+    "criteria": {
+      "has_raw_sissie_meat": "2026-11-24 21:48:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_planks_from_stripped_spruce_log_woodcutting": {
+    "criteria": {
+      "has_stripped_spruce_log": "2026-11-24 21:52:20 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:recipes/building_blocks/plank/sawmill/oak_planks_cracked": {
+    "criteria": {
+      "has_item": "2026-11-24 21:52:57 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:recipes/building_blocks/plank/sawmill/oak_planks_straight": {
+    "criteria": {
+      "has_item": "2026-11-24 21:52:57 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:kill_kraken": {
+    "criteria": {
+      "kill": "2026-11-24 21:53:45 +0700"
+    },
+    "done": true
+  },
   "block_factorys_bosses:kill_all_bosses": {
     "criteria": {
+      "kill_worm": "2026-11-24 21:56:52 +0700",
+      "kill_kraken": "2026-11-24 21:53:45 +0700",
       "kill_yeti": "2026-11-24 21:29:12 +0700"
     },
     "done": false
   },
+  "minecraft:recipes/building_blocks/spruce_stairs_from_stripped_spruce_log_woodcutting": {
+    "criteria": {
+      "has_stripped_spruce_log": "2026-11-24 21:52:20 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_sissie_meat_from_smelting": {
+    "criteria": {
+      "has_raw_sissie_meat": "2026-11-24 21:48:09 +0700"
+    },
+    "done": true
+  },
   "iceandfire:recipes/combat/tide_green_helmet": {
     "criteria": {
       "has_item": "2026-11-24 21:17:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stick_from_stripped_spruce_log_woodcutting": {
+    "criteria": {
+      "has_stripped_spruce_log": "2026-11-24 21:52:20 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bowl_from_stripped_spruce_log_woodcutting": {
+    "criteria": {
+      "has_stripped_spruce_log": "2026-11-24 21:52:20 +0700"
     },
     "done": true
   },
