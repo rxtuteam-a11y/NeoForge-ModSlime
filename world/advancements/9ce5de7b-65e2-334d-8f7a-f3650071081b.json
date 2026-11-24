@@ -6179,9 +6179,33 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/pure_magisteel_nugget_from_smelting_pure_magisteel_chestplate": {
+    "criteria": {
+      "has_pure_magisteel_chestplate": "2026-11-24 10:32:45 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/pure_magisteel_nugget_from_blasting_pure_magisteel_helmet": {
+    "criteria": {
+      "has_pure_magisteel_helmet": "2026-11-24 10:33:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/red_dye_from_poppy": {
+    "criteria": {
+      "has_poppy": "2026-11-24 10:33:49 +0700"
+    },
+    "done": true
+  },
   "tensura:low_magisteel": {
     "criteria": {
       "low_magisteel": "2026-11-24 10:25:07 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/low_magisteel_nugget_from_smelting_low_magisteel_boots": {
+    "criteria": {
+      "has_low_magisteel_boots": "2026-11-24 10:33:05 +0700"
     },
     "done": true
   },
@@ -6194,6 +6218,12 @@
   "waystones:recipes/decorations/return_scroll": {
     "criteria": {
       "has_paper": "2026-11-24 10:26:55 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/pure_magisteel_nugget_from_blasting_pure_magisteel_leggings": {
+    "criteria": {
+      "has_pure_magisteel_leggings": "2026-11-24 10:32:48 +0700"
     },
     "done": true
   },
@@ -6227,6 +6257,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/low_magisteel_nugget_from_blasting_low_magisteel_boots": {
+    "criteria": {
+      "has_low_magisteel_boots": "2026-11-24 10:33:05 +0700"
+    },
+    "done": true
+  },
   "cataclysm:root": {
     "criteria": {
       "crafting_table": "2026-11-24 10:26:52 +0700"
@@ -6239,9 +6275,27 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/pure_magisteel_nugget_from_smelting_pure_magisteel_helmet": {
+    "criteria": {
+      "has_pure_magisteel_helmet": "2026-11-24 10:33:01 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/cartography_table": {
     "criteria": {
       "has_paper": "2026-11-24 10:26:55 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/pure_magisteel_nugget_from_blasting_pure_magisteel_chestplate": {
+    "criteria": {
+      "has_pure_magisteel_chestplate": "2026-11-24 10:32:45 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/pure_magisteel_nugget_from_smelting_pure_magisteel_leggings": {
+    "criteria": {
+      "has_pure_magisteel_leggings": "2026-11-24 10:32:48 +0700"
     },
     "done": true
   },
