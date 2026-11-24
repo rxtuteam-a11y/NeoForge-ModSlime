@@ -759,6 +759,7 @@
   },
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
+      "minecraft:pillager": "2026-11-24 18:40:02 +0700",
       "minecraft:skeleton": "2026-11-23 22:00:00 +0700",
       "minecraft:phantom": "2026-11-23 22:41:15 +0700",
       "minecraft:wither_skeleton": "2026-11-23 22:17:00 +0700",
@@ -5947,21 +5948,135 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/resin_block": {
-    "criteria": {
-      "has_resin_clump": "2026-11-24 18:31:19 +0700"
-    },
-    "done": true
-  },
   "sophisticatedbackpacks:recipes/misc/iron_backpack_from_copper": {
     "criteria": {
       "has_copper_backpack": "2026-11-24 18:30:42 +0700"
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/resin_block": {
+    "criteria": {
+      "has_resin_clump": "2026-11-24 18:31:19 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/resin_brick": {
     "criteria": {
       "has_resin_clump": "2026-11-24 18:31:19 +0700"
+    },
+    "done": true
+  },
+  "lootr:emergency_escape_hatch": {
+    "criteria": {
+      "trapdoor_triggered": "2026-11-24 18:33:13 +0700"
+    },
+    "done": true
+  },
+  "friendsandfoes:recipes/decorations/dark_oak_beehive": {
+    "criteria": {
+      "has_honeycomb": "2026-11-24 18:38:01 +0700"
+    },
+    "done": true
+  },
+  "friendsandfoes:recipes/decorations/jungle_beehive": {
+    "criteria": {
+      "has_honeycomb": "2026-11-24 18:38:01 +0700"
+    },
+    "done": true
+  },
+  "friendsandfoes:recipes/decorations/cherry_beehive": {
+    "criteria": {
+      "has_honeycomb": "2026-11-24 18:38:01 +0700"
+    },
+    "done": true
+  },
+  "friendsandfoes:recipes/decorations/birch_beehive": {
+    "criteria": {
+      "has_honeycomb": "2026-11-24 18:38:01 +0700"
+    },
+    "done": true
+  },
+  "friendsandfoes:recipes/decorations/mangrove_beehive": {
+    "criteria": {
+      "has_honeycomb": "2026-11-24 18:38:01 +0700"
+    },
+    "done": true
+  },
+  "friendsandfoes:recipes/decorations/warped_beehive": {
+    "criteria": {
+      "has_honeycomb": "2026-11-24 18:38:01 +0700"
+    },
+    "done": true
+  },
+  "friendsandfoes:recipes/decorations/bamboo_beehive": {
+    "criteria": {
+      "has_honeycomb": "2026-11-24 18:38:01 +0700"
+    },
+    "done": true
+  },
+  "friendsandfoes:recipes/decorations/crimson_beehive": {
+    "criteria": {
+      "has_honeycomb": "2026-11-24 18:38:01 +0700"
+    },
+    "done": true
+  },
+  "friendsandfoes:recipes/decorations/spruce_beehive": {
+    "criteria": {
+      "has_honeycomb": "2026-11-24 18:38:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/beehive": {
+    "criteria": {
+      "has_honeycomb": "2026-11-24 18:38:01 +0700"
+    },
+    "done": true
+  },
+  "friendsandfoes:recipes/decorations/acacia_beehive": {
+    "criteria": {
+      "has_honeycomb": "2026-11-24 18:38:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/honeycomb_block": {
+    "criteria": {
+      "has_honeycomb": "2026-11-24 18:38:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/totem_of_undying": {
+    "criteria": {
+      "used_totem": "2026-11-24 18:38:19 +0700"
+    },
+    "done": true
+  },
+  "waystones:recipes/decorations/warp_scroll": {
+    "criteria": {
+      "has_ender_pearl": "2026-11-24 18:41:17 +0700"
+    },
+    "done": true
+  },
+  "sophisticatedcore:recipes/misc/ender_linker": {
+    "criteria": {
+      "has_ender_pearl": "2026-11-24 18:41:17 +0700"
+    },
+    "done": true
+  },
+  "waystones:recipes/decorations/warp_dust": {
+    "criteria": {
+      "has_ender_pearl": "2026-11-24 18:41:17 +0700"
+    },
+    "done": true
+  },
+  "waystones:recipes/decorations/portal_scroll": {
+    "criteria": {
+      "has_ender_pearl": "2026-11-24 18:41:17 +0700"
+    },
+    "done": true
+  },
+  "waystones:recipes/decorations/warp_stone": {
+    "criteria": {
+      "has_ender_pearl": "2026-11-24 18:41:17 +0700"
     },
     "done": true
   },
