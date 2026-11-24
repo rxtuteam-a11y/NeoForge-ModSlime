@@ -5281,6 +5281,42 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/blade_tiger_steak_from_smelting": {
+    "criteria": {
+      "has_raw_blade_tiger_meat": "2026-11-24 02:52:19 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/food/blade_tiger_steak_from_campfire_cooking": {
+    "criteria": {
+      "has_raw_blade_tiger_meat": "2026-11-24 02:52:19 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/food/blade_tiger_steak_from_smoking": {
+    "criteria": {
+      "has_raw_blade_tiger_meat": "2026-11-24 02:52:19 +0700"
+    },
+    "done": true
+  },
+  "tensura:monstrous_diet": {
+    "criteria": {
+      "raw_blade_tiger_meat": "2026-11-24 02:52:26 +0700"
+    },
+    "done": false
+  },
+  "minecraft:recipes/decorations/smoker": {
+    "criteria": {
+      "has_furnace": "2026-11-24 02:58:30 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/map": {
+    "criteria": {
+      "has_compass": "2026-11-24 02:59:41 +0700"
+    },
+    "done": true
+  },
   "iceandfire:recipes/building_blocks/dragonforge_ice_brick": {
     "criteria": {
       "has_item": "2026-11-24 03:00:01 +0700"
@@ -5299,33 +5335,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/food/blade_tiger_steak_from_smelting": {
-    "criteria": {
-      "has_raw_blade_tiger_meat": "2026-11-24 02:52:19 +0700"
-    },
-    "done": true
-  },
   "iceandfire:recipes/building_blocks/dragonforge_lightning_brick": {
     "criteria": {
       "has_item": "2026-11-24 03:00:01 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/food/blade_tiger_steak_from_campfire_cooking": {
-    "criteria": {
-      "has_raw_blade_tiger_meat": "2026-11-24 02:52:19 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/smoker": {
-    "criteria": {
-      "has_furnace": "2026-11-24 02:58:30 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/food/blade_tiger_steak_from_smoking": {
-    "criteria": {
-      "has_raw_blade_tiger_meat": "2026-11-24 02:52:19 +0700"
     },
     "done": true
   },
@@ -5341,39 +5353,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/map": {
-    "criteria": {
-      "has_compass": "2026-11-24 02:59:41 +0700"
-    },
-    "done": true
-  },
-  "tensura:monstrous_diet": {
-    "criteria": {
-      "raw_blade_tiger_meat": "2026-11-24 02:52:26 +0700"
-    },
-    "done": false
-  },
-  "minecraft:recipes/misc/diamond_from_smelting_deepslate_diamond_ore": {
-    "criteria": {
-      "has_deepslate_diamond_ore": "2026-11-24 03:28:18 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/stone_brick_slab": {
     "criteria": {
       "has_stone_bricks": "2026-11-24 03:00:01 +0700"
-    },
-    "done": true
-  },
-  "explorerscompass:repair_explorers_compass": {
-    "criteria": {
-      "has_explorers_compass": "2026-11-24 03:02:09 +0700"
-    },
-    "done": true
-  },
-  "enhanced_ore_variety:recipes/misc/diamond_from_blasting": {
-    "criteria": {
-      "TagKey[minecraft:item / minecraft:diamond_ores]": "2026-11-24 03:28:18 +0700"
     },
     "done": true
   },
@@ -5404,6 +5386,24 @@
   "minecraft:recipes/decorations/stone_brick_wall_from_stone_bricks_stonecutting": {
     "criteria": {
       "has_stone_bricks": "2026-11-24 03:00:01 +0700"
+    },
+    "done": true
+  },
+  "explorerscompass:repair_explorers_compass": {
+    "criteria": {
+      "has_explorers_compass": "2026-11-24 03:02:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/diamond_from_smelting_deepslate_diamond_ore": {
+    "criteria": {
+      "has_deepslate_diamond_ore": "2026-11-24 03:28:18 +0700"
+    },
+    "done": true
+  },
+  "enhanced_ore_variety:recipes/misc/diamond_from_blasting": {
+    "criteria": {
+      "TagKey[minecraft:item / minecraft:diamond_ores]": "2026-11-24 03:28:18 +0700"
     },
     "done": true
   },
