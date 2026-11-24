@@ -45,12 +45,15 @@
     "criteria": {
       "wisteria_grove": "2026-11-24 02:33:03 +0700",
       "willow_forest": "2026-11-23 21:05:14 +0700",
+      "silver_birch_forest": "2026-11-24 18:48:25 +0700",
       "cold_river": "2026-11-24 00:48:57 +0700",
       "shrubland": "2026-11-23 21:38:23 +0700",
+      "pine_slopes": "2026-11-24 18:48:40 +0700",
       "poppy_fields": "2026-11-24 17:45:53 +0700",
       "grassy_beach": "2026-11-23 21:06:25 +0700",
       "spires": "2026-11-22 18:37:19 +0700",
       "tundra": "2026-11-24 16:51:04 +0700",
+      "pine_taiga": "2026-11-24 18:48:39 +0700",
       "flower_fields": "2026-11-23 22:45:08 +0700",
       "gravel_beach": "2026-11-24 00:48:11 +0700",
       "highland_fields": "2026-11-23 22:33:58 +0700",
@@ -71,12 +74,15 @@
     "criteria": {
       "wisteria_grove": "2026-11-24 02:33:03 +0700",
       "willow_forest": "2026-11-23 21:05:14 +0700",
+      "silver_birch_forest": "2026-11-24 18:48:25 +0700",
       "cold_river": "2026-11-24 00:48:57 +0700",
       "shrubland": "2026-11-23 21:38:23 +0700",
+      "pine_slopes": "2026-11-24 18:48:40 +0700",
       "poppy_fields": "2026-11-24 17:45:53 +0700",
       "grassy_beach": "2026-11-23 21:06:25 +0700",
       "spires": "2026-11-22 18:37:19 +0700",
       "tundra": "2026-11-24 16:51:04 +0700",
+      "pine_taiga": "2026-11-24 18:48:39 +0700",
       "flower_fields": "2026-11-23 22:45:08 +0700",
       "gravel_beach": "2026-11-24 00:48:11 +0700",
       "highland_fields": "2026-11-23 22:33:58 +0700",
@@ -6077,6 +6083,18 @@
   "waystones:recipes/decorations/warp_stone": {
     "criteria": {
       "has_ender_pearl": "2026-11-24 18:41:17 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/misc/ash_to_charcoal": {
+    "criteria": {
+      "has_item": "2026-11-24 18:42:59 +0700"
+    },
+    "done": true
+  },
+  "naturesaura:positive_imbalance": {
+    "criteria": {
+      "triggered_in_code": "2026-11-24 18:47:26 +0700"
     },
     "done": true
   },
