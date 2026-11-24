@@ -4260,7 +4260,8 @@
   },
   "minecraft:husbandry/balanced_diet": {
     "criteria": {
-      "spider_eye": "2026-11-23 23:11:23 +0700"
+      "spider_eye": "2026-11-23 23:11:23 +0700",
+      "bread": "2026-11-24 14:51:15 +0700"
     },
     "done": false
   },
@@ -7365,6 +7366,12 @@
       "has_bricks_pillar_trim": "2026-11-24 14:01:06 +0700"
     },
     "done": true
+  },
+  "tensura:monstrous_diet": {
+    "criteria": {
+      "chilled_slime": "2026-11-24 14:49:04 +0700"
+    },
+    "done": false
   },
   "DataVersion": 3955
 }
