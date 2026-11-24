@@ -330,6 +330,7 @@
       "minecraft:forest": "2026-11-23 13:09:11 +0700",
       "minecraft:taiga": "2026-11-24 10:50:38 +0700",
       "minecraft:deep_ocean": "2026-11-24 16:42:29 +0700",
+      "minecraft:deep_cold_ocean": "2026-11-24 21:26:49 +0700",
       "minecraft:ice_spikes": "2026-11-23 19:25:31 +0700",
       "minecraft:frozen_ocean": "2026-11-23 13:31:09 +0700",
       "minecraft:eroded_badlands": "2026-11-24 12:05:10 +0700",
@@ -8012,6 +8013,24 @@
     },
     "done": true
   },
+  "block_factorys_bosses:kill_boss_under_minute": {
+    "criteria": {
+      "kill_boss_under_minute_0": "2026-11-24 21:29:12 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:kill_yeti": {
+    "criteria": {
+      "kill": "2026-11-24 21:29:12 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:no_hit_yeti": {
+    "criteria": {
+      "no_hit_yeti_0": "2026-11-24 21:29:12 +0700"
+    },
+    "done": true
+  },
   "iceandfire:recipes/combat/tide_green_boots": {
     "criteria": {
       "has_item": "2026-11-24 21:17:09 +0700"
@@ -8035,6 +8054,12 @@
       "has_item": "2026-11-24 21:17:09 +0700"
     },
     "done": true
+  },
+  "block_factorys_bosses:kill_all_bosses": {
+    "criteria": {
+      "kill_yeti": "2026-11-24 21:29:12 +0700"
+    },
+    "done": false
   },
   "iceandfire:recipes/combat/tide_green_helmet": {
     "criteria": {
