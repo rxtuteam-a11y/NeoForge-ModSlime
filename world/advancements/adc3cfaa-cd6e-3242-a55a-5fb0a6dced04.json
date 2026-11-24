@@ -6645,6 +6645,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/silver_ingot_from_blasting_raw_silver": {
+    "criteria": {
+      "has_raw_silver": "2026-11-25 00:36:32 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/redstone/larch_button": {
     "criteria": {
       "has_larch_planks": "2026-11-24 23:59:23 +0700"
@@ -6666,6 +6672,12 @@
   "regions_unexplored:recipes/redstone/wisteria_fence_gate": {
     "criteria": {
       "has_wisteria_planks": "2026-11-25 00:22:30 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/raw_silver_blockfrom_raw_silver": {
+    "criteria": {
+      "has_raw_silver": "2026-11-25 00:36:32 +0700"
     },
     "done": true
   },
@@ -6723,9 +6735,27 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/silver_ingot_from_smelting_raw_silver": {
+    "criteria": {
+      "has_raw_silver": "2026-11-25 00:36:32 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/decorations/wisteria_sign": {
     "criteria": {
       "has_wisteria_planks": "2026-11-25 00:22:30 +0700"
+    },
+    "done": true
+  },
+  "minecraft:story/enchant_item": {
+    "criteria": {
+      "enchanted_item": "2026-11-25 00:34:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/trade": {
+    "criteria": {
+      "traded": "2026-11-25 00:32:12 +0700"
     },
     "done": true
   },
