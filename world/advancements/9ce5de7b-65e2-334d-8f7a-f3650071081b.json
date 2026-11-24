@@ -7920,12 +7920,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/decorations/orange_glazed_terracotta": {
-    "criteria": {
-      "has_orange_terracotta": "2026-11-24 20:26:52 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/red_terracotta": {
     "criteria": {
       "has_terracotta": "2026-11-24 20:11:48 +0700"
@@ -8007,6 +8001,12 @@
   "handcrafted:recipes/misc/terracotta_thick_pot": {
     "criteria": {
       "has_terracotta_thick_pot": "2026-11-24 20:11:48 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/orange_glazed_terracotta": {
+    "criteria": {
+      "has_orange_terracotta": "2026-11-24 20:26:52 +0700"
     },
     "done": true
   },
