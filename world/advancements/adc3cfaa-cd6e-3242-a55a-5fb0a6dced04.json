@@ -47,6 +47,7 @@
       "willow_forest": "2026-11-23 21:05:14 +0700",
       "cold_river": "2026-11-24 00:48:57 +0700",
       "shrubland": "2026-11-23 21:38:23 +0700",
+      "poppy_fields": "2026-11-24 17:45:53 +0700",
       "grassy_beach": "2026-11-23 21:06:25 +0700",
       "spires": "2026-11-22 18:37:19 +0700",
       "tundra": "2026-11-24 16:51:04 +0700",
@@ -69,6 +70,7 @@
       "willow_forest": "2026-11-23 21:05:14 +0700",
       "cold_river": "2026-11-24 00:48:57 +0700",
       "shrubland": "2026-11-23 21:38:23 +0700",
+      "poppy_fields": "2026-11-24 17:45:53 +0700",
       "grassy_beach": "2026-11-23 21:06:25 +0700",
       "spires": "2026-11-22 18:37:19 +0700",
       "tundra": "2026-11-24 16:51:04 +0700",
@@ -701,15 +703,18 @@
     "criteria": {
       "minecraft:cold_ocean": "2026-11-23 21:05:37 +0700",
       "minecraft:flower_forest": "2026-11-24 02:19:24 +0700",
+      "minecraft:snowy_slopes": "2026-11-24 17:55:40 +0700",
       "minecraft:beach": "2026-11-24 00:48:48 +0700",
       "minecraft:forest": "2026-11-22 18:33:25 +0700",
       "minecraft:river": "2026-11-23 21:06:32 +0700",
       "minecraft:snowy_plains": "2026-11-22 18:30:22 +0700",
+      "minecraft:stony_shore": "2026-11-24 17:55:06 +0700",
       "minecraft:snowy_taiga": "2026-11-22 18:29:26 +0700",
       "minecraft:dripstone_caves": "2026-11-24 16:47:38 +0700",
       "minecraft:ice_spikes": "2026-11-22 19:05:21 +0700",
       "minecraft:frozen_ocean": "2026-11-22 18:17:02 +0700",
       "minecraft:frozen_river": "2026-11-22 18:33:06 +0700",
+      "minecraft:deep_frozen_ocean": "2026-11-24 17:51:27 +0700",
       "minecraft:sunflower_plains": "2026-11-24 02:19:31 +0700",
       "minecraft:swamp": "2026-11-22 18:34:22 +0700",
       "minecraft:windswept_gravelly_hills": "2026-11-23 21:21:28 +0700",
@@ -5667,6 +5672,66 @@
   "minecraft:recipes/misc/raw_gold": {
     "criteria": {
       "has_raw_gold_block": "2026-11-24 17:23:30 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/dispenser": {
+    "criteria": {
+      "has_bow": "2026-11-24 17:34:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:nether/get_wither_skull": {
+    "criteria": {
+      "wither_skull": "2026-11-24 17:35:40 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/skull_banner_pattern": {
+    "criteria": {
+      "has_wither_skeleton_skull": "2026-11-24 17:35:40 +0700"
+    },
+    "done": true
+  },
+  "waystones:recipes/tools/twinbound_feather": {
+    "criteria": {
+      "has_feather": "2026-11-24 17:57:05 +0700"
+    },
+    "done": true
+  },
+  "royalvariations:explosive_king": {
+    "criteria": {
+      "royal_creeper": "2026-11-24 17:44:31 +0700"
+    },
+    "done": true
+  },
+  "eternal_starlight:obtain_orb_of_prophecy": {
+    "criteria": {
+      "has_item": "2026-11-24 17:49:59 +0700"
+    },
+    "done": true
+  },
+  "eternal_starlight:challenge_gatekeeper": {
+    "criteria": {
+      "challenged": "2026-11-24 17:49:52 +0700"
+    },
+    "done": true
+  },
+  "royalvariations:royal_variations": {
+    "criteria": {
+      "royal_creeper": "2026-11-24 17:44:31 +0700"
+    },
+    "done": true
+  },
+  "eternal_starlight:obtain_seeking_eye": {
+    "criteria": {
+      "has_item": "2026-11-24 17:50:00 +0700"
+    },
+    "done": true
+  },
+  "constructionwand:recipes/misc/core_angel": {
+    "criteria": {
+      "has_item": "2026-11-24 17:57:05 +0700"
     },
     "done": true
   },
