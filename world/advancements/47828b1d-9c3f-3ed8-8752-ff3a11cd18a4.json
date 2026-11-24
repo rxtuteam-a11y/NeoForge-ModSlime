@@ -5305,5 +5305,59 @@
     },
     "done": false
   },
+  "regions_unexplored:recipes/decorations/golden_larch_shrub": {
+    "criteria": {
+      "has_golden_larch_sapling": "2026-11-24 13:17:08 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/black_sheet": {
+    "criteria": {
+      "has_black_sheet": "2026-11-24 13:17:26 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/black_wool_stairs": {
+    "criteria": {
+      "has_black_wool": "2026-11-24 13:17:26 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/black_cushion": {
+    "criteria": {
+      "has_black_cushion": "2026-11-24 13:17:26 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/black_wool_slab": {
+    "criteria": {
+      "has_black_wool": "2026-11-24 13:17:26 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/black_carpet": {
+    "criteria": {
+      "has_black_wool": "2026-11-24 13:17:26 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/black_bed": {
+    "criteria": {
+      "has_black_wool": "2026-11-24 13:17:26 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/painting": {
+    "criteria": {
+      "has_wool": "2026-11-24 13:17:26 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/black_banner": {
+    "criteria": {
+      "has_black_wool": "2026-11-24 13:17:26 +0700"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }
