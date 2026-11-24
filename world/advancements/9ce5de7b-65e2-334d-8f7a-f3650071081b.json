@@ -7589,6 +7589,7 @@
   },
   "cataclysm:kill_all_bosses": {
     "criteria": {
+      "cataclysm:maledictus": "2026-11-24 18:59:58 +0700",
       "cataclysm:scylla": "2026-11-24 16:27:02 +0700"
     },
     "done": false
@@ -7677,6 +7678,12 @@
     },
     "done": true
   },
+  "cataclysm:find_frosted_prison": {
+    "criteria": {
+      "prison": "2026-11-24 18:54:17 +0700"
+    },
+    "done": true
+  },
   "tensura:conqueror_of_flames": {
     "criteria": {
       "ifrit": "2026-11-24 17:21:43 +0700"
@@ -7707,6 +7714,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/smooth_stone_slab": {
+    "criteria": {
+      "has_smooth_stone": "2026-11-24 19:00:18 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/quartz_bricks_from_quartz_block_stonecutting": {
     "criteria": {
       "has_quartz_block": "2026-11-24 17:20:52 +0700"
@@ -7716,6 +7729,18 @@
   "minecraft:recipes/building_blocks/white_concrete_stairs_from_white_concrete_stonecutting": {
     "criteria": {
       "has_white_concrete": "2026-11-24 17:20:57 +0700"
+    },
+    "done": true
+  },
+  "cataclysm:kill_maledictus": {
+    "criteria": {
+      "ignis": "2026-11-24 18:59:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/blast_furnace": {
+    "criteria": {
+      "has_smooth_stone": "2026-11-24 19:00:18 +0700"
     },
     "done": true
   },
@@ -7734,6 +7759,18 @@
   "tensura:hihiirokane": {
     "criteria": {
       "items": "2026-11-24 17:29:06 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/millstone": {
+    "criteria": {
+      "has_smooth_stone": "2026-11-24 19:00:18 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/misc/chain": {
+    "criteria": {
+      "has_item": "2026-11-24 19:01:31 +0700"
     },
     "done": true
   },
@@ -7776,6 +7813,12 @@
   "minecraft:recipes/building_blocks/quartz_stairs_from_quartz_block_stonecutting": {
     "criteria": {
       "has_quartz_block": "2026-11-24 17:20:52 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/smooth_stone_slab_from_smooth_stone_stonecutting": {
+    "criteria": {
+      "has_smooth_stone": "2026-11-24 19:00:18 +0700"
     },
     "done": true
   },

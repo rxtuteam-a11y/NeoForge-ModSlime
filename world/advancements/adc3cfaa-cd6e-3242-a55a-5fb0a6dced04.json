@@ -5548,9 +5548,10 @@
   "friendsandfoes:adventure/the_magicians": {
     "criteria": {
       "killed_evoker": "2026-11-24 18:30:41 +0700",
+      "killed_illusioner": "2026-11-24 18:54:27 +0700",
       "killed_iceologer": "2026-11-24 16:51:17 +0700"
     },
-    "done": false
+    "done": true
   },
   "minecraft:recipes/misc/netherite_ingot": {
     "criteria": {
@@ -6095,6 +6096,36 @@
   "naturesaura:positive_imbalance": {
     "criteria": {
       "triggered_in_code": "2026-11-24 18:47:26 +0700"
+    },
+    "done": true
+  },
+  "friendsandfoes:adventure/kill_illusioner": {
+    "criteria": {
+      "killed_illusioner": "2026-11-24 18:54:27 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/table_birch": {
+    "criteria": {
+      "has_fence": "2026-11-24 18:56:53 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/chair_birch": {
+    "criteria": {
+      "has_fence": "2026-11-24 18:56:53 +0700"
+    },
+    "done": true
+  },
+  "mowziesmobs:kill_bluff": {
+    "criteria": {
+      "bluff": "2026-11-24 18:58:04 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/birch_tool_rack": {
+    "criteria": {
+      "has_birch_fence": "2026-11-24 18:56:53 +0700"
     },
     "done": true
   },
