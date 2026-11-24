@@ -43,6 +43,7 @@
   },
   "regions_unexplored:regions_explored": {
     "criteria": {
+      "silver_birch_forest": "2026-11-24 08:38:25 +0700",
       "shrubland": "2026-11-23 13:08:21 +0700",
       "pine_taiga": "2026-11-24 04:17:24 +0700",
       "sparse_rainforest": "2026-11-24 03:31:14 +0700",
@@ -70,12 +71,14 @@
       "hyacinth_deeps": "2026-11-23 13:35:39 +0700",
       "rainforest": "2026-11-24 03:31:07 +0700",
       "eucalyptus_forest": "2026-11-24 03:54:55 +0700",
-      "outback": "2026-11-24 03:32:52 +0700"
+      "outback": "2026-11-24 03:32:52 +0700",
+      "clover_plains": "2026-11-24 08:37:42 +0700"
     },
     "done": false
   },
   "regions_unexplored:pioneer": {
     "criteria": {
+      "silver_birch_forest": "2026-11-24 08:38:25 +0700",
       "shrubland": "2026-11-23 13:08:21 +0700",
       "pine_taiga": "2026-11-24 04:17:24 +0700",
       "sparse_rainforest": "2026-11-24 03:31:14 +0700",
@@ -103,7 +106,8 @@
       "hyacinth_deeps": "2026-11-23 13:35:39 +0700",
       "rainforest": "2026-11-24 03:31:07 +0700",
       "eucalyptus_forest": "2026-11-24 03:54:55 +0700",
-      "outback": "2026-11-24 03:32:52 +0700"
+      "outback": "2026-11-24 03:32:52 +0700",
+      "clover_plains": "2026-11-24 08:37:42 +0700"
     },
     "done": false
   },
@@ -332,6 +336,7 @@
       "minecraft:frozen_peaks": "2026-11-24 03:03:45 +0700",
       "minecraft:deep_dark": "2026-11-24 00:21:04 +0700",
       "minecraft:swamp": "2026-11-23 14:02:47 +0700",
+      "minecraft:windswept_gravelly_hills": "2026-11-24 08:33:42 +0700",
       "minecraft:plains": "2026-11-23 13:06:38 +0700"
     },
     "done": false
@@ -5291,81 +5296,21 @@
     },
     "done": true
   },
-  "tensura:recipes/misc/low_quality_magic_crystalfrom_low_quality_magic_crystal_block": {
+  "regions_unexplored:recipes/decorations/dark_oak_shrub": {
     "criteria": {
-      "has_low_quality_magic_crystal_block": "2026-11-24 02:25:05 +0700"
+      "has_dark_oak_sapling": "2026-11-24 01:48:31 +0700"
     },
     "done": true
   },
-  "waystones:recipes/tools/twinbound_feather": {
+  "waystones:recipes/decorations/mossy_waystone_from_vines": {
     "criteria": {
-      "has_feather": "2026-11-24 03:37:39 +0700"
+      "has_waystone": "2026-11-24 01:50:55 +0700"
     },
     "done": true
   },
-  "tensura:just_a_test": {
+  "waystones:recipes/decorations/mossy_waystone_from_moss_blocks": {
     "criteria": {
-      "colossus": "2026-11-24 02:26:33 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/jungle_wood": {
-    "criteria": {
-      "has_log": "2026-11-24 03:21:53 +0700"
-    },
-    "done": true
-  },
-  "yungscavebiomes:recipes/building_blocks/brittle_sandstone": {
-    "criteria": {
-      "has_sandstone": "2026-11-24 03:45:16 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/food/cooked_knight_spider_leg_from_campfire_cooking": {
-    "criteria": {
-      "has_knight_spider_leg": "2026-11-24 03:52:39 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/ladder_from_jungle_log_woodcutting": {
-    "criteria": {
-      "has_jungle_log": "2026-11-24 03:21:53 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/raw_iron_block": {
-    "criteria": {
-      "has_raw_iron": "2026-11-24 04:05:19 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/smooth_sandstone_slab_from_smooth_sandstone_stonecutting": {
-    "criteria": {
-      "has_smooth_sandstone": "2026-11-24 03:45:37 +0700"
-    },
-    "done": true
-  },
-  "ironchest:recipes/decorations/chests/diamond_obsidian_chest": {
-    "criteria": {
-      "has_obsidian": "2026-11-24 03:38:22 +0700"
-    },
-    "done": true
-  },
-  "iceandfire:recipes/combat/tide_deepblue_helmet": {
-    "criteria": {
-      "has_item": "2026-11-24 04:17:05 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/misc/high_quality_magic_crystalfrom_high_quality_magic_crystal_block": {
-    "criteria": {
-      "has_high_quality_magic_crystal_block": "2026-11-24 02:41:20 +0700"
-    },
-    "done": true
-  },
-  "iceandfire:recipes/combat/deathworm_yellow_helmet": {
-    "criteria": {
-      "has_item": "2026-11-24 03:40:06 +0700"
+      "has_waystone": "2026-11-24 01:50:55 +0700"
     },
     "done": true
   },
@@ -5375,195 +5320,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/decorations/sandstone_wall_from_sandstone_stonecutting": {
-    "criteria": {
-      "has_sandstone": "2026-11-24 03:45:16 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/medium_quality_magic_crystal_stairs_from_medium_quality_magic_crystal_block_stonecutting": {
-    "criteria": {
-      "has_medium_quality_magic_crystal_block": "2026-11-24 02:25:08 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/cut_sandstone": {
-    "criteria": {
-      "has_sandstone": "2026-11-24 03:45:16 +0700"
-    },
-    "done": true
-  },
-  "minecraft:adventure/voluntary_exile": {
-    "criteria": {
-      "voluntary_exile": "2026-11-24 03:54:29 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/jungle_planks_from_jungle_log_woodcutting": {
-    "criteria": {
-      "has_jungle_log": "2026-11-24 03:21:53 +0700"
-    },
-    "done": true
-  },
-  "handcrafted:recipes/misc/sandstone_corner_trim": {
-    "criteria": {
-      "has_sandstone_corner_trim": "2026-11-24 03:45:16 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/smooth_sandstone_slab": {
-    "criteria": {
-      "has_smooth_sandstone": "2026-11-24 03:45:37 +0700"
-    },
-    "done": true
-  },
   "regions_unexplored:recipes/decorations/maple_branch_from_maple_log": {
     "criteria": {
       "has_log": "2026-11-24 02:07:54 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/netherite_ingot": {
-    "criteria": {
-      "has_netherite_scrap": "2026-11-24 02:41:09 +0700"
-    },
-    "done": true
-  },
-  "iceandfire:recipes/combat/deathworm_white_chestplate": {
-    "criteria": {
-      "has_item": "2026-11-24 03:42:49 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/cut_sandstone_slab_from_cut_sandstone_stonecutting": {
-    "criteria": {
-      "has_cut_sandstone": "2026-11-24 03:45:38 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/misc/medium_quality_magic_crystalfrom_medium_quality_magic_crystal_block": {
-    "criteria": {
-      "has_medium_quality_magic_crystal_block": "2026-11-24 02:25:08 +0700"
-    },
-    "done": true
-  },
-  "regions_unexplored:recipes/misc/yellow_dye_from_yellow_lupine": {
-    "criteria": {
-      "has_yellow_lupine": "2026-11-24 03:39:47 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/building_blocks/meidum_quality_magic_crystal_slab": {
-    "criteria": {
-      "has_medium_quality_magic_crystal_block": "2026-11-24 02:25:08 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/building_blocks/high_quality_magic_crystal_bricks": {
-    "criteria": {
-      "has_high_quality_magic_crystal_block": "2026-11-24 02:41:20 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/misc/low_magisteel_ingotfrom_low_magisteel_block": {
-    "criteria": {
-      "has_low_magisteel_block": "2026-11-24 02:40:45 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/food/cooked_porkchop": {
-    "criteria": {
-      "has_porkchop": "2026-11-24 04:03:57 +0700"
-    },
-    "done": true
-  },
-  "minecraft:husbandry/tame_an_animal": {
-    "criteria": {
-      "tamed_animal": "2026-11-24 04:02:52 +0700"
-    },
-    "done": true
-  },
-  "iceandfire:recipes/building_blocks/sea_serpent_scales_deepblue_to_sea_serpent_scale_block_deepblue": {
-    "criteria": {
-      "has_sea_serpent_scales_deepblue": "2026-11-24 04:17:05 +0700"
-    },
-    "done": true
-  },
-  "iceandfire:iceandfire/kill_sea_serpent": {
-    "criteria": {
-      "killed_fire_dragon": "2026-11-24 04:17:05 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/cut_sandstone_from_sandstone_stonecutting": {
-    "criteria": {
-      "has_sandstone": "2026-11-24 03:45:16 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/terracotta": {
-    "criteria": {
-      "has_clay_block": "2026-11-24 03:24:49 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/chiseled_sandstone_from_sandstone_stonecutting": {
-    "criteria": {
-      "has_sandstone": "2026-11-24 03:45:16 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/sandstone_slab_from_sandstone_stonecutting": {
-    "criteria": {
-      "has_sandstone": "2026-11-24 03:45:16 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/building_blocks/high_quality_magic_crystal_slab": {
-    "criteria": {
-      "has_high_quality_magic_crystal_block": "2026-11-24 02:41:20 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/food/cooked_knight_spider_leg_from_smelting": {
-    "criteria": {
-      "has_knight_spider_leg": "2026-11-24 03:52:39 +0700"
-    },
-    "done": true
-  },
-  "regions_unexplored:recipes/decorations/jungle_branch_from_jungle_log": {
-    "criteria": {
-      "has_log": "2026-11-24 03:21:53 +0700"
-    },
-    "done": true
-  },
-  "yungscavebiomes:recipes/building_blocks/layered_sandstone_from_stonecutting": {
-    "criteria": {
-      "has_sandstone": "2026-11-24 03:45:16 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/iron_ingot_from_blasting_raw_iron": {
-    "criteria": {
-      "has_raw_iron": "2026-11-24 04:05:19 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/stick_from_jungle_log_woodcutting": {
-    "criteria": {
-      "has_jungle_log": "2026-11-24 03:21:53 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/food/cooked_porkchop_from_smoking": {
-    "criteria": {
-      "has_porkchop": "2026-11-24 04:03:57 +0700"
-    },
-    "done": true
-  },
-  "twilightforest:recipes/building_blocks/stonecutting/jungle_log/hollow_jungle_log": {
-    "criteria": {
-      "has_block": "2026-11-24 03:21:53 +0700"
     },
     "done": true
   },
@@ -5573,21 +5332,27 @@
     },
     "done": false
   },
-  "minecraft:recipes/building_blocks/sandstone_slab": {
+  "regions_unexplored:recipes/building_blocks/maple_wood": {
     "criteria": {
-      "has_sandstone": "2026-11-24 03:45:16 +0700"
+      "has_log": "2026-11-24 02:07:54 +0700"
     },
     "done": true
   },
-  "iceandfire:recipes/combat/deathworm_white_helmet": {
+  "regions_unexplored:recipes/building_blocks/maple_planks": {
     "criteria": {
-      "has_item": "2026-11-24 03:42:49 +0700"
+      "has_logs": "2026-11-24 02:07:54 +0700"
     },
     "done": true
   },
-  "iceandfire:recipes/combat/deathworm_white_leggings": {
+  "minecraft:recipes/misc/magenta_dye_from_allium": {
     "criteria": {
-      "has_item": "2026-11-24 03:42:49 +0700"
+      "has_allium": "2026-11-24 02:11:24 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/low_quality_magic_crystalfrom_low_quality_magic_crystal_block": {
+    "criteria": {
+      "has_low_quality_magic_crystal_block": "2026-11-24 02:25:05 +0700"
     },
     "done": true
   },
@@ -5597,33 +5362,51 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/smooth_sandstone": {
+  "tensura:recipes/building_blocks/low_quality_magic_crystal_stairs": {
     "criteria": {
-      "has_sandstone": "2026-11-24 03:45:16 +0700"
+      "has_low_quality_magic_crystal_block": "2026-11-24 02:25:05 +0700"
     },
     "done": true
   },
-  "sophisticatedbackpacks:recipes/misc/diamond_backpack": {
+  "tensura:recipes/building_blocks/low_quality_magic_crystal_slab": {
     "criteria": {
-      "has_gold_backpack": "2026-11-24 03:24:49 +0700"
+      "has_low_quality_magic_crystal_block": "2026-11-24 02:25:05 +0700"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/jungle_fence_from_jungle_log_woodcutting": {
+  "minecraft:recipes/building_blocks/low_quality_magic_crystal_bricks_from_low_quality_magic_crystal_block_stonecutting": {
     "criteria": {
-      "has_jungle_log": "2026-11-24 03:21:53 +0700"
+      "has_low_quality_magic_crystal_block": "2026-11-24 02:25:05 +0700"
     },
     "done": true
   },
-  "tensura:recipes/building_blocks/kiln": {
+  "tensura:recipes/building_blocks/low_quality_magic_crystal_bricks": {
     "criteria": {
-      "has_obsidian": "2026-11-24 03:38:22 +0700"
+      "has_low_quality_magic_crystal_block": "2026-11-24 02:25:05 +0700"
     },
     "done": true
   },
-  "iceandfire:recipes/combat/tide_deepblue_chestplate": {
+  "minecraft:recipes/building_blocks/low_quality_magic_crystal_slab_from_low_quality_magic_crystal_block_stonecutting": {
     "criteria": {
-      "has_item": "2026-11-24 04:17:05 +0700"
+      "has_low_quality_magic_crystal_block": "2026-11-24 02:25:05 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/medium_quality_magic_crystal_stairs_from_medium_quality_magic_crystal_block_stonecutting": {
+    "criteria": {
+      "has_medium_quality_magic_crystal_block": "2026-11-24 02:25:08 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/medium_quality_magic_crystalfrom_medium_quality_magic_crystal_block": {
+    "criteria": {
+      "has_medium_quality_magic_crystal_block": "2026-11-24 02:25:08 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/meidum_quality_magic_crystal_slab": {
+    "criteria": {
+      "has_medium_quality_magic_crystal_block": "2026-11-24 02:25:08 +0700"
     },
     "done": true
   },
@@ -5639,81 +5422,27 @@
     },
     "done": true
   },
-  "minecraft:recipes/decorations/blue_glazed_terracotta": {
+  "tensura:recipes/building_blocks/medium_quality_magic_crystal_bricks": {
     "criteria": {
-      "has_blue_terracotta": "2026-11-24 03:45:28 +0700"
+      "has_medium_quality_magic_crystal_block": "2026-11-24 02:25:08 +0700"
     },
     "done": true
   },
-  "tensura:recipes/building_blocks/low_quality_magic_crystal_stairs": {
+  "minecraft:recipes/building_blocks/medium_quality_magic_crystal_bricks_from_medium_quality_magic_crystal_block_stonecutting": {
     "criteria": {
-      "has_low_quality_magic_crystal_block": "2026-11-24 02:25:05 +0700"
+      "has_medium_quality_magic_crystal_block": "2026-11-24 02:25:08 +0700"
     },
     "done": true
   },
-  "vanillabackport:recipes/food/cake": {
+  "tensura:just_a_test": {
     "criteria": {
-      "has_egg": "2026-11-24 03:22:33 +0700"
+      "colossus": "2026-11-24 02:26:33 +0700"
     },
     "done": true
   },
-  "minecraft:recipes/misc/magenta_dye_from_allium": {
+  "tensura:recipes/misc/low_magisteel_ingotfrom_low_magisteel_block": {
     "criteria": {
-      "has_allium": "2026-11-24 02:11:24 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/smooth_sandstone_stairs_from_smooth_sandstone_stonecutting": {
-    "criteria": {
-      "has_smooth_sandstone": "2026-11-24 03:45:37 +0700"
-    },
-    "done": true
-  },
-  "iceandfire:recipes/combat/tide_trident": {
-    "criteria": {
-      "has_item": "2026-11-24 04:17:05 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/food/cooked_armorsaurus_meat_from_smoking": {
-    "criteria": {
-      "has_raw_armorsaurus_meat": "2026-11-24 03:58:49 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/iron_ingot_from_smelting_raw_iron": {
-    "criteria": {
-      "has_raw_iron": "2026-11-24 04:05:19 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/flint_and_steel": {
-    "criteria": {
-      "has_obsidian": "2026-11-24 03:38:22 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/building_blocks/low_quality_magic_crystal_slab": {
-    "criteria": {
-      "has_low_quality_magic_crystal_block": "2026-11-24 02:25:05 +0700"
-    },
-    "done": true
-  },
-  "regions_unexplored:recipes/decorations/dark_oak_shrub": {
-    "criteria": {
-      "has_dark_oak_sapling": "2026-11-24 01:48:31 +0700"
-    },
-    "done": true
-  },
-  "tensura:goodnight_spider": {
-    "criteria": {
-      "knight_spider_carapace": "2026-11-24 03:52:36 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/building_blocks/kiln_mithril": {
-    "criteria": {
-      "has_obsidian": "2026-11-24 03:38:22 +0700"
+      "has_low_magisteel_block": "2026-11-24 02:40:45 +0700"
     },
     "done": true
   },
@@ -5723,57 +5452,39 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/sea_lantern": {
+  "tensura:spirit_protector": {
     "criteria": {
-      "has_prismarine_crystals": "2026-11-24 04:14:58 +0700"
+      "colossus": "2026-11-24 02:40:45 +0700"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/jungle_slab_from_jungle_log_woodcutting": {
+  "minecraft:recipes/misc/netherite_ingot": {
     "criteria": {
-      "has_jungle_log": "2026-11-24 03:21:53 +0700"
+      "has_netherite_scrap": "2026-11-24 02:41:09 +0700"
     },
     "done": true
   },
-  "tensura:name_a_mob": {
+  "bosses_of_mass_destruction:recipes/brimstone_nectar": {
     "criteria": {
-      "name": "2026-11-24 04:02:52 +0700"
+      "has_netherite_scrap": "2026-11-24 02:41:09 +0700"
     },
     "done": true
   },
-  "mowziesmobs:kill_foliaath": {
+  "tensura:recipes/misc/high_quality_magic_crystalfrom_high_quality_magic_crystal_block": {
     "criteria": {
-      "foliaath": "2026-11-24 03:20:29 +0700"
+      "has_high_quality_magic_crystal_block": "2026-11-24 02:41:20 +0700"
     },
     "done": true
   },
-  "iceandfire:recipes/combat/sea_serpent_arrow": {
+  "tensura:recipes/building_blocks/high_quality_magic_crystal_bricks": {
     "criteria": {
-      "has_item": "2026-11-24 04:17:05 +0700"
+      "has_high_quality_magic_crystal_block": "2026-11-24 02:41:20 +0700"
     },
     "done": true
   },
-  "tensura:grow_spurt": {
+  "tensura:recipes/building_blocks/high_quality_magic_crystal_slab": {
     "criteria": {
-      "evolve": "2026-11-24 03:00:16 +0700"
-    },
-    "done": true
-  },
-  "iceandfire:recipes/combat/deathworm_yellow_chestplate": {
-    "criteria": {
-      "has_item": "2026-11-24 03:40:06 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/low_quality_magic_crystal_bricks_from_low_quality_magic_crystal_block_stonecutting": {
-    "criteria": {
-      "has_low_quality_magic_crystal_block": "2026-11-24 02:25:05 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/food/cooked_giant_bat_meat_from_smelting": {
-    "criteria": {
-      "has_raw_giant_bat_meat": "2026-11-24 04:01:15 +0700"
+      "has_high_quality_magic_crystal_block": "2026-11-24 02:41:20 +0700"
     },
     "done": true
   },
@@ -5783,27 +5494,21 @@
     },
     "done": true
   },
-  "tensura:recipes/building_blocks/low_quality_magic_crystal_bricks": {
-    "criteria": {
-      "has_low_quality_magic_crystal_block": "2026-11-24 02:25:05 +0700"
-    },
-    "done": true
-  },
-  "iceandfire:iceandfire/kill_deathworm": {
-    "criteria": {
-      "killed_fire_dragon": "2026-11-24 03:40:06 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/high_quality_magic_crystal_stairs_from_high_quality_magic_crystal_block_stonecutting": {
     "criteria": {
       "has_high_quality_magic_crystal_block": "2026-11-24 02:41:20 +0700"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/jungle_button_from_jungle_log_woodcutting": {
+  "minecraft:recipes/building_blocks/high_quality_magic_crystal_slab_from_high_quality_magic_crystal_block_stonecutting": {
     "criteria": {
-      "has_jungle_log": "2026-11-24 03:21:53 +0700"
+      "has_high_quality_magic_crystal_block": "2026-11-24 02:41:20 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/high_quality_magic_crystal_bricks_from_high_quality_magic_crystal_block_stonecutting": {
+    "criteria": {
+      "has_high_quality_magic_crystal_block": "2026-11-24 02:41:20 +0700"
     },
     "done": true
   },
@@ -5813,15 +5518,309 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/sandstone_stairs": {
+  "tensura:grow_spurt": {
     "criteria": {
-      "has_sandstone": "2026-11-24 03:45:16 +0700"
+      "evolve": "2026-11-24 03:00:16 +0700"
+    },
+    "done": true
+  },
+  "mowziesmobs:kill_foliaath": {
+    "criteria": {
+      "foliaath": "2026-11-24 03:20:29 +0700"
+    },
+    "done": true
+  },
+  "mowziesmobs:kill_elokosa_howler": {
+    "criteria": {
+      "elokosa_howler": "2026-11-24 03:21:05 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/jungle_wood": {
+    "criteria": {
+      "has_log": "2026-11-24 03:21:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/ladder_from_jungle_log_woodcutting": {
+    "criteria": {
+      "has_jungle_log": "2026-11-24 03:21:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/jungle_planks_from_jungle_log_woodcutting": {
+    "criteria": {
+      "has_jungle_log": "2026-11-24 03:21:53 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/jungle_branch_from_jungle_log": {
+    "criteria": {
+      "has_log": "2026-11-24 03:21:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stick_from_jungle_log_woodcutting": {
+    "criteria": {
+      "has_jungle_log": "2026-11-24 03:21:53 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/building_blocks/stonecutting/jungle_log/hollow_jungle_log": {
+    "criteria": {
+      "has_block": "2026-11-24 03:21:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/jungle_fence_from_jungle_log_woodcutting": {
+    "criteria": {
+      "has_jungle_log": "2026-11-24 03:21:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/jungle_slab_from_jungle_log_woodcutting": {
+    "criteria": {
+      "has_jungle_log": "2026-11-24 03:21:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/jungle_button_from_jungle_log_woodcutting": {
+    "criteria": {
+      "has_jungle_log": "2026-11-24 03:21:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/jungle_stairs_from_jungle_log_woodcutting": {
+    "criteria": {
+      "has_jungle_log": "2026-11-24 03:21:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_jungle_wood_from_jungle_log_woodcutting": {
+    "criteria": {
+      "has_jungle_log": "2026-11-24 03:21:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/jungle_planks": {
+    "criteria": {
+      "has_logs": "2026-11-24 03:21:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_jungle_log_from_jungle_log_woodcutting": {
+    "criteria": {
+      "has_jungle_log": "2026-11-24 03:21:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bowl_from_jungle_log_woodcutting": {
+    "criteria": {
+      "has_jungle_log": "2026-11-24 03:21:53 +0700"
+    },
+    "done": true
+  },
+  "vanillabackport:recipes/food/cake": {
+    "criteria": {
+      "has_egg": "2026-11-24 03:22:33 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/terracotta": {
+    "criteria": {
+      "has_clay_block": "2026-11-24 03:24:49 +0700"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/misc/diamond_backpack": {
+    "criteria": {
+      "has_gold_backpack": "2026-11-24 03:24:49 +0700"
+    },
+    "done": true
+  },
+  "waystones:recipes/tools/twinbound_feather": {
+    "criteria": {
+      "has_feather": "2026-11-24 03:37:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/arrow": {
+    "criteria": {
+      "has_feather": "2026-11-24 03:37:39 +0700"
+    },
+    "done": true
+  },
+  "constructionwand:recipes/misc/core_angel": {
+    "criteria": {
+      "has_item": "2026-11-24 03:37:39 +0700"
+    },
+    "done": true
+  },
+  "ironchest:recipes/decorations/chests/diamond_obsidian_chest": {
+    "criteria": {
+      "has_obsidian": "2026-11-24 03:38:22 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/kiln": {
+    "criteria": {
+      "has_obsidian": "2026-11-24 03:38:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/flint_and_steel": {
+    "criteria": {
+      "has_obsidian": "2026-11-24 03:38:22 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/kiln_mithril": {
+    "criteria": {
+      "has_obsidian": "2026-11-24 03:38:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:story/form_obsidian": {
+    "criteria": {
+      "obsidian": "2026-11-24 03:38:22 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/kiln_orichalcum": {
+    "criteria": {
+      "has_obsidian": "2026-11-24 03:38:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/enchanting_table": {
+    "criteria": {
+      "has_obsidian": "2026-11-24 03:38:22 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/misc/yellow_dye_from_yellow_lupine": {
+    "criteria": {
+      "has_yellow_lupine": "2026-11-24 03:39:47 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/deathworm_yellow_helmet": {
+    "criteria": {
+      "has_item": "2026-11-24 03:40:06 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/deathworm_yellow_chestplate": {
+    "criteria": {
+      "has_item": "2026-11-24 03:40:06 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:iceandfire/kill_deathworm": {
+    "criteria": {
+      "killed_fire_dragon": "2026-11-24 03:40:06 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/deathworm_yellow_boots": {
+    "criteria": {
+      "has_item": "2026-11-24 03:40:06 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/deathworm_yellow_leggings": {
+    "criteria": {
+      "has_item": "2026-11-24 03:40:06 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/deathworm_white_chestplate": {
+    "criteria": {
+      "has_item": "2026-11-24 03:42:49 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/deathworm_white_helmet": {
+    "criteria": {
+      "has_item": "2026-11-24 03:42:49 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/deathworm_white_leggings": {
+    "criteria": {
+      "has_item": "2026-11-24 03:42:49 +0700"
     },
     "done": true
   },
   "iceandfire:recipes/combat/deathworm_white_boots": {
     "criteria": {
       "has_item": "2026-11-24 03:42:49 +0700"
+    },
+    "done": true
+  },
+  "yungscavebiomes:recipes/building_blocks/brittle_sandstone": {
+    "criteria": {
+      "has_sandstone": "2026-11-24 03:45:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/sandstone_wall_from_sandstone_stonecutting": {
+    "criteria": {
+      "has_sandstone": "2026-11-24 03:45:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cut_sandstone": {
+    "criteria": {
+      "has_sandstone": "2026-11-24 03:45:16 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/sandstone_corner_trim": {
+    "criteria": {
+      "has_sandstone_corner_trim": "2026-11-24 03:45:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cut_sandstone_from_sandstone_stonecutting": {
+    "criteria": {
+      "has_sandstone": "2026-11-24 03:45:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_sandstone_from_sandstone_stonecutting": {
+    "criteria": {
+      "has_sandstone": "2026-11-24 03:45:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/sandstone_slab_from_sandstone_stonecutting": {
+    "criteria": {
+      "has_sandstone": "2026-11-24 03:45:16 +0700"
+    },
+    "done": true
+  },
+  "yungscavebiomes:recipes/building_blocks/layered_sandstone_from_stonecutting": {
+    "criteria": {
+      "has_sandstone": "2026-11-24 03:45:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/sandstone_slab": {
+    "criteria": {
+      "has_sandstone": "2026-11-24 03:45:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/smooth_sandstone": {
+    "criteria": {
+      "has_sandstone": "2026-11-24 03:45:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/sandstone_stairs": {
+    "criteria": {
+      "has_sandstone": "2026-11-24 03:45:16 +0700"
     },
     "done": true
   },
@@ -5837,135 +5836,9 @@
     },
     "done": true
   },
-  "minecraft:story/form_obsidian": {
-    "criteria": {
-      "obsidian": "2026-11-24 03:38:22 +0700"
-    },
-    "done": true
-  },
-  "regions_unexplored:recipes/building_blocks/maple_wood": {
-    "criteria": {
-      "has_log": "2026-11-24 02:07:54 +0700"
-    },
-    "done": true
-  },
-  "iceandfire:recipes/combat/tide_deepblue_leggings": {
-    "criteria": {
-      "has_item": "2026-11-24 04:17:05 +0700"
-    },
-    "done": true
-  },
-  "bosses_of_mass_destruction:recipes/brimstone_nectar": {
-    "criteria": {
-      "has_netherite_scrap": "2026-11-24 02:41:09 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/jungle_stairs_from_jungle_log_woodcutting": {
-    "criteria": {
-      "has_jungle_log": "2026-11-24 03:21:53 +0700"
-    },
-    "done": true
-  },
-  "tensura:spirit_protector": {
-    "criteria": {
-      "colossus": "2026-11-24 02:40:45 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/building_blocks/sandstone_warp_pad": {
-    "criteria": {
-      "has_smooth_sandstone": "2026-11-24 03:45:37 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/food/cooked_giant_bat_meat_from_smoking": {
-    "criteria": {
-      "has_raw_giant_bat_meat": "2026-11-24 04:01:15 +0700"
-    },
-    "done": true
-  },
-  "twilightforest:recipes/drying/pork_jerky": {
-    "criteria": {
-      "has_meat": "2026-11-24 04:03:57 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/stripped_jungle_wood_from_jungle_log_woodcutting": {
-    "criteria": {
-      "has_jungle_log": "2026-11-24 03:21:53 +0700"
-    },
-    "done": true
-  },
-  "tensura:ruler_of_monster": {
-    "criteria": {
-      "orc": "2026-11-24 04:02:52 +0700"
-    },
-    "done": false
-  },
-  "minecraft:recipes/food/cooked_armorsaurus_meat_from_smelting": {
-    "criteria": {
-      "has_raw_armorsaurus_meat": "2026-11-24 03:58:49 +0700"
-    },
-    "done": true
-  },
-  "iceandfire:recipes/combat/deathworm_yellow_boots": {
-    "criteria": {
-      "has_item": "2026-11-24 03:40:06 +0700"
-    },
-    "done": true
-  },
   "handcrafted:recipes/misc/sandstone_pillar_trim": {
     "criteria": {
       "has_sandstone_pillar_trim": "2026-11-24 03:45:16 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/arrow": {
-    "criteria": {
-      "has_feather": "2026-11-24 03:37:39 +0700"
-    },
-    "done": true
-  },
-  "waystones:recipes/decorations/mossy_waystone_from_vines": {
-    "criteria": {
-      "has_waystone": "2026-11-24 01:50:55 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/building_blocks/medium_quality_magic_crystal_bricks": {
-    "criteria": {
-      "has_medium_quality_magic_crystal_block": "2026-11-24 02:25:08 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/medium_quality_magic_crystal_bricks_from_medium_quality_magic_crystal_block_stonecutting": {
-    "criteria": {
-      "has_medium_quality_magic_crystal_block": "2026-11-24 02:25:08 +0700"
-    },
-    "done": true
-  },
-  "regions_unexplored:recipes/building_blocks/maple_planks": {
-    "criteria": {
-      "has_logs": "2026-11-24 02:07:54 +0700"
-    },
-    "done": true
-  },
-  "iceandfire:iceandfire/kill_siren": {
-    "criteria": {
-      "killed_fire_dragon": "2026-11-24 04:14:58 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/food/cooked_armorsaurus_meat_from_campfire_cooking": {
-    "criteria": {
-      "has_raw_armorsaurus_meat": "2026-11-24 03:58:49 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/food/cooked_porkchop_from_campfire_cooking": {
-    "criteria": {
-      "has_porkchop": "2026-11-24 04:03:57 +0700"
     },
     "done": true
   },
@@ -5975,45 +5848,39 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/cut_sandstone_slab": {
+  "minecraft:recipes/decorations/sandstone_wall": {
     "criteria": {
-      "has_cut_sandstone": "2026-11-24 03:45:38 +0700"
+      "has_sandstone": "2026-11-24 03:45:16 +0700"
     },
     "done": true
   },
-  "waystones:recipes/decorations/mossy_waystone_from_moss_blocks": {
+  "minecraft:recipes/decorations/blue_glazed_terracotta": {
     "criteria": {
-      "has_waystone": "2026-11-24 01:50:55 +0700"
+      "has_blue_terracotta": "2026-11-24 03:45:28 +0700"
     },
     "done": true
   },
-  "constructionwand:recipes/misc/core_angel": {
+  "minecraft:recipes/building_blocks/smooth_sandstone_slab_from_smooth_sandstone_stonecutting": {
     "criteria": {
-      "has_item": "2026-11-24 03:37:39 +0700"
+      "has_smooth_sandstone": "2026-11-24 03:45:37 +0700"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/jungle_planks": {
+  "minecraft:recipes/building_blocks/smooth_sandstone_slab": {
     "criteria": {
-      "has_logs": "2026-11-24 03:21:53 +0700"
+      "has_smooth_sandstone": "2026-11-24 03:45:37 +0700"
     },
     "done": true
   },
-  "tensura:recipes/food/cooked_knight_spider_leg_from_smoking": {
+  "minecraft:recipes/building_blocks/smooth_sandstone_stairs_from_smooth_sandstone_stonecutting": {
     "criteria": {
-      "has_knight_spider_leg": "2026-11-24 03:52:39 +0700"
+      "has_smooth_sandstone": "2026-11-24 03:45:37 +0700"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/high_quality_magic_crystal_slab_from_high_quality_magic_crystal_block_stonecutting": {
+  "tensura:recipes/building_blocks/sandstone_warp_pad": {
     "criteria": {
-      "has_high_quality_magic_crystal_block": "2026-11-24 02:41:20 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/low_quality_magic_crystal_slab_from_low_quality_magic_crystal_block_stonecutting": {
-    "criteria": {
-      "has_low_quality_magic_crystal_block": "2026-11-24 02:25:05 +0700"
+      "has_smooth_sandstone": "2026-11-24 03:45:37 +0700"
     },
     "done": true
   },
@@ -6023,51 +5890,81 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/cut_sandstone_slab_from_cut_sandstone_stonecutting": {
+    "criteria": {
+      "has_cut_sandstone": "2026-11-24 03:45:38 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cut_sandstone_slab": {
+    "criteria": {
+      "has_cut_sandstone": "2026-11-24 03:45:38 +0700"
+    },
+    "done": true
+  },
+  "tensura:goodnight_spider": {
+    "criteria": {
+      "knight_spider_carapace": "2026-11-24 03:52:36 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/food/cooked_knight_spider_leg_from_campfire_cooking": {
+    "criteria": {
+      "has_knight_spider_leg": "2026-11-24 03:52:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_knight_spider_leg_from_smelting": {
+    "criteria": {
+      "has_knight_spider_leg": "2026-11-24 03:52:39 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/food/cooked_knight_spider_leg_from_smoking": {
+    "criteria": {
+      "has_knight_spider_leg": "2026-11-24 03:52:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/voluntary_exile": {
+    "criteria": {
+      "voluntary_exile": "2026-11-24 03:54:29 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/food/cooked_armorsaurus_meat_from_smoking": {
+    "criteria": {
+      "has_raw_armorsaurus_meat": "2026-11-24 03:58:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_armorsaurus_meat_from_smelting": {
+    "criteria": {
+      "has_raw_armorsaurus_meat": "2026-11-24 03:58:49 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/food/cooked_armorsaurus_meat_from_campfire_cooking": {
+    "criteria": {
+      "has_raw_armorsaurus_meat": "2026-11-24 03:58:49 +0700"
+    },
+    "done": true
+  },
   "tensura:shell_lizard": {
     "criteria": {
       "armorsaurus_scale": "2026-11-24 03:58:49 +0700"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/high_quality_magic_crystal_bricks_from_high_quality_magic_crystal_block_stonecutting": {
+  "minecraft:recipes/food/cooked_giant_bat_meat_from_smelting": {
     "criteria": {
-      "has_high_quality_magic_crystal_block": "2026-11-24 02:41:20 +0700"
+      "has_raw_giant_bat_meat": "2026-11-24 04:01:15 +0700"
     },
     "done": true
   },
-  "iceandfire:recipes/combat/deathworm_yellow_leggings": {
+  "tensura:recipes/food/cooked_giant_bat_meat_from_smoking": {
     "criteria": {
-      "has_item": "2026-11-24 03:40:06 +0700"
-    },
-    "done": true
-  },
-  "mowziesmobs:kill_elokosa_howler": {
-    "criteria": {
-      "elokosa_howler": "2026-11-24 03:21:05 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/building_blocks/kiln_orichalcum": {
-    "criteria": {
-      "has_obsidian": "2026-11-24 03:38:22 +0700"
-    },
-    "done": true
-  },
-  "iceandfire:recipes/combat/tide_deepblue_boots": {
-    "criteria": {
-      "has_item": "2026-11-24 04:17:05 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/sandstone_wall": {
-    "criteria": {
-      "has_sandstone": "2026-11-24 03:45:16 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/stripped_jungle_log_from_jungle_log_woodcutting": {
-    "criteria": {
-      "has_jungle_log": "2026-11-24 03:21:53 +0700"
+      "has_raw_giant_bat_meat": "2026-11-24 04:01:15 +0700"
     },
     "done": true
   },
@@ -6077,15 +5974,207 @@
     },
     "done": true
   },
-  "minecraft:recipes/decorations/enchanting_table": {
+  "minecraft:husbandry/tame_an_animal": {
     "criteria": {
-      "has_obsidian": "2026-11-24 03:38:22 +0700"
+      "tamed_animal": "2026-11-24 04:02:52 +0700"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/bowl_from_jungle_log_woodcutting": {
+  "tensura:name_a_mob": {
     "criteria": {
-      "has_jungle_log": "2026-11-24 03:21:53 +0700"
+      "name": "2026-11-24 04:02:52 +0700"
+    },
+    "done": true
+  },
+  "tensura:ruler_of_monster": {
+    "criteria": {
+      "orc": "2026-11-24 04:02:52 +0700"
+    },
+    "done": false
+  },
+  "minecraft:recipes/food/cooked_porkchop": {
+    "criteria": {
+      "has_porkchop": "2026-11-24 04:03:57 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_porkchop_from_smoking": {
+    "criteria": {
+      "has_porkchop": "2026-11-24 04:03:57 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/drying/pork_jerky": {
+    "criteria": {
+      "has_meat": "2026-11-24 04:03:57 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_porkchop_from_campfire_cooking": {
+    "criteria": {
+      "has_porkchop": "2026-11-24 04:03:57 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/raw_iron_block": {
+    "criteria": {
+      "has_raw_iron": "2026-11-24 04:05:19 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_ingot_from_blasting_raw_iron": {
+    "criteria": {
+      "has_raw_iron": "2026-11-24 04:05:19 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_ingot_from_smelting_raw_iron": {
+    "criteria": {
+      "has_raw_iron": "2026-11-24 04:05:19 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/sea_lantern": {
+    "criteria": {
+      "has_prismarine_crystals": "2026-11-24 04:14:58 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:iceandfire/kill_siren": {
+    "criteria": {
+      "killed_fire_dragon": "2026-11-24 04:14:58 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/tide_deepblue_helmet": {
+    "criteria": {
+      "has_item": "2026-11-24 04:17:05 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/building_blocks/sea_serpent_scales_deepblue_to_sea_serpent_scale_block_deepblue": {
+    "criteria": {
+      "has_sea_serpent_scales_deepblue": "2026-11-24 04:17:05 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:iceandfire/kill_sea_serpent": {
+    "criteria": {
+      "killed_fire_dragon": "2026-11-24 04:17:05 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/tide_deepblue_chestplate": {
+    "criteria": {
+      "has_item": "2026-11-24 04:17:05 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/tide_trident": {
+    "criteria": {
+      "has_item": "2026-11-24 04:17:05 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/sea_serpent_arrow": {
+    "criteria": {
+      "has_item": "2026-11-24 04:17:05 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/tide_deepblue_leggings": {
+    "criteria": {
+      "has_item": "2026-11-24 04:17:05 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/tide_deepblue_boots": {
+    "criteria": {
+      "has_item": "2026-11-24 04:17:05 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/leather_helmet": {
+    "criteria": {
+      "has_leather": "2026-11-24 08:30:35 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/leather_chestplate": {
+    "criteria": {
+      "has_leather": "2026-11-24 08:30:35 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/leather_horse_armor": {
+    "criteria": {
+      "has_leather": "2026-11-24 08:30:35 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/farmer_chest_plate": {
+    "criteria": {
+      "has_leather": "2026-11-24 08:30:35 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/farmer_boots": {
+    "criteria": {
+      "has_leather": "2026-11-24 08:30:35 +0700"
+    },
+    "done": true
+  },
+  "tensura:getcha_leathers": {
+    "criteria": {
+      "leather": "2026-11-24 08:30:35 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/leather_boots": {
+    "criteria": {
+      "has_leather": "2026-11-24 08:30:35 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/farmer_leggings": {
+    "criteria": {
+      "has_leather": "2026-11-24 08:30:35 +0700"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/misc/upgrade_base": {
+    "criteria": {
+      "has_leather": "2026-11-24 08:30:35 +0700"
+    },
+    "done": true
+  },
+  "vanillabackport:recipes/combat/saddle": {
+    "criteria": {
+      "has_leather": "2026-11-24 08:30:35 +0700"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/misc/backpack": {
+    "criteria": {
+      "has_leather": "2026-11-24 08:30:35 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/item_frame": {
+    "criteria": {
+      "has_leather": "2026-11-24 08:30:35 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cake": {
+    "criteria": {
+      "has_egg": "2026-11-24 08:42:38 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/leather_leggings": {
+    "criteria": {
+      "has_leather": "2026-11-24 08:30:35 +0700"
     },
     "done": true
   },

@@ -74,7 +74,9 @@
     },
     {
       "questId": "trbeyond:repeatable_material_feathered_serpent_essence",
-      "progress": {}
+      "progress": {
+        "kill_feathered_serpent_essence": 1
+      }
     },
     {
       "questId": "trbeyond:rep_sub_venomous_cleanup_1",
