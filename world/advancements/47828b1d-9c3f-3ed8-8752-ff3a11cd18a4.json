@@ -5665,9 +5665,39 @@
     },
     "done": true
   },
-  "minecraft:recipes/decorations/brick_wall": {
+  "kaleidoscope_cookery:recipes/decorations/table_dark_oak": {
     "criteria": {
-      "has_bricks": "2026-11-24 14:00:12 +0700"
+      "has_fence": "2026-11-24 13:56:40 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/dark_oak_tool_rack": {
+    "criteria": {
+      "has_dark_oak_fence": "2026-11-24 13:56:40 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/chair_dark_oak": {
+    "criteria": {
+      "has_fence": "2026-11-24 13:56:40 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/chair_jungle": {
+    "criteria": {
+      "has_fence": "2026-11-24 13:57:40 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/jungle_tool_rack": {
+    "criteria": {
+      "has_jungle_fence": "2026-11-24 13:57:40 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/table_jungle": {
+    "criteria": {
+      "has_fence": "2026-11-24 13:57:40 +0700"
     },
     "done": true
   },
@@ -5701,12 +5731,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/brick_stairs_from_bricks_stonecutting": {
-    "criteria": {
-      "has_bricks": "2026-11-24 14:00:12 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/birch_slab_from_birch_planks_woodcutting": {
     "criteria": {
       "has_birch_planks": "2026-11-24 13:58:22 +0700"
@@ -5731,21 +5755,9 @@
     },
     "done": true
   },
-  "kaleidoscope_cookery:recipes/decorations/chair_jungle": {
-    "criteria": {
-      "has_fence": "2026-11-24 13:57:40 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/birch_button_from_birch_planks_woodcutting": {
     "criteria": {
       "has_birch_planks": "2026-11-24 13:58:22 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/building_blocks/jungle_tool_rack": {
-    "criteria": {
-      "has_jungle_fence": "2026-11-24 13:57:40 +0700"
     },
     "done": true
   },
@@ -5755,21 +5767,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/brick_slab": {
-    "criteria": {
-      "has_bricks": "2026-11-24 14:00:12 +0700"
-    },
-    "done": true
-  },
   "handcrafted:recipes/misc/birch_counter": {
     "criteria": {
       "has_birch_counter": "2026-11-24 13:58:22 +0700"
-    },
-    "done": true
-  },
-  "kaleidoscope_cookery:recipes/decorations/table_dark_oak": {
-    "criteria": {
-      "has_fence": "2026-11-24 13:56:40 +0700"
     },
     "done": true
   },
@@ -5779,27 +5779,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/brick_slab_from_bricks_stonecutting": {
-    "criteria": {
-      "has_bricks": "2026-11-24 14:00:12 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/building_blocks/brick_warp_pad": {
-    "criteria": {
-      "has_bricks": "2026-11-24 14:00:12 +0700"
-    },
-    "done": true
-  },
   "handcrafted:recipes/misc/birch_fancy_bed": {
     "criteria": {
       "has_birch_fancy_bed": "2026-11-24 13:58:22 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/building_blocks/dark_oak_tool_rack": {
-    "criteria": {
-      "has_dark_oak_fence": "2026-11-24 13:56:40 +0700"
     },
     "done": true
   },
@@ -5818,24 +5800,6 @@
   "minecraft:recipes/building_blocks/birch_stairs_from_birch_planks_woodcutting": {
     "criteria": {
       "has_birch_planks": "2026-11-24 13:58:22 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/brick_wall_from_bricks_stonecutting": {
-    "criteria": {
-      "has_bricks": "2026-11-24 14:00:12 +0700"
-    },
-    "done": true
-  },
-  "kaleidoscope_cookery:recipes/decorations/chair_dark_oak": {
-    "criteria": {
-      "has_fence": "2026-11-24 13:56:40 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/brick_stairs": {
-    "criteria": {
-      "has_bricks": "2026-11-24 14:00:12 +0700"
     },
     "done": true
   },
@@ -5893,21 +5857,9 @@
     },
     "done": true
   },
-  "handcrafted:recipes/misc/bricks_corner_trim": {
-    "criteria": {
-      "has_bricks_corner_trim": "2026-11-24 14:00:12 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/bowl_from_birch_planks_woodcutting": {
     "criteria": {
       "has_birch_planks": "2026-11-24 13:58:22 +0700"
-    },
-    "done": true
-  },
-  "kaleidoscope_cookery:recipes/decorations/table_jungle": {
-    "criteria": {
-      "has_fence": "2026-11-24 13:57:40 +0700"
     },
     "done": true
   },
@@ -5944,6 +5896,54 @@
   "minecraft:recipes/redstone/birch_pressure_plate": {
     "criteria": {
       "has_planks": "2026-11-24 13:58:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/brick_wall": {
+    "criteria": {
+      "has_bricks": "2026-11-24 14:00:12 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/brick_stairs_from_bricks_stonecutting": {
+    "criteria": {
+      "has_bricks": "2026-11-24 14:00:12 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/brick_slab": {
+    "criteria": {
+      "has_bricks": "2026-11-24 14:00:12 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/brick_slab_from_bricks_stonecutting": {
+    "criteria": {
+      "has_bricks": "2026-11-24 14:00:12 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/brick_warp_pad": {
+    "criteria": {
+      "has_bricks": "2026-11-24 14:00:12 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/brick_wall_from_bricks_stonecutting": {
+    "criteria": {
+      "has_bricks": "2026-11-24 14:00:12 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/brick_stairs": {
+    "criteria": {
+      "has_bricks": "2026-11-24 14:00:12 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/bricks_corner_trim": {
+    "criteria": {
+      "has_bricks_corner_trim": "2026-11-24 14:00:12 +0700"
     },
     "done": true
   },
