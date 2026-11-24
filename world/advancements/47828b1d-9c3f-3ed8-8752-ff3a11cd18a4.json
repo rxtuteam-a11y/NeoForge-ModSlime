@@ -5365,6 +5365,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/high_magisteel_nugget_from_smelting_high_magisteel_boots": {
+    "criteria": {
+      "has_high_magisteel_boots": "2026-11-24 13:39:55 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/transportation/larch_chest_boat": {
     "criteria": {
       "has_boat": "2026-11-24 13:32:52 +0700"
@@ -5386,6 +5392,12 @@
   "minecraft:recipes/transportation/spruce_chest_boat": {
     "criteria": {
       "has_boat": "2026-11-24 13:32:52 +0700"
+    },
+    "done": true
+  },
+  "tensura:youre_a_wizard": {
+    "criteria": {
+      "tome": "2026-11-24 13:39:45 +0700"
     },
     "done": true
   },
@@ -5479,6 +5491,12 @@
     },
     "done": true
   },
+  "tensura:booked_on_magic": {
+    "criteria": {
+      "grimoires": "2026-11-24 13:43:20 +0700"
+    },
+    "done": true
+  },
   "twilightforest:recipes/transportation/sorting_chest_boat": {
     "criteria": {
       "has_boat": "2026-11-24 13:32:52 +0700"
@@ -5509,9 +5527,21 @@
     },
     "done": true
   },
+  "eternal_starlight:hammer_critical_hit": {
+    "criteria": {
+      "critical_hit": "2026-11-24 13:43:03 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/bamboo_chest_raft": {
     "criteria": {
       "has_boat": "2026-11-24 13:32:52 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/high_magisteel_nugget_from_blasting_high_magisteel_boots": {
+    "criteria": {
+      "has_high_magisteel_boots": "2026-11-24 13:39:55 +0700"
     },
     "done": true
   },
