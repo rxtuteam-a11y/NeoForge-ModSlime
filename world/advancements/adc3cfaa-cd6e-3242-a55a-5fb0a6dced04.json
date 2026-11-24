@@ -5359,6 +5359,7 @@
   },
   "tensura:monstrous_diet": {
     "criteria": {
+      "cattledeer_beef": "2026-11-25 01:00:40 +0700",
       "raw_blade_tiger_meat": "2026-11-24 02:52:26 +0700",
       "blade_tiger_steak": "2026-11-24 18:04:15 +0700"
     },
@@ -6591,36 +6592,6 @@
     },
     "done": true
   },
-  "tensura:recipes/building_blocks/oak_tool_rack": {
-    "criteria": {
-      "has_oak_fence": "2026-11-25 00:30:56 +0700"
-    },
-    "done": true
-  },
-  "minecraft:husbandry/breed_an_animal": {
-    "criteria": {
-      "bred": "2026-11-25 00:01:35 +0700"
-    },
-    "done": true
-  },
-  "regions_unexplored:recipes/decorations/wisteria_branch_from_wisteria_log": {
-    "criteria": {
-      "has_log": "2026-11-25 00:20:55 +0700"
-    },
-    "done": true
-  },
-  "regions_unexplored:recipes/building_blocks/wisteria_stairs": {
-    "criteria": {
-      "has_wisteria_planks": "2026-11-25 00:22:30 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/combat/wolf_armor": {
-    "criteria": {
-      "has_armadillo_scute": "2026-11-25 00:08:06 +0700"
-    },
-    "done": true
-  },
   "regions_unexplored:recipes/redstone/larch_door": {
     "criteria": {
       "has_larch_planks": "2026-11-24 23:59:23 +0700"
@@ -6633,57 +6604,9 @@
     },
     "done": true
   },
-  "regions_unexplored:recipes/redstone/wisteria_button": {
-    "criteria": {
-      "has_wisteria_planks": "2026-11-25 00:22:30 +0700"
-    },
-    "done": true
-  },
-  "regions_unexplored:recipes/building_blocks/wisteria_slab": {
-    "criteria": {
-      "has_wisteria_planks": "2026-11-25 00:22:30 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/silver_ingot_from_blasting_raw_silver": {
-    "criteria": {
-      "has_raw_silver": "2026-11-25 00:36:32 +0700"
-    },
-    "done": true
-  },
   "regions_unexplored:recipes/redstone/larch_button": {
     "criteria": {
       "has_larch_planks": "2026-11-24 23:59:23 +0700"
-    },
-    "done": true
-  },
-  "regions_unexplored:recipes/building_blocks/wisteria_planks": {
-    "criteria": {
-      "has_logs": "2026-11-25 00:20:55 +0700"
-    },
-    "done": true
-  },
-  "regions_unexplored:recipes/redstone/wisteria_trapdoor": {
-    "criteria": {
-      "has_wisteria_planks": "2026-11-25 00:22:30 +0700"
-    },
-    "done": true
-  },
-  "regions_unexplored:recipes/redstone/wisteria_fence_gate": {
-    "criteria": {
-      "has_wisteria_planks": "2026-11-25 00:22:30 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/building_blocks/raw_silver_blockfrom_raw_silver": {
-    "criteria": {
-      "has_raw_silver": "2026-11-25 00:36:32 +0700"
-    },
-    "done": true
-  },
-  "kaleidoscope_cookery:recipes/decorations/eight_immortals_table": {
-    "criteria": {
-      "has_oak_fence": "2026-11-25 00:30:56 +0700"
     },
     "done": true
   },
@@ -6705,24 +6628,6 @@
     },
     "done": true
   },
-  "minecraft:husbandry/bred_all_animals": {
-    "criteria": {
-      "minecraft:armadillo": "2026-11-25 00:01:35 +0700"
-    },
-    "done": false
-  },
-  "regions_unexplored:recipes/redstone/wisteria_door": {
-    "criteria": {
-      "has_wisteria_planks": "2026-11-25 00:22:30 +0700"
-    },
-    "done": true
-  },
-  "kaleidoscope_cookery:recipes/decorations/table_oak": {
-    "criteria": {
-      "has_fence": "2026-11-25 00:30:56 +0700"
-    },
-    "done": true
-  },
   "regions_unexplored:recipes/redstone/larch_pressure_plate": {
     "criteria": {
       "has_larch_planks": "2026-11-24 23:59:23 +0700"
@@ -6735,45 +6640,39 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/silver_ingot_from_smelting_raw_silver": {
-    "criteria": {
-      "has_raw_silver": "2026-11-25 00:36:32 +0700"
-    },
-    "done": true
-  },
-  "regions_unexplored:recipes/decorations/wisteria_sign": {
-    "criteria": {
-      "has_wisteria_planks": "2026-11-25 00:22:30 +0700"
-    },
-    "done": true
-  },
-  "minecraft:story/enchant_item": {
-    "criteria": {
-      "enchanted_item": "2026-11-25 00:34:01 +0700"
-    },
-    "done": true
-  },
-  "minecraft:adventure/trade": {
-    "criteria": {
-      "traded": "2026-11-25 00:32:12 +0700"
-    },
-    "done": true
-  },
   "regions_unexplored:recipes/decorations/larch_sign": {
     "criteria": {
       "has_larch_planks": "2026-11-24 23:59:23 +0700"
     },
     "done": true
   },
-  "kaleidoscope_cookery:recipes/decorations/chair_oak": {
+  "minecraft:husbandry/breed_an_animal": {
     "criteria": {
-      "has_fence": "2026-11-25 00:30:56 +0700"
+      "bred": "2026-11-25 00:01:35 +0700"
     },
     "done": true
   },
-  "regions_unexplored:recipes/decorations/wisteria_fence": {
+  "minecraft:husbandry/bred_all_animals": {
     "criteria": {
-      "has_wisteria_planks": "2026-11-25 00:22:30 +0700"
+      "minecraft:armadillo": "2026-11-25 00:01:35 +0700"
+    },
+    "done": false
+  },
+  "minecraft:recipes/combat/wolf_armor": {
+    "criteria": {
+      "has_armadillo_scute": "2026-11-25 00:08:06 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/wisteria_branch_from_wisteria_log": {
+    "criteria": {
+      "has_log": "2026-11-25 00:20:55 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/wisteria_planks": {
+    "criteria": {
+      "has_logs": "2026-11-25 00:20:55 +0700"
     },
     "done": true
   },
@@ -6783,9 +6682,135 @@
     },
     "done": true
   },
+  "regions_unexplored:recipes/building_blocks/wisteria_stairs": {
+    "criteria": {
+      "has_wisteria_planks": "2026-11-25 00:22:30 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/redstone/wisteria_button": {
+    "criteria": {
+      "has_wisteria_planks": "2026-11-25 00:22:30 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/wisteria_slab": {
+    "criteria": {
+      "has_wisteria_planks": "2026-11-25 00:22:30 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/redstone/wisteria_trapdoor": {
+    "criteria": {
+      "has_wisteria_planks": "2026-11-25 00:22:30 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/redstone/wisteria_fence_gate": {
+    "criteria": {
+      "has_wisteria_planks": "2026-11-25 00:22:30 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/redstone/wisteria_door": {
+    "criteria": {
+      "has_wisteria_planks": "2026-11-25 00:22:30 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/wisteria_sign": {
+    "criteria": {
+      "has_wisteria_planks": "2026-11-25 00:22:30 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/wisteria_fence": {
+    "criteria": {
+      "has_wisteria_planks": "2026-11-25 00:22:30 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/redstone/wisteria_pressure_plate": {
     "criteria": {
       "has_wisteria_planks": "2026-11-25 00:22:30 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/oak_tool_rack": {
+    "criteria": {
+      "has_oak_fence": "2026-11-25 00:30:56 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/eight_immortals_table": {
+    "criteria": {
+      "has_oak_fence": "2026-11-25 00:30:56 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/table_oak": {
+    "criteria": {
+      "has_fence": "2026-11-25 00:30:56 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/chair_oak": {
+    "criteria": {
+      "has_fence": "2026-11-25 00:30:56 +0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/trade": {
+    "criteria": {
+      "traded": "2026-11-25 00:32:12 +0700"
+    },
+    "done": true
+  },
+  "minecraft:story/enchant_item": {
+    "criteria": {
+      "enchanted_item": "2026-11-25 00:34:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/silver_ingot_from_blasting_raw_silver": {
+    "criteria": {
+      "has_raw_silver": "2026-11-25 00:36:32 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/raw_silver_blockfrom_raw_silver": {
+    "criteria": {
+      "has_raw_silver": "2026-11-25 00:36:32 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/silver_ingot_from_smelting_raw_silver": {
+    "criteria": {
+      "has_raw_silver": "2026-11-25 00:36:32 +0700"
+    },
+    "done": true
+  },
+  "constructionwand:diamond_wand": {
+    "criteria": {
+      "diamond_wand": "2026-11-25 00:55:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/light_gray_dye_from_azure_bluet": {
+    "criteria": {
+      "has_azure_bluet": "2026-11-25 00:50:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/plant_seed": {
+    "criteria": {
+      "nether_wart": "2026-11-25 00:46:00 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/pink_magnolia_shrub": {
+    "criteria": {
+      "has_pink_magnolia_sapling": "2026-11-25 00:54:37 +0700"
     },
     "done": true
   },

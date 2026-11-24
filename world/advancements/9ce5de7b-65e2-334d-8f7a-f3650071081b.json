@@ -5379,6 +5379,7 @@
     "criteria": {
       "magnolia_log": "2026-11-25 00:12:26 +0700",
       "silver_birch_log": "2026-11-25 00:08:33 +0700",
+      "blackwood_log": "2026-11-25 00:45:43 +0700",
       "maple_log": "2026-11-24 02:07:54 +0700"
     },
     "done": false
@@ -8071,7 +8072,8 @@
     "criteria": {
       "kill_worm": "2026-11-24 21:56:52 +0700",
       "kill_kraken": "2026-11-24 21:53:45 +0700",
-      "kill_yeti": "2026-11-24 21:29:12 +0700"
+      "kill_yeti": "2026-11-24 21:29:12 +0700",
+      "kill_dragon": "2026-11-25 00:57:14 +0700"
     },
     "done": false
   },
@@ -8390,6 +8392,120 @@
   "minecraft:recipes/food/dried_kelp_from_smoking": {
     "criteria": {
       "has_kelp": "2026-11-25 00:32:36 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/blackwood_branch_from_blackwood_log": {
+    "criteria": {
+      "has_log": "2026-11-25 00:45:43 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/blackwood_wood": {
+    "criteria": {
+      "has_log": "2026-11-25 00:45:43 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/blackwood_planks": {
+    "criteria": {
+      "has_logs": "2026-11-25 00:45:43 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_oak_fence_from_stripped_dark_oak_log_woodcutting": {
+    "criteria": {
+      "has_stripped_dark_oak_log": "2026-11-25 00:47:14 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_oak_slab_from_stripped_dark_oak_log_woodcutting": {
+    "criteria": {
+      "has_stripped_dark_oak_log": "2026-11-25 00:47:14 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/dark_oak_shelf": {
+    "criteria": {
+      "has_stripped_dark_oak_log": "2026-11-25 00:47:14 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_dark_oak_wood": {
+    "criteria": {
+      "has_log": "2026-11-25 00:47:14 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_oak_button_from_stripped_dark_oak_log_woodcutting": {
+    "criteria": {
+      "has_stripped_dark_oak_log": "2026-11-25 00:47:14 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/dark_oak_hanging_sign": {
+    "criteria": {
+      "has_stripped_logs": "2026-11-25 00:47:14 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_oak_planks_from_stripped_dark_oak_log_woodcutting": {
+    "criteria": {
+      "has_stripped_dark_oak_log": "2026-11-25 00:47:14 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_oak_stairs_from_stripped_dark_oak_log_woodcutting": {
+    "criteria": {
+      "has_stripped_dark_oak_log": "2026-11-25 00:47:14 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bowl_from_stripped_dark_oak_log_woodcutting": {
+    "criteria": {
+      "has_stripped_dark_oak_log": "2026-11-25 00:47:14 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/ladder_from_stripped_dark_oak_log_woodcutting": {
+    "criteria": {
+      "has_stripped_dark_oak_log": "2026-11-25 00:47:14 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stick_from_stripped_dark_oak_log_woodcutting": {
+    "criteria": {
+      "has_stripped_dark_oak_log": "2026-11-25 00:47:14 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:kill_dragon": {
+    "criteria": {
+      "kill": "2026-11-25 00:57:14 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:recipes/combat/dragon_bones_chestplate": {
+    "criteria": {
+      "has_item": "2026-11-25 00:57:20 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:no_hit_dragon": {
+    "criteria": {
+      "no_hit_dragon_0": "2026-11-25 00:57:14 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:recipes/combat/dragon_bones_leggings": {
+    "criteria": {
+      "has_item": "2026-11-25 00:57:20 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:recipes/combat/dragon_bones_boots": {
+    "criteria": {
+      "has_item": "2026-11-25 00:57:20 +0700"
     },
     "done": true
   },
