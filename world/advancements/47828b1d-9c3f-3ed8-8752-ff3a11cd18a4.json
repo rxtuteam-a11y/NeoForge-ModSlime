@@ -6050,6 +6050,12 @@
     },
     "done": true
   },
+  "kaleidoscope_cookery:recipes/food/cold_roasted_meat": {
+    "criteria": {
+      "has_cooked_beef": "2026-11-24 22:13:26 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/lightning_rod": {
     "criteria": {
       "has_copper_ingot": "2026-11-24 21:39:36 +0700"
