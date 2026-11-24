@@ -325,6 +325,7 @@
       "minecraft:warm_ocean": "2026-11-24 03:33:17 +0700",
       "minecraft:deep_lukewarm_ocean": "2026-11-24 04:14:29 +0700",
       "minecraft:badlands": "2026-11-24 03:41:50 +0700",
+      "minecraft:flower_forest": "2026-11-24 10:18:15 +0700",
       "minecraft:beach": "2026-11-23 13:09:25 +0700",
       "minecraft:sparse_jungle": "2026-11-24 03:08:21 +0700",
       "minecraft:river": "2026-11-23 13:10:31 +0700",
@@ -6175,6 +6176,78 @@
   "minecraft:recipes/food/cake": {
     "criteria": {
       "has_egg": "2026-11-24 08:42:38 +0700"
+    },
+    "done": true
+  },
+  "tensura:low_magisteel": {
+    "criteria": {
+      "low_magisteel": "2026-11-24 10:25:07 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/recipe_item": {
+    "criteria": {
+      "has_paper": "2026-11-24 10:26:55 +0700"
+    },
+    "done": true
+  },
+  "waystones:recipes/decorations/return_scroll": {
+    "criteria": {
+      "has_paper": "2026-11-24 10:26:55 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/smithing_bench": {
+    "criteria": {
+      "has_smithing_table": "2026-11-24 10:26:46 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/low_magisteel_nugget": {
+    "criteria": {
+      "has_low_magisteel_ingot": "2026-11-24 10:25:07 +0700"
+    },
+    "done": true
+  },
+  "waystones:recipes/decorations/blank_scroll": {
+    "criteria": {
+      "has_paper": "2026-11-24 10:26:55 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/low_magisteel_blockfrom_low_magisteel_ingot": {
+    "criteria": {
+      "has_low_magisteel_ingot": "2026-11-24 10:25:07 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/book": {
+    "criteria": {
+      "has_paper": "2026-11-24 10:26:55 +0700"
+    },
+    "done": true
+  },
+  "cataclysm:root": {
+    "criteria": {
+      "crafting_table": "2026-11-24 10:26:52 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/low_magisteel_bone_golem": {
+    "criteria": {
+      "has_low_magisteel_ingot": "2026-11-24 10:25:07 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/cartography_table": {
+    "criteria": {
+      "has_paper": "2026-11-24 10:26:55 +0700"
+    },
+    "done": true
+  },
+  "minecraft:story/root": {
+    "criteria": {
+      "crafting_table": "2026-11-24 10:26:52 +0700"
     },
     "done": true
   },

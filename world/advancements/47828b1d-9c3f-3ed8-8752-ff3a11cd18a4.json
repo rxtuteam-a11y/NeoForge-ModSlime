@@ -44,19 +44,24 @@
   "regions_unexplored:regions_explored": {
     "criteria": {
       "willow_forest": "2026-11-23 13:08:42 +0700",
+      "silver_birch_forest": "2026-11-24 10:17:24 +0700",
       "cold_river": "2026-11-23 21:06:07 +0700",
       "shrubland": "2026-11-23 21:06:03 +0700",
       "poppy_fields": "2026-11-23 23:45:33 +0700",
+      "grassy_beach": "2026-11-24 10:20:36 +0700",
       "spires": "2026-11-23 13:24:02 +0700",
       "grassland": "2026-11-23 23:50:23 +0700",
       "prairie": "2026-11-23 23:47:16 +0700",
+      "pine_taiga": "2026-11-24 10:20:07 +0700",
       "flower_fields": "2026-11-23 22:41:21 +0700",
       "highland_fields": "2026-11-23 21:10:02 +0700",
       "frozen_pine_taiga": "2026-11-22 17:27:12 +0700",
       "magnolia_woodland": "2026-11-23 21:03:43 +0700",
+      "muddy_river": "2026-11-24 10:17:03 +0700",
       "chalk_cliffs": "2026-11-23 23:35:36 +0700",
       "icy_heights": "2026-11-23 13:23:44 +0700",
       "hyacinth_deeps": "2026-11-23 13:21:56 +0700",
+      "old_growth_boreal_taiga": "2026-11-24 10:22:55 +0700",
       "boreal_taiga": "2026-11-23 13:27:40 +0700",
       "cold_boreal_taiga": "2026-11-23 19:28:48 +0700",
       "marsh": "2026-11-23 13:08:37 +0700",
@@ -67,19 +72,24 @@
   "regions_unexplored:pioneer": {
     "criteria": {
       "willow_forest": "2026-11-23 13:08:42 +0700",
+      "silver_birch_forest": "2026-11-24 10:17:24 +0700",
       "cold_river": "2026-11-23 21:06:07 +0700",
       "shrubland": "2026-11-23 21:06:03 +0700",
       "poppy_fields": "2026-11-23 23:45:33 +0700",
+      "grassy_beach": "2026-11-24 10:20:36 +0700",
       "spires": "2026-11-23 13:24:02 +0700",
       "grassland": "2026-11-23 23:50:23 +0700",
       "prairie": "2026-11-23 23:47:16 +0700",
+      "pine_taiga": "2026-11-24 10:20:07 +0700",
       "flower_fields": "2026-11-23 22:41:21 +0700",
       "highland_fields": "2026-11-23 21:10:02 +0700",
       "frozen_pine_taiga": "2026-11-22 17:27:12 +0700",
       "magnolia_woodland": "2026-11-23 21:03:43 +0700",
+      "muddy_river": "2026-11-24 10:17:03 +0700",
       "chalk_cliffs": "2026-11-23 23:35:36 +0700",
       "icy_heights": "2026-11-23 13:23:44 +0700",
       "hyacinth_deeps": "2026-11-23 13:21:56 +0700",
+      "old_growth_boreal_taiga": "2026-11-24 10:22:55 +0700",
       "boreal_taiga": "2026-11-23 13:27:40 +0700",
       "cold_boreal_taiga": "2026-11-23 19:28:48 +0700",
       "marsh": "2026-11-23 13:08:37 +0700",
@@ -294,7 +304,8 @@
   },
   "regions_unexplored:got_wood": {
     "criteria": {
-      "pine_log": "2026-11-22 17:38:42 +0700"
+      "pine_log": "2026-11-22 17:38:42 +0700",
+      "larch_log": "2026-11-24 10:23:49 +0700"
     },
     "done": false
   },
@@ -900,9 +911,12 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
+      "minecraft:cold_ocean": "2026-11-24 10:22:18 +0700",
       "minecraft:snowy_slopes": "2026-11-23 23:30:03 +0700",
+      "minecraft:beach": "2026-11-24 10:18:15 +0700",
       "minecraft:forest": "2026-11-23 13:08:05 +0700",
       "minecraft:sparse_jungle": "2026-11-23 23:50:46 +0700",
+      "minecraft:deep_ocean": "2026-11-24 10:18:36 +0700",
       "minecraft:river": "2026-11-23 20:59:57 +0700",
       "minecraft:lukewarm_ocean": "2026-11-23 23:51:31 +0700",
       "minecraft:snowy_plains": "2026-11-23 12:57:28 +0700",
@@ -912,9 +926,11 @@
       "minecraft:ice_spikes": "2026-11-23 19:18:51 +0700",
       "minecraft:frozen_ocean": "2026-11-22 17:48:03 +0700",
       "minecraft:frozen_river": "2026-11-22 19:16:03 +0700",
+      "minecraft:ocean": "2026-11-24 10:18:21 +0700",
       "minecraft:cherry_grove": "2026-11-23 23:29:56 +0700",
       "minecraft:sunflower_plains": "2026-11-23 23:34:50 +0700",
       "minecraft:swamp": "2026-11-23 13:08:17 +0700",
+      "minecraft:birch_forest": "2026-11-24 10:17:34 +0700",
       "minecraft:windswept_hills": "2026-11-23 19:32:36 +0700",
       "minecraft:snowy_beach": "2026-11-22 19:16:01 +0700",
       "minecraft:savanna": "2026-11-23 23:50:01 +0700",
@@ -943,6 +959,7 @@
       "minecraft:vindicator": "2026-11-23 09:02:59 +0700",
       "minecraft:stray": "2026-11-23 19:23:01 +0700",
       "minecraft:spider": "2026-11-23 21:14:59 +0700",
+      "minecraft:zombie": "2026-11-24 10:21:08 +0700",
       "minecraft:drowned": "2026-11-22 19:17:02 +0700",
       "minecraft:husk": "2026-11-22 17:50:13 +0700",
       "minecraft:bogged": "2026-11-22 18:32:26 +0700",
@@ -4210,9 +4227,33 @@
     },
     "done": true
   },
+  "regions_unexplored:recipes/building_blocks/larch_wood": {
+    "criteria": {
+      "has_log": "2026-11-24 10:23:49 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/food/dubious_food": {
+    "criteria": {
+      "has_dubious_ingredient": "2026-11-24 10:21:05 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/larch_shrub": {
+    "criteria": {
+      "has_larch_sapling": "2026-11-24 10:24:06 +0700"
+    },
+    "done": true
+  },
   "twilightforest:recipes/drying/beef_jerky": {
     "criteria": {
       "has_meat": "2026-11-24 09:31:52 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/silver_ingot": {
+    "criteria": {
+      "has_silver_nugget": "2026-11-24 10:23:33 +0700"
     },
     "done": true
   },
@@ -4222,15 +4263,57 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/cooked_giant_ant_leg_from_smelting": {
+    "criteria": {
+      "has_giant_ant_leg": "2026-11-24 10:21:05 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/food/cooked_giant_ant_leg_from_smoking": {
+    "criteria": {
+      "has_giant_ant_leg": "2026-11-24 10:21:05 +0700"
+    },
+    "done": true
+  },
+  "tensura:vigilant": {
+    "criteria": {
+      "giant_ant_carapace": "2026-11-24 10:20:59 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/cooked_beef_from_smoking": {
     "criteria": {
       "has_beef": "2026-11-24 09:31:52 +0700"
     },
     "done": true
   },
+  "regions_unexplored:recipes/decorations/larch_branch_from_larch_log": {
+    "criteria": {
+      "has_log": "2026-11-24 10:23:49 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/food/cooked_giant_ant_leg_from_campfire_cooking": {
+    "criteria": {
+      "has_giant_ant_leg": "2026-11-24 10:21:05 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/cooked_beef": {
     "criteria": {
       "has_beef": "2026-11-24 09:31:52 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/larch_planks": {
+    "criteria": {
+      "has_logs": "2026-11-24 10:23:49 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/misc/dragon_ice_spikes": {
+    "criteria": {
+      "has_item": "2026-11-24 10:23:33 +0700"
     },
     "done": true
   },
