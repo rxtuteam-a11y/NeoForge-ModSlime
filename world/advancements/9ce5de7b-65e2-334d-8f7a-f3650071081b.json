@@ -326,6 +326,7 @@
     "criteria": {
       "minecraft:snowy_slopes": "2026-11-24 03:03:44 +0700",
       "minecraft:old_growth_pine_taiga": "2026-11-24 16:09:19 +0700",
+      "minecraft:mushroom_fields": "2026-11-25 00:14:10 +0700",
       "minecraft:taiga": "2026-11-24 10:50:38 +0700",
       "minecraft:deep_ocean": "2026-11-24 16:42:29 +0700",
       "minecraft:eroded_badlands": "2026-11-24 12:05:10 +0700",
@@ -5374,6 +5375,7 @@
   },
   "regions_unexplored:got_wood": {
     "criteria": {
+      "magnolia_log": "2026-11-25 00:12:26 +0700",
       "silver_birch_log": "2026-11-25 00:08:33 +0700",
       "maple_log": "2026-11-24 02:07:54 +0700"
     },
@@ -8269,9 +8271,57 @@
     },
     "done": true
   },
+  "tensura:eat_or_be_eaten": {
+    "criteria": {
+      "orc_disaster": "2026-11-24 23:23:12 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/pink_dye_from_cactus_flower": {
+    "criteria": {
+      "has_cactus_flower": "2026-11-24 23:27:29 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/green_dye": {
+    "criteria": {
+      "has_cactus": "2026-11-24 23:27:29 +0700"
+    },
+    "done": true
+  },
   "toms_storage:unlock_chest": {
     "criteria": {
       "inv_changed-chest": "2026-11-24 23:29:50 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/fruit_basket": {
+    "criteria": {
+      "has_chest": "2026-11-24 23:29:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/prismarine_bricks": {
+    "criteria": {
+      "has_prismarine_shard": "2026-11-24 23:31:34 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/prismarine": {
+    "criteria": {
+      "has_prismarine_shard": "2026-11-24 23:31:34 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_prismarine": {
+    "criteria": {
+      "has_prismarine_shard": "2026-11-24 23:31:34 +0700"
+    },
+    "done": true
+  },
+  "illagerinvasion:recipes/misc/platinum_sheet": {
+    "criteria": {
+      "has_platinum_chunk": "2026-11-24 23:32:10 +0700"
     },
     "done": true
   },
@@ -8287,57 +8337,33 @@
     },
     "done": true
   },
-  "kaleidoscope_cookery:recipes/decorations/fruit_basket": {
-    "criteria": {
-      "has_chest": "2026-11-24 23:29:50 +0700"
-    },
-    "done": true
-  },
-  "tensura:eat_or_be_eaten": {
-    "criteria": {
-      "orc_disaster": "2026-11-24 23:23:12 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/prismarine_bricks": {
-    "criteria": {
-      "has_prismarine_shard": "2026-11-24 23:31:34 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/pink_dye_from_cactus_flower": {
-    "criteria": {
-      "has_cactus_flower": "2026-11-24 23:27:29 +0700"
-    },
-    "done": true
-  },
   "regions_unexplored:recipes/building_blocks/silver_birch_wood": {
     "criteria": {
       "has_log": "2026-11-25 00:08:33 +0700"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/prismarine": {
+  "regions_unexplored:recipes/building_blocks/magnolia_wood": {
     "criteria": {
-      "has_prismarine_shard": "2026-11-24 23:31:34 +0700"
+      "has_log": "2026-11-25 00:12:26 +0700"
     },
     "done": true
   },
-  "illagerinvasion:recipes/misc/platinum_sheet": {
+  "regions_unexplored:recipes/building_blocks/magnolia_planks": {
     "criteria": {
-      "has_platinum_chunk": "2026-11-24 23:32:10 +0700"
+      "has_logs": "2026-11-25 00:12:26 +0700"
     },
     "done": true
   },
-  "minecraft:recipes/misc/green_dye": {
+  "regions_unexplored:recipes/decorations/magnolia_branch_from_magnolia_log": {
     "criteria": {
-      "has_cactus": "2026-11-24 23:27:29 +0700"
+      "has_log": "2026-11-25 00:12:26 +0700"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/dark_prismarine": {
+  "naturescompass:repair_natures_compass": {
     "criteria": {
-      "has_prismarine_shard": "2026-11-24 23:31:34 +0700"
+      "has_item": "2026-11-25 00:12:59 +0700"
     },
     "done": true
   },

@@ -317,6 +317,7 @@
   },
   "regions_unexplored:got_wood": {
     "criteria": {
+      "mauve_log": "2026-11-25 00:20:55 +0700",
       "pine_log": "2026-11-22 17:40:32 +0700",
       "larch_log": "2026-11-24 21:46:38 +0700"
     },
@@ -6590,9 +6591,27 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/oak_tool_rack": {
+    "criteria": {
+      "has_oak_fence": "2026-11-25 00:30:56 +0700"
+    },
+    "done": true
+  },
   "minecraft:husbandry/breed_an_animal": {
     "criteria": {
       "bred": "2026-11-25 00:01:35 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/wisteria_branch_from_wisteria_log": {
+    "criteria": {
+      "has_log": "2026-11-25 00:20:55 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/wisteria_stairs": {
+    "criteria": {
+      "has_wisteria_planks": "2026-11-25 00:22:30 +0700"
     },
     "done": true
   },
@@ -6614,9 +6633,45 @@
     },
     "done": true
   },
+  "regions_unexplored:recipes/redstone/wisteria_button": {
+    "criteria": {
+      "has_wisteria_planks": "2026-11-25 00:22:30 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/wisteria_slab": {
+    "criteria": {
+      "has_wisteria_planks": "2026-11-25 00:22:30 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/redstone/larch_button": {
     "criteria": {
       "has_larch_planks": "2026-11-24 23:59:23 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/wisteria_planks": {
+    "criteria": {
+      "has_logs": "2026-11-25 00:20:55 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/redstone/wisteria_trapdoor": {
+    "criteria": {
+      "has_wisteria_planks": "2026-11-25 00:22:30 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/redstone/wisteria_fence_gate": {
+    "criteria": {
+      "has_wisteria_planks": "2026-11-25 00:22:30 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/eight_immortals_table": {
+    "criteria": {
+      "has_oak_fence": "2026-11-25 00:30:56 +0700"
     },
     "done": true
   },
@@ -6644,6 +6699,18 @@
     },
     "done": false
   },
+  "regions_unexplored:recipes/redstone/wisteria_door": {
+    "criteria": {
+      "has_wisteria_planks": "2026-11-25 00:22:30 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/table_oak": {
+    "criteria": {
+      "has_fence": "2026-11-25 00:30:56 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/redstone/larch_pressure_plate": {
     "criteria": {
       "has_larch_planks": "2026-11-24 23:59:23 +0700"
@@ -6656,9 +6723,39 @@
     },
     "done": true
   },
+  "regions_unexplored:recipes/decorations/wisteria_sign": {
+    "criteria": {
+      "has_wisteria_planks": "2026-11-25 00:22:30 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/decorations/larch_sign": {
     "criteria": {
       "has_larch_planks": "2026-11-24 23:59:23 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/chair_oak": {
+    "criteria": {
+      "has_fence": "2026-11-25 00:30:56 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/wisteria_fence": {
+    "criteria": {
+      "has_wisteria_planks": "2026-11-25 00:22:30 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/wisteria_wood": {
+    "criteria": {
+      "has_log": "2026-11-25 00:20:55 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/redstone/wisteria_pressure_plate": {
+    "criteria": {
+      "has_wisteria_planks": "2026-11-25 00:22:30 +0700"
     },
     "done": true
   },
