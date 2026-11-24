@@ -6790,6 +6790,18 @@
     },
     "done": true
   },
+  "iceandfire:recipes/combat/mountain_troll_leather_helmet": {
+    "criteria": {
+      "has_item": "2026-11-25 01:30:07 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/frost_troll_leather_helmet": {
+    "criteria": {
+      "has_item": "2026-11-25 01:30:07 +0700"
+    },
+    "done": true
+  },
   "constructionwand:diamond_wand": {
     "criteria": {
       "diamond_wand": "2026-11-25 00:55:39 +0700"
@@ -6799,6 +6811,12 @@
   "minecraft:recipes/misc/light_gray_dye_from_azure_bluet": {
     "criteria": {
       "has_azure_bluet": "2026-11-25 00:50:37 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/forest_troll_leather_helmet": {
+    "criteria": {
+      "has_item": "2026-11-25 01:30:07 +0700"
     },
     "done": true
   },

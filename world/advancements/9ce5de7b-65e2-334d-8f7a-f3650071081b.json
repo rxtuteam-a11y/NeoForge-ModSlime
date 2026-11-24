@@ -8487,6 +8487,12 @@
     },
     "done": true
   },
+  "dungeons_arise:find_illager_campsite": {
+    "criteria": {
+      "location0": "2026-11-25 01:16:39 +0700"
+    },
+    "done": true
+  },
   "block_factorys_bosses:recipes/combat/dragon_bones_chestplate": {
     "criteria": {
       "has_item": "2026-11-25 00:57:20 +0700"
@@ -8496,6 +8502,12 @@
   "block_factorys_bosses:no_hit_dragon": {
     "criteria": {
       "no_hit_dragon_0": "2026-11-25 00:57:14 +0700"
+    },
+    "done": true
+  },
+  "yungscavebiomes:frosted_caves": {
+    "criteria": {
+      "frosted_caves": "2026-11-25 01:17:25 +0700"
     },
     "done": true
   },
