@@ -60,7 +60,9 @@
       "hyacinth_deeps": "2026-11-22 18:35:27 +0700",
       "icy_heights": "2026-11-22 19:05:02 +0700",
       "prismachasm": "2026-11-24 01:10:42 +0700",
-      "cold_boreal_taiga": "2026-11-22 19:02:02 +0700"
+      "old_growth_boreal_taiga": "2026-11-24 18:07:28 +0700",
+      "cold_boreal_taiga": "2026-11-22 19:02:02 +0700",
+      "boreal_taiga": "2026-11-24 18:07:25 +0700"
     },
     "done": false
   },
@@ -82,7 +84,9 @@
       "muddy_river": "2026-11-24 01:11:25 +0700",
       "hyacinth_deeps": "2026-11-22 18:35:27 +0700",
       "icy_heights": "2026-11-22 19:05:02 +0700",
-      "cold_boreal_taiga": "2026-11-22 19:02:02 +0700"
+      "old_growth_boreal_taiga": "2026-11-24 18:07:28 +0700",
+      "cold_boreal_taiga": "2026-11-22 19:02:02 +0700",
+      "boreal_taiga": "2026-11-24 18:07:25 +0700"
     },
     "done": false
   },
@@ -702,25 +706,34 @@
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "minecraft:cold_ocean": "2026-11-23 21:05:37 +0700",
-      "minecraft:flower_forest": "2026-11-24 02:19:24 +0700",
       "minecraft:snowy_slopes": "2026-11-24 17:55:40 +0700",
-      "minecraft:beach": "2026-11-24 00:48:48 +0700",
+      "minecraft:old_growth_pine_taiga": "2026-11-24 18:16:05 +0700",
       "minecraft:forest": "2026-11-22 18:33:25 +0700",
-      "minecraft:river": "2026-11-23 21:06:32 +0700",
-      "minecraft:snowy_plains": "2026-11-22 18:30:22 +0700",
-      "minecraft:stony_shore": "2026-11-24 17:55:06 +0700",
-      "minecraft:snowy_taiga": "2026-11-22 18:29:26 +0700",
-      "minecraft:dripstone_caves": "2026-11-24 16:47:38 +0700",
+      "minecraft:taiga": "2026-11-24 18:08:31 +0700",
       "minecraft:ice_spikes": "2026-11-22 19:05:21 +0700",
       "minecraft:frozen_ocean": "2026-11-22 18:17:02 +0700",
       "minecraft:frozen_river": "2026-11-22 18:33:06 +0700",
       "minecraft:deep_frozen_ocean": "2026-11-24 17:51:27 +0700",
       "minecraft:sunflower_plains": "2026-11-24 02:19:31 +0700",
-      "minecraft:swamp": "2026-11-22 18:34:22 +0700",
-      "minecraft:windswept_gravelly_hills": "2026-11-23 21:21:28 +0700",
+      "minecraft:birch_forest": "2026-11-24 18:09:50 +0700",
       "minecraft:windswept_hills": "2026-11-22 19:10:41 +0700",
+      "minecraft:old_growth_spruce_taiga": "2026-11-24 18:15:56 +0700",
       "minecraft:snowy_beach": "2026-11-22 17:45:07 +0700",
-      "minecraft:plains": "2026-11-22 18:32:27 +0700"
+      "minecraft:flower_forest": "2026-11-24 02:19:24 +0700",
+      "minecraft:beach": "2026-11-24 00:48:48 +0700",
+      "minecraft:dark_forest": "2026-11-24 18:16:07 +0700",
+      "minecraft:river": "2026-11-23 21:06:32 +0700",
+      "minecraft:snowy_plains": "2026-11-22 18:30:22 +0700",
+      "minecraft:stony_shore": "2026-11-24 17:55:06 +0700",
+      "minecraft:snowy_taiga": "2026-11-22 18:29:26 +0700",
+      "minecraft:dripstone_caves": "2026-11-24 16:47:38 +0700",
+      "minecraft:frozen_peaks": "2026-11-24 18:00:37 +0700",
+      "minecraft:swamp": "2026-11-22 18:34:22 +0700",
+      "minecraft:grove": "2026-11-24 18:08:58 +0700",
+      "minecraft:meadow": "2026-11-24 18:09:32 +0700",
+      "minecraft:windswept_gravelly_hills": "2026-11-23 21:21:28 +0700",
+      "minecraft:plains": "2026-11-22 18:32:27 +0700",
+      "minecraft:jagged_peaks": "2026-11-24 18:09:10 +0700"
     },
     "done": false
   },
@@ -5311,7 +5324,8 @@
   },
   "tensura:monstrous_diet": {
     "criteria": {
-      "raw_blade_tiger_meat": "2026-11-24 02:52:26 +0700"
+      "raw_blade_tiger_meat": "2026-11-24 02:52:26 +0700",
+      "blade_tiger_steak": "2026-11-24 18:04:15 +0700"
     },
     "done": false
   },
@@ -5699,9 +5713,27 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_diorite": {
+    "criteria": {
+      "has_diorite": "2026-11-24 18:05:36 +0700"
+    },
+    "done": true
+  },
   "royalvariations:explosive_king": {
     "criteria": {
       "royal_creeper": "2026-11-24 17:44:31 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/diorite_stairs_from_diorite_stonecutting": {
+    "criteria": {
+      "has_diorite": "2026-11-24 18:05:36 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:iceandfire/kill_sea_serpent": {
+    "criteria": {
+      "killed_fire_dragon": "2026-11-24 18:05:00 +0700"
     },
     "done": true
   },
@@ -5711,9 +5743,51 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/diorite_slab": {
+    "criteria": {
+      "has_diorite": "2026-11-24 18:05:36 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/armor_silver_helmet": {
+    "criteria": {
+      "has_item": "2026-11-24 18:05:44 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/diorite_wall": {
+    "criteria": {
+      "has_diorite": "2026-11-24 18:05:36 +0700"
+    },
+    "done": true
+  },
   "eternal_starlight:challenge_gatekeeper": {
     "criteria": {
       "challenged": "2026-11-24 17:49:52 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/diorite_warp_pad": {
+    "criteria": {
+      "has_diorite": "2026-11-24 18:05:36 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/tide_trident": {
+    "criteria": {
+      "has_item": "2026-11-24 18:06:45 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/diorite_wall_from_diorite_stonecutting": {
+    "criteria": {
+      "has_diorite": "2026-11-24 18:05:36 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/building_blocks/dragonscales_silver_to_dragonscale_silver": {
+    "criteria": {
+      "has_dragonscales_silver": "2026-11-24 18:05:44 +0700"
     },
     "done": true
   },
@@ -5723,15 +5797,147 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_diorite_from_diorite_stonecutting": {
+    "criteria": {
+      "has_diorite": "2026-11-24 18:05:36 +0700"
+    },
+    "done": true
+  },
   "eternal_starlight:obtain_seeking_eye": {
     "criteria": {
       "has_item": "2026-11-24 17:50:00 +0700"
     },
     "done": true
   },
+  "iceandfire:recipes/combat/sea_serpent_arrow": {
+    "criteria": {
+      "has_item": "2026-11-24 18:06:45 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/diorite_stairs": {
+    "criteria": {
+      "has_diorite": "2026-11-24 18:05:36 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/armor_silver_boots": {
+    "criteria": {
+      "has_item": "2026-11-24 18:05:44 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/armor_silver_chestplate": {
+    "criteria": {
+      "has_item": "2026-11-24 18:05:44 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/tide_bronze_chestplate": {
+    "criteria": {
+      "has_item": "2026-11-24 18:06:45 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/tide_bronze_helmet": {
+    "criteria": {
+      "has_item": "2026-11-24 18:06:45 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_diorite_stairs_from_diorite_stonecutting": {
+    "criteria": {
+      "has_diorite": "2026-11-24 18:05:36 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/armor_silver_leggings": {
+    "criteria": {
+      "has_item": "2026-11-24 18:05:44 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/andesite": {
+    "criteria": {
+      "has_stone": "2026-11-24 18:05:36 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/building_blocks/sea_serpent_scales_bronze_to_sea_serpent_scale_block_bronze": {
+    "criteria": {
+      "has_sea_serpent_scales_bronze": "2026-11-24 18:06:45 +0700"
+    },
+    "done": true
+  },
+  "friendsandfoes:recipes/combat/trident": {
+    "criteria": {
+      "has_barnacle_tooth": "2026-11-24 18:04:05 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/diorite_corner_trim": {
+    "criteria": {
+      "has_diorite_corner_trim": "2026-11-24 18:05:36 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_diorite_slab_from_diorite_stonecutting": {
+    "criteria": {
+      "has_diorite": "2026-11-24 18:05:36 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/diorite_pillar_trim": {
+    "criteria": {
+      "has_diorite_pillar_trim": "2026-11-24 18:05:36 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/food/cooked_spear_toro_meat_from_campfire_cooking": {
+    "criteria": {
+      "has_raw_spear_toro_meat": "2026-11-24 18:03:39 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/tide_bronze_leggings": {
+    "criteria": {
+      "has_item": "2026-11-24 18:06:45 +0700"
+    },
+    "done": true
+  },
   "constructionwand:recipes/misc/core_angel": {
     "criteria": {
       "has_item": "2026-11-24 17:57:05 +0700"
+    },
+    "done": true
+  },
+  "friendsandfoes:adventure/kill_barnacle": {
+    "criteria": {
+      "killed_barnacle": "2026-11-24 18:03:32 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_spear_toro_meat_from_smelting": {
+    "criteria": {
+      "has_raw_spear_toro_meat": "2026-11-24 18:03:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/diorite_slab_from_diorite_stonecutting": {
+    "criteria": {
+      "has_diorite": "2026-11-24 18:05:36 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/food/cooked_spear_toro_meat_from_smoking": {
+    "criteria": {
+      "has_raw_spear_toro_meat": "2026-11-24 18:03:39 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/tide_bronze_boots": {
+    "criteria": {
+      "has_item": "2026-11-24 18:06:45 +0700"
     },
     "done": true
   },

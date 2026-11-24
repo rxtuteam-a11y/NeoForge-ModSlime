@@ -5959,5 +5959,23 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/silver_ingot_from_blasting_raw_silver": {
+    "criteria": {
+      "has_raw_silver": "2026-11-24 18:04:04 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/raw_silver_blockfrom_raw_silver": {
+    "criteria": {
+      "has_raw_silver": "2026-11-24 18:04:04 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/silver_ingot_from_smelting_raw_silver": {
+    "criteria": {
+      "has_raw_silver": "2026-11-24 18:04:04 +0700"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }

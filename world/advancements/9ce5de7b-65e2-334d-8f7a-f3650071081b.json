@@ -7639,6 +7639,12 @@
     },
     "done": true
   },
+  "tensura:hiss_tory": {
+    "criteria": {
+      "serpent_scale": "2026-11-24 18:09:32 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/misc/magic_ore_shardfrom_magic_ore_block": {
     "criteria": {
       "has_magic_ore_block": "2026-11-24 16:54:25 +0700"
@@ -7648,6 +7654,12 @@
   "minecraft:recipes/building_blocks/quartz_stairs": {
     "criteria": {
       "has_quartz_block": "2026-11-24 17:20:52 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_serpent_meat_from_smelting": {
+    "criteria": {
+      "has_raw_serpent_meat": "2026-11-24 18:09:32 +0700"
     },
     "done": true
   },
@@ -7723,6 +7735,12 @@
     },
     "done": true
   },
+  "tensura:recipes/food/cooked_serpent_meat_from_campfire_cooking": {
+    "criteria": {
+      "has_raw_serpent_meat": "2026-11-24 18:09:32 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/quartz_slab_from_stonecutting": {
     "criteria": {
       "has_quartz_block": "2026-11-24 17:20:52 +0700"
@@ -7768,6 +7786,12 @@
   "minecraft:recipes/building_blocks/chiseled_quartz_block": {
     "criteria": {
       "has_quartz_block": "2026-11-24 17:20:52 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/food/cooked_serpent_meat_from_smoking": {
+    "criteria": {
+      "has_raw_serpent_meat": "2026-11-24 18:09:32 +0700"
     },
     "done": true
   },
