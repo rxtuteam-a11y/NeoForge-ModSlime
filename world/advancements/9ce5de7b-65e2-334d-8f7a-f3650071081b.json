@@ -309,6 +309,7 @@
       "minecraft:cold_ocean": "2026-11-23 13:15:39 +0700",
       "minecraft:snowy_slopes": "2026-11-24 03:03:44 +0700",
       "minecraft:forest": "2026-11-23 13:09:11 +0700",
+      "minecraft:taiga": "2026-11-24 10:50:38 +0700",
       "minecraft:ice_spikes": "2026-11-23 19:25:31 +0700",
       "minecraft:frozen_ocean": "2026-11-23 13:31:09 +0700",
       "minecraft:frozen_river": "2026-11-23 13:20:15 +0700",
@@ -335,6 +336,7 @@
       "minecraft:snowy_taiga": "2026-11-23 13:06:23 +0700",
       "minecraft:dripstone_caves": "2026-11-23 23:20:20 +0700",
       "minecraft:frozen_peaks": "2026-11-24 03:03:45 +0700",
+      "minecraft:old_growth_birch_forest": "2026-11-24 10:59:48 +0700",
       "minecraft:deep_dark": "2026-11-24 00:21:04 +0700",
       "minecraft:swamp": "2026-11-23 14:02:47 +0700",
       "minecraft:windswept_gravelly_hills": "2026-11-24 08:33:42 +0700",
@@ -6185,9 +6187,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/deepslate_brick_wall_from_deepslate_bricks_stonecutting": {
+    "criteria": {
+      "has_deepslate_bricks": "2026-11-24 10:58:17 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/pure_magisteel_nugget_from_blasting_pure_magisteel_helmet": {
     "criteria": {
       "has_pure_magisteel_helmet": "2026-11-24 10:33:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_brick_stairs": {
+    "criteria": {
+      "has_deepslate_bricks": "2026-11-24 10:58:17 +0700"
     },
     "done": true
   },
@@ -6197,9 +6211,33 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/blade_tiger_steak_from_smelting": {
+    "criteria": {
+      "has_raw_blade_tiger_meat": "2026-11-24 10:57:01 +0700"
+    },
+    "done": true
+  },
   "tensura:low_magisteel": {
     "criteria": {
       "low_magisteel": "2026-11-24 10:25:07 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_brick_slab_from_deepslate_bricks_stonecutting": {
+    "criteria": {
+      "has_deepslate_bricks": "2026-11-24 10:58:17 +0700"
+    },
+    "done": true
+  },
+  "dungeons_arise:find_mushroom_mines": {
+    "criteria": {
+      "location0": "2026-11-24 10:59:54 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/food/blade_tiger_steak_from_campfire_cooking": {
+    "criteria": {
+      "has_raw_blade_tiger_meat": "2026-11-24 10:57:01 +0700"
     },
     "done": true
   },
@@ -6209,9 +6247,33 @@
     },
     "done": true
   },
+  "tensura:recipes/food/blade_tiger_steak_from_smoking": {
+    "criteria": {
+      "has_raw_blade_tiger_meat": "2026-11-24 10:57:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/sandstone": {
+    "criteria": {
+      "has_sand": "2026-11-24 10:54:43 +0700"
+    },
+    "done": true
+  },
   "kaleidoscope_cookery:recipes/decorations/recipe_item": {
     "criteria": {
       "has_paper": "2026-11-24 10:26:55 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_tile_stairs_from_deepslate_bricks_stonecutting": {
+    "criteria": {
+      "has_deepslate_bricks": "2026-11-24 10:58:17 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/spruce_shrub": {
+    "criteria": {
+      "has_spruce_sapling": "2026-11-24 10:51:03 +0700"
     },
     "done": true
   },
@@ -6233,9 +6295,27 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/deepslate_tile_wall_from_deepslate_bricks_stonecutting": {
+    "criteria": {
+      "has_deepslate_bricks": "2026-11-24 10:58:17 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/low_magisteel_nugget": {
     "criteria": {
       "has_low_magisteel_ingot": "2026-11-24 10:25:07 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/deepslate_brick_wall": {
+    "criteria": {
+      "has_deepslate_bricks": "2026-11-24 10:58:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cracked_deepslate_bricks": {
+    "criteria": {
+      "has_deepslate_bricks": "2026-11-24 10:58:17 +0700"
     },
     "done": true
   },
@@ -6257,9 +6337,27 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/glass": {
+    "criteria": {
+      "has_smelts_to_glass": "2026-11-24 10:54:43 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/low_magisteel_nugget_from_blasting_low_magisteel_boots": {
     "criteria": {
       "has_low_magisteel_boots": "2026-11-24 10:33:05 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_tiles": {
+    "criteria": {
+      "has_deepslate_bricks": "2026-11-24 10:58:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_brick_stairs_from_deepslate_bricks_stonecutting": {
+    "criteria": {
+      "has_deepslate_bricks": "2026-11-24 10:58:17 +0700"
     },
     "done": true
   },
@@ -6272,6 +6370,18 @@
   "tensura:recipes/misc/low_magisteel_bone_golem": {
     "criteria": {
       "has_low_magisteel_ingot": "2026-11-24 10:25:07 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_tiles_from_deepslate_bricks_stonecutting": {
+    "criteria": {
+      "has_deepslate_bricks": "2026-11-24 10:58:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_brick_slab": {
+    "criteria": {
+      "has_deepslate_bricks": "2026-11-24 10:58:17 +0700"
     },
     "done": true
   },
@@ -6296,6 +6406,12 @@
   "minecraft:recipes/misc/pure_magisteel_nugget_from_smelting_pure_magisteel_leggings": {
     "criteria": {
       "has_pure_magisteel_leggings": "2026-11-24 10:32:48 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_tile_slab_from_deepslate_bricks_stonecutting": {
+    "criteria": {
+      "has_deepslate_bricks": "2026-11-24 10:58:17 +0700"
     },
     "done": true
   },

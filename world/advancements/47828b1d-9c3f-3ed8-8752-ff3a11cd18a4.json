@@ -63,6 +63,7 @@
       "spires": "2026-11-23 13:24:02 +0700",
       "grassland": "2026-11-23 23:50:23 +0700",
       "prairie": "2026-11-23 23:47:16 +0700",
+      "tundra": "2026-11-24 10:58:16 +0700",
       "flower_fields": "2026-11-23 22:41:21 +0700",
       "highland_fields": "2026-11-23 21:10:02 +0700",
       "frozen_pine_taiga": "2026-11-22 17:27:12 +0700",
@@ -94,6 +95,7 @@
       "spires": "2026-11-23 13:24:02 +0700",
       "grassland": "2026-11-23 23:50:23 +0700",
       "prairie": "2026-11-23 23:47:16 +0700",
+      "tundra": "2026-11-24 10:58:16 +0700",
       "flower_fields": "2026-11-23 22:41:21 +0700",
       "highland_fields": "2026-11-23 21:10:02 +0700",
       "frozen_pine_taiga": "2026-11-22 17:27:12 +0700",
@@ -1504,6 +1506,7 @@
       "bread": "2026-11-23 21:08:26 +0700",
       "cooked_chicken": "2026-11-23 21:16:22 +0700",
       "cookie": "2026-11-22 18:32:32 +0700",
+      "potato": "2026-11-24 10:40:24 +0700",
       "mushroom_stew": "2026-11-22 17:58:01 +0700",
       "sweet_berries": "2026-11-24 10:37:04 +0700",
       "baked_potato": "2026-11-22 18:47:23 +0700"
@@ -4527,6 +4530,216 @@
   "minecraft:recipes/building_blocks/stripped_spruce_wood_from_spruce_log_woodcutting": {
     "criteria": {
       "has_spruce_log": "2026-11-24 10:32:14 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/golden_apple_from_orichalcum_ingot": {
+    "criteria": {
+      "has_material": "2026-11-24 10:41:49 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/food/golden_salad": {
+    "criteria": {
+      "has_golden_apple": "2026-11-24 10:41:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:nether/brew_potion": {
+    "criteria": {
+      "potion": "2026-11-24 10:41:56 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/green_dye": {
+    "criteria": {
+      "has_cactus": "2026-11-24 10:41:58 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/kitchen_hood": {
+    "criteria": {
+      "has_kitchen_hood": "2026-11-24 10:42:07 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:recipes/building_blocks/prison_door": {
+    "criteria": {
+      "has_item": "2026-11-24 10:42:07 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:recipes/building_blocks/rusty_prison_door": {
+    "criteria": {
+      "has_item": "2026-11-24 10:42:07 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/kitchen_hood_pipe": {
+    "criteria": {
+      "has_kitchen_hood_pipe": "2026-11-24 10:42:07 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/decorations/iron_ladder": {
+    "criteria": {
+      "has_iron_bars": "2026-11-24 10:42:07 +0700"
+    },
+    "done": true
+  },
+  "minecraft:story/cure_zombie_villager": {
+    "criteria": {
+      "cured_zombie": "2026-11-24 10:46:21 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/note_block": {
+    "criteria": {
+      "has_redstone": "2026-11-24 10:49:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/dropper": {
+    "criteria": {
+      "has_redstone": "2026-11-24 10:49:01 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/redstone/redstone_bud": {
+    "criteria": {
+      "has_redstone": "2026-11-24 10:49:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/piston": {
+    "criteria": {
+      "has_redstone": "2026-11-24 10:49:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/redstone_torch": {
+    "criteria": {
+      "has_redstone": "2026-11-24 10:49:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/target": {
+    "criteria": {
+      "has_redstone": "2026-11-24 10:49:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/compass": {
+    "criteria": {
+      "has_redstone": "2026-11-24 10:49:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/redstone_block": {
+    "criteria": {
+      "has_redstone": "2026-11-24 10:49:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/clock": {
+    "criteria": {
+      "has_redstone": "2026-11-24 10:49:01 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/redstone/raw_redstone_block": {
+    "criteria": {
+      "has_redstone": "2026-11-24 10:49:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/leather_helmet": {
+    "criteria": {
+      "has_leather": "2026-11-24 10:56:05 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/leather_chestplate": {
+    "criteria": {
+      "has_leather": "2026-11-24 10:56:05 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/leather_horse_armor": {
+    "criteria": {
+      "has_leather": "2026-11-24 10:56:05 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/farmer_chest_plate": {
+    "criteria": {
+      "has_leather": "2026-11-24 10:56:05 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/farmer_boots": {
+    "criteria": {
+      "has_leather": "2026-11-24 10:56:05 +0700"
+    },
+    "done": true
+  },
+  "tensura:getcha_leathers": {
+    "criteria": {
+      "leather": "2026-11-24 10:56:05 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/leather_boots": {
+    "criteria": {
+      "has_leather": "2026-11-24 10:56:05 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/farmer_leggings": {
+    "criteria": {
+      "has_leather": "2026-11-24 10:56:05 +0700"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/misc/upgrade_base": {
+    "criteria": {
+      "has_leather": "2026-11-24 10:56:05 +0700"
+    },
+    "done": true
+  },
+  "vanillabackport:recipes/combat/saddle": {
+    "criteria": {
+      "has_leather": "2026-11-24 10:56:05 +0700"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/misc/backpack": {
+    "criteria": {
+      "has_leather": "2026-11-24 10:56:05 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/item_frame": {
+    "criteria": {
+      "has_leather": "2026-11-24 10:56:05 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/leather_leggings": {
+    "criteria": {
+      "has_leather": "2026-11-24 10:56:05 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/gold_hippogryph_armor": {
+    "criteria": {
+      "has_item": "2026-11-24 10:56:09 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/iron_hippogryph_armor": {
+    "criteria": {
+      "has_item": "2026-11-24 10:56:28 +0700"
     },
     "done": true
   },
