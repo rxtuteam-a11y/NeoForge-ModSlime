@@ -56,7 +56,9 @@
     },
     {
       "questId": "trbeyond:daily_day_2_slime_1",
-      "progress": {}
+      "progress": {
+        "kill_slime_2_1": 3
+      }
     },
     {
       "questId": "trbeyond:repeatable_skill_kyoya_tachibana",

@@ -44,6 +44,7 @@
   "regions_unexplored:regions_explored": {
     "criteria": {
       "wisteria_grove": "2026-11-24 16:11:22 +0700",
+      "joshua_desert": "2026-11-24 16:40:14 +0700",
       "silver_birch_forest": "2026-11-24 08:38:25 +0700",
       "shrubland": "2026-11-23 13:08:21 +0700",
       "dry_bushland": "2026-11-24 11:52:48 +0700",
@@ -55,6 +56,7 @@
       "bamboo_forest": "2026-11-24 03:18:09 +0700",
       "cold_boreal_taiga": "2026-11-23 13:27:20 +0700",
       "old_growth_forest": "2026-11-24 12:03:25 +0700",
+      "saguaro_desert": "2026-11-24 16:38:08 +0700",
       "marsh": "2026-11-23 14:04:02 +0700",
       "willow_forest": "2026-11-23 14:04:03 +0700",
       "cold_river": "2026-11-24 02:32:29 +0700",
@@ -85,6 +87,7 @@
   "regions_unexplored:pioneer": {
     "criteria": {
       "wisteria_grove": "2026-11-24 16:11:22 +0700",
+      "joshua_desert": "2026-11-24 16:40:14 +0700",
       "silver_birch_forest": "2026-11-24 08:38:25 +0700",
       "shrubland": "2026-11-23 13:08:21 +0700",
       "dry_bushland": "2026-11-24 11:52:48 +0700",
@@ -96,6 +99,7 @@
       "bamboo_forest": "2026-11-24 03:18:09 +0700",
       "cold_boreal_taiga": "2026-11-23 13:27:20 +0700",
       "old_growth_forest": "2026-11-24 12:03:25 +0700",
+      "saguaro_desert": "2026-11-24 16:38:08 +0700",
       "marsh": "2026-11-23 14:04:02 +0700",
       "willow_forest": "2026-11-23 14:04:03 +0700",
       "cold_river": "2026-11-24 02:32:29 +0700",
@@ -322,6 +326,7 @@
       "minecraft:old_growth_pine_taiga": "2026-11-24 16:09:19 +0700",
       "minecraft:forest": "2026-11-23 13:09:11 +0700",
       "minecraft:taiga": "2026-11-24 10:50:38 +0700",
+      "minecraft:deep_ocean": "2026-11-24 16:42:29 +0700",
       "minecraft:ice_spikes": "2026-11-23 19:25:31 +0700",
       "minecraft:frozen_ocean": "2026-11-23 13:31:09 +0700",
       "minecraft:eroded_badlands": "2026-11-24 12:05:10 +0700",
@@ -7382,27 +7387,9 @@
     },
     "done": false
   },
-  "regions_unexplored:recipes/building_blocks/prismaglass": {
+  "regions_unexplored:light_as_a_frog": {
     "criteria": {
-      "has_glass": "2026-11-24 16:12:20 +0700"
-    },
-    "done": true
-  },
-  "cataclysm:kill_scylla": {
-    "criteria": {
-      "endergolem": "2026-11-24 16:27:02 +0700"
-    },
-    "done": true
-  },
-  "dungeons_arise:find_typhon": {
-    "criteria": {
-      "location0": "2026-11-24 16:30:38 +0700"
-    },
-    "done": true
-  },
-  "ironchest:recipes/decorations/upgrades/gold_to_diamond_chest_upgrade": {
-    "criteria": {
-      "has_glass": "2026-11-24 16:12:20 +0700"
+      "lily_pad": "2026-11-24 15:46:46 +0700"
     },
     "done": true
   },
@@ -7424,45 +7411,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/dark_oak_slab_from_dark_oak_wood_woodcutting": {
-    "criteria": {
-      "has_dark_oak_wood": "2026-11-24 15:53:50 +0700"
-    },
-    "done": true
-  },
-  "ironchest:recipes/decorations/chests/diamond_crystal_chest": {
-    "criteria": {
-      "has_glass": "2026-11-24 16:12:20 +0700"
-    },
-    "done": true
-  },
   "regions_unexplored:recipes/building_blocks/mossy_stone_from_smelting_mossy_cobblestone": {
     "criteria": {
       "has_mossy_cobblestone": "2026-11-24 15:53:31 +0700"
-    },
-    "done": true
-  },
-  "cataclysm:kill_clawdian": {
-    "criteria": {
-      "endergolem": "2026-11-24 16:24:57 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/dark_oak_button_from_dark_oak_wood_woodcutting": {
-    "criteria": {
-      "has_dark_oak_wood": "2026-11-24 15:53:50 +0700"
-    },
-    "done": true
-  },
-  "ironchest:recipes/decorations/upgrades/diamond_to_crystal_chest_upgrade": {
-    "criteria": {
-      "has_glass": "2026-11-24 16:12:20 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/dark_oak_planks_from_dark_oak_wood_woodcutting": {
-    "criteria": {
-      "has_dark_oak_wood": "2026-11-24 15:53:50 +0700"
     },
     "done": true
   },
@@ -7478,7 +7429,85 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/mossy_cobblestone_stairs": {
+    "criteria": {
+      "has_mossy_cobblestone": "2026-11-24 15:53:31 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mossy_cobblestone_slab_from_mossy_cobblestone_stonecutting": {
+    "criteria": {
+      "has_mossy_cobblestone": "2026-11-24 15:53:31 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/leaf_litter": {
+    "criteria": {
+      "has_leaves": "2026-11-24 15:53:36 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_oak_slab_from_dark_oak_wood_woodcutting": {
+    "criteria": {
+      "has_dark_oak_wood": "2026-11-24 15:53:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_oak_button_from_dark_oak_wood_woodcutting": {
+    "criteria": {
+      "has_dark_oak_wood": "2026-11-24 15:53:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_oak_planks_from_dark_oak_wood_woodcutting": {
+    "criteria": {
+      "has_dark_oak_wood": "2026-11-24 15:53:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stick_from_dark_oak_wood_woodcutting": {
+    "criteria": {
+      "has_dark_oak_wood": "2026-11-24 15:53:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/ladder_from_dark_oak_wood_woodcutting": {
+    "criteria": {
+      "has_dark_oak_wood": "2026-11-24 15:53:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bowl_from_dark_oak_wood_woodcutting": {
+    "criteria": {
+      "has_dark_oak_wood": "2026-11-24 15:53:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_oak_fence_from_dark_oak_wood_woodcutting": {
+    "criteria": {
+      "has_dark_oak_wood": "2026-11-24 15:53:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_oak_stairs_from_dark_oak_wood_woodcutting": {
+    "criteria": {
+      "has_dark_oak_wood": "2026-11-24 15:53:50 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/mossy_stone_bricks_from_moss_block": {
+    "criteria": {
+      "has_moss_block": "2026-11-24 15:57:21 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mossy_cobblestone_from_moss_block": {
+    "criteria": {
+      "has_moss_block": "2026-11-24 15:57:21 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/moss_carpet": {
     "criteria": {
       "has_moss_block": "2026-11-24 15:57:21 +0700"
     },
@@ -7490,87 +7519,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/stick_from_dark_oak_wood_woodcutting": {
+  "friendsandfoes:adventure/kill_illusioner": {
     "criteria": {
-      "has_dark_oak_wood": "2026-11-24 15:53:50 +0700"
-    },
-    "done": true
-  },
-  "ironchest:recipes/decorations/upgrades/diamond_to_obsidian_chest_upgrade": {
-    "criteria": {
-      "has_glass": "2026-11-24 16:12:20 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/conduit": {
-    "criteria": {
-      "has_nautilus_shell": "2026-11-24 16:22:01 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/mossy_cobblestone_stairs": {
-    "criteria": {
-      "has_mossy_cobblestone": "2026-11-24 15:53:31 +0700"
-    },
-    "done": true
-  },
-  "tensura:s_rank": {
-    "criteria": {
-      "ep": "2026-11-24 16:28:32 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/ladder_from_dark_oak_wood_woodcutting": {
-    "criteria": {
-      "has_dark_oak_wood": "2026-11-24 15:53:50 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/leaf_litter": {
-    "criteria": {
-      "has_leaves": "2026-11-24 15:53:36 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/bowl_from_dark_oak_wood_woodcutting": {
-    "criteria": {
-      "has_dark_oak_wood": "2026-11-24 15:53:50 +0700"
-    },
-    "done": true
-  },
-  "cataclysm:find_acropolis": {
-    "criteria": {
-      "acropolis": "2026-11-24 16:19:49 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/mossy_cobblestone_slab_from_mossy_cobblestone_stonecutting": {
-    "criteria": {
-      "has_mossy_cobblestone": "2026-11-24 15:53:31 +0700"
-    },
-    "done": true
-  },
-  "regions_unexplored:light_as_a_frog": {
-    "criteria": {
-      "lily_pad": "2026-11-24 15:46:46 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/dark_oak_fence_from_dark_oak_wood_woodcutting": {
-    "criteria": {
-      "has_dark_oak_wood": "2026-11-24 15:53:50 +0700"
-    },
-    "done": true
-  },
-  "cataclysm:kill_all_bosses": {
-    "criteria": {
-      "cataclysm:scylla": "2026-11-24 16:27:02 +0700"
-    },
-    "done": false
-  },
-  "minecraft:recipes/building_blocks/mossy_cobblestone_from_moss_block": {
-    "criteria": {
-      "has_moss_block": "2026-11-24 15:57:21 +0700"
+      "killed_illusioner": "2026-11-24 16:07:51 +0700"
     },
     "done": true
   },
@@ -7580,21 +7531,111 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/dark_oak_stairs_from_dark_oak_wood_woodcutting": {
+  "regions_unexplored:recipes/building_blocks/prismaglass": {
     "criteria": {
-      "has_dark_oak_wood": "2026-11-24 15:53:50 +0700"
+      "has_glass": "2026-11-24 16:12:20 +0700"
     },
     "done": true
   },
-  "friendsandfoes:adventure/kill_illusioner": {
+  "ironchest:recipes/decorations/upgrades/gold_to_diamond_chest_upgrade": {
     "criteria": {
-      "killed_illusioner": "2026-11-24 16:07:51 +0700"
+      "has_glass": "2026-11-24 16:12:20 +0700"
     },
     "done": true
   },
-  "minecraft:recipes/decorations/moss_carpet": {
+  "ironchest:recipes/decorations/chests/diamond_crystal_chest": {
     "criteria": {
-      "has_moss_block": "2026-11-24 15:57:21 +0700"
+      "has_glass": "2026-11-24 16:12:20 +0700"
+    },
+    "done": true
+  },
+  "ironchest:recipes/decorations/upgrades/diamond_to_crystal_chest_upgrade": {
+    "criteria": {
+      "has_glass": "2026-11-24 16:12:20 +0700"
+    },
+    "done": true
+  },
+  "ironchest:recipes/decorations/upgrades/diamond_to_obsidian_chest_upgrade": {
+    "criteria": {
+      "has_glass": "2026-11-24 16:12:20 +0700"
+    },
+    "done": true
+  },
+  "cataclysm:find_acropolis": {
+    "criteria": {
+      "acropolis": "2026-11-24 16:19:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/conduit": {
+    "criteria": {
+      "has_nautilus_shell": "2026-11-24 16:22:01 +0700"
+    },
+    "done": true
+  },
+  "cataclysm:kill_clawdian": {
+    "criteria": {
+      "endergolem": "2026-11-24 16:24:57 +0700"
+    },
+    "done": true
+  },
+  "cataclysm:kill_scylla": {
+    "criteria": {
+      "endergolem": "2026-11-24 16:27:02 +0700"
+    },
+    "done": true
+  },
+  "cataclysm:kill_all_bosses": {
+    "criteria": {
+      "cataclysm:scylla": "2026-11-24 16:27:02 +0700"
+    },
+    "done": false
+  },
+  "tensura:s_rank": {
+    "criteria": {
+      "ep": "2026-11-24 16:28:32 +0700"
+    },
+    "done": true
+  },
+  "dungeons_arise:find_typhon": {
+    "criteria": {
+      "location0": "2026-11-24 16:30:38 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/tide_bronze_chestplate": {
+    "criteria": {
+      "has_item": "2026-11-24 16:43:55 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/tide_bronze_helmet": {
+    "criteria": {
+      "has_item": "2026-11-24 16:43:55 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/building_blocks/sea_serpent_scales_bronze_to_sea_serpent_scale_block_bronze": {
+    "criteria": {
+      "has_sea_serpent_scales_bronze": "2026-11-24 16:43:55 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/tide_bronze_leggings": {
+    "criteria": {
+      "has_item": "2026-11-24 16:43:55 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/tide_bronze_boots": {
+    "criteria": {
+      "has_item": "2026-11-24 16:43:55 +0700"
+    },
+    "done": true
+  },
+  "dungeons_arise:find_wishing_well": {
+    "criteria": {
+      "location0": "2026-11-24 16:47:17 +0700"
     },
     "done": true
   },
