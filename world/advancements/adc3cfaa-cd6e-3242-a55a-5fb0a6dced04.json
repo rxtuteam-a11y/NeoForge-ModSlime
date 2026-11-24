@@ -5419,5 +5419,47 @@
     },
     "done": true
   },
+  "minecraft:nether/netherite_armor": {
+    "criteria": {
+      "netherite_armor": "2026-11-24 15:23:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/tame_an_animal": {
+    "criteria": {
+      "tamed_animal": "2026-11-24 15:25:20 +0700"
+    },
+    "done": true
+  },
+  "tensura:name_a_mob": {
+    "criteria": {
+      "name": "2026-11-24 15:25:20 +0700"
+    },
+    "done": true
+  },
+  "tensura:monster_tamer": {
+    "criteria": {
+      "monster": "2026-11-24 15:25:20 +0700"
+    },
+    "done": true
+  },
+  "tensura:my_precious": {
+    "criteria": {
+      "coin": "2026-11-24 15:29:48 +0700"
+    },
+    "done": true
+  },
+  "tensura:magic_ore": {
+    "criteria": {
+      "magic_ore": "2026-11-24 15:29:48 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/magic_ore_blockfrom_magic_ore_shard": {
+    "criteria": {
+      "has_magic_ore_shard": "2026-11-24 15:29:48 +0700"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }

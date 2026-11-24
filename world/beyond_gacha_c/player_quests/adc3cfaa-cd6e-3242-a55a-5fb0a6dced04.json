@@ -26,17 +26,15 @@
       "progress": {}
     },
     {
-      "questId": "trbeyond:daily_day_1_cattledeer_1",
-      "progress": {
-        "kill_cattledeer_1_1": 6
-      }
-    },
-    {
-      "questId": "trbeyond:boss_carrion",
+      "questId": "trbeyond:daily_day_2_landfish_2",
       "progress": {}
     },
     {
-      "questId": "trbeyond:daily_day_1_giant_cod_2",
+      "questId": "trbeyond:daily_day_2_hell_caterpillar_3",
+      "progress": {}
+    },
+    {
+      "questId": "trbeyond:boss_carrion",
       "progress": {}
     },
     {
@@ -49,6 +47,10 @@
     },
     {
       "questId": "trbeyond:rep_sub_slime_harvest_1",
+      "progress": {}
+    },
+    {
+      "questId": "trbeyond:daily_day_2_slime_1",
       "progress": {}
     },
     {
@@ -129,10 +131,6 @@
     },
     {
       "questId": "trbeyond:weekly_day_1_akash_1",
-      "progress": {}
-    },
-    {
-      "questId": "trbeyond:daily_day_1_giant_salmon_3",
       "progress": {}
     },
     {
