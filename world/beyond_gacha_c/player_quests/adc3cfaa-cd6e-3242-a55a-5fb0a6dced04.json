@@ -1,6 +1,7 @@
 {
   "mxp": 0,
   "completed": [
+    "trbeyond:daily_day_2_slime_1",
     "trbeyond:daily_day_1_cattledeer_1"
   ],
   "repeatable_timers": {},
@@ -52,7 +53,7 @@
     {
       "questId": "trbeyond:daily_day_2_slime_1",
       "progress": {
-        "kill_slime_2_1": 6
+        "kill_slime_2_1": 7
       }
     },
     {
