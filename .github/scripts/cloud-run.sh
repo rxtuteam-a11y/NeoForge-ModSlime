@@ -40,6 +40,13 @@ DURATION_MIN="${DURATION_MIN:-340}"
 [ "$DURATION_MIN" -gt 340 ] 2>/dev/null && DURATION_MIN=340
 DEADLINE=$(( $(date +%s) + DURATION_MIN * 60 ))
 
+# ---- RAM cho Java theo máy GitHub (máy 16 GB -> heap 11 GB, chừa phần cho hệ thống) ----
+TOTAL_GB=$(awk '/MemTotal/ {printf "%d", $2/1024/1024}' /proc/meminfo)
+HEAP_GB=$(( TOTAL_GB - 6 )); [ "$HEAP_GB" -gt 12 ] && HEAP_GB=12; [ "$HEAP_GB" -lt 6 ] && HEAP_GB=6
+sed -E "s/^-Xms.*/-Xms${HEAP_GB}G/; s/^-Xmx.*/-Xmx${HEAP_GB}G/" user_jvm_args.txt > cloud_jvm_args.txt
+echo "Máy GitHub: $(nproc) CPU, ${TOTAL_GB} GB RAM -> Java heap ${HEAP_GB} GB"
+export MODSLIME_JVM_ARGS_FILE=cloud_jvm_args.txt
+
 git config user.name "ModSlime Cloud AutoSave"
 git config user.email "modslime-bot@users.noreply.github.com"
 rm -f world/session.lock

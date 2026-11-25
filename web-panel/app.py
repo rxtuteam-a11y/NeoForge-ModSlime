@@ -843,7 +843,8 @@ def start_minecraft_server():
             java_path = "java"
         cmd = [java_path, "@user_jvm_args.txt", "@libraries/net/neoforged/neoforge/21.1.267/win_args.txt", "nogui"]
     else:
-        cmd = ["java", "@user_jvm_args.txt", "@libraries/net/neoforged/neoforge/21.1.267/unix_args.txt", "nogui"]
+        jvm_args = os.environ.get("MODSLIME_JVM_ARGS_FILE", "user_jvm_args.txt")
+        cmd = ["java", f"@{jvm_args}", "@libraries/net/neoforged/neoforge/21.1.267/unix_args.txt", "nogui"]
 
     def on_server_exit():
         global server_ready, server_start_time, next_autosave_ts, server_stopped_since
@@ -916,11 +917,21 @@ def stop_minecraft_server():
                 return
             time.sleep(1)
         if is_server_running() and server_proc is not None:
-            append_log(console_lines, "[Panel] Server treo sau khi save-all flush, đang đóng tiến trình Java để giải phóng RAM...")
+            append_log(console_lines, "[Panel] World đã lưu nhưng Java chưa thoát (mod treo khi tắt) — đang đóng tiến trình Java...")
             try:
                 server_proc.terminate()
             except Exception:
                 pass
+            for _ in range(20):
+                if not is_server_running():
+                    return
+                time.sleep(1)
+            if is_server_running():
+                append_log(console_lines, "[Panel] Java vẫn treo — buộc dừng (world đã được lưu trước đó).")
+                try:
+                    server_proc.kill()
+                except Exception:
+                    pass
 
     threading.Thread(target=_force_kill_if_hung, daemon=True).start()
     return ok, "Đã gửi lệnh lưu World & tắt Server an toàn (tự động đồng bộ lên GitHub ngay khi tắt)!"
