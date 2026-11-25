@@ -81,7 +81,7 @@ dynamic:
       max: 8
       min: 5
       increment: 1
-      interval: 150
+      interval: 30
 
 
 # A special mobcap that only affects the breeding of animals and villagers.

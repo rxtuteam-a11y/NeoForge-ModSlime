@@ -26,3 +26,4 @@ panel.log
 cloudflared.log
 server_out.log
 server_in
+cloud_jvm_args.txt
