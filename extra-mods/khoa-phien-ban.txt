@@ -6,6 +6,8 @@
 ✅ Pam's HarvestCraft 2 - Food Extended 1.0.0 -> pamhc2foodextended-NEOFORGE-1.21.1-1.0.0.jar
 ✅ [Let's Do] Bakery - Farm&Charm Compat 2.1.12 -> letsdo-bakery-neoforge-2.1.12.jar
 ✅ [Let's Do] Vinery 1.5.6 -> letsdo-vinery-neoforge-1.5.6.jar
+❌ immersive eating: không có bản cho NeoForge 1.21.1
+❌ Hand's On Delight: không có bản cho NeoForge 1.21.1
 ⏭️ Balm: server đã có (balm)
 ⏭️ Architectury API: server đã có (architectury)
 ✅ [Let's Do] Farm & Charm 1.1.30 -> letsdo-farm_and_charm-neoforge-1.1.30.jar  [phụ thuộc của [Let's Do] Bakery - Farm&Charm Compat]
