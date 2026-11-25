@@ -6750,6 +6750,12 @@
     },
     "done": true
   },
+  "bakery:recipes/butter": {
+    "criteria": {
+      "has_water_bucket": "2026-11-25 20:40:17 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/pink_terracotta": {
     "criteria": {
       "has_terracotta": "2026-11-25 20:28:00 +0700"
@@ -6777,6 +6783,12 @@
   "handcrafted:recipes/misc/spruce_dining_bench": {
     "criteria": {
       "has_spruce_dining_bench": "2026-11-25 20:28:22 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/birch_wine_rack_small": {
+    "criteria": {
+      "has_birch_planks": "2026-11-25 20:42:05 +0700"
     },
     "done": true
   },
@@ -6900,6 +6912,12 @@
     },
     "done": true
   },
+  "vinery:recipes/birch_wine_rack_big": {
+    "criteria": {
+      "has_birch_planks": "2026-11-25 20:42:05 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/blue_stained_glass": {
     "criteria": {
       "has_glass": "2026-11-25 20:21:13 +0700"
@@ -6909,6 +6927,12 @@
   "chronodawn:recipes/misc/unstable_hourglass": {
     "criteria": {
       "has_item": "2026-11-25 20:21:13 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/timber_well": {
+    "criteria": {
+      "has_bucket": "2026-11-25 20:41:55 +0700"
     },
     "done": true
   },
@@ -6999,6 +7023,12 @@
   "minecraft:recipes/building_blocks/purple_stained_glass": {
     "criteria": {
       "has_glass": "2026-11-25 20:21:13 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/tools/oil_pot": {
+    "criteria": {
+      "has_bucket": "2026-11-25 20:41:55 +0700"
     },
     "done": true
   },
@@ -7134,6 +7164,12 @@
     },
     "done": true
   },
+  "cookingforblockheads:recipes/decorations/sink": {
+    "criteria": {
+      "has_water_bucket": "2026-11-25 20:40:17 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/spruce_pressure_plate": {
     "criteria": {
       "has_planks": "2026-11-25 20:28:22 +0700"
@@ -7176,6 +7212,12 @@
     },
     "done": true
   },
+  "kaleidoscope_cookery:recipes/decorations/enamel_basin": {
+    "criteria": {
+      "has_bucket": "2026-11-25 20:41:55 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/brown_stained_glass": {
     "criteria": {
       "has_glass": "2026-11-25 20:21:13 +0700"
@@ -7185,6 +7227,12 @@
   "handcrafted:recipes/misc/terracotta_bowl": {
     "criteria": {
       "has_terracotta_bowl": "2026-11-25 20:28:00 +0700"
+    },
+    "done": true
+  },
+  "constructionwand:copper_wand": {
+    "criteria": {
+      "copper_wand": "2026-11-25 20:39:04 +0700"
     },
     "done": true
   },

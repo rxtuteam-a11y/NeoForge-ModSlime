@@ -796,6 +796,7 @@
       "minecraft:vindicator": "2026-11-24 18:31:02 +0700",
       "minecraft:enderman": "2026-11-24 16:56:13 +0700",
       "minecraft:stray": "2026-11-24 16:49:39 +0700",
+      "minecraft:silverfish": "2026-11-25 20:32:44 +0700",
       "minecraft:magma_cube": "2026-11-24 22:00:21 +0700",
       "minecraft:spider": "2026-11-22 18:46:00 +0700",
       "minecraft:vex": "2026-11-24 18:30:40 +0700",
@@ -7192,6 +7193,12 @@
   "minecraft:recipes/building_blocks/lime_stained_glass": {
     "criteria": {
       "has_glass": "2026-11-25 20:24:19 +0700"
+    },
+    "done": true
+  },
+  "tensura:sa_rank": {
+    "criteria": {
+      "ep": "2026-11-25 20:40:20 +0700"
     },
     "done": true
   },
