@@ -10,3 +10,5 @@ Pam's HarvestCraft 2 Food Extended
 lets-do-bakery
 lets-do-vinery
 # realistic cooking -> không tìm thấy mod này cho NeoForge 1.21.1
+immersive eating
+Hand's On Delight
