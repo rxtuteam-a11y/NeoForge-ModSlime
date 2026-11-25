@@ -30,7 +30,7 @@
     {
       "questId": "trbeyond:repeatable_skill_shin_ryusei",
       "progress": {
-        "kill_shin_ryusei": 4
+        "kill_shin_ryusei": 7
       }
     },
     {
@@ -71,7 +71,9 @@
     },
     {
       "questId": "trbeyond:repeatable_skill_kyoya_tachibana",
-      "progress": {}
+      "progress": {
+        "kill_kyoya_tachibana": 3
+      }
     },
     {
       "questId": "trbeyond:rep_sub_body_forging_1",
