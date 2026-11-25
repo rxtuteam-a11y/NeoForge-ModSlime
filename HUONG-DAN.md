@@ -47,7 +47,7 @@ gõ lệnh và sao lưu được. Web Panel tự hỏi GitHub để xác minh to
 4. (Tuỳ chọn) biến `GDRIVE_BACKUP_PATH`, mặc định `gdrive:ModSlime-Backups`.
 
 Sau đó mỗi lần tắt server, và khi bấm **Lưu lên Google Drive**, file `ModSlime-world-<ngày-giờ>.zip` được tải lên thư mục đó.
-Các bản cũ hơn 14 ngày tự bị xoá.
+Chỉ giữ 3 bản mới nhất (world lớn, mỗi bản vài GB).
 
 ## Cho thiết bị khác / bạn bè bật server (không cần cài lại)
 

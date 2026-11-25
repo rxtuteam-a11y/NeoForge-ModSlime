@@ -54,7 +54,7 @@ CLOUD_DEADLINE = float(os.environ.get("MODSLIME_DEADLINE", "0") or 0)
 IDLE_EXIT_MIN = float(os.environ.get("MODSLIME_IDLE_EXIT_MIN", "10") or 10)
 GIT_BRANCH = os.environ.get("GIT_BRANCH", "main") or "main"
 RCLONE_REMOTE = os.environ.get("RCLONE_REMOTE", "").strip()
-GDRIVE_KEEP_DAYS = int(os.environ.get("GDRIVE_KEEP_DAYS", "14") or 14)
+GDRIVE_KEEP = int(os.environ.get("GDRIVE_KEEP", "3") or 3)  # số bản sao lưu world giữ lại trên Drive
 CLOUD_PUBLIC_URL = os.environ.get("MODSLIME_PUBLIC_URL", "")
 CLOUD_MC_ADDRESS = os.environ.get("MODSLIME_MC_ADDRESS", "")
 CLOUD_RUN_URL = os.environ.get("MODSLIME_RUN_URL", "")
@@ -729,7 +729,7 @@ def backup_to_gdrive(reason="Manual"):
     try:
         append_log(console_lines, f"[Google Drive] Đang nén world + config ({reason})...")
         import zipfile
-        with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED, compresslevel=6) as zf:
+        with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED, compresslevel=1) as zf:
             for top in ("world", "config", "server.properties", "ops.json", "whitelist.json",
                         "banned-players.json", "banned-ips.json", "usercache.json"):
                 full = os.path.join(ROOT_DIR, top)
@@ -759,11 +759,17 @@ def backup_to_gdrive(reason="Manual"):
             append_log(console_lines, f"[Google Drive] {gdrive_status}")
             _record_backup_history(f"Google Drive ({reason})", False, gdrive_status, now_str)
             return False, gdrive_status
-        # Remove old backups (keep GDRIVE_KEEP_DAYS days)
-        subprocess.run(
-            ["rclone", "delete", RCLONE_REMOTE, "--min-age", f"{GDRIVE_KEEP_DAYS}d", "--include", "ModSlime-world-*.zip"],
-            capture_output=True, text=True, creationflags=SUBPROCESS_FLAGS,
+        # Chỉ giữ GDRIVE_KEEP bản mới nhất (tên file có ngày giờ nên sắp xếp theo tên là đúng thứ tự)
+        lsf = subprocess.run(
+            ["rclone", "lsf", RCLONE_REMOTE, "--files-only", "--include", "ModSlime-world-*.zip"],
+            capture_output=True, text=True, encoding="utf-8", errors="replace", creationflags=SUBPROCESS_FLAGS,
         )
+        old_files = sorted(f.strip() for f in lsf.stdout.splitlines() if f.strip())[:-GDRIVE_KEEP]
+        for f in old_files:
+            subprocess.run(["rclone", "deletefile", f"{RCLONE_REMOTE.rstrip('/')}/{f}"],
+                           capture_output=True, text=True, creationflags=SUBPROCESS_FLAGS)
+        if old_files:
+            append_log(console_lines, f"[Google Drive] Đã xoá {len(old_files)} bản sao lưu cũ (giữ {GDRIVE_KEEP} bản mới nhất).")
         gdrive_status = f"Đã lưu {os.path.basename(zip_path)} ({size_mb:.1f} MB) lên Google Drive"
         gdrive_last_time = now_str
         append_log(console_lines, f"[Google Drive] {gdrive_status}")
