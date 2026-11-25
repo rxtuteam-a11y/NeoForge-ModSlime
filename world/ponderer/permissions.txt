@@ -3,6 +3,7 @@
 # Roles: admin = manage/upload/pull, upload = upload/pull, pull = pull only
 # OP-derived admins are stored as: op playerName
 op Pacala
+op RimuruTempest
 pull Arcadeva
 pull bakaluku
 pull batondacarinho
@@ -20,5 +21,4 @@ pull picilici
 pull Picolo
 pull pocoloco
 pull puculucu
-pull RimuruTempest
 pull Yazmm
