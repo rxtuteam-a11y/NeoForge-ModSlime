@@ -83,9 +83,11 @@
       "icy_heights": "2026-11-23 13:40:49 +0700",
       "hyacinth_deeps": "2026-11-23 13:35:39 +0700",
       "rainforest": "2026-11-24 03:31:07 +0700",
+      "tropical_river": "2026-11-25 13:44:16 +0700",
       "eucalyptus_forest": "2026-11-24 03:54:55 +0700",
       "outback": "2026-11-24 03:32:52 +0700",
-      "clover_plains": "2026-11-24 08:37:42 +0700"
+      "clover_plains": "2026-11-24 08:37:42 +0700",
+      "inferno": "2026-11-25 13:46:48 +0700"
     },
     "done": false
   },
@@ -129,6 +131,7 @@
       "icy_heights": "2026-11-23 13:40:49 +0700",
       "hyacinth_deeps": "2026-11-23 13:35:39 +0700",
       "rainforest": "2026-11-24 03:31:07 +0700",
+      "tropical_river": "2026-11-25 13:44:16 +0700",
       "eucalyptus_forest": "2026-11-24 03:54:55 +0700",
       "outback": "2026-11-24 03:32:52 +0700",
       "clover_plains": "2026-11-24 08:37:42 +0700"
@@ -360,6 +363,7 @@
       "minecraft:jagged_peaks": "2026-11-24 11:14:41 +0700",
       "minecraft:cold_ocean": "2026-11-23 13:15:39 +0700",
       "minecraft:forest": "2026-11-23 13:09:11 +0700",
+      "minecraft:lush_caves": "2026-11-25 13:46:28 +0700",
       "minecraft:deep_cold_ocean": "2026-11-24 21:26:49 +0700",
       "minecraft:ice_spikes": "2026-11-23 19:25:31 +0700",
       "minecraft:frozen_ocean": "2026-11-23 13:31:09 +0700",
@@ -6634,7 +6638,8 @@
   "regions_unexplored:spelunker": {
     "criteria": {
       "redstone_caves": "2026-11-24 11:13:59 +0700",
-      "prismachasm": "2026-11-24 20:06:39 +0700"
+      "prismachasm": "2026-11-24 20:06:39 +0700",
+      "inferno": "2026-11-25 13:46:48 +0700"
     },
     "done": false
   },
@@ -8934,45 +8939,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/packed_mud": {
-    "criteria": {
-      "has_mud": "2026-11-25 13:35:44 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/adamantite_nugget_from_smelting_adamantite_boots": {
-    "criteria": {
-      "has_adamantite_boots": "2026-11-25 13:12:24 +0700"
-    },
-    "done": true
-  },
-  "tensura:adamantite": {
-    "criteria": {
-      "items": "2026-11-25 13:23:36 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/adamantite_nugget_from_blasting_adamantite_boots": {
-    "criteria": {
-      "has_adamantite_boots": "2026-11-25 13:12:24 +0700"
-    },
-    "done": true
-  },
-  "twilightforest:recipes/drying/drying/mud_to_clay": {
-    "criteria": {
-      "has_mud": "2026-11-25 13:35:44 +0700"
-    },
-    "done": true
-  },
   "tensura:hella_cool": {
     "criteria": {
       "daemons": "2026-11-25 12:43:45 +0700"
-    },
-    "done": true
-  },
-  "tensura:ss_rank": {
-    "criteria": {
-      "ep": "2026-11-25 13:23:36 +0700"
     },
     "done": true
   },
@@ -8982,9 +8951,153 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/adamantite_nugget_from_smelting_adamantite_boots": {
+    "criteria": {
+      "has_adamantite_boots": "2026-11-25 13:12:24 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/adamantite_nugget_from_blasting_adamantite_boots": {
+    "criteria": {
+      "has_adamantite_boots": "2026-11-25 13:12:24 +0700"
+    },
+    "done": true
+  },
   "tensura:become_ninja": {
     "criteria": {
       "kunai": "2026-11-25 13:22:57 +0700"
+    },
+    "done": true
+  },
+  "tensura:adamantite": {
+    "criteria": {
+      "items": "2026-11-25 13:23:36 +0700"
+    },
+    "done": true
+  },
+  "tensura:ss_rank": {
+    "criteria": {
+      "ep": "2026-11-25 13:23:36 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/packed_mud": {
+    "criteria": {
+      "has_mud": "2026-11-25 13:35:44 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/drying/drying/mud_to_clay": {
+    "criteria": {
+      "has_mud": "2026-11-25 13:35:44 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/armor_gray_boots": {
+    "criteria": {
+      "has_item": "2026-11-25 13:40:53 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/armor_gray_helmet": {
+    "criteria": {
+      "has_item": "2026-11-25 13:40:53 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/armor_gray_chestplate": {
+    "criteria": {
+      "has_item": "2026-11-25 13:40:53 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/armor_gray_leggings": {
+    "criteria": {
+      "has_item": "2026-11-25 13:40:53 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/building_blocks/dragonscales_gray_to_dragonscale_gray": {
+    "criteria": {
+      "has_dragonscales_gray": "2026-11-25 13:40:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/silver_ingot_from_blasting_raw_silver": {
+    "criteria": {
+      "has_raw_silver": "2026-11-25 13:41:45 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/raw_silver_blockfrom_raw_silver": {
+    "criteria": {
+      "has_raw_silver": "2026-11-25 13:41:45 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/silver_ingot_from_smelting_raw_silver": {
+    "criteria": {
+      "has_raw_silver": "2026-11-25 13:41:45 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/building_blocks/dragonscales_copper_to_dragonscale_copper": {
+    "criteria": {
+      "has_dragonscales_copper": "2026-11-25 13:43:23 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/armor_copper_helmet": {
+    "criteria": {
+      "has_item": "2026-11-25 13:43:23 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/armor_copper_boots": {
+    "criteria": {
+      "has_item": "2026-11-25 13:43:23 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/armor_copper_chestplate": {
+    "criteria": {
+      "has_item": "2026-11-25 13:43:23 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/armor_copper_leggings": {
+    "criteria": {
+      "has_item": "2026-11-25 13:43:23 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:iceandfire/dragon_egg": {
+    "criteria": {
+      "egg": "2026-11-25 13:43:32 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/copper_ingot_from_blasting_raw_copper": {
+    "criteria": {
+      "has_raw_copper": "2026-11-25 13:46:42 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/raw_copper_block": {
+    "criteria": {
+      "has_raw_copper": "2026-11-25 13:46:42 +0700"
+    },
+    "done": true
+  },
+  "cataclysm:find_ancient_factory": {
+    "criteria": {
+      "factory": "2026-11-25 13:46:55 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/copper_ingot_from_smelting_raw_copper": {
+    "criteria": {
+      "has_raw_copper": "2026-11-25 13:46:42 +0700"
     },
     "done": true
   },
