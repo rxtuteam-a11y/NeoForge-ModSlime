@@ -8523,5 +8523,35 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/cooked_cod_from_campfire_cooking": {
+    "criteria": {
+      "has_cod": "2026-11-25 07:40:23 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:iceandfire/kill_ghost": {
+    "criteria": {
+      "killed_fire_dragon": "2026-11-25 07:35:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_cod": {
+    "criteria": {
+      "has_cod": "2026-11-25 07:40:23 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/drying/cod_jerky": {
+    "criteria": {
+      "has_meat": "2026-11-25 07:40:23 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_cod_from_smoking": {
+    "criteria": {
+      "has_cod": "2026-11-25 07:40:23 +0700"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }

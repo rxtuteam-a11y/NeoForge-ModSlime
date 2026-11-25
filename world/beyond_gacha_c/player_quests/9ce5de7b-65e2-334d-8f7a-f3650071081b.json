@@ -36,7 +36,9 @@
     },
     {
       "questId": "trbeyond:daily_day_2_landfish_2",
-      "progress": {}
+      "progress": {
+        "kill_landfish_2_2": 1
+      }
     },
     {
       "questId": "trbeyond:daily_day_2_hell_caterpillar_3",
