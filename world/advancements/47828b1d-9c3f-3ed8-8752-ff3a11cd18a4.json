@@ -7423,6 +7423,12 @@
     },
     "done": true
   },
+  "farmersdelight:recipes/cooking/mushroom_rice": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-25 23:17:16 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:recipes/food/grilled_salmon": {
     "criteria": {
       "has_salmon": "2026-11-25 22:17:50 +0700"
@@ -8218,6 +8224,12 @@
   "farmersdelight:recipes/cooking/onion_soup": {
     "criteria": {
       "has_any_ingredient": "2026-11-25 22:28:35 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/mushroom_stew": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-25 23:17:16 +0700"
     },
     "done": true
   },
