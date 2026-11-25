@@ -9631,18 +9631,6 @@
     },
     "done": true
   },
-  "netherexp:nether/soul_sand_valley/frightening_rush": {
-    "criteria": {
-      "condition": "2026-11-25 20:20:36 +0700"
-    },
-    "done": true
-  },
-  "vinery:main/fruits_of_the_field": {
-    "criteria": {
-      "fruits_of_the_field": "2026-11-25 20:25:53 +0700"
-    },
-    "done": true
-  },
   "vinery:recipes/campfire": {
     "criteria": {
       "has_coal": "2026-11-25 20:17:30 +0700"
@@ -9661,15 +9649,27 @@
     },
     "done": true
   },
+  "farmersdelight:main/root": {
+    "criteria": {
+      "seeds": "2026-11-25 20:17:30 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/dark_cherry_planks": {
+    "criteria": {
+      "has_cherry_logs": "2026-11-25 20:17:30 +0700"
+    },
+    "done": true
+  },
   "farm_and_charm:main/root": {
     "criteria": {
       "example_criterion": "2026-11-25 20:17:33 +0700"
     },
     "done": true
   },
-  "farmersdelight:main/root": {
+  "netherexp:nether/soul_sand_valley/frightening_rush": {
     "criteria": {
-      "seeds": "2026-11-25 20:17:30 +0700"
+      "condition": "2026-11-25 20:20:36 +0700"
     },
     "done": true
   },
@@ -9679,9 +9679,9 @@
     },
     "done": true
   },
-  "vinery:recipes/dark_cherry_planks": {
+  "vinery:main/fruits_of_the_field": {
     "criteria": {
-      "has_cherry_logs": "2026-11-25 20:17:30 +0700"
+      "fruits_of_the_field": "2026-11-25 20:25:53 +0700"
     },
     "done": true
   },
