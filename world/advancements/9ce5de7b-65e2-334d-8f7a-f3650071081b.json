@@ -9216,9 +9216,10 @@
       "minecraft:crimson_forest": "2026-11-25 19:20:48 +0700",
       "minecraft:nether_wastes": "2026-11-25 19:28:07 +0700",
       "minecraft:soul_sand_valley": "2026-11-25 19:14:29 +0700",
-      "minecraft:basalt_deltas": "2026-11-25 19:06:20 +0700"
+      "minecraft:basalt_deltas": "2026-11-25 19:06:20 +0700",
+      "minecraft:warped_forest": "2026-11-25 22:29:27 +0700"
     },
-    "done": false
+    "done": true
   },
   "block_factorys_bosses:recipes/building_blocks/lighting/underworld_wall_torch": {
     "criteria": {
@@ -9691,6 +9692,12 @@
     },
     "done": true
   },
+  "netherman:kill_azazel": {
+    "criteria": {
+      "got_stick": "2026-11-25 22:24:53 +0700"
+    },
+    "done": true
+  },
   "bakery:recipes/quartz_stove": {
     "criteria": {
       "has_iron_ingot": "2026-11-25 21:32:23 +0700"
@@ -9922,6 +9929,12 @@
   "bakery:recipes/deepslate_stove": {
     "criteria": {
       "has_iron_ingot": "2026-11-25 21:32:23 +0700"
+    },
+    "done": true
+  },
+  "minecraft:nether/fast_travel": {
+    "criteria": {
+      "travelled": "2026-11-25 22:31:28 +0700"
     },
     "done": true
   },

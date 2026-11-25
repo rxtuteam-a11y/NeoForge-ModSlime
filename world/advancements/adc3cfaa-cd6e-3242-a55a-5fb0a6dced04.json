@@ -7467,9 +7467,75 @@
     },
     "done": true
   },
+  "iceandfire:recipes/combat/tide_deepblue_helmet": {
+    "criteria": {
+      "has_item": "2026-11-25 22:29:23 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/beetroot_soup": {
+    "criteria": {
+      "has_beetroot": "2026-11-25 22:29:21 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/beetroot_bag": {
+    "criteria": {
+      "has_beetroots": "2026-11-25 22:29:21 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mossy_cobblestone_stairs_from_mossy_cobblestone_stonecutting": {
+    "criteria": {
+      "has_mossy_cobblestone": "2026-11-25 22:29:10 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/baked_cod_stew": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-25 22:29:21 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/combat/golden_knife": {
+    "criteria": {
+      "has_gold_ingot": "2026-11-25 22:29:22 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/food/dubious_food": {
     "criteria": {
       "has_dubious_ingredient": "2026-11-25 21:50:11 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/apple_cider": {
+    "criteria": {
+      "has_apple": "2026-11-25 22:29:21 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/mossy_stone_from_blasting_mossy_cobblestone": {
+    "criteria": {
+      "has_mossy_cobblestone": "2026-11-25 22:29:10 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mossy_cobblestone_slab": {
+    "criteria": {
+      "has_mossy_cobblestone": "2026-11-25 22:29:10 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/building_blocks/sea_serpent_scales_deepblue_to_sea_serpent_scale_block_deepblue": {
+    "criteria": {
+      "has_sea_serpent_scales_deepblue": "2026-11-25 22:29:23 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/potato_bag": {
+    "criteria": {
+      "has_potato": "2026-11-25 22:29:21 +0700"
     },
     "done": true
   },
@@ -7479,9 +7545,45 @@
     },
     "done": true
   },
+  "vinery:recipes/winemaker_leggings": {
+    "criteria": {
+      "has_gold_ingot": "2026-11-25 22:29:22 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/beetroot_soup": {
+    "criteria": {
+      "has_beetroot": "2026-11-25 22:29:21 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/mossy_stone_from_smelting_mossy_cobblestone": {
+    "criteria": {
+      "has_mossy_cobblestone": "2026-11-25 22:29:10 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/building_blocks/beetroot_crate": {
+    "criteria": {
+      "has_beetroot": "2026-11-25 22:29:21 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/low_quality_magic_crystal_brick_stairs_from_low_quality_magic_crystal_bricks_stonecutting": {
     "criteria": {
       "has_low_quality_magic_crystal_bricks": "2026-11-25 21:27:39 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/tide_deepblue_chestplate": {
+    "criteria": {
+      "has_item": "2026-11-25 22:29:23 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bolt_armor_trim_smithing_template": {
+    "criteria": {
+      "has_bolt_armor_trim_smithing_template": "2026-11-25 22:29:22 +0700"
     },
     "done": true
   },
@@ -7491,15 +7593,57 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/mossy_cobblestone_wall": {
+    "criteria": {
+      "has_mossy_cobblestone": "2026-11-25 22:29:10 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:recipes/cooking/bone_broth": {
     "criteria": {
       "has_bone": "2026-11-25 21:28:48 +0700"
     },
     "done": true
   },
+  "farmersdelight:recipes/cooking/ratatouille": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-25 22:29:21 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/building_blocks/potato_crate": {
+    "criteria": {
+      "has_potato": "2026-11-25 22:29:21 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/mossy_cobblestone_wall_from_mossy_cobblestone_stonecutting": {
+    "criteria": {
+      "has_mossy_cobblestone": "2026-11-25 22:29:10 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/vegetable_soup": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-25 22:29:21 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/rabbit_stew": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-25 22:29:21 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/building_blocks/low_quality_magic_crystal_brick_stairs": {
     "criteria": {
       "has_low_quality_magic_crystal_bricks": "2026-11-25 21:27:39 +0700"
+    },
+    "done": true
+  },
+  "vinery:main/forbidden_fruit": {
+    "criteria": {
+      "apple": "2026-11-25 22:29:21 +0700"
     },
     "done": true
   },
@@ -7521,15 +7665,69 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/mossy_cobblestone_stairs": {
+    "criteria": {
+      "has_mossy_cobblestone": "2026-11-25 22:29:10 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/red_dye_from_beetroot": {
+    "criteria": {
+      "has_beetroot": "2026-11-25 22:29:21 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mossy_cobblestone_slab_from_mossy_cobblestone_stonecutting": {
+    "criteria": {
+      "has_mossy_cobblestone": "2026-11-25 22:29:10 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/tide_deepblue_leggings": {
+    "criteria": {
+      "has_item": "2026-11-25 22:29:23 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/food/cooked_giant_ant_leg_from_campfire_cooking": {
     "criteria": {
       "has_giant_ant_leg": "2026-11-25 21:50:11 +0700"
     },
     "done": true
   },
+  "cookingforblockheads:recipes/decorations/white_oven": {
+    "criteria": {
+      "has_furnace": "2026-11-25 22:29:09 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/building_blocks/sapphire_gem_to_sapphire_block": {
+    "criteria": {
+      "has_sapphire_gem": "2026-11-25 22:29:23 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bolt_armor_trim_smithing_template_smithing_trim": {
+    "criteria": {
+      "has_smithing_trim_template": "2026-11-25 22:29:22 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/beef_stew": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-25 22:29:21 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/building_blocks/low_quality_magic_crystal_brick_slab": {
     "criteria": {
       "has_low_quality_magic_crystal_bricks": "2026-11-25 21:27:39 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/tide_deepblue_boots": {
+    "criteria": {
+      "has_item": "2026-11-25 22:29:23 +0700"
     },
     "done": true
   },
