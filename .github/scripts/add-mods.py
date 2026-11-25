@@ -69,7 +69,7 @@ def main():
     wanted = [l.strip() for l in open("extra-mods/danh-sach.txt", encoding="utf-8") if l.strip() and not l.startswith("#")]
     have = installed_mod_ids("mods")
     print(f"Server đang có {len(have)} mod id.")
-    out_dir = "extra-mods"; files = {}; report = []; queue = [(n, None) for n in wanted]; seen = set()
+    out_dir = "extra-mods"; files = {}; client_only = set(); report = []; queue = [(n, None) for n in wanted]; seen = set()
     while queue:
         name, parent = queue.pop(0)
         p, v = resolve(name) if parent is None else (get(f"{API}/project/{name}"), compatible_version(name))
@@ -87,14 +87,21 @@ def main():
             report.append(f"⏭️ {p['title']}: server đã có ({', '.join(sorted(ids))})"); continue
         files[f["filename"]] = data
         have |= ids
-        report.append(f"✅ {p['title']} {v['version_number']} -> {f['filename']}" + (f"  [phụ thuộc của {parent}]" if parent else ""))
+        side = ""
+        if p.get("server_side") == "unsupported":
+            client_only.add(f["filename"]); side = "  [CHỈ máy chơi — không cài lên server]"
+        report.append(f"✅ {p['title']} {v['version_number']} -> {f['filename']}" + (f"  [phụ thuộc của {parent}]" if parent else "") + side)
         for d in v.get("dependencies", []):
             if d.get("dependency_type") == "required" and d.get("project_id"):
                 queue.append((d["project_id"], p["title"]))
-    for old in os.listdir(out_dir):
-        if old.endswith(".jar"): os.remove(os.path.join(out_dir, old))
+    co_dir = os.path.join(out_dir, "chi-may-choi")
+    os.makedirs(co_dir, exist_ok=True)
+    for d in (out_dir, co_dir):
+        for old in os.listdir(d):
+            if old.endswith(".jar"): os.remove(os.path.join(d, old))
     for fn, data in files.items():
-        open(os.path.join(out_dir, fn), "wb").write(data)
+        # server chỉ chép extra-mods/*.jar; mod chỉ dành cho máy chơi nằm trong extra-mods/chi-may-choi/
+        open(os.path.join(co_dir if fn in client_only else out_dir, fn), "wb").write(data)
     open(os.path.join(out_dir, "khoa-phien-ban.txt"), "w", encoding="utf-8").write("\n".join(report) + "\n")
     os.makedirs("docs", exist_ok=True)
     with zipfile.ZipFile("docs/mods-them.zip", "w", zipfile.ZIP_STORED) as z:
