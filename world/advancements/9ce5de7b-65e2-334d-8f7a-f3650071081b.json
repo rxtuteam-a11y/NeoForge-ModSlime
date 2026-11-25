@@ -48,6 +48,7 @@
       "silver_birch_forest": "2026-11-24 08:38:25 +0700",
       "shrubland": "2026-11-23 13:08:21 +0700",
       "dry_bushland": "2026-11-24 11:52:48 +0700",
+      "glistering_meadow": "2026-11-25 19:17:07 +0700",
       "pine_taiga": "2026-11-24 04:17:24 +0700",
       "sparse_rainforest": "2026-11-24 03:31:14 +0700",
       "magnolia_woodland": "2026-11-23 22:47:50 +0700",
@@ -1071,6 +1072,7 @@
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
       "minecraft:pillager": "2026-11-23 13:11:29 +0700",
+      "minecraft:blaze": "2026-11-25 19:08:50 +0700",
       "minecraft:skeleton": "2026-11-23 13:23:59 +0700",
       "minecraft:elder_guardian": "2026-11-24 21:22:12 +0700",
       "minecraft:ravager": "2026-11-25 08:25:19 +0700",
@@ -1081,6 +1083,7 @@
       "minecraft:breeze": "2026-11-23 23:54:02 +0700",
       "minecraft:magma_cube": "2026-11-25 19:06:18 +0700",
       "minecraft:spider": "2026-11-23 13:16:59 +0700",
+      "minecraft:piglin_brute": "2026-11-25 19:09:21 +0700",
       "minecraft:creeper": "2026-11-23 13:17:07 +0700",
       "minecraft:evoker": "2026-11-24 11:23:37 +0700",
       "minecraft:phantom": "2026-11-23 22:17:34 +0700",
@@ -9171,21 +9174,281 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_blackstone_brick_slab": {
+    "criteria": {
+      "has_polished_blackstone_bricks": "2026-11-25 19:13:00 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/smooth_netherrack/smooth_netherrack": {
+    "criteria": {
+      "has_item": "2026-11-25 19:10:16 +0700"
+    },
+    "done": true
+  },
   "minecraft:nether/explore_nether": {
     "criteria": {
+      "minecraft:soul_sand_valley": "2026-11-25 19:14:29 +0700",
       "minecraft:basalt_deltas": "2026-11-25 19:06:20 +0700"
     },
     "done": false
   },
+  "minecraft:recipes/building_blocks/polished_blackstone_stairs": {
+    "criteria": {
+      "has_polished_blackstone": "2026-11-25 19:16:17 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:eternal_expedition": {
     "criteria": {
-      "infernal_holt": "2026-11-25 19:05:34 +0700"
+      "infernal_holt": "2026-11-25 19:05:34 +0700",
+      "glistering_meadow": "2026-11-25 19:17:07 +0700"
     },
     "done": false
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_brick_stairs_from_polished_blackstone_stonecutting": {
+    "criteria": {
+      "has_polished_blackstone": "2026-11-25 19:16:17 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:recipes/building_blocks/lighting/underworld_wall_torch": {
+    "criteria": {
+      "has_item": "2026-11-25 19:10:08 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/polished_blackstone_button": {
+    "criteria": {
+      "has_polished_blackstone": "2026-11-25 19:16:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_slab": {
+    "criteria": {
+      "has_polished_blackstone": "2026-11-25 19:16:17 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/blackstone/weeping": {
+    "criteria": {
+      "has_item": "2026-11-25 19:13:00 +0700"
+    },
+    "done": true
+  },
+  "eternalnether:recipes/building_blocks/blackstone": {
+    "criteria": {
+      "has_cobbled_blackstone": "2026-11-25 19:16:11 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/blackstone/pillar": {
+    "criteria": {
+      "has_item": "2026-11-25 19:16:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_brick_stairs_from_polished_blackstone_bricks_stonecutting": {
+    "criteria": {
+      "has_polished_blackstone_bricks": "2026-11-25 19:13:00 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/soul_slate/pale": {
+    "criteria": {
+      "has_planks": "2026-11-25 19:10:15 +0700"
+    },
+    "done": true
+  },
+  "bosses_of_mass_destruction:recipes/levitation_block": {
+    "criteria": {
+      "has_blazing_eye": "2026-11-25 19:13:47 +0700"
+    },
+    "done": true
+  },
+  "eternalnether:recipes/misc/withered_bone_meal": {
+    "criteria": {
+      "has_withered_bone": "2026-11-25 19:17:55 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_brick_slab_from_polished_blackstone_bricks_stonecutting": {
+    "criteria": {
+      "has_polished_blackstone_bricks": "2026-11-25 19:13:00 +0700"
+    },
+    "done": true
+  },
+  "bosses_of_mass_destruction:recipes/blast_amplifier": {
+    "criteria": {
+      "has_blazing_eye": "2026-11-25 19:13:47 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/polished_blackstone_brick_wall": {
+    "criteria": {
+      "has_polished_blackstone_bricks": "2026-11-25 19:13:00 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/soul_slate/slab": {
+    "criteria": {
+      "has_planks": "2026-11-25 19:10:15 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/soul_slate/stairs": {
+    "criteria": {
+      "has_planks": "2026-11-25 19:10:15 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/nether_brick": {
+    "criteria": {
+      "has_netherrack": "2026-11-25 19:10:16 +0700"
+    },
+    "done": true
+  },
+  "netherexp:nether/soul_sand_valley/soul_sand_valley": {
+    "criteria": {
+      "condition": "2026-11-25 19:14:29 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/soul_slate/bricks": {
+    "criteria": {
+      "has_item": "2026-11-25 19:10:15 +0700"
+    },
+    "done": true
   },
   "minecraft:story/enter_the_nether": {
     "criteria": {
       "entered_nether": "2026-11-25 19:05:34 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_bricks_from_polished_blackstone_stonecutting": {
+    "criteria": {
+      "has_polished_blackstone": "2026-11-25 19:16:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_polished_blackstone_from_polished_blackstone_stonecutting": {
+    "criteria": {
+      "has_polished_blackstone": "2026-11-25 19:16:17 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/misc/soul_soil_layer": {
+    "criteria": {
+      "has_item": "2026-11-25 19:10:08 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_stairs_from_polished_blackstone_stonecutting": {
+    "criteria": {
+      "has_polished_blackstone": "2026-11-25 19:16:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/soul_campfire": {
+    "criteria": {
+      "has_soul_sand": "2026-11-25 19:10:08 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/polished_blackstone_wall_from_polished_blackstone_stonecutting": {
+    "criteria": {
+      "has_polished_blackstone": "2026-11-25 19:16:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_brick_slab_from_polished_blackstone_stonecutting": {
+    "criteria": {
+      "has_polished_blackstone": "2026-11-25 19:16:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/polished_blackstone_brick_wall_from_polished_blackstone_stonecutting": {
+    "criteria": {
+      "has_polished_blackstone": "2026-11-25 19:16:17 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/soul_slate/jagged": {
+    "criteria": {
+      "has_planks": "2026-11-25 19:10:15 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cracked_polished_blackstone_bricks": {
+    "criteria": {
+      "has_polished_blackstone_bricks": "2026-11-25 19:13:00 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:recipes/building_blocks/lighting/underworld_small_candles": {
+    "criteria": {
+      "has_item": "2026-11-25 19:10:08 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/soul_torch": {
+    "criteria": {
+      "has_soul_sand": "2026-11-25 19:10:08 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_slab_from_polished_blackstone_stonecutting": {
+    "criteria": {
+      "has_polished_blackstone": "2026-11-25 19:16:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:nether/loot_bastion": {
+    "criteria": {
+      "loot_bastion_bridge": "2026-11-25 19:16:30 +0700"
+    },
+    "done": true
+  },
+  "minecraft:nether/find_fortress": {
+    "criteria": {
+      "in_fortress": "2026-11-25 19:10:42 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_bricks": {
+    "criteria": {
+      "has_polished_blackstone": "2026-11-25 19:16:17 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/soul_slate/bricks_from_etched": {
+    "criteria": {
+      "has_item": "2026-11-25 19:10:15 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_brick_stairs": {
+    "criteria": {
+      "has_polished_blackstone_bricks": "2026-11-25 19:13:00 +0700"
+    },
+    "done": true
+  },
+  "eternalnether:catacomb": {
+    "criteria": {
+      "in_catacomb": "2026-11-25 19:16:12 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/blackstone/twisting": {
+    "criteria": {
+      "has_item": "2026-11-25 19:13:00 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/blackstone/fence": {
+    "criteria": {
+      "has_item": "2026-11-25 19:16:17 +0700"
     },
     "done": true
   },
@@ -9195,15 +9458,63 @@
     },
     "done": true
   },
+  "netherexp:recipes/soul_slate/wall": {
+    "criteria": {
+      "has_planks": "2026-11-25 19:10:15 +0700"
+    },
+    "done": true
+  },
+  "bosses_of_mass_destruction:nether/gauntlet_defeat": {
+    "criteria": {
+      "bosses_of_mass_destruction:gauntlet": "2026-11-25 19:13:33 +0700"
+    },
+    "done": true
+  },
+  "eternalnether:explore_structures": {
+    "criteria": {
+      "in_catacomb": "2026-11-25 19:16:12 +0700"
+    },
+    "done": false
+  },
   "minecraft:nether/root": {
     "criteria": {
       "entered_nether": "2026-11-25 19:05:34 +0700"
     },
     "done": true
   },
+  "minecraft:recipes/decorations/polished_blackstone_brick_wall_from_polished_blackstone_bricks_stonecutting": {
+    "criteria": {
+      "has_polished_blackstone_bricks": "2026-11-25 19:13:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/polished_blackstone_pressure_plate": {
+    "criteria": {
+      "has_polished_blackstone": "2026-11-25 19:16:17 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:recipes/building_blocks/lighting/underworld_candles_extra": {
+    "criteria": {
+      "has_item": "2026-11-25 19:10:08 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/blackstone_warp_pad": {
+    "criteria": {
+      "has_polished_blackstone": "2026-11-25 19:16:17 +0700"
+    },
+    "done": true
+  },
   "eternalnether:root": {
     "criteria": {
       "entered_nether": "2026-11-25 19:05:34 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/polished_blackstone_wall": {
+    "criteria": {
+      "has_polished_blackstone": "2026-11-25 19:16:17 +0700"
     },
     "done": true
   },
