@@ -9,11 +9,15 @@ on:
   workflow_dispatch:
     inputs:
       che_do:
-        description: "xem = chỉ liệt kê, cai = cài vào server"
+        description: "xem = chỉ liệt kê, cai = cài vào server, so_sanh = in khác biệt của các file trong 'duong_dan'"
         required: true
         default: "xem"
         type: choice
-        options: [xem, cai]
+        options: [xem, cai, so_sanh]
+      duong_dan:
+        description: "(so_sanh) thư mục/file cần so sánh, vd. config/tensura_kumodesu"
+        required: false
+        default: ""
       file_id:
         description: "ID file overrides.zip trên Google Drive (chia sẻ: bất kỳ ai có link)"
         required: true
@@ -94,6 +98,18 @@ jobs:
               print(f"== File KHÁC trong {t} ({len(lst)}) ==")
               for r in sorted(lst)[:200]: print("   ", r)
           PY
+
+      - name: So sánh chi tiết
+        if: inputs.che_do == 'so_sanh'
+        env:
+          DUONG_DAN: ${{ inputs.duong_dan }}
+        run: |
+          rm -rf /tmp/ov && mkdir -p /tmp/ov && unzip -q -o /tmp/overrides.zip -d /tmp/ov
+          ROOT=/tmp/ov; [ -d /tmp/ov/overrides ] && ROOT=/tmp/ov/overrides
+          for p in $DUONG_DAN; do
+            echo "################ $p ################"
+            diff -ruN --label "server/$p" --label "overrides/$p" "$p" "$ROOT/$p" | head -n 400 || true
+          done
 
       - name: Cài vào server và lưu lên GitHub
         if: inputs.che_do == 'cai'
