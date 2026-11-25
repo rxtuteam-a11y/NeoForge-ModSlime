@@ -1088,6 +1088,7 @@
       "minecraft:evoker": "2026-11-24 11:23:37 +0700",
       "minecraft:phantom": "2026-11-23 22:17:34 +0700",
       "minecraft:witch": "2026-11-23 13:17:25 +0700",
+      "minecraft:wither_skeleton": "2026-11-25 19:20:05 +0700",
       "minecraft:husk": "2026-11-23 13:30:36 +0700",
       "minecraft:cave_spider": "2026-11-23 21:31:24 +0700",
       "minecraft:piglin": "2026-11-25 19:06:36 +0700",
@@ -8090,9 +8091,10 @@
       "kill_worm": "2026-11-24 21:56:52 +0700",
       "kill_kraken": "2026-11-24 21:53:45 +0700",
       "kill_yeti": "2026-11-24 21:29:12 +0700",
+      "kill_knight": "2026-11-25 19:22:31 +0700",
       "kill_dragon": "2026-11-25 00:57:14 +0700"
     },
-    "done": false
+    "done": true
   },
   "minecraft:recipes/food/cooked_sissie_fin_from_smelting": {
     "criteria": {
@@ -9188,6 +9190,8 @@
   },
   "minecraft:nether/explore_nether": {
     "criteria": {
+      "minecraft:crimson_forest": "2026-11-25 19:20:48 +0700",
+      "minecraft:nether_wastes": "2026-11-25 19:28:07 +0700",
       "minecraft:soul_sand_valley": "2026-11-25 19:14:29 +0700",
       "minecraft:basalt_deltas": "2026-11-25 19:06:20 +0700"
     },
@@ -9221,6 +9225,12 @@
   "minecraft:recipes/redstone/polished_blackstone_button": {
     "criteria": {
       "has_polished_blackstone": "2026-11-25 19:16:17 +0700"
+    },
+    "done": true
+  },
+  "cataclysm:find_burning_arena": {
+    "criteria": {
+      "arena": "2026-11-25 19:28:07 +0700"
     },
     "done": true
   },
@@ -9263,6 +9273,12 @@
   "bosses_of_mass_destruction:recipes/levitation_block": {
     "criteria": {
       "has_blazing_eye": "2026-11-25 19:13:47 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/rabbit_stew_from_brown_mushroom": {
+    "criteria": {
+      "has_cooked_rabbit": "2026-11-25 19:24:08 +0700"
     },
     "done": true
   },
@@ -9368,9 +9384,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/rabbit_stew_from_red_mushroom": {
+    "criteria": {
+      "has_cooked_rabbit": "2026-11-25 19:24:08 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/polished_blackstone_brick_wall_from_polished_blackstone_stonecutting": {
     "criteria": {
       "has_polished_blackstone": "2026-11-25 19:16:17 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:kill_underworld_knight": {
+    "criteria": {
+      "kill": "2026-11-25 19:22:31 +0700"
     },
     "done": true
   },
@@ -9452,6 +9480,12 @@
     },
     "done": true
   },
+  "vanillabackport:recipes/food/rabbit_stew_from_shelf_mushroom": {
+    "criteria": {
+      "has_cooked_rabbit": "2026-11-25 19:24:08 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:downer": {
     "criteria": {
       "dorcel": "2026-11-25 19:05:58 +0700"
@@ -9482,6 +9516,12 @@
     },
     "done": true
   },
+  "cataclysm:kill_revenant": {
+    "criteria": {
+      "endergolem": "2026-11-25 19:28:59 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/polished_blackstone_brick_wall_from_polished_blackstone_bricks_stonecutting": {
     "criteria": {
       "has_polished_blackstone_bricks": "2026-11-25 19:13:00 +0700"
@@ -9491,6 +9531,12 @@
   "minecraft:recipes/redstone/polished_blackstone_pressure_plate": {
     "criteria": {
       "has_polished_blackstone": "2026-11-25 19:16:17 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:no_hit_underworld_knight": {
+    "criteria": {
+      "no_hit_underworld_knight_0": "2026-11-25 19:22:31 +0700"
     },
     "done": true
   },
