@@ -984,6 +984,7 @@
       "minecraft:breeze": "2026-11-22 18:37:11 +0700",
       "minecraft:vindicator": "2026-11-23 09:02:59 +0700",
       "minecraft:stray": "2026-11-23 19:23:01 +0700",
+      "minecraft:silverfish": "2026-11-25 20:30:52 +0700",
       "minecraft:spider": "2026-11-23 21:14:59 +0700",
       "minecraft:zombie": "2026-11-24 10:21:08 +0700",
       "minecraft:creeper": "2026-11-24 21:57:53 +0700",
@@ -6713,6 +6714,12 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/spruce_counter": {
+    "criteria": {
+      "has_spruce_counter": "2026-11-25 20:28:22 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/light_blue_stained_glass": {
     "criteria": {
       "has_glass": "2026-11-25 20:21:13 +0700"
@@ -6731,15 +6738,63 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/spruce_table": {
+    "criteria": {
+      "has_spruce_table": "2026-11-25 20:28:22 +0700"
+    },
+    "done": true
+  },
   "ironchest:recipes/decorations/upgrades/gold_to_diamond_chest_upgrade": {
     "criteria": {
       "has_glass": "2026-11-25 20:21:13 +0700"
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/pink_terracotta": {
+    "criteria": {
+      "has_terracotta": "2026-11-25 20:28:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/blue_terracotta": {
+    "criteria": {
+      "has_terracotta": "2026-11-25 20:28:00 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/terracotta_medium_pot": {
+    "criteria": {
+      "has_terracotta_medium_pot": "2026-11-25 20:28:00 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:recipes/combat/golden_knife": {
     "criteria": {
       "has_gold_ingot": "2026-11-25 20:19:38 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_dining_bench": {
+    "criteria": {
+      "has_spruce_dining_bench": "2026-11-25 20:28:22 +0700"
+    },
+    "done": true
+  },
+  "tensura:a_rank": {
+    "criteria": {
+      "ep": "2026-11-25 20:31:43 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/spruce_button": {
+    "criteria": {
+      "has_planks": "2026-11-25 20:28:22 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/cook_stool_spruce": {
+    "criteria": {
+      "has_wood": "2026-11-25 20:28:22 +0700"
     },
     "done": true
   },
@@ -6755,9 +6810,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/combat/wolf_armor": {
+    "criteria": {
+      "has_armadillo_scute": "2026-11-25 20:30:25 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/terracotta": {
     "criteria": {
       "has_clay_block": "2026-11-25 20:20:46 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/orange_terracotta": {
+    "criteria": {
+      "has_terracotta": "2026-11-25 20:28:00 +0700"
     },
     "done": true
   },
@@ -6773,9 +6840,57 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/ladder_from_spruce_planks_woodcutting": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-25 20:28:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/magenta_terracotta": {
+    "criteria": {
+      "has_terracotta": "2026-11-25 20:28:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cyan_terracotta": {
+    "criteria": {
+      "has_terracotta": "2026-11-25 20:28:00 +0700"
+    },
+    "done": true
+  },
   "ironchest:recipes/decorations/chests/diamond_crystal_chest": {
     "criteria": {
       "has_glass": "2026-11-25 20:21:13 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/terracotta_plate": {
+    "criteria": {
+      "has_terracotta_plate": "2026-11-25 20:28:00 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_corner_trim": {
+    "criteria": {
+      "has_spruce_corner_trim": "2026-11-25 20:28:22 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_desk": {
+    "criteria": {
+      "has_spruce_desk": "2026-11-25 20:28:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/lime_terracotta": {
+    "criteria": {
+      "has_terracotta": "2026-11-25 20:28:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/light_gray_terracotta": {
+    "criteria": {
+      "has_terracotta": "2026-11-25 20:28:00 +0700"
     },
     "done": true
   },
@@ -6797,15 +6912,51 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/spruce_sign": {
+    "criteria": {
+      "has_planks": "2026-11-25 20:28:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/red_terracotta": {
+    "criteria": {
+      "has_terracotta": "2026-11-25 20:28:00 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/terracotta_wide_pot": {
+    "criteria": {
+      "has_terracotta_wide_pot": "2026-11-25 20:28:00 +0700"
+    },
+    "done": true
+  },
+  "cookingforblockheads:recipes/decorations/connector": {
+    "criteria": {
+      "has_terracotta": "2026-11-25 20:28:00 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/lime_stained_glass": {
     "criteria": {
       "has_glass": "2026-11-25 20:21:13 +0700"
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/spruce_slab_from_spruce_planks_woodcutting": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-25 20:28:22 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/smooth_stone_slab": {
     "criteria": {
       "has_smooth_stone": "2026-11-25 20:21:10 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stick_from_spruce_planks_woodcutting": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-25 20:28:22 +0700"
     },
     "done": true
   },
@@ -6827,15 +6978,93 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/white_terracotta": {
+    "criteria": {
+      "has_terracotta": "2026-11-25 20:28:00 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_drawer": {
+    "criteria": {
+      "has_spruce_drawer": "2026-11-25 20:28:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/spruce_trapdoor": {
+    "criteria": {
+      "has_planks": "2026-11-25 20:28:22 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/purple_stained_glass": {
     "criteria": {
       "has_glass": "2026-11-25 20:21:13 +0700"
     },
     "done": true
   },
+  "handcrafted:recipes/misc/spruce_fancy_bed": {
+    "criteria": {
+      "has_spruce_fancy_bed": "2026-11-25 20:28:22 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_cupboard": {
+    "criteria": {
+      "has_spruce_cupboard": "2026-11-25 20:28:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/gray_terracotta": {
+    "criteria": {
+      "has_terracotta": "2026-11-25 20:28:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/green_terracotta": {
+    "criteria": {
+      "has_terracotta": "2026-11-25 20:28:00 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/blast_furnace": {
     "criteria": {
       "has_smooth_stone": "2026-11-25 20:21:10 +0700"
+    },
+    "done": true
+  },
+  "cookingforblockheads:recipes/decorations/counter": {
+    "criteria": {
+      "has_terracotta": "2026-11-25 20:28:00 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/spruce_wine_rack_big": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-25 20:28:22 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/terracotta_thin_pot": {
+    "criteria": {
+      "has_terracotta_thin_pot": "2026-11-25 20:28:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_fence_from_spruce_planks_woodcutting": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-25 20:28:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/black_terracotta": {
+    "criteria": {
+      "has_terracotta": "2026-11-25 20:28:00 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/terracotta_cup": {
+    "criteria": {
+      "has_terracotta_cup": "2026-11-25 20:28:00 +0700"
     },
     "done": true
   },
@@ -6857,9 +7086,69 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/spruce_shelf": {
+    "criteria": {
+      "has_spruce_shelf": "2026-11-25 20:28:22 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/spruce_wine_rack_small": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-25 20:28:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/light_blue_terracotta": {
+    "criteria": {
+      "has_terracotta": "2026-11-25 20:28:00 +0700"
+    },
+    "done": true
+  },
   "ironchest:recipes/decorations/upgrades/diamond_to_obsidian_chest_upgrade": {
     "criteria": {
       "has_glass": "2026-11-25 20:21:13 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/grapevine_pot": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-25 20:28:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/yellow_terracotta": {
+    "criteria": {
+      "has_terracotta": "2026-11-25 20:28:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/spruce_fence": {
+    "criteria": {
+      "has_planks": "2026-11-25 20:28:22 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/dark_cherry_shelf": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-25 20:28:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/spruce_pressure_plate": {
+    "criteria": {
+      "has_planks": "2026-11-25 20:28:22 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_pillar_trim": {
+    "criteria": {
+      "has_spruce_pillar_trim": "2026-11-25 20:28:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_stairs_from_spruce_planks_woodcutting": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-25 20:28:22 +0700"
     },
     "done": true
   },
@@ -6875,15 +7164,51 @@
     },
     "done": true
   },
+  "tensura:b_rank": {
+    "criteria": {
+      "ep": "2026-11-25 20:31:05 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/brown_terracotta": {
+    "criteria": {
+      "has_terracotta": "2026-11-25 20:28:00 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/brown_stained_glass": {
     "criteria": {
       "has_glass": "2026-11-25 20:21:13 +0700"
     },
     "done": true
   },
+  "handcrafted:recipes/misc/terracotta_bowl": {
+    "criteria": {
+      "has_terracotta_bowl": "2026-11-25 20:28:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/purple_terracotta": {
+    "criteria": {
+      "has_terracotta": "2026-11-25 20:28:00 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/smooth_stone": {
     "criteria": {
       "has_the_recipe": "2026-11-25 20:21:10 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_couch": {
+    "criteria": {
+      "has_spruce_couch": "2026-11-25 20:28:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bowl_from_spruce_planks_woodcutting": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-25 20:28:22 +0700"
     },
     "done": true
   },
@@ -6905,9 +7230,45 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/spruce_slab": {
+    "criteria": {
+      "has_planks": "2026-11-25 20:28:22 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_nightstand": {
+    "criteria": {
+      "has_spruce_nightstand": "2026-11-25 20:28:22 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/terracotta_thick_pot": {
+    "criteria": {
+      "has_terracotta_thick_pot": "2026-11-25 20:28:00 +0700"
+    },
+    "done": true
+  },
   "vinery:recipes/wine_box": {
     "criteria": {
       "has_glass": "2026-11-25 20:21:13 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_bench": {
+    "criteria": {
+      "has_spruce_bench": "2026-11-25 20:28:22 +0700"
+    },
+    "done": true
+  },
+  "cookingforblockheads:recipes/decorations/cabinet": {
+    "criteria": {
+      "has_terracotta": "2026-11-25 20:28:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_button_from_spruce_planks_woodcutting": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-25 20:28:22 +0700"
     },
     "done": true
   },
@@ -6917,9 +7278,39 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/spruce_door": {
+    "criteria": {
+      "has_planks": "2026-11-25 20:28:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/spruce_fence_gate": {
+    "criteria": {
+      "has_planks": "2026-11-25 20:28:22 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/yellow_stained_glass": {
     "criteria": {
       "has_glass": "2026-11-25 20:21:13 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_chair": {
+    "criteria": {
+      "has_spruce_chair": "2026-11-25 20:28:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_stairs": {
+    "criteria": {
+      "has_planks": "2026-11-25 20:28:22 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_side_table": {
+    "criteria": {
+      "has_spruce_side_table": "2026-11-25 20:28:22 +0700"
     },
     "done": true
   },
