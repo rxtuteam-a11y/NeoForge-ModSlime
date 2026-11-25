@@ -789,6 +789,7 @@
       "minecraft:blaze": "2026-11-24 21:57:24 +0700",
       "minecraft:skeleton": "2026-11-23 22:00:00 +0700",
       "minecraft:phantom": "2026-11-23 22:41:15 +0700",
+      "minecraft:zombified_piglin": "2026-11-25 21:49:27 +0700",
       "minecraft:wither_skeleton": "2026-11-23 22:17:00 +0700",
       "minecraft:husk": "2026-11-22 18:25:34 +0700",
       "minecraft:cave_spider": "2026-11-23 21:51:38 +0700",
@@ -7466,6 +7467,12 @@
     },
     "done": true
   },
+  "tensura:recipes/food/dubious_food": {
+    "criteria": {
+      "has_dubious_ingredient": "2026-11-25 21:50:11 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/low_magic_crystal_brick_walls_from_stone_stonecutting": {
     "criteria": {
       "has_magic_crystal_bricks": "2026-11-25 21:27:39 +0700"
@@ -7493,6 +7500,30 @@
   "tensura:recipes/building_blocks/low_quality_magic_crystal_brick_stairs": {
     "criteria": {
       "has_low_quality_magic_crystal_bricks": "2026-11-25 21:27:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_giant_ant_leg_from_smelting": {
+    "criteria": {
+      "has_giant_ant_leg": "2026-11-25 21:50:11 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/food/cooked_giant_ant_leg_from_smoking": {
+    "criteria": {
+      "has_giant_ant_leg": "2026-11-25 21:50:11 +0700"
+    },
+    "done": true
+  },
+  "tensura:vigilant": {
+    "criteria": {
+      "giant_ant_carapace": "2026-11-25 21:50:11 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/food/cooked_giant_ant_leg_from_campfire_cooking": {
+    "criteria": {
+      "has_giant_ant_leg": "2026-11-25 21:50:11 +0700"
     },
     "done": true
   },

@@ -7410,6 +7410,24 @@
     },
     "done": true
   },
+  "tensura:recipes/misc/low_quality_magic_crystalfrom_low_quality_magic_crystal_block": {
+    "criteria": {
+      "has_low_quality_magic_crystal_block": "2026-11-25 21:44:54 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/low_quality_magic_crystal_brick_wall": {
+    "criteria": {
+      "has_low_quality_magic_crystal_bricks": "2026-11-25 21:43:35 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_low_quality_magic_crystal_bricks_from_low_quality_magic_crystal_bricks_stonecutting": {
+    "criteria": {
+      "has_low_quality_magic_crystal_bricks": "2026-11-25 21:43:35 +0700"
+    },
+    "done": true
+  },
   "vinery:recipes/dirt_slab": {
     "criteria": {
       "has_dirt": "2026-11-25 21:21:48 +0700"
@@ -7419,6 +7437,12 @@
   "kaleidoscope_cookery:make_soup": {
     "criteria": {
       "use_lid_on_stockpot": "2026-11-25 21:20:23 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/low_magic_crystal_brick_walls_from_stone_stonecutting": {
+    "criteria": {
+      "has_magic_crystal_bricks": "2026-11-25 21:43:35 +0700"
     },
     "done": true
   },
@@ -7434,6 +7458,54 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/low_quality_magic_crystal_stairs_from_low_quality_magic_crystal_block_stonecutting": {
+    "criteria": {
+      "has_low_quality_magic_crystal_block": "2026-11-25 21:44:54 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/misc/magenta_dye_from_bleeding_heart": {
+    "criteria": {
+      "has_bleeding_heart": "2026-11-25 21:41:46 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/low_quality_magic_crystal_brick_stairs_from_low_quality_magic_crystal_bricks_stonecutting": {
+    "criteria": {
+      "has_low_quality_magic_crystal_bricks": "2026-11-25 21:43:35 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/low_quality_magic_crystal_stairs": {
+    "criteria": {
+      "has_low_quality_magic_crystal_block": "2026-11-25 21:44:54 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/magenta_dye_from_allium": {
+    "criteria": {
+      "has_allium": "2026-11-25 21:41:35 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/light_gray_dye_from_white_tulip": {
+    "criteria": {
+      "has_white_tulip": "2026-11-25 21:41:29 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/low_quality_magic_crystal_brick_slab_from_low_quality_magic_crystal_bricks_stonecutting": {
+    "criteria": {
+      "has_low_quality_magic_crystal_bricks": "2026-11-25 21:43:35 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/low_quality_magic_crystal_slab": {
+    "criteria": {
+      "has_low_quality_magic_crystal_block": "2026-11-25 21:44:54 +0700"
+    },
+    "done": true
+  },
   "constructionwand:diamond_wand": {
     "criteria": {
       "diamond_wand": "2026-11-25 21:34:45 +0700"
@@ -7446,15 +7518,69 @@
     },
     "done": true
   },
+  "farm_and_charm:recipes/window_sill": {
+    "criteria": {
+      "has_flower_pot": "2026-11-25 21:48:47 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/misc/pink_dye_from_salmon_poppy_bush": {
+    "criteria": {
+      "has_salmon_poppy_bush": "2026-11-25 21:41:33 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/low_quality_magic_crystal_bricks_from_low_quality_magic_crystal_block_stonecutting": {
+    "criteria": {
+      "has_low_quality_magic_crystal_block": "2026-11-25 21:44:54 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/low_quality_magic_crystal_brick_stairs": {
+    "criteria": {
+      "has_low_quality_magic_crystal_bricks": "2026-11-25 21:43:35 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/misc/pink_magnolia_sapling_from_pink_magnolia_shrub": {
     "criteria": {
       "has_pink_magnolia_shrub": "2026-11-25 21:38:58 +0700"
     },
     "done": true
   },
+  "regions_unexplored:recipes/misc/purple_dye_from_hyssop": {
+    "criteria": {
+      "has_hyssop": "2026-11-25 21:41:38 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/white_dye": {
     "criteria": {
       "has_bone_meal": "2026-11-25 21:27:10 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/low_quality_magic_crystal_bricks": {
+    "criteria": {
+      "has_low_quality_magic_crystal_block": "2026-11-25 21:44:54 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/misc/white_dye_from_white_trillium": {
+    "criteria": {
+      "has_white_trillium": "2026-11-25 21:41:55 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/orange_dye_from_orange_tulip": {
+    "criteria": {
+      "has_orange_tulip": "2026-11-25 21:41:50 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/misc/red_dye_from_waratah": {
+    "criteria": {
+      "has_waratah": "2026-11-25 21:41:28 +0700"
     },
     "done": true
   },
@@ -7470,15 +7596,45 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/magenta_dye_from_lilac": {
+    "criteria": {
+      "has_lilac": "2026-11-25 21:41:48 +0700"
+    },
+    "done": true
+  },
   "farm_and_charm:main/place_cooking_pot": {
     "criteria": {
       "cooking_pot": "2026-11-25 21:10:25 +0700"
     },
     "done": true
   },
+  "regions_unexplored:recipes/misc/blue_dye_from_blue_lupine": {
+    "criteria": {
+      "has_blue_lupine": "2026-11-25 21:41:32 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/light_gray_dye_from_azure_bluet": {
     "criteria": {
       "has_azure_bluet": "2026-11-25 21:38:34 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/misc/light_blue_dye_from_aster": {
+    "criteria": {
+      "has_aster": "2026-11-25 21:41:54 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/low_quality_magic_crystal_slab_from_low_quality_magic_crystal_block_stonecutting": {
+    "criteria": {
+      "has_low_quality_magic_crystal_block": "2026-11-25 21:44:54 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/low_quality_magic_crystal_brick_slab": {
+    "criteria": {
+      "has_low_quality_magic_crystal_bricks": "2026-11-25 21:43:35 +0700"
     },
     "done": true
   },
