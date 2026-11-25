@@ -24,11 +24,11 @@
       "progress": {}
     },
     {
-      "questId": "trbeyond:daily_day_2_landfish_2",
+      "questId": "trbeyond:daily_day_3_one_eyed_owl_1",
       "progress": {}
     },
     {
-      "questId": "trbeyond:daily_day_2_hell_caterpillar_3",
+      "questId": "trbeyond:daily_day_3_cattledeer_2",
       "progress": {}
     },
     {
@@ -46,12 +46,6 @@
     {
       "questId": "trbeyond:rep_sub_slime_harvest_1",
       "progress": {}
-    },
-    {
-      "questId": "trbeyond:daily_day_2_slime_1",
-      "progress": {
-        "kill_slime_2_1": 2
-      }
     },
     {
       "questId": "trbeyond:repeatable_skill_kyoya_tachibana",
@@ -107,6 +101,10 @@
     },
     {
       "questId": "trbeyond:boss_hinata_sakaguchi",
+      "progress": {}
+    },
+    {
+      "questId": "trbeyond:daily_day_3_giant_cod_3",
       "progress": {}
     },
     {

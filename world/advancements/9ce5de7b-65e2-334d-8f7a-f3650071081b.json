@@ -7620,7 +7620,9 @@
   "cataclysm:kill_all_bosses": {
     "criteria": {
       "cataclysm:maledictus": "2026-11-24 18:59:58 +0700",
-      "cataclysm:scylla": "2026-11-24 16:27:02 +0700"
+      "cataclysm:netherite_monstrosity": "2026-11-25 19:33:15 +0700",
+      "cataclysm:scylla": "2026-11-24 16:27:02 +0700",
+      "cataclysm:ignis": "2026-11-25 19:30:17 +0700"
     },
     "done": false
   },
@@ -9342,6 +9344,12 @@
     },
     "done": true
   },
+  "cataclysm:find_soul_black_smith": {
+    "criteria": {
+      "blacksmith": "2026-11-25 19:32:28 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/polished_blackstone_bricks_from_polished_blackstone_stonecutting": {
     "criteria": {
       "has_polished_blackstone": "2026-11-25 19:16:17 +0700"
@@ -9426,6 +9434,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/chiseled_polished_blackstone": {
+    "criteria": {
+      "has_polished_blackstone_slab": "2026-11-25 19:33:48 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/polished_blackstone_slab_from_polished_blackstone_stonecutting": {
     "criteria": {
       "has_polished_blackstone": "2026-11-25 19:16:17 +0700"
@@ -9435,6 +9449,18 @@
   "minecraft:nether/loot_bastion": {
     "criteria": {
       "loot_bastion_bridge": "2026-11-25 19:16:30 +0700"
+    },
+    "done": true
+  },
+  "cataclysm:kill_ignis": {
+    "criteria": {
+      "ignis": "2026-11-25 19:30:17 +0700"
+    },
+    "done": true
+  },
+  "cataclysm:kill_monstrosity": {
+    "criteria": {
+      "netheritemonstrosity": "2026-11-25 19:33:15 +0700"
     },
     "done": true
   },
