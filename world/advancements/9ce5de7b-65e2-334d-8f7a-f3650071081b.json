@@ -9920,6 +9920,12 @@
     },
     "done": true
   },
+  "cookingforblockheads:recipes/misc/recipe_book": {
+    "criteria": {
+      "has_book": "2026-11-25 22:44:51 +0700"
+    },
+    "done": true
+  },
   "bakery:recipes/red_nether_bricks_stove": {
     "criteria": {
       "has_iron_ingot": "2026-11-25 21:32:23 +0700"

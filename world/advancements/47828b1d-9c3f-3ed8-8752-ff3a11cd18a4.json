@@ -7813,6 +7813,12 @@
     },
     "done": true
   },
+  "tensura:way_stone": {
+    "criteria": {
+      "block": "2026-11-25 22:47:36 +0700"
+    },
+    "done": true
+  },
   "twilightforest:recipes/building_blocks/stonecutting/stone/bold_stone_pillar": {
     "criteria": {
       "has_block": "2026-11-25 22:28:07 +0700"
