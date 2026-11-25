@@ -9686,21 +9686,9 @@
     },
     "done": true
   },
-  "farm_and_charm:recipes/cooking_pot": {
+  "betterdeserttemples:temple_entry": {
     "criteria": {
-      "has_iron_ingot": "2026-11-25 21:32:23 +0700"
-    },
-    "done": true
-  },
-  "netherman:kill_azazel": {
-    "criteria": {
-      "got_stick": "2026-11-25 22:24:53 +0700"
-    },
-    "done": true
-  },
-  "bakery:recipes/quartz_stove": {
-    "criteria": {
-      "has_iron_ingot": "2026-11-25 21:32:23 +0700"
+      "in_better_desert_temple": "2026-11-25 21:16:56 +0700"
     },
     "done": true
   },
@@ -9710,9 +9698,27 @@
     },
     "done": true
   },
-  "vinery:recipes/fermentation_barrel": {
+  "farmersdelight:recipes/cooking/dog_food": {
     "criteria": {
-      "has_barrel": "2026-11-25 22:20:30 +0700"
+      "has_any_ingredient": "2026-11-25 21:32:05 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/building_blocks/organic_compost_from_rotten_flesh": {
+    "criteria": {
+      "has_rotten_flesh": "2026-11-25 21:32:05 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/cooking_pot": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 21:32:23 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/quartz_stove": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 21:32:23 +0700"
     },
     "done": true
   },
@@ -9746,24 +9752,6 @@
     },
     "done": true
   },
-  "cookingforblockheads:recipes/decorations/cutting_board": {
-    "criteria": {
-      "has_axe": "2026-11-25 22:32:08 +0700"
-    },
-    "done": true
-  },
-  "betterdeserttemples:temple_entry": {
-    "criteria": {
-      "in_better_desert_temple": "2026-11-25 21:16:56 +0700"
-    },
-    "done": true
-  },
-  "cataclysm:find_sunken_city": {
-    "criteria": {
-      "factory": "2026-11-25 21:53:03 +0700"
-    },
-    "done": true
-  },
   "farm_and_charm:recipes/iron_cleaver": {
     "criteria": {
       "has_iron_ingot": "2026-11-25 21:32:23 +0700"
@@ -9785,18 +9773,6 @@
   "vinery:recipes/big_table": {
     "criteria": {
       "has_iron_ingot": "2026-11-25 21:32:23 +0700"
-    },
-    "done": true
-  },
-  "farmersdelight:recipes/cooking/dog_food": {
-    "criteria": {
-      "has_any_ingredient": "2026-11-25 21:32:05 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/pink_dye_from_pink_petals": {
-    "criteria": {
-      "has_pink_petals": "2026-11-25 21:39:04 +0700"
     },
     "done": true
   },
@@ -9836,12 +9812,6 @@
     },
     "done": true
   },
-  "farmersdelight:recipes/building_blocks/organic_compost_from_rotten_flesh": {
-    "criteria": {
-      "has_rotten_flesh": "2026-11-25 21:32:05 +0700"
-    },
-    "done": true
-  },
   "farm_and_charm:recipes/crafting_bowl": {
     "criteria": {
       "has_iron_ingot": "2026-11-25 21:32:23 +0700"
@@ -9851,12 +9821,6 @@
   "bakery:recipes/stone_bricks_stove": {
     "criteria": {
       "has_iron_ingot": "2026-11-25 21:32:23 +0700"
-    },
-    "done": true
-  },
-  "netherman:enter_mansion": {
-    "criteria": {
-      "in_mansion": "2026-11-25 22:19:01 +0700"
     },
     "done": true
   },
@@ -9896,12 +9860,6 @@
     },
     "done": true
   },
-  "vinery:main/wild_harvest": {
-    "criteria": {
-      "any_seed": "2026-11-25 21:39:07 +0700"
-    },
-    "done": true
-  },
   "bakery:recipes/sandstone_stove": {
     "criteria": {
       "has_iron_ingot": "2026-11-25 21:32:23 +0700"
@@ -9920,21 +9878,9 @@
     },
     "done": true
   },
-  "cookingforblockheads:recipes/misc/recipe_book": {
-    "criteria": {
-      "has_book": "2026-11-25 22:44:51 +0700"
-    },
-    "done": true
-  },
   "bakery:recipes/red_nether_bricks_stove": {
     "criteria": {
       "has_iron_ingot": "2026-11-25 21:32:23 +0700"
-    },
-    "done": true
-  },
-  "minecraft:adventure/hero_of_the_village": {
-    "criteria": {
-      "hero_of_the_village": "2026-11-25 22:41:26 +0700"
     },
     "done": true
   },
@@ -9950,15 +9896,81 @@
     },
     "done": true
   },
+  "farm_and_charm:recipes/chicken_coop": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 21:32:23 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/pink_dye_from_pink_petals": {
+    "criteria": {
+      "has_pink_petals": "2026-11-25 21:39:04 +0700"
+    },
+    "done": true
+  },
+  "vinery:main/wild_harvest": {
+    "criteria": {
+      "any_seed": "2026-11-25 21:39:07 +0700"
+    },
+    "done": true
+  },
+  "cataclysm:find_sunken_city": {
+    "criteria": {
+      "factory": "2026-11-25 21:53:03 +0700"
+    },
+    "done": true
+  },
+  "netherman:enter_mansion": {
+    "criteria": {
+      "in_mansion": "2026-11-25 22:19:01 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/fermentation_barrel": {
+    "criteria": {
+      "has_barrel": "2026-11-25 22:20:30 +0700"
+    },
+    "done": true
+  },
+  "netherman:kill_azazel": {
+    "criteria": {
+      "got_stick": "2026-11-25 22:24:53 +0700"
+    },
+    "done": true
+  },
   "minecraft:nether/fast_travel": {
     "criteria": {
       "travelled": "2026-11-25 22:31:28 +0700"
     },
     "done": true
   },
-  "farm_and_charm:recipes/chicken_coop": {
+  "cookingforblockheads:recipes/decorations/cutting_board": {
     "criteria": {
-      "has_iron_ingot": "2026-11-25 21:32:23 +0700"
+      "has_axe": "2026-11-25 22:32:08 +0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/hero_of_the_village": {
+    "criteria": {
+      "hero_of_the_village": "2026-11-25 22:41:26 +0700"
+    },
+    "done": true
+  },
+  "cookingforblockheads:recipes/misc/recipe_book": {
+    "criteria": {
+      "has_book": "2026-11-25 22:44:51 +0700"
+    },
+    "done": true
+  },
+  "tensura_neb:monster_ruler": {
+    "criteria": {
+      "rimuru": "2026-11-25 22:53:35 +0700"
+    },
+    "done": true
+  },
+  "tensura:better_smelter": {
+    "criteria": {
+      "kiln": "2026-11-25 22:55:17 +0700"
     },
     "done": true
   },

@@ -7747,6 +7747,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/pure_magisteel_nugget_from_smelting_pure_magisteel_boots": {
+    "criteria": {
+      "has_pure_magisteel_boots": "2026-11-25 22:58:28 +0700"
+    },
+    "done": true
+  },
   "vinery:recipes/grass_slab": {
     "criteria": {
       "has_grass_block": "2026-11-25 22:17:55 +0700"
@@ -8272,6 +8278,12 @@
   "iceandfire:recipes/combat/tide_bronze_helmet": {
     "criteria": {
       "has_item": "2026-11-25 22:27:51 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/pure_magisteel_nugget_from_blasting_pure_magisteel_boots": {
+    "criteria": {
+      "has_pure_magisteel_boots": "2026-11-25 22:58:28 +0700"
     },
     "done": true
   },
