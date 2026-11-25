@@ -1068,6 +1068,7 @@
       "minecraft:elder_guardian": "2026-11-24 21:22:12 +0700",
       "minecraft:phantom": "2026-11-23 22:17:34 +0700",
       "minecraft:witch": "2026-11-23 13:17:25 +0700",
+      "minecraft:ravager": "2026-11-25 08:25:19 +0700",
       "minecraft:husk": "2026-11-23 13:30:36 +0700",
       "minecraft:bogged": "2026-11-24 11:34:41 +0700",
       "minecraft:cave_spider": "2026-11-23 21:31:24 +0700",
@@ -8550,6 +8551,36 @@
   "minecraft:recipes/food/cooked_cod_from_smoking": {
     "criteria": {
       "has_cod": "2026-11-25 07:40:23 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/deathworm_red_chestplate": {
+    "criteria": {
+      "has_item": "2026-11-25 08:34:54 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/deathworm_red_boots": {
+    "criteria": {
+      "has_item": "2026-11-25 08:34:54 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/deathworm_red_leggings": {
+    "criteria": {
+      "has_item": "2026-11-25 08:34:54 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/deathworm_red_helmet": {
+    "criteria": {
+      "has_item": "2026-11-25 08:34:54 +0700"
+    },
+    "done": true
+  },
+  "friendsandfoes:adventure/it_bites": {
+    "criteria": {
+      "killed_mauler": "2026-11-25 08:39:08 +0700"
     },
     "done": true
   },
