@@ -9685,5 +9685,11 @@
     },
     "done": true
   },
+  "betterdeserttemples:temple_entry": {
+    "criteria": {
+      "in_better_desert_temple": "2026-11-25 21:16:56 +0700"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }

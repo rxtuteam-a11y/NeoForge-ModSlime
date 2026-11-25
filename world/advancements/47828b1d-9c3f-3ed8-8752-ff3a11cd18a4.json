@@ -7410,5 +7410,23 @@
     },
     "done": true
   },
+  "farmersdelight:main/place_cooking_pot": {
+    "criteria": {
+      "cooking_pot": "2026-11-25 21:11:01 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:main/place_cooking_pot": {
+    "criteria": {
+      "cooking_pot": "2026-11-25 21:10:25 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:main/place_feeding_trough": {
+    "criteria": {
+      "place_feeding_trough": "2026-11-25 21:10:27 +0700"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }
