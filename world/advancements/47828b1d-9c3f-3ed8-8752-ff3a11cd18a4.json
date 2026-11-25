@@ -7777,6 +7777,12 @@
     },
     "done": true
   },
+  "tensura:rewind_time": {
+    "criteria": {
+      "race": "2026-11-25 23:03:38 +0700"
+    },
+    "done": true
+  },
   "waystones:recipes/combat/epitaph": {
     "criteria": {
       "has_amethyst_shard": "2026-11-25 22:19:53 +0700"
