@@ -1,5 +1,11 @@
 [
   {
+    "uuid": "9ce5de7b-65e2-334d-8f7a-f3650071081b",
+    "name": "RimuruTempest",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
     "uuid": "01d5f1c9-d4ab-48d6-9d51-090d67a4c509",
     "name": "Pacala",
     "level": 4,
