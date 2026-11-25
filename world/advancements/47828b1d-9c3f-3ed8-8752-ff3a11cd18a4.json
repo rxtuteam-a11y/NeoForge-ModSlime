@@ -973,6 +973,7 @@
     "criteria": {
       "minecraft:pillager": "2026-11-23 09:00:08 +0700",
       "minecraft:skeleton": "2026-11-23 21:11:24 +0700",
+      "minecraft:phantom": "2026-11-25 19:59:58 +0700",
       "minecraft:husk": "2026-11-22 17:50:13 +0700",
       "minecraft:bogged": "2026-11-22 18:32:26 +0700",
       "minecraft:cave_spider": "2026-11-23 21:51:05 +0700",
@@ -6137,6 +6138,531 @@
   "kaleidoscope_cookery:recipes/food/cold_roasted_meat": {
     "criteria": {
       "has_cooked_beef": "2026-11-24 22:13:26 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/cooking_pot": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 19:57:39 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:main/place_stove": {
+    "criteria": {
+      "stove": "2026-11-25 19:59:00 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/quartz_stove": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 19:57:39 +0700"
+    },
+    "done": true
+  },
+  "bakery:main/place_stove": {
+    "criteria": {
+      "stove": "2026-11-25 19:59:00 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/cabinet": {
+    "criteria": {
+      "has_oak_planks": "2026-11-25 19:55:37 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/seeder": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 19:57:39 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/bread_knife": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 19:57:39 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/apple_cider": {
+    "criteria": {
+      "has_apple": "2026-11-25 19:53:20 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:main/plant_all_crops": {
+    "criteria": {
+      "nether_wart": "2026-11-25 19:54:19 +0700"
+    },
+    "done": false
+  },
+  "bakery:recipes/iron_chair": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 19:57:39 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/decorations/spruce_cabinet": {
+    "criteria": {
+      "has_spruce_trapdoor": "2026-11-25 19:53:21 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/faucet": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 19:57:39 +0700"
+    },
+    "done": true
+  },
+  "cookingforblockheads:recipes/decorations/tool_rack": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 19:57:39 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/rolling_pin": {
+    "criteria": {
+      "has_oak_planks": "2026-11-25 19:55:37 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/pitchfork": {
+    "criteria": {
+      "has_iron_nugget": "2026-11-25 19:53:23 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/iron_cleaver": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 19:57:39 +0700"
+    },
+    "done": true
+  },
+  "cookingforblockheads:recipes/decorations/white_fridge": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 19:57:39 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/combat/iron_knife": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 19:57:39 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/big_table": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 19:57:39 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/wall_cabinet": {
+    "criteria": {
+      "has_oak_planks": "2026-11-25 19:55:37 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:main/find_wild_crops": {
+    "criteria": {
+      "wild_strawberry": "2026-11-25 19:51:22 +0700",
+      "oat": "2026-11-25 19:51:22 +0700",
+      "onion": "2026-11-25 19:51:22 +0700",
+      "corn": "2026-11-25 19:51:22 +0700",
+      "wild_ribwort": "2026-11-25 19:51:22 +0700",
+      "wild_corn": "2026-11-25 19:51:22 +0700",
+      "strawberry": "2026-11-25 19:51:22 +0700",
+      "wild_nettle": "2026-11-25 19:51:22 +0700",
+      "barley": "2026-11-25 19:51:22 +0700",
+      "tomato": "2026-11-25 19:51:22 +0700",
+      "lettuce": "2026-11-25 19:51:22 +0700",
+      "wild_tomatoes": "2026-11-25 19:51:22 +0700",
+      "wild_lettuce": "2026-11-25 19:51:22 +0700",
+      "oat_seeds": "2026-11-25 19:51:22 +0700",
+      "strawberry_seeds": "2026-11-25 19:51:22 +0700",
+      "tomato_seeds": "2026-11-25 19:51:22 +0700",
+      "barley_seeds": "2026-11-25 19:51:22 +0700",
+      "lettuce_seeds": "2026-11-25 19:51:22 +0700",
+      "kernels": "2026-11-25 19:51:22 +0700",
+      "wild_barley": "2026-11-25 19:51:22 +0700",
+      "wild_onion": "2026-11-25 19:51:22 +0700",
+      "wild_oat": "2026-11-25 19:51:22 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/dog_food": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-25 19:53:22 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/flower_pot": {
+    "criteria": {
+      "has_brick": "2026-11-25 19:57:33 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/supply_cart": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 19:57:39 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/dark_cherry_fence": {
+    "criteria": {
+      "has_stick": "2026-11-25 19:58:16 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/decorations/skillet": {
+    "criteria": {
+      "has_brick": "2026-11-25 19:57:33 +0700"
+    },
+    "done": true
+  },
+  "vinery:main/root": {
+    "criteria": {
+      "seeds": "2026-11-25 19:51:22 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/cutting_board": {
+    "criteria": {
+      "has_planks": "2026-11-25 19:55:37 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/iron_table": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 19:57:39 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/baking_station": {
+    "criteria": {
+      "has_brick": "2026-11-25 19:57:33 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/dark_cherry_fence_gate": {
+    "criteria": {
+      "has_stick": "2026-11-25 19:58:16 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/feeding_trough": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 19:57:39 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/bone_broth": {
+    "criteria": {
+      "has_bone": "2026-11-25 19:53:22 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/end_bricks_stove": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 19:57:39 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/water_sprinkler": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 19:57:39 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/tool_rack": {
+    "criteria": {
+      "has_item": "2026-11-25 19:57:39 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/oak_wine_rack_big": {
+    "criteria": {
+      "has_oak_planks": "2026-11-25 19:55:37 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/building_blocks/organic_compost_from_rotten_flesh": {
+    "criteria": {
+      "has_rotten_flesh": "2026-11-25 19:53:22 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/crafting_bowl": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 19:57:39 +0700"
+    },
+    "done": true
+  },
+  "cookingforblockheads:recipes/decorations/spice_rack": {
+    "criteria": {
+      "has_planks": "2026-11-25 19:55:37 +0700"
+    },
+    "done": true
+  },
+  "cookingforblockheads:recipes/decorations/fruit_basket": {
+    "criteria": {
+      "has_planks": "2026-11-25 19:55:37 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/brick_counter": {
+    "criteria": {
+      "has_oak_planks": "2026-11-25 19:55:37 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/stone_bricks_stove": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 19:57:39 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/steak_and_potatoes": {
+    "criteria": {
+      "has_baked_potato": "2026-11-25 19:53:22 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/diamond_cleaver": {
+    "criteria": {
+      "has_diamond": "2026-11-25 19:53:20 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/stove": {
+    "criteria": {
+      "has_bricks": "2026-11-25 19:58:02 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/mud_bricks_stove": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 19:57:39 +0700"
+    },
+    "done": true
+  },
+  "vinery:main/forbidden_fruit": {
+    "criteria": {
+      "apple": "2026-11-25 19:53:20 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/plow": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 19:57:39 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/mincer": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 19:57:39 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/decorations/cooking_pot": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 19:57:39 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/cupcake_display": {
+    "criteria": {
+      "has_stick": "2026-11-25 19:58:16 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/redstone/stove_campfire": {
+    "criteria": {
+      "has_campfire": "2026-11-25 19:58:21 +0700"
+    },
+    "done": true
+  },
+  "vinery:main/fruits_of_the_field": {
+    "criteria": {
+      "fruits_of_the_field": "2026-11-25 19:52:21 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/granite_stove": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 19:57:39 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/campfire": {
+    "criteria": {
+      "has_coal": "2026-11-25 19:51:22 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/roaster": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 19:57:39 +0700"
+    },
+    "done": true
+  },
+  "bakery:main/root": {
+    "criteria": {
+      "seeds": "2026-11-25 19:51:22 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/shawarma_spit": {
+    "criteria": {
+      "has_campfire": "2026-11-25 19:58:21 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/sandstone_stove": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 19:57:39 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:root": {
+    "criteria": {
+      "has_pot": "2026-11-25 19:59:22 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/combat/diamond_knife": {
+    "criteria": {
+      "has_diamond": "2026-11-25 19:53:20 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/cake_stand": {
+    "criteria": {
+      "has_brick": "2026-11-25 19:57:33 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/small_cooking_pot": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 19:57:39 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/kitchen_sink": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 19:57:39 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/combat/flint_knife": {
+    "criteria": {
+      "has_stick": "2026-11-25 19:58:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/nether_wart_block": {
+    "criteria": {
+      "has_nether_wart": "2026-11-25 19:54:09 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/grapevine_lattice": {
+    "criteria": {
+      "has_coal": "2026-11-25 19:51:22 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/street_sign": {
+    "criteria": {
+      "has_oak_planks": "2026-11-25 19:55:37 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/red_nether_bricks_stove": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 19:57:39 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:main/root": {
+    "criteria": {
+      "example_criterion": "2026-11-25 19:51:24 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/drawer": {
+    "criteria": {
+      "has_oak_planks": "2026-11-25 19:55:37 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/tray": {
+    "criteria": {
+      "has_oak_planks": "2026-11-25 19:55:37 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/cobblestone_stove": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 19:57:39 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/decorations/stove": {
+    "criteria": {
+      "has_campfire": "2026-11-25 19:58:21 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/deepslate_stove": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 19:57:39 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:main/root": {
+    "criteria": {
+      "seeds": "2026-11-25 19:51:22 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/oak_wine_rack_small": {
+    "criteria": {
+      "has_oak_planks": "2026-11-25 19:55:37 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/stuffed_potato": {
+    "criteria": {
+      "has_baked_potato": "2026-11-25 19:53:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/plant_seed": {
+    "criteria": {
+      "nether_wart": "2026-11-25 19:54:19 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/bread_box": {
+    "criteria": {
+      "has_stick": "2026-11-25 19:58:16 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/decorations/cutting_board": {
+    "criteria": {
+      "has_stick": "2026-11-25 19:58:16 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/chicken_coop": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 19:57:39 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/dark_cherry_planks": {
+    "criteria": {
+      "has_cherry_logs": "2026-11-25 19:51:22 +0700"
     },
     "done": true
   },

@@ -7066,5 +7066,158 @@
     },
     "done": true
   },
+  "bakery:recipes/butter": {
+    "criteria": {
+      "has_water_bucket": "2026-11-25 19:53:26 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/dirt_slab": {
+    "criteria": {
+      "has_dirt": "2026-11-25 19:51:33 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/decorations/spruce_cabinet": {
+    "criteria": {
+      "has_spruce_trapdoor": "2026-11-25 19:54:47 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:main/find_wild_crops": {
+    "criteria": {
+      "wild_strawberry": "2026-11-25 19:51:33 +0700",
+      "oat": "2026-11-25 19:51:33 +0700",
+      "onion": "2026-11-25 19:51:33 +0700",
+      "corn": "2026-11-25 19:51:33 +0700",
+      "wild_ribwort": "2026-11-25 19:51:33 +0700",
+      "wild_corn": "2026-11-25 19:51:33 +0700",
+      "strawberry": "2026-11-25 19:51:33 +0700",
+      "wild_nettle": "2026-11-25 19:51:33 +0700",
+      "barley": "2026-11-25 19:51:33 +0700",
+      "tomato": "2026-11-25 19:51:33 +0700",
+      "lettuce": "2026-11-25 19:51:33 +0700",
+      "wild_tomatoes": "2026-11-25 19:51:33 +0700",
+      "wild_lettuce": "2026-11-25 19:51:33 +0700",
+      "oat_seeds": "2026-11-25 19:51:33 +0700",
+      "strawberry_seeds": "2026-11-25 19:51:33 +0700",
+      "tomato_seeds": "2026-11-25 19:51:33 +0700",
+      "barley_seeds": "2026-11-25 19:51:33 +0700",
+      "lettuce_seeds": "2026-11-25 19:51:33 +0700",
+      "kernels": "2026-11-25 19:51:33 +0700",
+      "wild_barley": "2026-11-25 19:51:33 +0700",
+      "wild_onion": "2026-11-25 19:51:33 +0700",
+      "wild_oat": "2026-11-25 19:51:33 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/timber_well": {
+    "criteria": {
+      "has_bucket": "2026-11-25 19:51:34 +0700"
+    },
+    "done": true
+  },
+  "vinery:main/root": {
+    "criteria": {
+      "seeds": "2026-11-25 19:51:33 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/cutting_board": {
+    "criteria": {
+      "has_planks": "2026-11-25 19:51:34 +0700"
+    },
+    "done": true
+  },
+  "cookingforblockheads:recipes/decorations/spice_rack": {
+    "criteria": {
+      "has_planks": "2026-11-25 19:51:34 +0700"
+    },
+    "done": true
+  },
+  "cookingforblockheads:recipes/decorations/fruit_basket": {
+    "criteria": {
+      "has_planks": "2026-11-25 19:51:34 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/onion_soup": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-25 19:51:34 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/spruce_wine_rack_big": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-25 19:51:34 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/spruce_wine_rack_small": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-25 19:51:34 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/grapevine_pot": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-25 19:51:34 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/dark_cherry_shelf": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-25 19:51:34 +0700"
+    },
+    "done": true
+  },
+  "cookingforblockheads:recipes/decorations/sink": {
+    "criteria": {
+      "has_water_bucket": "2026-11-25 19:53:26 +0700"
+    },
+    "done": true
+  },
+  "vinery:main/fruits_of_the_field": {
+    "criteria": {
+      "fruits_of_the_field": "2026-11-25 19:51:35 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/campfire": {
+    "criteria": {
+      "has_coal": "2026-11-25 19:51:33 +0700"
+    },
+    "done": true
+  },
+  "bakery:main/root": {
+    "criteria": {
+      "seeds": "2026-11-25 19:51:33 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/grapevine_lattice": {
+    "criteria": {
+      "has_coal": "2026-11-25 19:51:33 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:main/root": {
+    "criteria": {
+      "example_criterion": "2026-11-25 19:51:35 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:main/root": {
+    "criteria": {
+      "seeds": "2026-11-25 19:51:33 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/dark_cherry_planks": {
+    "criteria": {
+      "has_cherry_logs": "2026-11-25 19:51:33 +0700"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }
