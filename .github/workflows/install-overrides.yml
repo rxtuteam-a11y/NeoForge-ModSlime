@@ -35,7 +35,8 @@ permissions:
   contents: write
 
 concurrency:
-  group: modslime-server
+  # chỉ chế độ "cai" mới phải chờ server tắt; xem/so_sanh chạy ngay
+  group: ${{ inputs.che_do == 'cai' && 'modslime-server' || format('overrides-view-{0}', github.run_id) }}
   cancel-in-progress: false
 
 jobs:
