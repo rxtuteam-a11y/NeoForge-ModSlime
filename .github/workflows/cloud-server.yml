@@ -96,6 +96,12 @@ jobs:
             libraries
           key: modslime-mods-${{ env.GDRIVE_MODS_ID }}-v1
 
+      - name: 3d. Thêm mod bổ sung (extra-mods)
+        if: steps.dup.outputs.skip != 'true'
+        run: |
+          shopt -s nullglob; jars=(extra-mods/*.jar)
+          if [ ${#jars[@]} -gt 0 ]; then cp -f "${jars[@]}" mods/; echo "Đã thêm ${#jars[@]} mod: ${jars[*]##*/}"; else echo "Không có mod bổ sung."; fi
+
       - name: 4. Cài cloudflared, playit, rclone
         if: steps.dup.outputs.skip != 'true'
         env:

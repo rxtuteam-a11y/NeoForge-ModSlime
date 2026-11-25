@@ -59,6 +59,15 @@ Chỉ giữ 3 bản mới nhất (world lớn, mỗi bản vài GB).
 
 Chỉ cần **xem** trạng thái/log/địa chỉ game thì gửi link trang web bình thường, không cần token.
 
+## Thêm mod (ví dụ mod nấu ăn)
+
+1. Sửa `extra-mods/danh-sach.txt` (mỗi dòng 1 mod: slug hoặc tên trên Modrinth).
+2. GitHub → Actions → **Thêm mod (Modrinth)** → Run workflow. Workflow tải bản NeoForge 1.21.1, kèm thư viện còn thiếu,
+   bỏ qua mod server đã có, lưu vào `extra-mods/` và tạo `docs/mods-them.zip`.
+3. Server tự chép các mod này vào `mods` ở lần bật tiếp theo.
+4. **Mọi người chơi** phải tải `mods-them.zip` (link trên trang web, thẻ Vào game) và chép các file .jar vào thư mục `mods`
+   của mình. Thiếu mod hoặc khác phiên bản sẽ bị lỗi "Máy chủ gửi các bản ghi có khoá không xác định" khi vào server.
+
 ## Chạy trên máy riêng (Radmin VPN)
 
 Vẫn dùng được như trước: chạy `web-panel/Start-Web-Panel.bat`, mở http://localhost:8080.

@@ -1,0 +1,12 @@
+# Mod thêm vào server (và máy người chơi). Mỗi dòng: slug hoặc tên mod trên Modrinth.
+# Sau khi sửa file này: GitHub -> Actions -> "Thêm mod" -> Run workflow.
+farmers-delight
+cooking-for-blockheads
+croptopia
+Pam's HarvestCraft 2 Food Core
+Pam's HarvestCraft 2 Crops
+Pam's HarvestCraft 2 Trees
+Pam's HarvestCraft 2 Food Extended
+lets-do-bakery
+lets-do-vinery
+realistic cooking
