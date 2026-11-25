@@ -56,7 +56,11 @@ def resolve(name):
             pass
     facets = json.dumps([[f"categories:{LOADER}"], [f"versions:{MC}"], ["project_type:mod"]])
     hits = get(f"{API}/search?" + urllib.parse.urlencode({"query": name, "facets": facets, "limit": 5}))["hits"]
+    words = [w for w in re.findall(r"[a-z0-9]+", name.lower()) if w not in ("s",)]
     for h in hits:
+        title = re.sub(r"[^a-z0-9]+", " ", h["title"].lower())
+        if not all(w in title.split() or w in title.replace(" ", "") for w in words):
+            continue   # tên không khớp đủ từ khoá -> không nhận bừa
         v = compatible_version(h["project_id"])
         if v: return get(f"{API}/project/{h['project_id']}"), v
     return None, None
