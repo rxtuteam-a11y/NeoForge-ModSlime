@@ -10226,6 +10226,12 @@
     },
     "done": true
   },
+  "farm_and_charm:recipes/diamond_cleaver": {
+    "criteria": {
+      "has_diamond": "2026-11-25 23:57:45 +0700"
+    },
+    "done": true
+  },
   "twilightforest:recipes/transportation/sorting_chest_boat": {
     "criteria": {
       "has_boat": "2026-11-25 23:29:44 +0700"
@@ -10280,9 +10286,21 @@
     },
     "done": true
   },
+  "tensura:master_smith": {
+    "criteria": {
+      "schematics": "2026-11-26 00:00:17 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/transportation/kapok_chest_boat": {
     "criteria": {
       "has_boat": "2026-11-25 23:29:44 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/combat/diamond_knife": {
+    "criteria": {
+      "has_diamond": "2026-11-25 23:57:45 +0700"
     },
     "done": true
   },

@@ -1610,6 +1610,12 @@
     },
     "done": true
   },
+  "waystones:recipes/decorations/warp_scroll": {
+    "criteria": {
+      "has_ender_pearl": "2026-11-25 23:59:37 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/building_blocks/medium_quality_magic_crystal_blockfrom_medium_quality_magic_crystal": {
     "criteria": {
       "has_medium_quality_magic_crystal": "2026-11-25 23:34:01 +0700"
@@ -1638,6 +1644,12 @@
   "tensura:master_skill": {
     "criteria": {
       "skill": "2026-11-25 23:34:35 +0700"
+    },
+    "done": true
+  },
+  "sophisticatedcore:recipes/misc/ender_linker": {
+    "criteria": {
+      "has_ender_pearl": "2026-11-25 23:59:37 +0700"
     },
     "done": true
   },
@@ -1755,6 +1767,12 @@
     },
     "done": true
   },
+  "toms_storage:unlock_dia_pearl": {
+    "criteria": {
+      "inv_changed-ender_pearl": "2026-11-25 23:59:37 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/nether_brick_slab_from_nether_bricks_stonecutting": {
     "criteria": {
       "has_nether_bricks": "2026-11-25 23:37:14 +0700"
@@ -1770,6 +1788,12 @@
   "minecraft:recipes/decorations/red_nether_brick_wall": {
     "criteria": {
       "has_red_nether_bricks": "2026-11-25 23:36:55 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/warp_core": {
+    "criteria": {
+      "has_ender_pearl": "2026-11-25 23:59:37 +0700"
     },
     "done": true
   },
@@ -1800,6 +1824,12 @@
   "tensura:elementalist": {
     "criteria": {
       "spirit": "2026-11-25 23:29:53 +0700"
+    },
+    "done": true
+  },
+  "waystones:recipes/decorations/warp_dust": {
+    "criteria": {
+      "has_ender_pearl": "2026-11-25 23:59:37 +0700"
     },
     "done": true
   },
@@ -1836,6 +1866,12 @@
   "minecraft:recipes/decorations/nether_brick_wall": {
     "criteria": {
       "has_nether_bricks": "2026-11-25 23:37:14 +0700"
+    },
+    "done": true
+  },
+  "waystones:recipes/decorations/portal_scroll": {
+    "criteria": {
+      "has_ender_pearl": "2026-11-25 23:59:37 +0700"
     },
     "done": true
   },
@@ -1884,6 +1920,12 @@
   "minecraft:recipes/building_blocks/red_nether_bricks": {
     "criteria": {
       "has_item": "2026-11-25 23:37:14 +0700"
+    },
+    "done": true
+  },
+  "waystones:recipes/decorations/warp_stone": {
+    "criteria": {
+      "has_ender_pearl": "2026-11-25 23:59:37 +0700"
     },
     "done": true
   },
