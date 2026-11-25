@@ -10154,6 +10154,12 @@
     },
     "done": true
   },
+  "vinery:recipes/dark_cherry_fence": {
+    "criteria": {
+      "has_stick": "2026-11-25 23:34:15 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/dark_oak_chest_boat": {
     "criteria": {
       "has_boat": "2026-11-25 23:29:44 +0700"
@@ -10163,6 +10169,12 @@
   "regions_unexplored:recipes/transportation/dead_chest_boat": {
     "criteria": {
       "has_boat": "2026-11-25 23:29:44 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/dark_cherry_fence_gate": {
+    "criteria": {
+      "has_stick": "2026-11-25 23:34:15 +0700"
     },
     "done": true
   },
@@ -10214,6 +10226,12 @@
     },
     "done": true
   },
+  "bakery:recipes/cupcake_display": {
+    "criteria": {
+      "has_stick": "2026-11-25 23:34:15 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/bamboo_chest_raft": {
     "criteria": {
       "has_boat": "2026-11-25 23:29:44 +0700"
@@ -10253,6 +10271,12 @@
   "eternal_starlight:recipes/transportation/northland_chest_boat": {
     "criteria": {
       "has_boat": "2026-11-25 23:29:44 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/combat/flint_knife": {
+    "criteria": {
+      "has_stick": "2026-11-25 23:34:15 +0700"
     },
     "done": true
   },
@@ -10331,6 +10355,18 @@
   "chronodawn:recipes/transportation/dark_time_wood_chest_boat": {
     "criteria": {
       "has_boat": "2026-11-25 23:29:44 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/bread_box": {
+    "criteria": {
+      "has_stick": "2026-11-25 23:34:15 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/decorations/cutting_board": {
+    "criteria": {
+      "has_stick": "2026-11-25 23:34:15 +0700"
     },
     "done": true
   },
