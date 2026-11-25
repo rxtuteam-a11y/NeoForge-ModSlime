@@ -9739,6 +9739,12 @@
     },
     "done": true
   },
+  "cataclysm:find_sunken_city": {
+    "criteria": {
+      "factory": "2026-11-25 21:53:03 +0700"
+    },
+    "done": true
+  },
   "farm_and_charm:recipes/iron_cleaver": {
     "criteria": {
       "has_iron_ingot": "2026-11-25 21:32:23 +0700"
