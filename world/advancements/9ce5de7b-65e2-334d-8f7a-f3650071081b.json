@@ -9685,6 +9685,12 @@
     },
     "done": true
   },
+  "farmersdelight:recipes/cooking/chicken_soup": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-25 21:25:42 +0700"
+    },
+    "done": true
+  },
   "betterdeserttemples:temple_entry": {
     "criteria": {
       "in_better_desert_temple": "2026-11-25 21:16:56 +0700"

@@ -7454,5 +7454,53 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/low_quality_magic_crystal_brick_wall": {
+    "criteria": {
+      "has_low_quality_magic_crystal_bricks": "2026-11-25 21:27:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_low_quality_magic_crystal_bricks_from_low_quality_magic_crystal_bricks_stonecutting": {
+    "criteria": {
+      "has_low_quality_magic_crystal_bricks": "2026-11-25 21:27:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/low_magic_crystal_brick_walls_from_stone_stonecutting": {
+    "criteria": {
+      "has_magic_crystal_bricks": "2026-11-25 21:27:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/low_quality_magic_crystal_brick_stairs_from_low_quality_magic_crystal_bricks_stonecutting": {
+    "criteria": {
+      "has_low_quality_magic_crystal_bricks": "2026-11-25 21:27:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/low_quality_magic_crystal_brick_slab_from_low_quality_magic_crystal_bricks_stonecutting": {
+    "criteria": {
+      "has_low_quality_magic_crystal_bricks": "2026-11-25 21:27:39 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/bone_broth": {
+    "criteria": {
+      "has_bone": "2026-11-25 21:28:48 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/low_quality_magic_crystal_brick_stairs": {
+    "criteria": {
+      "has_low_quality_magic_crystal_bricks": "2026-11-25 21:27:39 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/low_quality_magic_crystal_brick_slab": {
+    "criteria": {
+      "has_low_quality_magic_crystal_bricks": "2026-11-25 21:27:39 +0700"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }
