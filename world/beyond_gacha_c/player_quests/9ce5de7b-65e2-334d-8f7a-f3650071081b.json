@@ -1,6 +1,7 @@
 {
   "mxp": 0,
   "completed": [
+    "trbeyond:daily_day_2_slime_1",
     "trbeyond:boss_elemental_colossus",
     "trbeyond:boss_orc_disaster",
     "trbeyond:daily_day_1_cattledeer_1"
@@ -28,7 +29,9 @@
     },
     {
       "questId": "trbeyond:repeatable_skill_shin_ryusei",
-      "progress": {}
+      "progress": {
+        "kill_shin_ryusei": 1
+      }
     },
     {
       "questId": "trbeyond:repeatable_skill_folgen",
@@ -63,7 +66,7 @@
     {
       "questId": "trbeyond:daily_day_2_slime_1",
       "progress": {
-        "kill_slime_2_1": 6
+        "kill_slime_2_1": 7
       }
     },
     {
@@ -96,7 +99,9 @@
     },
     {
       "questId": "trbeyond:repeatable_skill_mark_lauren",
-      "progress": {}
+      "progress": {
+        "kill_mark_lauren": 1
+      }
     },
     {
       "questId": "trbeyond:mxp_chest_2",
@@ -129,7 +134,7 @@
     {
       "questId": "trbeyond:repeatable_skill_mai_furuki",
       "progress": {
-        "kill_mai_furuki": 3
+        "kill_mai_furuki": 4
       }
     },
     {
@@ -166,7 +171,9 @@
     },
     {
       "questId": "trbeyond:repeatable_material_salamander_essence",
-      "progress": {}
+      "progress": {
+        "kill_salamander_essence": 3
+      }
     },
     {
       "questId": "trbeyond:repeatable_material_orc_lord_blood",
@@ -191,7 +198,7 @@
     {
       "questId": "trbeyond:repeatable_skill_kirara_mizutani",
       "progress": {
-        "kill_kirara_mizutani": 2
+        "kill_kirara_mizutani": 4
       }
     }
   ]

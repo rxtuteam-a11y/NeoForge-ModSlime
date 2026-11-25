@@ -65,6 +65,7 @@
       "ashen_woodland": "2026-11-25 00:34:53 +0700",
       "rocky_reef": "2026-11-24 03:33:18 +0700",
       "redstone_caves": "2026-11-24 11:13:59 +0700",
+      "pine_slopes": "2026-11-25 09:10:00 +0700",
       "poppy_fields": "2026-11-24 02:10:30 +0700",
       "baobab_savanna": "2026-11-24 11:54:20 +0700",
       "grassy_beach": "2026-11-24 01:49:00 +0700",
@@ -110,6 +111,7 @@
       "cold_river": "2026-11-24 02:32:29 +0700",
       "ashen_woodland": "2026-11-25 00:34:53 +0700",
       "rocky_reef": "2026-11-24 03:33:18 +0700",
+      "pine_slopes": "2026-11-25 09:10:00 +0700",
       "poppy_fields": "2026-11-24 02:10:30 +0700",
       "baobab_savanna": "2026-11-24 11:54:20 +0700",
       "grassy_beach": "2026-11-24 01:49:00 +0700",
@@ -8554,9 +8556,135 @@
     },
     "done": true
   },
+  "kaleidoscope_cookery:recipes/decorations/cook_stool_birch": {
+    "criteria": {
+      "has_wood": "2026-11-25 08:43:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/birch_button": {
+    "criteria": {
+      "has_planks": "2026-11-25 08:43:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_slab_from_stripped_birch_log_woodcutting": {
+    "criteria": {
+      "has_stripped_birch_log": "2026-11-25 08:43:46 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/ladder_from_birch_planks_woodcutting": {
+    "criteria": {
+      "has_birch_planks": "2026-11-25 08:43:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/birch_fence": {
+    "criteria": {
+      "has_planks": "2026-11-25 08:43:58 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/drying/rabbit_jerky": {
+    "criteria": {
+      "has_meat": "2026-11-25 08:41:40 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/birch_shelf": {
+    "criteria": {
+      "has_birch_shelf": "2026-11-25 08:43:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_rabbit_from_campfire_cooking": {
+    "criteria": {
+      "has_rabbit": "2026-11-25 08:41:40 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_slab_from_birch_planks_woodcutting": {
+    "criteria": {
+      "has_birch_planks": "2026-11-25 08:43:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/birch_sign": {
+    "criteria": {
+      "has_planks": "2026-11-25 08:43:58 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/birch_nightstand": {
+    "criteria": {
+      "has_birch_nightstand": "2026-11-25 08:43:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_slab": {
+    "criteria": {
+      "has_planks": "2026-11-25 08:43:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_stairs_from_stripped_birch_log_woodcutting": {
+    "criteria": {
+      "has_stripped_birch_log": "2026-11-25 08:43:46 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_button_from_birch_planks_woodcutting": {
+    "criteria": {
+      "has_birch_planks": "2026-11-25 08:43:58 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/birch_cupboard": {
+    "criteria": {
+      "has_birch_cupboard": "2026-11-25 08:43:58 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/birch_counter": {
+    "criteria": {
+      "has_birch_counter": "2026-11-25 08:43:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stick_from_stripped_birch_log_woodcutting": {
+    "criteria": {
+      "has_stripped_birch_log": "2026-11-25 08:43:46 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/birch_desk": {
+    "criteria": {
+      "has_birch_desk": "2026-11-25 08:43:58 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/deathworm_gauntlet_yellow": {
+    "criteria": {
+      "has_item": "2026-11-25 08:50:20 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/ladder_from_stripped_birch_log_woodcutting": {
+    "criteria": {
+      "has_stripped_birch_log": "2026-11-25 08:43:46 +0700"
+    },
+    "done": true
+  },
   "iceandfire:recipes/combat/deathworm_red_chestplate": {
     "criteria": {
       "has_item": "2026-11-25 08:34:54 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/birch_fancy_bed": {
+    "criteria": {
+      "has_birch_fancy_bed": "2026-11-25 08:43:58 +0700"
     },
     "done": true
   },
@@ -8566,9 +8694,111 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/adamantite_nugget_from_smelting_adamantite_chestplate": {
+    "criteria": {
+      "has_adamantite_chestplate": "2026-11-25 09:11:36 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/birch_trapdoor": {
+    "criteria": {
+      "has_planks": "2026-11-25 08:43:58 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/birch_drawer": {
+    "criteria": {
+      "has_birch_drawer": "2026-11-25 08:43:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_stairs_from_birch_planks_woodcutting": {
+    "criteria": {
+      "has_birch_planks": "2026-11-25 08:43:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/adamantite_nugget_from_smelting_adamantite_leggings": {
+    "criteria": {
+      "has_adamantite_leggings": "2026-11-25 09:11:36 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/deathworm_gauntlet_red": {
+    "criteria": {
+      "has_item": "2026-11-25 08:50:20 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/combat/deathworm_gauntlet_white": {
+    "criteria": {
+      "has_item": "2026-11-25 08:50:20 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/birch_door": {
+    "criteria": {
+      "has_planks": "2026-11-25 08:43:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_rabbit": {
+    "criteria": {
+      "has_rabbit": "2026-11-25 08:41:40 +0700"
+    },
+    "done": true
+  },
+  "constructionwand:recipes/tools/wood_wand": {
+    "criteria": {
+      "has_item": "2026-11-25 08:43:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/adamantite_nugget_from_smelting_adamantite_helmet": {
+    "criteria": {
+      "has_adamantite_helmet": "2026-11-25 09:11:36 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/birch_hanging_sign": {
+    "criteria": {
+      "has_stripped_logs": "2026-11-25 08:43:46 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/birch_fence_gate": {
+    "criteria": {
+      "has_planks": "2026-11-25 08:43:58 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/birch_table": {
+    "criteria": {
+      "has_birch_table": "2026-11-25 08:43:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_stairs": {
+    "criteria": {
+      "has_planks": "2026-11-25 08:43:58 +0700"
+    },
+    "done": true
+  },
   "iceandfire:recipes/combat/deathworm_red_leggings": {
     "criteria": {
       "has_item": "2026-11-25 08:34:54 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/leather": {
+    "criteria": {
+      "has_rabbit_hide": "2026-11-25 08:41:40 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_fence_from_birch_planks_woodcutting": {
+    "criteria": {
+      "has_birch_planks": "2026-11-25 08:43:58 +0700"
     },
     "done": true
   },
@@ -8578,9 +8808,129 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/birch_side_table": {
+    "criteria": {
+      "has_birch_side_table": "2026-11-25 08:43:58 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/birch_corner_trim": {
+    "criteria": {
+      "has_birch_corner_trim": "2026-11-25 08:43:58 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/birch_couch": {
+    "criteria": {
+      "has_birch_couch": "2026-11-25 08:43:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bowl_from_birch_planks_woodcutting": {
+    "criteria": {
+      "has_birch_planks": "2026-11-25 08:43:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_rabbit_from_smoking": {
+    "criteria": {
+      "has_rabbit": "2026-11-25 08:41:40 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_birch_wood": {
+    "criteria": {
+      "has_log": "2026-11-25 08:43:46 +0700"
+    },
+    "done": true
+  },
   "friendsandfoes:adventure/it_bites": {
     "criteria": {
       "killed_mauler": "2026-11-25 08:39:08 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/birch_pillar_trim": {
+    "criteria": {
+      "has_birch_pillar_trim": "2026-11-25 08:43:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/birch_shelf": {
+    "criteria": {
+      "has_stripped_birch_log": "2026-11-25 08:43:46 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stick_from_birch_planks_woodcutting": {
+    "criteria": {
+      "has_birch_planks": "2026-11-25 08:43:58 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/birch_dining_bench": {
+    "criteria": {
+      "has_birch_dining_bench": "2026-11-25 08:43:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_button_from_stripped_birch_log_woodcutting": {
+    "criteria": {
+      "has_stripped_birch_log": "2026-11-25 08:43:46 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/birch_chair": {
+    "criteria": {
+      "has_birch_chair": "2026-11-25 08:43:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_fence_from_stripped_birch_log_woodcutting": {
+    "criteria": {
+      "has_stripped_birch_log": "2026-11-25 08:43:46 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_planks_from_stripped_birch_log_woodcutting": {
+    "criteria": {
+      "has_stripped_birch_log": "2026-11-25 08:43:46 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/birch_bench": {
+    "criteria": {
+      "has_birch_bench": "2026-11-25 08:43:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/adamantite_nugget_from_blasting_adamantite_helmet": {
+    "criteria": {
+      "has_adamantite_helmet": "2026-11-25 09:11:36 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/birch_pressure_plate": {
+    "criteria": {
+      "has_planks": "2026-11-25 08:43:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/adamantite_nugget_from_blasting_adamantite_chestplate": {
+    "criteria": {
+      "has_adamantite_chestplate": "2026-11-25 09:11:36 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bowl_from_stripped_birch_log_woodcutting": {
+    "criteria": {
+      "has_stripped_birch_log": "2026-11-25 08:43:46 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/adamantite_nugget_from_blasting_adamantite_leggings": {
+    "criteria": {
+      "has_adamantite_leggings": "2026-11-25 09:11:36 +0700"
     },
     "done": true
   },
