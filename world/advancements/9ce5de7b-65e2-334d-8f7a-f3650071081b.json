@@ -8934,6 +8934,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/packed_mud": {
+    "criteria": {
+      "has_mud": "2026-11-25 13:35:44 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/adamantite_nugget_from_smelting_adamantite_boots": {
     "criteria": {
       "has_adamantite_boots": "2026-11-25 13:12:24 +0700"
@@ -8949,6 +8955,12 @@
   "minecraft:recipes/misc/adamantite_nugget_from_blasting_adamantite_boots": {
     "criteria": {
       "has_adamantite_boots": "2026-11-25 13:12:24 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/drying/drying/mud_to_clay": {
+    "criteria": {
+      "has_mud": "2026-11-25 13:35:44 +0700"
     },
     "done": true
   },
