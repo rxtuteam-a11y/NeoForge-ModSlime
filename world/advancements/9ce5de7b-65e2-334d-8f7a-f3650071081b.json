@@ -9125,5 +9125,47 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/brown_wool_stairs": {
+    "criteria": {
+      "has_brown_wool": "2026-11-25 18:37:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/brown_wool_slab": {
+    "criteria": {
+      "has_brown_wool": "2026-11-25 18:37:39 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/brown_cushion": {
+    "criteria": {
+      "has_brown_cushion": "2026-11-25 18:37:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/brown_banner": {
+    "criteria": {
+      "has_brown_wool": "2026-11-25 18:37:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/brown_bed": {
+    "criteria": {
+      "has_brown_wool": "2026-11-25 18:37:39 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/brown_sheet": {
+    "criteria": {
+      "has_brown_sheet": "2026-11-25 18:37:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/brown_carpet": {
+    "criteria": {
+      "has_brown_wool": "2026-11-25 18:37:39 +0700"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }

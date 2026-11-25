@@ -5978,15 +5978,15 @@
     },
     "done": true
   },
-  "constructionwand:recipes/misc/energy_upgrade": {
-    "criteria": {
-      "has_item": "2026-11-24 21:39:36 +0700"
-    },
-    "done": true
-  },
   "tensura:recipes/misc/magic_ore_shardfrom_magic_ore_block": {
     "criteria": {
       "has_magic_ore_block": "2026-11-24 21:23:16 +0700"
+    },
+    "done": true
+  },
+  "constructionwand:recipes/misc/energy_upgrade": {
+    "criteria": {
+      "has_item": "2026-11-24 21:39:36 +0700"
     },
     "done": true
   },
@@ -6047,12 +6047,6 @@
   "minecraft:recipes/combat/copper_spear": {
     "criteria": {
       "has_copper_ingot": "2026-11-24 21:39:36 +0700"
-    },
-    "done": true
-  },
-  "kaleidoscope_cookery:recipes/food/cold_roasted_meat": {
-    "criteria": {
-      "has_cooked_beef": "2026-11-24 22:13:26 +0700"
     },
     "done": true
   },
@@ -6137,6 +6131,12 @@
   "minecraft:recipes/tools/copper_hoe": {
     "criteria": {
       "has_copper_ingot": "2026-11-24 21:39:36 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/food/cold_roasted_meat": {
+    "criteria": {
+      "has_cooked_beef": "2026-11-24 22:13:26 +0700"
     },
     "done": true
   },
