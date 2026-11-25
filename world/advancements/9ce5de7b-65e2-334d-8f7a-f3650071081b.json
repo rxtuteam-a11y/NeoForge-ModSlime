@@ -9703,6 +9703,12 @@
     },
     "done": true
   },
+  "vinery:recipes/fermentation_barrel": {
+    "criteria": {
+      "has_barrel": "2026-11-25 22:20:30 +0700"
+    },
+    "done": true
+  },
   "farm_and_charm:recipes/seeder": {
     "criteria": {
       "has_iron_ingot": "2026-11-25 21:32:23 +0700"
@@ -9832,6 +9838,12 @@
   "bakery:recipes/stone_bricks_stove": {
     "criteria": {
       "has_iron_ingot": "2026-11-25 21:32:23 +0700"
+    },
+    "done": true
+  },
+  "netherman:enter_mansion": {
+    "criteria": {
+      "in_mansion": "2026-11-25 22:19:01 +0700"
     },
     "done": true
   },

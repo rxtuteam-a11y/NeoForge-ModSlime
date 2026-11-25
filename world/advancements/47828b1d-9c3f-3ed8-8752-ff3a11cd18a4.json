@@ -7416,6 +7416,18 @@
     },
     "done": true
   },
+  "farmersdelight:recipes/food/grilled_salmon": {
+    "criteria": {
+      "has_salmon": "2026-11-25 22:17:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mossy_stone_bricks_from_vine": {
+    "criteria": {
+      "has_vine": "2026-11-25 22:17:50 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/building_blocks/low_quality_magic_crystal_brick_wall": {
     "criteria": {
       "has_low_quality_magic_crystal_bricks": "2026-11-25 21:43:35 +0700"
@@ -7425,6 +7437,18 @@
   "minecraft:recipes/building_blocks/chiseled_low_quality_magic_crystal_bricks_from_low_quality_magic_crystal_bricks_stonecutting": {
     "criteria": {
       "has_low_quality_magic_crystal_bricks": "2026-11-25 21:43:35 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/medium_quality_magic_crystal_stairs_from_medium_quality_magic_crystal_block_stonecutting": {
+    "criteria": {
+      "has_medium_quality_magic_crystal_block": "2026-11-25 22:14:45 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/fermentation_barrel": {
+    "criteria": {
+      "has_barrel": "2026-11-25 22:19:53 +0700"
     },
     "done": true
   },
@@ -7440,9 +7464,81 @@
     },
     "done": true
   },
+  "farmersdelight:recipes/cooking/baked_cod_stew": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-25 22:17:50 +0700"
+    },
+    "done": true
+  },
+  "bosses_of_mass_destruction:recipes/void_lily": {
+    "criteria": {
+      "has_amethyst_shard": "2026-11-25 22:19:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mossy_cobblestone_from_vine": {
+    "criteria": {
+      "has_vine": "2026-11-25 22:17:50 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/medium_quality_magic_crystalfrom_medium_quality_magic_crystal_block": {
+    "criteria": {
+      "has_medium_quality_magic_crystal_block": "2026-11-25 22:14:45 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/meidum_quality_magic_crystal_slab": {
+    "criteria": {
+      "has_medium_quality_magic_crystal_block": "2026-11-25 22:14:45 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/calibrated_sculk_sensor": {
+    "criteria": {
+      "has_amethyst_shard": "2026-11-25 22:19:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/tinted_glass": {
+    "criteria": {
+      "has_amethyst_shard": "2026-11-25 22:19:53 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/potato_bag": {
+    "criteria": {
+      "has_potato": "2026-11-25 22:17:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_salmon_from_campfire_cooking": {
+    "criteria": {
+      "has_salmon": "2026-11-25 22:17:50 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/low_magic_crystal_brick_walls_from_stone_stonecutting": {
     "criteria": {
       "has_magic_crystal_bricks": "2026-11-25 21:43:35 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/pasta_with_meatballs": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-25 22:17:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/redstone_lamp": {
+    "criteria": {
+      "has_glowstone": "2026-11-25 22:19:53 +0700"
+    },
+    "done": true
+  },
+  "cookingforblockheads:recipes/misc/heating_unit": {
+    "criteria": {
+      "has_redstone": "2026-11-25 22:17:50 +0700"
     },
     "done": true
   },
@@ -7452,9 +7548,57 @@
     },
     "done": true
   },
+  "cookingforblockheads:recipes/misc/ice_unit": {
+    "criteria": {
+      "has_redstone": "2026-11-25 22:17:50 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/pie_crust": {
+    "criteria": {
+      "has_wheat": "2026-11-25 22:17:50 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/wheat_dough_from_egg": {
+    "criteria": {
+      "has_wheat": "2026-11-25 22:17:50 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/grass_slab": {
+    "criteria": {
+      "has_grass_block": "2026-11-25 22:17:55 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/horse_feed": {
+    "criteria": {
+      "has_golden_carrot": "2026-11-25 22:19:53 +0700"
+    },
+    "done": true
+  },
+  "waystones:recipes/combat/epitaph": {
+    "criteria": {
+      "has_amethyst_shard": "2026-11-25 22:19:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:nether/obtain_crying_obsidian": {
+    "criteria": {
+      "crying_obsidian": "2026-11-25 22:17:50 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:main/place_cooking_pot": {
     "criteria": {
       "cooking_pot": "2026-11-25 21:11:01 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/basket": {
+    "criteria": {
+      "has_wheat": "2026-11-25 22:17:50 +0700"
     },
     "done": true
   },
@@ -7473,6 +7617,24 @@
   "minecraft:recipes/building_blocks/low_quality_magic_crystal_brick_stairs_from_low_quality_magic_crystal_bricks_stonecutting": {
     "criteria": {
       "has_low_quality_magic_crystal_bricks": "2026-11-25 21:43:35 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/misc/bestiary": {
+    "criteria": {
+      "has_item": "2026-11-25 22:14:45 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/medium_quality_magic_crystal_stairs": {
+    "criteria": {
+      "has_medium_quality_magic_crystal_block": "2026-11-25 22:14:45 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/meidum_quality_magic_crystal_slab_from_medium_quality_magic_crystal_block_stonecutting": {
+    "criteria": {
+      "has_medium_quality_magic_crystal_block": "2026-11-25 22:14:45 +0700"
     },
     "done": true
   },
@@ -7500,6 +7662,24 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/cooked_salmon_from_smoking": {
+    "criteria": {
+      "has_salmon": "2026-11-25 22:17:50 +0700"
+    },
+    "done": true
+  },
+  "cookingforblockheads:recipes/misc/preservation_chamber": {
+    "criteria": {
+      "has_redstone": "2026-11-25 22:17:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/respawn_anchor": {
+    "criteria": {
+      "has_obsidian": "2026-11-25 22:17:50 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/building_blocks/low_quality_magic_crystal_slab": {
     "criteria": {
       "has_low_quality_magic_crystal_block": "2026-11-25 21:44:54 +0700"
@@ -7512,9 +7692,33 @@
     },
     "done": true
   },
+  "kaleidoscope_cookery:recipes/tools/transmutation_lunch_bag": {
+    "criteria": {
+      "has_amethyst_shard": "2026-11-25 22:19:53 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/building_blocks/potato_crate": {
+    "criteria": {
+      "has_potato": "2026-11-25 22:17:50 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/misc/orange_dye_from_day_lily": {
     "criteria": {
       "has_day_lily": "2026-11-25 21:38:52 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/amethyst_block": {
+    "criteria": {
+      "has_amethyst_shard": "2026-11-25 22:19:53 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/mossy_stone": {
+    "criteria": {
+      "has_vine": "2026-11-25 22:17:50 +0700"
     },
     "done": true
   },
@@ -7533,6 +7737,12 @@
   "minecraft:recipes/building_blocks/low_quality_magic_crystal_bricks_from_low_quality_magic_crystal_block_stonecutting": {
     "criteria": {
       "has_low_quality_magic_crystal_block": "2026-11-25 21:44:54 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/rabbit_stew": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-25 22:17:50 +0700"
     },
     "done": true
   },
@@ -7560,15 +7770,33 @@
     },
     "done": true
   },
+  "farmersdelight:recipes/food/roast_chicken_block": {
+    "criteria": {
+      "has_cooked_chicken": "2026-11-25 22:19:53 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/building_blocks/low_quality_magic_crystal_bricks": {
     "criteria": {
       "has_low_quality_magic_crystal_block": "2026-11-25 21:44:54 +0700"
     },
     "done": true
   },
+  "minecraft:recipes/tools/spyglass": {
+    "criteria": {
+      "has_amethyst_shard": "2026-11-25 22:19:53 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/misc/white_dye_from_white_trillium": {
     "criteria": {
       "has_white_trillium": "2026-11-25 21:41:55 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/drying/salmon_jerky": {
+    "criteria": {
+      "has_meat": "2026-11-25 22:17:50 +0700"
     },
     "done": true
   },
@@ -7602,6 +7830,36 @@
     },
     "done": true
   },
+  "farmersdelight:recipes/cooking/fish_stew": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-25 22:17:50 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/noodle_soup": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-25 22:19:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_salmon": {
+    "criteria": {
+      "has_salmon": "2026-11-25 22:17:50 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/medium_quality_magic_crystal_bricks": {
+    "criteria": {
+      "has_medium_quality_magic_crystal_block": "2026-11-25 22:14:45 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/medium_quality_magic_crystal_bricks_from_medium_quality_magic_crystal_block_stonecutting": {
+    "criteria": {
+      "has_medium_quality_magic_crystal_block": "2026-11-25 22:14:45 +0700"
+    },
+    "done": true
+  },
   "farm_and_charm:main/place_cooking_pot": {
     "criteria": {
       "cooking_pot": "2026-11-25 21:10:25 +0700"
@@ -7611,6 +7869,18 @@
   "regions_unexplored:recipes/misc/blue_dye_from_blue_lupine": {
     "criteria": {
       "has_blue_lupine": "2026-11-25 21:41:32 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/pumpkin_soup": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-25 22:19:53 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/food/ambrosia": {
+    "criteria": {
+      "has_item": "2026-11-25 22:14:45 +0700"
     },
     "done": true
   },
@@ -7626,15 +7896,39 @@
     },
     "done": true
   },
+  "farmersdelight:recipes/cooking/beef_stew": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-25 22:17:50 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/straw_hat": {
+    "criteria": {
+      "has_wheat": "2026-11-25 22:17:50 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/low_quality_magic_crystal_slab_from_low_quality_magic_crystal_block_stonecutting": {
     "criteria": {
       "has_low_quality_magic_crystal_block": "2026-11-25 21:44:54 +0700"
     },
     "done": true
   },
+  "tensura:shell_lizard": {
+    "criteria": {
+      "armorsaurus_scale": "2026-11-25 22:14:45 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/building_blocks/low_quality_magic_crystal_brick_slab": {
     "criteria": {
       "has_low_quality_magic_crystal_bricks": "2026-11-25 21:43:35 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/chicken_sandwich": {
+    "criteria": {
+      "has_cooked_chicken": "2026-11-25 22:19:53 +0700"
     },
     "done": true
   },
