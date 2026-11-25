@@ -790,7 +790,9 @@
       "minecraft:skeleton": "2026-11-23 22:00:00 +0700",
       "minecraft:phantom": "2026-11-23 22:41:15 +0700",
       "minecraft:zombified_piglin": "2026-11-25 21:49:27 +0700",
+      "minecraft:witch": "2026-11-25 22:34:18 +0700",
       "minecraft:wither_skeleton": "2026-11-23 22:17:00 +0700",
+      "minecraft:ravager": "2026-11-25 22:34:03 +0700",
       "minecraft:husk": "2026-11-22 18:25:34 +0700",
       "minecraft:cave_spider": "2026-11-23 21:51:38 +0700",
       "minecraft:piglin": "2026-11-24 21:54:23 +0700",
@@ -7455,6 +7457,12 @@
     },
     "done": true
   },
+  "farm_and_charm:recipes/cooking_pot": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 22:34:09 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/building_blocks/low_quality_magic_crystal_brick_wall": {
     "criteria": {
       "has_low_quality_magic_crystal_bricks": "2026-11-25 21:27:39 +0700"
@@ -7479,6 +7487,12 @@
     },
     "done": true
   },
+  "bakery:recipes/quartz_stove": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 22:34:09 +0700"
+    },
+    "done": true
+  },
   "farm_and_charm:recipes/beetroot_bag": {
     "criteria": {
       "has_beetroots": "2026-11-25 22:29:21 +0700"
@@ -7491,9 +7505,27 @@
     },
     "done": true
   },
+  "minecraft:adventure/voluntary_exile": {
+    "criteria": {
+      "voluntary_exile": "2026-11-25 22:34:04 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/seeder": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 22:34:09 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:recipes/cooking/baked_cod_stew": {
     "criteria": {
       "has_any_ingredient": "2026-11-25 22:29:21 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/bread_knife": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 22:34:09 +0700"
     },
     "done": true
   },
@@ -7527,6 +7559,18 @@
     },
     "done": true
   },
+  "bakery:recipes/iron_chair": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 22:34:09 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/faucet": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 22:34:09 +0700"
+    },
+    "done": true
+  },
   "iceandfire:recipes/building_blocks/sea_serpent_scales_deepblue_to_sea_serpent_scale_block_deepblue": {
     "criteria": {
       "has_sea_serpent_scales_deepblue": "2026-11-25 22:29:23 +0700"
@@ -7539,9 +7583,27 @@
     },
     "done": true
   },
+  "cookingforblockheads:recipes/decorations/tool_rack": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 22:34:09 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/low_magic_crystal_brick_walls_from_stone_stonecutting": {
     "criteria": {
       "has_magic_crystal_bricks": "2026-11-25 21:27:39 +0700"
+    },
+    "done": true
+  },
+  "illagerinvasion:recipes/misc/hallowed_gem": {
+    "criteria": {
+      "has_unusual_dust_or_illusionary_dust": "2026-11-25 22:34:07 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/pitchfork": {
+    "criteria": {
+      "has_iron_nugget": "2026-11-25 22:34:31 +0700"
     },
     "done": true
   },
@@ -7551,9 +7613,45 @@
     },
     "done": true
   },
+  "cookingforblockheads:recipes/misc/heating_unit": {
+    "criteria": {
+      "has_redstone": "2026-11-25 22:34:37 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/iron_cleaver": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 22:34:09 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:recipes/cooking/beetroot_soup": {
     "criteria": {
       "has_beetroot": "2026-11-25 22:29:21 +0700"
+    },
+    "done": true
+  },
+  "cookingforblockheads:recipes/decorations/white_fridge": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 22:34:09 +0700"
+    },
+    "done": true
+  },
+  "cookingforblockheads:recipes/misc/ice_unit": {
+    "criteria": {
+      "has_redstone": "2026-11-25 22:34:37 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/combat/iron_knife": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 22:34:09 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/big_table": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 22:34:09 +0700"
     },
     "done": true
   },
@@ -7563,15 +7661,33 @@
     },
     "done": true
   },
+  "farm_and_charm:recipes/supply_cart": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 22:34:09 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:recipes/building_blocks/beetroot_crate": {
     "criteria": {
       "has_beetroot": "2026-11-25 22:29:21 +0700"
     },
     "done": true
   },
+  "farmersdelight:recipes/food/barbecue_stick": {
+    "criteria": {
+      "has_onion": "2026-11-25 22:41:12 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/low_quality_magic_crystal_brick_stairs_from_low_quality_magic_crystal_bricks_stonecutting": {
     "criteria": {
       "has_low_quality_magic_crystal_bricks": "2026-11-25 21:27:39 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/dark_cherry_fence": {
+    "criteria": {
+      "has_stick": "2026-11-25 22:34:40 +0700"
     },
     "done": true
   },
@@ -7593,15 +7709,57 @@
     },
     "done": true
   },
+  "bakery:recipes/iron_table": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 22:34:09 +0700"
+    },
+    "done": true
+  },
+  "cookingforblockheads:recipes/misc/preservation_chamber": {
+    "criteria": {
+      "has_redstone": "2026-11-25 22:34:37 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/mossy_cobblestone_wall": {
     "criteria": {
       "has_mossy_cobblestone": "2026-11-25 22:29:10 +0700"
     },
     "done": true
   },
+  "vinery:recipes/dark_cherry_fence_gate": {
+    "criteria": {
+      "has_stick": "2026-11-25 22:34:40 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/feeding_trough": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 22:34:09 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:recipes/cooking/bone_broth": {
     "criteria": {
       "has_bone": "2026-11-25 21:28:48 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/end_bricks_stove": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 22:34:09 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/water_sprinkler": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 22:34:09 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/tool_rack": {
+    "criteria": {
+      "has_item": "2026-11-25 22:34:09 +0700"
     },
     "done": true
   },
@@ -7617,6 +7775,12 @@
     },
     "done": true
   },
+  "farm_and_charm:recipes/crafting_bowl": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 22:34:09 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/mossy_cobblestone_wall_from_mossy_cobblestone_stonecutting": {
     "criteria": {
       "has_mossy_cobblestone": "2026-11-25 22:29:10 +0700"
@@ -7626,6 +7790,12 @@
   "farmersdelight:recipes/cooking/vegetable_soup": {
     "criteria": {
       "has_any_ingredient": "2026-11-25 22:29:21 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/stone_bricks_stove": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 22:34:09 +0700"
     },
     "done": true
   },
@@ -7641,15 +7811,51 @@
     },
     "done": true
   },
+  "bakery:recipes/mud_bricks_stove": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 22:34:09 +0700"
+    },
+    "done": true
+  },
   "vinery:main/forbidden_fruit": {
     "criteria": {
       "apple": "2026-11-25 22:29:21 +0700"
     },
     "done": true
   },
+  "farmersdelight:main/get_fd_seed": {
+    "criteria": {
+      "onion": "2026-11-25 22:41:12 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/plow": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 22:34:09 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/mincer": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 22:34:09 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/cooked_giant_ant_leg_from_smelting": {
     "criteria": {
       "has_giant_ant_leg": "2026-11-25 21:50:11 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/decorations/cooking_pot": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 22:34:09 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/cupcake_display": {
+    "criteria": {
+      "has_stick": "2026-11-25 22:34:40 +0700"
     },
     "done": true
   },
@@ -7671,9 +7877,27 @@
     },
     "done": true
   },
+  "bakery:recipes/granite_stove": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 22:34:09 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/dumplings": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-25 22:41:12 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/red_dye_from_beetroot": {
     "criteria": {
       "has_beetroot": "2026-11-25 22:29:21 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/roaster": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 22:34:09 +0700"
     },
     "done": true
   },
@@ -7689,15 +7913,81 @@
     },
     "done": true
   },
+  "bakery:recipes/sandstone_stove": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 22:34:09 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/food/cooked_giant_ant_leg_from_campfire_cooking": {
     "criteria": {
       "has_giant_ant_leg": "2026-11-25 21:50:11 +0700"
     },
     "done": true
   },
+  "bakery:recipes/small_cooking_pot": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 22:34:09 +0700"
+    },
+    "done": true
+  },
   "cookingforblockheads:recipes/decorations/white_oven": {
     "criteria": {
       "has_furnace": "2026-11-25 22:29:09 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/fish_stew": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-25 22:41:12 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/kitchen_sink": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 22:34:09 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/combat/flint_knife": {
+    "criteria": {
+      "has_stick": "2026-11-25 22:34:40 +0700"
+    },
+    "done": true
+  },
+  "cookingforblockheads:recipes/misc/recipe_book": {
+    "criteria": {
+      "has_book": "2026-11-25 22:34:00 +0700"
+    },
+    "done": true
+  },
+  "illagerinvasion:recipes/misc/platinum_sheet": {
+    "criteria": {
+      "has_platinum_chunk": "2026-11-25 22:34:02 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/red_nether_bricks_stove": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 22:34:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/hero_of_the_village": {
+    "criteria": {
+      "hero_of_the_village": "2026-11-25 22:41:26 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/fried_rice": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-25 22:41:12 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/cobblestone_stove": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 22:34:09 +0700"
     },
     "done": true
   },
@@ -7710,6 +8000,12 @@
   "minecraft:recipes/misc/bolt_armor_trim_smithing_template_smithing_trim": {
     "criteria": {
       "has_smithing_trim_template": "2026-11-25 22:29:22 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/deepslate_stove": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 22:34:09 +0700"
     },
     "done": true
   },
@@ -7728,6 +8024,30 @@
   "iceandfire:recipes/combat/tide_deepblue_boots": {
     "criteria": {
       "has_item": "2026-11-25 22:29:23 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/bread_box": {
+    "criteria": {
+      "has_stick": "2026-11-25 22:34:40 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/decorations/cutting_board": {
+    "criteria": {
+      "has_stick": "2026-11-25 22:34:40 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/chicken_coop": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-25 22:34:09 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/building_blocks/onion_crate": {
+    "criteria": {
+      "has_onion": "2026-11-25 22:41:12 +0700"
     },
     "done": true
   },

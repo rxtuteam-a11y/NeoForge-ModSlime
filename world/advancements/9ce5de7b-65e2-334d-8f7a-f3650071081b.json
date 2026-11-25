@@ -9746,6 +9746,12 @@
     },
     "done": true
   },
+  "cookingforblockheads:recipes/decorations/cutting_board": {
+    "criteria": {
+      "has_axe": "2026-11-25 22:32:08 +0700"
+    },
+    "done": true
+  },
   "betterdeserttemples:temple_entry": {
     "criteria": {
       "in_better_desert_temple": "2026-11-25 21:16:56 +0700"
@@ -9917,6 +9923,12 @@
   "bakery:recipes/red_nether_bricks_stove": {
     "criteria": {
       "has_iron_ingot": "2026-11-25 21:32:23 +0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/hero_of_the_village": {
+    "criteria": {
+      "hero_of_the_village": "2026-11-25 22:41:26 +0700"
     },
     "done": true
   },
