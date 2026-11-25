@@ -7422,15 +7422,45 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/blue_dye_from_cornflower": {
+    "criteria": {
+      "has_cornflower": "2026-11-25 21:37:55 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:main/place_cooking_pot": {
     "criteria": {
       "cooking_pot": "2026-11-25 21:11:01 +0700"
     },
     "done": true
   },
+  "constructionwand:diamond_wand": {
+    "criteria": {
+      "diamond_wand": "2026-11-25 21:34:45 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/misc/orange_dye_from_day_lily": {
+    "criteria": {
+      "has_day_lily": "2026-11-25 21:38:52 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/misc/pink_magnolia_sapling_from_pink_magnolia_shrub": {
+    "criteria": {
+      "has_pink_magnolia_shrub": "2026-11-25 21:38:58 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/white_dye": {
     "criteria": {
       "has_bone_meal": "2026-11-25 21:27:10 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/misc/red_dye_from_tsubaki": {
+    "criteria": {
+      "has_tsubaki": "2026-11-25 21:34:21 +0700"
     },
     "done": true
   },
@@ -7443,6 +7473,12 @@
   "farm_and_charm:main/place_cooking_pot": {
     "criteria": {
       "cooking_pot": "2026-11-25 21:10:25 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/light_gray_dye_from_azure_bluet": {
+    "criteria": {
+      "has_azure_bluet": "2026-11-25 21:38:34 +0700"
     },
     "done": true
   },
