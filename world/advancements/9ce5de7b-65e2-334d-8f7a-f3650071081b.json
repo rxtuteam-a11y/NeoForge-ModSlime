@@ -8940,6 +8940,12 @@
     },
     "done": true
   },
+  "tensura:adamantite": {
+    "criteria": {
+      "items": "2026-11-25 13:23:36 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/adamantite_nugget_from_blasting_adamantite_boots": {
     "criteria": {
       "has_adamantite_boots": "2026-11-25 13:12:24 +0700"
@@ -8952,9 +8958,21 @@
     },
     "done": true
   },
+  "tensura:ss_rank": {
+    "criteria": {
+      "ep": "2026-11-25 13:23:36 +0700"
+    },
+    "done": true
+  },
   "tensura:monster_tamer": {
     "criteria": {
       "monster": "2026-11-25 12:43:45 +0700"
+    },
+    "done": true
+  },
+  "tensura:become_ninja": {
+    "criteria": {
+      "kunai": "2026-11-25 13:22:57 +0700"
     },
     "done": true
   },

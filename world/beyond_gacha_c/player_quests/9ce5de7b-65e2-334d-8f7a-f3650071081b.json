@@ -14,13 +14,13 @@
     {
       "questId": "trbeyond:repeatable_skill_shogo_taguchi",
       "progress": {
-        "kill_shogo_taguchi": 2
+        "kill_shogo_taguchi": 3
       }
     },
     {
       "questId": "trbeyond:repeatable_skill_shinji_tanimura",
       "progress": {
-        "kill_shinji_tanimura": 1
+        "kill_shinji_tanimura": 2
       }
     },
     {
@@ -30,7 +30,7 @@
     {
       "questId": "trbeyond:repeatable_skill_shin_ryusei",
       "progress": {
-        "kill_shin_ryusei": 1
+        "kill_shin_ryusei": 4
       }
     },
     {
@@ -198,7 +198,7 @@
     {
       "questId": "trbeyond:repeatable_skill_kirara_mizutani",
       "progress": {
-        "kill_kirara_mizutani": 4
+        "kill_kirara_mizutani": 6
       }
     }
   ]
