@@ -10124,12 +10124,6 @@
     },
     "done": true
   },
-  "farmersdelight:recipes/food/horse_feed": {
-    "criteria": {
-      "has_golden_carrot": "2026-11-25 23:49:29 +0700"
-    },
-    "done": true
-  },
   "regions_unexplored:recipes/transportation/magnolia_chest_boat": {
     "criteria": {
       "has_boat": "2026-11-25 23:29:44 +0700"
@@ -10160,12 +10154,6 @@
     },
     "done": true
   },
-  "vinery:recipes/dark_cherry_fence": {
-    "criteria": {
-      "has_stick": "2026-11-25 23:34:15 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/transportation/dark_oak_chest_boat": {
     "criteria": {
       "has_boat": "2026-11-25 23:29:44 +0700"
@@ -10175,12 +10163,6 @@
   "regions_unexplored:recipes/transportation/dead_chest_boat": {
     "criteria": {
       "has_boat": "2026-11-25 23:29:44 +0700"
-    },
-    "done": true
-  },
-  "vinery:recipes/dark_cherry_fence_gate": {
-    "criteria": {
-      "has_stick": "2026-11-25 23:34:15 +0700"
     },
     "done": true
   },
@@ -10196,39 +10178,9 @@
     },
     "done": true
   },
-  "farmersdelight:recipes/building_blocks/carrot_crate": {
-    "criteria": {
-      "has_carrot": "2026-11-25 23:52:00 +0700"
-    },
-    "done": true
-  },
-  "farmersdelight:recipes/cooking/vegetable_soup": {
-    "criteria": {
-      "has_any_ingredient": "2026-11-25 23:52:00 +0700"
-    },
-    "done": true
-  },
   "regions_unexplored:recipes/transportation/blackwood_chest_boat": {
     "criteria": {
       "has_boat": "2026-11-25 23:29:44 +0700"
-    },
-    "done": true
-  },
-  "farmersdelight:recipes/cooking/rabbit_stew": {
-    "criteria": {
-      "has_any_ingredient": "2026-11-25 23:52:00 +0700"
-    },
-    "done": true
-  },
-  "farm_and_charm:recipes/carrot_bag": {
-    "criteria": {
-      "has_carrot": "2026-11-25 23:52:00 +0700"
-    },
-    "done": true
-  },
-  "farm_and_charm:recipes/diamond_cleaver": {
-    "criteria": {
-      "has_diamond": "2026-11-25 23:57:45 +0700"
     },
     "done": true
   },
@@ -10262,12 +10214,6 @@
     },
     "done": true
   },
-  "bakery:recipes/cupcake_display": {
-    "criteria": {
-      "has_stick": "2026-11-25 23:34:15 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/transportation/bamboo_chest_raft": {
     "criteria": {
       "has_boat": "2026-11-25 23:29:44 +0700"
@@ -10286,21 +10232,9 @@
     },
     "done": true
   },
-  "tensura:master_smith": {
-    "criteria": {
-      "schematics": "2026-11-26 00:00:17 +0700"
-    },
-    "done": true
-  },
   "regions_unexplored:recipes/transportation/kapok_chest_boat": {
     "criteria": {
       "has_boat": "2026-11-25 23:29:44 +0700"
-    },
-    "done": true
-  },
-  "farmersdelight:recipes/combat/diamond_knife": {
-    "criteria": {
-      "has_diamond": "2026-11-25 23:57:45 +0700"
     },
     "done": true
   },
@@ -10322,12 +10256,6 @@
     },
     "done": true
   },
-  "farmersdelight:recipes/combat/flint_knife": {
-    "criteria": {
-      "has_stick": "2026-11-25 23:34:15 +0700"
-    },
-    "done": true
-  },
   "twilightforest:recipes/transportation/canopy_chest_boat": {
     "criteria": {
       "has_boat": "2026-11-25 23:29:44 +0700"
@@ -10343,12 +10271,6 @@
   "chronodawn:recipes/transportation/ancient_time_wood_chest_boat": {
     "criteria": {
       "has_boat": "2026-11-25 23:29:44 +0700"
-    },
-    "done": true
-  },
-  "farmersdelight:recipes/cooking/vegetable_noodles": {
-    "criteria": {
-      "has_any_ingredient": "2026-11-25 23:52:00 +0700"
     },
     "done": true
   },
@@ -10388,12 +10310,6 @@
     },
     "done": true
   },
-  "farmersdelight:recipes/cooking/fried_rice": {
-    "criteria": {
-      "has_any_ingredient": "2026-11-25 23:52:00 +0700"
-    },
-    "done": true
-  },
   "regions_unexplored:recipes/transportation/joshua_chest_boat": {
     "criteria": {
       "has_boat": "2026-11-25 23:29:44 +0700"
@@ -10418,9 +10334,33 @@
     },
     "done": true
   },
-  "farmersdelight:recipes/cooking/beef_stew": {
+  "eternal_starlight:recipes/transportation/cradlewood_chest_boat": {
     "criteria": {
-      "has_any_ingredient": "2026-11-25 23:52:00 +0700"
+      "has_boat": "2026-11-25 23:29:44 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/dark_cherry_fence": {
+    "criteria": {
+      "has_stick": "2026-11-25 23:34:15 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/dark_cherry_fence_gate": {
+    "criteria": {
+      "has_stick": "2026-11-25 23:34:15 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/cupcake_display": {
+    "criteria": {
+      "has_stick": "2026-11-25 23:34:15 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/combat/flint_knife": {
+    "criteria": {
+      "has_stick": "2026-11-25 23:34:15 +0700"
     },
     "done": true
   },
@@ -10436,9 +10376,69 @@
     },
     "done": true
   },
-  "eternal_starlight:recipes/transportation/cradlewood_chest_boat": {
+  "farmersdelight:recipes/food/horse_feed": {
     "criteria": {
-      "has_boat": "2026-11-25 23:29:44 +0700"
+      "has_golden_carrot": "2026-11-25 23:49:29 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/building_blocks/carrot_crate": {
+    "criteria": {
+      "has_carrot": "2026-11-25 23:52:00 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/vegetable_soup": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-25 23:52:00 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/rabbit_stew": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-25 23:52:00 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/carrot_bag": {
+    "criteria": {
+      "has_carrot": "2026-11-25 23:52:00 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/vegetable_noodles": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-25 23:52:00 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/fried_rice": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-25 23:52:00 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/beef_stew": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-25 23:52:00 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/diamond_cleaver": {
+    "criteria": {
+      "has_diamond": "2026-11-25 23:57:45 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/combat/diamond_knife": {
+    "criteria": {
+      "has_diamond": "2026-11-25 23:57:45 +0700"
+    },
+    "done": true
+  },
+  "tensura:master_smith": {
+    "criteria": {
+      "schematics": "2026-11-26 00:00:17 +0700"
     },
     "done": true
   },
