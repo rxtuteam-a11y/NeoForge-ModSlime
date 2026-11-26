@@ -10445,6 +10445,60 @@
     },
     "done": true
   },
+  "farmersdelight:recipes/cooking/bone_broth": {
+    "criteria": {
+      "has_bone": "2026-11-26 09:14:29 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/decorations/wood/oak_drying_rack": {
+    "criteria": {
+      "has_item": "2026-11-26 09:49:17 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/wood_cup": {
+    "criteria": {
+      "has_wood_cup": "2026-11-26 09:49:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/composter": {
+    "criteria": {
+      "has_wood_slab": "2026-11-26 09:49:17 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/decorations/wood/oak_banister": {
+    "criteria": {
+      "has_item": "2026-11-26 09:49:17 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/wood_bowl": {
+    "criteria": {
+      "has_wood_bowl": "2026-11-26 09:49:17 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/wood_plate": {
+    "criteria": {
+      "has_wood_plate": "2026-11-26 09:49:17 +0700"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/misc/netherite_backpack": {
+    "criteria": {
+      "has_diamond_backpack": "2026-11-26 10:10:10 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/nether_bricks": {
+    "criteria": {
+      "has_nether_brick": "2026-11-26 10:26:10 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/blackstone_wall": {
     "criteria": {
       "has_blackstone": "2026-11-26 10:28:07 +0700"
@@ -10469,60 +10523,6 @@
     },
     "done": true
   },
-  "farm_and_charm:recipes/pitchfork": {
-    "criteria": {
-      "has_iron_nugget": "2026-11-26 11:06:45 +0700"
-    },
-    "done": true
-  },
-  "vinery:recipes/flower_box": {
-    "criteria": {
-      "has_podzol": "2026-11-26 11:08:42 +0700"
-    },
-    "done": true
-  },
-  "twilightforest:recipes/decorations/wood/oak_drying_rack": {
-    "criteria": {
-      "has_item": "2026-11-26 09:49:17 +0700"
-    },
-    "done": true
-  },
-  "handcrafted:recipes/misc/wood_cup": {
-    "criteria": {
-      "has_wood_cup": "2026-11-26 09:49:17 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/composter": {
-    "criteria": {
-      "has_wood_slab": "2026-11-26 09:49:17 +0700"
-    },
-    "done": true
-  },
-  "cookingforblockheads:recipes/decorations/connector": {
-    "criteria": {
-      "has_terracotta": "2026-11-26 10:52:31 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/nether_bricks": {
-    "criteria": {
-      "has_nether_brick": "2026-11-26 10:26:10 +0700"
-    },
-    "done": true
-  },
-  "minecraft:nether/get_wither_skull": {
-    "criteria": {
-      "wither_skull": "2026-11-26 10:29:03 +0700"
-    },
-    "done": true
-  },
-  "farmersdelight:recipes/cooking/bone_broth": {
-    "criteria": {
-      "has_bone": "2026-11-26 09:14:29 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/polished_blackstone_from_blackstone_stonecutting": {
     "criteria": {
       "has_blackstone": "2026-11-26 10:28:07 +0700"
@@ -10535,21 +10535,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/skull_banner_pattern": {
-    "criteria": {
-      "has_wither_skeleton_skull": "2026-11-26 10:29:03 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/blackstone_stairs_from_blackstone_stonecutting": {
     "criteria": {
       "has_blackstone": "2026-11-26 10:28:07 +0700"
-    },
-    "done": true
-  },
-  "cookingforblockheads:recipes/decorations/counter": {
-    "criteria": {
-      "has_terracotta": "2026-11-26 10:52:31 +0700"
     },
     "done": true
   },
@@ -10568,12 +10556,6 @@
   "handcrafted:recipes/misc/blackstone_pillar_trim": {
     "criteria": {
       "has_blackstone_pillar_trim": "2026-11-26 10:28:07 +0700"
-    },
-    "done": true
-  },
-  "sophisticatedbackpacks:recipes/misc/netherite_backpack": {
-    "criteria": {
-      "has_diamond_backpack": "2026-11-26 10:10:10 +0700"
     },
     "done": true
   },
@@ -10601,12 +10583,6 @@
     },
     "done": true
   },
-  "twilightforest:recipes/decorations/wood/oak_banister": {
-    "criteria": {
-      "has_item": "2026-11-26 09:49:17 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/polished_blackstone_wall_from_blackstone_stonecutting": {
     "criteria": {
       "has_blackstone": "2026-11-26 10:28:07 +0700"
@@ -10625,27 +10601,51 @@
     },
     "done": true
   },
-  "cookingforblockheads:recipes/decorations/cabinet": {
-    "criteria": {
-      "has_terracotta": "2026-11-26 10:52:31 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/polished_blackstone": {
     "criteria": {
       "has_blackstone": "2026-11-26 10:28:07 +0700"
     },
     "done": true
   },
-  "handcrafted:recipes/misc/wood_bowl": {
+  "minecraft:nether/get_wither_skull": {
     "criteria": {
-      "has_wood_bowl": "2026-11-26 09:49:17 +0700"
+      "wither_skull": "2026-11-26 10:29:03 +0700"
     },
     "done": true
   },
-  "handcrafted:recipes/misc/wood_plate": {
+  "minecraft:recipes/misc/skull_banner_pattern": {
     "criteria": {
-      "has_wood_plate": "2026-11-26 09:49:17 +0700"
+      "has_wither_skeleton_skull": "2026-11-26 10:29:03 +0700"
+    },
+    "done": true
+  },
+  "cookingforblockheads:recipes/decorations/connector": {
+    "criteria": {
+      "has_terracotta": "2026-11-26 10:52:31 +0700"
+    },
+    "done": true
+  },
+  "cookingforblockheads:recipes/decorations/counter": {
+    "criteria": {
+      "has_terracotta": "2026-11-26 10:52:31 +0700"
+    },
+    "done": true
+  },
+  "cookingforblockheads:recipes/decorations/cabinet": {
+    "criteria": {
+      "has_terracotta": "2026-11-26 10:52:31 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/pitchfork": {
+    "criteria": {
+      "has_iron_nugget": "2026-11-26 11:06:45 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/flower_box": {
+    "criteria": {
+      "has_podzol": "2026-11-26 11:08:42 +0700"
     },
     "done": true
   },
