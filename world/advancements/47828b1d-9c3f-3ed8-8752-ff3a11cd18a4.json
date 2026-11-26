@@ -9614,5 +9614,29 @@
     },
     "done": true
   },
+  "farmersdelight:recipes/cooking/hot_cocoa": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-26 13:04:00 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/glow_berry_custard": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-26 13:04:00 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/milk_bottle": {
+    "criteria": {
+      "has_milk_bucket": "2026-11-26 13:04:00 +0700"
+    },
+    "done": true
+  },
+  "cookingforblockheads:recipes/decorations/milk_jar": {
+    "criteria": {
+      "has_milk_bucket": "2026-11-26 13:04:00 +0700"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }
