@@ -9860,5 +9860,11 @@
     },
     "done": true
   },
+  "iceandfire:iceandfire/tame_hippogryph": {
+    "criteria": {
+      "tame_rat": "2026-11-26 21:33:38 +0700"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }
