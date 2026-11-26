@@ -8980,6 +8980,12 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/light_gray_cushion": {
+    "criteria": {
+      "has_light_gray_cushion": "2026-11-26 10:16:49 +0700"
+    },
+    "done": true
+  },
   "sophisticatedbackpacks:recipes/misc/deposit_upgrade": {
     "criteria": {
       "has_upgrade_base": "2026-11-26 09:59:43 +0700"
@@ -9022,9 +9028,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/light_gray_bed": {
+    "criteria": {
+      "has_light_gray_wool": "2026-11-26 10:16:49 +0700"
+    },
+    "done": true
+  },
   "sophisticatedbackpacks:recipes/misc/stonecutter_upgrade": {
     "criteria": {
       "has_upgrade_base": "2026-11-26 09:59:43 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/light_gray_wool_stairs": {
+    "criteria": {
+      "has_light_gray_wool": "2026-11-26 10:16:49 +0700"
     },
     "done": true
   },
@@ -9037,6 +9055,12 @@
   "minecraft:recipes/decorations/gray_banner": {
     "criteria": {
       "has_gray_wool": "2026-11-26 09:36:07 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/light_gray_carpet": {
+    "criteria": {
+      "has_light_gray_wool": "2026-11-26 10:16:49 +0700"
     },
     "done": true
   },
@@ -9055,6 +9079,12 @@
   "minecraft:recipes/building_blocks/gray_wool_stairs": {
     "criteria": {
       "has_gray_wool": "2026-11-26 09:36:07 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/light_gray_sheet": {
+    "criteria": {
+      "has_light_gray_sheet": "2026-11-26 10:16:49 +0700"
     },
     "done": true
   },
@@ -9097,6 +9127,12 @@
   "sophisticatedbackpacks:recipes/misc/advanced_mob_catcher_upgrade": {
     "criteria": {
       "has_mob_catcher_upgrade": "2026-11-26 09:59:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/light_gray_banner": {
+    "criteria": {
+      "has_light_gray_wool": "2026-11-26 10:16:49 +0700"
     },
     "done": true
   },
@@ -9231,6 +9267,18 @@
   "minecraft:recipes/building_blocks/copper_grate": {
     "criteria": {
       "has_copper_block": "2026-11-26 10:00:26 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/light_gray_wool_slab": {
+    "criteria": {
+      "has_light_gray_wool": "2026-11-26 10:16:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/yellow_dye_from_sunflower": {
+    "criteria": {
+      "has_sunflower": "2026-11-26 10:16:45 +0700"
     },
     "done": true
   },
