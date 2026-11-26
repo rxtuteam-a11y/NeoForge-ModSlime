@@ -10649,15 +10649,15 @@
     },
     "done": true
   },
-  "minecraft:nether/obtain_blaze_rod": {
-    "criteria": {
-      "blaze_rod": "2026-11-26 11:53:22 +0700"
-    },
-    "done": true
-  },
   "illagerinvasion:recipes/misc/hallowed_gem": {
     "criteria": {
       "has_unusual_dust_or_illusionary_dust": "2026-11-26 11:53:02 +0700"
+    },
+    "done": true
+  },
+  "minecraft:nether/obtain_blaze_rod": {
+    "criteria": {
+      "blaze_rod": "2026-11-26 11:53:22 +0700"
     },
     "done": true
   },
@@ -10673,12 +10673,6 @@
     },
     "done": true
   },
-  "vinery:recipes/grass_slab": {
-    "criteria": {
-      "has_grass_block": "2026-11-26 11:54:40 +0700"
-    },
-    "done": true
-  },
   "cookingforblockheads:recipes/misc/preservation_chamber": {
     "criteria": {
       "has_redstone": "2026-11-26 11:53:22 +0700"
@@ -10688,6 +10682,18 @@
   "minecraft:recipes/brewing/brewing_stand": {
     "criteria": {
       "has_blaze_rod": "2026-11-26 11:53:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/blaze_powder": {
+    "criteria": {
+      "has_blaze_rod": "2026-11-26 11:53:22 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/grass_slab": {
+    "criteria": {
+      "has_grass_block": "2026-11-26 11:54:40 +0700"
     },
     "done": true
   },
@@ -10703,9 +10709,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/brewing/blaze_powder": {
+  "tensura:infamy_famous": {
     "criteria": {
-      "has_blaze_rod": "2026-11-26 11:53:22 +0700"
+      "custom": "2026-11-26 12:12:53 +0700"
     },
     "done": true
   },
