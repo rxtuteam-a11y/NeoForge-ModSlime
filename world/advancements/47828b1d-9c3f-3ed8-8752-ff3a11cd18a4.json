@@ -9614,9 +9614,27 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/brown_wool_stairs": {
+  "farmersdelight:recipes/cooking/hot_cocoa": {
     "criteria": {
-      "has_brown_wool": "2026-11-26 14:09:04 +0700"
+      "has_any_ingredient": "2026-11-26 13:04:00 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/glow_berry_custard": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-26 13:04:00 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/milk_bottle": {
+    "criteria": {
+      "has_milk_bucket": "2026-11-26 13:04:00 +0700"
+    },
+    "done": true
+  },
+  "cookingforblockheads:recipes/decorations/milk_jar": {
+    "criteria": {
+      "has_milk_bucket": "2026-11-26 13:04:00 +0700"
     },
     "done": true
   },
@@ -9632,45 +9650,16 @@
     },
     "done": true
   },
-  "farmersdelight:recipes/cooking/hot_cocoa": {
+  "minecraft:husbandry/bred_all_animals": {
     "criteria": {
-      "has_any_ingredient": "2026-11-26 13:04:00 +0700"
+      "minecraft:chicken": "2026-11-26 13:39:56 +0700",
+      "minecraft:sheep": "2026-11-26 13:12:16 +0700"
     },
-    "done": true
-  },
-  "farmersdelight:recipes/food/roasted_mutton_chops": {
-    "criteria": {
-      "has_mutton": "2026-11-26 14:08:08 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/food/blade_tiger_steak_from_smelting": {
-    "criteria": {
-      "has_raw_blade_tiger_meat": "2026-11-26 14:09:43 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/food/blade_tiger_steak_from_campfire_cooking": {
-    "criteria": {
-      "has_raw_blade_tiger_meat": "2026-11-26 14:09:43 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/food/blade_tiger_steak_from_smoking": {
-    "criteria": {
-      "has_raw_blade_tiger_meat": "2026-11-26 14:09:43 +0700"
-    },
-    "done": true
+    "done": false
   },
   "iceandfire:iceandfire/rotten_egg": {
     "criteria": {
       "bestiary": "2026-11-26 13:27:17 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/brown_wool_slab": {
-    "criteria": {
-      "has_brown_wool": "2026-11-26 14:09:04 +0700"
     },
     "done": true
   },
@@ -9680,9 +9669,63 @@
     },
     "done": true
   },
+  "farmersdelight:recipes/food/nether_salad": {
+    "criteria": {
+      "has_bowl": "2026-11-26 13:29:03 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:main/place_campfire": {
+    "criteria": {
+      "campfire": "2026-11-26 13:31:05 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:pot": {
+    "criteria": {
+      "place_pot_on_heat_source": "2026-11-26 13:31:15 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:stockpot": {
+    "criteria": {
+      "place_stockpot_on_heat_source": "2026-11-26 13:32:50 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:add_broth": {
+    "criteria": {
+      "put_soup_base_in_stockpot": "2026-11-26 13:34:15 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/roasted_mutton_chops": {
+    "criteria": {
+      "has_mutton": "2026-11-26 14:08:08 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:recipes/food/mutton_wrap": {
     "criteria": {
       "has_mutton": "2026-11-26 14:08:08 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/shepherds_pie_block": {
+    "criteria": {
+      "has_cooked_mutton": "2026-11-26 14:08:08 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/brown_wool_stairs": {
+    "criteria": {
+      "has_brown_wool": "2026-11-26 14:09:04 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/brown_wool_slab": {
+    "criteria": {
+      "has_brown_wool": "2026-11-26 14:09:04 +0700"
     },
     "done": true
   },
@@ -9704,58 +9747,15 @@
     },
     "done": true
   },
-  "farmersdelight:main/place_campfire": {
-    "criteria": {
-      "campfire": "2026-11-26 13:31:05 +0700"
-    },
-    "done": true
-  },
   "vinery:recipes/winemaker_boots": {
     "criteria": {
       "has_brown_wool": "2026-11-26 14:09:04 +0700"
     },
     "done": true
   },
-  "farmersdelight:recipes/cooking/glow_berry_custard": {
-    "criteria": {
-      "has_any_ingredient": "2026-11-26 13:04:00 +0700"
-    },
-    "done": true
-  },
-  "kaleidoscope_cookery:stockpot": {
-    "criteria": {
-      "place_stockpot_on_heat_source": "2026-11-26 13:32:50 +0700"
-    },
-    "done": true
-  },
-  "minecraft:husbandry/bred_all_animals": {
-    "criteria": {
-      "minecraft:chicken": "2026-11-26 13:39:56 +0700",
-      "minecraft:sheep": "2026-11-26 13:12:16 +0700"
-    },
-    "done": false
-  },
   "handcrafted:recipes/misc/brown_sheet": {
     "criteria": {
       "has_brown_sheet": "2026-11-26 14:09:04 +0700"
-    },
-    "done": true
-  },
-  "farmersdelight:recipes/food/shepherds_pie_block": {
-    "criteria": {
-      "has_cooked_mutton": "2026-11-26 14:08:08 +0700"
-    },
-    "done": true
-  },
-  "farmersdelight:recipes/food/nether_salad": {
-    "criteria": {
-      "has_bowl": "2026-11-26 13:29:03 +0700"
-    },
-    "done": true
-  },
-  "farmersdelight:recipes/food/milk_bottle": {
-    "criteria": {
-      "has_milk_bucket": "2026-11-26 13:04:00 +0700"
     },
     "done": true
   },
@@ -9765,21 +9765,21 @@
     },
     "done": true
   },
-  "cookingforblockheads:recipes/decorations/milk_jar": {
+  "minecraft:recipes/food/blade_tiger_steak_from_smelting": {
     "criteria": {
-      "has_milk_bucket": "2026-11-26 13:04:00 +0700"
+      "has_raw_blade_tiger_meat": "2026-11-26 14:09:43 +0700"
     },
     "done": true
   },
-  "kaleidoscope_cookery:pot": {
+  "tensura:recipes/food/blade_tiger_steak_from_campfire_cooking": {
     "criteria": {
-      "place_pot_on_heat_source": "2026-11-26 13:31:15 +0700"
+      "has_raw_blade_tiger_meat": "2026-11-26 14:09:43 +0700"
     },
     "done": true
   },
-  "kaleidoscope_cookery:add_broth": {
+  "tensura:recipes/food/blade_tiger_steak_from_smoking": {
     "criteria": {
-      "put_soup_base_in_stockpot": "2026-11-26 13:34:15 +0700"
+      "has_raw_blade_tiger_meat": "2026-11-26 14:09:43 +0700"
     },
     "done": true
   },

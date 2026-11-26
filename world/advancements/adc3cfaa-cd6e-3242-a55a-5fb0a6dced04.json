@@ -1989,5 +1989,11 @@
     },
     "done": true
   },
+  "regions_unexplored:light_snack": {
+    "criteria": {
+      "earlight": "2026-11-26 14:32:57 +0700"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }
