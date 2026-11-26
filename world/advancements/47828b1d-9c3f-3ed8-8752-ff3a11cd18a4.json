@@ -54,6 +54,7 @@
       "chalk_cliffs": "2026-11-23 23:35:36 +0700",
       "prismachasm": "2026-11-25 20:15:09 +0700",
       "old_growth_boreal_taiga": "2026-11-24 10:22:55 +0700",
+      "infernal_holt": "2026-11-26 10:23:11 +0700",
       "boreal_taiga": "2026-11-23 13:27:40 +0700",
       "cold_boreal_taiga": "2026-11-23 19:28:48 +0700",
       "ancient_delta": "2026-11-25 20:08:34 +0700",
@@ -981,6 +982,7 @@
       "minecraft:husk": "2026-11-22 17:50:13 +0700",
       "minecraft:bogged": "2026-11-22 18:32:26 +0700",
       "minecraft:cave_spider": "2026-11-23 21:51:05 +0700",
+      "minecraft:piglin": "2026-11-26 10:24:46 +0700",
       "minecraft:breeze": "2026-11-22 18:37:11 +0700",
       "minecraft:vindicator": "2026-11-23 09:02:59 +0700",
       "minecraft:stray": "2026-11-23 19:23:01 +0700",
@@ -8986,15 +8988,45 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/cooked_chicken_from_campfire_cooking": {
+    "criteria": {
+      "has_chicken": "2026-11-26 10:22:39 +0700"
+    },
+    "done": true
+  },
   "sophisticatedbackpacks:recipes/misc/deposit_upgrade": {
     "criteria": {
       "has_upgrade_base": "2026-11-26 09:59:43 +0700"
     },
     "done": true
   },
+  "minecraft:recipes/decorations/blackstone_wall": {
+    "criteria": {
+      "has_blackstone": "2026-11-26 10:28:06 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/chicken_soup": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-26 10:22:39 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:eternal_expedition": {
+    "criteria": {
+      "infernal_holt": "2026-11-26 10:23:11 +0700"
+    },
+    "done": false
+  },
   "minecraft:recipes/building_blocks/cut_copper_stairs_from_copper_block_stonecutting": {
     "criteria": {
       "has_copper_block": "2026-11-26 10:00:26 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_brick_stairs_from_blackstone_stonecutting": {
+    "criteria": {
+      "has_blackstone": "2026-11-26 10:28:06 +0700"
     },
     "done": true
   },
@@ -9034,6 +9066,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/blackstone_stairs": {
+    "criteria": {
+      "has_blackstone": "2026-11-26 10:28:06 +0700"
+    },
+    "done": true
+  },
   "sophisticatedbackpacks:recipes/misc/stonecutter_upgrade": {
     "criteria": {
       "has_upgrade_base": "2026-11-26 09:59:43 +0700"
@@ -9046,9 +9084,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/cooked_chicken_from_smoking": {
+    "criteria": {
+      "has_chicken": "2026-11-26 10:22:39 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/iron_ingot_from_iron_block": {
     "criteria": {
       "has_iron_block": "2026-11-26 10:01:26 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_brick_slab_from_blackstone_stonecutting": {
+    "criteria": {
+      "has_blackstone": "2026-11-26 10:28:06 +0700"
     },
     "done": true
   },
@@ -9067,6 +9117,12 @@
   "sophisticatedbackpacks:recipes/misc/smoking_upgrade": {
     "criteria": {
       "has_upgrade_base": "2026-11-26 09:59:43 +0700"
+    },
+    "done": true
+  },
+  "minecraft:story/enter_the_nether": {
+    "criteria": {
+      "entered_nether": "2026-11-26 10:23:11 +0700"
     },
     "done": true
   },
@@ -9124,9 +9180,39 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/nether_bricks": {
+    "criteria": {
+      "has_nether_brick": "2026-11-26 10:28:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:nether/get_wither_skull": {
+    "criteria": {
+      "wither_skull": "2026-11-26 10:32:16 +0700"
+    },
+    "done": true
+  },
+  "vanillabackport:recipes/misc/gold_nugget_from_blasting": {
+    "criteria": {
+      "has_golden_spear": "2026-11-26 10:27:57 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_from_blackstone_stonecutting": {
+    "criteria": {
+      "has_blackstone": "2026-11-26 10:28:06 +0700"
+    },
+    "done": true
+  },
   "sophisticatedbackpacks:recipes/misc/advanced_mob_catcher_upgrade": {
     "criteria": {
       "has_mob_catcher_upgrade": "2026-11-26 09:59:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/blackstone_wall_from_blackstone_stonecutting": {
+    "criteria": {
+      "has_blackstone": "2026-11-26 10:28:06 +0700"
     },
     "done": true
   },
@@ -9160,9 +9246,27 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/skull_banner_pattern": {
+    "criteria": {
+      "has_wither_skeleton_skull": "2026-11-26 10:32:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/blackstone_stairs_from_blackstone_stonecutting": {
+    "criteria": {
+      "has_blackstone": "2026-11-26 10:28:06 +0700"
+    },
+    "done": true
+  },
   "sophisticatedbackpacks:recipes/misc/filter_upgrade": {
     "criteria": {
       "has_upgrade_base": "2026-11-26 09:59:43 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_bricks_from_blackstone_stonecutting": {
+    "criteria": {
+      "has_blackstone": "2026-11-26 10:28:06 +0700"
     },
     "done": true
   },
@@ -9177,6 +9281,18 @@
   "minecraft:recipes/building_blocks/cut_copper": {
     "criteria": {
       "has_copper_block": "2026-11-26 10:00:26 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_stairs_from_blackstone_stonecutting": {
+    "criteria": {
+      "has_blackstone": "2026-11-26 10:28:06 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/blackstone_pillar_trim": {
+    "criteria": {
+      "has_blackstone_pillar_trim": "2026-11-26 10:28:06 +0700"
     },
     "done": true
   },
@@ -9216,6 +9332,12 @@
     },
     "done": true
   },
+  "twilightforest:recipes/drying/chicken_jerky": {
+    "criteria": {
+      "has_meat": "2026-11-26 10:22:39 +0700"
+    },
+    "done": true
+  },
   "sophisticatedbackpacks:recipes/misc/void_upgrade": {
     "criteria": {
       "has_upgrade_base": "2026-11-26 09:59:43 +0700"
@@ -9225,6 +9347,12 @@
   "vinery:recipes/red_grape_bag": {
     "criteria": {
       "has_red_grape": "2026-11-26 09:44:57 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_slab_from_blackstone_stonecutting": {
+    "criteria": {
+      "has_blackstone": "2026-11-26 10:28:06 +0700"
     },
     "done": true
   },
@@ -9276,6 +9404,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/blackstone_slab": {
+    "criteria": {
+      "has_blackstone": "2026-11-26 10:28:06 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/yellow_dye_from_sunflower": {
     "criteria": {
       "has_sunflower": "2026-11-26 10:16:45 +0700"
@@ -9306,9 +9440,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/polished_blackstone_brick_wall_from_blackstone_stonecutting": {
+    "criteria": {
+      "has_blackstone": "2026-11-26 10:28:06 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/diamond": {
     "criteria": {
       "has_diamond_block": "2026-11-26 10:02:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_chicken": {
+    "criteria": {
+      "has_chicken": "2026-11-26 10:22:39 +0700"
     },
     "done": true
   },
@@ -9324,9 +9470,27 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/blackstone_corner_trim": {
+    "criteria": {
+      "has_blackstone_corner_trim": "2026-11-26 10:28:06 +0700"
+    },
+    "done": true
+  },
+  "vanillabackport:recipes/misc/gold_nugget_from_smelting": {
+    "criteria": {
+      "has_golden_spear": "2026-11-26 10:27:57 +0700"
+    },
+    "done": true
+  },
   "sophisticatedbackpacks:recipes/misc/smithing_upgrade": {
     "criteria": {
       "has_upgrade_base": "2026-11-26 09:59:43 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:downer": {
+    "criteria": {
+      "dorcel": "2026-11-26 10:23:57 +0700"
     },
     "done": true
   },
@@ -9342,9 +9506,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/polished_blackstone_wall_from_blackstone_stonecutting": {
+    "criteria": {
+      "has_blackstone": "2026-11-26 10:28:06 +0700"
+    },
+    "done": true
+  },
   "sophisticatedbackpacks:recipes/misc/mob_catcher_upgrade": {
     "criteria": {
       "has_upgrade_base": "2026-11-26 09:59:43 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_polished_blackstone_from_blackstone_stonecutting": {
+    "criteria": {
+      "has_blackstone": "2026-11-26 10:28:06 +0700"
     },
     "done": true
   },
@@ -9372,9 +9548,27 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/blackstone_slab_from_blackstone_stonecutting": {
+    "criteria": {
+      "has_blackstone": "2026-11-26 10:28:06 +0700"
+    },
+    "done": true
+  },
   "handcrafted:recipes/misc/gray_sheet": {
     "criteria": {
       "has_gray_sheet": "2026-11-26 09:36:07 +0700"
+    },
+    "done": true
+  },
+  "minecraft:nether/root": {
+    "criteria": {
+      "entered_nether": "2026-11-26 10:23:11 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone": {
+    "criteria": {
+      "has_blackstone": "2026-11-26 10:28:06 +0700"
     },
     "done": true
   },
@@ -9390,9 +9584,21 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/blackstone_warp_pad": {
+    "criteria": {
+      "has_blackstone": "2026-11-26 10:28:06 +0700"
+    },
+    "done": true
+  },
   "sophisticatedbackpacks:recipes/misc/crafting_upgrade": {
     "criteria": {
       "has_upgrade_base": "2026-11-26 09:59:43 +0700"
+    },
+    "done": true
+  },
+  "eternalnether:root": {
+    "criteria": {
+      "entered_nether": "2026-11-26 10:23:11 +0700"
     },
     "done": true
   },
