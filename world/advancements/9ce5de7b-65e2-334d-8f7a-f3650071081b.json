@@ -10649,5 +10649,47 @@
     },
     "done": true
   },
+  "minecraft:nether/obtain_blaze_rod": {
+    "criteria": {
+      "blaze_rod": "2026-11-26 11:53:22 +0700"
+    },
+    "done": true
+  },
+  "illagerinvasion:recipes/misc/hallowed_gem": {
+    "criteria": {
+      "has_unusual_dust_or_illusionary_dust": "2026-11-26 11:53:02 +0700"
+    },
+    "done": true
+  },
+  "cookingforblockheads:recipes/misc/heating_unit": {
+    "criteria": {
+      "has_redstone": "2026-11-26 11:53:22 +0700"
+    },
+    "done": true
+  },
+  "cookingforblockheads:recipes/misc/ice_unit": {
+    "criteria": {
+      "has_redstone": "2026-11-26 11:53:22 +0700"
+    },
+    "done": true
+  },
+  "cookingforblockheads:recipes/misc/preservation_chamber": {
+    "criteria": {
+      "has_redstone": "2026-11-26 11:53:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/brewing_stand": {
+    "criteria": {
+      "has_blaze_rod": "2026-11-26 11:53:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/blaze_powder": {
+    "criteria": {
+      "has_blaze_rod": "2026-11-26 11:53:22 +0700"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }
