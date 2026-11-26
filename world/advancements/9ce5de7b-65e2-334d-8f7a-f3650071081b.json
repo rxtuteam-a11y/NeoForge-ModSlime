@@ -10673,6 +10673,12 @@
     },
     "done": true
   },
+  "vinery:recipes/grass_slab": {
+    "criteria": {
+      "has_grass_block": "2026-11-26 11:54:40 +0700"
+    },
+    "done": true
+  },
   "cookingforblockheads:recipes/misc/preservation_chamber": {
     "criteria": {
       "has_redstone": "2026-11-26 11:53:22 +0700"
@@ -10682,6 +10688,18 @@
   "minecraft:recipes/brewing/brewing_stand": {
     "criteria": {
       "has_blaze_rod": "2026-11-26 11:53:22 +0700"
+    },
+    "done": true
+  },
+  "tensura:hipokute_flower": {
+    "criteria": {
+      "flower": "2026-11-26 11:54:40 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/white_dye_from_hipokute_flower": {
+    "criteria": {
+      "has_hipokute_flower": "2026-11-26 11:54:40 +0700"
     },
     "done": true
   },
