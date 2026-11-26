@@ -980,7 +980,9 @@
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
       "minecraft:pillager": "2026-11-23 09:00:08 +0700",
+      "minecraft:blaze": "2026-11-26 19:38:31 +0700",
       "minecraft:skeleton": "2026-11-23 21:11:24 +0700",
+      "minecraft:zoglin": "2026-11-26 19:38:06 +0700",
       "minecraft:phantom": "2026-11-25 19:59:58 +0700",
       "minecraft:husk": "2026-11-22 17:50:13 +0700",
       "minecraft:bogged": "2026-11-22 18:32:26 +0700",
