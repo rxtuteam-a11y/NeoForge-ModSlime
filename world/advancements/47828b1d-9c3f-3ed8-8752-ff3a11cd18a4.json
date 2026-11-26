@@ -9614,6 +9614,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/brown_wool_stairs": {
+    "criteria": {
+      "has_brown_wool": "2026-11-26 14:09:04 +0700"
+    },
+    "done": true
+  },
   "kaleidoscope_cookery:recipes/food/stuffed_dough_food": {
     "criteria": {
       "has_dough": "2026-11-26 13:11:31 +0700"
@@ -9632,9 +9638,39 @@
     },
     "done": true
   },
+  "farmersdelight:recipes/food/roasted_mutton_chops": {
+    "criteria": {
+      "has_mutton": "2026-11-26 14:08:08 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/blade_tiger_steak_from_smelting": {
+    "criteria": {
+      "has_raw_blade_tiger_meat": "2026-11-26 14:09:43 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/food/blade_tiger_steak_from_campfire_cooking": {
+    "criteria": {
+      "has_raw_blade_tiger_meat": "2026-11-26 14:09:43 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/food/blade_tiger_steak_from_smoking": {
+    "criteria": {
+      "has_raw_blade_tiger_meat": "2026-11-26 14:09:43 +0700"
+    },
+    "done": true
+  },
   "iceandfire:iceandfire/rotten_egg": {
     "criteria": {
       "bestiary": "2026-11-26 13:27:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/brown_wool_slab": {
+    "criteria": {
+      "has_brown_wool": "2026-11-26 14:09:04 +0700"
     },
     "done": true
   },
@@ -9644,9 +9680,39 @@
     },
     "done": true
   },
+  "farmersdelight:recipes/food/mutton_wrap": {
+    "criteria": {
+      "has_mutton": "2026-11-26 14:08:08 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/brown_cushion": {
+    "criteria": {
+      "has_brown_cushion": "2026-11-26 14:09:04 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/brown_banner": {
+    "criteria": {
+      "has_brown_wool": "2026-11-26 14:09:04 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/brown_bed": {
+    "criteria": {
+      "has_brown_wool": "2026-11-26 14:09:04 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:main/place_campfire": {
     "criteria": {
       "campfire": "2026-11-26 13:31:05 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/winemaker_boots": {
+    "criteria": {
+      "has_brown_wool": "2026-11-26 14:09:04 +0700"
     },
     "done": true
   },
@@ -9669,6 +9735,18 @@
     },
     "done": false
   },
+  "handcrafted:recipes/misc/brown_sheet": {
+    "criteria": {
+      "has_brown_sheet": "2026-11-26 14:09:04 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/shepherds_pie_block": {
+    "criteria": {
+      "has_cooked_mutton": "2026-11-26 14:08:08 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:recipes/food/nether_salad": {
     "criteria": {
       "has_bowl": "2026-11-26 13:29:03 +0700"
@@ -9678,6 +9756,12 @@
   "farmersdelight:recipes/food/milk_bottle": {
     "criteria": {
       "has_milk_bucket": "2026-11-26 13:04:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/brown_carpet": {
+    "criteria": {
+      "has_brown_wool": "2026-11-26 14:09:04 +0700"
     },
     "done": true
   },
