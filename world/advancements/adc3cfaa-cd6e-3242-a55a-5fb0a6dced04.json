@@ -4452,6 +4452,42 @@
     },
     "done": true
   },
+  "farmersdelight:recipes/food/grilled_salmon": {
+    "criteria": {
+      "has_salmon": "2026-11-26 22:12:01 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:iceandfire/tame_cockatrice": {
+    "criteria": {
+      "tame_rat": "2026-11-26 22:12:35 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_salmon_from_campfire_cooking": {
+    "criteria": {
+      "has_salmon": "2026-11-26 22:12:01 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/food/raw_meatball": {
+    "criteria": {
+      "has_raw_meats": "2026-11-26 22:12:01 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:iceandfire/rotten_egg": {
+    "criteria": {
+      "bestiary": "2026-11-26 22:10:46 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_salmon_from_smoking": {
+    "criteria": {
+      "has_salmon": "2026-11-26 22:12:01 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:recipes/food/mixed_salad": {
     "criteria": {
       "has_bowl": "2026-11-26 22:07:49 +0700"
@@ -4464,6 +4500,12 @@
     },
     "done": true
   },
+  "twilightforest:recipes/drying/salmon_jerky": {
+    "criteria": {
+      "has_meat": "2026-11-26 22:12:01 +0700"
+    },
+    "done": true
+  },
   "tensura:master_unique_skill": {
     "criteria": {
       "skill": "2026-11-26 22:08:20 +0700"
@@ -4473,6 +4515,18 @@
   "farmersdelight:recipes/food/nether_salad": {
     "criteria": {
       "has_bowl": "2026-11-26 22:07:49 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/fish_stew": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-26 22:12:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_salmon": {
+    "criteria": {
+      "has_salmon": "2026-11-26 22:12:01 +0700"
     },
     "done": true
   },

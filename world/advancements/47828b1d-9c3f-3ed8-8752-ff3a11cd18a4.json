@@ -9866,5 +9866,23 @@
     },
     "done": true
   },
+  "bakery:recipes/dough": {
+    "criteria": {
+      "has_sugar": "2026-11-26 22:10:27 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/sweet_dough": {
+    "criteria": {
+      "has_sugar": "2026-11-26 22:10:27 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/cake_dough": {
+    "criteria": {
+      "has_sugar": "2026-11-26 22:10:27 +0700"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }
