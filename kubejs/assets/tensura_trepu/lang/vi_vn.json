@@ -1,0 +1,8 @@
+{
+  "gui.tensura_trepu.evolution_requirements": "Điều Kiện Tiến Hoá",
+  "gui.tensura_trepu.evolution_requirements.wastelander_to_human.elixir": "Uống Linh Dược Thanh Tẩy Thiên Giới",
+  "gui.tensura_trepu.evolution_requirements.wastelander_to_human.mindscape": "Vượt qua thử thách Mộng Cảnh sau khi ngủ vào ban đêm",
+  "gui.tensura_trepu.evolution_requirements.wastelander_to_human.manual": "Sử dụng Bí Điển Phá Huỷ Và Tái Tạo",
+  "gui.tensura_trepu.evolution_requirements.angel_to_tengu": "Sở hữu một Okami",
+  "tooltip.tensura_trepu.gear_evolution_remaining": "Cần %s EP để tiến hoá thành %s"
+}

@@ -1,0 +1,14 @@
+{
+	version: 1
+	uuid: "b30bc3b94ac63c42882aeef629d8f2ae"
+	name: "donatrum#b30bc3b9"
+	lock: false
+	rewards_blocked: false
+	task_progress: { }
+	started: { }
+	completed: { }
+	repeatable: { }
+	completion_count: { }
+	claimed_rewards: { }
+	player_data: { }
+}

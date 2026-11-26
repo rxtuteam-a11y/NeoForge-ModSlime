@@ -1,0 +1,14 @@
+{
+	version: 1
+	uuid: "cd28722e47ea35fb96eb970868e9c6fe"
+	name: "bakaluku#cd28722e"
+	lock: false
+	rewards_blocked: false
+	task_progress: { }
+	started: { }
+	completed: { }
+	repeatable: { }
+	completion_count: { }
+	claimed_rewards: { }
+	player_data: { }
+}

@@ -1,0 +1,79 @@
+[BarrierMaster]
+	#Rho Aias: HP of the barrier
+	rhoAiasMaxIntegrity = 1000.0
+	#Rho Aias: magicules to cast
+	rhoAiasMagiculeCastCost = 20000.0
+	#Rho Aias: magicules per second to keep up
+	rhoAiasMagiculeUpkeepPerSecond = 1000.0
+	#Rho Aias: longest it can be held in seconds
+	rhoAiasMaxHoldSeconds = 30.0
+	#Rho Aias: cooldown in seconds
+	rhoAiasCooldownSeconds = 15.0
+	#Rho Aias: whether it blocks entry
+	rhoAiasSolid = true
+	#Rho Aias: how far off its faces are
+	rhoAiasSolidPushMargin = 0.35
+	#Rho Aias: % of caster's movement speed lost
+	rhoAiasMovementPenalty = 0.5
+	#Rho Aias: whether it blocks melee
+	rhoAiasBlocksMelee = true
+	#Rho Aias: whether it blocks projectiles
+	rhoAiasBlocksProjectiles = true
+	#Rho Aias: % of damage the barrier takes
+	rhoAiasWallDamageFactor = 1.0
+	#Rho Aias: HP lost per projectile
+	rhoAiasProjectileWallDamage = 10.0
+	#Rho Aias: whether Barrier Master must be mastered before this is usable
+	rhoAiasRequireMastery = false
+	#Barrier Float: HP of the barrier
+	barrierFloatMaxIntegrity = 750.0
+	#Barrier Float: magicules to cast
+	barrierFloatMagiculeCastCost = 10000.0
+	#Barrier Float: magicules cost a second
+	barrierFloatMagiculeUpkeepPerSecond = 200.0
+	#Barrier Float: longest it can be held in seconds
+	barrierFloatMaxHoldSeconds = 20.0
+	#Barrier Float: longest it can be held once Barrier Master is mastered
+	barrierFloatMaxHoldSecondsMastered = 40.0
+	#Barrier Float: cooldown in seconds
+	barrierFloatCooldownSeconds = 120.0
+	#Barrier Float: cooldown once Barrier Master is mastered
+	barrierFloatCooldownSecondsMastered = 60.0
+	#Barrier Float: flight speed
+	barrierFloatFlightSpeed = 0.08
+	#Barrier Float: whether the walking animation is enabled while flying
+	barrierFloatStillWhileFlying = true
+	#Barrier Float: % of damage the barrier takes
+	barrierFloatWallDamageFactor = 1.0
+	#Containment: seconds containment last
+	containmentBindSeconds = 20.0
+	#Containment: seconds containment lasts once Barrier Master is mastered
+	containmentBindSecondsMastered = 30.0
+	#Containment: the target's EP above the caster's that it's ineffective
+	containmentCaptureEpFraction = 0.15
+	#Containment: the target's EP above the caster's that it's ineffective while mastered
+	containmentCaptureEpFractionMastered = 0.3
+	#Containment: the target's EP above the caster's that it's ineffective if they have law manipulation
+	containmentLawManipEpFraction = 0.05
+	#Containment: the target's EP above the caster's that it's ineffective if they have law manipulation and Barrier Arts is mastered
+	containmentLawManipEpFractionMastered = 0.1
+	#Containment: cost based on the target's EP
+	containmentTargetEpCostFraction = 0.25
+	#Containment: range of containment
+	containmentThrowRange = 28.0
+	#Containment: speed of containment
+	containmentThrowSpeed = 26.0
+	#Containment: EP that the ability gains another ring
+	containmentRuneTierEp = [50000.0, 100000.0, 400000.0, 800000.0, 2000000.0]
+	#Containment: homing strength
+	containmentHomingResponse = 0.22
+	#Containment: homing range
+	containmentTargetRange = 32.0
+	#Containment: skills that make the target immune
+	containmentImmuneSkills = []
+	#Containment: magicules to cast
+	containmentMagiculeCastCost = 25000.0
+	#Containment: magicules per second
+	containmentMagiculeUpkeepPerSecond = 0.0
+	#Containment: cooldown in seconds
+	containmentCooldownSeconds = 10.0

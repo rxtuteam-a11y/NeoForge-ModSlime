@@ -1,0 +1,14 @@
+{
+	version: 1
+	uuid: "ce7a7860ac5a32fdb4404346fa9c86d5"
+	name: "batondacarinho#ce7a7860"
+	lock: false
+	rewards_blocked: false
+	task_progress: { }
+	started: { }
+	completed: { }
+	repeatable: { }
+	completion_count: { }
+	claimed_rewards: { }
+	player_data: { }
+}

@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "globalUniqueCap": -1,
+  "globalUltimateCap": -1,
+  "uniqueResetInterval": 1,
+  "ultimateResetInterval": 1,
+  "globalResetCap": -1,
+  "players": {}
+}

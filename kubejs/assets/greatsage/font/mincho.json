@@ -1,0 +1,22 @@
+{
+  "providers": [
+    {
+      "type": "ttf",
+      "file": "greatsage:mincho.ttf",
+      "shift": [
+        0,
+        0
+      ],
+      "size": 24,
+      "oversample": 4
+    },
+    {
+      "type": "reference",
+      "id": "tensura_tno:greatsage_cjk"
+    },
+    {
+      "type": "reference",
+      "id": "minecraft:default"
+    }
+  ]
+}

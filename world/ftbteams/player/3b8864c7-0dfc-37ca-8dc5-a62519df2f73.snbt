@@ -1,0 +1,31 @@
+{
+	id: "3b8864c7-0dfc-37ca-8dc5-a62519df2f73"
+	type: "player"
+	player_name: "Picolo"
+	ranks: {
+		3b8864c7-0dfc-37ca-8dc5-a62519df2f73: "owner"
+	}
+	properties: {
+		"ftbteams:display_name": "Picolo"
+		"ftbteams:description": ""
+		"ftbteams:color": "#D159FF"
+		"ftbteams:free_to_join": 0b
+		"ftbteams:max_msg_history_size": 1000
+		"ftbteams:team_stages": [ ]
+		"ftbteams:lives_remaining": 0
+		"ftbchunks:allow_explosions": 0b
+		"ftbchunks:allow_mob_griefing": 0b
+		"ftbchunks:allow_fake_players": 0b
+		"ftbchunks:allow_named_fake_players": [ ]
+		"ftbchunks:allow_fake_players_by_id": 1b
+		"ftbchunks:allow_pvp": 1b
+		"ftbchunks:block_edit_mode": "allies"
+		"ftbchunks:block_interact_mode": "allies"
+		"ftbchunks:entity_interact_mode": "allies"
+		"ftbchunks:nonliving_entity_attack_mode": "allies"
+		"ftbchunks:claim_visibility": "public"
+		"ftbchunks:location_mode": "allies"
+	}
+	message_history: [ ]
+	extra: { }
+}

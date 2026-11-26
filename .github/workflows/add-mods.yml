@@ -1,0 +1,52 @@
+name: Thêm mod (Modrinth)
+
+# Đọc extra-mods/danh-sach.txt, tải bản NeoForge 1.21.1 từ Modrinth (kèm thư viện còn thiếu),
+# lưu jar vào extra-mods/ (server tự chép vào mods khi bật) và tạo docs/mods-them.zip cho người chơi.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: add-mods
+  cancel-in-progress: false
+
+env:
+  GDRIVE_MODS_ID: 1eKZVfJSo0c49VhZMonpZE5kURegY0V16
+
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+          sparse-checkout: |
+            extra-mods
+            docs
+            .github
+          sparse-checkout-cone-mode: true
+
+      - name: Lấy danh sách mod server đang có (cache)
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            mods
+            libraries
+          key: modslime-mods-${{ env.GDRIVE_MODS_ID }}-v1
+
+      - name: Tải mod từ Modrinth
+        run: python3 .github/scripts/add-mods.py
+
+      - name: Lưu lên GitHub
+        run: |
+          git config user.name "ModSlime Cloud"
+          git config user.email "modslime-bot@users.noreply.github.com"
+          git add -A extra-mods docs/mods-them.zip
+          if git diff --cached --quiet; then echo "Không có thay đổi."; exit 0; fi
+          git commit -q -m "Thêm mod từ Modrinth: $(ls extra-mods/*.jar 2>/dev/null | wc -l) file"
+          for i in 1 2 3 4 5; do git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0; sleep $((i*5)); done
+          exit 1

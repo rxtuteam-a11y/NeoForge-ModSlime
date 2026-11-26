@@ -1,0 +1,14 @@
+{
+	version: 1
+	uuid: "5ee242a7a54d3674a2e777e8e4db17f7"
+	name: "Arcadeva#5ee242a7"
+	lock: false
+	rewards_blocked: false
+	task_progress: { }
+	started: { }
+	completed: { }
+	repeatable: { }
+	completion_count: { }
+	claimed_rewards: { }
+	player_data: { }
+}

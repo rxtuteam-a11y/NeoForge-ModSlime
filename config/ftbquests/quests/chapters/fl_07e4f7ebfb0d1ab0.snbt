@@ -1,0 +1,78 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "fl_07e4f7ebfb0d1ab0"
+	group: "5B307D448551FC61"
+	id: "07E4F7EBFB0D1AB0"
+	images: [ ]
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		id: "4D886404A58C7D50"
+		invisible: true
+		tasks: [{
+			checkInterval: 60
+			exactMatch: false
+			icon: {
+				components: {
+					"relics:data": {
+						abilities: {
+							abilities: {
+								infectious_bloom: {
+									extender: {
+										cooldown: 0
+										cooldownCap: 0
+										ticking: 0b
+									}
+									lock: {
+										breaks: 5
+									}
+									points: 0
+									research: {
+										links: { }
+										researched: 0b
+									}
+									stats: {
+										chance: {
+											initialValue: 0.10837d
+										}
+										damage: {
+											initialValue: 0.63854d
+										}
+										drops: {
+											initialValue: 2.38364d
+										}
+										max_attacks: {
+											initialValue: 1.2571d
+										}
+									}
+								}
+							}
+						}
+						leveling: {
+							experience: 0
+							level: 0
+							luck: 0
+							points: 0
+						}
+					}
+				}
+				id: "reliquified_twilight_forest:parasite_115"
+			}
+			id: "75149888467AEFAC"
+			nbt: {
+				ManasCoreStorage: {
+					manascore_registry_storage: [{
+						manascore_registry_storage_id: "manascore_race:race_storage"
+						race_key: {
+							race: "mysticism:sculk_worm"
+						}
+					}]
+				}
+			}
+			type: "playernbtftb:player_nbt"
+		}]
+		x: -1.0d
+		y: -3.0d
+	}]
+}

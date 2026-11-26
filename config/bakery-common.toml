@@ -1,0 +1,89 @@
+#Kneading, rolling, cutting and the tools of the Baker Station.
+[Baking]
+	#Dough can be kneaded flat with empty hands.
+	enableKneading = true
+	#Clicks it takes to knead dough flat with empty hands.
+	# Default: 8
+	# Range: 1 ~ 50
+	kneadPresses = 8
+	#Clicks it takes to flatten dough with a Rolling Pin.
+	# Default: 5
+	# Range: 1 ~ 50
+	rollingPinPresses = 5
+	#Ticks it takes to cut dough with a knife.
+	# Default: 10
+	# Range: 1 ~ 400
+	knifeDuration = 10
+	#Ticks it takes jam to spread over cakes, cupcakes and cookies.
+	# Default: 16
+	# Range: 1 ~ 400
+	jamDuration = 16
+	#Attacks per second of the Bread Knife. Changes need a game restart.
+	# Default: 2.0
+	# Range: 0.1 ~ 4.0
+	knifeAttackSpeed = 2.0
+	#Attacks per second of the Rolling Pin. Changes need a game restart.
+	# Default: 1.2
+	# Range: 0.1 ~ 4.0
+	rollingPinAttackSpeed = 1.2
+
+#Info tooltips that appear when looking at a block. Only affects your own screen.
+["Info Tooltips"]
+	#Info tooltips only show while wearing Dungarees from Farm & Charm.
+	needDungarees = false
+	#Shows an info tooltip when looking at the Baker Station or the dough on it.
+	showBakerStationInfo = true
+	#Shows an info tooltip when looking at the Jam Pot.
+	showJamPotInfo = true
+	#Shows what lies on the Wall, Cake and Cupcake Display, the Tray and the Cake Stand and what is in the Bread Box.
+	showDisplayInfo = true
+
+#Fine-tuning of the effects.
+[Effects]
+
+	[Effects."Vitality Effect"]
+		#Ticks between two exhaustion reductions.
+		# Default: 10
+		# Range: 1 ~ 200
+		vitalityEffectInterval = 10
+		#Exhaustion removed each interval. Grows with the effect level.
+		# Default: 0.08
+		# Range: 0.0 ~ 10.0
+		vitalityEffectExhaustionReduction = 0.08
+
+	[Effects."Sugar Rush Effect"]
+		#How many times Sugar Rush can stack.
+		# Default: 10
+		# Range: 1 ~ 50
+		sugarRushMaxStacks = 10
+		#Speed bonus per stack. 0.02 = 2%.
+		# Default: 0.02
+		# Range: 0.0 ~ 1.0
+		sugarRushBonusPerStack = 0.02
+		#Stacks up to this number add movement speed. Every stack above adds attack speed.
+		# Default: 5
+		# Range: 1 ~ 50
+		sugarRushAttackSpeedStacks = 5
+		#High Sugar Rush stacks also increase attack speed.
+		sugarRushAttackSpeed = true
+
+	[Effects."Completionist Banner Effect"]
+		#The Completionist Banner grants Resistance to players nearby.
+		bannerGiveEffect = true
+		#Radius in blocks in which the Completionist Banner grants Resistance.
+		# Default: 8
+		# Range: 1 ~ 32
+		bannerEffectRadius = 8
+		#Resistance level of the Completionist Banner. 0 = Resistance I.
+		# Default: 1
+		# Range: 0 ~ 4
+		bannerEffectAmplifier = 1
+		#Shows the thank-you tooltip on the Completionist Banner.
+		bannerShowTooltip = true
+
+#Block animations.
+[Misc]
+	#Blocks of this mod are animated. Without animations every step finishes instantly.
+	animations = true
+	#Kneading dough plays an animation. Without it the dough is flattened instantly.
+	kneadingAnimation = true
