@@ -9788,24 +9788,6 @@
     },
     "done": true
   },
-  "iceandfire:recipes/misc/ash_to_charcoal": {
-    "criteria": {
-      "has_item": "2026-11-26 19:17:57 +0700"
-    },
-    "done": true
-  },
-  "regions_unexplored:recipes/building_blocks/magnolia_wood": {
-    "criteria": {
-      "has_log": "2026-11-26 19:14:25 +0700"
-    },
-    "done": true
-  },
-  "friendsandfoes:recipes/combat/wildfire_crown": {
-    "criteria": {
-      "has_wildfire_crown_fragment": "2026-11-26 19:54:52 +0700"
-    },
-    "done": true
-  },
   "farmersdelight:recipes/building_blocks/carrot_crate": {
     "criteria": {
       "has_carrot": "2026-11-26 19:12:39 +0700"
@@ -9824,15 +9806,45 @@
     },
     "done": true
   },
+  "farmersdelight:recipes/cooking/vegetable_noodles": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-26 19:12:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/carrot_on_a_stick": {
+    "criteria": {
+      "has_carrot": "2026-11-26 19:12:39 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/magnolia_wood": {
+    "criteria": {
+      "has_log": "2026-11-26 19:14:25 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/building_blocks/magnolia_planks": {
     "criteria": {
       "has_logs": "2026-11-26 19:14:25 +0700"
     },
     "done": true
   },
-  "farmersdelight:recipes/cooking/vegetable_noodles": {
+  "regions_unexplored:recipes/decorations/magnolia_branch_from_magnolia_log": {
     "criteria": {
-      "has_any_ingredient": "2026-11-26 19:12:39 +0700"
+      "has_log": "2026-11-26 19:14:25 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/misc/ash_to_charcoal": {
+    "criteria": {
+      "has_item": "2026-11-26 19:17:57 +0700"
+    },
+    "done": true
+  },
+  "friendsandfoes:recipes/combat/wildfire_crown": {
+    "criteria": {
+      "has_wildfire_crown_fragment": "2026-11-26 19:54:52 +0700"
     },
     "done": true
   },
@@ -9845,18 +9857,6 @@
   "sophisticatedbackpacks:recipes/misc/stack_upgrade_omega_tier": {
     "criteria": {
       "has_stack_upgrade_tier_4": "2026-11-26 20:02:15 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/transportation/carrot_on_a_stick": {
-    "criteria": {
-      "has_carrot": "2026-11-26 19:12:39 +0700"
-    },
-    "done": true
-  },
-  "regions_unexplored:recipes/decorations/magnolia_branch_from_magnolia_log": {
-    "criteria": {
-      "has_log": "2026-11-26 19:14:25 +0700"
     },
     "done": true
   },

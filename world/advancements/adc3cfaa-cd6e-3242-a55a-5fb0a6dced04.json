@@ -1989,51 +1989,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/decorations/blackstone_wall": {
+  "regions_unexplored:light_snack": {
     "criteria": {
-      "has_blackstone": "2026-11-26 15:16:31 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/polished_blackstone_brick_stairs_from_blackstone_stonecutting": {
-    "criteria": {
-      "has_blackstone": "2026-11-26 15:16:31 +0700"
-    },
-    "done": true
-  },
-  "eternalnether:recipes/building_blocks/blackstone": {
-    "criteria": {
-      "has_cobbled_blackstone": "2026-11-26 15:16:32 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/blackstone_stairs": {
-    "criteria": {
-      "has_blackstone": "2026-11-26 15:16:31 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/polished_blackstone_brick_slab_from_blackstone_stonecutting": {
-    "criteria": {
-      "has_blackstone": "2026-11-26 15:16:31 +0700"
-    },
-    "done": true
-  },
-  "twilightforest:recipes/drying/drying/sapling_to_dead_bush": {
-    "criteria": {
-      "has_sapling": "2026-11-26 15:16:14 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/redstone/dispenser": {
-    "criteria": {
-      "has_bow": "2026-11-26 15:16:19 +0700"
-    },
-    "done": true
-  },
-  "naturescompass:natures_compass_sapling": {
-    "criteria": {
-      "has_sapling": "2026-11-26 15:16:14 +0700"
+      "earlight": "2026-11-26 14:32:57 +0700"
     },
     "done": true
   },
@@ -2049,45 +2007,15 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/bone_meal": {
-    "criteria": {
-      "has_bone": "2026-11-26 15:16:15 +0700"
-    },
-    "done": true
-  },
   "block_factorys_bosses:recipes/building_blocks/coin_pile": {
     "criteria": {
       "has_item": "2026-11-26 14:44:54 +0700"
     },
     "done": true
   },
-  "farmersdelight:recipes/cooking/bone_broth": {
-    "criteria": {
-      "has_bone": "2026-11-26 15:16:15 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/polished_blackstone_from_blackstone_stonecutting": {
-    "criteria": {
-      "has_blackstone": "2026-11-26 15:16:31 +0700"
-    },
-    "done": true
-  },
   "farmersdelight:recipes/building_blocks/organic_compost_from_rotten_flesh": {
     "criteria": {
       "has_rotten_flesh": "2026-11-26 14:44:54 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/blackstone_wall_from_blackstone_stonecutting": {
-    "criteria": {
-      "has_blackstone": "2026-11-26 15:16:31 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/blackstone_stairs_from_blackstone_stonecutting": {
-    "criteria": {
-      "has_blackstone": "2026-11-26 15:16:31 +0700"
     },
     "done": true
   },
@@ -2100,6 +2028,102 @@
   "minecraft:recipes/brewing/golden_carrot": {
     "criteria": {
       "has_gold_nugget": "2026-11-26 14:44:54 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/drying/monster_jerky": {
+    "criteria": {
+      "has_meat": "2026-11-26 14:44:54 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_ingot_from_nuggets": {
+    "criteria": {
+      "has_gold_nugget": "2026-11-26 14:44:54 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/drying/drying/sapling_to_dead_bush": {
+    "criteria": {
+      "has_sapling": "2026-11-26 15:16:14 +0700"
+    },
+    "done": true
+  },
+  "naturescompass:natures_compass_sapling": {
+    "criteria": {
+      "has_sapling": "2026-11-26 15:16:14 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bone_meal": {
+    "criteria": {
+      "has_bone": "2026-11-26 15:16:15 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/bone_broth": {
+    "criteria": {
+      "has_bone": "2026-11-26 15:16:15 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/bone_blocks/bone_pike": {
+    "criteria": {
+      "has_item": "2026-11-26 15:16:15 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/bone_blocks/bone_fence": {
+    "criteria": {
+      "has_item": "2026-11-26 15:16:15 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/dispenser": {
+    "criteria": {
+      "has_bow": "2026-11-26 15:16:19 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/blackstone_wall": {
+    "criteria": {
+      "has_blackstone": "2026-11-26 15:16:31 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_brick_stairs_from_blackstone_stonecutting": {
+    "criteria": {
+      "has_blackstone": "2026-11-26 15:16:31 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/blackstone_stairs": {
+    "criteria": {
+      "has_blackstone": "2026-11-26 15:16:31 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_brick_slab_from_blackstone_stonecutting": {
+    "criteria": {
+      "has_blackstone": "2026-11-26 15:16:31 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_from_blackstone_stonecutting": {
+    "criteria": {
+      "has_blackstone": "2026-11-26 15:16:31 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/blackstone_wall_from_blackstone_stonecutting": {
+    "criteria": {
+      "has_blackstone": "2026-11-26 15:16:31 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/blackstone_stairs_from_blackstone_stonecutting": {
+    "criteria": {
+      "has_blackstone": "2026-11-26 15:16:31 +0700"
     },
     "done": true
   },
@@ -2133,45 +2157,15 @@
     },
     "done": true
   },
-  "twilightforest:recipes/drying/monster_jerky": {
-    "criteria": {
-      "has_meat": "2026-11-26 14:44:54 +0700"
-    },
-    "done": true
-  },
-  "netherexp:recipes/bone_blocks/bone_pike": {
-    "criteria": {
-      "has_item": "2026-11-26 15:16:15 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/polished_blackstone_brick_wall_from_blackstone_stonecutting": {
     "criteria": {
       "has_blackstone": "2026-11-26 15:16:31 +0700"
     },
     "done": true
   },
-  "minecraft:recipes/misc/gold_ingot_from_nuggets": {
-    "criteria": {
-      "has_gold_nugget": "2026-11-26 14:44:54 +0700"
-    },
-    "done": true
-  },
   "handcrafted:recipes/misc/blackstone_corner_trim": {
     "criteria": {
       "has_blackstone_corner_trim": "2026-11-26 15:16:31 +0700"
-    },
-    "done": true
-  },
-  "netherexp:recipes/bone_blocks/bone_fence": {
-    "criteria": {
-      "has_item": "2026-11-26 15:16:15 +0700"
-    },
-    "done": true
-  },
-  "regions_unexplored:light_snack": {
-    "criteria": {
-      "earlight": "2026-11-26 14:32:57 +0700"
     },
     "done": true
   },
@@ -2202,6 +2196,12 @@
   "tensura:recipes/building_blocks/blackstone_warp_pad": {
     "criteria": {
       "has_blackstone": "2026-11-26 15:16:31 +0700"
+    },
+    "done": true
+  },
+  "eternalnether:recipes/building_blocks/blackstone": {
+    "criteria": {
+      "has_cobbled_blackstone": "2026-11-26 15:16:32 +0700"
     },
     "done": true
   },
