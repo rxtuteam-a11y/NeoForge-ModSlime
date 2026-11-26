@@ -10736,5 +10736,17 @@
     },
     "done": true
   },
+  "yungscavebiomes:recipes/building_blocks/brittle_red_sandstone": {
+    "criteria": {
+      "has_sand": "2026-11-26 20:47:36 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/red_sandstone": {
+    "criteria": {
+      "has_sand": "2026-11-26 20:47:36 +0700"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }
