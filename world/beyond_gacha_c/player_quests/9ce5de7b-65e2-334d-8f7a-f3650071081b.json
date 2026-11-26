@@ -2,7 +2,7 @@
   "mxp": 0,
   "completed": [
     "trbeyond:daily_day_2_slime_1",
-    "trbeyond:boss_elemental_colossus",
+    "trbeyond:daily_day_3_cattledeer_2",
     "trbeyond:daily_day_1_cattledeer_1",
     "trbeyond:boss_rimuru_ogre_fight",
     "trbeyond:weekly_day_1_akash_1",
@@ -17,7 +17,7 @@
     {
       "questId": "trbeyond:repeatable_skill_shogo_taguchi",
       "progress": {
-        "kill_shogo_taguchi": 4
+        "kill_shogo_taguchi": 5
       }
     },
     {
@@ -38,7 +38,9 @@
     },
     {
       "questId": "trbeyond:repeatable_skill_folgen",
-      "progress": {}
+      "progress": {
+        "kill_folgen": 1
+      }
     },
     {
       "questId": "trbeyond:daily_day_3_one_eyed_owl_1",
@@ -47,7 +49,7 @@
     {
       "questId": "trbeyond:daily_day_3_cattledeer_2",
       "progress": {
-        "kill_cattledeer_3_2": 3
+        "kill_cattledeer_3_2": 7
       }
     },
     {
@@ -152,9 +154,7 @@
     },
     {
       "questId": "trbeyond:boss_elemental_colossus",
-      "progress": {
-        "kill_elemental_colossus": 1
-      }
+      "progress": {}
     },
     {
       "questId": "trbeyond:weekly_day_1_arch_daemon_2",

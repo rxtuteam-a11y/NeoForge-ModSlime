@@ -1462,6 +1462,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2026-11-26 22:42:44 +0700"
+    },
+    "done": true
+  },
   "minecraft:adventure/sleep_in_bed": {
     "criteria": {
       "slept_in_bed": "2026-11-26 22:33:13 +0700"
@@ -1693,6 +1699,12 @@
   "tensura:recipes/tools/silver_shovel": {
     "criteria": {
       "has_diamond": "2026-11-26 22:32:42 +0700"
+    },
+    "done": true
+  },
+  "tensura:booked_on_magic": {
+    "criteria": {
+      "grimoires": "2026-11-26 22:42:44 +0700"
     },
     "done": true
   },
