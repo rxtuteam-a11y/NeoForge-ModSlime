@@ -10469,6 +10469,18 @@
     },
     "done": true
   },
+  "farm_and_charm:recipes/pitchfork": {
+    "criteria": {
+      "has_iron_nugget": "2026-11-26 11:06:45 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/flower_box": {
+    "criteria": {
+      "has_podzol": "2026-11-26 11:08:42 +0700"
+    },
+    "done": true
+  },
   "twilightforest:recipes/decorations/wood/oak_drying_rack": {
     "criteria": {
       "has_item": "2026-11-26 09:49:17 +0700"
