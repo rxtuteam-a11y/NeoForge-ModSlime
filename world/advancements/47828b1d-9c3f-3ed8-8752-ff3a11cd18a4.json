@@ -9028,6 +9028,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/iron_ingot_from_iron_block": {
+    "criteria": {
+      "has_iron_block": "2026-11-26 10:01:26 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/gray_banner": {
     "criteria": {
       "has_gray_wool": "2026-11-26 09:36:07 +0700"
@@ -9094,6 +9100,12 @@
     },
     "done": true
   },
+  "sophisticatedbackpacks:recipes/misc/stack_upgrade_tier_2_to_tier_3_conversion": {
+    "criteria": {
+      "has_stack_upgrade_tier_2": "2026-11-26 10:01:56 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/cut_copper_slab_from_copper_block_stonecutting": {
     "criteria": {
       "has_copper_block": "2026-11-26 10:00:26 +0700"
@@ -9103,6 +9115,12 @@
   "sophisticatedbackpacks:recipes/misc/tank_upgrade": {
     "criteria": {
       "has_upgrade_base": "2026-11-26 09:59:43 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/anvil": {
+    "criteria": {
+      "has_iron_block": "2026-11-26 10:01:26 +0700"
     },
     "done": true
   },
@@ -9129,6 +9147,24 @@
   "minecraft:recipes/building_blocks/chiseled_copper_from_copper_block_stonecutting": {
     "criteria": {
       "has_copper_block": "2026-11-26 10:00:26 +0700"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/misc/netherite_backpack": {
+    "criteria": {
+      "has_diamond_backpack": "2026-11-26 10:06:45 +0700"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/misc/stack_upgrade_tier_3": {
+    "criteria": {
+      "has_stack_upgrade_tier_2": "2026-11-26 10:01:56 +0700"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/misc/stack_upgrade_tier_4": {
+    "criteria": {
+      "has_stack_upgrade_tier_3": "2026-11-26 10:02:04 +0700"
     },
     "done": true
   },
@@ -9159,6 +9195,12 @@
   "sophisticatedbackpacks:recipes/misc/refill_upgrade": {
     "criteria": {
       "has_upgrade_base": "2026-11-26 09:59:43 +0700"
+    },
+    "done": true
+  },
+  "constructionwand:recipes/misc/core_destruction": {
+    "criteria": {
+      "has_item": "2026-11-26 10:02:01 +0700"
     },
     "done": true
   },
@@ -9216,9 +9258,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/diamond": {
+    "criteria": {
+      "has_diamond_block": "2026-11-26 10:02:01 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/gray_wool_slab": {
     "criteria": {
       "has_gray_wool": "2026-11-26 09:36:07 +0700"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/misc/stack_upgrade_tier_3_to_tier_4_conversion": {
+    "criteria": {
+      "has_stack_upgrade_tier_3": "2026-11-26 10:02:04 +0700"
     },
     "done": true
   },
