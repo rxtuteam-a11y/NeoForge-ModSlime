@@ -45,6 +45,7 @@
     "criteria": {
       "willow_forest": "2026-11-26 21:25:57 +0700",
       "cold_river": "2026-11-26 21:26:41 +0700",
+      "rocky_reef": "2026-11-26 22:06:55 +0700",
       "shrubland": "2026-11-26 21:23:48 +0700",
       "grassy_beach": "2026-11-26 21:26:37 +0700",
       "spires": "2026-11-26 21:34:36 +0700",
@@ -56,7 +57,9 @@
       "hyacinth_deeps": "2026-11-26 21:12:23 +0700",
       "icy_heights": "2026-11-26 21:53:10 +0700",
       "boreal_taiga": "2026-11-26 21:26:19 +0700",
-      "marsh": "2026-11-26 21:25:53 +0700"
+      "saguaro_desert": "2026-11-26 22:06:52 +0700",
+      "marsh": "2026-11-26 21:25:53 +0700",
+      "outback": "2026-11-26 22:08:54 +0700"
     },
     "done": false
   },
@@ -64,6 +67,7 @@
     "criteria": {
       "willow_forest": "2026-11-26 21:25:57 +0700",
       "cold_river": "2026-11-26 21:26:41 +0700",
+      "rocky_reef": "2026-11-26 22:06:55 +0700",
       "shrubland": "2026-11-26 21:23:48 +0700",
       "grassy_beach": "2026-11-26 21:26:37 +0700",
       "spires": "2026-11-26 21:34:36 +0700",
@@ -75,7 +79,9 @@
       "hyacinth_deeps": "2026-11-26 21:12:23 +0700",
       "icy_heights": "2026-11-26 21:53:10 +0700",
       "boreal_taiga": "2026-11-26 21:26:19 +0700",
-      "marsh": "2026-11-26 21:25:53 +0700"
+      "saguaro_desert": "2026-11-26 22:06:52 +0700",
+      "marsh": "2026-11-26 21:25:53 +0700",
+      "outback": "2026-11-26 22:08:54 +0700"
     },
     "done": false
   },
@@ -440,12 +446,15 @@
       "minecraft:snowy_taiga": "2026-11-26 21:25:36 +0700",
       "minecraft:deep_cold_ocean": "2026-11-26 21:39:04 +0700",
       "minecraft:frozen_ocean": "2026-11-26 21:11:38 +0700",
+      "minecraft:desert": "2026-11-26 22:05:16 +0700",
       "minecraft:frozen_river": "2026-11-26 21:13:38 +0700",
       "minecraft:deep_frozen_ocean": "2026-11-26 21:12:12 +0700",
+      "minecraft:jungle": "2026-11-26 22:09:07 +0700",
       "minecraft:swamp": "2026-11-26 21:25:52 +0700",
       "minecraft:windswept_gravelly_hills": "2026-11-26 21:26:47 +0700",
       "minecraft:snowy_beach": "2026-11-26 21:14:05 +0700",
-      "minecraft:plains": "2026-11-26 21:20:59 +0700"
+      "minecraft:plains": "2026-11-26 21:20:59 +0700",
+      "minecraft:warm_ocean": "2026-11-26 22:06:49 +0700"
     },
     "done": false
   },
@@ -571,6 +580,7 @@
   },
   "tensura:otherworldly_biomes": {
     "criteria": {
+      "desert_of_death": "2026-11-26 22:07:59 +0700",
       "ancient_forest": "2026-11-26 21:26:29 +0700",
       "miasmic_plains": "2026-11-26 21:26:32 +0700"
     },
@@ -1350,6 +1360,18 @@
     },
     "done": true
   },
+  "lootr:social": {
+    "criteria": {
+      "opened_chest": "2026-11-26 21:55:26 +0700"
+    },
+    "done": false
+  },
+  "lootr:1chest": {
+    "criteria": {
+      "opened_chest": "2026-11-26 21:55:26 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/medium_quality_magic_crystal_stairs_from_medium_quality_magic_crystal_block_stonecutting": {
     "criteria": {
       "has_medium_quality_magic_crystal_block": "2026-11-26 21:55:36 +0700"
@@ -1380,18 +1402,6 @@
     },
     "done": true
   },
-  "lootr:social": {
-    "criteria": {
-      "opened_chest": "2026-11-26 21:55:26 +0700"
-    },
-    "done": false
-  },
-  "lootr:1chest": {
-    "criteria": {
-      "opened_chest": "2026-11-26 21:55:26 +0700"
-    },
-    "done": true
-  },
   "tensura:recipes/building_blocks/medium_quality_magic_crystal_bricks": {
     "criteria": {
       "has_medium_quality_magic_crystal_block": "2026-11-26 21:55:36 +0700"
@@ -1401,6 +1411,12 @@
   "minecraft:recipes/building_blocks/medium_quality_magic_crystal_bricks_from_medium_quality_magic_crystal_block_stonecutting": {
     "criteria": {
       "has_medium_quality_magic_crystal_block": "2026-11-26 21:55:36 +0700"
+    },
+    "done": true
+  },
+  "explorerscompass:repair_explorers_compass": {
+    "criteria": {
+      "has_explorers_compass": "2026-11-26 22:06:27 +0700"
     },
     "done": true
   },
