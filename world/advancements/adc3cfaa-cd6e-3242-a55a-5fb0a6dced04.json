@@ -1610,27 +1610,27 @@
     },
     "done": true
   },
-  "waystones:recipes/decorations/warp_scroll": {
+  "tensura:elementalist": {
     "criteria": {
-      "has_ender_pearl": "2026-11-25 23:59:37 +0700"
+      "spirit": "2026-11-25 23:29:53 +0700"
     },
     "done": true
   },
-  "tensura:recipes/building_blocks/medium_quality_magic_crystal_blockfrom_medium_quality_magic_crystal": {
+  "minecraft:story/enter_the_nether": {
     "criteria": {
-      "has_medium_quality_magic_crystal": "2026-11-25 23:34:01 +0700"
+      "entered_nether": "2026-11-25 23:31:32 +0700"
     },
     "done": true
   },
-  "constructionwand:recipes/tools/stone_wand": {
+  "minecraft:nether/root": {
     "criteria": {
-      "has_item": "2026-11-25 23:35:13 +0700"
+      "entered_nether": "2026-11-25 23:31:32 +0700"
     },
     "done": true
   },
-  "minecraft:nether/obtain_blaze_rod": {
+  "eternalnether:root": {
     "criteria": {
-      "blaze_rod": "2026-11-25 23:38:13 +0700"
+      "entered_nether": "2026-11-25 23:31:32 +0700"
     },
     "done": true
   },
@@ -1641,27 +1641,15 @@
     },
     "done": false
   },
-  "tensura:master_skill": {
+  "minecraft:nether/find_fortress": {
     "criteria": {
-      "skill": "2026-11-25 23:34:35 +0700"
+      "in_fortress": "2026-11-25 23:31:41 +0700"
     },
     "done": true
   },
-  "sophisticatedcore:recipes/misc/ender_linker": {
+  "tensura:recipes/building_blocks/medium_quality_magic_crystal_blockfrom_medium_quality_magic_crystal": {
     "criteria": {
-      "has_ender_pearl": "2026-11-25 23:59:37 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/red_nether_brick_slab_from_red_nether_bricks_stonecutting": {
-    "criteria": {
-      "has_red_nether_bricks": "2026-11-25 23:36:55 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/campfire": {
-    "criteria": {
-      "has_coal": "2026-11-25 23:34:02 +0700"
+      "has_medium_quality_magic_crystal": "2026-11-25 23:34:01 +0700"
     },
     "done": true
   },
@@ -1671,9 +1659,33 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/chiseled_nether_bricks_from_nether_bricks_stonecutting": {
+  "minecraft:recipes/misc/bottles_of_medium_crystal": {
     "criteria": {
-      "has_nether_bricks": "2026-11-25 23:37:14 +0700"
+      "has_medium_crystal": "2026-11-25 23:34:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/campfire": {
+    "criteria": {
+      "has_coal": "2026-11-25 23:34:02 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/coal_block": {
+    "criteria": {
+      "has_coal": "2026-11-25 23:34:02 +0700"
+    },
+    "done": true
+  },
+  "tensura:master_skill": {
+    "criteria": {
+      "skill": "2026-11-25 23:34:35 +0700"
+    },
+    "done": true
+  },
+  "constructionwand:recipes/tools/stone_wand": {
+    "criteria": {
+      "has_item": "2026-11-25 23:35:13 +0700"
     },
     "done": true
   },
@@ -1695,21 +1707,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/red_nether_brick_slab": {
-    "criteria": {
-      "has_red_nether_bricks": "2026-11-25 23:36:55 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/cobblestone_stairs": {
     "criteria": {
       "has_cobblestone": "2026-11-25 23:35:13 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/building_blocks/nether_brick_warp_pad": {
-    "criteria": {
-      "has_nether_bricks": "2026-11-25 23:37:14 +0700"
     },
     "done": true
   },
@@ -1737,66 +1737,6 @@
     },
     "done": true
   },
-  "minecraft:story/enter_the_nether": {
-    "criteria": {
-      "entered_nether": "2026-11-25 23:31:32 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/nether_brick_stairs_from_nether_bricks_stonecutting": {
-    "criteria": {
-      "has_nether_bricks": "2026-11-25 23:37:14 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/nether_brick_fence": {
-    "criteria": {
-      "has_nether_bricks": "2026-11-25 23:37:14 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/building_blocks/red_nether_brick_warp_pad": {
-    "criteria": {
-      "has_red_nether_bricks": "2026-11-25 23:36:55 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/cracked_nether_bricks": {
-    "criteria": {
-      "has_nether_bricks": "2026-11-25 23:37:14 +0700"
-    },
-    "done": true
-  },
-  "toms_storage:unlock_dia_pearl": {
-    "criteria": {
-      "inv_changed-ender_pearl": "2026-11-25 23:59:37 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/nether_brick_slab_from_nether_bricks_stonecutting": {
-    "criteria": {
-      "has_nether_bricks": "2026-11-25 23:37:14 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/brewing/brewing_stand": {
-    "criteria": {
-      "has_blaze_rod": "2026-11-25 23:38:13 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/red_nether_brick_wall": {
-    "criteria": {
-      "has_red_nether_bricks": "2026-11-25 23:36:55 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/misc/warp_core": {
-    "criteria": {
-      "has_ender_pearl": "2026-11-25 23:59:37 +0700"
-    },
-    "done": true
-  },
   "minecraft:story/mine_stone": {
     "criteria": {
       "get_stone": "2026-11-25 23:35:13 +0700"
@@ -1821,39 +1761,123 @@
     },
     "done": true
   },
-  "tensura:elementalist": {
-    "criteria": {
-      "spirit": "2026-11-25 23:29:53 +0700"
-    },
-    "done": true
-  },
-  "waystones:recipes/decorations/warp_dust": {
-    "criteria": {
-      "has_ender_pearl": "2026-11-25 23:59:37 +0700"
-    },
-    "done": true
-  },
-  "netherexp:recipes/nether_bricks/nether_brick_pillar": {
-    "criteria": {
-      "has_item": "2026-11-25 23:37:14 +0700"
-    },
-    "done": true
-  },
-  "tensura:start_smithing": {
-    "criteria": {
-      "schematic": "2026-11-25 23:41:11 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/tools/stone_pickaxe": {
     "criteria": {
       "has_cobblestone": "2026-11-25 23:35:13 +0700"
     },
     "done": true
   },
+  "minecraft:recipes/tools/stone_shovel": {
+    "criteria": {
+      "has_cobblestone": "2026-11-25 23:35:13 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobblestone_stairs_from_cobblestone_stonecutting": {
+    "criteria": {
+      "has_cobblestone": "2026-11-25 23:35:13 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/stone_hoe": {
+    "criteria": {
+      "has_cobblestone": "2026-11-25 23:35:13 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/red_nether_brick_slab_from_red_nether_bricks_stonecutting": {
+    "criteria": {
+      "has_red_nether_bricks": "2026-11-25 23:36:55 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/red_nether_brick_slab": {
+    "criteria": {
+      "has_red_nether_bricks": "2026-11-25 23:36:55 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/red_nether_brick_warp_pad": {
+    "criteria": {
+      "has_red_nether_bricks": "2026-11-25 23:36:55 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/red_nether_brick_wall": {
+    "criteria": {
+      "has_red_nether_bricks": "2026-11-25 23:36:55 +0700"
+    },
+    "done": true
+  },
   "netherexp:recipes/nether_bricks/red_mixed_nether_bricks": {
     "criteria": {
       "has_item": "2026-11-25 23:36:55 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/red_nether_brick_stairs_from_red_nether_bricks_stonecutting": {
+    "criteria": {
+      "has_red_nether_bricks": "2026-11-25 23:36:55 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/red_nether_brick_stairs": {
+    "criteria": {
+      "has_red_nether_bricks": "2026-11-25 23:36:55 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/red_nether_bricks_magic_engine": {
+    "criteria": {
+      "has_red_nether_bricks": "2026-11-25 23:36:55 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/red_nether_brick_wall_from_red_nether_bricks_stonecutting": {
+    "criteria": {
+      "has_red_nether_bricks": "2026-11-25 23:36:55 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_nether_bricks_from_nether_bricks_stonecutting": {
+    "criteria": {
+      "has_nether_bricks": "2026-11-25 23:37:14 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/nether_brick_warp_pad": {
+    "criteria": {
+      "has_nether_bricks": "2026-11-25 23:37:14 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/nether_brick_stairs_from_nether_bricks_stonecutting": {
+    "criteria": {
+      "has_nether_bricks": "2026-11-25 23:37:14 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/nether_brick_fence": {
+    "criteria": {
+      "has_nether_bricks": "2026-11-25 23:37:14 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cracked_nether_bricks": {
+    "criteria": {
+      "has_nether_bricks": "2026-11-25 23:37:14 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/nether_brick_slab_from_nether_bricks_stonecutting": {
+    "criteria": {
+      "has_nether_bricks": "2026-11-25 23:37:14 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/nether_bricks/nether_brick_pillar": {
+    "criteria": {
+      "has_item": "2026-11-25 23:37:14 +0700"
     },
     "done": true
   },
@@ -1869,39 +1893,9 @@
     },
     "done": true
   },
-  "waystones:recipes/decorations/portal_scroll": {
-    "criteria": {
-      "has_ender_pearl": "2026-11-25 23:59:37 +0700"
-    },
-    "done": true
-  },
-  "minecraft:nether/find_fortress": {
-    "criteria": {
-      "in_fortress": "2026-11-25 23:31:41 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/tools/stone_shovel": {
-    "criteria": {
-      "has_cobblestone": "2026-11-25 23:35:13 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/bottles_of_medium_crystal": {
-    "criteria": {
-      "has_medium_crystal": "2026-11-25 23:34:01 +0700"
-    },
-    "done": true
-  },
   "netherexp:recipes/nether_bricks/blue/nether_bricks": {
     "criteria": {
       "has_item": "2026-11-25 23:37:14 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/red_nether_brick_stairs_from_red_nether_bricks_stonecutting": {
-    "criteria": {
-      "has_red_nether_bricks": "2026-11-25 23:36:55 +0700"
     },
     "done": true
   },
@@ -1923,45 +1917,21 @@
     },
     "done": true
   },
-  "waystones:recipes/decorations/warp_stone": {
-    "criteria": {
-      "has_ender_pearl": "2026-11-25 23:59:37 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/red_nether_brick_stairs": {
-    "criteria": {
-      "has_red_nether_bricks": "2026-11-25 23:36:55 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/coal_block": {
-    "criteria": {
-      "has_coal": "2026-11-25 23:34:02 +0700"
-    },
-    "done": true
-  },
-  "tensura:recipes/building_blocks/red_nether_bricks_magic_engine": {
-    "criteria": {
-      "has_red_nether_bricks": "2026-11-25 23:36:55 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/red_nether_brick_wall_from_red_nether_bricks_stonecutting": {
-    "criteria": {
-      "has_red_nether_bricks": "2026-11-25 23:36:55 +0700"
-    },
-    "done": true
-  },
-  "minecraft:nether/root": {
-    "criteria": {
-      "entered_nether": "2026-11-25 23:31:32 +0700"
-    },
-    "done": true
-  },
   "tensura:recipes/building_blocks/nether_bricks_magic_engine": {
     "criteria": {
       "has_nether_bricks": "2026-11-25 23:37:14 +0700"
+    },
+    "done": true
+  },
+  "minecraft:nether/obtain_blaze_rod": {
+    "criteria": {
+      "blaze_rod": "2026-11-25 23:38:13 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/brewing_stand": {
+    "criteria": {
+      "has_blaze_rod": "2026-11-25 23:38:13 +0700"
     },
     "done": true
   },
@@ -1971,21 +1941,51 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/cobblestone_stairs_from_cobblestone_stonecutting": {
+  "tensura:start_smithing": {
     "criteria": {
-      "has_cobblestone": "2026-11-25 23:35:13 +0700"
+      "schematic": "2026-11-25 23:41:11 +0700"
     },
     "done": true
   },
-  "minecraft:recipes/tools/stone_hoe": {
+  "waystones:recipes/decorations/warp_scroll": {
     "criteria": {
-      "has_cobblestone": "2026-11-25 23:35:13 +0700"
+      "has_ender_pearl": "2026-11-25 23:59:37 +0700"
     },
     "done": true
   },
-  "eternalnether:root": {
+  "sophisticatedcore:recipes/misc/ender_linker": {
     "criteria": {
-      "entered_nether": "2026-11-25 23:31:32 +0700"
+      "has_ender_pearl": "2026-11-25 23:59:37 +0700"
+    },
+    "done": true
+  },
+  "toms_storage:unlock_dia_pearl": {
+    "criteria": {
+      "inv_changed-ender_pearl": "2026-11-25 23:59:37 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/warp_core": {
+    "criteria": {
+      "has_ender_pearl": "2026-11-25 23:59:37 +0700"
+    },
+    "done": true
+  },
+  "waystones:recipes/decorations/warp_dust": {
+    "criteria": {
+      "has_ender_pearl": "2026-11-25 23:59:37 +0700"
+    },
+    "done": true
+  },
+  "waystones:recipes/decorations/portal_scroll": {
+    "criteria": {
+      "has_ender_pearl": "2026-11-25 23:59:37 +0700"
+    },
+    "done": true
+  },
+  "waystones:recipes/decorations/warp_stone": {
+    "criteria": {
+      "has_ender_pearl": "2026-11-25 23:59:37 +0700"
     },
     "done": true
   },

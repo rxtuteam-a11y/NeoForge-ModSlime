@@ -4308,7 +4308,8 @@
   "minecraft:husbandry/balanced_diet": {
     "criteria": {
       "spider_eye": "2026-11-23 23:11:23 +0700",
-      "bread": "2026-11-24 14:51:15 +0700"
+      "bread": "2026-11-24 14:51:15 +0700",
+      "suspicious_stew": "2026-11-26 13:36:38 +0700"
     },
     "done": false
   },
@@ -10708,6 +10709,18 @@
   "minecraft:recipes/misc/white_dye_from_hipokute_flower": {
     "criteria": {
       "has_hipokute_flower": "2026-11-26 11:54:40 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/mixed_salad": {
+    "criteria": {
+      "has_bowl": "2026-11-26 13:36:38 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/nether_salad": {
+    "criteria": {
+      "has_bowl": "2026-11-26 13:36:38 +0700"
     },
     "done": true
   },
