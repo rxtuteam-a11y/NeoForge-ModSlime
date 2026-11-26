@@ -9614,6 +9614,18 @@
     },
     "done": true
   },
+  "kaleidoscope_cookery:recipes/food/stuffed_dough_food": {
+    "criteria": {
+      "has_dough": "2026-11-26 13:11:31 +0700"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/breed_an_animal": {
+    "criteria": {
+      "bred": "2026-11-26 13:12:16 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:recipes/cooking/hot_cocoa": {
     "criteria": {
       "has_any_ingredient": "2026-11-26 13:04:00 +0700"
@@ -9625,6 +9637,12 @@
       "has_any_ingredient": "2026-11-26 13:04:00 +0700"
     },
     "done": true
+  },
+  "minecraft:husbandry/bred_all_animals": {
+    "criteria": {
+      "minecraft:sheep": "2026-11-26 13:12:16 +0700"
+    },
+    "done": false
   },
   "farmersdelight:recipes/food/milk_bottle": {
     "criteria": {
