@@ -10487,6 +10487,12 @@
     },
     "done": true
   },
+  "cookingforblockheads:recipes/decorations/connector": {
+    "criteria": {
+      "has_terracotta": "2026-11-26 10:52:31 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/nether_bricks": {
     "criteria": {
       "has_nether_brick": "2026-11-26 10:26:10 +0700"
@@ -10526,6 +10532,12 @@
   "minecraft:recipes/building_blocks/blackstone_stairs_from_blackstone_stonecutting": {
     "criteria": {
       "has_blackstone": "2026-11-26 10:28:07 +0700"
+    },
+    "done": true
+  },
+  "cookingforblockheads:recipes/decorations/counter": {
+    "criteria": {
+      "has_terracotta": "2026-11-26 10:52:31 +0700"
     },
     "done": true
   },
@@ -10598,6 +10610,12 @@
   "minecraft:recipes/building_blocks/blackstone_slab_from_blackstone_stonecutting": {
     "criteria": {
       "has_blackstone": "2026-11-26 10:28:07 +0700"
+    },
+    "done": true
+  },
+  "cookingforblockheads:recipes/decorations/cabinet": {
+    "criteria": {
+      "has_terracotta": "2026-11-26 10:52:31 +0700"
     },
     "done": true
   },
