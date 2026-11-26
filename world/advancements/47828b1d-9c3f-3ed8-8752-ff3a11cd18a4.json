@@ -8937,33 +8937,9 @@
     },
     "done": true
   },
-  "vinery:main/juicy_success": {
-    "criteria": {
-      "have_any_juice": "2026-11-26 08:46:49 +0700"
-    },
-    "done": true
-  },
-  "minecraft:husbandry/obtain_netherite_hoe": {
-    "criteria": {
-      "netherite_hoe": "2026-11-26 08:50:21 +0700"
-    },
-    "done": true
-  },
   "tensura:hear_me_direwolves": {
     "criteria": {
       "direwolf": "2026-11-26 08:44:08 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/leaf_litter": {
-    "criteria": {
-      "has_leaves": "2026-11-26 08:51:33 +0700"
-    },
-    "done": true
-  },
-  "vinery:main/wild_harvest": {
-    "criteria": {
-      "any_seed": "2026-11-26 08:46:43 +0700"
     },
     "done": true
   },
@@ -8976,6 +8952,30 @@
   "minecraft:adventure/trade": {
     "criteria": {
       "traded": "2026-11-26 08:46:42 +0700"
+    },
+    "done": true
+  },
+  "vinery:main/wild_harvest": {
+    "criteria": {
+      "any_seed": "2026-11-26 08:46:43 +0700"
+    },
+    "done": true
+  },
+  "vinery:main/juicy_success": {
+    "criteria": {
+      "have_any_juice": "2026-11-26 08:46:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/obtain_netherite_hoe": {
+    "criteria": {
+      "netherite_hoe": "2026-11-26 08:50:21 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/leaf_litter": {
+    "criteria": {
+      "has_leaves": "2026-11-26 08:51:33 +0700"
     },
     "done": true
   },
