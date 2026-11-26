@@ -9800,6 +9800,12 @@
     },
     "done": true
   },
+  "friendsandfoes:recipes/combat/wildfire_crown": {
+    "criteria": {
+      "has_wildfire_crown_fragment": "2026-11-26 19:54:52 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:recipes/building_blocks/carrot_crate": {
     "criteria": {
       "has_carrot": "2026-11-26 19:12:39 +0700"
@@ -9827,6 +9833,18 @@
   "farmersdelight:recipes/cooking/vegetable_noodles": {
     "criteria": {
       "has_any_ingredient": "2026-11-26 19:12:39 +0700"
+    },
+    "done": true
+  },
+  "tensura_guild:false_alliance": {
+    "criteria": {
+      "killed_yuuki": "2026-11-26 19:58:55 +0700"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/misc/stack_upgrade_omega_tier": {
+    "criteria": {
+      "has_stack_upgrade_tier_4": "2026-11-26 20:02:15 +0700"
     },
     "done": true
   },
