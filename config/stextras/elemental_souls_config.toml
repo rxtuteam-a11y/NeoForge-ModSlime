@@ -1,0 +1,96 @@
+#If you want to use the element souls system
+enabled = true
+#Soul Grade level required before a player can awaken their first Elemental Soul.
+firstElementSoulGradeLevel = 1
+#Soul Grade level required before a player can awaken their second Elemental Soul.
+secondElementSoulGradeLevel = 3
+#Soul Grade level required before a player can awaken Battle Soul.
+battleElementSoulGradeLevel = 3
+#Elemental Soul mastery gained from a valid normal kill with the matching element.
+normalKillMastery = 1
+#Elemental Soul mastery gained from a valid boss kill with the matching element.
+bossKillMastery = 10
+#Let Battle Soul also boost physical hits that count as Battlewill damage.
+#When false, Battlewill projectiles still get the boost.
+battleSoulBoostsPhysicalMeleeHits = false
+#Battlewill damage per soul tier: 2.0 means double damage. Values below 1 do not lower damage.
+#Order: Lesser, Medium, High, Greater, Grand, Supreme.
+battleDamageMultipliers = [2.0, 3.0, 4.0, 5.0, 6.0, 8.0]
+#How Fire Soul boosts fire damage:
+#ADD_TO_BASE: Add a bonus based on damage before Domination (1.5 adds 150%).
+#MINIMUM_BASE_MULTIPLIER: Set a minimum based on damage before Domination; keep higher damage.
+#MULTIPLY_TOTAL: Multiply all damage, including the Domination bonus (2.0 doubles it).
+fireDamageBoostMode = "MINIMUM_BASE_MULTIPLIER"
+#Fire damage boost for each soul tier, using the mode above.
+#Order: Lesser, Medium, High, Greater, Grand, Supreme.
+#
+fireDamageBoostValues = [3.5, 4.0, 4.5, 5.0, 5.5, 6.0]
+#Extra fire damage added to physical melee hits: 0.25 adds 25%; 0 turns it off.
+#Order: Lesser, Medium, High, Greater, Grand, Supreme.
+firePhysicalHitBonusFractions = [0.25, 0.5, 0.5, 0.5, 0.5, 0.75]
+#How Water Soul boosts water damage:
+#ADD_TO_BASE: Add a bonus based on damage before Domination (1.5 adds 150%).
+#MINIMUM_BASE_MULTIPLIER: Set a minimum based on damage before Domination; keep higher damage.
+#MULTIPLY_TOTAL: Multiply all damage, including the Domination bonus (2.0 doubles it).
+waterDamageBoostMode = "ADD_TO_BASE"
+#Water damage boost for each soul tier, using the mode above.
+#Order: Lesser, Medium, High, Greater, Grand, Supreme.
+waterDamageBoostValues = [1.5, 2.0, 3.0, 4.0, 5.0, 6.0]
+#Extra water damage added to physical melee hits: 0.25 adds 25%; 0 turns it off.
+#Order: Lesser, Medium, High, Greater, Grand, Supreme.
+waterPhysicalHitBonusFractions = [0.25, 0.25, 0.5, 0.5, 0.75, 1.0]
+#How Wind Soul boosts wind damage:
+#ADD_TO_BASE: Add a bonus based on damage before Domination (1.5 adds 150%).
+#MINIMUM_BASE_MULTIPLIER: Set a minimum based on damage before Domination; keep higher damage.
+#MULTIPLY_TOTAL: Multiply all damage, including the Domination bonus (2.0 doubles it).
+windDamageBoostMode = "ADD_TO_BASE"
+#Wind damage boost for each soul tier, using the mode above.
+#Order: Lesser, Medium, High, Greater, Grand, Supreme.
+windDamageBoostValues = [1.5, 2.0, 3.0, 4.0, 5.0, 6.0]
+#Extra wind damage added to physical melee hits: 0.25 adds 25%; 0 turns it off.
+#Order: Lesser, Medium, High, Greater, Grand, Supreme.
+windPhysicalHitBonusFractions = [0.25, 0.25, 0.5, 0.5, 0.75, 1.0]
+#How Earth Soul boosts earth damage:
+#ADD_TO_BASE: Add a bonus based on damage before Domination (1.5 adds 150%).
+#MINIMUM_BASE_MULTIPLIER: Set a minimum based on damage before Domination; keep higher damage.
+#MULTIPLY_TOTAL: Multiply all damage, including the Domination bonus (2.0 doubles it).
+earthDamageBoostMode = "ADD_TO_BASE"
+#Earth damage boost for each soul tier, using the mode above.
+#Order: Lesser, Medium, High, Greater, Grand, Supreme.
+earthDamageBoostValues = [1.5, 2.0, 3.0, 4.0, 5.0, 6.0]
+#Extra earth damage added to physical melee hits: 0.25 adds 25%; 0 turns it off.
+#Order: Lesser, Medium, High, Greater, Grand, Supreme.
+earthPhysicalHitBonusFractions = [0.25, 0.25, 0.5, 0.5, 0.75, 1.0]
+#How Spatial Soul boosts spatial damage:
+#ADD_TO_BASE: Add a bonus based on damage before Domination (1.5 adds 150%).
+#MINIMUM_BASE_MULTIPLIER: Set a minimum based on damage before Domination; keep higher damage.
+#MULTIPLY_TOTAL: Multiply all damage, including the Domination bonus (2.0 doubles it).
+spatialDamageBoostMode = "ADD_TO_BASE"
+#Spatial damage boost for each soul tier, using the mode above.
+#Order: Lesser, Medium, High, Greater, Grand, Supreme.
+spatialDamageBoostValues = [1.5, 2.0, 3.0, 4.0, 5.0, 6.0]
+#Extra spatial damage added to physical melee hits: 0.25 adds 25%; 0 turns it off.
+#Order: Lesser, Medium, High, Greater, Grand, Supreme.
+spatialPhysicalHitBonusFractions = [0.25, 0.25, 0.5, 0.5, 0.75, 1.0]
+#How Light Soul boosts light damage:
+#ADD_TO_BASE: Add a bonus based on damage before Domination (1.5 adds 150%).
+#MINIMUM_BASE_MULTIPLIER: Set a minimum based on damage before Domination; keep higher damage.
+#MULTIPLY_TOTAL: Multiply all damage, including the Domination bonus (2.0 doubles it).
+lightDamageBoostMode = "ADD_TO_BASE"
+#Light damage boost for each soul tier, using the mode above.
+#Order: Lesser, Medium, High, Greater, Grand, Supreme.
+lightDamageBoostValues = [1.5, 2.0, 3.0, 4.0, 5.0, 6.0]
+#Extra light damage added to physical melee hits: 0.25 adds 25%; 0 turns it off.
+#Order: Lesser, Medium, High, Greater, Grand, Supreme.
+lightPhysicalHitBonusFractions = [0.25, 0.25, 0.5, 0.5, 0.75, 1.0]
+#How Dark Soul boosts dark damage:
+#ADD_TO_BASE: Add a bonus based on damage before Domination (1.5 adds 150%).
+#MINIMUM_BASE_MULTIPLIER: Set a minimum based on damage before Domination; keep higher damage.
+#MULTIPLY_TOTAL: Multiply all damage, including the Domination bonus (2.0 doubles it).
+darkDamageBoostMode = "ADD_TO_BASE"
+#Dark damage boost for each soul tier, using the mode above.
+#Order: Lesser, Medium, High, Greater, Grand, Supreme.
+darkDamageBoostValues = [1.5, 2.0, 3.0, 4.0, 5.0, 6.0]
+#Extra dark damage added to physical melee hits: 0.25 adds 25%; 0 turns it off.
+#Order: Lesser, Medium, High, Greater, Grand, Supreme.
+darkPhysicalHitBonusFractions = [0.25, 0.25, 0.5, 0.5, 0.75, 1.0]

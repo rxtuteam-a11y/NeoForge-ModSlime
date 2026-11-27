@@ -1,0 +1,56 @@
+name: Đóng gói mod cho người chơi
+
+# Gói MỘT file duy nhất (mod gốc đã chỉnh cho máy chơi + mod nấu ăn mới + toàn bộ config/kubejs
+# hiện tại của server) và đăng lên GitHub Release, để người chơi tải một link duy nhất.
+on:
+  workflow_dispatch:
+    inputs:
+      che_do:
+        description: "xem = chỉ xem cấu trúc file gốc trên Drive, dong_goi = đóng gói thật và đăng link"
+        required: true
+        default: "xem"
+        type: choice
+        options: [xem, dong_goi]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: package-client
+  cancel-in-progress: false
+
+env:
+  GDRIVE_MODS_ID: 1eKZVfJSo0c49VhZMonpZE5kURegY0V16
+  RELEASE_TAG: client-pack-latest
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Chạy đóng gói
+        run: |
+          chmod +x .github/scripts/package-client.sh
+          .github/scripts/package-client.sh "${{ inputs.che_do }}"
+
+      - name: Đăng lên GitHub Release
+        if: inputs.che_do == 'dong_goi'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          SIZE=$(du -h /tmp/ModSlime-Client-Full.zip | cut -f1)
+          NOW=$(date -u +'%Y-%m-%d %H:%M UTC')
+          NOTES="Gói mod + config cho người chơi ModSlime. Cập nhật: ${NOW}. Dung lượng: ${SIZE}."
+          if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
+            gh release upload "$RELEASE_TAG" /tmp/ModSlime-Client-Full.zip --clobber
+            gh release edit "$RELEASE_TAG" --notes "$NOTES"
+          else
+            gh release create "$RELEASE_TAG" /tmp/ModSlime-Client-Full.zip \
+              --title "ModSlime - Gói mod cho người chơi" --notes "$NOTES"
+          fi
+          echo "Link tải: https://github.com/${GITHUB_REPOSITORY}/releases/download/${RELEASE_TAG}/ModSlime-Client-Full.zip" >> "$GITHUB_STEP_SUMMARY"

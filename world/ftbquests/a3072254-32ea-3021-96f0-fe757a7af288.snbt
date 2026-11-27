@@ -1,0 +1,14 @@
+{
+	version: 1
+	uuid: "a307225432ea302196f0fe757a7af288"
+	name: "puculucu#a3072254"
+	lock: false
+	rewards_blocked: false
+	task_progress: { }
+	started: { }
+	completed: { }
+	repeatable: { }
+	completion_count: { }
+	claimed_rewards: { }
+	player_data: { }
+}

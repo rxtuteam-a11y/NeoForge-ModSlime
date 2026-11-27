@@ -1,0 +1,22 @@
+{
+  "name": "NeoForge ModSlime Cloud Server",
+  "image": "mcr.microsoft.com/devcontainers/java:1-21-bullseye",
+  "hostRequirements": {
+    "cpus": 4,
+    "memory": "16gb",
+    "storage": "32gb"
+  },
+  "forwardPorts": [8080, 25565],
+  "portsAttributes": {
+    "8080": {
+      "label": "ModSlime Web Control Panel",
+      "onAutoForward": "openBrowser",
+      "visibility": "public"
+    },
+    "25565": {
+      "label": "Minecraft Server Port"
+    }
+  },
+  "postCreateCommand": "chmod +x run.sh web-panel/start-panel.sh",
+  "postStartCommand": "nohup bash web-panel/start-panel.sh > /tmp/web-panel.log 2>&1 &"
+}

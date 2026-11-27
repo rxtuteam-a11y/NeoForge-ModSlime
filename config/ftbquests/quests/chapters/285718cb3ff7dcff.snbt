@@ -1,0 +1,639 @@
+{
+	autofocus_id: "728A316CA5A43DD5"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "285718cb3ff7dcff"
+	group: "3535525D866EB536"
+	icon: {
+		id: "tensura:stellar_gold_coin"
+	}
+	id: "285718CB3FF7DCFF"
+	images: [
+		{
+			click_action: "none:"
+			height: 5.0d
+			id: "5E751B7FD49C1D31"
+			image: "ablazeaqzlcz:textures/ftb/gazel_dwargo.png"
+			order: 1
+			rotation: 0.0d
+			width: 5.0d
+			x: -7.819387755102063d
+			y: -1.901020408163248d
+		}
+		{
+			height: 10.0d
+			id: "682CBB9E68CD7848"
+			image: "ablazeaqzlcz:textures/ftb/shop.png"
+			rotation: 0.0d
+			width: 10.0d
+			x: -3.80952380952381d
+			y: -3.297619047619051d
+		}
+		{
+			height: 0.5d
+			id: "2CEF561B745F577F"
+			image: "tensura:textures/skill/unique/gluttony.png"
+			order: 2
+			rotation: -25.0d
+			width: 0.5d
+			x: -5.48333333333332d
+			y: -3.788095238095231d
+		}
+		{
+			height: 0.5d
+			id: "4FBB5756322133DE"
+			image: "tensura:textures/skill/unique/reaper.png"
+			order: 2
+			rotation: 25.0d
+			width: 0.5d
+			x: -5.019047619047605d
+			y: -3.788095238095231d
+		}
+		{
+			height: 0.5d
+			id: "362D798ADC1E97DE"
+			image: "tensura:item/silver_coin"
+			rotation: 15.0d
+			width: 0.5d
+			x: -5.009863945578218d
+			y: -3.557482993197276d
+		}
+		{
+			height: 0.5d
+			id: "06EB211DBB6F93B3"
+			image: "tensura:item/gold_coin"
+			order: 3
+			rotation: -15.0d
+			width: 0.5d
+			x: -5.545578231292517d
+			y: -3.55748299319729d
+		}
+		{
+			height: 10.0d
+			id: "0D4570211CA29EEF"
+			image: "ablazeaqzlcz:textures/ftb/shop.png"
+			rotation: 0.0d
+			width: 10.0d
+			x: 4.778571428571432d
+			y: -3.2897959183673464d
+		}
+	]
+	order_index: 8
+	quest_links: [ ]
+	quests: [
+		{
+			can_repeat: true
+			icon: {
+				components: {
+					"ftbquests:icon": "tensura_skill_books:item/logo"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "3DE59F19B491EDC7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1C0025C6065F9263"
+				table_id: 5836709222417088324L
+				type: "choice"
+			}]
+			shape: "none"
+			tasks: [{
+				consume_items: true
+				count: 300L
+				id: "60C43FE4585A4EFC"
+				item: { count: 1, id: "tensura:gold_coin" }
+				type: "item"
+			}]
+			x: -6.25714285714286d
+			y: -3.7642857142857125d
+		}
+		{
+			can_repeat: true
+			icon: {
+				components: {
+					"ftbquests:icon": "tensura:item/gold_coin"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "313C7B20500ED01E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "139415A4898DCA5F"
+				table_id: 3195869884087400432L
+				type: "random"
+			}]
+			shape: "none"
+			tasks: [{
+				consume_items: true
+				icon: {
+					components: {
+						"ftbquests:icon": "tensura:item/gold_coin"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "18F2335BA60373B9"
+				items: [ ]
+				match_components: "fuzzy"
+				reward_table: "5100281D136ABF44"
+				type: "tensura_tno:task_table_item"
+			}]
+			x: -5.257142857142853d
+			y: -3.6571428571428513d
+		}
+		{
+			can_repeat: true
+			id: "6477051F3EB3AC02"
+			rewards: [{
+				id: "2BE92EA4EB20BBF9"
+				item: {
+					count: 1
+					id: "tensura:gold_coin"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				consume_items: true
+				id: "312B4D14FAA854DA"
+				item: { count: 1, id: "tensura:high_arcane_potion" }
+				type: "item"
+			}]
+			x: -3.2234693877550455d
+			y: -3.7183673469387912d
+		}
+		{
+			id: "52BB3788E78BDEC5"
+			rewards: [{
+				id: "45967459D6E3F78A"
+				item: {
+					count: 1
+					id: "tensura:gold_coin"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				consume_items: true
+				id: "4EEA5C886A4210B2"
+				item: { count: 1, id: "tensura:battlewill_manual" }
+				type: "item"
+			}]
+			x: -4.243877551020361d
+			y: -3.7387755102040927d
+		}
+		{
+			can_repeat: true
+			id: "665624CD691CC829"
+			rewards: [{
+				count: 8
+				id: "5DED0F011EE9C01F"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "5CB1E0A054786995"
+				item: { count: 1, id: "tensura:monster_leather_d" }
+				type: "item"
+			}]
+			x: -6.389795918367341d
+			y: -2.8000000000000043d
+		}
+		{
+			can_repeat: true
+			id: "2534A0115BA9C0B0"
+			rewards: [{
+				count: 16
+				id: "5B079C3AB9D5B193"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "482E38E61A4C4096"
+				item: { count: 1, id: "tensura:monster_leather_c" }
+				type: "item"
+			}]
+			x: -5.2846938775509855d
+			y: -2.8000000000000043d
+		}
+		{
+			can_repeat: true
+			icon: {
+				id: "tensura:monster_leather_b"
+			}
+			id: "5441924B55D01DC6"
+			rewards: [{
+				count: 32
+				id: "12940494AF16E3E6"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "3A729EF2893FFA60"
+				item: { count: 1, id: "tensura:monster_leather_b" }
+				type: "item"
+			}]
+			x: -4.284693877550993d
+			y: -2.820408163265313d
+		}
+		{
+			can_repeat: true
+			icon: {
+				id: "tensura:monster_leather_a"
+			}
+			id: "728A316CA5A43DD5"
+			rewards: [{
+				count: 82
+				id: "23C6CBD9F99C2B14"
+				item: {
+					count: 1
+					id: "tensura:bronze_coin"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "6C924CC2E8FFE35F"
+				item: { count: 1, id: "tensura:monster_leather_a" }
+				type: "item"
+			}]
+			x: -3.264285714285677d
+			y: -2.820408163265313d
+		}
+		{
+			can_repeat: true
+			icon: {
+				id: "tensura:monster_leather_special_a"
+			}
+			id: "700D630CD7A52B1D"
+			rewards: [{
+				count: 4
+				id: "2A4A856D46542D22"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				consume_items: true
+				count: 8L
+				id: "2818B5EFA00C8E69"
+				item: { count: 1, id: "tensura:monster_leather_special_a" }
+				type: "item"
+			}]
+			x: -2.2472789115645853d
+			y: -2.8000000000000043d
+		}
+		{
+			can_repeat: true
+			id: "69C9B106737659A5"
+			rewards: [{
+				count: 10
+				id: "3A93BD8DA1739D0E"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				consume_items: true
+				id: "2FBDE1D79F1F8AFF"
+				item: { count: 1, id: "tennogamenolife:star_essence" }
+				type: "item"
+			}]
+			x: 2.1608843537415083d
+			y: -1.82585034013605d
+		}
+		{
+			can_repeat: true
+			id: "17F034E84C497FF7"
+			rewards: [{
+				count: 10
+				id: "432AE45DFCC5AC5D"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				consume_items: true
+				id: "660F4FD3B460E04E"
+				item: { count: 1, id: "tensura:elemental_essence" }
+				type: "item"
+			}]
+			x: 3.2139455782313107d
+			y: -1.8217687074829882d
+		}
+		{
+			can_repeat: true
+			id: "366FBE5B6BC77FFD"
+			rewards: [{
+				count: 10
+				id: "15ABE995977AF33C"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				consume_items: true
+				id: "27657E94E5A54490"
+				item: { count: 1, id: "tensura:dragon_essence" }
+				type: "item"
+			}]
+			x: 4.311904761904778d
+			y: -1.8217687074829954d
+		}
+		{
+			can_repeat: true
+			id: "046679A496CA3C16"
+			rewards: [{
+				count: 10
+				id: "18A3EE50821CD932"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				consume_items: true
+				id: "605F3AAEEAC59EB9"
+				item: { count: 1, id: "mysticism:cryptid_essence" }
+				type: "item"
+			}]
+			x: 5.340476190476217d
+			y: -1.8217687074829882d
+		}
+		{
+			can_repeat: true
+			id: "3072ADF52B960186"
+			rewards: [{
+				count: 10
+				id: "0912629869FEF0CC"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				consume_items: true
+				id: "5A728A064A0FD179"
+				item: { count: 1, id: "mysticism:flame_essence" }
+				type: "item"
+			}]
+			x: 6.454761904761931d
+			y: -1.7931972789115562d
+		}
+		{
+			can_repeat: true
+			id: "09B467D9EEF54A23"
+			rewards: [{
+				count: 10
+				id: "20113A447093DC03"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				consume_items: true
+				id: "623AE9474D5818A3"
+				item: { count: 1, id: "mysticism:ice_essence" }
+				type: "item"
+			}]
+			x: 7.5119047619047805d
+			y: -1.8217687074829882d
+		}
+		{
+			can_repeat: true
+			id: "0668C631159F6257"
+			rewards: [{
+				count: 10
+				id: "361A535E4DC2CF36"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				consume_items: true
+				id: "56974C30BDF504E0"
+				item: { count: 1, id: "foxablazeultimate:wisdom_crystal" }
+				type: "item"
+			}]
+			x: 2.2394557823129304d
+			y: -2.825850340136057d
+		}
+		{
+			can_repeat: true
+			id: "564D43F7C8429A86"
+			rewards: [{
+				count: 10
+				id: "098C3412A54E6E32"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				consume_items: true
+				id: "48DD09FCA575F085"
+				item: { count: 1, id: "foxablazeultimate:gluttony_crystal" }
+				type: "item"
+			}]
+			x: 3.275170068027215d
+			y: -2.825850340136057d
+		}
+		{
+			can_repeat: true
+			id: "3854E70EB92F36F0"
+			rewards: [{
+				count: 10
+				id: "2724011DA1A48211"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				consume_items: true
+				id: "1183421EB6332C53"
+				item: { count: 1, id: "foxablazeultimate:covenant_crystal" }
+				type: "item"
+			}]
+			x: 4.346598639455799d
+			y: -2.825850340136057d
+		}
+		{
+			can_repeat: true
+			id: "1B69E7AEA2AFBFCE"
+			rewards: [{
+				count: 10
+				id: "5FA8C0FB61311A6B"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				consume_items: true
+				id: "6AF97DAC91E4253D"
+				item: { count: 1, id: "foxablazeultimate:wrath_crystal" }
+				type: "item"
+			}]
+			x: 5.3465986394557845d
+			y: -2.82585034013605d
+		}
+		{
+			can_repeat: true
+			id: "1EA0A4CC394E4555"
+			rewards: [{
+				count: 10
+				id: "60B353F38523D215"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				consume_items: true
+				id: "62B5ED82F21750C5"
+				item: { count: 1, id: "foxablazeultimate:harvest_crystal" }
+				type: "item"
+			}]
+			x: 6.382312925170083d
+			y: -2.82585034013605d
+		}
+		{
+			can_repeat: true
+			id: "0179DFC39E3DEA90"
+			rewards: [{
+				count: 10
+				id: "08502B794744A4EB"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				consume_items: true
+				id: "2E0CF06DF00CA862"
+				item: { count: 1, id: "foxablazeultimate:time_crystal" }
+				type: "item"
+			}]
+			x: 7.4486394557823274d
+			y: -2.7901360544217653d
+		}
+		{
+			can_repeat: true
+			id: "7CD42C1828B871BF"
+			rewards: [{
+				count: 10
+				id: "6A2A2D96D69678FB"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				consume_items: true
+				id: "22924CFAC8BBB403"
+				item: { count: 1, id: "foxablazeultimate:flame_crystal" }
+				type: "item"
+			}]
+			x: 2.28537414965988d
+			y: -3.741156462585039d
+		}
+		{
+			can_repeat: true
+			id: "2231192849E57DBE"
+			rewards: [{
+				count: 10
+				id: "19FB3F73C7E42C7D"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				consume_items: true
+				id: "31AF1E4F0AC135AD"
+				item: { count: 1, id: "foxablazeultimate:void_crystal" }
+				type: "item"
+			}]
+			x: 3.313945578231312d
+			y: -3.712585034013607d
+		}
+		{
+			can_repeat: true
+			id: "413CE569DEB67F2F"
+			rewards: [{
+				count: 10
+				id: "42BF1C99BDE39EA5"
+				item: {
+					count: 1
+					id: "tensura:silver_coin"
+				}
+				type: "item"
+			}]
+			shape: "none"
+			tasks: [{
+				consume_items: true
+				id: "160F31E5C0831C0E"
+				item: { count: 1, id: "foxablazeultimate:poison_crystal" }
+				type: "item"
+			}]
+			x: 4.3357142857143245d
+			y: -3.734693877551031d
+		}
+	]
+}

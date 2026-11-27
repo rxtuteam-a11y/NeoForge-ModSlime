@@ -1,0 +1,171 @@
+rebalanced = false
+rescaled = false
+
+[SimpleBarrier]
+	#Whether Simple Barrier is enabled
+	enabled = true
+	#Chant length in ticks, 20 ticks = 1 second
+	castTime = 100
+	castTimeMastered = 50
+	#Whether Chant Annulment can instant cast
+	allowInstantCast = true
+	#Magicules to cast
+	magiculeCost = 25000.0
+	#The barrier's HP
+	maxIntegrity = 750.0
+	maxIntegrityMastered = 1500.0
+	#How long the barrier lasts in seconds
+	durationSeconds = 15.0
+	durationSecondsMastered = 30.0
+	#Cooldown in seconds
+	cooldownSeconds = 10
+	cooldownSecondsMastered = 5
+	#How far an ally may be to be affected
+	range = 24.0
+	#Barrier radius x the user's size
+	sizeMultiplier = 1.35
+
+[DefensiveWall]
+	#Whether Defensive Wall is enabled
+	enabled = true
+	#Chant length in ticks
+	castTime = 120
+	castTimeMastered = 60
+	#Whether Chant Annulment can instant cast
+	allowInstantCast = true
+	#Whether Magic Wall must be mastered before this can be learned
+	requireMagicWallMastery = true
+	#Magicules to cast
+	magiculeCost = 10000.0
+	#The wall's HP
+	maxIntegrity = 500.0
+	maxIntegrityMastered = 1000.0
+	#How long the wall lasts in seconds
+	durationSeconds = 15.0
+	durationSecondsMastered = 20.0
+	#Cooldown in seconds
+	cooldownSeconds = 10
+	cooldownSecondsMastered = 5
+	#Is the wall solid
+	solid = true
+	solidPushMargin = 0.15
+	#Block Melee
+	blocksMelee = true
+	#Block Projectiles
+	blocksProjectiles = true
+	#% of damage the wall takes
+	wallDamageFactor = 1.0
+	#HP lost per projectile absorbed
+	projectileWallDamage = 10.0
+
+[SpatialBind]
+	#Whether Spatial Bind is enabled
+	enabled = true
+	#Chant length in ticks
+	castTime = 100
+	#Chant length in ticks while mastered
+	castTimeMastered = 70
+	#Whether Chant Annulment can instant cast
+	allowInstantCast = false
+	#Magicules to cast
+	magiculeCost = 15000.0
+	#Range of spatial bind
+	range = 24.0
+	#Cooldown in seconds
+	cooldownSeconds = 10
+	cooldownSecondsMastered = 5
+	#Seconds spatial bind last
+	bindSeconds = 15.0
+	bindSecondsMastered = 25.0
+	#The target's EP as a % of the caster's
+	captureEpFraction = 1.25
+	captureEpFractionMastered = 1.5
+	#Chance that a target with Law Manipulation ignores spatial binding
+	lawManipResistChance = 1.0
+	#Whether it blinds the target
+	blind = true
+
+[BarrierDispel]
+	#Whether Barrier Dispel is enabled
+	enabled = true
+	#Chant length in ticks
+	castTime = 800
+	#Whether Chant Annulment can instant cast
+	allowInstantCast = false
+	#Range that the player can target a barrier
+	range = 48.0
+	#Fraction of its caster's EP in magicules
+	barrierEpFraction = 0.5
+	barrierEpFractionMastered = 0.35
+	#Fraction of the user's EP plus fraction of the target's
+	restrictionEpFraction = 0.25
+	restrictionEpFractionMastered = 0.12
+	#Fraction of the caster's EP plus the prisoner
+	prisonEpFraction = 0.35
+	prisonEpFractionMastered = 0.5
+	#Whether Infinity Prison can only be undone while mastered
+	requireMasteryForPrison = true
+	#Cooldown in seconds
+	cooldownSeconds = 10
+
+[Invasion]
+	#Whether Invasion is enabled
+	enabled = true
+	#Chant length in ticks
+	castTime = 400
+	#Whether Chant Annulment can instant cast
+	allowInstantCast = false
+	#Range that the player can target a barrier
+	range = 48.0
+	#The caster's EP compared to the owner's
+	epRequirement = 0.75
+	#How long the opening stays open
+	openSeconds = 15.0
+	#How wide the opening is
+	doorwayWidth = 4.0
+	#Magicules per layer of the barrier
+	epCostFractionPerLayer = 0.1
+	epCostFractionPerLayerMastered = 0.05
+	#Cooldown in seconds
+	cooldownSeconds = 10
+
+[BarrierFormation]
+	#Whether Barrier Formation is enabled
+	enabled = true
+	#Range that allies are affected
+	range = 16.0
+	#Max amount of allies that can be affected
+	maxCovered = 4
+	#Total HP split between each barrier
+	maxIntegrity = 750.0
+	maxIntegrityMastered = 1500.0
+	#How long the barriers last in seconds
+	durationSeconds = 30.0
+	#Barrier radius x the target's size
+	sizeMultiplier = 1.35
+	#Cost per barrier, casting on yourself costs as much as maxCovered
+	magiculeCostPerAlly = 15000.0
+	#Chant length in ticks
+	castTime = 120
+	#Cooldown in seconds
+	cooldownSeconds = 10
+
+[BlackCasing]
+	#Whether Black Casing is enabled
+	enabled = true
+	#Chant length in ticks, 20 ticks = 1 second
+	castTime = 200
+	castTimeMastered = 100
+	#Whether Chant Annulment can instant cast
+	allowInstantCast = false
+	#Magicules to cast
+	magiculeCost = 20000.0
+	#Radius of the domer
+	radius = 8.0
+	#% of the caster's max magicules drained every second
+	magiculeDrainPercentPerSecond = 5.0
+	#Longest it can be held in seconds
+	maxHoldSeconds = 60.0
+	#Cooldown in seconds
+	cooldownSeconds = 10
+	cooldownSecondsMastered = 5

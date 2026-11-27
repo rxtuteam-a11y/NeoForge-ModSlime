@@ -1,0 +1,14 @@
+{
+	version: 1
+	uuid: "2e9a32f4e2ce3b878c3156b83e3da080"
+	name: "KhangDitTo#2e9a32f4"
+	lock: false
+	rewards_blocked: false
+	task_progress: { }
+	started: { }
+	completed: { }
+	repeatable: { }
+	completion_count: { }
+	claimed_rewards: { }
+	player_data: { }
+}

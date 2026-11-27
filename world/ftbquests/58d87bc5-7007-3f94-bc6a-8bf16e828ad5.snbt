@@ -1,0 +1,14 @@
+{
+	version: 1
+	uuid: "58d87bc570073f94bc6a8bf16e828ad5"
+	name: "pacalaca#58d87bc5"
+	lock: false
+	rewards_blocked: false
+	task_progress: { }
+	started: { }
+	completed: { }
+	repeatable: { }
+	completion_count: { }
+	claimed_rewards: { }
+	player_data: { }
+}

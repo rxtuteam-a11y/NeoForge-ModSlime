@@ -1,0 +1,170 @@
+name: ModSlime Cloud Server
+
+# Bật từ trang web (nút "BẬT SERVER") hoặc tab Actions -> Run workflow.
+# Trình tự: tải world từ GitHub -> lấy 266 mod (cache, lần đầu tải Google Drive)
+# -> chạy Web Panel + NeoForge -> mở đường hầm Cloudflare cho Web Panel và Playit cho game
+# -> ghi địa chỉ vào nhánh server-status để trang web tự tìm thấy
+# -> khi tắt: lưu world lên GitHub (main) và Google Drive (nếu đã cấu hình).
+
+on:
+  workflow_dispatch:
+    inputs:
+      duration_minutes:
+        description: "Thời gian tối đa của phiên (phút, tối đa 340)"
+        required: false
+        default: "340"
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: modslime-server
+  cancel-in-progress: false
+
+env:
+  TZ: Asia/Ho_Chi_Minh
+  GDRIVE_MODS_ID: 1eKZVfJSo0c49VhZMonpZE5kURegY0V16
+
+jobs:
+  server:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - name: 0. Chặn phiên trùng (bấm BẬT 2 lần / từ 2 thiết bị)
+        id: dup
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request, datetime
+          repo, me = os.environ["GITHUB_REPOSITORY"], int(os.environ["GITHUB_RUN_ID"])
+          req = urllib.request.Request(f"https://api.github.com/repos/{repo}/actions/workflows/cloud-server.yml/runs?per_page=10",
+                headers={"Authorization": "Bearer " + os.environ["GH_TOKEN"], "Accept": "application/vnd.github+json"})
+          runs = json.load(urllib.request.urlopen(req, timeout=20))["workflow_runs"]
+          t = lambda r: datetime.datetime.fromisoformat(r["created_at"].replace("Z", "+00:00"))
+          mine = next(r for r in runs if r["id"] == me)
+          # Trùng = phiên khác tạo trong vòng 2 phút trước đó và đang chạy/chờ (hoặc đã chạy thành công)
+          dup = [r for r in runs if r["id"] < me and abs((t(mine) - t(r)).total_seconds()) < 120
+                 and r["conclusion"] in (None, "success")]
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write(f"skip={'true' if dup else 'false'}\n")
+          print("Phiên trùng với", [r["run_number"] for r in dup], "-> bỏ qua" if dup else "-> không trùng")
+          PY
+
+      - name: 1. Lấy world & config mới nhất
+        if: steps.dup.outputs.skip != 'true'
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: 2. Cài Java 21
+        if: steps.dup.outputs.skip != 'true'
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - name: 3a. Khôi phục mod & libraries từ cache
+        if: steps.dup.outputs.skip != 'true'
+        id: modcache
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            mods
+            libraries
+          key: modslime-mods-${{ env.GDRIVE_MODS_ID }}-v1
+
+      - name: 3b. Tải 266 mod & libraries từ Google Drive (khi chưa có cache)
+        if: steps.dup.outputs.skip != 'true' && steps.modcache.outputs.cache-hit != 'true'
+        run: |
+          python3 -m pip install -q gdown
+          gdown "$GDRIVE_MODS_ID" -O /tmp/modslime.zip
+          unzip -q -o /tmp/modslime.zip "NeoForge-ModSlime/mods/*" "NeoForge-ModSlime/libraries/*" -d /tmp/extract
+          cp -rn /tmp/extract/NeoForge-ModSlime/mods ./
+          cp -rn /tmp/extract/NeoForge-ModSlime/libraries ./
+          rm -rf /tmp/modslime.zip /tmp/extract
+          echo "Có $(ls -1 mods/*.jar | wc -l) mod."
+
+      - name: 3c. Lưu cache mod cho lần sau
+        if: steps.dup.outputs.skip != 'true' && steps.modcache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            mods
+            libraries
+          key: modslime-mods-${{ env.GDRIVE_MODS_ID }}-v1
+
+      - name: 3d. Thêm mod bổ sung (extra-mods)
+        if: steps.dup.outputs.skip != 'true'
+        run: |
+          shopt -s nullglob; jars=(extra-mods/*.jar)
+          if [ ${#jars[@]} -gt 0 ]; then cp -f "${jars[@]}" mods/; echo "Đã thêm ${#jars[@]} mod: ${jars[*]##*/}"; else echo "Không có mod bổ sung."; fi
+
+      - name: 4. Cài cloudflared, playit, rclone
+        if: steps.dup.outputs.skip != 'true'
+        env:
+          RCLONE_CONFIG_B64: ${{ secrets.RCLONE_CONFIG }}
+        run: |
+          curl -fsSL -o /usr/local/bin/cloudflared https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64
+          chmod +x /usr/local/bin/cloudflared
+          curl -fsSL -o ./playit-linux-amd64 https://github.com/playit-cloud/playit-agent/releases/latest/download/playit-linux-amd64
+          chmod +x ./playit-linux-amd64
+          if [ -n "$RCLONE_CONFIG_B64" ]; then
+            curl -fsSL https://rclone.org/install.sh | sudo bash >/dev/null 2>&1 || sudo apt-get install -y rclone
+            mkdir -p ~/.config/rclone
+            # Chấp nhận cả nội dung rclone.conf thô lẫn dạng base64
+            if echo "$RCLONE_CONFIG_B64" | grep -q '^\['; then
+              printf '%s\n' "$RCLONE_CONFIG_B64" > ~/.config/rclone/rclone.conf
+            else
+              echo "$RCLONE_CONFIG_B64" | base64 -d > ~/.config/rclone/rclone.conf
+            fi
+            rclone listremotes
+          else
+            echo "Chưa có secret RCLONE_CONFIG -> bỏ qua sao lưu Google Drive."
+          fi
+
+      - name: "5. SERVER ĐANG CHẠY — bước này kéo dài tới khi bạn bấm TẮT trên web (tối đa ~5h40)"
+        if: steps.dup.outputs.skip != 'true'
+        env:
+          DURATION_MIN: ${{ github.event.inputs.duration_minutes || '340' }}
+          PLAYIT_SECRET: ${{ secrets.PLAYIT_SECRET }}
+          MC_ADDRESS: ${{ vars.MC_ADDRESS }}
+          RCLONE_REMOTE_SET: ${{ secrets.RCLONE_CONFIG != '' }}
+          GDRIVE_BACKUP_PATH: ${{ vars.GDRIVE_BACKUP_PATH }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash .github/scripts/cloud-run.sh
+
+      - name: 6. Lưu dự phòng world lên GitHub (nếu bước 5 bị ngắt)
+        if: always() && steps.dup.outputs.skip != 'true'
+        run: |
+          # 1) Nếu Java còn chạy (phiên bị huỷ / treo): yêu cầu tắt an toàn rồi mới đụng tới world
+          if pgrep -f "neoforge.*nogui" >/dev/null; then
+            echo "Java vẫn chạy -> gửi SIGTERM để Minecraft tự lưu và thoát..."
+            pkill -TERM -f "neoforge.*nogui" || true
+            for i in $(seq 1 90); do pgrep -f "neoforge.*nogui" >/dev/null || break; sleep 1; done
+            pkill -KILL -f "neoforge.*nogui" || true
+          fi
+          # 2) Chỉ lưu nếu world thực sự đã được nạp trong phiên này (tránh commit world dở dang khi đang khởi động)
+          if ! grep -q "Done (" logs/latest.log 2>/dev/null; then
+            echo "Server chưa nạp xong world trong phiên này -> không lưu gì."; exit 0
+          fi
+          git config user.name "ModSlime Cloud AutoSave"
+          git config user.email "modslime-bot@users.noreply.github.com"
+          rm -f world/session.lock
+          git add world config server.properties ops.json whitelist.json usercache.json usernamecache.json banned-players.json banned-ips.json 2>/dev/null || true
+          if git diff --cached --quiet; then echo "World đã được lưu trước đó, không có thay đổi mới."; exit 0; fi
+          git commit -q -m "Cloud save world ($(date +'%Y-%m-%d %H:%M:%S'))"
+          for i in 1 2 3 4 5; do
+            git pull -q --rebase origin main && git push -q origin HEAD:main && { echo "Đã lưu world lên GitHub."; exit 0; }
+            git rebase --abort 2>/dev/null || true
+            echo "Push lỗi, thử lại ($i)..."; sleep $((i * 5))
+          done
+          echo "::error::Không đẩy được world lên GitHub"; exit 1
+
+      - name: 7. Báo trạng thái offline cho trang web
+        if: always() && steps.dup.outputs.skip != 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash .github/scripts/cloud-run.sh --offline

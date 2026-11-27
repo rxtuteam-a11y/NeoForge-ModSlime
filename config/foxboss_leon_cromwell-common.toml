@@ -1,0 +1,48 @@
+[leon]
+	#Uses the same natural-spawn roll as Fox Boss Milim, including Tensura's live spawn-rate configuration.
+	#Allowed Values: HINATA, SHIZU
+	naturalSpawnReference = "HINATA"
+	#Ticks between native Tensura light-magic attacks.
+	# Default: 200
+	# Range: 20 ~ 72000
+	lightMagicCooldownTicks = 200
+	#Ticks between native Hero Haki uses.
+	# Default: 300
+	# Range: 20 ~ 72000
+	heroHakiCooldownTicks = 300
+
+	[leon.spiritron]
+		#Allow combat AI to activate both coatings within six blocks.
+		automaticActivation = true
+		# Default: 20
+		# Range: 1 ~ 1200
+		warmupTicks = 20
+		# Default: 200
+		# Range: 1 ~ 72000
+		durationTicks = 200
+		#Recovery starts when the coating ends or is canceled.
+		# Default: 400
+		# Range: 0 ~ 72000
+		cooldownTicks = 400
+		#Extra holy damage per landed sword contact, scaled by the existing attack multiplier.
+		# Default: 100.0
+		# Range: 0.0 ~ 1000000.0
+		swordDamage = 100.0
+		# Default: 25.0
+		# Range: 0.0 ~ 1000000.0
+		bodyDamage = 25.0
+		# Default: 10
+		# Range: 10 ~ 1200
+		contactIntervalTicks = 10
+		#Maximum three-dimensional gap between body and enemy bounding boxes.
+		# Default: 0.6
+		# Range: 0.0 ~ 4.0
+		contactRange = 0.6
+		#MP paid per enabled coating when activation starts.
+		# Default: 5000.0
+		# Range: 0.0 ~ 1.0E8
+		activationMagicules = 5000.0
+		#MP per enabled coating for each twenty active ticks, charged at the start of each interval.
+		# Default: 200.0
+		# Range: 0.0 ~ 1.0E8
+		magiculesPerSecond = 200.0

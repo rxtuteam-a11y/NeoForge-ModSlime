@@ -1,0 +1,29 @@
+# Git
+.git/
+
+# Large static binaries stored on Google Drive (1eKZVfJSo0c49VhZMonpZE5kURegY0V16)
+mods/
+libraries/
+client-mods/
+disabled-conflicts/
+
+# Local caches & temporary files
+.cache/
+backup-truoc-toi-uu/
+logs/*.gz
+logs/debug*.log
+
+# Python / Web panel runtime
+__pycache__/
+.panel_state.json
+playit.log
+playit-linux-amd64
+playit.exe
+server_console.log
+world/session.lock
+
+panel.log
+cloudflared.log
+server_out.log
+server_in
+cloud_jvm_args.txt

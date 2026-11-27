@@ -1,0 +1,14 @@
+{
+	version: 1
+	uuid: "9d813f2c47d139288af67b703ce47272"
+	name: "Hajime#9d813f2c"
+	lock: false
+	rewards_blocked: false
+	task_progress: { }
+	started: { }
+	completed: { }
+	repeatable: { }
+	completion_count: { }
+	claimed_rewards: { }
+	player_data: { }
+}

@@ -1,0 +1,331 @@
+{
+  "netherexp:recipes/misc/soul_torch_from_fossil_fuel": {
+    "criteria": {
+      "has_item": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/misc/soul_skeleton_skull_candle": {
+    "criteria": {
+      "has_item": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2026-11-26 21:42:22 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/misc/glowcheese": {
+    "criteria": {
+      "has_item": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/shroomlights/shroomlight": {
+    "criteria": {
+      "has_item": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/building_blocks/ash": {
+    "criteria": {
+      "has_item": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "tensura:real_adventure": {
+    "criteria": {
+      "ability": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/misc/skull_to_bone_meal": {
+    "criteria": {
+      "has_item": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:iceandfire/root": {
+    "criteria": {
+      "tick": "2026-11-26 21:42:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/campfire": {
+    "criteria": {
+      "has_the_recipe": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/shroomlights/nightspores": {
+    "criteria": {
+      "has_item": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:main/find_wild_crops": {
+    "criteria": {
+      "wild_strawberry": "2026-11-26 21:43:10 +0700",
+      "oat": "2026-11-26 21:43:10 +0700",
+      "onion": "2026-11-26 21:43:10 +0700",
+      "corn": "2026-11-26 21:43:10 +0700",
+      "wild_ribwort": "2026-11-26 21:43:10 +0700",
+      "wild_corn": "2026-11-26 21:43:10 +0700",
+      "strawberry": "2026-11-26 21:43:10 +0700",
+      "wild_nettle": "2026-11-26 21:43:10 +0700",
+      "barley": "2026-11-26 21:43:10 +0700",
+      "tomato": "2026-11-26 21:43:10 +0700",
+      "lettuce": "2026-11-26 21:43:10 +0700",
+      "wild_tomatoes": "2026-11-26 21:43:10 +0700",
+      "wild_lettuce": "2026-11-26 21:43:10 +0700",
+      "oat_seeds": "2026-11-26 21:43:10 +0700",
+      "strawberry_seeds": "2026-11-26 21:43:10 +0700",
+      "tomato_seeds": "2026-11-26 21:43:10 +0700",
+      "barley_seeds": "2026-11-26 21:43:10 +0700",
+      "lettuce_seeds": "2026-11-26 21:43:10 +0700",
+      "kernels": "2026-11-26 21:43:10 +0700",
+      "wild_barley": "2026-11-26 21:43:10 +0700",
+      "wild_onion": "2026-11-26 21:43:10 +0700",
+      "wild_oat": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "toms_storage:unlock_redstone": {
+    "criteria": {
+      "inv_changed-redstone": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/misc/blindfold": {
+    "criteria": {
+      "has_item": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/claret/planks": {
+    "criteria": {
+      "has_log": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/shroomlights/lightspores": {
+    "criteria": {
+      "has_item": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/bone_blocks/soul_burning_skull_block": {
+    "criteria": {
+      "has_item": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/misc/earplugs": {
+    "criteria": {
+      "has_item": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "betterdeserttemples:root": {
+    "criteria": {
+      "always": "2026-11-26 21:42:22 +0700"
+    },
+    "done": true
+  },
+  "tensura:fast_learner": {
+    "criteria": {
+      "skill": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "vinery:main/root": {
+    "criteria": {
+      "seeds": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/building_blocks/crackled_to_gravel": {
+    "criteria": {
+      "has_item": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:regions_explored": {
+    "criteria": {
+      "frozen_pine_taiga": "2026-11-26 21:42:23 +0700"
+    },
+    "done": false
+  },
+  "regions_unexplored:pioneer": {
+    "criteria": {
+      "frozen_pine_taiga": "2026-11-26 21:42:23 +0700"
+    },
+    "done": false
+  },
+  "iceandfire:recipes/misc/dragon_stick": {
+    "criteria": {
+      "has_item": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/misc/copper_ingot_to_nuggets": {
+    "criteria": {
+      "has_item": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/misc/dragon_ice": {
+    "criteria": {
+      "has_item": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/onion_soup": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "mowziesmobs:root": {
+    "criteria": {
+      "custom_test_name": "2026-11-26 21:42:22 +0700"
+    },
+    "done": true
+  },
+  "dungeons_arise:wda_root": {
+    "criteria": {
+      "WDA": "2026-11-26 21:42:22 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/campfire": {
+    "criteria": {
+      "has_coal": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "bakery:main/root": {
+    "criteria": {
+      "seeds": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/food/gold_pile": {
+    "criteria": {
+      "has_item": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/misc/magma_cream_block": {
+    "criteria": {
+      "has_item": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/smokestalk/planks": {
+    "criteria": {
+      "has_log": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:parent": {
+    "criteria": {
+      "load_in_world": "2026-11-26 21:42:23 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/misc/dragon_meal": {
+    "criteria": {
+      "has_item": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/bone_blocks/wither/soul_burning_skull_block": {
+    "criteria": {
+      "has_item": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/misc/soul_magma_block": {
+    "criteria": {
+      "has_item2": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/grapevine_lattice": {
+    "criteria": {
+      "has_coal": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "lootr:root": {
+    "criteria": {
+      "always_true": "2026-11-26 21:42:22 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:main/root": {
+    "criteria": {
+      "example_criterion": "2026-11-26 21:42:23 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/decorations/copper_pile": {
+    "criteria": {
+      "has_item": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/shroomlights/shroomnight": {
+    "criteria": {
+      "has_item": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/misc/copper_nuggets_to_ingot": {
+    "criteria": {
+      "has_item": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "tensuraenigmatic:recipes/equipment/mana_ring": {
+    "criteria": {
+      "has_gold_ingot": "2026-11-26 21:43:10 +0700",
+      "has_magic_ore_shard": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:main/root": {
+    "criteria": {
+      "seeds": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "yungscavebiomes:root": {
+    "criteria": {
+      "always": "2026-11-26 21:42:22 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/misc/soul_candle": {
+    "criteria": {
+      "has_planks": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "tensura:reincarnated": {
+    "criteria": {
+      "reincarnation": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/dark_cherry_planks": {
+    "criteria": {
+      "has_cherry_logs": "2026-11-26 21:43:10 +0700"
+    },
+    "done": true
+  },
+  "DataVersion": 3955
+}
