@@ -7630,6 +7630,7 @@
   "cataclysm:kill_all_bosses": {
     "criteria": {
       "cataclysm:maledictus": "2026-11-24 18:59:58 +0700",
+      "cataclysm:ender_guardian": "2026-11-27 15:36:09 +0700",
       "cataclysm:netherite_monstrosity": "2026-11-25 19:33:15 +0700",
       "cataclysm:scylla": "2026-11-24 16:27:02 +0700",
       "cataclysm:ignis": "2026-11-25 19:30:17 +0700"
@@ -11141,6 +11142,12 @@
     },
     "done": true
   },
+  "cataclysm:kill_ender_guardian": {
+    "criteria": {
+      "enderguardian": "2026-11-27 15:36:09 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/combat/silver_sword": {
     "criteria": {
       "has_diamond": "2026-11-27 14:58:19 +0700"
@@ -11327,6 +11334,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/hihiirokane_nugget_from_smelting_hihiirokane_boots": {
+    "criteria": {
+      "has_hihiirokane_boots": "2026-11-27 15:38:20 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/ender_eye": {
     "criteria": {
       "has_blaze_powder": "2026-11-27 15:26:00 +0700"
@@ -11438,6 +11451,12 @@
   "minecraft:end/find_end_city": {
     "criteria": {
       "in_city": "2026-11-27 15:19:10 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/hihiirokane_nugget_from_blasting_hihiirokane_boots": {
+    "criteria": {
+      "has_hihiirokane_boots": "2026-11-27 15:38:20 +0700"
     },
     "done": true
   },
