@@ -10898,6 +10898,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/fletching_table": {
+    "criteria": {
+      "has_flint": "2026-11-27 08:55:31 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/tools/sickle": {
+    "criteria": {
+      "has_flint": "2026-11-27 08:55:31 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/bread": {
     "criteria": {
       "has_wheat": "2026-11-27 08:45:39 +0700"
@@ -10925,6 +10937,12 @@
   "tensura:great_saint_of_the_west": {
     "criteria": {
       "hinata": "2026-11-27 08:38:09 +0700"
+    },
+    "done": true
+  },
+  "mowziesmobs:recipes/combat/spear": {
+    "criteria": {
+      "has_flint": "2026-11-27 08:55:31 +0700"
     },
     "done": true
   },
