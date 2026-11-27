@@ -97,6 +97,15 @@ copy_dir "config" "$WORK/final/config"
 # các file trong repo đến từ overrides.zip của bản modpack cũ -> lệch định dạng với bản mod hiện
 # tại. Ví dụ vanillabackport-client.toml cũ làm VanillaBackport 1.2.2 crash khi khởi động
 # ("Cannot get config value before config is loaded"). Thiếu file thì mod tự tạo bản đúng.
+# Bỏ các file config do overrides.zip (bản modpack cũ, tạo trên máy tác giả) thêm vào: server chưa
+# từng dùng chúng; trên máy người chơi chúng lệch phiên bản mod/card đồ hoạ (Sodium, Iris,
+# VanillaBackport...). Giữ config gốc của server + bộ nhiệm vụ. Danh sách: .github/client-pack-exclude.txt
+n_ex=0
+while IFS= read -r f; do
+  [ -n "$f" ] && [ -e "$WORK/final/$f" ] && { rm -f "$WORK/final/$f"; n_ex=$((n_ex+1)); }
+done < .github/client-pack-exclude.txt
+find "$WORK/final/config" -type d -empty -delete
+echo "Bỏ $n_ex file config từ overrides cũ (mod tự tạo lại đúng trên máy người chơi)."
 n_client_cfg=$(find "$WORK/final/config" \( -name '*-client.toml' -o -name '*_client.toml' -o -name '*client*.snbt' \) -type f | wc -l)
 find "$WORK/final/config" \( -name '*-client.toml' -o -name '*_client.toml' -o -name '*client*.snbt' \) -type f -delete
 echo "Bỏ $n_client_cfg file config phía máy chơi (mod sẽ tự tạo lại đúng phiên bản)."
