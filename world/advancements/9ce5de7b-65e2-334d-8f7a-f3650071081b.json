@@ -1096,6 +1096,8 @@
       "minecraft:witch": "2026-11-23 13:17:25 +0700",
       "minecraft:wither_skeleton": "2026-11-25 19:20:05 +0700",
       "minecraft:husk": "2026-11-23 13:30:36 +0700",
+      "minecraft:ender_dragon": "2026-11-27 15:15:35 +0700",
+      "minecraft:shulker": "2026-11-27 15:19:01 +0700",
       "minecraft:cave_spider": "2026-11-23 21:31:24 +0700",
       "minecraft:piglin": "2026-11-25 19:06:36 +0700",
       "minecraft:stray": "2026-11-23 13:41:24 +0700",
@@ -11073,6 +11075,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/end_stone_brick_slab": {
+    "criteria": {
+      "has_end_stone_bricks": "2026-11-27 15:20:30 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/combat/silver_boots": {
     "criteria": {
       "has_silver_ingot": "2026-11-27 14:58:19 +0700"
@@ -11094,6 +11102,12 @@
   "tensura:recipes/tools/silver_pickaxe": {
     "criteria": {
       "has_diamond": "2026-11-27 14:58:19 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/end_stone_brick_stairs": {
+    "criteria": {
+      "has_end_stone_bricks": "2026-11-27 15:20:30 +0700"
     },
     "done": true
   },
@@ -11127,6 +11141,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/end_stone_brick_stairs_from_end_stone_brick_stonecutting": {
+    "criteria": {
+      "has_end_stone_brick": "2026-11-27 15:20:30 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/combat/silver_helmet": {
     "criteria": {
       "has_silver_ingot": "2026-11-27 14:58:19 +0700"
@@ -11154,6 +11174,12 @@
   "enhanced_ore_variety:recipes/misc/coal_from_blasting": {
     "criteria": {
       "TagKey[minecraft:item / minecraft:coal_ores]": "2026-11-27 14:29:22 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/end_stone_warp_pad": {
+    "criteria": {
+      "has_end_stone_bricks": "2026-11-27 15:20:30 +0700"
     },
     "done": true
   },
@@ -11223,6 +11249,12 @@
     },
     "done": true
   },
+  "minecraft:end/kill_dragon": {
+    "criteria": {
+      "killed_dragon": "2026-11-27 15:15:35 +0700"
+    },
+    "done": true
+  },
   "minecraft:nether/create_beacon": {
     "criteria": {
       "beacon": "2026-11-27 14:40:17 +0700"
@@ -11232,6 +11264,12 @@
   "minecraft:recipes/misc/pumpkin_seeds": {
     "criteria": {
       "has_pumpkin": "2026-11-27 14:21:36 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/end_stone_brick_wall": {
+    "criteria": {
+      "has_end_stone_bricks": "2026-11-27 15:20:30 +0700"
     },
     "done": true
   },
@@ -11259,9 +11297,27 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/end_stone_brick_slab_from_end_stone_brick_stonecutting": {
+    "criteria": {
+      "has_end_stone_brick": "2026-11-27 15:20:30 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/end_stone_brick_wall_from_end_stone_brick_stonecutting": {
+    "criteria": {
+      "has_end_stone_brick": "2026-11-27 15:20:30 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/tools/silver_sickle": {
     "criteria": {
       "has_material_for_silver_sickle": "2026-11-27 14:58:19 +0700"
+    },
+    "done": true
+  },
+  "minecraft:end/find_end_city": {
+    "criteria": {
+      "in_city": "2026-11-27 15:19:10 +0700"
     },
     "done": true
   },
