@@ -1005,6 +1005,7 @@
       "minecraft:zombie": "2026-11-24 10:21:08 +0700",
       "minecraft:creeper": "2026-11-24 21:57:53 +0700",
       "minecraft:drowned": "2026-11-22 19:17:02 +0700",
+      "minecraft:wither": "2026-11-27 14:28:18 +0700",
       "minecraft:slime": "2026-11-22 18:45:29 +0700"
     },
     "done": false
@@ -10481,9 +10482,27 @@
     },
     "done": true
   },
+  "royalvariations:rotten_king": {
+    "criteria": {
+      "royal_zombie": "2026-11-27 14:29:02 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/pumpkin_pie": {
     "criteria": {
       "has_pumpkin": "2026-11-27 14:21:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/beacon": {
+    "criteria": {
+      "has_nether_star": "2026-11-27 14:28:20 +0700"
+    },
+    "done": true
+  },
+  "royalvariations:royal_variations": {
+    "criteria": {
+      "royal_zombie": "2026-11-27 14:29:02 +0700"
     },
     "done": true
   },
@@ -10496,6 +10515,18 @@
   "farmersdelight:recipes/cooking/stuffed_pumpkin_block": {
     "criteria": {
       "has_pumpkin": "2026-11-27 14:21:53 +0700"
+    },
+    "done": true
+  },
+  "constructionwand:recipes/tools/infinity_wand": {
+    "criteria": {
+      "has_item": "2026-11-27 14:28:20 +0700"
+    },
+    "done": true
+  },
+  "constructionwand:recipes/misc/core_exchange": {
+    "criteria": {
+      "has_item": "2026-11-27 14:28:20 +0700"
     },
     "done": true
   },

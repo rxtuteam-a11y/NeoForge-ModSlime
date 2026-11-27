@@ -11079,6 +11079,24 @@
     },
     "done": true
   },
+  "minecraft:nether/summon_wither": {
+    "criteria": {
+      "summoned": "2026-11-27 14:27:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/coal_from_blasting_coal_ore": {
+    "criteria": {
+      "has_coal_ore": "2026-11-27 14:30:32 +0700"
+    },
+    "done": true
+  },
+  "enhanced_ore_variety:recipes/misc/coal_from_blasting": {
+    "criteria": {
+      "TagKey[minecraft:item / minecraft:coal_ores]": "2026-11-27 14:29:22 +0700"
+    },
+    "done": true
+  },
   "kaleidoscope_cookery:recipes/decorations/scarecrow": {
     "criteria": {
       "has_pumpkin": "2026-11-27 14:21:36 +0700"
@@ -11091,9 +11109,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/coal_from_smelting_coal_ore": {
+    "criteria": {
+      "has_coal_ore": "2026-11-27 14:30:32 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/pumpkin_seeds": {
     "criteria": {
       "has_pumpkin": "2026-11-27 14:21:36 +0700"
+    },
+    "done": true
+  },
+  "enhanced_ore_variety:recipes/misc/coal_from_smelting": {
+    "criteria": {
+      "TagKey[minecraft:item / minecraft:coal_ores]": "2026-11-27 14:29:22 +0700"
     },
     "done": true
   },
