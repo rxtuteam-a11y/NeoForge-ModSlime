@@ -11514,9 +11514,9 @@
     },
     "done": true
   },
-  "chronodawn:recipes/misc/time_compass": {
+  "minecraft:recipes/building_blocks/purpur_slab": {
     "criteria": {
-      "has_item": "2026-11-27 20:02:43 +0700"
+      "has_purpur_block": "2026-11-27 19:35:41 +0700"
     },
     "done": true
   },
@@ -11532,45 +11532,15 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/purpur_slab": {
-    "criteria": {
-      "has_purpur_block": "2026-11-27 19:35:41 +0700"
-    },
-    "done": true
-  },
-  "farm_and_charm:recipes/silo_copper": {
-    "criteria": {
-      "has_item": "2026-11-27 20:02:17 +0700"
-    },
-    "done": true
-  },
-  "chronodawn:recipes/misc/chronite_block": {
-    "criteria": {
-      "has_item": "2026-11-27 20:02:43 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/purpur_pillar": {
     "criteria": {
       "has_purpur_block": "2026-11-27 19:35:42 +0700"
     },
     "done": true
   },
-  "chronodawn:recipes/misc/time_arrow_from_chronite": {
-    "criteria": {
-      "has_item": "2026-11-27 20:02:43 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/purpur_stairs": {
     "criteria": {
       "has_purpur_block": "2026-11-27 19:35:42 +0700"
-    },
-    "done": true
-  },
-  "chronodawn:recipes/misc/clock_from_chronite": {
-    "criteria": {
-      "has_item": "2026-11-27 20:02:43 +0700"
     },
     "done": true
   },
@@ -11583,6 +11553,36 @@
   "minecraft:recipes/building_blocks/purpur_stairs_from_purpur_block_stonecutting": {
     "criteria": {
       "has_purpur_block": "2026-11-27 19:35:42 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/silo_copper": {
+    "criteria": {
+      "has_item": "2026-11-27 20:02:17 +0700"
+    },
+    "done": true
+  },
+  "chronodawn:recipes/misc/time_compass": {
+    "criteria": {
+      "has_item": "2026-11-27 20:02:43 +0700"
+    },
+    "done": true
+  },
+  "chronodawn:recipes/misc/chronite_block": {
+    "criteria": {
+      "has_item": "2026-11-27 20:02:43 +0700"
+    },
+    "done": true
+  },
+  "chronodawn:recipes/misc/time_arrow_from_chronite": {
+    "criteria": {
+      "has_item": "2026-11-27 20:02:43 +0700"
+    },
+    "done": true
+  },
+  "chronodawn:recipes/misc/clock_from_chronite": {
+    "criteria": {
+      "has_item": "2026-11-27 20:02:43 +0700"
     },
     "done": true
   },
