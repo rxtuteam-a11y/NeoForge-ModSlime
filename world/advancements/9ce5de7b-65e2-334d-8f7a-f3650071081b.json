@@ -6064,7 +6064,8 @@
   },
   "tensura:ruler_of_monster": {
     "criteria": {
-      "orc": "2026-11-24 04:02:52 +0700"
+      "orc": "2026-11-24 04:02:52 +0700",
+      "direwolf": "2026-11-27 10:09:28 +0700"
     },
     "done": false
   },
@@ -10838,21 +10839,237 @@
     },
     "done": true
   },
-  "regions_unexplored:recipes/decorations/white_magnolia_shrub": {
-    "criteria": {
-      "has_white_magnolia_sapling": "2026-11-27 00:04:18 +0700"
-    },
-    "done": true
-  },
   "tensura:recipes/food/cattledeer_steak_from_campfire_cooking": {
     "criteria": {
       "has_cattledeer_beef": "2026-11-26 23:51:38 +0700"
     },
     "done": true
   },
+  "regions_unexplored:recipes/decorations/white_magnolia_shrub": {
+    "criteria": {
+      "has_white_magnolia_sapling": "2026-11-27 00:04:18 +0700"
+    },
+    "done": true
+  },
   "minecraft:adventure/who_needs_rockets": {
     "criteria": {
       "who_needs_rockets": "2026-11-27 00:15:41 +0700"
+    },
+    "done": true
+  },
+  "tensura:ruler_of_the_skies": {
+    "criteria": {
+      "charybdis": "2026-11-27 08:04:00 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/combat/golden_knife": {
+    "criteria": {
+      "has_gold_ingot": "2026-11-27 11:46:45 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/flour_from_1_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/flour_from_2_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/redstone/larch_door": {
+    "criteria": {
+      "has_larch_planks": "2026-11-27 11:53:53 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/winemaker_leggings": {
+    "criteria": {
+      "has_gold_ingot": "2026-11-27 11:46:45 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/pie_crust": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/larch_stairs": {
+    "criteria": {
+      "has_larch_planks": "2026-11-27 11:53:53 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/wheat_dough_from_egg": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/basket": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/flour_from_5_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/cutting_board": {
+    "criteria": {
+      "has_planks": "2026-11-27 11:53:53 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/redstone/larch_button": {
+    "criteria": {
+      "has_larch_planks": "2026-11-27 11:53:53 +0700"
+    },
+    "done": true
+  },
+  "cookingforblockheads:recipes/decorations/spice_rack": {
+    "criteria": {
+      "has_planks": "2026-11-27 11:53:53 +0700"
+    },
+    "done": true
+  },
+  "cookingforblockheads:recipes/decorations/fruit_basket": {
+    "criteria": {
+      "has_planks": "2026-11-27 11:53:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/fletching_table": {
+    "criteria": {
+      "has_flint": "2026-11-27 08:55:31 +0700"
+    },
+    "done": true
+  },
+  "tensura:hear_me_direwolves": {
+    "criteria": {
+      "direwolf": "2026-11-27 10:09:28 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/tools/sickle": {
+    "criteria": {
+      "has_flint": "2026-11-27 08:55:31 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/larch_slab": {
+    "criteria": {
+      "has_larch_planks": "2026-11-27 11:53:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/bread": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/hay_block": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/redstone/larch_trapdoor": {
+    "criteria": {
+      "has_larch_planks": "2026-11-27 11:53:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/flour_from_7_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/flour_from_6_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/redstone/larch_fence_gate": {
+    "criteria": {
+      "has_larch_planks": "2026-11-27 11:53:53 +0700"
+    },
+    "done": true
+  },
+  "tensura:great_saint_of_the_west": {
+    "criteria": {
+      "hinata": "2026-11-27 08:38:09 +0700"
+    },
+    "done": true
+  },
+  "mowziesmobs:recipes/combat/spear": {
+    "criteria": {
+      "has_flint": "2026-11-27 08:55:31 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/redstone/larch_pressure_plate": {
+    "criteria": {
+      "has_larch_planks": "2026-11-27 11:53:53 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/larch_fence": {
+    "criteria": {
+      "has_larch_planks": "2026-11-27 11:53:53 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/noodle_soup": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-27 12:25:52 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/pumpkin_soup": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-27 12:25:52 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/flour_from_8_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/flour_from_4_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/larch_sign": {
+    "criteria": {
+      "has_larch_planks": "2026-11-27 11:53:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/flour_from_3_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/straw_hat": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
     },
     "done": true
   },
