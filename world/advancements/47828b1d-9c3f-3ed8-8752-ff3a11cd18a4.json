@@ -73,6 +73,7 @@
       "tundra": "2026-11-24 10:58:16 +0700",
       "flower_fields": "2026-11-23 22:41:21 +0700",
       "highland_fields": "2026-11-23 21:10:02 +0700",
+      "orchard": "2026-11-27 11:18:28 +0700",
       "frozen_pine_taiga": "2026-11-22 17:27:12 +0700",
       "maple_forest": "2026-11-24 13:00:20 +0700",
       "icy_heights": "2026-11-23 13:23:44 +0700",
@@ -111,6 +112,7 @@
       "tundra": "2026-11-24 10:58:16 +0700",
       "flower_fields": "2026-11-23 22:41:21 +0700",
       "highland_fields": "2026-11-23 21:10:02 +0700",
+      "orchard": "2026-11-27 11:18:28 +0700",
       "frozen_pine_taiga": "2026-11-22 17:27:12 +0700",
       "maple_forest": "2026-11-24 13:00:20 +0700",
       "icy_heights": "2026-11-23 13:23:44 +0700",
@@ -10368,6 +10370,36 @@
   "explorerscompass:explorers_compass_cracked_stone_bricks": {
     "criteria": {
       "has_cracked_stone_bricks": "2026-11-27 11:06:34 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/misc/skeleton_skull_candle": {
+    "criteria": {
+      "has_item": "2026-11-27 11:17:46 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/armor_stand": {
+    "criteria": {
+      "has_stone_slab": "2026-11-27 11:22:16 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/sanctum/skull_on_a_stick": {
+    "criteria": {
+      "item": "2026-11-27 11:17:46 +0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/totem_of_undying": {
+    "criteria": {
+      "used_totem": "2026-11-27 11:17:39 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/misc/chain": {
+    "criteria": {
+      "has_item": "2026-11-27 11:21:58 +0700"
     },
     "done": true
   },
