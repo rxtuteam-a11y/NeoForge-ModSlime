@@ -10862,5 +10862,11 @@
     },
     "done": true
   },
+  "tensura:great_saint_of_the_west": {
+    "criteria": {
+      "hinata": "2026-11-27 08:38:09 +0700"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }

@@ -9,13 +9,15 @@
     "trbeyond:daily_day_1_cattledeer_1",
     "trbeyond:boss_rimuru_ogre_fight",
     "trbeyond:weekly_day_1_akash_1",
+    "trbeyond:boss_hinata_sakaguchi",
     "trbeyond:weekly_day_1_sylphide_3"
   ],
   "repeatable_timers": {
     "trbeyond:boss_charybdis": 5076865,
     "trbeyond:boss_elemental_colossus": 4787376,
     "trbeyond:boss_orc_disaster": 5106335,
-    "trbeyond:boss_rimuru_ogre_fight": 3659228
+    "trbeyond:boss_rimuru_ogre_fight": 3659228,
+    "trbeyond:boss_hinata_sakaguchi": 5117610
   },
   "active": [
     {
@@ -136,7 +138,9 @@
     },
     {
       "questId": "trbeyond:boss_hinata_sakaguchi",
-      "progress": {}
+      "progress": {
+        "kill_hinata_sakaguchi": 1
+      }
     },
     {
       "questId": "trbeyond:daily_day_3_giant_cod_3",

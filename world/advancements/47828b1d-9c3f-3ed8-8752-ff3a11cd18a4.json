@@ -9978,6 +9978,12 @@
     },
     "done": true
   },
+  "vinery:recipes/coarse_dirt_slab": {
+    "criteria": {
+      "has_coarse_dirt": "2026-11-27 08:33:36 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/misc/pure_magisteel_bone_golem": {
     "criteria": {
       "has_pure_magisteel_ingot": "2026-11-27 08:16:28 +0700"
