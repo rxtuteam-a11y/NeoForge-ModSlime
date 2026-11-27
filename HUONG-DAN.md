@@ -70,6 +70,14 @@ toàn bộ config/kubejs hiện tại của server (nhiệm vụ FTB Quests, hì
 
 Người chơi chỉ cần giải nén và chép đè vào thư mục instance NeoForge 1.21.1 (21.1.267) của họ.
 
+**Cài tự động cho TLauncher (Legacy):** mở TLauncher, chọn "NeoForge 1.21.1", vào game 1 lần tới menu chính rồi tắt.
+Sau đó mở PowerShell (Windows + X → Terminal) và chạy:
+```
+irm https://rxtuteam-a11y.github.io/NeoForge-ModSlime/cai-dat.ps1 | iex
+```
+Script tải gói, đổi tên thư mục `mods` cũ thành `mods_cu_<ngày-giờ>` (không xoá), cài mods/config/kubejs mới
+và kiểm tra có đủ mod vá + VanillaBackport.
+
 **Cập nhật gói này sau khi thêm mod / overrides mới:**
 GitHub → Actions → **Đóng gói mod cho người chơi** → Run workflow → chọn `dong_goi`.
 (`xem` chỉ để kiểm tra cấu trúc file gốc trên Drive, không đổi gì.)
