@@ -113,6 +113,8 @@ while kill -0 "$PANEL_PID" 2>/dev/null; do
     echo "=================================================================="
   fi
   N=$(wc -l < logs/latest.log 2>/dev/null || echo 0)
+  # latest.log bị tạo lại (server khởi động lại) -> in lại từ đầu thay vì im lặng mãi
+  if [ "$N" -lt "$LAST_PRINTED" ]; then LAST_PRINTED=0; fi
   if [ "$N" -gt "$LAST_PRINTED" ]; then
     sed -n "$((LAST_PRINTED + 1)),${N}p" logs/latest.log | tail -n 40
     LAST_PRINTED=$N
