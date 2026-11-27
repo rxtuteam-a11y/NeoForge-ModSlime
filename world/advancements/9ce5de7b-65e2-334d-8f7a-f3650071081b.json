@@ -6064,7 +6064,8 @@
   },
   "tensura:ruler_of_monster": {
     "criteria": {
-      "orc": "2026-11-24 04:02:52 +0700"
+      "orc": "2026-11-24 04:02:52 +0700",
+      "direwolf": "2026-11-27 10:09:28 +0700"
     },
     "done": false
   },
@@ -10901,6 +10902,12 @@
   "minecraft:recipes/decorations/fletching_table": {
     "criteria": {
       "has_flint": "2026-11-27 08:55:31 +0700"
+    },
+    "done": true
+  },
+  "tensura:hear_me_direwolves": {
+    "criteria": {
+      "direwolf": "2026-11-27 10:09:28 +0700"
     },
     "done": true
   },
