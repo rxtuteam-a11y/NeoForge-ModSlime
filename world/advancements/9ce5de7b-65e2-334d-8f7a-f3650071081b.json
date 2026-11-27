@@ -11031,6 +11031,18 @@
     },
     "done": true
   },
+  "farmersdelight:recipes/cooking/noodle_soup": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-27 12:25:52 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/pumpkin_soup": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-27 12:25:52 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/flour_from_8_wheat": {
     "criteria": {
       "has_wheat": "2026-11-27 08:45:39 +0700"
