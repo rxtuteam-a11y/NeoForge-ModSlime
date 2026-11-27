@@ -71,13 +71,6 @@ else
   echo "::warning::Không thấy file Tensura TNO đã sửa (modslime-fix) trong mods của server."
 fi
 
-# 3b) Gỡ VanillaBackport — crash "Cannot get config value before config is loaded" tại
-# DynamicBlockRenderingHandler.tick() khi khởi động. Server cũng đã gỡ mod này (xem cloud-server.yml).
-vbp=("$WORK"/final/mods/VanillaBackport-neoforge-*.jar)
-if [ ${#vbp[@]} -gt 0 ]; then
-  echo "Gỡ (gây crash khi khởi động): ${vbp[*]##*/}"; rm -f "${vbp[@]}"
-fi
-
 # 4) Thêm mod nấu ăn mới (kèm mod chỉ dành cho máy chơi nếu có)
 copy_dir "extra-mods" "$WORK/final/mods"
 copy_dir "extra-mods/chi-may-choi" "$WORK/final/mods"
@@ -85,6 +78,13 @@ rm -f "$WORK"/final/mods/danh-sach.txt "$WORK"/final/mods/khoa-phien-ban.txt
 
 # 5) Config / KubeJS / defaultconfigs hiện tại của server (nhiệm vụ FTB Quests, lang, assets, cấu hình mod)
 copy_dir "config" "$WORK/final/config"
+# Không chép config phía máy chơi (*-client.toml, *client*.snbt): server không dùng chúng, và
+# các file trong repo đến từ overrides.zip của bản modpack cũ -> lệch định dạng với bản mod hiện
+# tại. Ví dụ vanillabackport-client.toml cũ làm VanillaBackport 1.2.2 crash khi khởi động
+# ("Cannot get config value before config is loaded"). Thiếu file thì mod tự tạo bản đúng.
+n_client_cfg=$(find "$WORK/final/config" \( -name '*-client.toml' -o -name '*_client.toml' -o -name '*client*.snbt' \) -type f | wc -l)
+find "$WORK/final/config" \( -name '*-client.toml' -o -name '*_client.toml' -o -name '*client*.snbt' \) -type f -delete
+echo "Bỏ $n_client_cfg file config phía máy chơi (mod sẽ tự tạo lại đúng phiên bản)."
 copy_dir "kubejs" "$WORK/final/kubejs"
 copy_dir "defaultconfigs" "$WORK/final/defaultconfigs"
 
