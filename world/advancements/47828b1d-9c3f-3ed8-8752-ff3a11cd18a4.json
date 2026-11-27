@@ -10373,6 +10373,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/pure_magisteel_nugget_from_smelting_pure_magisteel_chestplate": {
+    "criteria": {
+      "has_pure_magisteel_chestplate": "2026-11-27 11:49:12 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/pure_magisteel_nugget_from_blasting_pure_magisteel_helmet": {
+    "criteria": {
+      "has_pure_magisteel_helmet": "2026-11-27 11:49:13 +0700"
+    },
+    "done": true
+  },
   "netherexp:recipes/misc/skeleton_skull_candle": {
     "criteria": {
       "has_item": "2026-11-27 11:17:46 +0700"
@@ -10397,9 +10409,33 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/pure_magisteel_nugget_from_blasting_pure_magisteel_leggings": {
+    "criteria": {
+      "has_pure_magisteel_leggings": "2026-11-27 11:49:11 +0700"
+    },
+    "done": true
+  },
   "iceandfire:recipes/misc/chain": {
     "criteria": {
       "has_item": "2026-11-27 11:21:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/pure_magisteel_nugget_from_smelting_pure_magisteel_helmet": {
+    "criteria": {
+      "has_pure_magisteel_helmet": "2026-11-27 11:49:13 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/pure_magisteel_nugget_from_blasting_pure_magisteel_chestplate": {
+    "criteria": {
+      "has_pure_magisteel_chestplate": "2026-11-27 11:49:12 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/pure_magisteel_nugget_from_smelting_pure_magisteel_leggings": {
+    "criteria": {
+      "has_pure_magisteel_leggings": "2026-11-27 11:49:11 +0700"
     },
     "done": true
   },
