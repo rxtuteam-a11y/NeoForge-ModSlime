@@ -54,7 +54,7 @@ CLOUD_DEADLINE = float(os.environ.get("MODSLIME_DEADLINE", "0") or 0)
 IDLE_EXIT_MIN = float(os.environ.get("MODSLIME_IDLE_EXIT_MIN", "10") or 10)
 GIT_BRANCH = os.environ.get("GIT_BRANCH", "main") or "main"
 RCLONE_REMOTE = os.environ.get("RCLONE_REMOTE", "").strip()
-GDRIVE_KEEP = int(os.environ.get("GDRIVE_KEEP", "3") or 3)  # số bản sao lưu world giữ lại trên Drive
+GDRIVE_KEEP = int(os.environ.get("GDRIVE_KEEP", "5") or 5)  # số bản sao lưu world giữ lại trên Drive
 CLOUD_PUBLIC_URL = os.environ.get("MODSLIME_PUBLIC_URL", "")
 CLOUD_MC_ADDRESS = os.environ.get("MODSLIME_MC_ADDRESS", "")
 CLOUD_RUN_URL = os.environ.get("MODSLIME_RUN_URL", "")
@@ -311,6 +311,10 @@ def append_log(buf, line, max_lines=1500):
 
 def _parse_minecraft_log_line(line: str):
     global server_ready, next_autosave_ts
+    if "Saved the game" in line:
+        world_saved_event.set()
+    if "All dimensions are saved" in line:
+        world_stop_saved_event.set()
     # Detect server startup completion
     if not server_ready and ("Done (" in line and ")!" in line):
         with lock:
@@ -499,6 +503,110 @@ def ensure_mods_on_linux_bg():
 # GitHub Sync (24/7 Auto-Save, Manual Backup, Pull World)
 # ============================================================
 
+def _git(args, input_text=None, env=None):
+    return subprocess.run(
+        ["git"] + args, cwd=ROOT_DIR, input=input_text, capture_output=True, text=True,
+        encoding="utf-8", errors="replace", env=env, creationflags=SUBPROCESS_FLAGS,
+    )
+
+
+# Dữ liệu server ghi ra và cần lưu (config chỉ lưu những file chính server đã sửa trong phiên)
+SYNC_PATHS = [
+    "world", "server.properties", "ops.json", "whitelist.json",
+    "banned-players.json", "banned-ips.json", "usercache.json", "usernamecache.json",
+]
+_session_base = None
+
+
+def _get_session_base():
+    """Commit mà phiên này bắt đầu từ đó. HEAD không bao giờ bị dời trong phiên."""
+    global _session_base
+    if not _session_base:
+        _session_base = os.environ.get("MODSLIME_SESSION_BASE") or _git(["rev-parse", "HEAD"]).stdout.strip()
+    return _session_base
+
+
+def _collect_changes():
+    """Stage (index thường, có cache stat nên nhanh) mọi thay đổi server tạo ra từ đầu phiên.
+    Trả về danh sách bản ghi cho `git update-index --index-info`."""
+    base = _get_session_base()
+    paths = [p for p in SYNC_PATHS if os.path.exists(os.path.join(ROOT_DIR, p))]
+    cfg = set()
+    for args in (["diff", "--name-only", "-z", base, "--", "config"],
+                 ["ls-files", "--others", "--exclude-standard", "-z", "--", "config"]):
+        cfg.update(x for x in _git(args).stdout.split("\0") if x)
+    if paths:
+        r = _git(["add", "-A", "--"] + paths)
+        if r.returncode != 0:
+            raise RuntimeError("git add lỗi: " + (r.stderr or r.stdout).strip()[:200])
+    cfg_list = sorted(cfg)
+    for i in range(0, len(cfg_list), 200):
+        _git(["add", "-A", "--"] + cfg_list[i:i + 200])
+    spec = paths + (["config"] if cfg_list else [])
+    if not spec:
+        return []
+    toks = _git(["diff", "--cached", "--name-status", "-z", "--no-renames", base, "--"] + spec).stdout.split("\0")
+    changes = []
+    i = 0
+    while i + 1 < len(toks) and toks[i]:
+        changes.append((toks[i][0], toks[i + 1]))
+        i += 2
+    if not changes:
+        return []
+    entries = {}
+    for rec in _git(["ls-files", "-s", "-z", "--"] + spec).stdout.split("\0"):
+        if "\t" in rec:
+            meta, path = rec.split("\t", 1)
+            mode, sha, _stage = meta.split(" ")
+            entries[path] = (mode, sha)
+    recs = []
+    for status, path in changes:
+        if status == "D" or path not in entries:
+            recs.append("0 " + "0" * 40 + "\t" + path)
+        else:
+            mode, sha = entries[path]
+            recs.append(f"{mode} {sha}\t{path}")
+    return recs
+
+
+def _push_changes(recs, message):
+    """Tạo commit = (bản mới nhất trên GitHub) + (thay đổi của server) rồi push.
+    Không rebase, không autostash, không đụng working tree -> an toàn khi Minecraft đang ghi file."""
+    shallow = _git(["rev-parse", "--is-shallow-repository"]).stdout.strip() == "true"
+    idx = _git(["rev-parse", "--git-path", "modslime-sync-index"]).stdout.strip()
+    if not os.path.isabs(idx):
+        idx = os.path.join(ROOT_DIR, idx)
+    env = dict(os.environ, GIT_INDEX_FILE=idx)
+    cenv = dict(os.environ,
+                GIT_AUTHOR_NAME="ModSlime Cloud AutoSave", GIT_AUTHOR_EMAIL="modslime-bot@users.noreply.github.com",
+                GIT_COMMITTER_NAME="ModSlime Cloud AutoSave", GIT_COMMITTER_EMAIL="modslime-bot@users.noreply.github.com")
+    last_err = ""
+    for attempt in range(1, 6):
+        f = _git(["fetch", "--quiet"] + (["--depth=1"] if shallow else []) + ["origin", GIT_BRANCH])
+        if f.returncode != 0:
+            last_err = (f.stderr or f.stdout).strip()
+            time.sleep(attempt * 3)
+            continue
+        remote = _git(["rev-parse", "FETCH_HEAD"]).stdout.strip()
+        _git(["read-tree", remote], env=env)
+        u = _git(["update-index", "-z", "--index-info"], input_text="\0".join(recs) + "\0", env=env)
+        if u.returncode != 0:
+            raise RuntimeError("update-index lỗi: " + (u.stderr or u.stdout).strip()[:200])
+        tree = _git(["write-tree"], env=env).stdout.strip()
+        if tree and tree == _git(["rev-parse", remote + "^{tree}"]).stdout.strip():
+            return True, "nochange"
+        commit = _git(["commit-tree", tree, "-p", remote, "-m", message], env=cenv).stdout.strip()
+        if not commit:
+            raise RuntimeError("Không tạo được commit")
+        p = _git(["push", "origin", f"{commit}:refs/heads/{GIT_BRANCH}"])
+        if p.returncode == 0:
+            return True, commit[:8]
+        last_err = (p.stderr or p.stdout).strip()
+        append_log(console_lines, f"[Cloud Sync] Push chưa được (lần {attempt}), thử lại: {last_err[:160]}")
+        time.sleep(attempt * 3)
+    return False, last_err
+
+
 def sync_to_github(reason="Auto-backup"):
     global last_sync_status, last_sync_time, backup_in_progress
     with git_lock:
@@ -506,113 +614,24 @@ def sync_to_github(reason="Auto-backup"):
         now_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         append_log(console_lines, f"[Cloud Sync] Đang lưu dữ liệu world & config lên GitHub ({reason})...")
         try:
-            targets = [
-                "world",
-                "config",
-                "server.properties",
-                "ops.json",
-                "whitelist.json",
-                "usercache.json",
-                "usernamecache.json",
-            ]
-            existing_targets = [t for t in targets if os.path.exists(os.path.join(ROOT_DIR, t))]
-            if existing_targets:
-                subprocess.run(
-                    ["git", "add", "--"] + existing_targets,
-                    cwd=ROOT_DIR,
-                    check=False,
-                    capture_output=True,
-                    text=True,
-                    encoding="utf-8",
-                    errors="replace",
-                    creationflags=SUBPROCESS_FLAGS,
-                )
-
-            diff_check = subprocess.run(
-                ["git", "diff", "--cached", "--quiet"],
-                cwd=ROOT_DIR,
-                creationflags=SUBPROCESS_FLAGS,
-            )
-            if diff_check.returncode == 0:
+            recs = _collect_changes()
+            ok, info = (True, "nochange") if not recs else _push_changes(
+                recs, f"Save world & server data ({reason} - {now_str})")
+            if ok and info == "nochange":
                 last_sync_status = f"Đã đồng bộ (Không có thay đổi mới - {reason})"
-                last_sync_time = now_str
-                append_log(console_lines, f"[Cloud Sync] Không có thay đổi mới cần đẩy lên GitHub ({reason}).")
+                append_log(console_lines, f"[Cloud Sync] GitHub đã có bản mới nhất ({reason}).")
                 _record_backup_history(reason, True, "Không có thay đổi mới", now_str)
-                get_world_size_mb(force=True)
-                return True, last_sync_status
-
-            commit_msg = f"Save world & server data ({reason} - {now_str})"
-            commit_res = subprocess.run(
-                ["git", "commit", "-m", commit_msg],
-                cwd=ROOT_DIR,
-                capture_output=True,
-                text=True,
-                encoding="utf-8",
-                errors="replace",
-                creationflags=SUBPROCESS_FLAGS,
-            )
-            if commit_res.returncode != 0:
-                err = (commit_res.stderr or commit_res.stdout or "git commit failed").strip()
-                last_sync_status = f"Lỗi git commit: {err[:120]}"
-                last_sync_time = now_str
-                append_log(console_lines, f"[Cloud Sync] Lỗi git commit: {err}")
-                _record_backup_history(reason, False, last_sync_status, now_str)
-                return False, last_sync_status
-
-            push_res = subprocess.run(
-                ["git", "push", "origin", f"HEAD:{GIT_BRANCH}"],
-                cwd=ROOT_DIR,
-                capture_output=True,
-                text=True,
-                encoding="utf-8",
-                errors="replace",
-                creationflags=SUBPROCESS_FLAGS,
-            )
-            if push_res.returncode != 0:
-                # Try safe pull --rebase --autostash before retrying push
-                append_log(console_lines, "[Cloud Sync] Remote có commit mới, đang thử git pull --rebase --autostash origin main...")
-                rebase_res = subprocess.run(
-                    ["git", "pull", "--rebase", "--autostash", "origin", GIT_BRANCH],
-                    cwd=ROOT_DIR,
-                    capture_output=True,
-                    text=True,
-                    encoding="utf-8",
-                    errors="replace",
-                    creationflags=SUBPROCESS_FLAGS,
-                )
-                if rebase_res.returncode == 0:
-                    push_res = subprocess.run(
-                        ["git", "push", "origin", f"HEAD:{GIT_BRANCH}"],
-                        cwd=ROOT_DIR,
-                        capture_output=True,
-                        text=True,
-                        encoding="utf-8",
-                        errors="replace",
-                        creationflags=SUBPROCESS_FLAGS,
-                    )
-                else:
-                    subprocess.run(
-                        ["git", "rebase", "--abort"],
-                        cwd=ROOT_DIR,
-                        check=False,
-                        capture_output=True,
-                        creationflags=SUBPROCESS_FLAGS,
-                    )
-
-            if push_res.returncode == 0:
+            elif ok:
                 last_sync_status = f"Lưu lên GitHub thành công ({reason})"
-                last_sync_time = now_str
-                append_log(console_lines, f"[Cloud Sync] Đã lưu toàn bộ dữ liệu chơi lên GitHub thành công lúc {now_str}!")
-                _record_backup_history(reason, True, "Đẩy lên GitHub thành công", now_str)
-                get_world_size_mb(force=True)
-                return True, last_sync_status
+                append_log(console_lines, f"[Cloud Sync] Đã lưu {len(recs)} file lên GitHub (commit {info}) lúc {now_str}!")
+                _record_backup_history(reason, True, f"Đẩy lên GitHub thành công ({len(recs)} file)", now_str)
             else:
-                err = (push_res.stderr or push_res.stdout or "git push failed").strip()
-                last_sync_status = f"Lỗi git push: {err[:120]}"
-                last_sync_time = now_str
-                append_log(console_lines, f"[Cloud Sync] Lỗi khi push lên GitHub: {err}")
+                last_sync_status = f"Lỗi git push: {info[:120]}"
+                append_log(console_lines, f"[Cloud Sync] LỖI: không đẩy được lên GitHub sau 5 lần thử: {info}")
                 _record_backup_history(reason, False, last_sync_status, now_str)
-                return False, last_sync_status
+            last_sync_time = now_str
+            get_world_size_mb(force=True)
+            return ok, last_sync_status
         except Exception as e:
             last_sync_status = f"Lỗi đồng bộ: {e}"
             last_sync_time = now_str
@@ -624,52 +643,63 @@ def sync_to_github(reason="Auto-backup"):
 
 
 def pull_world_from_github():
-    global last_sync_status, last_sync_time, backup_in_progress
+    global last_sync_status, last_sync_time, backup_in_progress, _session_base
     if is_server_running():
         return False, "Hãy TẮT Server trước khi tải World mới nhất từ GitHub!"
-
+    # Đẩy nốt thay đổi chưa lưu (nếu có) trước khi thay world bằng bản trên GitHub
+    ok, msg = sync_to_github("Trước khi tải World")
+    if not ok:
+        return False, "Chưa đẩy được dữ liệu hiện tại lên GitHub nên không tải đè: " + msg
     with git_lock:
         backup_in_progress = True
         now_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        append_log(console_lines, "[Cloud Pull] Đang tải World & Config mới nhất từ GitHub (origin main)...")
+        append_log(console_lines, "[Cloud Pull] Đang tải World & Config mới nhất từ GitHub...")
         try:
-            res = subprocess.run(
-                ["git", "pull", "--autostash", "origin", GIT_BRANCH],
-                cwd=ROOT_DIR,
-                capture_output=True,
-                text=True,
-                encoding="utf-8",
-                errors="replace",
-                creationflags=SUBPROCESS_FLAGS,
-            )
-            out = (res.stdout or "").strip()
-            err = (res.stderr or "").strip()
-            if res.returncode == 0:
+            f = _git(["fetch", "--quiet", "origin", GIT_BRANCH])
+            r = _git(["reset", "--hard", "FETCH_HEAD"]) if f.returncode == 0 else f
+            if r.returncode == 0:
+                _session_base = _git(["rev-parse", "HEAD"]).stdout.strip()
                 summary = "Đã cập nhật World mới nhất từ GitHub!"
-                if "Already up to date" in out:
-                    summary = "World trên máy đã là bản mới nhất trên GitHub!"
-                last_sync_status = summary
-                last_sync_time = now_str
+                last_sync_status, last_sync_time = summary, now_str
                 append_log(console_lines, f"[Cloud Pull] {summary}")
                 _record_backup_history("Pull World", True, summary, now_str)
                 get_world_size_mb(force=True)
                 return True, summary
-            else:
-                msg = f"Lỗi khi tải World từ GitHub: {(err or out)[:150]}"
-                last_sync_status = msg
-                last_sync_time = now_str
-                append_log(console_lines, f"[Cloud Pull] {msg}")
-                _record_backup_history("Pull World", False, msg, now_str)
-                return False, msg
-        except Exception as e:
-            msg = f"Lỗi ngoại lệ khi tải World: {e}"
-            last_sync_status = msg
-            last_sync_time = now_str
+            msg = f"Lỗi khi tải World từ GitHub: {(r.stderr or r.stdout).strip()[:150]}"
+            last_sync_status, last_sync_time = msg, now_str
             append_log(console_lines, f"[Cloud Pull] {msg}")
             _record_backup_history("Pull World", False, msg, now_str)
             return False, msg
+        except Exception as e:
+            msg = f"Lỗi ngoại lệ khi tải World: {e}"
+            last_sync_status, last_sync_time = msg, now_str
+            append_log(console_lines, f"[Cloud Pull] {msg}")
+            return False, msg
         finally:
             backup_in_progress = False
+
+
+world_saved_event = threading.Event()
+world_stop_saved_event = threading.Event()
+
+
+def save_world_snapshot(timeout=120):
+    """save-off -> save-all flush -> chờ Minecraft báo 'Saved the game' để bản lưu không bị ghi dở.
+    Luôn gọi save_world_resume() sau khi sao lưu xong."""
+    if not is_server_running():
+        return True
+    world_saved_event.clear()
+    send_server_command("save-off")
+    send_server_command("save-all flush")
+    ok = world_saved_event.wait(timeout)
+    if not ok:
+        append_log(console_lines, f"[Cloud Sync] Cảnh báo: chưa thấy 'Saved the game' sau {timeout}s, vẫn sao lưu.")
+    return ok
+
+
+def save_world_resume():
+    if is_server_running():
+        send_server_command("save-on")
 
 
 def auto_backup_loop():
@@ -692,17 +722,13 @@ def auto_backup_loop():
                     console_lines,
                     f"[Auto-Save 24/7] Đến chu kỳ {autosave_interval_min} phút — đang lưu World vào ổ đĩa và đẩy lên GitHub...",
                 )
-                send_server_command("save-all flush")
-                # Wait 3 seconds so Minecraft flushes chunks to disk
-                for _ in range(6):
-                    if not is_server_running():
-                        break
-                    time.sleep(0.5)
-                if is_server_running():
-                    sync_to_github(f"Auto-Save 24/7 ({autosave_interval_min}m)")
-                    next_autosave_ts = time.time() + autosave_interval_min * 60
-                else:
-                    next_autosave_ts = None
+                try:
+                    save_world_snapshot()
+                    if is_server_running():
+                        sync_to_github(f"Auto-Save 24/7 ({autosave_interval_min}m)")
+                finally:
+                    save_world_resume()
+                next_autosave_ts = time.time() + autosave_interval_min * 60 if is_server_running() else None
         except Exception as e:
             append_log(console_lines, f"[Auto-Save Error] {e}")
             time.sleep(5)
@@ -913,12 +939,22 @@ def stop_minecraft_server():
     append_log(console_lines, "[Panel] Đang tạm dừng Chunky, lưu World (save-all flush) và tắt Server an toàn...")
     send_server_command("chunky pause")
     time.sleep(0.3)
+    send_server_command("save-on")
     send_server_command("save-all flush")
     time.sleep(2.0)
+    world_stop_saved_event.clear()
     ok, msg = send_server_command("stop")
 
     def _force_kill_if_hung():
         for _ in range(35):
+            if not is_server_running():
+                return
+            time.sleep(1)
+        # Chưa lưu xong (world lớn) -> chờ thêm tối đa 5 phút, tuyệt đối không ép tắt khi đang ghi
+        if not world_stop_saved_event.is_set():
+            append_log(console_lines, "[Panel] World đang được lưu khi tắt, chờ lưu xong rồi mới đóng Java...")
+            world_stop_saved_event.wait(300)
+        for _ in range(20):
             if not is_server_running():
                 return
             time.sleep(1)
@@ -1202,10 +1238,11 @@ class PanelHandler(http.server.SimpleHTTPRequestHandler):
             return
 
         if parsed.path == "/api/backup":
-            if is_server_running():
-                send_server_command("save-all flush")
-                time.sleep(3)
-            ok, msg = sync_to_github(f"Manual Backup ({user})")
+            try:
+                save_world_snapshot()
+                ok, msg = sync_to_github(f"Manual Backup ({user})")
+            finally:
+                save_world_resume()
             with lock:
                 hist_copy = list(backup_history)
             self._send_json({
@@ -1218,10 +1255,11 @@ class PanelHandler(http.server.SimpleHTTPRequestHandler):
             return
 
         if parsed.path == "/api/backup-gdrive":
-            if is_server_running():
-                send_server_command("save-all flush")
-                time.sleep(3)
-            ok, msg = backup_to_gdrive(f"Thủ công ({user})")
+            try:
+                save_world_snapshot()
+                ok, msg = backup_to_gdrive(f"Thủ công ({user})")
+            finally:
+                save_world_resume()
             self._send_json({"ok": ok, "message": msg, "gdrive_status": gdrive_status,
                              "gdrive_last_time": gdrive_last_time}, status=200 if ok else 400)
             return
