@@ -32,6 +32,15 @@ jobs:
         with:
           ref: main
           fetch-depth: 1
+          # chỉ lấy phần cần cho gói người chơi (bỏ world 3,6 GB -> nhanh hơn ~4 phút)
+          sparse-checkout: |
+            .github
+            config
+            kubejs
+            defaultconfigs
+            extra-mods
+          sparse-checkout-cone-mode: true
+          filter: blob:none
 
       - name: Chạy đóng gói
         run: |
