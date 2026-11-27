@@ -49,6 +49,7 @@
       "shrubland": "2026-11-23 21:06:03 +0700",
       "dry_bushland": "2026-11-24 12:57:35 +0700",
       "old_growth_golden_boreal_taiga": "2026-11-24 10:34:25 +0700",
+      "fen": "2026-11-27 07:54:59 +0700",
       "pine_taiga": "2026-11-24 10:20:07 +0700",
       "magnolia_woodland": "2026-11-23 21:03:43 +0700",
       "muddy_river": "2026-11-24 10:17:03 +0700",
@@ -88,6 +89,7 @@
       "shrubland": "2026-11-23 21:06:03 +0700",
       "dry_bushland": "2026-11-24 12:57:35 +0700",
       "old_growth_golden_boreal_taiga": "2026-11-24 10:34:25 +0700",
+      "fen": "2026-11-27 07:54:59 +0700",
       "pine_taiga": "2026-11-24 10:20:07 +0700",
       "magnolia_woodland": "2026-11-23 21:03:43 +0700",
       "muddy_river": "2026-11-24 10:17:03 +0700",
@@ -947,6 +949,7 @@
       "minecraft:windswept_hills": "2026-11-23 19:32:36 +0700",
       "minecraft:old_growth_spruce_taiga": "2026-11-24 12:44:22 +0700",
       "minecraft:snowy_beach": "2026-11-22 19:16:01 +0700",
+      "minecraft:flower_forest": "2026-11-27 07:59:32 +0700",
       "minecraft:beach": "2026-11-24 10:18:15 +0700",
       "minecraft:dark_forest": "2026-11-24 12:45:00 +0700",
       "minecraft:sparse_jungle": "2026-11-23 23:50:46 +0700",
@@ -9881,6 +9884,54 @@
   "bakery:recipes/cake_dough": {
     "criteria": {
       "has_sugar": "2026-11-26 22:10:27 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/drying/tropical_fish_jerky": {
+    "criteria": {
+      "has_meat": "2026-11-27 08:06:35 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_cod_from_campfire_cooking": {
+    "criteria": {
+      "has_cod": "2026-11-27 07:54:29 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:iceandfire/kill_ghost": {
+    "criteria": {
+      "killed_fire_dragon": "2026-11-27 08:01:18 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_cod": {
+    "criteria": {
+      "has_cod": "2026-11-27 07:54:29 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/drying/cod_jerky": {
+    "criteria": {
+      "has_meat": "2026-11-27 07:54:29 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_cod_from_smoking": {
+    "criteria": {
+      "has_cod": "2026-11-27 07:54:29 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/misc/ghost_chest": {
+    "criteria": {
+      "has_item": "2026-11-27 08:01:27 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/building_blocks/graveyard_soil": {
+    "criteria": {
+      "has_item": "2026-11-27 08:01:27 +0700"
     },
     "done": true
   },

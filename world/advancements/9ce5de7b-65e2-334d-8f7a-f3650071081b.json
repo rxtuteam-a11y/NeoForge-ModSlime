@@ -10856,5 +10856,11 @@
     },
     "done": true
   },
+  "tensura:ruler_of_the_skies": {
+    "criteria": {
+      "charybdis": "2026-11-27 08:04:00 +0700"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }

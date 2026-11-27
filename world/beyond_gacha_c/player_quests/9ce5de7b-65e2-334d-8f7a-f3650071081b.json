@@ -1,6 +1,7 @@
 {
   "mxp": 0,
   "completed": [
+    "trbeyond:boss_charybdis",
     "trbeyond:daily_day_2_slime_1",
     "trbeyond:boss_elemental_colossus",
     "trbeyond:daily_day_3_cattledeer_2",
@@ -10,9 +11,10 @@
     "trbeyond:weekly_day_1_sylphide_3"
   ],
   "repeatable_timers": {
+    "trbeyond:boss_charybdis": 5076865,
+    "trbeyond:boss_elemental_colossus": 4787376,
     "trbeyond:boss_orc_disaster": 2457139,
-    "trbeyond:boss_rimuru_ogre_fight": 3659228,
-    "trbeyond:boss_elemental_colossus": 4787376
+    "trbeyond:boss_rimuru_ogre_fight": 3659228
   },
   "active": [
     {
@@ -145,7 +147,9 @@
     },
     {
       "questId": "trbeyond:boss_charybdis",
-      "progress": {}
+      "progress": {
+        "kill_charybdis": 1
+      }
     },
     {
       "questId": "trbeyond:repeatable_material_giant_bat_zane_blood",
