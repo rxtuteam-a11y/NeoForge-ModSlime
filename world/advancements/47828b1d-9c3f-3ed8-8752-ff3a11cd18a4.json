@@ -332,7 +332,8 @@
     "criteria": {
       "magnolia_log": "2026-11-26 19:14:25 +0700",
       "pine_log": "2026-11-22 17:38:42 +0700",
-      "larch_log": "2026-11-24 10:23:49 +0700"
+      "larch_log": "2026-11-24 10:23:49 +0700",
+      "blackwood_log": "2026-11-27 21:24:03 +0700"
     },
     "done": false
   },
@@ -10945,6 +10946,282 @@
   "regions_unexplored:recipes/decorations/birch_shrub": {
     "criteria": {
       "has_birch_sapling": "2026-11-27 20:05:36 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/building_blocks/stonecutting/mangrove_log/hollow_vangrove_log": {
+    "criteria": {
+      "has_block": "2026-11-27 21:22:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_mangrove_wood_from_mangrove_log_woodcutting": {
+    "criteria": {
+      "has_mangrove_log": "2026-11-27 21:22:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cherry_planks": {
+    "criteria": {
+      "has_log": "2026-11-27 21:23:51 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/cherry_branch_from_cherry_log": {
+    "criteria": {
+      "has_log": "2026-11-27 21:23:51 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/acacia_stairs_from_acacia_log_woodcutting": {
+    "criteria": {
+      "has_acacia_log": "2026-11-27 21:22:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cherry_stairs_from_cherry_log_woodcutting": {
+    "criteria": {
+      "has_cherry_log": "2026-11-27 21:23:51 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stick_from_acacia_log_woodcutting": {
+    "criteria": {
+      "has_acacia_log": "2026-11-27 21:22:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/acacia_wood": {
+    "criteria": {
+      "has_log": "2026-11-27 21:22:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cherry_button_from_cherry_log_woodcutting": {
+    "criteria": {
+      "has_cherry_log": "2026-11-27 21:23:51 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_mangrove_log_from_mangrove_log_woodcutting": {
+    "criteria": {
+      "has_mangrove_log": "2026-11-27 21:22:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stick_from_cherry_log_woodcutting": {
+    "criteria": {
+      "has_cherry_log": "2026-11-27 21:23:51 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/acacia_slab_from_acacia_log_woodcutting": {
+    "criteria": {
+      "has_acacia_log": "2026-11-27 21:22:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cherry_wood": {
+    "criteria": {
+      "has_log": "2026-11-27 21:23:51 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/ladder_from_cherry_log_woodcutting": {
+    "criteria": {
+      "has_cherry_log": "2026-11-27 21:23:51 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/ladder_from_mangrove_log_woodcutting": {
+    "criteria": {
+      "has_mangrove_log": "2026-11-27 21:22:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mangrove_stairs_from_mangrove_log_woodcutting": {
+    "criteria": {
+      "has_mangrove_log": "2026-11-27 21:22:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/acacia_fence_from_acacia_log_woodcutting": {
+    "criteria": {
+      "has_acacia_log": "2026-11-27 21:22:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/acacia_button_from_acacia_log_woodcutting": {
+    "criteria": {
+      "has_acacia_log": "2026-11-27 21:22:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/pale_oak_planks": {
+    "criteria": {
+      "has_log": "2026-11-27 21:22:56 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/acacia_planks": {
+    "criteria": {
+      "has_log": "2026-11-27 21:22:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/ladder_from_acacia_log_woodcutting": {
+    "criteria": {
+      "has_acacia_log": "2026-11-27 21:22:49 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/acacia_branch_from_acacia_log": {
+    "criteria": {
+      "has_log": "2026-11-27 21:22:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cherry_slab_from_cherry_log_woodcutting": {
+    "criteria": {
+      "has_cherry_log": "2026-11-27 21:23:51 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stick_from_mangrove_log_woodcutting": {
+    "criteria": {
+      "has_mangrove_log": "2026-11-27 21:22:50 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/building_blocks/stonecutting/acacia_log/hollow_acacia_log": {
+    "criteria": {
+      "has_block": "2026-11-27 21:22:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mangrove_slab_from_mangrove_log_woodcutting": {
+    "criteria": {
+      "has_mangrove_log": "2026-11-27 21:22:50 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/blackwood_branch_from_blackwood_log": {
+    "criteria": {
+      "has_log": "2026-11-27 21:24:03 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/mangrove_branch_from_mangrove_log": {
+    "criteria": {
+      "has_log": "2026-11-27 21:22:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/pale_oak_wood": {
+    "criteria": {
+      "has_log": "2026-11-27 21:22:56 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cherry_fence_from_cherry_log_woodcutting": {
+    "criteria": {
+      "has_cherry_log": "2026-11-27 21:23:51 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/acacia_planks_from_acacia_log_woodcutting": {
+    "criteria": {
+      "has_acacia_log": "2026-11-27 21:22:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mangrove_fence_from_mangrove_log_woodcutting": {
+    "criteria": {
+      "has_mangrove_log": "2026-11-27 21:22:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mangrove_button_from_mangrove_log_woodcutting": {
+    "criteria": {
+      "has_mangrove_log": "2026-11-27 21:22:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_cherry_wood_from_cherry_log_woodcutting": {
+    "criteria": {
+      "has_cherry_log": "2026-11-27 21:23:51 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_cherry_log_from_cherry_log_woodcutting": {
+    "criteria": {
+      "has_cherry_log": "2026-11-27 21:23:51 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mangrove_planks_from_mangrove_log_woodcutting": {
+    "criteria": {
+      "has_mangrove_log": "2026-11-27 21:22:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bowl_from_cherry_log_woodcutting": {
+    "criteria": {
+      "has_cherry_log": "2026-11-27 21:23:51 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/blackwood_wood": {
+    "criteria": {
+      "has_log": "2026-11-27 21:24:03 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_acacia_log_from_acacia_log_woodcutting": {
+    "criteria": {
+      "has_acacia_log": "2026-11-27 21:22:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cherry_planks_from_cherry_log_woodcutting": {
+    "criteria": {
+      "has_cherry_log": "2026-11-27 21:23:51 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/building_blocks/stonecutting/cherry_log/hollow_cherry_log": {
+    "criteria": {
+      "has_block": "2026-11-27 21:23:51 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mangrove_wood": {
+    "criteria": {
+      "has_log": "2026-11-27 21:22:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_acacia_wood_from_acacia_log_woodcutting": {
+    "criteria": {
+      "has_acacia_log": "2026-11-27 21:22:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bowl_from_acacia_log_woodcutting": {
+    "criteria": {
+      "has_acacia_log": "2026-11-27 21:22:49 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/blackwood_planks": {
+    "criteria": {
+      "has_logs": "2026-11-27 21:24:03 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bowl_from_mangrove_log_woodcutting": {
+    "criteria": {
+      "has_mangrove_log": "2026-11-27 21:22:50 +0700"
     },
     "done": true
   },
