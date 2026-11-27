@@ -72,6 +72,7 @@
       "prairie": "2026-11-23 23:47:16 +0700",
       "tundra": "2026-11-24 10:58:16 +0700",
       "flower_fields": "2026-11-23 22:41:21 +0700",
+      "gravel_beach": "2026-11-27 20:05:46 +0700",
       "highland_fields": "2026-11-23 21:10:02 +0700",
       "orchard": "2026-11-27 11:18:28 +0700",
       "frozen_pine_taiga": "2026-11-22 17:27:12 +0700",
@@ -111,6 +112,7 @@
       "prairie": "2026-11-23 23:47:16 +0700",
       "tundra": "2026-11-24 10:58:16 +0700",
       "flower_fields": "2026-11-23 22:41:21 +0700",
+      "gravel_beach": "2026-11-27 20:05:46 +0700",
       "highland_fields": "2026-11-23 21:10:02 +0700",
       "orchard": "2026-11-27 11:18:28 +0700",
       "frozen_pine_taiga": "2026-11-22 17:27:12 +0700",
@@ -330,7 +332,8 @@
     "criteria": {
       "magnolia_log": "2026-11-26 19:14:25 +0700",
       "pine_log": "2026-11-22 17:38:42 +0700",
-      "larch_log": "2026-11-24 10:23:49 +0700"
+      "larch_log": "2026-11-24 10:23:49 +0700",
+      "blackwood_log": "2026-11-27 21:24:03 +0700"
     },
     "done": false
   },
@@ -10556,15 +10559,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/end_stone_brick_slab": {
+  "minecraft:story/follow_ender_eye": {
     "criteria": {
-      "has_end_stone_bricks": "2026-11-27 15:13:10 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/end_stone_brick_slab_from_end_stone_stonecutting": {
-    "criteria": {
-      "has_end_stone": "2026-11-27 15:13:11 +0700"
+      "in_stronghold": "2026-11-27 14:49:09 +0700"
     },
     "done": true
   },
@@ -10574,123 +10571,15 @@
     },
     "done": true
   },
-  "minecraft:recipes/decorations/end_stone_brick_wall_from_end_stone_stonecutting": {
-    "criteria": {
-      "has_end_stone": "2026-11-27 15:13:11 +0700"
-    },
-    "done": true
-  },
-  "minecraft:end/elytra": {
-    "criteria": {
-      "elytra": "2026-11-27 15:19:35 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/purpur_pillar_from_purpur_block_stonecutting": {
-    "criteria": {
-      "has_purpur_block": "2026-11-27 15:20:15 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/end_stone_brick_stairs": {
-    "criteria": {
-      "has_end_stone_bricks": "2026-11-27 15:13:10 +0700"
-    },
-    "done": true
-  },
-  "minecraft:story/follow_ender_eye": {
-    "criteria": {
-      "in_stronghold": "2026-11-27 14:49:09 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/shulker_box": {
-    "criteria": {
-      "has_shulker_shell": "2026-11-27 15:20:16 +0700"
-    },
-    "done": true
-  },
-  "minecraft:story/enter_the_end": {
-    "criteria": {
-      "entered_end": "2026-11-27 15:12:40 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/purpur_slab_from_purpur_block_stonecutting": {
-    "criteria": {
-      "has_purpur_block": "2026-11-27 15:20:15 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/end_stone_brick_stairs_from_end_stone_brick_stonecutting": {
-    "criteria": {
-      "has_end_stone_brick": "2026-11-27 15:13:10 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/purpur_slab": {
-    "criteria": {
-      "has_purpur_block": "2026-11-27 15:20:15 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/end_stone_bricks": {
-    "criteria": {
-      "has_end_stone": "2026-11-27 15:13:11 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/spire_armor_trim_smithing_template": {
-    "criteria": {
-      "has_spire_armor_trim_smithing_template": "2026-11-27 15:20:21 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/mossy_stone_brick_stairs": {
     "criteria": {
       "has_mossy_stone_bricks": "2026-11-27 14:51:32 +0700"
     },
     "done": true
   },
-  "tensura:recipes/building_blocks/end_stone_warp_pad": {
-    "criteria": {
-      "has_end_stone_bricks": "2026-11-27 15:13:10 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/end_stone_bricks_from_end_stone_stonecutting": {
-    "criteria": {
-      "has_end_stone": "2026-11-27 15:13:11 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/eye_armor_trim_smithing_template_smithing_trim": {
-    "criteria": {
-      "has_smithing_trim_template": "2026-11-27 14:52:09 +0700"
-    },
-    "done": true
-  },
-  "minecraft:end/dragon_egg": {
-    "criteria": {
-      "dragon_egg": "2026-11-27 15:16:20 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/mossy_stone_brick_slab": {
     "criteria": {
       "has_mossy_stone_bricks": "2026-11-27 14:51:32 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/purpur_pillar": {
-    "criteria": {
-      "has_purpur_block": "2026-11-27 15:20:15 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/purpur_stairs": {
-    "criteria": {
-      "has_purpur_block": "2026-11-27 15:20:15 +0700"
     },
     "done": true
   },
@@ -10703,6 +10592,60 @@
   "minecraft:recipes/building_blocks/mossy_stone_brick_slab_from_mossy_stone_brick_stonecutting": {
     "criteria": {
       "has_mossy_stone_bricks": "2026-11-27 14:51:32 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/mossy_stone_brick_wall_from_mossy_stone_brick_stonecutting": {
+    "criteria": {
+      "has_mossy_stone_bricks": "2026-11-27 14:51:32 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/eye_armor_trim_smithing_template_smithing_trim": {
+    "criteria": {
+      "has_smithing_trim_template": "2026-11-27 14:52:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/eye_armor_trim_smithing_template": {
+    "criteria": {
+      "has_eye_armor_trim_smithing_template": "2026-11-27 14:52:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:story/enter_the_end": {
+    "criteria": {
+      "entered_end": "2026-11-27 15:12:40 +0700"
+    },
+    "done": true
+  },
+  "minecraft:end/root": {
+    "criteria": {
+      "entered_end": "2026-11-27 15:12:40 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/end_stone_brick_slab": {
+    "criteria": {
+      "has_end_stone_bricks": "2026-11-27 15:13:10 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/end_stone_brick_stairs": {
+    "criteria": {
+      "has_end_stone_bricks": "2026-11-27 15:13:10 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/end_stone_brick_stairs_from_end_stone_brick_stonecutting": {
+    "criteria": {
+      "has_end_stone_brick": "2026-11-27 15:13:10 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/end_stone_warp_pad": {
+    "criteria": {
+      "has_end_stone_bricks": "2026-11-27 15:13:10 +0700"
     },
     "done": true
   },
@@ -10724,9 +10667,39 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/eye_armor_trim_smithing_template": {
+  "minecraft:recipes/building_blocks/end_stone_brick_slab_from_end_stone_stonecutting": {
     "criteria": {
-      "has_eye_armor_trim_smithing_template": "2026-11-27 14:52:09 +0700"
+      "has_end_stone": "2026-11-27 15:13:11 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/end_stone_brick_wall_from_end_stone_stonecutting": {
+    "criteria": {
+      "has_end_stone": "2026-11-27 15:13:11 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/end_stone_bricks": {
+    "criteria": {
+      "has_end_stone": "2026-11-27 15:13:11 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/end_stone_bricks_from_end_stone_stonecutting": {
+    "criteria": {
+      "has_end_stone": "2026-11-27 15:13:11 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/end_stone_brick_stairs_from_end_stone_stonecutting": {
+    "criteria": {
+      "has_end_stone": "2026-11-27 15:13:11 +0700"
+    },
+    "done": true
+  },
+  "minecraft:end/dragon_egg": {
+    "criteria": {
+      "dragon_egg": "2026-11-27 15:16:20 +0700"
     },
     "done": true
   },
@@ -10736,21 +10709,45 @@
     },
     "done": true
   },
-  "tensura:recipes/building_blocks/purpur_warp_pad": {
+  "minecraft:end/elytra": {
+    "criteria": {
+      "elytra": "2026-11-27 15:19:35 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/purpur_pillar_from_purpur_block_stonecutting": {
     "criteria": {
       "has_purpur_block": "2026-11-27 15:20:15 +0700"
     },
     "done": true
   },
-  "minecraft:recipes/misc/spire_armor_trim_smithing_template_smithing_trim": {
+  "minecraft:recipes/building_blocks/purpur_slab_from_purpur_block_stonecutting": {
     "criteria": {
-      "has_smithing_trim_template": "2026-11-27 15:20:21 +0700"
+      "has_purpur_block": "2026-11-27 15:20:15 +0700"
     },
     "done": true
   },
-  "minecraft:end/root": {
+  "minecraft:recipes/building_blocks/purpur_slab": {
     "criteria": {
-      "entered_end": "2026-11-27 15:12:40 +0700"
+      "has_purpur_block": "2026-11-27 15:20:15 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/purpur_pillar": {
+    "criteria": {
+      "has_purpur_block": "2026-11-27 15:20:15 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/purpur_stairs": {
+    "criteria": {
+      "has_purpur_block": "2026-11-27 15:20:15 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/purpur_warp_pad": {
+    "criteria": {
+      "has_purpur_block": "2026-11-27 15:20:15 +0700"
     },
     "done": true
   },
@@ -10760,15 +10757,537 @@
     },
     "done": true
   },
-  "minecraft:recipes/decorations/mossy_stone_brick_wall_from_mossy_stone_brick_stonecutting": {
+  "minecraft:recipes/decorations/shulker_box": {
     "criteria": {
-      "has_mossy_stone_bricks": "2026-11-27 14:51:32 +0700"
+      "has_shulker_shell": "2026-11-27 15:20:16 +0700"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/end_stone_brick_stairs_from_end_stone_stonecutting": {
+  "minecraft:recipes/misc/spire_armor_trim_smithing_template": {
     "criteria": {
-      "has_end_stone": "2026-11-27 15:13:11 +0700"
+      "has_spire_armor_trim_smithing_template": "2026-11-27 15:20:21 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/spire_armor_trim_smithing_template_smithing_trim": {
+    "criteria": {
+      "has_smithing_trim_template": "2026-11-27 15:20:21 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/palm_planks": {
+    "criteria": {
+      "has_logs": "2026-11-27 19:57:24 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/palm_wood": {
+    "criteria": {
+      "has_log": "2026-11-27 19:57:24 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/palm_fence_from_palm_log_woodcutting": {
+    "criteria": {
+      "has_palm_log": "2026-11-27 19:57:24 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/palm_button_from_palm_log_woodcutting": {
+    "criteria": {
+      "has_palm_log": "2026-11-27 19:57:24 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_palm_log_from_palm_log_woodcutting": {
+    "criteria": {
+      "has_palm_log": "2026-11-27 19:57:24 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stick_from_palm_log_woodcutting": {
+    "criteria": {
+      "has_palm_log": "2026-11-27 19:57:24 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_palm_wood_from_palm_log_woodcutting": {
+    "criteria": {
+      "has_palm_log": "2026-11-27 19:57:24 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/palm_slab_from_palm_log_woodcutting": {
+    "criteria": {
+      "has_palm_log": "2026-11-27 19:57:24 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/ladder_from_palm_log_woodcutting": {
+    "criteria": {
+      "has_palm_log": "2026-11-27 19:57:24 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/palm_stairs_from_palm_log_woodcutting": {
+    "criteria": {
+      "has_palm_log": "2026-11-27 19:57:24 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/palm_planks_from_palm_log_woodcutting": {
+    "criteria": {
+      "has_palm_log": "2026-11-27 19:57:24 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bowl_from_palm_log_woodcutting": {
+    "criteria": {
+      "has_palm_log": "2026-11-27 19:57:24 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/oak_shrub": {
+    "criteria": {
+      "has_oak_sapling": "2026-11-27 20:00:02 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/white_dye_from_lily_of_the_valley": {
+    "criteria": {
+      "has_lily_of_the_valley": "2026-11-27 20:03:05 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bowl_from_birch_log_woodcutting": {
+    "criteria": {
+      "has_birch_log": "2026-11-27 20:03:07 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_button_from_birch_log_woodcutting": {
+    "criteria": {
+      "has_birch_log": "2026-11-27 20:03:07 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_planks": {
+    "criteria": {
+      "has_logs": "2026-11-27 20:03:07 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_birch_log_from_birch_log_woodcutting": {
+    "criteria": {
+      "has_birch_log": "2026-11-27 20:03:07 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_fence_from_birch_log_woodcutting": {
+    "criteria": {
+      "has_birch_log": "2026-11-27 20:03:07 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/building_blocks/stonecutting/birch_log/hollow_birch_log": {
+    "criteria": {
+      "has_block": "2026-11-27 20:03:07 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/ladder_from_birch_log_woodcutting": {
+    "criteria": {
+      "has_birch_log": "2026-11-27 20:03:07 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stick_from_birch_log_woodcutting": {
+    "criteria": {
+      "has_birch_log": "2026-11-27 20:03:07 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_planks_from_birch_log_woodcutting": {
+    "criteria": {
+      "has_birch_log": "2026-11-27 20:03:07 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_wood": {
+    "criteria": {
+      "has_log": "2026-11-27 20:03:07 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_stairs_from_birch_log_woodcutting": {
+    "criteria": {
+      "has_birch_log": "2026-11-27 20:03:07 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_slab_from_birch_log_woodcutting": {
+    "criteria": {
+      "has_birch_log": "2026-11-27 20:03:07 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_birch_wood_from_birch_log_woodcutting": {
+    "criteria": {
+      "has_birch_log": "2026-11-27 20:03:07 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/birch_branch_from_birch_log": {
+    "criteria": {
+      "has_log": "2026-11-27 20:03:07 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/birch_shrub": {
+    "criteria": {
+      "has_birch_sapling": "2026-11-27 20:05:36 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/building_blocks/stonecutting/mangrove_log/hollow_vangrove_log": {
+    "criteria": {
+      "has_block": "2026-11-27 21:22:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_mangrove_wood_from_mangrove_log_woodcutting": {
+    "criteria": {
+      "has_mangrove_log": "2026-11-27 21:22:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/drying/dead_tube_coral_fan": {
+    "criteria": {
+      "has_coral": "2026-11-27 21:27:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/drying/dead_bubble_coral": {
+    "criteria": {
+      "has_coral": "2026-11-27 21:26:59 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cherry_planks": {
+    "criteria": {
+      "has_log": "2026-11-27 21:23:51 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/cherry_branch_from_cherry_log": {
+    "criteria": {
+      "has_log": "2026-11-27 21:23:51 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/acacia_stairs_from_acacia_log_woodcutting": {
+    "criteria": {
+      "has_acacia_log": "2026-11-27 21:22:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cherry_stairs_from_cherry_log_woodcutting": {
+    "criteria": {
+      "has_cherry_log": "2026-11-27 21:23:51 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/drying/dead_brain_coral_fan": {
+    "criteria": {
+      "has_coral": "2026-11-27 21:27:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stick_from_acacia_log_woodcutting": {
+    "criteria": {
+      "has_acacia_log": "2026-11-27 21:22:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/acacia_wood": {
+    "criteria": {
+      "has_log": "2026-11-27 21:22:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cherry_button_from_cherry_log_woodcutting": {
+    "criteria": {
+      "has_cherry_log": "2026-11-27 21:23:51 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_mangrove_log_from_mangrove_log_woodcutting": {
+    "criteria": {
+      "has_mangrove_log": "2026-11-27 21:22:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stick_from_cherry_log_woodcutting": {
+    "criteria": {
+      "has_cherry_log": "2026-11-27 21:23:51 +0700"
+    },
+    "done": true
+  },
+  "tensura:sa_rank": {
+    "criteria": {
+      "ep": "2026-11-27 21:29:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/acacia_slab_from_acacia_log_woodcutting": {
+    "criteria": {
+      "has_acacia_log": "2026-11-27 21:22:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cherry_wood": {
+    "criteria": {
+      "has_log": "2026-11-27 21:23:51 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/ladder_from_cherry_log_woodcutting": {
+    "criteria": {
+      "has_cherry_log": "2026-11-27 21:23:51 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/ladder_from_mangrove_log_woodcutting": {
+    "criteria": {
+      "has_mangrove_log": "2026-11-27 21:22:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mangrove_stairs_from_mangrove_log_woodcutting": {
+    "criteria": {
+      "has_mangrove_log": "2026-11-27 21:22:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/drying/dead_horn_coral_fan": {
+    "criteria": {
+      "has_coral": "2026-11-27 21:27:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/acacia_fence_from_acacia_log_woodcutting": {
+    "criteria": {
+      "has_acacia_log": "2026-11-27 21:22:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/acacia_button_from_acacia_log_woodcutting": {
+    "criteria": {
+      "has_acacia_log": "2026-11-27 21:22:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/pale_oak_planks": {
+    "criteria": {
+      "has_log": "2026-11-27 21:22:56 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/acacia_planks": {
+    "criteria": {
+      "has_log": "2026-11-27 21:22:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/ladder_from_acacia_log_woodcutting": {
+    "criteria": {
+      "has_acacia_log": "2026-11-27 21:22:49 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/acacia_branch_from_acacia_log": {
+    "criteria": {
+      "has_log": "2026-11-27 21:22:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/drying/dead_fire_coral": {
+    "criteria": {
+      "has_coral": "2026-11-27 21:26:59 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/drying/dead_bubble_coral_fan": {
+    "criteria": {
+      "has_coral": "2026-11-27 21:27:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cherry_slab_from_cherry_log_woodcutting": {
+    "criteria": {
+      "has_cherry_log": "2026-11-27 21:23:51 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stick_from_mangrove_log_woodcutting": {
+    "criteria": {
+      "has_mangrove_log": "2026-11-27 21:22:50 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/building_blocks/stonecutting/acacia_log/hollow_acacia_log": {
+    "criteria": {
+      "has_block": "2026-11-27 21:22:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mangrove_slab_from_mangrove_log_woodcutting": {
+    "criteria": {
+      "has_mangrove_log": "2026-11-27 21:22:50 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/blackwood_branch_from_blackwood_log": {
+    "criteria": {
+      "has_log": "2026-11-27 21:24:03 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/mangrove_branch_from_mangrove_log": {
+    "criteria": {
+      "has_log": "2026-11-27 21:22:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/drying/dead_brain_coral": {
+    "criteria": {
+      "has_coral": "2026-11-27 21:26:59 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/pale_oak_wood": {
+    "criteria": {
+      "has_log": "2026-11-27 21:22:56 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cherry_fence_from_cherry_log_woodcutting": {
+    "criteria": {
+      "has_cherry_log": "2026-11-27 21:23:51 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/drying/dead_tube_coral": {
+    "criteria": {
+      "has_coral": "2026-11-27 21:26:58 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/acacia_planks_from_acacia_log_woodcutting": {
+    "criteria": {
+      "has_acacia_log": "2026-11-27 21:22:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mangrove_fence_from_mangrove_log_woodcutting": {
+    "criteria": {
+      "has_mangrove_log": "2026-11-27 21:22:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mangrove_button_from_mangrove_log_woodcutting": {
+    "criteria": {
+      "has_mangrove_log": "2026-11-27 21:22:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/drying/dead_fire_coral_fan": {
+    "criteria": {
+      "has_coral": "2026-11-27 21:27:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_cherry_wood_from_cherry_log_woodcutting": {
+    "criteria": {
+      "has_cherry_log": "2026-11-27 21:23:51 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_cherry_log_from_cherry_log_woodcutting": {
+    "criteria": {
+      "has_cherry_log": "2026-11-27 21:23:51 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/drying/dead_horn_coral": {
+    "criteria": {
+      "has_coral": "2026-11-27 21:27:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mangrove_planks_from_mangrove_log_woodcutting": {
+    "criteria": {
+      "has_mangrove_log": "2026-11-27 21:22:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bowl_from_cherry_log_woodcutting": {
+    "criteria": {
+      "has_cherry_log": "2026-11-27 21:23:51 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/blackwood_wood": {
+    "criteria": {
+      "has_log": "2026-11-27 21:24:03 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_acacia_log_from_acacia_log_woodcutting": {
+    "criteria": {
+      "has_acacia_log": "2026-11-27 21:22:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cherry_planks_from_cherry_log_woodcutting": {
+    "criteria": {
+      "has_cherry_log": "2026-11-27 21:23:51 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/building_blocks/stonecutting/cherry_log/hollow_cherry_log": {
+    "criteria": {
+      "has_block": "2026-11-27 21:23:51 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mangrove_wood": {
+    "criteria": {
+      "has_log": "2026-11-27 21:22:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_acacia_wood_from_acacia_log_woodcutting": {
+    "criteria": {
+      "has_acacia_log": "2026-11-27 21:22:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bowl_from_acacia_log_woodcutting": {
+    "criteria": {
+      "has_acacia_log": "2026-11-27 21:22:49 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/blackwood_planks": {
+    "criteria": {
+      "has_logs": "2026-11-27 21:24:03 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bowl_from_mangrove_log_woodcutting": {
+    "criteria": {
+      "has_mangrove_log": "2026-11-27 21:22:50 +0700"
     },
     "done": true
   },
