@@ -4537,9 +4537,88 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/spruce_counter": {
+    "criteria": {
+      "has_spruce_counter": "2026-11-27 14:14:23 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/netherite_spear_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2026-11-27 14:14:16 +0700",
+      "has_the_recipe": "2026-11-27 14:14:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/leather_helmet": {
+    "criteria": {
+      "has_leather": "2026-11-27 14:22:45 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/ladder": {
+    "criteria": {
+      "has_stick": "2026-11-27 14:14:28 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/netherite_chestplate_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2026-11-27 14:14:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/purple_stained_glass_pane_from_glass_pane": {
+    "criteria": {
+      "has_glass_pane": "2026-11-27 14:15:26 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/polished_diorite": {
     "criteria": {
       "has_diorite": "2026-11-27 14:11:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/blue_stained_glass_pane_from_glass_pane": {
+    "criteria": {
+      "has_glass_pane": "2026-11-27 14:15:26 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_axe": {
+    "criteria": {
+      "has_stick": "2026-11-27 14:14:28 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/leather_chestplate": {
+    "criteria": {
+      "has_leather": "2026-11-27 14:22:45 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_table": {
+    "criteria": {
+      "has_spruce_table": "2026-11-27 14:14:23 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/netherite_kodachi_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2026-11-27 14:14:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/sleep_in_bed": {
+    "criteria": {
+      "slept_in_bed": "2026-11-27 14:13:31 +0700"
+    },
+    "done": true
+  },
+  "toms_storage:unlock_netherite": {
+    "criteria": {
+      "inv_changed-netherite": "2026-11-27 14:14:16 +0700"
     },
     "done": true
   },
@@ -4549,9 +4628,75 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/netherite_ingot": {
+    "criteria": {
+      "has_netherite_scrap": "2026-11-27 14:13:57 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/light_blue_stained_glass_pane_from_glass_pane": {
+    "criteria": {
+      "has_glass_pane": "2026-11-27 14:15:26 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/leather_horse_armor": {
+    "criteria": {
+      "has_leather": "2026-11-27 14:22:45 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/apple_cider": {
+    "criteria": {
+      "has_apple": "2026-11-27 14:22:45 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_dining_bench": {
+    "criteria": {
+      "has_spruce_dining_bench": "2026-11-27 14:14:23 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/farmer_chest_plate": {
+    "criteria": {
+      "has_leather": "2026-11-27 14:22:45 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/netherite_helmet_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2026-11-27 14:14:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/netherite_katana_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2026-11-27 14:14:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/spruce_button": {
+    "criteria": {
+      "has_planks": "2026-11-27 14:14:23 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/cook_stool_spruce": {
+    "criteria": {
+      "has_wood": "2026-11-27 14:14:23 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/copper_ingot_from_blasting_raw_copper": {
     "criteria": {
       "has_raw_copper": "2026-11-27 14:11:17 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/combat/netherite_knife_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2026-11-27 14:14:16 +0700"
     },
     "done": true
   },
@@ -4561,9 +4706,45 @@
     },
     "done": true
   },
+  "minecraft:recipes/tools/netherite_scythe_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2026-11-27 14:14:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/netherite_spear_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2026-11-27 14:14:16 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/terracotta": {
     "criteria": {
       "has_clay_block": "2026-11-27 14:09:17 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/farmer_boots": {
+    "criteria": {
+      "has_leather": "2026-11-27 14:22:45 +0700"
+    },
+    "done": true
+  },
+  "tensura:getcha_leathers": {
+    "criteria": {
+      "leather": "2026-11-27 14:22:45 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/yellow_stained_glass_pane_from_glass_pane": {
+    "criteria": {
+      "has_glass_pane": "2026-11-27 14:15:26 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/ladder_from_spruce_planks_woodcutting": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-27 14:14:23 +0700"
     },
     "done": true
   },
@@ -4573,9 +4754,39 @@
     },
     "done": true
   },
+  "minecraft:recipes/combat/wooden_sword": {
+    "criteria": {
+      "has_stick": "2026-11-27 14:14:28 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/leather_boots": {
+    "criteria": {
+      "has_leather": "2026-11-27 14:22:45 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/netherite_tachi_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2026-11-27 14:14:16 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/polished_andesite_stairs_from_andesite_stonecutting": {
     "criteria": {
       "has_andesite": "2026-11-27 14:11:17 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_corner_trim": {
+    "criteria": {
+      "has_spruce_corner_trim": "2026-11-27 14:14:23 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_desk": {
+    "criteria": {
+      "has_spruce_desk": "2026-11-27 14:14:23 +0700"
     },
     "done": true
   },
@@ -4585,9 +4796,21 @@
     },
     "done": true
   },
+  "bakery:recipes/jar": {
+    "criteria": {
+      "has_glass_pane": "2026-11-27 14:15:26 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/food/cattledeer_steak_from_smoking": {
     "criteria": {
       "has_cattledeer_beef": "2026-11-27 14:07:36 +0700"
+    },
+    "done": true
+  },
+  "chronodawn:recipes/misc/ancient_time_wood_fence_gate": {
+    "criteria": {
+      "has_item": "2026-11-27 14:14:28 +0700"
     },
     "done": true
   },
@@ -4597,9 +4820,93 @@
     },
     "done": true
   },
+  "minecraft:recipes/tools/netherite_kitchen_knife_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2026-11-27 14:14:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/spruce_sign": {
+    "criteria": {
+      "has_planks": "2026-11-27 14:14:23 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/wooden_spear": {
+    "criteria": {
+      "has_stick": "2026-11-27 14:14:28 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/netherite_leggings_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2026-11-27 14:14:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/netherite_short_sword_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2026-11-27 14:14:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_slab_from_spruce_planks_woodcutting": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-27 14:14:23 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/yellow_dye_from_dandelion": {
+    "criteria": {
+      "has_dandelion": "2026-11-27 14:22:35 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/kiln": {
+    "criteria": {
+      "has_netherite_ingot": "2026-11-27 14:14:16 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/diorite_wall": {
     "criteria": {
       "has_diorite": "2026-11-27 14:11:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/orange_stained_glass_pane_from_glass_pane": {
+    "criteria": {
+      "has_glass_pane": "2026-11-27 14:15:26 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/green_stained_glass_pane_from_glass_pane": {
+    "criteria": {
+      "has_glass_pane": "2026-11-27 14:15:26 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/dark_cherry_fence": {
+    "criteria": {
+      "has_stick": "2026-11-27 14:14:28 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/pink_stained_glass_pane_from_glass_pane": {
+    "criteria": {
+      "has_glass_pane": "2026-11-27 14:15:26 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stick_from_spruce_planks_woodcutting": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-27 14:14:23 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/farmer_leggings": {
+    "criteria": {
+      "has_leather": "2026-11-27 14:22:45 +0700"
     },
     "done": true
   },
@@ -4609,9 +4916,45 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/lodestone": {
+    "criteria": {
+      "has_netherite_ingot": "2026-11-27 14:14:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/netherite_block": {
+    "criteria": {
+      "has_netherite_ingot": "2026-11-27 14:14:16 +0700"
+    },
+    "done": true
+  },
+  "constructionwand:recipes/tools/netherite_wand": {
+    "criteria": {
+      "has_item": "2026-11-27 14:14:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/netherite_shovel_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2026-11-27 14:14:16 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/building_blocks/diorite_warp_pad": {
     "criteria": {
       "has_diorite": "2026-11-27 14:11:09 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/netherite_cleaver_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2026-11-27 14:14:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/fermented_spider_eye": {
+    "criteria": {
+      "has_spider_eye": "2026-11-27 14:20:24 +0700"
     },
     "done": true
   },
@@ -4621,9 +4964,87 @@
     },
     "done": true
   },
+  "vinery:recipes/dark_cherry_fence_gate": {
+    "criteria": {
+      "has_stick": "2026-11-27 14:14:28 +0700"
+    },
+    "done": true
+  },
+  "chronodawn:recipes/misc/time_wood_fence_gate": {
+    "criteria": {
+      "has_item": "2026-11-27 14:14:28 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_pickaxe": {
+    "criteria": {
+      "has_stick": "2026-11-27 14:14:28 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/black_stained_glass_pane_from_glass_pane": {
+    "criteria": {
+      "has_glass_pane": "2026-11-27 14:15:26 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_drawer": {
+    "criteria": {
+      "has_spruce_drawer": "2026-11-27 14:14:23 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/kiln_mithril": {
+    "criteria": {
+      "has_netherite_ingot": "2026-11-27 14:14:16 +0700"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/misc/upgrade_base": {
+    "criteria": {
+      "has_leather": "2026-11-27 14:22:45 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/spruce_trapdoor": {
+    "criteria": {
+      "has_planks": "2026-11-27 14:14:23 +0700"
+    },
+    "done": true
+  },
+  "tensura:arachnophobic": {
+    "criteria": {
+      "black_spider": "2026-11-27 14:20:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/brown_stained_glass_pane_from_glass_pane": {
+    "criteria": {
+      "has_glass_pane": "2026-11-27 14:15:26 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_fancy_bed": {
+    "criteria": {
+      "has_spruce_fancy_bed": "2026-11-27 14:14:23 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/polished_diorite_from_diorite_stonecutting": {
     "criteria": {
       "has_diorite": "2026-11-27 14:11:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/netherite_long_sword_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2026-11-27 14:14:16 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_cupboard": {
+    "criteria": {
+      "has_spruce_cupboard": "2026-11-27 14:14:23 +0700"
     },
     "done": true
   },
@@ -4633,9 +5054,117 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/lime_stained_glass_pane_from_glass_pane": {
+    "criteria": {
+      "has_glass_pane": "2026-11-27 14:15:26 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/netherite_great_sword_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2026-11-27 14:14:16 +0700"
+    },
+    "done": true
+  },
+  "constructionwand:core_destruction": {
+    "criteria": {
+      "core_destruction": "2026-11-27 14:15:28 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/lapis_block": {
+    "criteria": {
+      "has_lapis_lazuli": "2026-11-27 14:16:19 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/steak_and_potatoes": {
+    "criteria": {
+      "has_baked_potato": "2026-11-27 14:20:13 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/andesite_stairs": {
     "criteria": {
       "has_andesite": "2026-11-27 14:11:17 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/spruce_wine_rack_big": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-27 14:14:23 +0700"
+    },
+    "done": true
+  },
+  "vinery:main/forbidden_fruit": {
+    "criteria": {
+      "apple": "2026-11-27 14:22:45 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/slime_chunk_blockfrom_slime_chunk": {
+    "criteria": {
+      "has_slime_chunk": "2026-11-27 14:22:42 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/food/cold_roasted_meat": {
+    "criteria": {
+      "has_cooked_beef": "2026-11-27 14:22:45 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_fence_from_spruce_planks_woodcutting": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-27 14:14:23 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/light_gray_stained_glass_pane_from_glass_pane": {
+    "criteria": {
+      "has_glass_pane": "2026-11-27 14:15:26 +0700"
+    },
+    "done": true
+  },
+  "constructionwand:recipes/misc/void_sack": {
+    "criteria": {
+      "has_core_destruction": "2026-11-27 14:15:28 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_shelf": {
+    "criteria": {
+      "has_spruce_shelf": "2026-11-27 14:14:23 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/spruce_wine_rack_small": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-27 14:14:23 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/grapevine_pot": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-27 14:14:23 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/cupcake_display": {
+    "criteria": {
+      "has_stick": "2026-11-27 14:14:28 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/spruce_fence": {
+    "criteria": {
+      "has_planks": "2026-11-27 14:14:23 +0700"
+    },
+    "done": true
+  },
+  "vanillabackport:recipes/combat/saddle": {
+    "criteria": {
+      "has_leather": "2026-11-27 14:22:45 +0700"
     },
     "done": true
   },
@@ -4645,9 +5174,51 @@
     },
     "done": true
   },
+  "bakery:recipes/cake_display": {
+    "criteria": {
+      "has_glass_pane": "2026-11-27 14:15:26 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/dark_cherry_shelf": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-27 14:14:23 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/gray_stained_glass_pane_from_glass_pane": {
+    "criteria": {
+      "has_glass_pane": "2026-11-27 14:15:26 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/cattledeer_steak_from_smelting": {
     "criteria": {
       "has_cattledeer_beef": "2026-11-27 14:07:36 +0700"
+    },
+    "done": true
+  },
+  "constructionwand:netherite_wand": {
+    "criteria": {
+      "netherite_wand": "2026-11-27 14:14:36 +0700"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/misc/backpack": {
+    "criteria": {
+      "has_leather": "2026-11-27 14:22:45 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/netherite_horse_armor_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2026-11-27 14:14:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/netherite_boots_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2026-11-27 14:14:16 +0700"
     },
     "done": true
   },
@@ -4657,15 +5228,75 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/spruce_pressure_plate": {
+    "criteria": {
+      "has_planks": "2026-11-27 14:14:23 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_pillar_trim": {
+    "criteria": {
+      "has_spruce_pillar_trim": "2026-11-27 14:14:23 +0700"
+    },
+    "done": true
+  },
+  "constructionwand:recipes/misc/core_destruction": {
+    "criteria": {
+      "has_item": "2026-11-27 14:14:55 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_hoe": {
+    "criteria": {
+      "has_stick": "2026-11-27 14:14:28 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/polished_andesite_from_andesite_stonecutting": {
     "criteria": {
       "has_andesite": "2026-11-27 14:11:17 +0700"
     },
     "done": true
   },
+  "minecraft:recipes/decorations/item_frame": {
+    "criteria": {
+      "has_leather": "2026-11-27 14:22:45 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_stairs_from_spruce_planks_woodcutting": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-27 14:14:23 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/netherite_axe_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2026-11-27 14:14:16 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/andesite": {
     "criteria": {
       "has_stone": "2026-11-27 14:11:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/wooden_shovel": {
+    "criteria": {
+      "has_stick": "2026-11-27 14:14:28 +0700"
+    },
+    "done": true
+  },
+  "bosses_of_mass_destruction:recipes/brimstone_nectar": {
+    "criteria": {
+      "has_netherite_scrap": "2026-11-27 14:13:57 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/red_stained_glass_pane_from_glass_pane": {
+    "criteria": {
+      "has_glass_pane": "2026-11-27 14:15:26 +0700"
     },
     "done": true
   },
@@ -4681,9 +5312,69 @@
     },
     "done": true
   },
+  "eternal_starlight:recipes/decorations/torreya_campfire": {
+    "criteria": {
+      "has_stick": "2026-11-27 14:14:28 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/polished_diorite_slab_from_diorite_stonecutting": {
     "criteria": {
       "has_diorite": "2026-11-27 14:11:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/leather_leggings": {
+    "criteria": {
+      "has_leather": "2026-11-27 14:22:45 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/food/apple_platter": {
+    "criteria": {
+      "has_ingredient": "2026-11-27 14:22:45 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/blue_dye": {
+    "criteria": {
+      "has_lapis_lazuli": "2026-11-27 14:16:19 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/slime_chunk_from_snowball": {
+    "criteria": {
+      "has_material": "2026-11-27 14:22:42 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/netherite_sword_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2026-11-27 14:14:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/diamond": {
+    "criteria": {
+      "has_diamond_block": "2026-11-27 14:14:55 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/combat/flint_knife": {
+    "criteria": {
+      "has_stick": "2026-11-27 14:14:28 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/netherite_sickle_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2026-11-27 14:14:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/netherite_nautilus_armor_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2026-11-27 14:14:16 +0700"
     },
     "done": true
   },
@@ -4711,15 +5402,81 @@
     },
     "done": true
   },
+  "minecraft:recipes/tools/netherite_hoe_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2026-11-27 14:14:16 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/polished_andesite_slab_from_andesite_stonecutting": {
     "criteria": {
       "has_andesite": "2026-11-27 14:11:17 +0700"
     },
     "done": true
   },
+  "handcrafted:recipes/misc/spruce_couch": {
+    "criteria": {
+      "has_spruce_couch": "2026-11-27 14:14:23 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bowl_from_spruce_planks_woodcutting": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-27 14:14:23 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/apple_from_silver_ingot": {
+    "criteria": {
+      "has_material": "2026-11-27 14:22:45 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_slab": {
+    "criteria": {
+      "has_planks": "2026-11-27 14:14:23 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/white_stained_glass_pane_from_glass_pane": {
+    "criteria": {
+      "has_glass_pane": "2026-11-27 14:15:26 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/netherite_odachi_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2026-11-27 14:14:16 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/andesite_stairs_from_andesite_stonecutting": {
     "criteria": {
       "has_andesite": "2026-11-27 14:11:17 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_nightstand": {
+    "criteria": {
+      "has_spruce_nightstand": "2026-11-27 14:14:23 +0700"
+    },
+    "done": true
+  },
+  "constructionwand:recipes/misc/core_angel": {
+    "criteria": {
+      "has_item": "2026-11-27 14:18:55 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_bench": {
+    "criteria": {
+      "has_spruce_bench": "2026-11-27 14:14:23 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_button_from_spruce_planks_woodcutting": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-27 14:14:23 +0700"
     },
     "done": true
   },
@@ -4732,6 +5489,66 @@
   "tensura:recipes/food/cattledeer_steak_from_campfire_cooking": {
     "criteria": {
       "has_cattledeer_beef": "2026-11-27 14:07:36 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/spruce_door": {
+    "criteria": {
+      "has_planks": "2026-11-27 14:14:23 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/spruce_fence_gate": {
+    "criteria": {
+      "has_planks": "2026-11-27 14:14:23 +0700"
+    },
+    "done": true
+  },
+  "chronodawn:recipes/misc/dark_time_wood_fence_gate": {
+    "criteria": {
+      "has_item": "2026-11-27 14:14:28 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/kiln_orichalcum": {
+    "criteria": {
+      "has_netherite_ingot": "2026-11-27 14:14:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/magenta_stained_glass_pane_from_glass_pane": {
+    "criteria": {
+      "has_glass_pane": "2026-11-27 14:15:26 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/stuffed_potato": {
+    "criteria": {
+      "has_baked_potato": "2026-11-27 14:20:13 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/cyan_stained_glass_pane_from_glass_pane": {
+    "criteria": {
+      "has_glass_pane": "2026-11-27 14:15:26 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/slime_ball_from_chunks": {
+    "criteria": {
+      "has_slime_chunks": "2026-11-27 14:22:42 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_chair": {
+    "criteria": {
+      "has_spruce_chair": "2026-11-27 14:14:23 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/bread_box": {
+    "criteria": {
+      "has_stick": "2026-11-27 14:14:28 +0700"
     },
     "done": true
   },
@@ -4753,9 +5570,33 @@
     },
     "done": true
   },
+  "farmersdelight:recipes/decorations/cutting_board": {
+    "criteria": {
+      "has_stick": "2026-11-27 14:14:28 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/netherite_pickaxe_smithing": {
+    "criteria": {
+      "has_netherite_ingot": "2026-11-27 14:14:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_stairs": {
+    "criteria": {
+      "has_planks": "2026-11-27 14:14:23 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/copper_ingot_from_smelting_raw_copper": {
     "criteria": {
       "has_raw_copper": "2026-11-27 14:11:17 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_side_table": {
+    "criteria": {
+      "has_spruce_side_table": "2026-11-27 14:14:23 +0700"
     },
     "done": true
   },

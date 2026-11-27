@@ -67,7 +67,9 @@
     },
     {
       "questId": "trbeyond:daily_day_4_slime_2",
-      "progress": {}
+      "progress": {
+        "kill_slime_4_2": 1
+      }
     },
     {
       "questId": "trbeyond:repeatable_material_feathered_serpent_essence",

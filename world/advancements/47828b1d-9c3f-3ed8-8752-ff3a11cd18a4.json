@@ -10481,5 +10481,35 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/pumpkin_pie": {
+    "criteria": {
+      "has_pumpkin": "2026-11-27 14:21:53 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/scarecrow": {
+    "criteria": {
+      "has_pumpkin": "2026-11-27 14:21:53 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/stuffed_pumpkin_block": {
+    "criteria": {
+      "has_pumpkin": "2026-11-27 14:21:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/pumpkin_seeds": {
+    "criteria": {
+      "has_pumpkin": "2026-11-27 14:21:53 +0700"
+    },
+    "done": true
+  },
+  "vanillabackport:recipes/food/pumpkin_pie": {
+    "criteria": {
+      "has_pumpkin": "2026-11-27 14:21:53 +0700"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }
