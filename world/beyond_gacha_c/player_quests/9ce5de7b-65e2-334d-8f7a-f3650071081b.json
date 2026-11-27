@@ -7,7 +7,6 @@
     "trbeyond:daily_day_3_cattledeer_2",
     "trbeyond:boss_orc_disaster",
     "trbeyond:daily_day_1_cattledeer_1",
-    "trbeyond:boss_rimuru_ogre_fight",
     "trbeyond:weekly_day_1_akash_1",
     "trbeyond:boss_hinata_sakaguchi",
     "trbeyond:weekly_day_1_sylphide_3"
@@ -62,9 +61,7 @@
     },
     {
       "questId": "trbeyond:boss_rimuru_ogre_fight",
-      "progress": {
-        "kill_rimuru_ogre_fight": 1
-      }
+      "progress": {}
     },
     {
       "questId": "trbeyond:rep_sub_slime_harvest_1",
@@ -93,7 +90,7 @@
     {
       "questId": "trbeyond:daily_day_4_slime_2",
       "progress": {
-        "kill_slime_4_2": 1
+        "kill_slime_4_2": 6
       }
     },
     {
