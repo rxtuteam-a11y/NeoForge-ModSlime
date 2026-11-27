@@ -77,7 +77,8 @@
       "maple_forest": "2026-11-24 13:00:20 +0700",
       "icy_heights": "2026-11-23 13:23:44 +0700",
       "hyacinth_deeps": "2026-11-23 13:21:56 +0700",
-      "clover_plains": "2026-11-23 23:46:56 +0700"
+      "clover_plains": "2026-11-23 23:46:56 +0700",
+      "inferno": "2026-11-27 09:56:38 +0700"
     },
     "done": false
   },
@@ -6701,7 +6702,8 @@
   "regions_unexplored:spelunker": {
     "criteria": {
       "prismachasm": "2026-11-25 20:15:09 +0700",
-      "ancient_delta": "2026-11-25 20:08:34 +0700"
+      "ancient_delta": "2026-11-25 20:08:34 +0700",
+      "inferno": "2026-11-27 09:56:38 +0700"
     },
     "done": false
   },
@@ -9888,6 +9890,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_deepslate": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-27 09:58:40 +0700"
+    },
+    "done": true
+  },
   "tensura:pure_magisteel": {
     "criteria": {
       "pure_magisteel": "2026-11-27 08:16:28 +0700"
@@ -9909,6 +9917,12 @@
   "chronodawn:recipes/misc/time_compass": {
     "criteria": {
       "has_item": "2026-11-27 09:24:42 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_deepslate_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-27 09:58:40 +0700"
     },
     "done": true
   },
@@ -9954,6 +9968,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/cobbled_deepslate_wall": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-27 09:58:40 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/polished_deepslate_wall_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-27 09:58:40 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/misc/orichalcum_bone_golem": {
     "criteria": {
       "has_orichalcum_ingot": "2026-11-27 08:16:28 +0700"
@@ -9966,9 +9992,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_deepslate_slab_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-27 09:58:40 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/ladder_from_oak_log_woodcutting": {
     "criteria": {
       "has_oak_log": "2026-11-27 08:47:18 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobbled_deepslate_stairs": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-27 09:58:40 +0700"
     },
     "done": true
   },
@@ -9993,6 +10031,12 @@
   "minecraft:recipes/building_blocks/oak_slab_from_oak_log_woodcutting": {
     "criteria": {
       "has_oak_log": "2026-11-27 08:47:18 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_bricks_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-27 09:58:40 +0700"
     },
     "done": true
   },
@@ -10026,6 +10070,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/deepslate_tile_stairs_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-27 09:58:40 +0700"
+    },
+    "done": true
+  },
   "iceandfire:recipes/food/fire_stew": {
     "criteria": {
       "has_item": "2026-11-27 08:13:08 +0700"
@@ -10038,9 +10088,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/cobbled_deepslate_slab": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-27 09:58:40 +0700"
+    },
+    "done": true
+  },
   "iceandfire:recipes/misc/ghost_chest": {
     "criteria": {
       "has_item": "2026-11-27 08:01:27 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_deepslate_stairs_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-27 09:58:40 +0700"
     },
     "done": true
   },
@@ -10056,9 +10118,33 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/deepslate_brick_wall_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-27 09:58:40 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobbled_deepslate_slab_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-27 09:58:40 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_tile_slab_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-27 09:58:40 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/decorations/oak_branch_from_oak_log": {
     "criteria": {
       "has_log": "2026-11-27 08:47:18 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/deepslate_tile_wall_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-27 09:58:40 +0700"
     },
     "done": true
   },
@@ -10074,6 +10160,24 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/deepslate_brick_stairs_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-27 09:58:40 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_deepslate_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-27 09:58:40 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/cobbled_deepslate_wall_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-27 09:58:40 +0700"
+    },
+    "done": true
+  },
   "vinery:recipes/coarse_dirt_slab": {
     "criteria": {
       "has_coarse_dirt": "2026-11-27 08:33:36 +0700"
@@ -10083,6 +10187,18 @@
   "tensura:recipes/misc/pure_magisteel_bone_golem": {
     "criteria": {
       "has_pure_magisteel_ingot": "2026-11-27 08:16:28 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobbled_deepslate_stairs_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-27 09:58:40 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-27 09:58:40 +0700"
     },
     "done": true
   },
@@ -10104,6 +10220,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/deepslate_brick_slab_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-27 09:58:40 +0700"
+    },
+    "done": true
+  },
   "chronodawn:recipes/misc/clock_from_chronite": {
     "criteria": {
       "has_item": "2026-11-27 09:24:42 +0700"
@@ -10113,6 +10235,12 @@
   "iceandfire:recipes/building_blocks/graveyard_soil": {
     "criteria": {
       "has_item": "2026-11-27 08:01:27 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/deepslate_tiles_from_cobbled_deepslate_stonecutting": {
+    "criteria": {
+      "has_cobbled_deepslate": "2026-11-27 09:58:40 +0700"
     },
     "done": true
   },
