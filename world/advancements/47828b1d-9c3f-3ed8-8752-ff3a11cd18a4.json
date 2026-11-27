@@ -9906,6 +9906,12 @@
     },
     "done": true
   },
+  "chronodawn:recipes/misc/time_compass": {
+    "criteria": {
+      "has_item": "2026-11-27 09:24:42 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/oak_button_from_oak_log_woodcutting": {
     "criteria": {
       "has_oak_log": "2026-11-27 08:47:18 +0700"
@@ -9933,6 +9939,12 @@
   "tensura:tamed_a_slime": {
     "criteria": {
       "slime": "2026-11-27 08:12:07 +0700"
+    },
+    "done": true
+  },
+  "chronodawn:recipes/misc/chronite_block": {
+    "criteria": {
+      "has_item": "2026-11-27 09:24:42 +0700"
     },
     "done": true
   },
@@ -10038,6 +10050,12 @@
     },
     "done": true
   },
+  "chronodawn:recipes/misc/time_arrow_from_chronite": {
+    "criteria": {
+      "has_item": "2026-11-27 09:24:42 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/decorations/oak_branch_from_oak_log": {
     "criteria": {
       "has_log": "2026-11-27 08:47:18 +0700"
@@ -10083,6 +10101,12 @@
   "minecraft:recipes/misc/pure_magisteel_nugget": {
     "criteria": {
       "has_pure_magisteel_ingot": "2026-11-27 08:16:28 +0700"
+    },
+    "done": true
+  },
+  "chronodawn:recipes/misc/clock_from_chronite": {
+    "criteria": {
+      "has_item": "2026-11-27 09:24:42 +0700"
     },
     "done": true
   },
