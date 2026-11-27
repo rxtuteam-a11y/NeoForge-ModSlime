@@ -10862,9 +10862,93 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/flour_from_1_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/flour_from_2_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/pie_crust": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/wheat_dough_from_egg": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/basket": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/flour_from_5_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/bread": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/hay_block": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/flour_from_7_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/flour_from_6_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
   "tensura:great_saint_of_the_west": {
     "criteria": {
       "hinata": "2026-11-27 08:38:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/flour_from_8_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/flour_from_4_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/flour_from_3_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/straw_hat": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
     },
     "done": true
   },
