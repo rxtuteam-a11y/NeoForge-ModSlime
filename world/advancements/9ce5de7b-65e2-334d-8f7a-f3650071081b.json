@@ -11586,5 +11586,89 @@
     },
     "done": true
   },
+  "bakery:recipes/cabinet": {
+    "criteria": {
+      "has_oak_planks": "2026-11-27 23:02:27 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/rolling_pin": {
+    "criteria": {
+      "has_oak_planks": "2026-11-27 23:02:27 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/wall_cabinet": {
+    "criteria": {
+      "has_oak_planks": "2026-11-27 23:02:27 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/oak_wine_rack_big": {
+    "criteria": {
+      "has_oak_planks": "2026-11-27 23:02:27 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/brick_counter": {
+    "criteria": {
+      "has_oak_planks": "2026-11-27 23:02:27 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/street_sign": {
+    "criteria": {
+      "has_oak_planks": "2026-11-27 23:02:27 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/drawer": {
+    "criteria": {
+      "has_oak_planks": "2026-11-27 23:02:27 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/tray": {
+    "criteria": {
+      "has_oak_planks": "2026-11-27 23:02:27 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/oak_wine_rack_small": {
+    "criteria": {
+      "has_oak_planks": "2026-11-27 23:02:27 +0700"
+    },
+    "done": true
+  },
+  "tensura_tno:true_demon_lord_birth": {
+    "criteria": {
+      "trigger": "2026-11-28 00:05:31 +0700"
+    },
+    "done": true
+  },
+  "tensura:higher_form": {
+    "criteria": {
+      "awaken": "2026-11-28 00:08:31 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/blue_ice": {
+    "criteria": {
+      "has_packed_ice": "2026-11-28 00:18:05 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/emerald": {
+    "criteria": {
+      "has_emerald_block": "2026-11-28 00:25:45 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/silver_ingot": {
+    "criteria": {
+      "has_silver_nugget": "2026-11-28 00:54:45 +0700"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }

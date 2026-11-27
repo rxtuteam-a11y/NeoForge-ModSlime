@@ -6,6 +6,7 @@
     "trbeyond:boss_elemental_colossus",
     "trbeyond:daily_day_3_cattledeer_2",
     "trbeyond:boss_orc_disaster",
+    "trbeyond:daily_day_4_slime_2",
     "trbeyond:daily_day_1_cattledeer_1",
     "trbeyond:weekly_day_1_akash_1",
     "trbeyond:boss_hinata_sakaguchi",
@@ -90,7 +91,7 @@
     {
       "questId": "trbeyond:daily_day_4_slime_2",
       "progress": {
-        "kill_slime_4_2": 7
+        "kill_slime_4_2": 8
       }
     },
     {

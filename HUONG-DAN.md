@@ -13,6 +13,9 @@ Sau 3–5 phút trang tự chuyển sang "Đang chạy", console hiện log và 
 - **Tắt**: bấm **■ TẮT SERVER** → server `save-all`, tắt, đẩy world lên GitHub (và Google Drive nếu đã cấu hình),
   rồi phiên GitHub tự đóng sau 10 phút.
 - **Tự lưu**: world được đẩy lên GitHub mỗi 10 phút trong lúc chạy.
+- **Chỉ giữ 5 phiên gần nhất**: cuối mỗi phiên, lịch sử GitHub được gộp lại còn 1 bản world cho mỗi phiên
+  (5 phiên gần nhất); các bản auto-save giữa phiên và phiên cũ hơn bị xoá khỏi lịch sử. Có thể chạy tay:
+  Actions → **Dọn lịch sử world**.
 - **Giới hạn**: mỗi phiên tối đa khoảng 5 giờ 40 phút. 8 phút trước khi hết giờ server tự báo người chơi, lưu và tắt.
   Muốn chơi tiếp thì bấm bật lại.
 - **Huỷ phiên ngay** chỉ dùng khi server bị treo, vì có thể mất tối đa 10 phút tiến trình chưa lưu.
@@ -47,7 +50,7 @@ gõ lệnh và sao lưu được. Web Panel tự hỏi GitHub để xác minh to
 4. (Tuỳ chọn) biến `GDRIVE_BACKUP_PATH`, mặc định `gdrive:ModSlime-Backups`.
 
 Sau đó mỗi lần tắt server, và khi bấm **Lưu lên Google Drive**, file `ModSlime-world-<ngày-giờ>.zip` được tải lên thư mục đó.
-Chỉ giữ 3 bản mới nhất (world lớn, mỗi bản vài GB).
+Chỉ giữ 5 bản mới nhất (world lớn, mỗi bản vài GB).
 
 ## Cho thiết bị khác / bạn bè bật server (không cần cài lại)
 
