@@ -62,10 +62,10 @@ jobs:
           NOW=$(date -u +'%Y-%m-%d %H:%M UTC')
           NOTES="Gói mod + config cho người chơi ModSlime. Cập nhật: ${NOW}. Dung lượng: ${SIZE}."
           if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
-            gh release upload "$RELEASE_TAG" /tmp/ModSlime-Client-Full.zip --clobber
+            gh release upload "$RELEASE_TAG" /tmp/ModSlime-Client-Full.zip /tmp/client-pack/final/mods/modslime-fix-1.0.0.jar --clobber
             gh release edit "$RELEASE_TAG" --notes "$NOTES"
           else
-            gh release create "$RELEASE_TAG" /tmp/ModSlime-Client-Full.zip \
+            gh release create "$RELEASE_TAG" /tmp/ModSlime-Client-Full.zip /tmp/client-pack/final/mods/modslime-fix-1.0.0.jar \
               --title "ModSlime - Gói mod cho người chơi" --notes "$NOTES"
           fi
           echo "Link tải: https://github.com/${GITHUB_REPOSITORY}/releases/download/${RELEASE_TAG}/ModSlime-Client-Full.zip" >> "$GITHUB_STEP_SUMMARY"
