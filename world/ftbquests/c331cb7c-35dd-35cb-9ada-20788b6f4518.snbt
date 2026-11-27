@@ -1,0 +1,14 @@
+{
+	version: 1
+	uuid: "c331cb7c35dd35cb9ada20788b6f4518"
+	name: "BigAsshole#c331cb7c"
+	lock: false
+	rewards_blocked: false
+	task_progress: { }
+	started: { }
+	completed: { }
+	repeatable: { }
+	completion_count: { }
+	claimed_rewards: { }
+	player_data: { }
+}

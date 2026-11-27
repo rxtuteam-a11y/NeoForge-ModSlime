@@ -1,0 +1,223 @@
+{
+  "mxp": 0,
+  "completed": [
+    "trbeyond:boss_charybdis",
+    "trbeyond:daily_day_2_slime_1",
+    "trbeyond:boss_elemental_colossus",
+    "trbeyond:daily_day_3_cattledeer_2",
+    "trbeyond:boss_orc_disaster",
+    "trbeyond:daily_day_1_cattledeer_1",
+    "trbeyond:weekly_day_1_akash_1",
+    "trbeyond:boss_hinata_sakaguchi",
+    "trbeyond:weekly_day_1_sylphide_3"
+  ],
+  "repeatable_timers": {
+    "trbeyond:boss_charybdis": 5076865,
+    "trbeyond:boss_elemental_colossus": 4787376,
+    "trbeyond:boss_orc_disaster": 5106335,
+    "trbeyond:boss_rimuru_ogre_fight": 3659228,
+    "trbeyond:boss_hinata_sakaguchi": 5117610
+  },
+  "active": [
+    {
+      "questId": "trbeyond:repeatable_skill_shogo_taguchi",
+      "progress": {
+        "kill_shogo_taguchi": 5
+      }
+    },
+    {
+      "questId": "trbeyond:repeatable_skill_shinji_tanimura",
+      "progress": {
+        "kill_shinji_tanimura": 2
+      }
+    },
+    {
+      "questId": "trbeyond:repeatable_material_greater_daemon_essence",
+      "progress": {}
+    },
+    {
+      "questId": "trbeyond:repeatable_skill_shin_ryusei",
+      "progress": {
+        "kill_shin_ryusei": 7
+      }
+    },
+    {
+      "questId": "trbeyond:repeatable_skill_folgen",
+      "progress": {
+        "kill_folgen": 1
+      }
+    },
+    {
+      "questId": "trbeyond:boss_carrion",
+      "progress": {}
+    },
+    {
+      "questId": "trbeyond:daily_day_4_giant_salmon_1",
+      "progress": {}
+    },
+    {
+      "questId": "trbeyond:boss_luminous_valentine",
+      "progress": {}
+    },
+    {
+      "questId": "trbeyond:boss_rimuru_ogre_fight",
+      "progress": {}
+    },
+    {
+      "questId": "trbeyond:rep_sub_slime_harvest_1",
+      "progress": {}
+    },
+    {
+      "questId": "trbeyond:repeatable_skill_kyoya_tachibana",
+      "progress": {
+        "kill_kyoya_tachibana": 4
+      }
+    },
+    {
+      "questId": "trbeyond:rep_sub_body_forging_1",
+      "progress": {}
+    },
+    {
+      "questId": "trbeyond:boss_orc_disaster",
+      "progress": {
+        "kill_orc_disaster": 1
+      }
+    },
+    {
+      "questId": "trbeyond:rep_sub_foundational_growth_1",
+      "progress": {}
+    },
+    {
+      "questId": "trbeyond:daily_day_4_slime_2",
+      "progress": {
+        "kill_slime_4_2": 7
+      }
+    },
+    {
+      "questId": "trbeyond:repeatable_material_feathered_serpent_essence",
+      "progress": {
+        "kill_feathered_serpent_essence": 2
+      }
+    },
+    {
+      "questId": "trbeyond:rep_sub_venomous_cleanup_1",
+      "progress": {}
+    },
+    {
+      "questId": "trbeyond:repeatable_skill_mark_lauren",
+      "progress": {
+        "kill_mark_lauren": 1
+      }
+    },
+    {
+      "questId": "trbeyond:mxp_chest_2",
+      "progress": {}
+    },
+    {
+      "questId": "trbeyond:mxp_chest_1",
+      "progress": {}
+    },
+    {
+      "questId": "trbeyond:repeatable_material_winged_cat_essence",
+      "progress": {}
+    },
+    {
+      "questId": "trbeyond:mxp_chest_4",
+      "progress": {}
+    },
+    {
+      "questId": "trbeyond:mxp_chest_3",
+      "progress": {}
+    },
+    {
+      "questId": "trbeyond:rep_sub_iron_training_1",
+      "progress": {}
+    },
+    {
+      "questId": "trbeyond:boss_hinata_sakaguchi",
+      "progress": {
+        "kill_hinata_sakaguchi": 1
+      }
+    },
+    {
+      "questId": "trbeyond:repeatable_skill_mai_furuki",
+      "progress": {
+        "kill_mai_furuki": 4
+      }
+    },
+    {
+      "questId": "trbeyond:boss_charybdis",
+      "progress": {
+        "kill_charybdis": 1
+      }
+    },
+    {
+      "questId": "trbeyond:repeatable_material_giant_bat_zane_blood",
+      "progress": {
+        "kill_giant_bat_zane_blood": 4
+      }
+    },
+    {
+      "questId": "trbeyond:daily_day_4_landfish_3",
+      "progress": {}
+    },
+    {
+      "questId": "trbeyond:boss_elemental_colossus",
+      "progress": {
+        "kill_elemental_colossus": 1
+      }
+    },
+    {
+      "questId": "trbeyond:weekly_day_1_arch_daemon_2",
+      "progress": {}
+    },
+    {
+      "questId": "trbeyond:weekly_day_1_akash_1",
+      "progress": {
+        "kill_akash_weekly_1_1": 1
+      }
+    },
+    {
+      "questId": "trbeyond:rep_sub_disaster_corrosion_1",
+      "progress": {}
+    },
+    {
+      "questId": "trbeyond:repeatable_material_aqua_frog_essence",
+      "progress": {}
+    },
+    {
+      "questId": "trbeyond:repeatable_material_salamander_essence",
+      "progress": {
+        "kill_salamander_essence": 4
+      }
+    },
+    {
+      "questId": "trbeyond:repeatable_material_orc_lord_blood",
+      "progress": {}
+    },
+    {
+      "questId": "trbeyond:rep_sub_flowing_currents_1",
+      "progress": {}
+    },
+    {
+      "questId": "trbeyond:repeatable_material_beast_gnome_essence",
+      "progress": {}
+    },
+    {
+      "questId": "trbeyond:rep_sub_centipede_shock_1",
+      "progress": {}
+    },
+    {
+      "questId": "trbeyond:weekly_day_1_sylphide_3",
+      "progress": {
+        "kill_sylphide_weekly_1_3": 1
+      }
+    },
+    {
+      "questId": "trbeyond:repeatable_skill_kirara_mizutani",
+      "progress": {
+        "kill_kirara_mizutani": 7
+      }
+    }
+  ]
+}

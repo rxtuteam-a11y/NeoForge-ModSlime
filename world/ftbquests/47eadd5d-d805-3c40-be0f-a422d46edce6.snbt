@@ -1,0 +1,14 @@
+{
+	version: 1
+	uuid: "47eadd5dd8053c40be0fa422d46edce6"
+	name: "bexuanmai#47eadd5d"
+	lock: false
+	rewards_blocked: false
+	task_progress: { }
+	started: { }
+	completed: { }
+	repeatable: { }
+	completion_count: { }
+	claimed_rewards: { }
+	player_data: { }
+}

@@ -1,0 +1,14 @@
+{
+	version: 1
+	uuid: "8ce51a0c1eea3303bf5ecadc0d8433c9"
+	name: "HaJil#8ce51a0c"
+	lock: false
+	rewards_blocked: false
+	task_progress: { }
+	started: { }
+	completed: { }
+	repeatable: { }
+	completion_count: { }
+	claimed_rewards: { }
+	player_data: { }
+}

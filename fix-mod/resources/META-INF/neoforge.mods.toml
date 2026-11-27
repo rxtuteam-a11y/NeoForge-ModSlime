@@ -1,0 +1,20 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "MIT"
+
+[[mods]]
+modId = "modslime_fix"
+version = "1.0.0"
+displayName = "ModSlime Fix"
+description = "Chong crash 'Cannot get config value before config is loaded' cua Platform/VanillaBackport tren may cham."
+displayTest = "IGNORE_ALL_VERSION"
+
+[[dependencies.modslime_fix]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[mixins]]
+config = "modslime_fix.mixins.json"

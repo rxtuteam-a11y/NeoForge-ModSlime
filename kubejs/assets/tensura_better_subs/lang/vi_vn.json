@@ -1,0 +1,17 @@
+{
+  "tooltip.tensura_better_subs.humanoid_menu.skill_button": "Mở Bảng Kỹ Năng",
+  "tensura.skill.mode.thought_communication.skills": "Bảng Trạng Thái",
+  "tensura.skill.mode.thought_communication.select_subordinate": "Chọn Thuộc Hạ",
+  "tensura.skill.mode.thought_communication.use_skill": "Sử Dụng Kỹ Năng",
+  "tensura_better_subs.skill.subordinate_acquire_skill": "%s đã lĩnh hội kỹ năng %s thông qua %s.",
+  "tensura_better_subs.skill.request_skill_use_failure": "%s không thể thi triển %s.",
+  "tensura_better_subs.skill.request_skill_use_successful": "%s đã thi triển thành công %s.",
+  "tensura_better_subs.targeting.sub_selected": "Đã chọn thuộc hạ %s",
+  "tensura_better_subs.main_menu.health": "Sinh Lực: %s/%s",
+  "tensura_better_subs.main_menu.spiritual_health.short": "HP Tinh Thần: %s/%s",
+  "tensura_better_subs.main_menu.spiritual_health": "Sinh Lực Tinh Thần: %s/%s",
+  "tensura_better_subs.skill_grant_menu": "Ban Tặng Kỹ Năng",
+  "tensura_better_subs.ability_selection.magicule_cost": "Tiêu Hao Ma Tố: %s",
+  "tensura_better_subs.skill_source.learning": "Học Tập",
+  "tensura_better_subs.skill_source.food_chain": "Chuỗi Thức Ăn"
+}

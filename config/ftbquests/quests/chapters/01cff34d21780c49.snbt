@@ -1,0 +1,272 @@
+{
+	autofocus_id: "6533548BC66DB5E7"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "01cff34d21780c49"
+	group: "3535525D866EB536"
+	icon: {
+		components: {
+			"ftbquests:icon": "stextras:textures/ftb_visual/soul-grade.png"
+		}
+		id: "ftbquests:custom_icon"
+	}
+	id: "01CFF34D21780C49"
+	images: [{
+		height: 10.0d
+		id: "63714B40013E6CD6"
+		image: "ablazeaqzlcz:textures/ftb/task.png"
+		rotation: 0.0d
+		width: 10.0d
+		x: 0.0d
+		y: 0.0d
+	}]
+	order_index: 6
+	quest_links: [{
+		icon: {
+			components: {
+				"ftbquests:icon": "minecraft:textures/gui/sprites/statistics/item_used.png"
+			}
+			id: "ftbquests:custom_icon"
+		}
+		id: "4AAC26A63DD9A848"
+		linked_quest: "2C2C9E868AC963D5"
+		x: 2.0d
+		y: -0.5d
+	}]
+	quests: [
+		{
+			id: "6150D75AABF4D73E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "081E234968F33F51"
+				table_id: 5836709222417088324L
+				type: "random"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				icon: {
+					id: "bosses_of_mass_destruction:ancient_anima"
+				}
+				id: "177114F706F9440D"
+				type: "tensura_tno:re_value"
+				value: 200L
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			id: "21EAF56DDAD44A0F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0860573BF91AE200"
+				table_id: 5836709222417088324L
+				type: "choice"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				icon: {
+					id: "bosses_of_mass_destruction:ancient_anima"
+				}
+				id: "0A5E955BEB780B20"
+				type: "tensura_tno:re_value"
+				value: 500L
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependency_requirement: "one_completed"
+			id: "6533548BC66DB5E7"
+			rewards: [{
+				id: "2E91C9D8CA262D27"
+				item: {
+					count: 1
+					id: "tensura:character_reset_scroll"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "30A81175CA1629DC"
+				type: "tensura_tno:reset_counter"
+			}]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			id: "5A6FAC9B1299143D"
+			rewards: [
+				{
+					id: "440FF4C797C23A30"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4BC7737B8AAB9126"
+					table_id: 6682925850089026690L
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				autoReset: true
+				category: "DAILY"
+				icon: {
+					components: {
+						"ftbquests:icon": "ftblibrary:icons/notes"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "2ACAEC78034433E0"
+				type: "tensura_tno:stextras_quest"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			id: "5144DE98E23BAADC"
+			rewards: [
+				{
+					id: "1A261443ECF6BFAB"
+					type: "xp_levels"
+					xp_levels: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "659AEECEAAF8F2EA"
+					table_id: 5836709222417088324L
+					type: "random"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				autoReset: true
+				category: "WEEKLY"
+				icon: {
+					components: {
+						"ftbquests:icon": "ftblibrary:icons/notes"
+					}
+					id: "ftbquests:custom_icon"
+				}
+				id: "18BEB34DF431A400"
+				type: "tensura_tno:stextras_quest"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			icon: {
+				components: {
+					"ftbquests:icon": "cataclysm:item/chain_of_soul_binding"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "6E1440F32E657018"
+			tasks: [{
+				id: "65575B673424DBB3"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: -0.5d
+		}
+		{
+			id: "70437B54AB198F40"
+			rewards: [{
+				id: "1683F8F8143D8223"
+				type: "xp_levels"
+				xp_levels: 100
+			}]
+			shape: "hexagon"
+			tasks: [{
+				icon: {
+					id: "eternal_starlight:soul_dew"
+				}
+				id: "11FB6B8C6F61D803"
+				type: "tensura_tno:soul_grade"
+				value: 20L
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			id: "139FD0D57D8FD574"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0E2EC63DD750CDA5"
+				table_id: 5836709222417088324L
+				type: "random"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				icon: {
+					id: "eternal_starlight:soul_dew"
+				}
+				id: "1A4285F2AF8208B3"
+				type: "tensura_tno:soul_grade"
+				value: 40L
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			id: "506BFD60BC4ACD96"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "122A61418F517122"
+				table_id: 5836709222417088324L
+				type: "random"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				icon: {
+					id: "eternal_starlight:soul_dew"
+				}
+				id: "0658CC26F6CE7A3D"
+				type: "tensura_tno:soul_grade"
+				value: 60L
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			id: "042E37FB53A715D5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "27F803423FDF9891"
+				table_id: 5836709222417088324L
+				type: "choice"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				icon: {
+					id: "eternal_starlight:soul_dew"
+				}
+				id: "3783CE83B9EF0537"
+				type: "tensura_tno:soul_grade"
+				value: 80L
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			id: "3FF5241AB03393D4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5B3319ED69E5FEC3"
+				table_id: 5836709222417088324L
+				type: "choice"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				icon: {
+					id: "eternal_starlight:soul_dew"
+				}
+				id: "4E31CF5C32C8DE1D"
+				type: "tensura_tno:soul_grade"
+				value: 100L
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+	]
+}

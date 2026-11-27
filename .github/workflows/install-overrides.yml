@@ -1,0 +1,150 @@
+name: Cài overrides (nhiệm vụ, config, kubejs)
+
+# Tải overrides.zip từ Google Drive và chép vào server.
+#  - che_do = xem : chỉ liệt kê nội dung file zip (không đổi gì)
+#  - che_do = cai : chép các thư mục trong "thu_muc" vào server rồi lưu lên GitHub (main)
+# Dùng chung hàng đợi với server nên không chạy cùng lúc với server.
+
+on:
+  workflow_dispatch:
+    inputs:
+      che_do:
+        description: "xem = chỉ liệt kê, cai = cài vào server, so_sanh = in khác biệt của các file trong 'duong_dan'"
+        required: true
+        default: "xem"
+        type: choice
+        options: [xem, cai, so_sanh]
+      duong_dan:
+        description: "(so_sanh) thư mục/file cần so sánh, vd. config/tensura_kumodesu"
+        required: false
+        default: ""
+      file_id:
+        description: "ID file overrides.zip trên Google Drive (chia sẻ: bất kỳ ai có link)"
+        required: true
+        default: "1CEKMBnrY-gRZyKCWtSZnASPQyDO9Y-Dz"
+      ghi_de:
+        description: "Thư mục được GHI ĐÈ hoàn toàn (vd. bộ nhiệm vụ)"
+        required: false
+        default: "config/ftbquests config/ExtraQuests"
+      chi_them:
+        description: "Thư mục chỉ THÊM file còn thiếu, không đụng file server đang có"
+        required: false
+        default: "config kubejs scripts defaultconfigs"
+
+permissions:
+  contents: write
+
+concurrency:
+  # chỉ chế độ "cai" mới phải chờ server tắt; xem/so_sanh chạy ngay
+  group: ${{ inputs.che_do == 'cai' && 'modslime-server' || format('overrides-view-{0}', github.run_id) }}
+  cancel-in-progress: false
+
+jobs:
+  overrides:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Tải overrides.zip
+        env:
+          FILE_ID: ${{ inputs.file_id }}
+        run: |
+          python3 -m pip install -q gdown
+          gdown "$FILE_ID" -O /tmp/overrides.zip
+          ls -la /tmp/overrides.zip
+
+      - name: Liệt kê nội dung
+        run: |
+          python3 - <<'PY'
+          import zipfile, collections
+          z = zipfile.ZipFile('/tmp/overrides.zip')
+          names = [n for n in z.namelist() if not n.endswith('/')]
+          tops = collections.Counter(n.split('/')[0] for n in names)
+          print("Tổng số file:", len(names))
+          print("== Thư mục cấp 1 ==")
+          for t, c in tops.most_common(): print(f"  {t}: {c} file")
+          lvl2 = collections.Counter('/'.join(n.split('/')[:2]) for n in names if n.count('/') >= 1)
+          lvl3 = collections.Counter('/'.join(n.split('/')[:3]) for n in names if n.count('/') >= 2)
+          print("== Cấp 2 (nhiều nhất 150) ==")
+          for t, c in sorted(lvl2.items())[:150]: print(f"  {t}: {c}")
+          print("== Liên quan nhiệm vụ ==")
+          for n in names:
+              l = n.lower()
+              if any(k in l for k in ("quest", "heracles", "odyssey", "questbook")):
+                  print("  ", n)
+          print("== Các jar (nếu có) ==")
+          for n in names:
+              if n.endswith('.jar'): print("  ", n)
+          # So sánh với file đang có trên server (repo)
+          import os, hashlib
+          pre = 'overrides/' if all(n.startswith('overrides/') for n in names) else ''
+          stats = collections.defaultdict(lambda: [0, 0, 0])
+          changed = collections.defaultdict(list)
+          for n in names:
+              rel = n[len(pre):]
+              top = rel.split('/')[0]
+              if os.path.isfile(rel):
+                  same = hashlib.md5(open(rel, 'rb').read()).digest() == hashlib.md5(z.read(n)).digest()
+                  stats[top][1 if same else 2] += 1
+                  if not same: changed[top].append(rel)
+              else:
+                  stats[top][0] += 1
+          print("== So sánh với server: [mới, giống, khác] ==")
+          for t, v in stats.items(): print(f"  {t}: mới={v[0]} giống={v[1]} khác={v[2]}")
+          for t, lst in changed.items():
+              print(f"== File KHÁC trong {t} ({len(lst)}) ==")
+              for r in sorted(lst)[:200]: print("   ", r)
+          PY
+
+      - name: So sánh chi tiết
+        if: inputs.che_do == 'so_sanh'
+        env:
+          DUONG_DAN: ${{ inputs.duong_dan }}
+        run: |
+          rm -rf /tmp/ov && mkdir -p /tmp/ov && unzip -q -o /tmp/overrides.zip -d /tmp/ov
+          ROOT=/tmp/ov; [ -d /tmp/ov/overrides ] && ROOT=/tmp/ov/overrides
+          for p in $DUONG_DAN; do
+            echo "################ $p ################"
+            diff -ruN --label "server/$p" --label "overrides/$p" "$p" "$ROOT/$p" | head -n 400 || true
+          done
+
+      - name: Cài vào server và lưu lên GitHub
+        if: inputs.che_do == 'cai'
+        env:
+          GHI_DE: ${{ inputs.ghi_de }}
+          CHI_THEM: ${{ inputs.chi_them }}
+        run: |
+          set -e
+          STATUS=$(curl -fsSL "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/server-status/status.json" 2>/dev/null || echo '{}')
+          if echo "$STATUS" | grep -q '"state": "online"'; then
+            echo "::error::Server đang chạy. Hãy TẮT server trên web rồi chạy lại."; exit 1
+          fi
+          rm -rf /tmp/ov && mkdir -p /tmp/ov && unzip -q -o /tmp/overrides.zip -d /tmp/ov
+          ROOT=/tmp/ov
+          # Nếu zip bọc trong 1 thư mục (vd. overrides/) thì vào bên trong
+          if [ "$(ls -A $ROOT | wc -l)" = 1 ] && [ -d "$ROOT/$(ls -A $ROOT)" ]; then ROOT="$ROOT/$(ls -A $ROOT)"; fi
+          echo "Gốc overrides: $ROOT"
+          for d in $GHI_DE; do
+            if [ -e "$ROOT/$d" ]; then
+              echo "Ghi đè $d ..."; rm -rf "$d"; mkdir -p "$(dirname "$d")"; cp -a "$ROOT/$d" "$d"
+            else echo "::warning::Không có $d trong overrides"; fi
+          done
+          for d in $CHI_THEM; do
+            if [ -e "$ROOT/$d" ]; then
+              echo "Thêm file mới trong $d ..."; mkdir -p "$d"; cp -a -n "$ROOT/$d/." "$d/"
+            else echo "Bỏ qua $d (không có trong overrides)"; fi
+          done
+          THU_MUC="$GHI_DE $CHI_THEM"
+          git config user.name "ModSlime Cloud"
+          git config user.email "modslime-bot@users.noreply.github.com"
+          EXIST=""; for d in $THU_MUC; do [ -e "$d" ] && EXIST="$EXIST $d"; done
+          git add -A -- $EXIST
+          if git diff --cached --quiet; then echo "Không có thay đổi."; exit 0; fi
+          git diff --cached --stat | tail -n 5
+          git commit -q -m "Cài overrides: ghi đè [$GHI_DE], thêm file mới [$CHI_THEM]"
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 5; done
+          echo "✅ Đã cài overrides vào server. Bật server trên web để áp dụng."

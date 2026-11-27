@@ -1,0 +1,14 @@
+{
+	version: 1
+	uuid: "04e997fe36fd3e7fbc2bfe8fd23505b9"
+	name: "sahur#04e997fe"
+	lock: false
+	rewards_blocked: false
+	task_progress: { }
+	started: { }
+	completed: { }
+	repeatable: { }
+	completion_count: { }
+	claimed_rewards: { }
+	player_data: { }
+}
