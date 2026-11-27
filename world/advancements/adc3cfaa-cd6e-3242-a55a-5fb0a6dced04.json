@@ -161,6 +161,7 @@
       "suspicious_stew": "2026-11-26 22:07:49 +0700",
       "cooked_cod": "2026-11-23 21:42:25 +0700",
       "mushroom_stew": "2026-11-22 18:48:23 +0700",
+      "salmon": "2026-11-27 14:08:32 +0700",
       "cooked_salmon": "2026-11-26 21:36:12 +0700"
     },
     "done": false
@@ -4452,15 +4453,45 @@
     },
     "done": true
   },
-  "farmersdelight:recipes/food/grilled_salmon": {
+  "farmersdelight:recipes/food/mixed_salad": {
     "criteria": {
-      "has_salmon": "2026-11-26 22:12:01 +0700"
+      "has_bowl": "2026-11-26 22:07:49 +0700"
     },
     "done": true
   },
-  "iceandfire:iceandfire/tame_cockatrice": {
+  "minecraft:recipes/food/mushroom_stew": {
     "criteria": {
-      "tame_rat": "2026-11-26 22:12:35 +0700"
+      "has_bowl": "2026-11-26 22:07:49 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/nether_salad": {
+    "criteria": {
+      "has_bowl": "2026-11-26 22:07:49 +0700"
+    },
+    "done": true
+  },
+  "vanillabackport:recipes/food/mushroom_stew": {
+    "criteria": {
+      "has_bowl": "2026-11-26 22:07:49 +0700"
+    },
+    "done": true
+  },
+  "tensura:master_unique_skill": {
+    "criteria": {
+      "skill": "2026-11-26 22:08:20 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:iceandfire/rotten_egg": {
+    "criteria": {
+      "bestiary": "2026-11-26 22:10:46 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/grilled_salmon": {
+    "criteria": {
+      "has_salmon": "2026-11-26 22:12:01 +0700"
     },
     "done": true
   },
@@ -4476,45 +4507,15 @@
     },
     "done": true
   },
-  "iceandfire:iceandfire/rotten_egg": {
-    "criteria": {
-      "bestiary": "2026-11-26 22:10:46 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/food/cooked_salmon_from_smoking": {
     "criteria": {
       "has_salmon": "2026-11-26 22:12:01 +0700"
     },
     "done": true
   },
-  "farmersdelight:recipes/food/mixed_salad": {
-    "criteria": {
-      "has_bowl": "2026-11-26 22:07:49 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/food/mushroom_stew": {
-    "criteria": {
-      "has_bowl": "2026-11-26 22:07:49 +0700"
-    },
-    "done": true
-  },
   "twilightforest:recipes/drying/salmon_jerky": {
     "criteria": {
       "has_meat": "2026-11-26 22:12:01 +0700"
-    },
-    "done": true
-  },
-  "tensura:master_unique_skill": {
-    "criteria": {
-      "skill": "2026-11-26 22:08:20 +0700"
-    },
-    "done": true
-  },
-  "farmersdelight:recipes/food/nether_salad": {
-    "criteria": {
-      "has_bowl": "2026-11-26 22:07:49 +0700"
     },
     "done": true
   },
@@ -4530,9 +4531,231 @@
     },
     "done": true
   },
-  "vanillabackport:recipes/food/mushroom_stew": {
+  "iceandfire:iceandfire/tame_cockatrice": {
     "criteria": {
-      "has_bowl": "2026-11-26 22:07:49 +0700"
+      "tame_rat": "2026-11-26 22:12:35 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_diorite": {
+    "criteria": {
+      "has_diorite": "2026-11-27 14:11:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/clay": {
+    "criteria": {
+      "has_clay_ball": "2026-11-27 14:09:26 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/copper_ingot_from_blasting_raw_copper": {
+    "criteria": {
+      "has_raw_copper": "2026-11-27 14:11:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/diorite_stairs_from_diorite_stonecutting": {
+    "criteria": {
+      "has_diorite": "2026-11-27 14:11:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/terracotta": {
+    "criteria": {
+      "has_clay_block": "2026-11-27 14:09:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/brick": {
+    "criteria": {
+      "has_clay_ball": "2026-11-27 14:09:26 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_andesite_stairs_from_andesite_stonecutting": {
+    "criteria": {
+      "has_andesite": "2026-11-27 14:11:17 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/grass_slab": {
+    "criteria": {
+      "has_grass_block": "2026-11-27 14:09:13 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/food/cattledeer_steak_from_smoking": {
+    "criteria": {
+      "has_cattledeer_beef": "2026-11-27 14:07:36 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/diorite_slab": {
+    "criteria": {
+      "has_diorite": "2026-11-27 14:11:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/diorite_wall": {
+    "criteria": {
+      "has_diorite": "2026-11-27 14:11:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/andesite_slab_from_andesite_stonecutting": {
+    "criteria": {
+      "has_andesite": "2026-11-27 14:11:17 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/diorite_warp_pad": {
+    "criteria": {
+      "has_diorite": "2026-11-27 14:11:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/diorite_wall_from_diorite_stonecutting": {
+    "criteria": {
+      "has_diorite": "2026-11-27 14:11:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_diorite_from_diorite_stonecutting": {
+    "criteria": {
+      "has_diorite": "2026-11-27 14:11:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/diorite_stairs": {
+    "criteria": {
+      "has_diorite": "2026-11-27 14:11:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/andesite_stairs": {
+    "criteria": {
+      "has_andesite": "2026-11-27 14:11:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_diorite_stairs_from_diorite_stonecutting": {
+    "criteria": {
+      "has_diorite": "2026-11-27 14:11:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cattledeer_steak_from_smelting": {
+    "criteria": {
+      "has_cattledeer_beef": "2026-11-27 14:07:36 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/raw_copper_block": {
+    "criteria": {
+      "has_raw_copper": "2026-11-27 14:11:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_andesite_from_andesite_stonecutting": {
+    "criteria": {
+      "has_andesite": "2026-11-27 14:11:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/andesite": {
+    "criteria": {
+      "has_stone": "2026-11-27 14:11:09 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/diorite_corner_trim": {
+    "criteria": {
+      "has_diorite_corner_trim": "2026-11-27 14:11:09 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/andesite_pillar_trim": {
+    "criteria": {
+      "has_andesite_pillar_trim": "2026-11-27 14:11:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_diorite_slab_from_diorite_stonecutting": {
+    "criteria": {
+      "has_diorite": "2026-11-27 14:11:09 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/diorite_pillar_trim": {
+    "criteria": {
+      "has_diorite_pillar_trim": "2026-11-27 14:11:09 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/andesite_warp_pad": {
+    "criteria": {
+      "has_andesite": "2026-11-27 14:11:17 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/andesite_corner_trim": {
+    "criteria": {
+      "has_andesite_corner_trim": "2026-11-27 14:11:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/andesite_wall_from_andesite_stonecutting": {
+    "criteria": {
+      "has_andesite": "2026-11-27 14:11:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_andesite_slab_from_andesite_stonecutting": {
+    "criteria": {
+      "has_andesite": "2026-11-27 14:11:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/andesite_stairs_from_andesite_stonecutting": {
+    "criteria": {
+      "has_andesite": "2026-11-27 14:11:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_andesite": {
+    "criteria": {
+      "has_andesite": "2026-11-27 14:11:17 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/food/cattledeer_steak_from_campfire_cooking": {
+    "criteria": {
+      "has_cattledeer_beef": "2026-11-27 14:07:36 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/andesite_wall": {
+    "criteria": {
+      "has_andesite": "2026-11-27 14:11:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/andesite_slab": {
+    "criteria": {
+      "has_andesite": "2026-11-27 14:11:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/diorite_slab_from_diorite_stonecutting": {
+    "criteria": {
+      "has_diorite": "2026-11-27 14:11:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/copper_ingot_from_smelting_raw_copper": {
+    "criteria": {
+      "has_raw_copper": "2026-11-27 14:11:17 +0700"
     },
     "done": true
   },

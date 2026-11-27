@@ -10439,18 +10439,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/copper_nugget_from_blasting": {
-    "criteria": {
-      "has_copper_boots": "2026-11-27 13:56:22 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/copper_nugget_from_smelting": {
-    "criteria": {
-      "has_copper_boots": "2026-11-27 13:56:22 +0700"
-    },
-    "done": true
-  },
   "farmersdelight:recipes/food/barbecue_stick": {
     "criteria": {
       "has_onion": "2026-11-27 13:34:20 +0700"
@@ -10478,6 +10466,18 @@
   "farmersdelight:recipes/building_blocks/onion_crate": {
     "criteria": {
       "has_onion": "2026-11-27 13:34:20 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/copper_nugget_from_blasting": {
+    "criteria": {
+      "has_copper_boots": "2026-11-27 13:56:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/copper_nugget_from_smelting": {
+    "criteria": {
+      "has_copper_boots": "2026-11-27 13:56:22 +0700"
     },
     "done": true
   },
