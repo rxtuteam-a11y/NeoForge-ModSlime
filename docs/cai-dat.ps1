@@ -38,6 +38,9 @@ $stamp = Get-Date -Format 'yyyyMMdd-HHmmss'
 $mods = Join-Path $game 'mods'
 if (Test-Path $mods) { Rename-Item $mods "mods_cu_$stamp" ; Say "  Da giu mod cu tai: mods_cu_$stamp" Gray }
 Copy-Item (Join-Path $tmp 'mods') $mods -Recurse -Force
+# Thay han thu muc config (giu ban cu la config_cu_<ngay-gio>) de khong con sot file lech tu lan cai truoc
+$cfg = Join-Path $game 'config'
+if (Test-Path $cfg) { Rename-Item $cfg "config_cu_$stamp" ; Say "  Da giu config cu tai: config_cu_$stamp" Gray }
 foreach ($d in 'config', 'kubejs', 'defaultconfigs') {
     $src = Join-Path $tmp $d
     if (Test-Path $src) {
