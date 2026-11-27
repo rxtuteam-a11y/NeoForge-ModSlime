@@ -10838,15 +10838,15 @@
     },
     "done": true
   },
-  "regions_unexplored:recipes/decorations/white_magnolia_shrub": {
-    "criteria": {
-      "has_white_magnolia_sapling": "2026-11-27 00:04:18 +0700"
-    },
-    "done": true
-  },
   "tensura:recipes/food/cattledeer_steak_from_campfire_cooking": {
     "criteria": {
       "has_cattledeer_beef": "2026-11-26 23:51:38 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/white_magnolia_shrub": {
+    "criteria": {
+      "has_white_magnolia_sapling": "2026-11-27 00:04:18 +0700"
     },
     "done": true
   },
