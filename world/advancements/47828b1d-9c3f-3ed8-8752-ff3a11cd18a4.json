@@ -72,6 +72,7 @@
       "prairie": "2026-11-23 23:47:16 +0700",
       "tundra": "2026-11-24 10:58:16 +0700",
       "flower_fields": "2026-11-23 22:41:21 +0700",
+      "gravel_beach": "2026-11-27 20:05:46 +0700",
       "highland_fields": "2026-11-23 21:10:02 +0700",
       "orchard": "2026-11-27 11:18:28 +0700",
       "frozen_pine_taiga": "2026-11-22 17:27:12 +0700",
@@ -111,6 +112,7 @@
       "prairie": "2026-11-23 23:47:16 +0700",
       "tundra": "2026-11-24 10:58:16 +0700",
       "flower_fields": "2026-11-23 22:41:21 +0700",
+      "gravel_beach": "2026-11-27 20:05:46 +0700",
       "highland_fields": "2026-11-23 21:10:02 +0700",
       "orchard": "2026-11-27 11:18:28 +0700",
       "frozen_pine_taiga": "2026-11-22 17:27:12 +0700",
@@ -10781,6 +10783,12 @@
   "tensura:recipes/building_blocks/palm_planks": {
     "criteria": {
       "has_logs": "2026-11-27 19:57:24 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/birch_shrub": {
+    "criteria": {
+      "has_birch_sapling": "2026-11-27 20:05:36 +0700"
     },
     "done": true
   },
