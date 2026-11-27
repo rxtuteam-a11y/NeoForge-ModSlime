@@ -24,17 +24,11 @@
       "progress": {}
     },
     {
-      "questId": "trbeyond:daily_day_3_one_eyed_owl_1",
+      "questId": "trbeyond:boss_carrion",
       "progress": {}
     },
     {
-      "questId": "trbeyond:daily_day_3_cattledeer_2",
-      "progress": {
-        "kill_cattledeer_3_2": 4
-      }
-    },
-    {
-      "questId": "trbeyond:boss_carrion",
+      "questId": "trbeyond:daily_day_4_giant_salmon_1",
       "progress": {}
     },
     {
@@ -64,6 +58,12 @@
     {
       "questId": "trbeyond:rep_sub_foundational_growth_1",
       "progress": {}
+    },
+    {
+      "questId": "trbeyond:daily_day_4_slime_2",
+      "progress": {
+        "kill_slime_4_2": 2
+      }
     },
     {
       "questId": "trbeyond:repeatable_material_feathered_serpent_essence",
@@ -106,10 +106,6 @@
       "progress": {}
     },
     {
-      "questId": "trbeyond:daily_day_3_giant_cod_3",
-      "progress": {}
-    },
-    {
       "questId": "trbeyond:repeatable_skill_mai_furuki",
       "progress": {}
     },
@@ -119,6 +115,10 @@
     },
     {
       "questId": "trbeyond:repeatable_material_giant_bat_zane_blood",
+      "progress": {}
+    },
+    {
+      "questId": "trbeyond:daily_day_4_landfish_3",
       "progress": {}
     },
     {
