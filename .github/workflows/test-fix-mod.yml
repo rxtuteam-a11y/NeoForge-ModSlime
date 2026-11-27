@@ -1,0 +1,100 @@
+name: Thử mod vá (ModSlime Fix)
+
+# Build mod vá rồi khởi động thử server NeoForge thật (đủ mod) để xác nhận mixin được áp
+# vào ForgeConfigValue của Platform. Không đụng tới world/server thật, không đẩy gì lên repo.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: test-fix-mod
+  cancel-in-progress: true
+
+env:
+  GDRIVE_MODS_ID: 1eKZVfJSo0c49VhZMonpZE5kURegY0V16
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+          sparse-checkout: |
+            .github
+            fix-mod
+            config
+            kubejs
+            defaultconfigs
+            extra-mods
+          sparse-checkout-cone-mode: true
+          filter: blob:none
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - name: Lấy mod & libraries (cache của server)
+        id: modcache
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            mods
+            libraries
+          key: modslime-mods-${{ env.GDRIVE_MODS_ID }}-v1
+
+      - name: Tải mod từ Drive (nếu cache trống)
+        if: steps.modcache.outputs.cache-hit != 'true'
+        run: |
+          python3 -m pip install -q gdown
+          gdown "$GDRIVE_MODS_ID" -O /tmp/m.zip
+          unzip -q -o /tmp/m.zip "NeoForge-ModSlime/mods/*" "NeoForge-ModSlime/libraries/*" -d /tmp/x
+          cp -rn /tmp/x/NeoForge-ModSlime/mods /tmp/x/NeoForge-ModSlime/libraries ./
+
+      - name: Build mod vá + thêm mod bổ sung
+        run: |
+          cp -f extra-mods/*.jar mods/ 2>/dev/null || true
+          fix-mod/build.sh libraries mods/modslime-fix-1.0.0.jar
+          unzip -l mods/modslime-fix-1.0.0.jar
+
+      - name: Khởi động thử server (tối đa ~15 phút)
+        run: |
+          rm -rf world .mixin.out
+          echo "eula=true" > eula.txt
+          mkfifo in.fifo
+          ( tail -f in.fifo | timeout 1200 java -Dmixin.debug.export=true @user_jvm_args.txt \
+              @libraries/net/neoforged/neoforge/21.1.267/unix_args.txt nogui > server.log 2>&1 ; echo "exit=$?" >> server.log ) &
+          exec 3>in.fifo
+          for i in $(seq 1 240); do
+            sleep 5
+            if grep -q "Done (" server.log; then echo "Server đã khởi động xong"; break; fi
+            if grep -q "^exit=" server.log; then echo "Server thoát sớm"; break; fi
+          done
+          echo "stop" >&3 || true
+          for i in $(seq 1 60); do grep -q "^exit=" server.log && break; sleep 2; done
+          pkill -f unix_args.txt || true
+
+      - name: Kiểm tra kết quả
+        run: |
+          echo "== Log liên quan =="
+          grep -n -i "ModSlime Fix\|modslime_fix\|ForgeConfigValueMixin" server.log | head -20 || true
+          grep -n "mixin.*ERROR\|ERROR.*mixin\|InvalidMixin\|MixinApplyError\|InjectionError" server.log | head -20 || true
+          grep -n "Done (\|^exit=" server.log | tail -5
+          echo "== Lớp đã được vá (mixin export) =="
+          C=.mixin.out/class/com/blackgear/platform/core/util/config/neoforge/ForgeConfigValue.class
+          ok=1
+          grep -q "\[ModSlime Fix\] Đã nạp" server.log || { echo "::error::Mod vá không được nạp"; ok=0; }
+          grep -q "Done (" server.log || { echo "::error::Server không khởi động xong"; tail -n 80 server.log; ok=0; }
+          if [ -f "$C" ]; then
+            javap -p -c "$C" | grep -n "modslime\|getDefault" | head -10
+            javap -p -c "$C" | grep -q "modslime" || { echo "::error::ForgeConfigValue chưa chứa bản vá"; ok=0; }
+          else
+            echo "::error::Không thấy ForgeConfigValue trong .mixin.out (mixin chưa áp)"; ok=0
+            find .mixin.out -path '*blackgear*' | head
+          fi
+          [ "$ok" = 1 ] && echo "✅ Mod vá hoạt động: đã nạp và đã áp vào ForgeConfigValue" || exit 1

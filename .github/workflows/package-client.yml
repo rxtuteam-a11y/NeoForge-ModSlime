@@ -39,8 +39,14 @@ jobs:
             kubejs
             defaultconfigs
             extra-mods
+            fix-mod
           sparse-checkout-cone-mode: true
           filter: blob:none
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
 
       - name: Chạy đóng gói
         run: |
