@@ -143,25 +143,19 @@ jobs:
           if pgrep -f "neoforge.*nogui" >/dev/null; then
             echo "Java vẫn chạy -> gửi SIGTERM để Minecraft tự lưu và thoát..."
             pkill -TERM -f "neoforge.*nogui" || true
-            for i in $(seq 1 90); do pgrep -f "neoforge.*nogui" >/dev/null || break; sleep 1; done
+            # world lớn có thể lưu mất vài phút -> chờ tới 5 phút rồi mới buộc dừng
+            for i in $(seq 1 300); do pgrep -f "neoforge.*nogui" >/dev/null || break; sleep 1; done
             pkill -KILL -f "neoforge.*nogui" || true
           fi
           # 2) Chỉ lưu nếu world thực sự đã được nạp trong phiên này (tránh commit world dở dang khi đang khởi động)
           if ! grep -q "Done (" logs/latest.log 2>/dev/null; then
             echo "Server chưa nạp xong world trong phiên này -> không lưu gì."; exit 0
           fi
-          git config user.name "ModSlime Cloud AutoSave"
-          git config user.email "modslime-bot@users.noreply.github.com"
-          rm -f world/session.lock
-          git add world config server.properties ops.json whitelist.json usercache.json usernamecache.json banned-players.json banned-ips.json 2>/dev/null || true
-          if git diff --cached --quiet; then echo "World đã được lưu trước đó, không có thay đổi mới."; exit 0; fi
-          git commit -q -m "Cloud save world ($(date +'%Y-%m-%d %H:%M:%S'))"
-          for i in 1 2 3 4 5; do
-            git pull -q --rebase origin main && git push -q origin HEAD:main && { echo "Đã lưu world lên GitHub."; exit 0; }
-            git rebase --abort 2>/dev/null || true
-            echo "Push lỗi, thử lại ($i)..."; sleep $((i * 5))
-          done
-          echo "::error::Không đẩy được world lên GitHub"; exit 1
+          rm -f world/session.lock .git/index.lock
+          # Dùng đúng cơ chế lưu của Web Panel: commit = bản mới nhất trên GitHub + thay đổi world,
+          # không rebase nên không thể hỏng/kẹt giữa chừng. Thử lại tối đa 5 lần.
+          cd web-panel && python3 -c "import app,sys; ok,msg=app.sync_to_github('Lưu dự phòng cuối phiên'); print(msg); sys.exit(0 if ok else 1)" \
+            || { echo "::error::Không đẩy được world lên GitHub"; exit 1; }
 
       - name: 7. Báo trạng thái offline cho trang web
         if: always() && steps.dup.outputs.skip != 'true'
