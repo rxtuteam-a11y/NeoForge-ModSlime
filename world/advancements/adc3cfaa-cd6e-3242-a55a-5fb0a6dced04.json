@@ -162,6 +162,7 @@
       "cooked_cod": "2026-11-23 21:42:25 +0700",
       "mushroom_stew": "2026-11-22 18:48:23 +0700",
       "salmon": "2026-11-27 14:08:32 +0700",
+      "cooked_beef": "2026-11-27 14:37:22 +0700",
       "baked_potato": "2026-11-27 14:23:58 +0700",
       "cooked_salmon": "2026-11-26 21:36:12 +0700"
     },
@@ -4569,6 +4570,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/brewing/magma_cream": {
+    "criteria": {
+      "has_blaze_powder": "2026-11-27 14:42:49 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/purple_stained_glass_pane_from_glass_pane": {
     "criteria": {
       "has_glass_pane": "2026-11-27 14:15:26 +0700"
@@ -4584,6 +4591,12 @@
   "minecraft:recipes/decorations/blue_stained_glass_pane_from_glass_pane": {
     "criteria": {
       "has_glass_pane": "2026-11-27 14:15:26 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/end_crystal": {
+    "criteria": {
+      "has_ender_eye": "2026-11-27 14:42:54 +0700"
     },
     "done": true
   },
@@ -4758,6 +4771,12 @@
   "minecraft:recipes/misc/brick": {
     "criteria": {
       "has_clay_ball": "2026-11-27 14:09:26 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:recipes/building_blocks/lighting/ship_lantern": {
+    "criteria": {
+      "has_item": "2026-11-27 14:42:49 +0700"
     },
     "done": true
   },
@@ -5049,6 +5068,12 @@
     },
     "done": true
   },
+  "minecraft:husbandry/obtain_netherite_hoe": {
+    "criteria": {
+      "netherite_hoe": "2026-11-27 14:35:04 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/polished_diorite_from_diorite_stonecutting": {
     "criteria": {
       "has_diorite": "2026-11-27 14:11:09 +0700"
@@ -5178,6 +5203,12 @@
   "constructionwand:recipes/tools/infinity_wand": {
     "criteria": {
       "has_item": "2026-11-27 14:28:33 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/fire_charge": {
+    "criteria": {
+      "has_blaze_powder": "2026-11-27 14:42:49 +0700"
     },
     "done": true
   },
@@ -5337,9 +5368,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/ender_eye": {
+    "criteria": {
+      "has_blaze_powder": "2026-11-27 14:42:49 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/red_stained_glass_pane_from_glass_pane": {
     "criteria": {
       "has_glass_pane": "2026-11-27 14:15:26 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/brewing/magma_cream_maze_ver": {
+    "criteria": {
+      "has_blaze_powder": "2026-11-27 14:42:49 +0700"
     },
     "done": true
   },
@@ -5370,6 +5413,12 @@
   "minecraft:recipes/building_blocks/polished_diorite_slab_from_diorite_stonecutting": {
     "criteria": {
       "has_diorite": "2026-11-27 14:11:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/ender_chest": {
+    "criteria": {
+      "has_ender_eye": "2026-11-27 14:42:54 +0700"
     },
     "done": true
   },

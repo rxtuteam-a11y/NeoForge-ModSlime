@@ -10482,6 +10482,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/emerald": {
+    "criteria": {
+      "has_emerald_block": "2026-11-27 14:33:51 +0700"
+    },
+    "done": true
+  },
   "royalvariations:rotten_king": {
     "criteria": {
       "royal_zombie": "2026-11-27 14:29:02 +0700"
@@ -10527,6 +10533,12 @@
   "constructionwand:recipes/misc/core_exchange": {
     "criteria": {
       "has_item": "2026-11-27 14:28:20 +0700"
+    },
+    "done": true
+  },
+  "minecraft:nether/create_beacon": {
+    "criteria": {
+      "beacon": "2026-11-27 14:40:17 +0700"
     },
     "done": true
   },
