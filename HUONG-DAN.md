@@ -59,6 +59,21 @@ Chỉ giữ 3 bản mới nhất (world lớn, mỗi bản vài GB).
 
 Chỉ cần **xem** trạng thái/log/địa chỉ game thì gửi link trang web bình thường, không cần token.
 
+## Gói mod cho người chơi mới (1 link duy nhất)
+
+Trang web (thẻ 🎮 Vào game) có link **"Tải trọn gói mod + config cho người chơi"**:
+`https://github.com/rxtuteam-a11y/NeoForge-ModSlime/releases/download/client-pack-latest/ModSlime-Client-Full.zip`
+
+Gói này tự động gồm: bộ mod ModSlime gốc đã chỉnh đúng cho máy chơi (gỡ Backported Spears xung đột,
+dùng bản Tensura TNO đã sửa, thêm pondererlib/mebahel-elder-scrolls-core) + 10 mod nấu ăn mới +
+toàn bộ config/kubejs hiện tại của server (nhiệm vụ FTB Quests, hình ảnh, bản dịch...).
+
+Người chơi chỉ cần giải nén và chép đè vào thư mục instance NeoForge 1.21.1 (21.1.267) của họ.
+
+**Cập nhật gói này sau khi thêm mod / overrides mới:**
+GitHub → Actions → **Đóng gói mod cho người chơi** → Run workflow → chọn `dong_goi`.
+(`xem` chỉ để kiểm tra cấu trúc file gốc trên Drive, không đổi gì.)
+
 ## Thêm mod (ví dụ mod nấu ăn)
 
 1. Sửa `extra-mods/danh-sach.txt` (mỗi dòng 1 mod: slug hoặc tên trên Modrinth).
