@@ -87,6 +87,10 @@ copy_dir "extra-mods" "$WORK/final/mods"
 copy_dir "extra-mods/chi-may-choi" "$WORK/final/mods"
 rm -f "$WORK"/final/mods/danh-sach.txt "$WORK"/final/mods/khoa-phien-ban.txt
 
+# 4b) Mod vá ModSlime Fix: chống crash "Cannot get config value before config is loaded"
+# của Platform/VanillaBackport trên máy chậm (xem fix-mod/). Build bằng libraries của gói gốc.
+fix-mod/build.sh "$ROOT/libraries" "$WORK/final/mods/modslime-fix-1.0.0.jar"
+
 # 5) Config / KubeJS / defaultconfigs hiện tại của server (nhiệm vụ FTB Quests, lang, assets, cấu hình mod)
 copy_dir "config" "$WORK/final/config"
 # Không chép config phía máy chơi (*-client.toml, *client*.snbt): server không dùng chúng, và
