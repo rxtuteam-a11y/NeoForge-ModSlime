@@ -1,0 +1,39 @@
+name: Dọn lịch sử world (giữ 5 phiên gần nhất)
+
+# Tự chạy cuối mỗi phiên server (bước 8 của ModSlime Cloud Server). Workflow này để chạy tay khi cần.
+# Dùng chung khoá với server -> nếu server đang bật, sẽ đợi server tắt xong mới chạy.
+on:
+  workflow_dispatch:
+    inputs:
+      so_phien:
+        description: "Số phiên server gần nhất cần giữ"
+        required: true
+        default: "5"
+      chi_xem:
+        description: "Chỉ xem kế hoạch, không thay đổi gì"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: modslime-server
+  cancel-in-progress: false
+
+jobs:
+  trim:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: .github
+          filter: blob:none
+      - name: Cắt lịch sử
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          KEEP_SESSIONS: ${{ inputs.so_phien }}
+          DRY_RUN: ${{ inputs.chi_xem && '1' || '' }}
+        run: python3 .github/scripts/trim-history.py

@@ -162,3 +162,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: bash .github/scripts/cloud-run.sh --offline
+
+      - name: 8. Chỉ giữ dữ liệu 5 phiên gần nhất (dọn lịch sử world cũ)
+        if: always() && steps.dup.outputs.skip != 'true'
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          KEEP_SESSIONS: "5"
+        run: python3 .github/scripts/trim-history.py
