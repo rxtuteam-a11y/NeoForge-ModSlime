@@ -87,6 +87,16 @@ jobs:
           rm -rf /tmp/modslime.zip /tmp/extract
           echo "Có $(ls -1 mods/*.jar | wc -l) mod."
 
+      - name: 3b2. Gỡ mod gây crash cho người chơi (VanillaBackport)
+        if: steps.dup.outputs.skip != 'true'
+        run: |
+          # VanillaBackport 1.2.2 crash khi khởi động: "Cannot get config value before config
+          # is loaded" tại DynamicBlockRenderingHandler.tick(). Không có mod/script nào của
+          # server phụ thuộc nó (chỉ backport hiệu ứng hình ảnh), nên gỡ luôn thay vì chờ tác
+          # giả vá. Chạy mỗi lần (không chỉ lúc cache miss) để dọn cả cache cũ đã lỡ lưu file này.
+          shopt -s nullglob; f=(mods/VanillaBackport-neoforge-*.jar)
+          if [ ${#f[@]} -gt 0 ]; then rm -f "${f[@]}"; echo "Đã gỡ: ${f[*]##*/}"; fi
+
       - name: 3c. Lưu cache mod cho lần sau
         if: steps.dup.outputs.skip != 'true' && steps.modcache.outputs.cache-hit != 'true'
         uses: actions/cache/save@v4

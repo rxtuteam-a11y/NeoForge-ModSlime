@@ -71,6 +71,13 @@ else
   echo "::warning::Không thấy file Tensura TNO đã sửa (modslime-fix) trong mods của server."
 fi
 
+# 3b) Gỡ VanillaBackport — crash "Cannot get config value before config is loaded" tại
+# DynamicBlockRenderingHandler.tick() khi khởi động. Server cũng đã gỡ mod này (xem cloud-server.yml).
+vbp=("$WORK"/final/mods/VanillaBackport-neoforge-*.jar)
+if [ ${#vbp[@]} -gt 0 ]; then
+  echo "Gỡ (gây crash khi khởi động): ${vbp[*]##*/}"; rm -f "${vbp[@]}"
+fi
+
 # 4) Thêm mod nấu ăn mới (kèm mod chỉ dành cho máy chơi nếu có)
 copy_dir "extra-mods" "$WORK/final/mods"
 copy_dir "extra-mods/chi-may-choi" "$WORK/final/mods"
