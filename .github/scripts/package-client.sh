@@ -30,6 +30,17 @@ for n in names:
     if any(k in low for k in ("spear-backport", "tensura_tno", "pondererlib", "mebahel-elder-scrolls-core")):
         print("  ", n)
 PY
+  echo "== Soi cấu trúc thư viện Platform / VanillaBackport (để viết mod vá) =="
+  mkdir -p /tmp/insp && cd /tmp/insp
+  unzip -q -o /tmp/base.zip "NeoForge-ModSlime/mods/Platform-*.jar" "NeoForge-ModSlime/mods/VanillaBackport-*.jar" -d . || true
+  for j in NeoForge-ModSlime/mods/Platform-*.jar NeoForge-ModSlime/mods/VanillaBackport-*.jar; do
+    echo "### $j"; unzip -q -o "$j" -d "x_$(basename "$j")"
+  done
+  P=$(ls -d x_Platform-*); V=$(ls -d x_VanillaBackport-*)
+  javap -p -s -cp "$P" com.blackgear.platform.core.util.config.neoforge.ForgeConfigValue || true
+  javap -p -c -cp "$P" com.blackgear.platform.core.util.config.neoforge.ForgeConfigValue | head -80 || true
+  javap -p -s -cp "$V" com.blackgear.vanillabackport.client.api.modules.block_rendering.DynamicBlockRenderingHandler || true
+  ls "$P/META-INF" ; cat "$P"/META-INF/neoforge.mods.toml 2>/dev/null | head -30
   exit 0
 fi
 
