@@ -11514,5 +11514,47 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/purpur_pillar_from_purpur_block_stonecutting": {
+    "criteria": {
+      "has_purpur_block": "2026-11-27 19:35:42 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/purpur_slab_from_purpur_block_stonecutting": {
+    "criteria": {
+      "has_purpur_block": "2026-11-27 19:35:42 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/purpur_slab": {
+    "criteria": {
+      "has_purpur_block": "2026-11-27 19:35:41 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/purpur_pillar": {
+    "criteria": {
+      "has_purpur_block": "2026-11-27 19:35:42 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/purpur_stairs": {
+    "criteria": {
+      "has_purpur_block": "2026-11-27 19:35:42 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/purpur_warp_pad": {
+    "criteria": {
+      "has_purpur_block": "2026-11-27 19:35:42 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/purpur_stairs_from_purpur_block_stonecutting": {
+    "criteria": {
+      "has_purpur_block": "2026-11-27 19:35:42 +0700"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }
