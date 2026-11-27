@@ -11121,6 +11121,12 @@
     },
     "done": true
   },
+  "minecraft:story/enter_the_end": {
+    "criteria": {
+      "entered_end": "2026-11-27 15:12:42 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/combat/silver_helmet": {
     "criteria": {
       "has_silver_ingot": "2026-11-27 14:58:19 +0700"
@@ -11256,6 +11262,12 @@
   "tensura:recipes/tools/silver_sickle": {
     "criteria": {
       "has_material_for_silver_sickle": "2026-11-27 14:58:19 +0700"
+    },
+    "done": true
+  },
+  "minecraft:end/root": {
+    "criteria": {
+      "entered_end": "2026-11-27 15:12:42 +0700"
     },
     "done": true
   },
