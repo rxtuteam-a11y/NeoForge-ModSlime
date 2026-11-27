@@ -1096,6 +1096,8 @@
       "minecraft:witch": "2026-11-23 13:17:25 +0700",
       "minecraft:wither_skeleton": "2026-11-25 19:20:05 +0700",
       "minecraft:husk": "2026-11-23 13:30:36 +0700",
+      "minecraft:ender_dragon": "2026-11-27 15:15:35 +0700",
+      "minecraft:shulker": "2026-11-27 15:19:01 +0700",
       "minecraft:cave_spider": "2026-11-23 21:31:24 +0700",
       "minecraft:piglin": "2026-11-25 19:06:36 +0700",
       "minecraft:stray": "2026-11-23 13:41:24 +0700",
@@ -7628,6 +7630,7 @@
   "cataclysm:kill_all_bosses": {
     "criteria": {
       "cataclysm:maledictus": "2026-11-24 18:59:58 +0700",
+      "cataclysm:ender_guardian": "2026-11-27 15:36:09 +0700",
       "cataclysm:netherite_monstrosity": "2026-11-25 19:33:15 +0700",
       "cataclysm:scylla": "2026-11-24 16:27:02 +0700",
       "cataclysm:ignis": "2026-11-25 19:30:17 +0700"
@@ -10863,9 +10866,9 @@
     },
     "done": true
   },
-  "farmersdelight:recipes/combat/golden_knife": {
+  "tensura:great_saint_of_the_west": {
     "criteria": {
-      "has_gold_ingot": "2026-11-27 11:46:45 +0700"
+      "hinata": "2026-11-27 08:38:09 +0700"
     },
     "done": true
   },
@@ -10881,27 +10884,9 @@
     },
     "done": true
   },
-  "regions_unexplored:recipes/redstone/larch_door": {
-    "criteria": {
-      "has_larch_planks": "2026-11-27 11:53:53 +0700"
-    },
-    "done": true
-  },
-  "vinery:recipes/winemaker_leggings": {
-    "criteria": {
-      "has_gold_ingot": "2026-11-27 11:46:45 +0700"
-    },
-    "done": true
-  },
   "farmersdelight:recipes/food/pie_crust": {
     "criteria": {
       "has_wheat": "2026-11-27 08:45:39 +0700"
-    },
-    "done": true
-  },
-  "regions_unexplored:recipes/building_blocks/larch_stairs": {
-    "criteria": {
-      "has_larch_planks": "2026-11-27 11:53:53 +0700"
     },
     "done": true
   },
@@ -10920,6 +10905,102 @@
   "minecraft:recipes/food/flour_from_5_wheat": {
     "criteria": {
       "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/bread": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/hay_block": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/flour_from_7_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/flour_from_6_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/flour_from_8_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/flour_from_4_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/flour_from_3_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/straw_hat": {
+    "criteria": {
+      "has_wheat": "2026-11-27 08:45:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/fletching_table": {
+    "criteria": {
+      "has_flint": "2026-11-27 08:55:31 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/tools/sickle": {
+    "criteria": {
+      "has_flint": "2026-11-27 08:55:31 +0700"
+    },
+    "done": true
+  },
+  "mowziesmobs:recipes/combat/spear": {
+    "criteria": {
+      "has_flint": "2026-11-27 08:55:31 +0700"
+    },
+    "done": true
+  },
+  "tensura:hear_me_direwolves": {
+    "criteria": {
+      "direwolf": "2026-11-27 10:09:28 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/combat/golden_knife": {
+    "criteria": {
+      "has_gold_ingot": "2026-11-27 11:46:45 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/winemaker_leggings": {
+    "criteria": {
+      "has_gold_ingot": "2026-11-27 11:46:45 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/redstone/larch_door": {
+    "criteria": {
+      "has_larch_planks": "2026-11-27 11:53:53 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/larch_stairs": {
+    "criteria": {
+      "has_larch_planks": "2026-11-27 11:53:53 +0700"
     },
     "done": true
   },
@@ -10947,39 +11028,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/decorations/fletching_table": {
-    "criteria": {
-      "has_flint": "2026-11-27 08:55:31 +0700"
-    },
-    "done": true
-  },
-  "tensura:hear_me_direwolves": {
-    "criteria": {
-      "direwolf": "2026-11-27 10:09:28 +0700"
-    },
-    "done": true
-  },
-  "kaleidoscope_cookery:recipes/tools/sickle": {
-    "criteria": {
-      "has_flint": "2026-11-27 08:55:31 +0700"
-    },
-    "done": true
-  },
   "regions_unexplored:recipes/building_blocks/larch_slab": {
     "criteria": {
       "has_larch_planks": "2026-11-27 11:53:53 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/food/bread": {
-    "criteria": {
-      "has_wheat": "2026-11-27 08:45:39 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/hay_block": {
-    "criteria": {
-      "has_wheat": "2026-11-27 08:45:39 +0700"
     },
     "done": true
   },
@@ -10989,33 +11040,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/food/flour_from_7_wheat": {
-    "criteria": {
-      "has_wheat": "2026-11-27 08:45:39 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/food/flour_from_6_wheat": {
-    "criteria": {
-      "has_wheat": "2026-11-27 08:45:39 +0700"
-    },
-    "done": true
-  },
   "regions_unexplored:recipes/redstone/larch_fence_gate": {
     "criteria": {
       "has_larch_planks": "2026-11-27 11:53:53 +0700"
-    },
-    "done": true
-  },
-  "tensura:great_saint_of_the_west": {
-    "criteria": {
-      "hinata": "2026-11-27 08:38:09 +0700"
-    },
-    "done": true
-  },
-  "mowziesmobs:recipes/combat/spear": {
-    "criteria": {
-      "has_flint": "2026-11-27 08:55:31 +0700"
     },
     "done": true
   },
@@ -11026,6 +11053,12 @@
     "done": true
   },
   "regions_unexplored:recipes/decorations/larch_fence": {
+    "criteria": {
+      "has_larch_planks": "2026-11-27 11:53:53 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/larch_sign": {
     "criteria": {
       "has_larch_planks": "2026-11-27 11:53:53 +0700"
     },
@@ -11043,33 +11076,441 @@
     },
     "done": true
   },
-  "minecraft:recipes/food/flour_from_8_wheat": {
+  "minecraft:recipes/food/pumpkin_pie": {
     "criteria": {
-      "has_wheat": "2026-11-27 08:45:39 +0700"
+      "has_pumpkin": "2026-11-27 14:21:36 +0700"
     },
     "done": true
   },
-  "minecraft:recipes/food/flour_from_4_wheat": {
+  "kaleidoscope_cookery:recipes/decorations/scarecrow": {
     "criteria": {
-      "has_wheat": "2026-11-27 08:45:39 +0700"
+      "has_pumpkin": "2026-11-27 14:21:36 +0700"
     },
     "done": true
   },
-  "regions_unexplored:recipes/decorations/larch_sign": {
+  "farmersdelight:recipes/cooking/stuffed_pumpkin_block": {
     "criteria": {
-      "has_larch_planks": "2026-11-27 11:53:53 +0700"
+      "has_pumpkin": "2026-11-27 14:21:36 +0700"
     },
     "done": true
   },
-  "minecraft:recipes/food/flour_from_3_wheat": {
+  "minecraft:recipes/misc/pumpkin_seeds": {
     "criteria": {
-      "has_wheat": "2026-11-27 08:45:39 +0700"
+      "has_pumpkin": "2026-11-27 14:21:36 +0700"
     },
     "done": true
   },
-  "vinery:recipes/straw_hat": {
+  "vanillabackport:recipes/food/pumpkin_pie": {
     "criteria": {
-      "has_wheat": "2026-11-27 08:45:39 +0700"
+      "has_pumpkin": "2026-11-27 14:21:36 +0700"
+    },
+    "done": true
+  },
+  "minecraft:nether/summon_wither": {
+    "criteria": {
+      "summoned": "2026-11-27 14:27:50 +0700"
+    },
+    "done": true
+  },
+  "enhanced_ore_variety:recipes/misc/coal_from_blasting": {
+    "criteria": {
+      "TagKey[minecraft:item / minecraft:coal_ores]": "2026-11-27 14:29:22 +0700"
+    },
+    "done": true
+  },
+  "enhanced_ore_variety:recipes/misc/coal_from_smelting": {
+    "criteria": {
+      "TagKey[minecraft:item / minecraft:coal_ores]": "2026-11-27 14:29:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/coal_from_blasting_coal_ore": {
+    "criteria": {
+      "has_coal_ore": "2026-11-27 14:30:32 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/coal_from_smelting_coal_ore": {
+    "criteria": {
+      "has_coal_ore": "2026-11-27 14:30:32 +0700"
+    },
+    "done": true
+  },
+  "minecraft:nether/create_beacon": {
+    "criteria": {
+      "beacon": "2026-11-27 14:40:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:story/follow_ender_eye": {
+    "criteria": {
+      "in_stronghold": "2026-11-27 14:51:17 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/combat/silver_boots": {
+    "criteria": {
+      "has_silver_ingot": "2026-11-27 14:58:19 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/tools/silver_axe": {
+    "criteria": {
+      "has_diamond": "2026-11-27 14:58:19 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/tools/silver_pickaxe": {
+    "criteria": {
+      "has_diamond": "2026-11-27 14:58:19 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/combat/silver_sword": {
+    "criteria": {
+      "has_diamond": "2026-11-27 14:58:19 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/combat/silver_chestplate": {
+    "criteria": {
+      "has_silver_ingot": "2026-11-27 14:58:19 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/combat/silver_helmet": {
+    "criteria": {
+      "has_silver_ingot": "2026-11-27 14:58:19 +0700"
+    },
+    "done": true
+  },
+  "tensura:acquire_silverware": {
+    "criteria": {
+      "silver": "2026-11-27 14:58:19 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/combat/silver_leggings": {
+    "criteria": {
+      "has_silver_ingot": "2026-11-27 14:58:19 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/tools/silver_shovel": {
+    "criteria": {
+      "has_diamond": "2026-11-27 14:58:19 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/silver_nugget": {
+    "criteria": {
+      "has_silver_ingot": "2026-11-27 14:58:19 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/silver_blockfrom_silver_ingot": {
+    "criteria": {
+      "has_silver_ingot": "2026-11-27 14:58:19 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/tools/silver_hoe": {
+    "criteria": {
+      "has_diamond": "2026-11-27 14:58:19 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/tools/silver_sickle": {
+    "criteria": {
+      "has_material_for_silver_sickle": "2026-11-27 14:58:19 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/barbecue_stick": {
+    "criteria": {
+      "has_onion": "2026-11-27 15:03:38 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/ratatouille": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-27 15:03:38 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/onion_soup": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-27 15:03:38 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:main/get_fd_seed": {
+    "criteria": {
+      "onion": "2026-11-27 15:03:38 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/dumplings": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-27 15:03:38 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/fish_stew": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-27 15:03:38 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/building_blocks/onion_crate": {
+    "criteria": {
+      "has_onion": "2026-11-27 15:03:38 +0700"
+    },
+    "done": true
+  },
+  "minecraft:story/enter_the_end": {
+    "criteria": {
+      "entered_end": "2026-11-27 15:12:42 +0700"
+    },
+    "done": true
+  },
+  "minecraft:end/root": {
+    "criteria": {
+      "entered_end": "2026-11-27 15:12:42 +0700"
+    },
+    "done": true
+  },
+  "minecraft:end/kill_dragon": {
+    "criteria": {
+      "killed_dragon": "2026-11-27 15:15:35 +0700"
+    },
+    "done": true
+  },
+  "minecraft:end/find_end_city": {
+    "criteria": {
+      "in_city": "2026-11-27 15:19:10 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/end_stone_brick_slab": {
+    "criteria": {
+      "has_end_stone_bricks": "2026-11-27 15:20:30 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/end_stone_brick_stairs": {
+    "criteria": {
+      "has_end_stone_bricks": "2026-11-27 15:20:30 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/end_stone_brick_stairs_from_end_stone_brick_stonecutting": {
+    "criteria": {
+      "has_end_stone_brick": "2026-11-27 15:20:30 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/end_stone_warp_pad": {
+    "criteria": {
+      "has_end_stone_bricks": "2026-11-27 15:20:30 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/end_stone_brick_wall": {
+    "criteria": {
+      "has_end_stone_bricks": "2026-11-27 15:20:30 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/end_stone_brick_slab_from_end_stone_brick_stonecutting": {
+    "criteria": {
+      "has_end_stone_brick": "2026-11-27 15:20:30 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/end_stone_brick_wall_from_end_stone_brick_stonecutting": {
+    "criteria": {
+      "has_end_stone_brick": "2026-11-27 15:20:30 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/magma_cream": {
+    "criteria": {
+      "has_blaze_powder": "2026-11-27 15:26:00 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:recipes/building_blocks/lighting/ship_lantern": {
+    "criteria": {
+      "has_item": "2026-11-27 15:26:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/fire_charge": {
+    "criteria": {
+      "has_blaze_powder": "2026-11-27 15:26:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/ender_eye": {
+    "criteria": {
+      "has_blaze_powder": "2026-11-27 15:26:00 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/brewing/magma_cream_maze_ver": {
+    "criteria": {
+      "has_blaze_powder": "2026-11-27 15:26:00 +0700"
+    },
+    "done": true
+  },
+  "bosses_of_mass_destruction:end/obsidilith_defeat": {
+    "criteria": {
+      "bosses_of_mass_destruction:obsidilith": "2026-11-27 15:27:35 +0700"
+    },
+    "done": true
+  },
+  "lootr:1shulker": {
+    "criteria": {
+      "opened_shulker": "2026-11-27 15:27:42 +0700"
+    },
+    "done": true
+  },
+  "bosses_of_mass_destruction:recipes/mob_ward": {
+    "criteria": {
+      "has_obsidian_heart": "2026-11-27 15:27:45 +0700"
+    },
+    "done": true
+  },
+  "cataclysm:find_ruined_citadel": {
+    "criteria": {
+      "citadel": "2026-11-27 15:32:42 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/hihiirokane_nugget_from_blasting_hihiirokane_leggings": {
+    "criteria": {
+      "has_hihiirokane_leggings": "2026-11-27 15:33:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/hihiirokane_nugget_from_smelting_hihiirokane_leggings": {
+    "criteria": {
+      "has_hihiirokane_leggings": "2026-11-27 15:33:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/hihiirokane_nugget_from_blasting_hihiirokane_helmet": {
+    "criteria": {
+      "has_hihiirokane_helmet": "2026-11-27 15:33:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/hihiirokane_nugget_from_smelting_hihiirokane_helmet": {
+    "criteria": {
+      "has_hihiirokane_helmet": "2026-11-27 15:33:09 +0700"
+    },
+    "done": true
+  },
+  "cataclysm:kill_ender_golem": {
+    "criteria": {
+      "endergolem": "2026-11-27 15:33:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/hihiirokane_nugget_from_blasting_hihiirokane_chestplate": {
+    "criteria": {
+      "has_hihiirokane_chestplate": "2026-11-27 15:33:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/hihiirokane_nugget_from_smelting_hihiirokane_chestplate": {
+    "criteria": {
+      "has_hihiirokane_chestplate": "2026-11-27 15:33:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/end_stone_brick_slab_from_end_stone_stonecutting": {
+    "criteria": {
+      "has_end_stone": "2026-11-27 15:33:43 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/end_stone_brick_wall_from_end_stone_stonecutting": {
+    "criteria": {
+      "has_end_stone": "2026-11-27 15:33:43 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/end_stone_bricks": {
+    "criteria": {
+      "has_end_stone": "2026-11-27 15:33:43 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/end_stone_bricks_from_end_stone_stonecutting": {
+    "criteria": {
+      "has_end_stone": "2026-11-27 15:33:43 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/end_stone_brick_stairs_from_end_stone_stonecutting": {
+    "criteria": {
+      "has_end_stone": "2026-11-27 15:33:43 +0700"
+    },
+    "done": true
+  },
+  "cataclysm:kill_ender_guardian": {
+    "criteria": {
+      "enderguardian": "2026-11-27 15:36:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/hihiirokane_nugget_from_smelting_hihiirokane_boots": {
+    "criteria": {
+      "has_hihiirokane_boots": "2026-11-27 15:38:20 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/hihiirokane_nugget_from_blasting_hihiirokane_boots": {
+    "criteria": {
+      "has_hihiirokane_boots": "2026-11-27 15:38:20 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/wine_press": {
+    "criteria": {
+      "has_iron_trapdoor": "2026-11-27 16:13:30 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/fried_egg_from_campfire_cooking": {
+    "criteria": {
+      "fried_egg": "2026-11-27 18:21:17 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/baked_cod_stew": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-27 18:21:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/wolf_armor": {
+    "criteria": {
+      "has_armadillo_scute": "2026-11-27 18:21:16 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/fried_egg_from_smoking": {
+    "criteria": {
+      "fried_egg": "2026-11-27 18:21:17 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/fried_egg": {
+    "criteria": {
+      "fried_egg": "2026-11-27 18:21:17 +0700"
     },
     "done": true
   },

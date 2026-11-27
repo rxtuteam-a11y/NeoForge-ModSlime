@@ -30,6 +30,17 @@ for n in names:
     if any(k in low for k in ("spear-backport", "tensura_tno", "pondererlib", "mebahel-elder-scrolls-core")):
         print("  ", n)
 PY
+  echo "== Soi cấu trúc thư viện Platform / VanillaBackport (để viết mod vá) =="
+  mkdir -p /tmp/insp && cd /tmp/insp
+  unzip -q -o /tmp/base.zip "NeoForge-ModSlime/mods/Platform-*.jar" "NeoForge-ModSlime/mods/VanillaBackport-*.jar" -d . || true
+  for j in NeoForge-ModSlime/mods/Platform-*.jar NeoForge-ModSlime/mods/VanillaBackport-*.jar; do
+    echo "### $j"; unzip -q -o "$j" -d "x_$(basename "$j")"
+  done
+  P=$(ls -d x_Platform-*); V=$(ls -d x_VanillaBackport-*)
+  javap -p -s -cp "$P" com.blackgear.platform.core.util.config.neoforge.ForgeConfigValue || true
+  javap -p -c -cp "$P" com.blackgear.platform.core.util.config.neoforge.ForgeConfigValue | head -80 || true
+  javap -p -s -cp "$V" com.blackgear.vanillabackport.client.api.modules.block_rendering.DynamicBlockRenderingHandler || true
+  ls "$P/META-INF" ; cat "$P"/META-INF/neoforge.mods.toml 2>/dev/null | head -30
   exit 0
 fi
 
@@ -76,8 +87,19 @@ copy_dir "extra-mods" "$WORK/final/mods"
 copy_dir "extra-mods/chi-may-choi" "$WORK/final/mods"
 rm -f "$WORK"/final/mods/danh-sach.txt "$WORK"/final/mods/khoa-phien-ban.txt
 
+# 4b) Mod vá ModSlime Fix: chống crash "Cannot get config value before config is loaded"
+# của Platform/VanillaBackport trên máy chậm (xem fix-mod/). Build bằng libraries của gói gốc.
+fix-mod/build.sh "$ROOT/libraries" "$WORK/final/mods/modslime-fix-1.0.0.jar"
+
 # 5) Config / KubeJS / defaultconfigs hiện tại của server (nhiệm vụ FTB Quests, lang, assets, cấu hình mod)
 copy_dir "config" "$WORK/final/config"
+# Không chép config phía máy chơi (*-client.toml, *client*.snbt): server không dùng chúng, và
+# các file trong repo đến từ overrides.zip của bản modpack cũ -> lệch định dạng với bản mod hiện
+# tại. Ví dụ vanillabackport-client.toml cũ làm VanillaBackport 1.2.2 crash khi khởi động
+# ("Cannot get config value before config is loaded"). Thiếu file thì mod tự tạo bản đúng.
+n_client_cfg=$(find "$WORK/final/config" \( -name '*-client.toml' -o -name '*_client.toml' -o -name '*client*.snbt' \) -type f | wc -l)
+find "$WORK/final/config" \( -name '*-client.toml' -o -name '*_client.toml' -o -name '*client*.snbt' \) -type f -delete
+echo "Bỏ $n_client_cfg file config phía máy chơi (mod sẽ tự tạo lại đúng phiên bản)."
 copy_dir "kubejs" "$WORK/final/kubejs"
 copy_dir "defaultconfigs" "$WORK/final/defaultconfigs"
 

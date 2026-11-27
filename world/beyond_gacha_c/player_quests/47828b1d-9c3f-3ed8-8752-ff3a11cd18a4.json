@@ -1,6 +1,8 @@
 {
   "mxp": 0,
-  "completed": [],
+  "completed": [
+    "trbeyond:daily_day_4_slime_2"
+  ],
   "repeatable_timers": {},
   "active": [
     {
@@ -62,7 +64,7 @@
     {
       "questId": "trbeyond:daily_day_4_slime_2",
       "progress": {
-        "kill_slime_4_2": 4
+        "kill_slime_4_2": 8
       }
     },
     {
@@ -87,7 +89,9 @@
     },
     {
       "questId": "trbeyond:repeatable_material_winged_cat_essence",
-      "progress": {}
+      "progress": {
+        "kill_winged_cat_essence": 1
+      }
     },
     {
       "questId": "trbeyond:mxp_chest_4",
