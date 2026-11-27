@@ -10772,5 +10772,173 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/bowl_from_birch_log_woodcutting": {
+    "criteria": {
+      "has_birch_log": "2026-11-27 20:03:07 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/palm_planks": {
+    "criteria": {
+      "has_logs": "2026-11-27 19:57:24 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_button_from_birch_log_woodcutting": {
+    "criteria": {
+      "has_birch_log": "2026-11-27 20:03:07 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_planks": {
+    "criteria": {
+      "has_logs": "2026-11-27 20:03:07 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_birch_log_from_birch_log_woodcutting": {
+    "criteria": {
+      "has_birch_log": "2026-11-27 20:03:07 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_fence_from_birch_log_woodcutting": {
+    "criteria": {
+      "has_birch_log": "2026-11-27 20:03:07 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/oak_shrub": {
+    "criteria": {
+      "has_oak_sapling": "2026-11-27 20:00:02 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/palm_wood": {
+    "criteria": {
+      "has_log": "2026-11-27 19:57:24 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/white_dye_from_lily_of_the_valley": {
+    "criteria": {
+      "has_lily_of_the_valley": "2026-11-27 20:03:05 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/palm_fence_from_palm_log_woodcutting": {
+    "criteria": {
+      "has_palm_log": "2026-11-27 19:57:24 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/building_blocks/stonecutting/birch_log/hollow_birch_log": {
+    "criteria": {
+      "has_block": "2026-11-27 20:03:07 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/ladder_from_birch_log_woodcutting": {
+    "criteria": {
+      "has_birch_log": "2026-11-27 20:03:07 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stick_from_birch_log_woodcutting": {
+    "criteria": {
+      "has_birch_log": "2026-11-27 20:03:07 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/palm_button_from_palm_log_woodcutting": {
+    "criteria": {
+      "has_palm_log": "2026-11-27 19:57:24 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_planks_from_birch_log_woodcutting": {
+    "criteria": {
+      "has_birch_log": "2026-11-27 20:03:07 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_wood": {
+    "criteria": {
+      "has_log": "2026-11-27 20:03:07 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_stairs_from_birch_log_woodcutting": {
+    "criteria": {
+      "has_birch_log": "2026-11-27 20:03:07 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_palm_log_from_palm_log_woodcutting": {
+    "criteria": {
+      "has_palm_log": "2026-11-27 19:57:24 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stick_from_palm_log_woodcutting": {
+    "criteria": {
+      "has_palm_log": "2026-11-27 19:57:24 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_palm_wood_from_palm_log_woodcutting": {
+    "criteria": {
+      "has_palm_log": "2026-11-27 19:57:24 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/palm_slab_from_palm_log_woodcutting": {
+    "criteria": {
+      "has_palm_log": "2026-11-27 19:57:24 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_slab_from_birch_log_woodcutting": {
+    "criteria": {
+      "has_birch_log": "2026-11-27 20:03:07 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/ladder_from_palm_log_woodcutting": {
+    "criteria": {
+      "has_palm_log": "2026-11-27 19:57:24 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_birch_wood_from_birch_log_woodcutting": {
+    "criteria": {
+      "has_birch_log": "2026-11-27 20:03:07 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/palm_stairs_from_palm_log_woodcutting": {
+    "criteria": {
+      "has_palm_log": "2026-11-27 19:57:24 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/palm_planks_from_palm_log_woodcutting": {
+    "criteria": {
+      "has_palm_log": "2026-11-27 19:57:24 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/birch_branch_from_birch_log": {
+    "criteria": {
+      "has_log": "2026-11-27 20:03:07 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bowl_from_palm_log_woodcutting": {
+    "criteria": {
+      "has_palm_log": "2026-11-27 19:57:24 +0700"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }
