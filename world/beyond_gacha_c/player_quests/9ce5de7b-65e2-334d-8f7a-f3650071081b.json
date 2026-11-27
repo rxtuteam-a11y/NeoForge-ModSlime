@@ -5,6 +5,7 @@
     "trbeyond:daily_day_2_slime_1",
     "trbeyond:boss_elemental_colossus",
     "trbeyond:daily_day_3_cattledeer_2",
+    "trbeyond:boss_orc_disaster",
     "trbeyond:daily_day_1_cattledeer_1",
     "trbeyond:boss_rimuru_ogre_fight",
     "trbeyond:weekly_day_1_akash_1",
@@ -13,7 +14,7 @@
   "repeatable_timers": {
     "trbeyond:boss_charybdis": 5076865,
     "trbeyond:boss_elemental_colossus": 4787376,
-    "trbeyond:boss_orc_disaster": 2457139,
+    "trbeyond:boss_orc_disaster": 5106335,
     "trbeyond:boss_rimuru_ogre_fight": 3659228
   },
   "active": [
@@ -85,7 +86,9 @@
     },
     {
       "questId": "trbeyond:boss_orc_disaster",
-      "progress": {}
+      "progress": {
+        "kill_orc_disaster": 1
+      }
     },
     {
       "questId": "trbeyond:rep_sub_foundational_growth_1",
