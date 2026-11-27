@@ -11081,6 +11081,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/brewing/magma_cream": {
+    "criteria": {
+      "has_blaze_powder": "2026-11-27 15:26:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/end_stone_brick_slab_from_end_stone_stonecutting": {
+    "criteria": {
+      "has_end_stone": "2026-11-27 15:33:43 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/combat/silver_boots": {
     "criteria": {
       "has_silver_ingot": "2026-11-27 14:58:19 +0700"
@@ -11105,6 +11117,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/end_stone_brick_wall_from_end_stone_stonecutting": {
+    "criteria": {
+      "has_end_stone": "2026-11-27 15:33:43 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/end_stone_brick_stairs": {
     "criteria": {
       "has_end_stone_bricks": "2026-11-27 15:20:30 +0700"
@@ -11114,6 +11132,12 @@
   "minecraft:story/follow_ender_eye": {
     "criteria": {
       "in_stronghold": "2026-11-27 14:51:17 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:recipes/building_blocks/lighting/ship_lantern": {
+    "criteria": {
+      "has_item": "2026-11-27 15:26:00 +0700"
     },
     "done": true
   },
@@ -11153,6 +11177,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/end_stone_bricks": {
+    "criteria": {
+      "has_end_stone": "2026-11-27 15:33:43 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/coal_from_blasting_coal_ore": {
     "criteria": {
       "has_coal_ore": "2026-11-27 14:30:32 +0700"
@@ -11162,6 +11192,12 @@
   "farmersdelight:recipes/food/barbecue_stick": {
     "criteria": {
       "has_onion": "2026-11-27 15:03:38 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/hihiirokane_nugget_from_blasting_hihiirokane_leggings": {
+    "criteria": {
+      "has_hihiirokane_leggings": "2026-11-27 15:33:09 +0700"
     },
     "done": true
   },
@@ -11195,9 +11231,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/end_stone_bricks_from_end_stone_stonecutting": {
+    "criteria": {
+      "has_end_stone": "2026-11-27 15:33:43 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/combat/silver_leggings": {
     "criteria": {
       "has_silver_ingot": "2026-11-27 14:58:19 +0700"
+    },
+    "done": true
+  },
+  "cataclysm:find_ruined_citadel": {
+    "criteria": {
+      "citadel": "2026-11-27 15:32:42 +0700"
     },
     "done": true
   },
@@ -11207,9 +11255,27 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/hihiirokane_nugget_from_smelting_hihiirokane_leggings": {
+    "criteria": {
+      "has_hihiirokane_leggings": "2026-11-27 15:33:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/hihiirokane_nugget_from_blasting_hihiirokane_helmet": {
+    "criteria": {
+      "has_hihiirokane_helmet": "2026-11-27 15:33:09 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:recipes/cooking/stuffed_pumpkin_block": {
     "criteria": {
       "has_pumpkin": "2026-11-27 14:21:36 +0700"
+    },
+    "done": true
+  },
+  "bosses_of_mass_destruction:end/obsidilith_defeat": {
+    "criteria": {
+      "bosses_of_mass_destruction:obsidilith": "2026-11-27 15:27:35 +0700"
     },
     "done": true
   },
@@ -11225,15 +11291,57 @@
     },
     "done": true
   },
+  "bosses_of_mass_destruction:recipes/mob_ward": {
+    "criteria": {
+      "has_obsidian_heart": "2026-11-27 15:27:45 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/fire_charge": {
+    "criteria": {
+      "has_blaze_powder": "2026-11-27 15:26:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/hihiirokane_nugget_from_smelting_hihiirokane_helmet": {
+    "criteria": {
+      "has_hihiirokane_helmet": "2026-11-27 15:33:09 +0700"
+    },
+    "done": true
+  },
+  "lootr:1shulker": {
+    "criteria": {
+      "opened_shulker": "2026-11-27 15:27:42 +0700"
+    },
+    "done": true
+  },
+  "cataclysm:kill_ender_golem": {
+    "criteria": {
+      "endergolem": "2026-11-27 15:33:09 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:recipes/cooking/dumplings": {
     "criteria": {
       "has_any_ingredient": "2026-11-27 15:03:38 +0700"
     },
     "done": true
   },
+  "minecraft:recipes/misc/ender_eye": {
+    "criteria": {
+      "has_blaze_powder": "2026-11-27 15:26:00 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/silver_nugget": {
     "criteria": {
       "has_silver_ingot": "2026-11-27 14:58:19 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/brewing/magma_cream_maze_ver": {
+    "criteria": {
+      "has_blaze_powder": "2026-11-27 15:26:00 +0700"
     },
     "done": true
   },
@@ -11261,9 +11369,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/hihiirokane_nugget_from_blasting_hihiirokane_chestplate": {
+    "criteria": {
+      "has_hihiirokane_chestplate": "2026-11-27 15:33:09 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/pumpkin_seeds": {
     "criteria": {
       "has_pumpkin": "2026-11-27 14:21:36 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/hihiirokane_nugget_from_smelting_hihiirokane_chestplate": {
+    "criteria": {
+      "has_hihiirokane_chestplate": "2026-11-27 15:33:09 +0700"
     },
     "done": true
   },
@@ -11330,6 +11450,12 @@
   "farmersdelight:recipes/building_blocks/onion_crate": {
     "criteria": {
       "has_onion": "2026-11-27 15:03:38 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/end_stone_brick_stairs_from_end_stone_stonecutting": {
+    "criteria": {
+      "has_end_stone": "2026-11-27 15:33:43 +0700"
     },
     "done": true
   },
