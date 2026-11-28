@@ -7,6 +7,7 @@
     "trbeyond:daily_day_4_slime_2",
     "trbeyond:daily_day_1_cattledeer_1",
     "trbeyond:boss_carrion",
+    "trbeyond:weekly_day_1_arch_daemon_2",
     "trbeyond:boss_luminous_valentine",
     "trbeyond:weekly_day_1_akash_1",
     "trbeyond:weekly_day_1_sylphide_3"
@@ -160,7 +161,9 @@
     },
     {
       "questId": "trbeyond:weekly_day_1_arch_daemon_2",
-      "progress": {}
+      "progress": {
+        "kill_arch_daemon_weekly_1_2": 1
+      }
     },
     {
       "questId": "trbeyond:weekly_day_1_akash_1",

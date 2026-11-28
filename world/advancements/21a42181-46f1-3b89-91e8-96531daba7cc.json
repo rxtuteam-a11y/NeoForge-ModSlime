@@ -49,6 +49,7 @@
       "highland_fields": "2026-11-28 17:01:29 +0700",
       "frozen_pine_taiga": "2026-11-28 16:06:13 +0700",
       "magnolia_woodland": "2026-11-28 17:07:00 +0700",
+      "chalk_cliffs": "2026-11-28 17:34:07 +0700",
       "icy_heights": "2026-11-28 16:38:54 +0700",
       "prismachasm": "2026-11-28 17:16:52 +0700",
       "spires": "2026-11-28 16:33:09 +0700"
@@ -63,6 +64,7 @@
       "highland_fields": "2026-11-28 17:01:29 +0700",
       "frozen_pine_taiga": "2026-11-28 16:06:13 +0700",
       "magnolia_woodland": "2026-11-28 17:07:00 +0700",
+      "chalk_cliffs": "2026-11-28 17:34:07 +0700",
       "icy_heights": "2026-11-28 16:38:54 +0700",
       "spires": "2026-11-28 16:33:09 +0700"
     },
@@ -1883,6 +1885,12 @@
   "twilightforest:recipes/transportation/mining_boat": {
     "criteria": {
       "in_water": "2026-11-28 16:30:06 +0700"
+    },
+    "done": true
+  },
+  "artifacts:chest_slayer": {
+    "criteria": {
+      "kill_mimic": "2026-11-28 17:33:09 +0700"
     },
     "done": true
   },

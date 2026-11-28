@@ -254,6 +254,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/bone_meal": {
+    "criteria": {
+      "has_bone": "2026-11-28 17:31:58 +0700"
+    },
+    "done": true
+  },
   "iceandfire:recipes/misc/earplugs": {
     "criteria": {
       "has_item": "2026-11-28 16:42:26 +0700"
@@ -289,6 +295,12 @@
       "frozen_pine_taiga": "2026-11-28 16:39:24 +0700"
     },
     "done": false
+  },
+  "farmersdelight:recipes/cooking/bone_broth": {
+    "criteria": {
+      "has_bone": "2026-11-28 17:31:58 +0700"
+    },
+    "done": true
   },
   "minecraft:recipes/building_blocks/yellow_concrete_powder": {
     "criteria": {
@@ -470,6 +482,12 @@
     },
     "done": true
   },
+  "tensura:c_rank": {
+    "criteria": {
+      "ep": "2026-11-28 17:32:04 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/cooked_megalodon_meat_from_smelting": {
     "criteria": {
       "has_raw_megalodon_meat": "2026-11-28 17:29:35 +0700"
@@ -491,6 +509,12 @@
   "minecraft:recipes/building_blocks/purple_concrete_powder": {
     "criteria": {
       "has_sand": "2026-11-28 16:45:16 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/bone_blocks/bone_pike": {
+    "criteria": {
+      "has_item": "2026-11-28 17:31:58 +0700"
     },
     "done": true
   },
@@ -575,6 +599,12 @@
   "netherexp:recipes/misc/soul_magma_block": {
     "criteria": {
       "has_item2": "2026-11-28 16:42:26 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/bone_blocks/bone_fence": {
+    "criteria": {
+      "has_item": "2026-11-28 17:31:58 +0700"
     },
     "done": true
   },
@@ -689,7 +719,8 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:snowy_beach": "2026-11-28 17:15:50 +0700"
+      "minecraft:snowy_beach": "2026-11-28 17:15:50 +0700",
+      "minecraft:windswept_savanna": "2026-11-28 17:35:16 +0700"
     },
     "done": false
   },

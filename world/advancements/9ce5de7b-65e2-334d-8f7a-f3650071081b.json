@@ -382,6 +382,7 @@
       "minecraft:jungle": "2026-11-24 03:09:10 +0700",
       "minecraft:old_growth_spruce_taiga": "2026-11-24 16:07:02 +0700",
       "minecraft:snowy_beach": "2026-11-23 13:29:27 +0700",
+      "minecraft:windswept_savanna": "2026-11-28 17:32:00 +0700",
       "minecraft:warm_ocean": "2026-11-24 03:33:17 +0700",
       "minecraft:deep_lukewarm_ocean": "2026-11-24 04:14:29 +0700",
       "minecraft:flower_forest": "2026-11-24 10:18:15 +0700",
@@ -11941,6 +11942,12 @@
       "underworld_sands": "2026-11-28 17:17:14 +0700"
     },
     "done": false
+  },
+  "vinery:recipes/coarse_dirt_slab": {
+    "criteria": {
+      "has_coarse_dirt": "2026-11-28 17:35:38 +0700"
+    },
+    "done": true
   },
   "tensura:recipes/misc/high_magisteel_bone_golem": {
     "criteria": {
