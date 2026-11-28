@@ -734,6 +734,7 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
+      "minecraft:cold_ocean": "2026-11-28 16:31:25 +0700",
       "minecraft:frozen_ocean": "2026-11-22 18:06:22 +0700",
       "minecraft:snowy_beach": "2026-11-22 17:59:22 +0700"
     },
@@ -2820,6 +2821,12 @@
     },
     "done": true
   },
+  "regions_unexplored:recipes/building_blocks/peat_coarse_dirt": {
+    "criteria": {
+      "has_gravel": "2026-11-28 16:28:25 +0700"
+    },
+    "done": true
+  },
   "bakery:recipes/bread_knife": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:25:37 +0700"
@@ -2829,6 +2836,12 @@
   "bakery:recipes/iron_chair": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:25:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/lime_concrete_powder": {
+    "criteria": {
+      "has_gravel": "2026-11-28 16:28:25 +0700"
     },
     "done": true
   },
@@ -2844,9 +2857,27 @@
     },
     "done": true
   },
+  "lootr:50loot": {
+    "criteria": {
+      "opened_50": "2026-11-28 16:31:32 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/magenta_concrete_powder": {
+    "criteria": {
+      "has_gravel": "2026-11-28 16:28:25 +0700"
+    },
+    "done": true
+  },
   "farm_and_charm:recipes/iron_cleaver": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:25:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/black_concrete_powder": {
+    "criteria": {
+      "has_gravel": "2026-11-28 16:28:25 +0700"
     },
     "done": true
   },
@@ -2865,6 +2896,12 @@
   "vinery:recipes/big_table": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:25:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cyan_concrete_powder": {
+    "criteria": {
+      "has_gravel": "2026-11-28 16:28:25 +0700"
     },
     "done": true
   },
@@ -2901,9 +2938,21 @@
     },
     "done": false
   },
+  "minecraft:recipes/building_blocks/pink_concrete_powder": {
+    "criteria": {
+      "has_gravel": "2026-11-28 16:28:25 +0700"
+    },
+    "done": true
+  },
   "farm_and_charm:recipes/supply_cart": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:25:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/white_concrete_powder": {
+    "criteria": {
+      "has_gravel": "2026-11-28 16:28:25 +0700"
     },
     "done": true
   },
@@ -2961,6 +3010,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/yellow_concrete_powder": {
+    "criteria": {
+      "has_gravel": "2026-11-28 16:28:25 +0700"
+    },
+    "done": true
+  },
   "farm_and_charm:recipes/crafting_bowl": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:25:37 +0700"
@@ -2979,6 +3034,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/red_concrete_powder": {
+    "criteria": {
+      "has_gravel": "2026-11-28 16:28:25 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:recipes/food/steak_and_potatoes": {
     "criteria": {
       "has_baked_potato": "2026-11-28 16:25:37 +0700"
@@ -2994,6 +3055,18 @@
   "bakery:recipes/mud_bricks_stove": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:25:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/green_concrete_powder": {
+    "criteria": {
+      "has_gravel": "2026-11-28 16:28:25 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/blue_concrete_powder": {
+    "criteria": {
+      "has_gravel": "2026-11-28 16:28:25 +0700"
     },
     "done": true
   },
@@ -3027,6 +3100,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/orange_concrete_powder": {
+    "criteria": {
+      "has_gravel": "2026-11-28 16:28:25 +0700"
+    },
+    "done": true
+  },
   "bakery:recipes/granite_stove": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:25:37 +0700"
@@ -3057,6 +3136,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/purple_concrete_powder": {
+    "criteria": {
+      "has_gravel": "2026-11-28 16:28:25 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:recipes/food/nether_salad": {
     "criteria": {
       "has_bowl": "2026-11-28 16:25:37 +0700"
@@ -3066,6 +3151,18 @@
   "farmersdelight:recipes/combat/diamond_knife": {
     "criteria": {
       "has_diamond": "2026-11-28 16:25:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/coarse_dirt": {
+    "criteria": {
+      "has_gravel": "2026-11-28 16:28:25 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/light_gray_concrete_powder": {
+    "criteria": {
+      "has_gravel": "2026-11-28 16:28:25 +0700"
     },
     "done": true
   },
@@ -3081,9 +3178,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/brown_concrete_powder": {
+    "criteria": {
+      "has_gravel": "2026-11-28 16:28:25 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:recipes/combat/flint_knife": {
     "criteria": {
       "has_stick": "2026-11-28 16:25:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/light_blue_concrete_powder": {
+    "criteria": {
+      "has_gravel": "2026-11-28 16:28:25 +0700"
     },
     "done": true
   },
@@ -3111,6 +3220,12 @@
     },
     "done": true
   },
+  "regions_unexplored:recipes/building_blocks/silt_coarse_dirt": {
+    "criteria": {
+      "has_gravel": "2026-11-28 16:28:25 +0700"
+    },
+    "done": true
+  },
   "bakery:recipes/cobblestone_stove": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:25:37 +0700"
@@ -3132,6 +3247,12 @@
   "farmersdelight:recipes/food/stuffed_potato": {
     "criteria": {
       "has_baked_potato": "2026-11-28 16:25:37 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/gray_concrete_powder": {
+    "criteria": {
+      "has_gravel": "2026-11-28 16:28:25 +0700"
     },
     "done": true
   },
