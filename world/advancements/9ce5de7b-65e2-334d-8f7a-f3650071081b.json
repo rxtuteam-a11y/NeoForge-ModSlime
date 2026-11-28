@@ -11961,6 +11961,12 @@
     },
     "done": true
   },
+  "vinery:main/cherry_picker": {
+    "criteria": {
+      "cherry": "2026-11-28 19:21:02 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/light_gray_dye_from_azure_bluet": {
     "criteria": {
       "has_azure_bluet": "2026-11-28 19:05:47 +0700"
