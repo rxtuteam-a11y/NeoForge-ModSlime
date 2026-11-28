@@ -77,6 +77,12 @@
     },
     "done": true
   },
+  "tensura:a_rank": {
+    "criteria": {
+      "ep": "2026-11-28 18:04:35 +0700"
+    },
+    "done": true
+  },
   "tensura:real_adventure": {
     "criteria": {
       "ability": "2026-11-28 16:42:25 +0700"

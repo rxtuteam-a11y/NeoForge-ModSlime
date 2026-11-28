@@ -1,7 +1,11 @@
 {
   "mxp": 0,
-  "completed": [],
-  "repeatable_timers": {},
+  "completed": [
+    "trbeyond:repeatable_material_greater_daemon_essence"
+  ],
+  "repeatable_timers": {
+    "trbeyond:repeatable_material_greater_daemon_essence": 7049531
+  },
   "active": [
     {
       "questId": "trbeyond:repeatable_skill_shogo_taguchi",
@@ -14,7 +18,7 @@
     {
       "questId": "trbeyond:repeatable_material_greater_daemon_essence",
       "progress": {
-        "kill_greater_daemon_essence": 7
+        "kill_greater_daemon_essence": 10
       }
     },
     {
