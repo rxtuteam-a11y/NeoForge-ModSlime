@@ -56,7 +56,8 @@
       "chalk_cliffs": "2026-11-28 17:34:07 +0700",
       "icy_heights": "2026-11-28 16:38:54 +0700",
       "hyacinth_deeps": "2026-11-28 18:41:35 +0700",
-      "prismachasm": "2026-11-28 17:16:52 +0700"
+      "prismachasm": "2026-11-28 17:16:52 +0700",
+      "boreal_taiga": "2026-11-28 19:24:41 +0700"
     },
     "done": false
   },
@@ -74,7 +75,8 @@
       "magnolia_woodland": "2026-11-28 17:07:00 +0700",
       "chalk_cliffs": "2026-11-28 17:34:07 +0700",
       "icy_heights": "2026-11-28 16:38:54 +0700",
-      "hyacinth_deeps": "2026-11-28 18:41:35 +0700"
+      "hyacinth_deeps": "2026-11-28 18:41:35 +0700",
+      "boreal_taiga": "2026-11-28 19:24:41 +0700"
     },
     "done": false
   },
@@ -359,6 +361,7 @@
       "minecraft:snowy_slopes": "2026-11-28 17:15:27 +0700",
       "minecraft:beach": "2026-11-28 18:40:41 +0700",
       "minecraft:forest": "2026-11-28 18:40:37 +0700",
+      "minecraft:taiga": "2026-11-28 19:27:05 +0700",
       "minecraft:river": "2026-11-28 17:00:37 +0700",
       "minecraft:snowy_plains": "2026-11-28 16:25:25 +0700",
       "minecraft:stony_shore": "2026-11-28 18:43:47 +0700",
@@ -1182,6 +1185,12 @@
     },
     "done": true
   },
+  "regions_unexplored:recipes/building_blocks/deepslate_viridescent_nylium": {
+    "criteria": {
+      "has_deepslate": "2026-11-28 19:24:00 +0700"
+    },
+    "done": true
+  },
   "handcrafted:recipes/misc/dark_oak_side_table": {
     "criteria": {
       "has_dark_oak_side_table": "2026-11-28 16:51:28 +0700"
@@ -1242,6 +1251,12 @@
     },
     "done": true
   },
+  "enhanced_ore_variety:recipes/misc/gold_ingot_from_blasting": {
+    "criteria": {
+      "TagKey[minecraft:item / minecraft:gold_ores]": "2026-11-28 19:29:51 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/redstone/magnolia_trapdoor": {
     "criteria": {
       "has_magnolia_planks": "2026-11-28 17:51:02 +0700"
@@ -1299,6 +1314,12 @@
   "minecraft:recipes/building_blocks/granite_slab_from_granite_stonecutting": {
     "criteria": {
       "has_granite": "2026-11-28 17:48:04 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/deepslate_prismoss": {
+    "criteria": {
+      "has_deepslate": "2026-11-28 19:24:00 +0700"
     },
     "done": true
   },
@@ -2574,6 +2595,12 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/deepslate_pillar_trim": {
+    "criteria": {
+      "has_deepslate_pillar_trim": "2026-11-28 19:24:00 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/detector_rail": {
     "criteria": {
       "has_rail": "2026-11-28 17:55:06 +0700"
@@ -3130,6 +3157,12 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/deepslate_warp_pad": {
+    "criteria": {
+      "has_deepslate": "2026-11-28 19:24:00 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/diamond_chestplate": {
     "criteria": {
       "has_diamond": "2026-11-28 17:24:43 +0700"
@@ -3291,6 +3324,7 @@
       "minecraft:skeleton": "2026-11-28 17:01:49 +0700",
       "minecraft:phantom": "2026-11-28 16:34:18 +0700",
       "minecraft:stray": "2026-11-28 16:50:02 +0700",
+      "minecraft:witch": "2026-11-28 19:26:24 +0700",
       "minecraft:spider": "2026-11-28 17:01:50 +0700",
       "minecraft:zombie": "2026-11-28 16:55:16 +0700",
       "minecraft:creeper": "2026-11-28 16:48:43 +0700"
@@ -3555,6 +3589,12 @@
     },
     "done": true
   },
+  "regions_unexplored:recipes/building_blocks/deepslate_grass_block": {
+    "criteria": {
+      "has_deepslate": "2026-11-28 19:24:00 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/redstone/magnolia_fence_gate": {
     "criteria": {
       "has_magnolia_planks": "2026-11-28 17:51:02 +0700"
@@ -3616,6 +3656,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/diamond_from_smelting_deepslate_diamond_ore": {
+    "criteria": {
+      "has_deepslate_diamond_ore": "2026-11-28 19:24:01 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/orange_concrete_powder": {
     "criteria": {
       "has_gravel": "2026-11-28 17:51:36 +0700"
@@ -3661,6 +3707,12 @@
   "iceandfire:recipes/combat/dragonbone_bow": {
     "criteria": {
       "has_item": "2026-11-28 16:59:36 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_ingot_from_blasting_deepslate_gold_ore": {
+    "criteria": {
+      "has_deepslate_gold_ore": "2026-11-28 19:29:51 +0700"
     },
     "done": true
   },
@@ -3793,6 +3845,12 @@
   "regions_unexplored:recipes/decorations/spruce_branch_from_spruce_log": {
     "criteria": {
       "has_log": "2026-11-28 16:56:42 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/deepslate_corner_trim": {
+    "criteria": {
+      "has_deepslate_corner_trim": "2026-11-28 19:24:00 +0700"
     },
     "done": true
   },
@@ -3934,6 +3992,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/gold_ingot_from_smelting_deepslate_gold_ore": {
+    "criteria": {
+      "has_deepslate_gold_ore": "2026-11-28 19:29:51 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/poplar_boat": {
     "criteria": {
       "in_water": "2026-11-28 16:30:06 +0700"
@@ -3955,6 +4019,12 @@
   "minecraft:recipes/building_blocks/purple_concrete_powder": {
     "criteria": {
       "has_gravel": "2026-11-28 17:51:36 +0700"
+    },
+    "done": true
+  },
+  "enhanced_ore_variety:recipes/misc/diamond_from_blasting": {
+    "criteria": {
+      "TagKey[minecraft:item / minecraft:diamond_ores]": "2026-11-28 19:24:01 +0700"
     },
     "done": true
   },
@@ -4183,6 +4253,12 @@
   "minecraft:recipes/redstone/dark_oak_trapdoor": {
     "criteria": {
       "has_planks": "2026-11-28 16:51:28 +0700"
+    },
+    "done": true
+  },
+  "waystones:recipes/decorations/deepslate_shard": {
+    "criteria": {
+      "has_deepslate": "2026-11-28 19:24:00 +0700"
     },
     "done": true
   },
@@ -4606,6 +4682,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/diamond_from_blasting_deepslate_diamond_ore": {
+    "criteria": {
+      "has_deepslate_diamond_ore": "2026-11-28 19:24:01 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/dark_oak_fence": {
     "criteria": {
       "has_planks": "2026-11-28 16:51:28 +0700"
@@ -4738,6 +4820,12 @@
     },
     "done": true
   },
+  "enhanced_ore_variety:recipes/misc/gold_ingot_from_smelting": {
+    "criteria": {
+      "TagKey[minecraft:item / minecraft:gold_ores]": "2026-11-28 19:29:51 +0700"
+    },
+    "done": true
+  },
   "handcrafted:recipes/misc/bench": {
     "criteria": {
       "has_bench": "2026-11-28 16:29:22 +0700"
@@ -4759,6 +4847,12 @@
   "netherexp:nether/overkill": {
     "criteria": {
       "overkill": "2026-11-28 16:57:59 +0700"
+    },
+    "done": true
+  },
+  "enhanced_ore_variety:recipes/misc/diamond_from_smelting": {
+    "criteria": {
+      "TagKey[minecraft:item / minecraft:diamond_ores]": "2026-11-28 19:24:01 +0700"
     },
     "done": true
   },
