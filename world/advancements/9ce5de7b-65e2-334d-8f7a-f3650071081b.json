@@ -11754,6 +11754,12 @@
     },
     "done": true
   },
+  "tensura_neb:lion_king": {
+    "criteria": {
+      "carrion": "2026-11-28 16:44:14 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:main/plant_all_crops": {
     "criteria": {
       "nether_wart": "2026-11-28 16:03:45 +0700"

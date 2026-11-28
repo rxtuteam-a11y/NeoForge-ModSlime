@@ -11477,30 +11477,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/birch_slab_from_stripped_birch_log_woodcutting": {
-    "criteria": {
-      "has_stripped_birch_log": "2026-11-28 13:23:48 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/ladder_from_stripped_acacia_wood_woodcutting": {
-    "criteria": {
-      "has_stripped_acacia_wood": "2026-11-28 13:47:29 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/birch_stairs_from_stripped_birch_log_woodcutting": {
-    "criteria": {
-      "has_stripped_birch_log": "2026-11-28 13:23:48 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/bowl_from_stripped_acacia_wood_woodcutting": {
-    "criteria": {
-      "has_stripped_acacia_wood": "2026-11-28 13:47:29 +0700"
-    },
-    "done": true
-  },
   "handcrafted:recipes/misc/red_cushion": {
     "criteria": {
       "has_red_cushion": "2026-11-28 13:14:57 +0700"
@@ -11525,9 +11501,45 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/acacia_fence_from_stripped_acacia_wood_woodcutting": {
+  "minecraft:recipes/decorations/red_carpet": {
     "criteria": {
-      "has_stripped_acacia_wood": "2026-11-28 13:47:29 +0700"
+      "has_red_wool": "2026-11-28 13:14:57 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/red_wool_slab": {
+    "criteria": {
+      "has_red_wool": "2026-11-28 13:14:57 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/red_wool_stairs": {
+    "criteria": {
+      "has_red_wool": "2026-11-28 13:14:57 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/red_bed": {
+    "criteria": {
+      "has_red_wool": "2026-11-28 13:14:57 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/tea_banner": {
+    "criteria": {
+      "has_red_wool": "2026-11-28 13:14:57 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_slab_from_stripped_birch_log_woodcutting": {
+    "criteria": {
+      "has_stripped_birch_log": "2026-11-28 13:23:48 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/birch_stairs_from_stripped_birch_log_woodcutting": {
+    "criteria": {
+      "has_stripped_birch_log": "2026-11-28 13:23:48 +0700"
     },
     "done": true
   },
@@ -11543,51 +11555,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/decorations/red_carpet": {
-    "criteria": {
-      "has_red_wool": "2026-11-28 13:14:57 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/red_wool_slab": {
-    "criteria": {
-      "has_red_wool": "2026-11-28 13:14:57 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/acacia_slab_from_stripped_acacia_wood_woodcutting": {
-    "criteria": {
-      "has_stripped_acacia_wood": "2026-11-28 13:47:29 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/red_wool_stairs": {
-    "criteria": {
-      "has_red_wool": "2026-11-28 13:14:57 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/acacia_button_from_stripped_acacia_wood_woodcutting": {
-    "criteria": {
-      "has_stripped_acacia_wood": "2026-11-28 13:47:29 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/birch_hanging_sign": {
     "criteria": {
       "has_stripped_logs": "2026-11-28 13:23:48 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/acacia_stairs_from_stripped_acacia_wood_woodcutting": {
-    "criteria": {
-      "has_stripped_acacia_wood": "2026-11-28 13:47:29 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/red_bed": {
-    "criteria": {
-      "has_red_wool": "2026-11-28 13:14:57 +0700"
     },
     "done": true
   },
@@ -11597,21 +11567,9 @@
     },
     "done": true
   },
-  "kaleidoscope_cookery:recipes/decorations/tea_banner": {
-    "criteria": {
-      "has_red_wool": "2026-11-28 13:14:57 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/birch_shelf": {
     "criteria": {
       "has_stripped_birch_log": "2026-11-28 13:23:48 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/acacia_planks_from_stripped_acacia_wood_woodcutting": {
-    "criteria": {
-      "has_stripped_acacia_wood": "2026-11-28 13:47:29 +0700"
     },
     "done": true
   },
@@ -11627,12 +11585,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/stick_from_stripped_acacia_wood_woodcutting": {
-    "criteria": {
-      "has_stripped_acacia_wood": "2026-11-28 13:47:29 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/birch_planks_from_stripped_birch_log_woodcutting": {
     "criteria": {
       "has_stripped_birch_log": "2026-11-28 13:23:48 +0700"
@@ -11642,6 +11594,54 @@
   "minecraft:recipes/building_blocks/bowl_from_stripped_birch_log_woodcutting": {
     "criteria": {
       "has_stripped_birch_log": "2026-11-28 13:23:48 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/ladder_from_stripped_acacia_wood_woodcutting": {
+    "criteria": {
+      "has_stripped_acacia_wood": "2026-11-28 13:47:29 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bowl_from_stripped_acacia_wood_woodcutting": {
+    "criteria": {
+      "has_stripped_acacia_wood": "2026-11-28 13:47:29 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/acacia_fence_from_stripped_acacia_wood_woodcutting": {
+    "criteria": {
+      "has_stripped_acacia_wood": "2026-11-28 13:47:29 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/acacia_slab_from_stripped_acacia_wood_woodcutting": {
+    "criteria": {
+      "has_stripped_acacia_wood": "2026-11-28 13:47:29 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/acacia_button_from_stripped_acacia_wood_woodcutting": {
+    "criteria": {
+      "has_stripped_acacia_wood": "2026-11-28 13:47:29 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/acacia_stairs_from_stripped_acacia_wood_woodcutting": {
+    "criteria": {
+      "has_stripped_acacia_wood": "2026-11-28 13:47:29 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/acacia_planks_from_stripped_acacia_wood_woodcutting": {
+    "criteria": {
+      "has_stripped_acacia_wood": "2026-11-28 13:47:29 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stick_from_stripped_acacia_wood_woodcutting": {
+    "criteria": {
+      "has_stripped_acacia_wood": "2026-11-28 13:47:29 +0700"
     },
     "done": true
   },

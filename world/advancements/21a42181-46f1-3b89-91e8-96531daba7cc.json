@@ -43,16 +43,20 @@
   },
   "regions_unexplored:regions_explored": {
     "criteria": {
+      "tundra": "2026-11-28 16:43:40 +0700",
       "gravel_beach": "2026-11-28 16:25:29 +0700",
       "frozen_pine_taiga": "2026-11-28 16:06:13 +0700",
+      "icy_heights": "2026-11-28 16:38:54 +0700",
       "spires": "2026-11-28 16:33:09 +0700"
     },
     "done": false
   },
   "regions_unexplored:pioneer": {
     "criteria": {
+      "tundra": "2026-11-28 16:43:40 +0700",
       "gravel_beach": "2026-11-28 16:25:29 +0700",
       "frozen_pine_taiga": "2026-11-28 16:06:13 +0700",
+      "icy_heights": "2026-11-28 16:38:54 +0700",
       "spires": "2026-11-28 16:33:09 +0700"
     },
     "done": false
@@ -337,6 +341,7 @@
       "minecraft:frozen_ocean": "2026-11-28 16:10:45 +0700",
       "minecraft:frozen_river": "2026-11-28 16:32:50 +0700",
       "minecraft:snowy_plains": "2026-11-28 16:25:25 +0700",
+      "minecraft:windswept_gravelly_hills": "2026-11-28 16:42:04 +0700",
       "minecraft:snowy_taiga": "2026-11-28 16:25:21 +0700",
       "minecraft:snowy_beach": "2026-11-28 16:32:45 +0700",
       "minecraft:plains": "2026-11-28 16:25:26 +0700"
@@ -1080,6 +1085,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/raw_iron_block": {
+    "criteria": {
+      "has_raw_iron": "2026-11-28 16:42:37 +0700"
+    },
+    "done": true
+  },
   "ironchest:recipes/decorations/upgrades/wood_to_iron_chest_upgrade": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:29:22 +0700"
@@ -1089,6 +1100,12 @@
   "kaleidoscope_cookery:recipes/tools/straw_hat": {
     "criteria": {
       "has_ingot_iron": "2026-11-28 16:29:22 +0700"
+    },
+    "done": true
+  },
+  "constructionwand:recipes/tools/stone_wand": {
+    "criteria": {
+      "has_item": "2026-11-28 16:42:40 +0700"
     },
     "done": true
   },
@@ -1134,6 +1151,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/mossy_cobblestone_stairs_from_mossy_cobblestone_stonecutting": {
+    "criteria": {
+      "has_mossy_cobblestone": "2026-11-28 16:46:48 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/cherry_boat": {
     "criteria": {
       "in_water": "2026-11-28 16:30:06 +0700"
@@ -1161,6 +1184,18 @@
   "bakery:recipes/bread_knife": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:29:22 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/mossy_stone_from_blasting_mossy_cobblestone": {
+    "criteria": {
+      "has_mossy_cobblestone": "2026-11-28 16:46:48 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mossy_cobblestone_slab": {
+    "criteria": {
+      "has_mossy_cobblestone": "2026-11-28 16:46:48 +0700"
     },
     "done": true
   },
@@ -1212,6 +1247,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/rabbit_stew_from_brown_mushroom": {
+    "criteria": {
+      "has_cooked_rabbit": "2026-11-28 16:47:19 +0700"
+    },
+    "done": true
+  },
+  "cookingforblockheads:recipes/decorations/cutting_board": {
+    "criteria": {
+      "has_axe": "2026-11-28 16:42:12 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/white_wool_stairs": {
     "criteria": {
       "has_white_wool": "2026-11-28 16:29:33 +0700"
@@ -1224,9 +1271,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/combat/stone_spear": {
+    "criteria": {
+      "has_cobblestone": "2026-11-28 16:42:40 +0700"
+    },
+    "done": true
+  },
   "kaleidoscope_cookery:recipes/tools/straw_hat_flower": {
     "criteria": {
       "has_ingot_iron": "2026-11-28 16:29:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobblestone_slab": {
+    "criteria": {
+      "has_cobblestone": "2026-11-28 16:42:40 +0700"
     },
     "done": true
   },
@@ -1260,6 +1319,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/iron_ingot_from_blasting_raw_iron": {
+    "criteria": {
+      "has_raw_iron": "2026-11-28 16:42:37 +0700"
+    },
+    "done": true
+  },
   "farm_and_charm:recipes/iron_cleaver": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:29:22 +0700"
@@ -1269,6 +1334,12 @@
   "minecraft:recipes/transportation/pale_oak_boat": {
     "criteria": {
       "in_water": "2026-11-28 16:30:06 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/cobblestone_wall_from_cobblestone_stonecutting": {
+    "criteria": {
+      "has_cobblestone": "2026-11-28 16:42:40 +0700"
     },
     "done": true
   },
@@ -1287,6 +1358,12 @@
   "minecraft:recipes/misc/firework_rocket_simple": {
     "criteria": {
       "has_gunpowder": "2026-11-28 16:32:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobblestone_stairs": {
+    "criteria": {
+      "has_cobblestone": "2026-11-28 16:42:40 +0700"
     },
     "done": true
   },
@@ -1311,6 +1388,18 @@
   "kaleidoscope_cookery:recipes/decorations/oil_block": {
     "criteria": {
       "has_ingot_iron": "2026-11-28 16:29:22 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/mossy_stone_from_smelting_mossy_cobblestone": {
+    "criteria": {
+      "has_mossy_cobblestone": "2026-11-28 16:46:48 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/lever": {
+    "criteria": {
+      "has_cobblestone": "2026-11-28 16:42:40 +0700"
     },
     "done": true
   },
@@ -1362,9 +1451,33 @@
     },
     "done": true
   },
+  "minecraft:story/iron_tools": {
+    "criteria": {
+      "iron_pickaxe": "2026-11-28 16:42:22 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/iron_chestplate": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:29:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/stone_sword": {
+    "criteria": {
+      "has_cobblestone": "2026-11-28 16:42:40 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/cobblestone_wall": {
+    "criteria": {
+      "has_cobblestone": "2026-11-28 16:42:40 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/stone_axe": {
+    "criteria": {
+      "has_cobblestone": "2026-11-28 16:42:40 +0700"
     },
     "done": true
   },
@@ -1389,6 +1502,12 @@
   "minecraft:story/smelt_iron": {
     "criteria": {
       "iron": "2026-11-28 16:29:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/smoker": {
+    "criteria": {
+      "has_furnace": "2026-11-28 16:47:00 +0700"
     },
     "done": true
   },
@@ -1500,6 +1619,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/iron_ingot_from_smelting_raw_iron": {
+    "criteria": {
+      "has_raw_iron": "2026-11-28 16:42:37 +0700"
+    },
+    "done": true
+  },
   "twilightforest:recipes/transportation/canopy_boat": {
     "criteria": {
       "in_water": "2026-11-28 16:30:06 +0700"
@@ -1509,6 +1634,12 @@
   "minecraft:recipes/tools/flint_and_steel": {
     "criteria": {
       "has_flint": "2026-11-28 16:32:23 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/mossy_cobblestone_wall": {
+    "criteria": {
+      "has_mossy_cobblestone": "2026-11-28 16:46:48 +0700"
     },
     "done": true
   },
@@ -1572,6 +1703,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/rabbit_stew_from_red_mushroom": {
+    "criteria": {
+      "has_cooked_rabbit": "2026-11-28 16:47:19 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/transportation/wisteria_boat": {
     "criteria": {
       "in_water": "2026-11-28 16:30:06 +0700"
@@ -1584,9 +1721,21 @@
     },
     "done": true
   },
+  "minecraft:husbandry/balanced_diet": {
+    "criteria": {
+      "cooked_rabbit": "2026-11-28 16:47:21 +0700"
+    },
+    "done": false
+  },
   "twilightforest:recipes/transportation/sorting_boat": {
     "criteria": {
       "in_water": "2026-11-28 16:30:06 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/mossy_cobblestone_wall_from_mossy_cobblestone_stonecutting": {
+    "criteria": {
+      "has_mossy_cobblestone": "2026-11-28 16:46:48 +0700"
     },
     "done": true
   },
@@ -1650,6 +1799,18 @@
     },
     "done": true
   },
+  "minecraft:story/mine_stone": {
+    "criteria": {
+      "get_stone": "2026-11-28 16:42:40 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/furnace": {
+    "criteria": {
+      "has_cobblestone": "2026-11-28 16:42:40 +0700"
+    },
+    "done": true
+  },
   "kaleidoscope_cookery:recipes/tools/diamond_kitchen_knife": {
     "criteria": {
       "has_ingot_iron": "2026-11-28 16:29:22 +0700"
@@ -1671,6 +1832,12 @@
   "minecraft:recipes/tools/shears": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:29:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cobblestone_slab_from_cobblestone_stonecutting": {
+    "criteria": {
+      "has_cobblestone": "2026-11-28 16:42:40 +0700"
     },
     "done": true
   },
@@ -1707,6 +1874,12 @@
   "kaleidoscope_cookery:recipes/misc/trash_can": {
     "criteria": {
       "has_ingot_iron": "2026-11-28 16:29:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone": {
+    "criteria": {
+      "has_cobblestone": "2026-11-28 16:42:40 +0700"
     },
     "done": true
   },
@@ -1764,6 +1937,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/mossy_cobblestone_stairs": {
+    "criteria": {
+      "has_mossy_cobblestone": "2026-11-28 16:46:48 +0700"
+    },
+    "done": true
+  },
   "lootr:social": {
     "criteria": {
       "opened_barrel": "2026-11-28 16:30:19 +0700",
@@ -1774,6 +1953,12 @@
   "eternal_starlight:recipes/transportation/jinglestem_raft": {
     "criteria": {
       "in_water": "2026-11-28 16:30:06 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/leather": {
+    "criteria": {
+      "has_rabbit_hide": "2026-11-28 16:46:09 +0700"
     },
     "done": true
   },
@@ -1789,6 +1974,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/tools/stone_pickaxe": {
+    "criteria": {
+      "has_cobblestone": "2026-11-28 16:42:40 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/lantern": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:29:22 +0700"
@@ -1798,6 +1989,12 @@
   "regions_unexplored:recipes/transportation/larch_boat": {
     "criteria": {
       "in_water": "2026-11-28 16:30:06 +0700"
+    },
+    "done": true
+  },
+  "dungeons_arise:find_abandoned_temple": {
+    "criteria": {
+      "location0": "2026-11-28 16:42:55 +0700"
     },
     "done": true
   },
@@ -1822,6 +2019,12 @@
   "ironchest:recipes/decorations/upgrades/copper_to_iron_chest_upgrade": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:29:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mossy_cobblestone_slab_from_mossy_cobblestone_stonecutting": {
+    "criteria": {
+      "has_mossy_cobblestone": "2026-11-28 16:46:48 +0700"
     },
     "done": true
   },
@@ -1864,6 +2067,12 @@
   "minecraft:recipes/combat/iron_spear": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:29:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/stone_shovel": {
+    "criteria": {
+      "has_cobblestone": "2026-11-28 16:42:40 +0700"
     },
     "done": true
   },
@@ -1915,6 +2124,12 @@
     },
     "done": true
   },
+  "cookingforblockheads:recipes/decorations/white_oven": {
+    "criteria": {
+      "has_furnace": "2026-11-28 16:47:00 +0700"
+    },
+    "done": true
+  },
   "block_factorys_bosses:recipes/misc/big_chain": {
     "criteria": {
       "has_item": "2026-11-28 16:29:22 +0700"
@@ -1954,6 +2169,12 @@
   "minecraft:recipes/misc/bowl": {
     "criteria": {
       "has_mushroom_stew": "2026-11-28 16:31:23 +0700"
+    },
+    "done": true
+  },
+  "vanillabackport:recipes/food/rabbit_stew_from_shelf_mushroom": {
+    "criteria": {
+      "has_cooked_rabbit": "2026-11-28 16:47:19 +0700"
     },
     "done": true
   },
@@ -2137,6 +2358,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/cobblestone_stairs_from_cobblestone_stonecutting": {
+    "criteria": {
+      "has_cobblestone": "2026-11-28 16:42:40 +0700"
+    },
+    "done": true
+  },
   "vanillabackport:recipes/food/mushroom_stew": {
     "criteria": {
       "has_mushroom_stew": "2026-11-28 16:31:23 +0700"
@@ -2152,6 +2379,12 @@
   "farm_and_charm:recipes/chicken_coop": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:29:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/stone_hoe": {
+    "criteria": {
+      "has_cobblestone": "2026-11-28 16:42:40 +0700"
     },
     "done": true
   },
