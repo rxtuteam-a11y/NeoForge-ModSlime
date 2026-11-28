@@ -360,9 +360,11 @@
       "minecraft:forest": "2026-11-28 18:40:37 +0700",
       "minecraft:river": "2026-11-28 17:00:37 +0700",
       "minecraft:snowy_plains": "2026-11-28 16:25:25 +0700",
+      "minecraft:stony_shore": "2026-11-28 18:43:47 +0700",
       "minecraft:snowy_taiga": "2026-11-28 16:25:21 +0700",
       "minecraft:dripstone_caves": "2026-11-28 17:12:30 +0700",
       "minecraft:frozen_peaks": "2026-11-28 17:16:06 +0700",
+      "minecraft:deep_cold_ocean": "2026-11-28 18:42:54 +0700",
       "minecraft:ice_spikes": "2026-11-28 18:41:23 +0700",
       "minecraft:frozen_ocean": "2026-11-28 16:10:45 +0700",
       "minecraft:frozen_river": "2026-11-28 16:32:50 +0700",
@@ -3970,6 +3972,12 @@
   "minecraft:story/mine_diamond": {
     "criteria": {
       "diamond": "2026-11-28 17:24:43 +0700"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/misc/iron_backpack_from_copper": {
+    "criteria": {
+      "has_copper_backpack": "2026-11-28 18:52:38 +0700"
     },
     "done": true
   },
