@@ -313,6 +313,10 @@ def _parse_minecraft_log_line(line: str):
     global server_ready, next_autosave_ts
     if "Saved the game" in line:
         world_saved_event.set()
+    # Dòng log thật của Minecraft khi bắt đầu tắt (không khớp tin nhắn chat "<Tên> ...")
+    if re.search(r"\]: (?:\[[^\]<]*\] )?Stopping (?:the )?server\s*$", line):
+        world_stop_saved_event.clear()
+        start_stop_watchdog()
     if "All dimensions are saved" in line:
         world_stop_saved_event.set()
     # Detect server startup completion
@@ -686,7 +690,7 @@ world_stop_saved_event = threading.Event()
 def save_world_snapshot(timeout=120):
     """save-off -> save-all flush -> chờ Minecraft báo 'Saved the game' để bản lưu không bị ghi dở.
     Luôn gọi save_world_resume() sau khi sao lưu xong."""
-    if not is_server_running():
+    if not is_server_running() or server_stopping:
         return True
     world_saved_event.clear()
     send_server_command("save-off")
@@ -698,7 +702,7 @@ def save_world_snapshot(timeout=120):
 
 
 def save_world_resume():
-    if is_server_running():
+    if is_server_running() and not server_stopping:
         send_server_command("save-on")
 
 
@@ -708,7 +712,7 @@ def auto_backup_loop():
         time.sleep(1)
         try:
             running = is_server_running()
-            if not running or not autosave_enabled or not server_ready:
+            if not running or not autosave_enabled or not server_ready or server_stopping:
                 next_autosave_ts = None
                 continue
 
@@ -860,7 +864,10 @@ def start_minecraft_server():
             ensure_mods_on_linux_bg()
             return False, "Đang tải gói 266 Mods từ Google Drive, hãy xem Console và bấm lại sau 30 giây!"
 
+    global server_stopping, _stop_watchdog_started
     with lock:
+        server_stopping = False
+        _stop_watchdog_started = False
         server_ready = False
         online_players.clear()
         server_start_time = time.time()
@@ -933,6 +940,53 @@ def send_server_command(command_str: str):
         return False, str(e)
 
 
+server_stopping = False
+_stop_watchdog_started = False
+
+
+def start_stop_watchdog():
+    """Chạy khi server bắt đầu tắt (bằng nút TẮT, lệnh `stop` ở console hoặc trong game).
+    Chờ Minecraft lưu xong toàn bộ world ("All dimensions are saved"); nếu sau đó Java treo
+    (vd. mod illagerinvasion khi gỡ config) thì đóng Java để phiên không bị kẹt."""
+    global server_stopping, _stop_watchdog_started
+    with lock:
+        if _stop_watchdog_started:
+            return
+        _stop_watchdog_started = True
+        server_stopping = True
+    proc = server_proc
+
+    def _alive():
+        return proc is not None and proc.poll() is None
+
+    def _watch():
+        # Chờ lưu xong khi tắt: tối đa 6 phút (world lớn), không bao giờ ép tắt khi đang ghi
+        if not world_stop_saved_event.wait(360):
+            append_log(console_lines, "[Panel] Cảnh báo: chưa thấy Minecraft báo lưu xong sau 6 phút khi tắt.")
+        for _ in range(25):
+            if not _alive():
+                return
+            time.sleep(1)
+        if _alive():
+            append_log(console_lines, "[Panel] World đã lưu xong nhưng Java chưa thoát (mod treo khi tắt) — đang đóng tiến trình Java...")
+            try:
+                proc.terminate()
+            except Exception:
+                pass
+            for _ in range(15):
+                if not _alive():
+                    return
+                time.sleep(1)
+            if _alive():
+                append_log(console_lines, "[Panel] Java vẫn treo — buộc dừng (world đã được lưu trước đó).")
+                try:
+                    proc.kill()
+                except Exception:
+                    pass
+
+    threading.Thread(target=_watch, daemon=True).start()
+
+
 def stop_minecraft_server():
     if not is_server_running():
         return False, "Server đã tắt sẵn!"
@@ -943,39 +997,8 @@ def stop_minecraft_server():
     send_server_command("save-all flush")
     time.sleep(2.0)
     world_stop_saved_event.clear()
+    start_stop_watchdog()
     ok, msg = send_server_command("stop")
-
-    def _force_kill_if_hung():
-        for _ in range(35):
-            if not is_server_running():
-                return
-            time.sleep(1)
-        # Chưa lưu xong (world lớn) -> chờ thêm tối đa 5 phút, tuyệt đối không ép tắt khi đang ghi
-        if not world_stop_saved_event.is_set():
-            append_log(console_lines, "[Panel] World đang được lưu khi tắt, chờ lưu xong rồi mới đóng Java...")
-            world_stop_saved_event.wait(300)
-        for _ in range(20):
-            if not is_server_running():
-                return
-            time.sleep(1)
-        if is_server_running() and server_proc is not None:
-            append_log(console_lines, "[Panel] World đã lưu nhưng Java chưa thoát (mod treo khi tắt) — đang đóng tiến trình Java...")
-            try:
-                server_proc.terminate()
-            except Exception:
-                pass
-            for _ in range(20):
-                if not is_server_running():
-                    return
-                time.sleep(1)
-            if is_server_running():
-                append_log(console_lines, "[Panel] Java vẫn treo — buộc dừng (world đã được lưu trước đó).")
-                try:
-                    server_proc.kill()
-                except Exception:
-                    pass
-
-    threading.Thread(target=_force_kill_if_hung, daemon=True).start()
     return ok, "Đã gửi lệnh lưu World & tắt Server an toàn (tự động đồng bộ lên GitHub ngay khi tắt)!"
 
 
@@ -1233,7 +1256,10 @@ class PanelHandler(http.server.SimpleHTTPRequestHandler):
             if not cmd:
                 self._send_json({"ok": False, "message": "Lệnh trống!"}, status=400)
             else:
-                ok, msg = send_server_command(cmd)
+                if cmd.lstrip("/").strip().lower() in ("stop", "end"):
+                    ok, msg = stop_minecraft_server()
+                else:
+                    ok, msg = send_server_command(cmd)
                 self._send_json({"ok": ok, "message": msg})
             return
 
