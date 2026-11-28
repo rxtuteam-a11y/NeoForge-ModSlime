@@ -362,6 +362,12 @@
     },
     "done": true
   },
+  "tensura:grow_spurt": {
+    "criteria": {
+      "evolve": "2026-11-28 18:36:27 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/building_blocks/purpur_bricks_magic_engine": {
     "criteria": {
       "has_magic_crystal": "2026-11-28 17:29:35 +0700"

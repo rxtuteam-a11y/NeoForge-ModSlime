@@ -43,6 +43,10 @@
   },
   "regions_unexplored:regions_explored": {
     "criteria": {
+      "willow_forest": "2026-11-28 18:40:22 +0700",
+      "cold_river": "2026-11-28 18:40:39 +0700",
+      "shrubland": "2026-11-28 18:38:37 +0700",
+      "spires": "2026-11-28 16:33:09 +0700",
       "tundra": "2026-11-28 16:43:40 +0700",
       "flower_fields": "2026-11-28 17:04:29 +0700",
       "gravel_beach": "2026-11-28 16:25:29 +0700",
@@ -51,13 +55,17 @@
       "magnolia_woodland": "2026-11-28 17:07:00 +0700",
       "chalk_cliffs": "2026-11-28 17:34:07 +0700",
       "icy_heights": "2026-11-28 16:38:54 +0700",
-      "prismachasm": "2026-11-28 17:16:52 +0700",
-      "spires": "2026-11-28 16:33:09 +0700"
+      "hyacinth_deeps": "2026-11-28 18:41:35 +0700",
+      "prismachasm": "2026-11-28 17:16:52 +0700"
     },
     "done": false
   },
   "regions_unexplored:pioneer": {
     "criteria": {
+      "willow_forest": "2026-11-28 18:40:22 +0700",
+      "cold_river": "2026-11-28 18:40:39 +0700",
+      "shrubland": "2026-11-28 18:38:37 +0700",
+      "spires": "2026-11-28 16:33:09 +0700",
       "tundra": "2026-11-28 16:43:40 +0700",
       "flower_fields": "2026-11-28 17:04:29 +0700",
       "gravel_beach": "2026-11-28 16:25:29 +0700",
@@ -66,7 +74,7 @@
       "magnolia_woodland": "2026-11-28 17:07:00 +0700",
       "chalk_cliffs": "2026-11-28 17:34:07 +0700",
       "icy_heights": "2026-11-28 16:38:54 +0700",
-      "spires": "2026-11-28 16:33:09 +0700"
+      "hyacinth_deeps": "2026-11-28 18:41:35 +0700"
     },
     "done": false
   },
@@ -348,11 +356,14 @@
     "criteria": {
       "minecraft:cold_ocean": "2026-11-28 16:28:36 +0700",
       "minecraft:snowy_slopes": "2026-11-28 17:15:27 +0700",
+      "minecraft:beach": "2026-11-28 18:40:41 +0700",
+      "minecraft:forest": "2026-11-28 18:40:37 +0700",
       "minecraft:river": "2026-11-28 17:00:37 +0700",
       "minecraft:snowy_plains": "2026-11-28 16:25:25 +0700",
       "minecraft:snowy_taiga": "2026-11-28 16:25:21 +0700",
       "minecraft:dripstone_caves": "2026-11-28 17:12:30 +0700",
       "minecraft:frozen_peaks": "2026-11-28 17:16:06 +0700",
+      "minecraft:ice_spikes": "2026-11-28 18:41:23 +0700",
       "minecraft:frozen_ocean": "2026-11-28 16:10:45 +0700",
       "minecraft:frozen_river": "2026-11-28 16:32:50 +0700",
       "minecraft:deep_frozen_ocean": "2026-11-28 16:55:38 +0700",
@@ -1114,6 +1125,12 @@
     },
     "done": true
   },
+  "tensura:just_a_test": {
+    "criteria": {
+      "colossus": "2026-11-28 18:39:24 +0700"
+    },
+    "done": true
+  },
   "dungeons_arise:find_illager_corsair_or_illager_galley": {
     "criteria": {
       "location1": "2026-11-28 16:31:53 +0700"
@@ -1336,6 +1353,12 @@
     },
     "done": true
   },
+  "tensura:even_better_smelter": {
+    "criteria": {
+      "kiln": "2026-11-28 18:38:42 +0700"
+    },
+    "done": true
+  },
   "ironchest:recipes/decorations/chests/copper_iron_chest": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:29:22 +0700"
@@ -1441,6 +1464,12 @@
   "block_factorys_bosses:recipes/building_blocks/net": {
     "criteria": {
       "has_item": "2026-11-28 17:12:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/netherite_ingot": {
+    "criteria": {
+      "has_netherite_scrap": "2026-11-28 18:38:42 +0700"
     },
     "done": true
   },
@@ -2242,6 +2271,12 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/prismarine_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-28 18:38:27 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/spruce_sign": {
     "criteria": {
       "has_planks": "2026-11-28 16:56:51 +0700"
@@ -2764,6 +2799,12 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/end_stone_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-28 18:38:27 +0700"
+    },
+    "done": true
+  },
   "royalvariations:royal_variations": {
     "criteria": {
       "royal_zombie": "2026-11-28 17:17:45 +0700"
@@ -2931,6 +2972,7 @@
   },
   "tensura:otherworldly_biomes": {
     "criteria": {
+      "ancient_forest": "2026-11-28 18:40:21 +0700",
       "miasmic_plains": "2026-11-28 16:37:51 +0700"
     },
     "done": false
@@ -2989,6 +3031,12 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/purpur_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-28 18:38:27 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/lapis_lazuli_from_smelting_deepslate_lapis_ore": {
     "criteria": {
       "has_deepslate_lapis_ore": "2026-11-28 18:27:20 +0700"
@@ -3016,6 +3064,12 @@
   "minecraft:recipes/tools/golden_pickaxe": {
     "criteria": {
       "has_gold_ingot": "2026-11-28 17:25:43 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/tuff_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-28 18:38:27 +0700"
     },
     "done": true
   },
@@ -3106,6 +3160,12 @@
   "minecraft:recipes/building_blocks/green_concrete_powder": {
     "criteria": {
       "has_gravel": "2026-11-28 17:51:36 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/quartz_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-28 18:38:27 +0700"
     },
     "done": true
   },
@@ -3282,6 +3342,12 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/high_quality_magic_crystal_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-28 18:38:27 +0700"
+    },
+    "done": true
+  },
   "vinery:recipes/grapevine_pot": {
     "criteria": {
       "has_spruce_planks": "2026-11-28 16:56:52 +0700"
@@ -3345,6 +3411,12 @@
   "minecraft:recipes/redstone/target": {
     "criteria": {
       "has_redstone": "2026-11-28 17:54:23 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bottles_of_high_crystal": {
+    "criteria": {
+      "has_high_crystal": "2026-11-28 18:38:27 +0700"
     },
     "done": true
   },
@@ -3727,6 +3799,12 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/mud_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-28 18:38:27 +0700"
+    },
+    "done": true
+  },
   "kaleidoscope_cookery:recipes/decorations/table_oak": {
     "criteria": {
       "has_fence": "2026-11-28 17:54:56 +0700"
@@ -3775,6 +3853,12 @@
     },
     "done": true
   },
+  "bosses_of_mass_destruction:recipes/brimstone_nectar": {
+    "criteria": {
+      "has_netherite_scrap": "2026-11-28 18:38:42 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/dark_oak_stairs_from_dark_oak_planks_woodcutting": {
     "criteria": {
       "has_dark_oak_planks": "2026-11-28 16:51:28 +0700"
@@ -3805,6 +3889,12 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/high_quality_magic_crystal_blockfrom_high_quality_magic_crystal": {
+    "criteria": {
+      "has_high_quality_magic_crystal": "2026-11-28 18:38:27 +0700"
+    },
+    "done": true
+  },
   "handcrafted:recipes/misc/diorite_corner_trim": {
     "criteria": {
       "has_diorite_corner_trim": "2026-11-28 17:58:16 +0700"
@@ -3826,6 +3916,12 @@
   "minecraft:recipes/decorations/white_bed": {
     "criteria": {
       "has_white_wool": "2026-11-28 16:29:33 +0700"
+    },
+    "done": true
+  },
+  "tensura:b_rank": {
+    "criteria": {
+      "ep": "2026-11-28 18:37:03 +0700"
     },
     "done": true
   },
@@ -3862,6 +3958,12 @@
   "minecraft:recipes/decorations/dark_oak_sign": {
     "criteria": {
       "has_planks": "2026-11-28 16:51:28 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/medium_quality_magic_crystal_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-28 18:38:27 +0700"
     },
     "done": true
   },
@@ -4201,6 +4303,12 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/low_quality_magic_crystal_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-28 18:38:27 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/ladder_from_dark_oak_planks_woodcutting": {
     "criteria": {
       "has_dark_oak_planks": "2026-11-28 16:51:28 +0700"
@@ -4297,6 +4405,12 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/polished_blackstone_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-28 18:38:27 +0700"
+    },
+    "done": true
+  },
   "minecraft:story/enchant_item": {
     "criteria": {
       "enchanted_item": "2026-11-28 18:27:59 +0700"
@@ -4318,6 +4432,12 @@
   "minecraft:recipes/decorations/chain": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:29:22 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-28 18:38:27 +0700"
     },
     "done": true
   },
@@ -4459,6 +4579,12 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/deepslate_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-28 18:38:27 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/flour_from_4_wheat": {
     "criteria": {
       "has_wheat": "2026-11-28 16:54:04 +0700"
@@ -4504,6 +4630,12 @@
   "minecraft:recipes/building_blocks/spruce_planks": {
     "criteria": {
       "has_logs": "2026-11-28 16:56:42 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/red_nether_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-28 18:38:27 +0700"
     },
     "done": true
   },
@@ -4651,6 +4783,12 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/nether_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-28 18:38:27 +0700"
+    },
+    "done": true
+  },
   "kaleidoscope_cookery:recipes/redstone/pot": {
     "criteria": {
       "has_ingot_iron": "2026-11-28 16:29:22 +0700"
@@ -4666,6 +4804,12 @@
   "iceandfire:recipes/tools/dragonbone_sword": {
     "criteria": {
       "has_item": "2026-11-28 16:59:36 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/kiln_orichalcum": {
+    "criteria": {
+      "has_kiln_mithril": "2026-11-28 18:38:42 +0700"
     },
     "done": true
   },
