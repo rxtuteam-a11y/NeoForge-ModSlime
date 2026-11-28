@@ -798,6 +798,12 @@
     },
     "done": true
   },
+  "regions_unexplored:recipes/building_blocks/prismoss": {
+    "criteria": {
+      "has_stone": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
   "farm_and_charm:recipes/cooking_pot": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 19:41:39 +0700"
@@ -816,6 +822,24 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/tuff_brick_stairs_from_polished_tuff_stonecutting": {
+    "criteria": {
+      "has_polished_tuff": "2026-11-28 20:15:06 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/building_blocks/stonecutting/stone/spiral_bricks": {
+    "criteria": {
+      "has_block": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_diorite": {
+    "criteria": {
+      "has_diorite": "2026-11-28 20:08:50 +0700"
+    },
+    "done": true
+  },
   "ironchest:recipes/decorations/upgrades/wood_to_iron_chest_upgrade": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 19:41:39 +0700"
@@ -825,6 +849,12 @@
   "kaleidoscope_cookery:recipes/tools/straw_hat": {
     "criteria": {
       "has_ingot_iron": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/calcite_pillar_trim": {
+    "criteria": {
+      "has_calcite_pillar_trim": "2026-11-28 20:08:48 +0700"
     },
     "done": true
   },
@@ -843,6 +873,12 @@
   "kaleidoscope_cookery:recipes/decorations/kitchenware_racks": {
     "criteria": {
       "has_ingot_iron": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/creeper_trophy": {
+    "criteria": {
+      "has_creeper_trophy": "2026-11-28 20:08:30 +0700"
     },
     "done": true
   },
@@ -894,6 +930,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/stone_stairs_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/cooked_rabbit_from_campfire_cooking": {
     "criteria": {
       "has_rabbit": "2026-11-28 19:24:35 +0700"
@@ -903,6 +945,18 @@
   "farm_and_charm:recipes/seeder": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/building_blocks/stonecutting/stone/terrorcotta_arcs": {
+    "criteria": {
+      "has_block": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_tuff_stairs_from_polished_tuff_stonecutting": {
+    "criteria": {
+      "has_polished_tuff": "2026-11-28 20:15:06 +0700"
     },
     "done": true
   },
@@ -933,6 +987,12 @@
   "kaleidoscope_cookery:recipes/decorations/farmer_chest_plate": {
     "criteria": {
       "has_leather": "2026-11-28 19:34:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_andesite_stairs_from_polished_andesite_stonecutting": {
+    "criteria": {
+      "has_polished_andesite": "2026-11-28 20:14:47 +0700"
     },
     "done": true
   },
@@ -972,6 +1032,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/diorite_stairs_from_diorite_stonecutting": {
+    "criteria": {
+      "has_diorite": "2026-11-28 20:08:50 +0700"
+    },
+    "done": true
+  },
   "bakery:recipes/faucet": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 19:41:39 +0700"
@@ -996,6 +1062,12 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/vindicator_trophy": {
+    "criteria": {
+      "has_vindicator_trophy": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/cooked_chicken_from_smoking": {
     "criteria": {
       "has_chicken": "2026-11-28 19:28:36 +0700"
@@ -1017,6 +1089,12 @@
   "minecraft:recipes/misc/iron_ingot_from_iron_block": {
     "criteria": {
       "has_iron_block": "2026-11-28 19:41:15 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_andesite_slab": {
+    "criteria": {
+      "has_polished_andesite": "2026-11-28 20:14:47 +0700"
     },
     "done": true
   },
@@ -1062,6 +1140,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_tuff_stairs": {
+    "criteria": {
+      "has_polished_tuff": "2026-11-28 20:15:06 +0700"
+    },
+    "done": true
+  },
   "farm_and_charm:recipes/iron_cleaver": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 19:41:39 +0700"
@@ -1098,9 +1182,21 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/skeleton_trophy": {
+    "criteria": {
+      "has_skeleton_trophy": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
   "kaleidoscope_cookery:recipes/decorations/oil_block": {
     "criteria": {
       "has_ingot_iron": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_stairs": {
+    "criteria": {
+      "has_stone": "2026-11-28 20:08:30 +0700"
     },
     "done": true
   },
@@ -1140,6 +1236,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/diorite_slab": {
+    "criteria": {
+      "has_diorite": "2026-11-28 20:08:50 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/misc/magenta_dye_from_bleeding_heart": {
     "criteria": {
       "has_bleeding_heart": "2026-11-28 19:33:36 +0700"
@@ -1170,6 +1272,24 @@
     },
     "done": true
   },
+  "twilightforest:recipes/building_blocks/stonecutting/stone/bold_stone_pillar": {
+    "criteria": {
+      "has_block": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/diorite_wall": {
+    "criteria": {
+      "has_diorite": "2026-11-28 20:08:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/stonecutter": {
+    "criteria": {
+      "has_stone": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/tools/iron_sickle": {
     "criteria": {
       "has_material_for_iron_sickle": "2026-11-28 19:41:39 +0700"
@@ -1194,6 +1314,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/stone_brick_walls_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/building_blocks/woodcutter": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 19:41:39 +0700"
@@ -1209,6 +1335,24 @@
   "minecraft:recipes/tools/iron_pickaxe": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/polished_tuff_wall": {
+    "criteria": {
+      "has_polished_tuff": "2026-11-28 20:15:06 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_brick_slab_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/calcite_warp_pad": {
+    "criteria": {
+      "has_calcite": "2026-11-28 20:08:48 +0700"
     },
     "done": true
   },
@@ -1230,9 +1374,33 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/stone_brick_stairs_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
   "bakery:recipes/iron_table": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/diorite_warp_pad": {
+    "criteria": {
+      "has_diorite": "2026-11-28 20:08:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_slab_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/diorite_wall_from_diorite_stonecutting": {
+    "criteria": {
+      "has_diorite": "2026-11-28 20:08:50 +0700"
     },
     "done": true
   },
@@ -1278,15 +1446,45 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_diorite_from_diorite_stonecutting": {
+    "criteria": {
+      "has_diorite": "2026-11-28 20:08:50 +0700"
+    },
+    "done": true
+  },
   "farm_and_charm:recipes/crafting_bowl": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 19:41:39 +0700"
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_andesite_slab_from_polished_andesite_stonecutting": {
+    "criteria": {
+      "has_polished_andesite": "2026-11-28 20:14:47 +0700"
+    },
+    "done": true
+  },
   "kaleidoscope_cookery:recipes/tools/iron_kitchen_knife": {
     "criteria": {
       "has_ingot_iron": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/tuff_bricks": {
+    "criteria": {
+      "has_polished_tuff": "2026-11-28 20:15:06 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/mossy_stone": {
+    "criteria": {
+      "has_stone": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/building_blocks/stonecutting/stone/terrorcotta_lines": {
+    "criteria": {
+      "has_block": "2026-11-28 20:08:30 +0700"
     },
     "done": true
   },
@@ -1302,6 +1500,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/diorite_stairs": {
+    "criteria": {
+      "has_diorite": "2026-11-28 20:08:50 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/iron_door": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 19:41:39 +0700"
@@ -1311,6 +1515,18 @@
   "bakery:recipes/stone_bricks_stove": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_bricks": {
+    "criteria": {
+      "has_stone": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/tuff_brick_wall_from_polished_tuff_stonecutting": {
+    "criteria": {
+      "has_polished_tuff": "2026-11-28 20:15:06 +0700"
     },
     "done": true
   },
@@ -1332,6 +1548,12 @@
     },
     "done": true
   },
+  "twilightforest:recipes/building_blocks/stonecutting/stone/twisted_stone_pillar": {
+    "criteria": {
+      "has_block": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/bottles_of_low_crystal": {
     "criteria": {
       "has_low_crystal": "2026-11-28 19:46:13 +0700"
@@ -1350,15 +1572,39 @@
     },
     "done": true
   },
+  "twilightforest:recipes/building_blocks/stonecutting/stone/twisted_stone": {
+    "criteria": {
+      "has_block": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/building_blocks/stone_grass_block": {
+    "criteria": {
+      "has_stone": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
   "vinery:main/forbidden_fruit": {
     "criteria": {
       "apple": "2026-11-28 19:34:01 +0700"
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/stone_bricks_from_stone_stonecutting": {
+    "criteria": {
+      "has_stone": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
   "kaleidoscope_cookery:recipes/tools/diamond_kitchen_knife": {
     "criteria": {
       "has_ingot_iron": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_slab": {
+    "criteria": {
+      "has_stone": "2026-11-28 20:08:30 +0700"
     },
     "done": true
   },
@@ -1404,9 +1650,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/stone_button": {
+    "criteria": {
+      "has_stone": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:recipes/decorations/cooking_pot": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_tuff_slab": {
+    "criteria": {
+      "has_polished_tuff": "2026-11-28 20:15:06 +0700"
     },
     "done": true
   },
@@ -1416,9 +1674,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/stone_pressure_plate": {
+    "criteria": {
+      "has_stone": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
   "vanillabackport:recipes/combat/saddle": {
     "criteria": {
       "has_leather": "2026-11-28 19:34:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_diorite_stairs_from_diorite_stonecutting": {
+    "criteria": {
+      "has_diorite": "2026-11-28 20:08:50 +0700"
     },
     "done": true
   },
@@ -1470,6 +1740,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_tuff_slab_from_polished_tuff_stonecutting": {
+    "criteria": {
+      "has_polished_tuff": "2026-11-28 20:15:06 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/iron_shovel": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 19:41:39 +0700"
@@ -1488,9 +1764,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/andesite": {
+    "criteria": {
+      "has_stone": "2026-11-28 20:08:50 +0700"
+    },
+    "done": true
+  },
   "farm_and_charm:recipes/roaster": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/evoker_trophy": {
+    "criteria": {
+      "has_evoker_trophy": "2026-11-28 20:08:30 +0700"
     },
     "done": true
   },
@@ -1524,15 +1812,39 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/chiseled_tuff_bricks_from_polished_tuff_stonecutting": {
+    "criteria": {
+      "has_polished_tuff": "2026-11-28 20:15:06 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/diorite_corner_trim": {
+    "criteria": {
+      "has_diorite_corner_trim": "2026-11-28 20:08:50 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/orange_dye_from_orange_tulip": {
     "criteria": {
       "has_orange_tulip": "2026-11-28 19:32:59 +0700"
     },
     "done": true
   },
+  "handcrafted:recipes/misc/pillager_trophy": {
+    "criteria": {
+      "has_pillager_trophy": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/iron_spear": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_diorite_slab_from_diorite_stonecutting": {
+    "criteria": {
+      "has_diorite": "2026-11-28 20:08:50 +0700"
     },
     "done": true
   },
@@ -1602,6 +1914,12 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/stone_corner_trim": {
+    "criteria": {
+      "has_stone_corner_trim": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
   "kaleidoscope_cookery:recipes/food/apple_platter": {
     "criteria": {
       "has_ingredient": "2026-11-28 19:34:01 +0700"
@@ -1644,6 +1962,12 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/diorite_pillar_trim": {
+    "criteria": {
+      "has_diorite_pillar_trim": "2026-11-28 20:08:50 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:recipes/cooking/noodle_soup": {
     "criteria": {
       "has_any_ingredient": "2026-11-28 19:51:05 +0700"
@@ -1659,6 +1983,18 @@
   "minecraft:recipes/combat/arrow": {
     "criteria": {
       "has_feather": "2026-11-28 19:28:36 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/andesite_warp_pad": {
+    "criteria": {
+      "has_polished_andesite": "2026-11-28 20:14:47 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/building_blocks/stonecutting/stone/terrorcotta_curves": {
+    "criteria": {
+      "has_block": "2026-11-28 20:08:30 +0700"
     },
     "done": true
   },
@@ -1707,6 +2043,18 @@
   "minecraft:recipes/decorations/smithing_table": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/smooth_stone": {
+    "criteria": {
+      "has_stone": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/polished_tuff_wall_from_polished_tuff_stonecutting": {
+    "criteria": {
+      "has_polished_tuff": "2026-11-28 20:15:06 +0700"
     },
     "done": true
   },
@@ -1770,9 +2118,33 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_andesite_stairs": {
+    "criteria": {
+      "has_polished_andesite": "2026-11-28 20:14:47 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/calcite_corner_trim": {
+    "criteria": {
+      "has_calcite_corner_trim": "2026-11-28 20:08:48 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/witch_trophy": {
+    "criteria": {
+      "has_witch_trophy": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
   "handcrafted:recipes/misc/bench": {
     "criteria": {
       "has_bench": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/stone_warp_pad": {
+    "criteria": {
+      "has_stone": "2026-11-28 20:08:30 +0700"
     },
     "done": true
   },
@@ -1782,9 +2154,33 @@
     },
     "done": true
   },
+  "regions_unexplored:recipes/building_blocks/viridescent_nylium": {
+    "criteria": {
+      "has_stone": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_stone_bricks_stone_from_stonecutting": {
+    "criteria": {
+      "has_stone": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/stone_pillar_trim": {
+    "criteria": {
+      "has_stone_pillar_trim": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
   "kaleidoscope_cookery:recipes/redstone/pot": {
     "criteria": {
       "has_ingot_iron": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/diorite_slab_from_diorite_stonecutting": {
+    "criteria": {
+      "has_diorite": "2026-11-28 20:08:50 +0700"
     },
     "done": true
   },
@@ -1794,9 +2190,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/tuff_bricks_from_polished_tuff_stonecutting": {
+    "criteria": {
+      "has_polished_tuff": "2026-11-28 20:15:06 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/misc/magenta_dye_from_fireweed": {
     "criteria": {
       "has_fireweed": "2026-11-28 19:35:10 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/tuff_brick_slab_from_polished_tuff_stonecutting": {
+    "criteria": {
+      "has_polished_tuff": "2026-11-28 20:15:06 +0700"
     },
     "done": true
   },
