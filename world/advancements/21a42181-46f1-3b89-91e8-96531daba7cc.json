@@ -2210,7 +2210,8 @@
       "minecraft:witch": "2026-11-28 19:26:24 +0700",
       "minecraft:spider": "2026-11-28 17:01:50 +0700",
       "minecraft:zombie": "2026-11-28 16:55:16 +0700",
-      "minecraft:creeper": "2026-11-28 16:48:43 +0700"
+      "minecraft:creeper": "2026-11-28 16:48:43 +0700",
+      "minecraft:husk": "2026-11-28 20:47:27 +0700"
     },
     "done": false
   },
@@ -2460,7 +2461,8 @@
       "beetroot_soup": "2026-11-28 16:52:44 +0700",
       "bread": "2026-11-28 16:49:30 +0700",
       "cooked_rabbit": "2026-11-28 16:47:21 +0700",
-      "cooked_chicken": "2026-11-28 17:19:03 +0700"
+      "cooked_chicken": "2026-11-28 17:19:03 +0700",
+      "mushroom_stew": "2026-11-28 20:53:57 +0700"
     },
     "done": false
   },
@@ -5232,6 +5234,12 @@
     },
     "done": true
   },
+  "ironchest:recipes/decorations/chests/diamond_obsidian_chest": {
+    "criteria": {
+      "has_obsidian": "2026-11-28 20:47:48 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/coal": {
     "criteria": {
       "has_coal_block": "2026-11-28 20:46:14 +0700"
@@ -5268,6 +5276,18 @@
     },
     "done": true
   },
+  "farmersdelight:recipes/decorations/spruce_cabinet": {
+    "criteria": {
+      "has_spruce_trapdoor": "2026-11-28 20:53:00 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/roasted_mutton_chops": {
+    "criteria": {
+      "has_mutton": "2026-11-28 20:56:20 +0700"
+    },
+    "done": true
+  },
   "twilightforest:recipes/drying/drying/sapling_to_dead_bush": {
     "criteria": {
       "has_sapling": "2026-11-28 20:35:49 +0700"
@@ -5286,6 +5306,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/coal_from_blasting_coal_ore": {
+    "criteria": {
+      "has_coal_ore": "2026-11-28 20:52:53 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/kiln": {
+    "criteria": {
+      "has_obsidian": "2026-11-28 20:47:48 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/cherry_wood": {
     "criteria": {
       "has_log": "2026-11-28 20:34:41 +0700"
@@ -5298,9 +5330,33 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/kiln_mithril": {
+    "criteria": {
+      "has_obsidian": "2026-11-28 20:47:48 +0700"
+    },
+    "done": true
+  },
+  "enhanced_ore_variety:recipes/misc/coal_from_blasting": {
+    "criteria": {
+      "TagKey[minecraft:item / minecraft:coal_ores]": "2026-11-28 20:52:53 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/mutton_wrap": {
+    "criteria": {
+      "has_mutton": "2026-11-28 20:56:20 +0700"
+    },
+    "done": true
+  },
   "vinery:main/forbidden_fruit": {
     "criteria": {
       "apple": "2026-11-28 20:45:42 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/food/cold_roasted_meat": {
+    "criteria": {
+      "has_cooked_beef": "2026-11-28 20:56:20 +0700"
     },
     "done": true
   },
@@ -5316,9 +5372,27 @@
     },
     "done": true
   },
+  "minecraft:story/form_obsidian": {
+    "criteria": {
+      "obsidian": "2026-11-28 20:47:48 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/shepherds_pie_block": {
+    "criteria": {
+      "has_cooked_mutton": "2026-11-28 20:56:20 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/cherry_fence_from_cherry_log_woodcutting": {
     "criteria": {
       "has_cherry_log": "2026-11-28 20:34:41 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/coal_from_smelting_coal_ore": {
+    "criteria": {
+      "has_coal_ore": "2026-11-28 20:52:53 +0700"
     },
     "done": true
   },
@@ -5358,6 +5432,12 @@
     },
     "done": true
   },
+  "enhanced_ore_variety:recipes/misc/coal_from_smelting": {
+    "criteria": {
+      "TagKey[minecraft:item / minecraft:coal_ores]": "2026-11-28 20:52:53 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/cherry_planks_from_cherry_log_woodcutting": {
     "criteria": {
       "has_cherry_log": "2026-11-28 20:34:41 +0700"
@@ -5373,6 +5453,12 @@
   "mortal_cultivation:recipes/building_blocks/oak_planks_from_spirit_log": {
     "criteria": {
       "has_log": "2026-11-28 20:41:03 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/enchanting_table": {
+    "criteria": {
+      "has_obsidian": "2026-11-28 20:47:48 +0700"
     },
     "done": true
   },

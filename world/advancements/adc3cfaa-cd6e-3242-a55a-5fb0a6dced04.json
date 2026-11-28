@@ -7272,6 +7272,12 @@
     },
     "done": true
   },
+  "iceandfire:recipes/misc/ash_to_charcoal": {
+    "criteria": {
+      "has_item": "2026-11-28 20:51:00 +0700"
+    },
+    "done": true
+  },
   "tensura:just_a_test": {
     "criteria": {
       "colossus": "2026-11-28 20:36:29 +0700"
@@ -7302,6 +7308,12 @@
     },
     "done": true
   },
+  "farmersdelight:recipes/cooking/pasta_with_meatballs": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-28 20:53:19 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/cooked_porkchop_from_smoking": {
     "criteria": {
       "has_porkchop": "2026-11-28 20:39:49 +0700"
@@ -7311,6 +7323,12 @@
   "tensura:eat_or_be_eaten": {
     "criteria": {
       "orc_disaster": "2026-11-28 20:39:48 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/drying/beef_jerky": {
+    "criteria": {
+      "has_meat": "2026-11-28 20:53:19 +0700"
     },
     "done": true
   },
@@ -7350,9 +7368,27 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/cooked_beef_from_smoking": {
+    "criteria": {
+      "has_beef": "2026-11-28 20:53:19 +0700"
+    },
+    "done": true
+  },
   "iceandfire:recipes/combat/tide_red_boots": {
     "criteria": {
       "has_item": "2026-11-28 20:45:34 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/yellow_dye_from_sunflower": {
+    "criteria": {
+      "has_sunflower": "2026-11-28 20:49:34 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_beef": {
+    "criteria": {
+      "has_beef": "2026-11-28 20:53:19 +0700"
     },
     "done": true
   },
@@ -7389,6 +7425,12 @@
   "iceandfire:recipes/combat/tide_red_helmet": {
     "criteria": {
       "has_item": "2026-11-28 20:45:34 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_beef_from_campfire_cooking": {
+    "criteria": {
+      "has_beef": "2026-11-28 20:53:19 +0700"
     },
     "done": true
   },
