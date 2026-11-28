@@ -11756,18 +11756,6 @@
     },
     "done": true
   },
-  "tensura_neb:lion_king": {
-    "criteria": {
-      "carrion": "2026-11-28 16:44:14 +0700"
-    },
-    "done": true
-  },
-  "farmersdelight:main/plant_all_crops": {
-    "criteria": {
-      "nether_wart": "2026-11-28 16:03:45 +0700"
-    },
-    "done": false
-  },
   "minecraft:recipes/building_blocks/red_stained_glass": {
     "criteria": {
       "has_glass": "2026-11-28 16:02:44 +0700"
@@ -11789,12 +11777,6 @@
   "minecraft:recipes/building_blocks/green_stained_glass": {
     "criteria": {
       "has_glass": "2026-11-28 16:02:44 +0700"
-    },
-    "done": true
-  },
-  "vinery:recipes/wine_bottle": {
-    "criteria": {
-      "has_glass_bottle": "2026-11-28 16:02:51 +0700"
     },
     "done": true
   },
@@ -11834,18 +11816,6 @@
     },
     "done": true
   },
-  "tensura:recipes/food/cooked_charybdis_meat_from_campfire_cooking": {
-    "criteria": {
-      "has_raw_charybdis_meat": "2026-11-28 16:50:15 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/snow": {
-    "criteria": {
-      "has_snowball": "2026-11-28 16:57:39 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/pink_stained_glass": {
     "criteria": {
       "has_glass": "2026-11-28 16:02:44 +0700"
@@ -11870,21 +11840,9 @@
     },
     "done": true
   },
-  "minecraft:recipes/food/cooked_charybdis_meat_from_smelting": {
-    "criteria": {
-      "has_raw_charybdis_meat": "2026-11-28 16:50:15 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/brown_stained_glass": {
     "criteria": {
       "has_glass": "2026-11-28 16:02:44 +0700"
-    },
-    "done": true
-  },
-  "minecraft:recipes/building_blocks/nether_wart_block": {
-    "criteria": {
-      "has_nether_wart": "2026-11-28 16:03:34 +0700"
     },
     "done": true
   },
@@ -11900,12 +11858,6 @@
     },
     "done": true
   },
-  "tensura:recipes/food/cooked_charybdis_meat_from_smoking": {
-    "criteria": {
-      "has_raw_charybdis_meat": "2026-11-28 16:50:15 +0700"
-    },
-    "done": true
-  },
   "vinery:recipes/wine_box": {
     "criteria": {
       "has_glass": "2026-11-28 16:02:44 +0700"
@@ -11918,15 +11870,75 @@
     },
     "done": true
   },
+  "vinery:recipes/wine_bottle": {
+    "criteria": {
+      "has_glass_bottle": "2026-11-28 16:02:51 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/nether_wart_block": {
+    "criteria": {
+      "has_nether_wart": "2026-11-28 16:03:34 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:main/plant_all_crops": {
+    "criteria": {
+      "nether_wart": "2026-11-28 16:03:45 +0700"
+    },
+    "done": false
+  },
   "minecraft:husbandry/plant_seed": {
     "criteria": {
       "nether_wart": "2026-11-28 16:03:45 +0700"
     },
     "done": true
   },
+  "tensura_neb:lion_king": {
+    "criteria": {
+      "carrion": "2026-11-28 16:44:14 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/food/cooked_charybdis_meat_from_campfire_cooking": {
+    "criteria": {
+      "has_raw_charybdis_meat": "2026-11-28 16:50:15 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_charybdis_meat_from_smelting": {
+    "criteria": {
+      "has_raw_charybdis_meat": "2026-11-28 16:50:15 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/food/cooked_charybdis_meat_from_smoking": {
+    "criteria": {
+      "has_raw_charybdis_meat": "2026-11-28 16:50:15 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/snow": {
+    "criteria": {
+      "has_snowball": "2026-11-28 16:57:39 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/snow_block": {
     "criteria": {
       "has_snowball": "2026-11-28 16:57:39 +0700"
+    },
+    "done": true
+  },
+  "tensura:unholy_tourism": {
+    "criteria": {
+      "underworld_sands": "2026-11-28 17:17:14 +0700"
+    },
+    "done": false
+  },
+  "tensura:hell": {
+    "criteria": {
+      "hell": "2026-11-28 17:17:13 +0700"
     },
     "done": true
   },

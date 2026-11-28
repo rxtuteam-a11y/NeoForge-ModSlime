@@ -34,7 +34,9 @@
     },
     {
       "questId": "trbeyond:repeatable_material_greater_daemon_essence",
-      "progress": {}
+      "progress": {
+        "kill_greater_daemon_essence": 2
+      }
     },
     {
       "questId": "trbeyond:repeatable_skill_shin_ryusei",
@@ -192,7 +194,9 @@
     },
     {
       "questId": "trbeyond:repeatable_material_beast_gnome_essence",
-      "progress": {}
+      "progress": {
+        "kill_beast_gnome_essence": 6
+      }
     },
     {
       "questId": "trbeyond:rep_sub_centipede_shock_1",

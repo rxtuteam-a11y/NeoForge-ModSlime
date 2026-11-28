@@ -1,7 +1,19 @@
 {
+  "tensura:d_rank": {
+    "criteria": {
+      "ep": "2026-11-28 17:17:46 +0700"
+    },
+    "done": true
+  },
   "yungscavebiomes:recipes/building_blocks/brittle_sandstone": {
     "criteria": {
       "has_sand": "2026-11-28 16:45:16 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/medium_quality_magic_crystal_blockfrom_medium_quality_magic_crystal": {
+    "criteria": {
+      "has_medium_quality_magic_crystal": "2026-11-28 17:18:14 +0700"
     },
     "done": true
   },
@@ -80,6 +92,12 @@
   "iceandfire:iceandfire/root": {
     "criteria": {
       "tick": "2026-11-28 16:39:23 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/daemon_core": {
+    "criteria": {
+      "has_daemon_essence": "2026-11-28 17:18:15 +0700"
     },
     "done": true
   },
@@ -179,6 +197,12 @@
   "toms_storage:unlock_redstone": {
     "criteria": {
       "inv_changed-redstone": "2026-11-28 16:42:26 +0700"
+    },
+    "done": true
+  },
+  "naturesaura:positive_imbalance": {
+    "criteria": {
+      "triggered_in_code": "2026-11-28 17:10:41 +0700"
     },
     "done": true
   },
@@ -314,6 +338,12 @@
     },
     "done": true
   },
+  "tensura:empowerment": {
+    "criteria": {
+      "ep": "2026-11-28 17:17:46 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/blue_concrete_powder": {
     "criteria": {
       "has_sand": "2026-11-28 16:45:16 +0700"
@@ -413,6 +443,12 @@
   "iceandfire:recipes/misc/dragon_meal": {
     "criteria": {
       "has_item": "2026-11-28 16:42:26 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bottles_of_medium_crystal": {
+    "criteria": {
+      "has_medium_crystal": "2026-11-28 17:18:14 +0700"
     },
     "done": true
   },
@@ -530,6 +566,12 @@
       "has_sand": "2026-11-28 16:45:16 +0700"
     },
     "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:snowy_beach": "2026-11-28 17:15:50 +0700"
+    },
+    "done": false
   },
   "minecraft:recipes/decorations/sandstone_wall": {
     "criteria": {

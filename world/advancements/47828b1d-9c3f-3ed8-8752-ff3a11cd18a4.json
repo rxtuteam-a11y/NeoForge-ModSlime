@@ -11747,6 +11747,12 @@
     },
     "done": true
   },
+  "tensura:unholy_tourism": {
+    "criteria": {
+      "underworld_sands": "2026-11-28 17:17:12 +0700"
+    },
+    "done": false
+  },
   "handcrafted:recipes/misc/acacia_shelf": {
     "criteria": {
       "has_acacia_shelf": "2026-11-28 17:06:32 +0700"
@@ -11840,6 +11846,12 @@
   "minecraft:recipes/building_blocks/acacia_button_from_acacia_planks_woodcutting": {
     "criteria": {
       "has_acacia_planks": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "tensura:hell": {
+    "criteria": {
+      "hell": "2026-11-28 17:17:11 +0700"
     },
     "done": true
   },
