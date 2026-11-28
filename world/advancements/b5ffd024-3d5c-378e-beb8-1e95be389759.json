@@ -194,6 +194,12 @@
     },
     "done": true
   },
+  "tensura:recipes/food/cooked_megalodon_meat_from_smoking": {
+    "criteria": {
+      "has_raw_megalodon_meat": "2026-11-28 17:29:35 +0700"
+    },
+    "done": true
+  },
   "toms_storage:unlock_redstone": {
     "criteria": {
       "inv_changed-redstone": "2026-11-28 16:42:26 +0700"
@@ -221,6 +227,12 @@
   "netherexp:recipes/claret/planks": {
     "criteria": {
       "has_log": "2026-11-28 16:42:26 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/prismarine_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-28 17:29:35 +0700"
     },
     "done": true
   },
@@ -284,6 +296,12 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/end_stone_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-28 17:29:35 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:pioneer": {
     "criteria": {
       "frozen_pine_taiga": "2026-11-28 16:39:24 +0700"
@@ -314,9 +332,21 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/purpur_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-28 17:29:35 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/red_concrete_powder": {
     "criteria": {
       "has_sand": "2026-11-28 16:45:16 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/tuff_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-28 17:29:35 +0700"
     },
     "done": true
   },
@@ -338,6 +368,12 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/quartz_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-28 17:29:35 +0700"
+    },
+    "done": true
+  },
   "tensura:empowerment": {
     "criteria": {
       "ep": "2026-11-28 17:17:46 +0700"
@@ -350,9 +386,27 @@
     },
     "done": true
   },
+  "tensura:recipes/food/cooked_megalodon_meat_from_campfire_cooking": {
+    "criteria": {
+      "has_raw_megalodon_meat": "2026-11-28 17:29:35 +0700"
+    },
+    "done": true
+  },
   "mowziesmobs:root": {
     "criteria": {
       "custom_test_name": "2026-11-28 16:39:23 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/high_quality_magic_crystal_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-28 17:29:35 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bottles_of_high_crystal": {
+    "criteria": {
+      "has_high_crystal": "2026-11-28 17:29:35 +0700"
     },
     "done": true
   },
@@ -380,6 +434,12 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/stone_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-28 17:29:35 +0700"
+    },
+    "done": true
+  },
   "vinery:recipes/campfire": {
     "criteria": {
       "has_coal": "2026-11-28 16:42:26 +0700"
@@ -389,6 +449,12 @@
   "minecraft:recipes/building_blocks/cut_sandstone_slab_from_sandstone_stonecutting": {
     "criteria": {
       "has_sandstone": "2026-11-28 16:57:10 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/mud_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-28 17:29:35 +0700"
     },
     "done": true
   },
@@ -404,9 +470,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/cooked_megalodon_meat_from_smelting": {
+    "criteria": {
+      "has_raw_megalodon_meat": "2026-11-28 17:29:35 +0700"
+    },
+    "done": true
+  },
   "minecraft:adventure/root": {
     "criteria": {
       "killed_by_something": "2026-11-28 16:43:12 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/high_quality_magic_crystal_blockfrom_high_quality_magic_crystal": {
+    "criteria": {
+      "has_high_quality_magic_crystal": "2026-11-28 17:29:35 +0700"
     },
     "done": true
   },
@@ -419,6 +497,12 @@
   "netherexp:recipes/misc/magma_cream_block": {
     "criteria": {
       "has_item": "2026-11-28 16:42:26 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/medium_quality_magic_crystal_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-28 17:29:35 +0700"
     },
     "done": true
   },
@@ -482,6 +566,12 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/low_quality_magic_crystal_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-28 17:29:35 +0700"
+    },
+    "done": true
+  },
   "netherexp:recipes/misc/soul_magma_block": {
     "criteria": {
       "has_item2": "2026-11-28 16:42:26 +0700"
@@ -491,6 +581,18 @@
   "vinery:recipes/grapevine_lattice": {
     "criteria": {
       "has_coal": "2026-11-28 16:42:26 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/polished_blackstone_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-28 17:29:35 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-28 17:29:35 +0700"
     },
     "done": true
   },
@@ -518,6 +620,12 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/deepslate_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-28 17:29:35 +0700"
+    },
+    "done": true
+  },
   "netherexp:recipes/shroomlights/shroomnight": {
     "criteria": {
       "has_item": "2026-11-28 16:42:26 +0700"
@@ -527,6 +635,12 @@
   "iceandfire:recipes/misc/copper_nuggets_to_ingot": {
     "criteria": {
       "has_item": "2026-11-28 16:42:26 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/red_nether_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-28 17:29:35 +0700"
     },
     "done": true
   },
@@ -558,6 +672,12 @@
   "tensura:hell": {
     "criteria": {
       "hell": "2026-11-28 16:42:26 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/nether_bricks_magic_engine": {
+    "criteria": {
+      "has_magic_crystal": "2026-11-28 17:29:35 +0700"
     },
     "done": true
   },

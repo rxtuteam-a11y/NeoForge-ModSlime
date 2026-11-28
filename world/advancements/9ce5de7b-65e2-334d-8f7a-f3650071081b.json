@@ -11930,11 +11930,23 @@
     },
     "done": true
   },
+  "tensura:build_body": {
+    "criteria": {
+      "golems": "2026-11-28 17:30:03 +0700"
+    },
+    "done": true
+  },
   "tensura:unholy_tourism": {
     "criteria": {
       "underworld_sands": "2026-11-28 17:17:14 +0700"
     },
     "done": false
+  },
+  "tensura:recipes/misc/high_magisteel_bone_golem": {
+    "criteria": {
+      "has_daemon_core": "2026-11-28 17:28:08 +0700"
+    },
+    "done": true
   },
   "tensura:hell": {
     "criteria": {

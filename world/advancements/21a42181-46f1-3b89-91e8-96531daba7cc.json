@@ -354,6 +354,7 @@
       "minecraft:frozen_ocean": "2026-11-28 16:10:45 +0700",
       "minecraft:frozen_river": "2026-11-28 16:32:50 +0700",
       "minecraft:deep_frozen_ocean": "2026-11-28 16:55:38 +0700",
+      "minecraft:deep_dark": "2026-11-28 17:23:54 +0700",
       "minecraft:cherry_grove": "2026-11-28 17:15:22 +0700",
       "minecraft:sunflower_plains": "2026-11-28 17:17:16 +0700",
       "minecraft:windswept_gravelly_hills": "2026-11-28 16:42:04 +0700",
@@ -1153,6 +1154,24 @@
     },
     "done": true
   },
+  "minecraft:recipes/combat/diamond_sword": {
+    "criteria": {
+      "has_diamond": "2026-11-28 17:24:43 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/jukebox": {
+    "criteria": {
+      "has_diamond": "2026-11-28 17:24:43 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_nugget": {
+    "criteria": {
+      "has_gold_ingot": "2026-11-28 17:25:43 +0700"
+    },
+    "done": true
+  },
   "kaleidoscope_cookery:recipes/tools/straw_hat": {
     "criteria": {
       "has_ingot_iron": "2026-11-28 16:29:22 +0700"
@@ -1171,6 +1190,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/tools/golden_shovel": {
+    "criteria": {
+      "has_gold_ingot": "2026-11-28 17:25:43 +0700"
+    },
+    "done": true
+  },
   "iceandfire:recipes/building_blocks/dragonforge_ice_brick": {
     "criteria": {
       "has_item": "2026-11-28 16:51:42 +0700"
@@ -1180,6 +1205,12 @@
   "minecraft:recipes/building_blocks/spruce_slab_from_spruce_log_woodcutting": {
     "criteria": {
       "has_spruce_log": "2026-11-28 16:56:42 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/golden_apple": {
+    "criteria": {
+      "has_gold_ingot": "2026-11-28 17:25:43 +0700"
     },
     "done": true
   },
@@ -1198,6 +1229,12 @@
   "handcrafted:recipes/misc/hammer": {
     "criteria": {
       "has_hammer": "2026-11-28 16:29:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/golden_boots": {
+    "criteria": {
+      "has_gold_ingot": "2026-11-28 17:25:43 +0700"
     },
     "done": true
   },
@@ -1261,6 +1298,12 @@
     },
     "done": true
   },
+  "royalvariations:explosive_king": {
+    "criteria": {
+      "royal_creeper": "2026-11-28 17:29:14 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/mossy_cobblestone_stairs_from_mossy_cobblestone_stonecutting": {
     "criteria": {
       "has_mossy_cobblestone": "2026-11-28 16:46:48 +0700"
@@ -1279,15 +1322,33 @@
     },
     "done": true
   },
+  "minecraft:recipes/tools/diamond_pickaxe": {
+    "criteria": {
+      "has_diamond": "2026-11-28 17:24:43 +0700"
+    },
+    "done": true
+  },
   "farm_and_charm:recipes/seeder": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:29:22 +0700"
     },
     "done": true
   },
+  "minecraft:recipes/combat/golden_chestplate": {
+    "criteria": {
+      "has_gold_ingot": "2026-11-28 17:25:43 +0700"
+    },
+    "done": true
+  },
   "eternal_starlight:recipes/transportation/cradlewood_boat": {
     "criteria": {
       "in_water": "2026-11-28 16:30:06 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/tripwire_hook": {
+    "criteria": {
+      "has_string": "2026-11-28 17:20:19 +0700"
     },
     "done": true
   },
@@ -1333,15 +1394,45 @@
     },
     "done": true
   },
+  "farmersdelight:recipes/combat/golden_knife": {
+    "criteria": {
+      "has_gold_ingot": "2026-11-28 17:25:43 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/candle": {
+    "criteria": {
+      "has_string": "2026-11-28 17:20:19 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/raw_gold": {
+    "criteria": {
+      "has_raw_gold_block": "2026-11-28 17:26:01 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/leather_horse_armor": {
     "criteria": {
       "has_leather": "2026-11-28 16:53:36 +0700"
     },
     "done": true
   },
+  "chronodawn:recipes/tools/time_clock": {
+    "criteria": {
+      "has_item": "2026-11-28 17:25:43 +0700"
+    },
+    "done": true
+  },
   "handcrafted:recipes/misc/spruce_dining_bench": {
     "criteria": {
       "has_spruce_dining_bench": "2026-11-28 16:56:52 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_hoe": {
+    "criteria": {
+      "has_diamond": "2026-11-28 17:24:43 +0700"
     },
     "done": true
   },
@@ -1429,6 +1520,12 @@
     },
     "done": true
   },
+  "block_factorys_bosses:recipes/building_blocks/lighting/small_candles": {
+    "criteria": {
+      "has_item": "2026-11-28 17:25:43 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/spruce_stairs_from_spruce_log_woodcutting": {
     "criteria": {
       "has_spruce_log": "2026-11-28 16:56:42 +0700"
@@ -1483,6 +1580,12 @@
     },
     "done": true
   },
+  "constructionwand:recipes/tools/diamond_wand": {
+    "criteria": {
+      "has_item": "2026-11-28 17:24:43 +0700"
+    },
+    "done": true
+  },
   "iceandfire:recipes/building_blocks/dragon_bone_block": {
     "criteria": {
       "has_dragonbone": "2026-11-28 16:59:36 +0700"
@@ -1492,6 +1595,12 @@
   "farmersdelight:recipes/cooking/pasta_with_meatballs": {
     "criteria": {
       "has_any_ingredient": "2026-11-28 16:53:36 +0700"
+    },
+    "done": true
+  },
+  "ironchest:recipes/decorations/chests/iron_gold_chest": {
+    "criteria": {
+      "has_gold_ingot": "2026-11-28 17:25:43 +0700"
     },
     "done": true
   },
@@ -1519,6 +1628,24 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/iron_ingot_from_iron_block": {
+    "criteria": {
+      "has_iron_block": "2026-11-28 17:25:38 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/pouch_a": {
+    "criteria": {
+      "has_string": "2026-11-28 17:20:19 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/pouch_b": {
+    "criteria": {
+      "has_string": "2026-11-28 17:20:19 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/misc/pouch_c": {
     "criteria": {
       "has_monster_leather_c": "2026-11-28 16:51:45 +0700"
@@ -1543,9 +1670,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/combat/golden_sword": {
+    "criteria": {
+      "has_gold_ingot": "2026-11-28 17:25:43 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/cobblestone_slab": {
     "criteria": {
       "has_cobblestone": "2026-11-28 16:42:40 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/winemaker_leggings": {
+    "criteria": {
+      "has_gold_ingot": "2026-11-28 17:25:43 +0700"
     },
     "done": true
   },
@@ -1564,6 +1703,12 @@
   "ironchest:recipes/decorations/chests/vanilla_iron_chest": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:29:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/gold_block": {
+    "criteria": {
+      "has_gold_ingot": "2026-11-28 17:25:43 +0700"
     },
     "done": true
   },
@@ -1621,9 +1766,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/diamond_block": {
+    "criteria": {
+      "has_diamond": "2026-11-28 17:24:43 +0700"
+    },
+    "done": true
+  },
   "cookingforblockheads:recipes/decorations/white_fridge": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:29:22 +0700"
+    },
+    "done": true
+  },
+  "ironchest:recipes/decorations/chests/gold_diamond_chest": {
+    "criteria": {
+      "has_diamonds": "2026-11-28 17:24:43 +0700"
     },
     "done": true
   },
@@ -1666,6 +1823,12 @@
   "handcrafted:recipes/misc/spruce_corner_trim": {
     "criteria": {
       "has_spruce_corner_trim": "2026-11-28 16:56:52 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:recipes/building_blocks/lighting/candles_extra": {
+    "criteria": {
+      "has_item": "2026-11-28 17:25:43 +0700"
     },
     "done": true
   },
@@ -1819,6 +1982,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/combat/bow": {
+    "criteria": {
+      "has_string": "2026-11-28 17:20:19 +0700"
+    },
+    "done": true
+  },
   "iceandfire:recipes/building_blocks/dragonforge_lightning_brick": {
     "criteria": {
       "has_item": "2026-11-28 16:51:42 +0700"
@@ -1840,6 +2009,12 @@
   "kaleidoscope_cookery:recipes/decorations/cook_stool_dark_oak": {
     "criteria": {
       "has_wood": "2026-11-28 16:51:28 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/golden_helmet": {
+    "criteria": {
+      "has_gold_ingot": "2026-11-28 17:25:43 +0700"
     },
     "done": true
   },
@@ -1963,6 +2138,12 @@
     },
     "done": true
   },
+  "tensura:recipes/tools/diamond_sickle": {
+    "criteria": {
+      "has_material_for_diamond_sickle": "2026-11-28 17:24:43 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/spruce_boat": {
     "criteria": {
       "in_water": "2026-11-28 16:30:06 +0700"
@@ -1984,6 +2165,12 @@
   "handcrafted:recipes/misc/dark_oak_drawer": {
     "criteria": {
       "has_dark_oak_drawer": "2026-11-28 16:51:28 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/tools/golden_sickle": {
+    "criteria": {
+      "has_material_for_golden_sickle": "2026-11-28 17:25:43 +0700"
     },
     "done": true
   },
@@ -2038,6 +2225,12 @@
   "minecraft:recipes/redstone/daylight_detector": {
     "criteria": {
       "has_quartz": "2026-11-28 16:32:26 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_boots": {
+    "criteria": {
+      "has_diamond": "2026-11-28 17:24:43 +0700"
     },
     "done": true
   },
@@ -2209,6 +2402,12 @@
     },
     "done": true
   },
+  "toms_storage:unlock_dia_pearl": {
+    "criteria": {
+      "inv_changed-diamond": "2026-11-28 17:24:43 +0700"
+    },
+    "done": true
+  },
   "bakery:recipes/end_bricks_stove": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:29:22 +0700"
@@ -2317,6 +2516,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/tools/golden_hoe": {
+    "criteria": {
+      "has_gold_ingot": "2026-11-28 17:25:43 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/dark_oak_button_from_dark_oak_planks_woodcutting": {
     "criteria": {
       "has_dark_oak_planks": "2026-11-28 16:51:28 +0700"
@@ -2380,6 +2585,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/anvil": {
+    "criteria": {
+      "has_iron_block": "2026-11-28 17:25:38 +0700"
+    },
+    "done": true
+  },
   "bakery:main/get_all_caked_goods": {
     "criteria": {
       "minecraft:cake": "2026-11-28 16:30:52 +0700"
@@ -2434,6 +2645,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/tools/golden_axe": {
+    "criteria": {
+      "has_gold_ingot": "2026-11-28 17:25:43 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/golden_pickaxe": {
+    "criteria": {
+      "has_gold_ingot": "2026-11-28 17:25:43 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/cooked_cod_from_smoking": {
     "criteria": {
       "has_cod": "2026-11-28 17:00:02 +0700"
@@ -2443,6 +2666,12 @@
   "farm_and_charm:recipes/carrot_bag": {
     "criteria": {
       "has_carrot": "2026-11-28 17:17:47 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/diamond_cleaver": {
+    "criteria": {
+      "has_diamond": "2026-11-28 17:24:43 +0700"
     },
     "done": true
   },
@@ -2470,6 +2699,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/combat/diamond_chestplate": {
+    "criteria": {
+      "has_diamond": "2026-11-28 17:24:43 +0700"
+    },
+    "done": true
+  },
   "minecraft:story/mine_stone": {
     "criteria": {
       "get_stone": "2026-11-28 16:42:40 +0700"
@@ -2479,6 +2714,12 @@
   "minecraft:recipes/decorations/furnace": {
     "criteria": {
       "has_cobblestone": "2026-11-28 16:42:40 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_ingot_from_blasting_raw_gold": {
+    "criteria": {
+      "has_raw_gold": "2026-11-28 17:24:14 +0700"
     },
     "done": true
   },
@@ -2613,9 +2854,21 @@
     },
     "done": true
   },
+  "constructionwand:recipes/tools/gold_wand": {
+    "criteria": {
+      "has_item": "2026-11-28 17:25:43 +0700"
+    },
+    "done": true
+  },
   "vinery:recipes/grapevine_pot": {
     "criteria": {
       "has_spruce_planks": "2026-11-28 16:56:52 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/golden_spear": {
+    "criteria": {
+      "has_gold_ingot": "2026-11-28 17:25:43 +0700"
     },
     "done": true
   },
@@ -2643,6 +2896,12 @@
     },
     "done": true
   },
+  "tensura:recipes/misc/pouch_special_a": {
+    "criteria": {
+      "has_string": "2026-11-28 17:20:19 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/hay_block": {
     "criteria": {
       "has_wheat": "2026-11-28 16:54:04 +0700"
@@ -2661,6 +2920,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/tools/diamond_shovel": {
+    "criteria": {
+      "has_diamond": "2026-11-28 17:24:43 +0700"
+    },
+    "done": true
+  },
   "vanillabackport:recipes/combat/saddle": {
     "criteria": {
       "has_leather": "2026-11-28 16:53:36 +0700"
@@ -2670,6 +2935,12 @@
   "regions_unexplored:recipes/transportation/kapok_boat": {
     "criteria": {
       "in_water": "2026-11-28 16:30:06 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/light_weighted_pressure_plate": {
+    "criteria": {
+      "has_gold_ingot": "2026-11-28 17:25:43 +0700"
     },
     "done": true
   },
@@ -2721,6 +2992,12 @@
     },
     "done": true
   },
+  "tensura:monstrous_diet": {
+    "criteria": {
+      "cattledeer_steak": "2026-11-28 17:27:56 +0700"
+    },
+    "done": false
+  },
   "minecraft:recipes/building_blocks/mossy_cobblestone_stairs": {
     "criteria": {
       "has_mossy_cobblestone": "2026-11-28 16:46:48 +0700"
@@ -2742,6 +3019,12 @@
   "handcrafted:recipes/misc/dark_oak_dining_bench": {
     "criteria": {
       "has_dark_oak_dining_bench": "2026-11-28 16:51:28 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_ingot_from_smelting_raw_gold": {
+    "criteria": {
+      "has_raw_gold": "2026-11-28 17:24:14 +0700"
     },
     "done": true
   },
@@ -2785,6 +3068,12 @@
   "minecraft:recipes/misc/leather": {
     "criteria": {
       "has_rabbit_hide": "2026-11-28 16:46:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/raw_gold_block": {
+    "criteria": {
+      "has_raw_gold": "2026-11-28 17:24:14 +0700"
     },
     "done": true
   },
@@ -2836,6 +3125,12 @@
     },
     "done": true
   },
+  "tensura:gold_rush": {
+    "criteria": {
+      "gold": "2026-11-28 17:25:43 +0700"
+    },
+    "done": true
+  },
   "tensura:recipes/building_blocks/stone_bricks_magic_engine": {
     "criteria": {
       "has_stone_bricks": "2026-11-28 16:51:42 +0700"
@@ -2869,6 +3164,18 @@
   "minecraft:recipes/building_blocks/spruce_stairs_from_spruce_planks_woodcutting": {
     "criteria": {
       "has_spruce_planks": "2026-11-28 16:56:52 +0700"
+    },
+    "done": true
+  },
+  "lootr:25loot": {
+    "criteria": {
+      "opened_25": "2026-11-28 17:26:09 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_helmet": {
+    "criteria": {
+      "has_diamond": "2026-11-28 17:24:43 +0700"
     },
     "done": true
   },
@@ -2986,6 +3293,18 @@
     },
     "done": true
   },
+  "minecraft:story/mine_diamond": {
+    "criteria": {
+      "diamond": "2026-11-28 17:24:43 +0700"
+    },
+    "done": true
+  },
+  "vanillabackport:recipes/tools/bundle": {
+    "criteria": {
+      "has_string": "2026-11-28 17:20:19 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/stone_shovel": {
     "criteria": {
       "has_cobblestone": "2026-11-28 16:42:40 +0700"
@@ -3046,6 +3365,12 @@
     },
     "done": true
   },
+  "farmersdelight:recipes/combat/diamond_knife": {
+    "criteria": {
+      "has_diamond": "2026-11-28 17:24:43 +0700"
+    },
+    "done": true
+  },
   "twilightforest:recipes/transportation/time_boat": {
     "criteria": {
       "in_water": "2026-11-28 16:30:06 +0700"
@@ -3091,6 +3416,12 @@
   "handcrafted:recipes/misc/dark_oak_corner_trim": {
     "criteria": {
       "has_dark_oak_corner_trim": "2026-11-28 16:51:28 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_leggings": {
+    "criteria": {
+      "has_diamond": "2026-11-28 17:24:43 +0700"
     },
     "done": true
   },
@@ -3250,6 +3581,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/tools/fishing_rod": {
+    "criteria": {
+      "has_string": "2026-11-28 17:20:19 +0700"
+    },
+    "done": true
+  },
   "chronodawn:recipes/transportation/time_wood_boat": {
     "criteria": {
       "in_water": "2026-11-28 16:30:06 +0700"
@@ -3283,6 +3620,12 @@
   "twilightforest:recipes/transportation/transformation_boat": {
     "criteria": {
       "in_water": "2026-11-28 16:30:06 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/diamond_spear": {
+    "criteria": {
+      "has_diamond": "2026-11-28 17:24:43 +0700"
     },
     "done": true
   },
@@ -3397,6 +3740,12 @@
   "farmersdelight:recipes/cooking/fried_rice": {
     "criteria": {
       "has_any_ingredient": "2026-11-28 17:17:47 +0700"
+    },
+    "done": true
+  },
+  "vanillabackport:recipes/tools/lead": {
+    "criteria": {
+      "has_string": "2026-11-28 17:20:19 +0700"
     },
     "done": true
   },
@@ -3574,6 +3923,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/white_wool_from_string": {
+    "criteria": {
+      "has_string": "2026-11-28 17:20:19 +0700"
+    },
+    "done": true
+  },
   "iceandfire:recipes/tools/dragonbone_sword": {
     "criteria": {
       "has_item": "2026-11-28 16:59:36 +0700"
@@ -3652,6 +4007,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/loom": {
+    "criteria": {
+      "has_string": "2026-11-28 17:20:19 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/diamond_axe": {
+    "criteria": {
+      "has_diamond": "2026-11-28 17:24:43 +0700"
+    },
+    "done": true
+  },
   "handcrafted:recipes/misc/spruce_side_table": {
     "criteria": {
       "has_spruce_side_table": "2026-11-28 16:56:52 +0700"
@@ -3661,6 +4028,12 @@
   "handcrafted:recipes/misc/dark_oak_pillar_trim": {
     "criteria": {
       "has_dark_oak_pillar_trim": "2026-11-28 16:51:28 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/golden_leggings": {
+    "criteria": {
+      "has_gold_ingot": "2026-11-28 17:25:43 +0700"
     },
     "done": true
   },
