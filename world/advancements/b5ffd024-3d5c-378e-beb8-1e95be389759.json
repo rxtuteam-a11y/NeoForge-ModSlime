@@ -561,6 +561,7 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
+      "minecraft:river": "2026-11-28 19:39:18 +0700",
       "minecraft:snowy_beach": "2026-11-28 17:15:50 +0700",
       "minecraft:windswept_savanna": "2026-11-28 17:35:16 +0700",
       "minecraft:plains": "2026-11-28 19:25:36 +0700"
@@ -795,6 +796,12 @@
     },
     "done": true
   },
+  "farm_and_charm:recipes/cooking_pot": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/cooked_chicken_from_campfire_cooking": {
     "criteria": {
       "has_chicken": "2026-11-28 19:28:36 +0700"
@@ -804,6 +811,42 @@
   "waystones:recipes/tools/twinbound_feather": {
     "criteria": {
       "has_feather": "2026-11-28 19:28:36 +0700"
+    },
+    "done": true
+  },
+  "ironchest:recipes/decorations/upgrades/wood_to_iron_chest_upgrade": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/tools/straw_hat": {
+    "criteria": {
+      "has_ingot_iron": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_helmet": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/quartz_stove": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/kitchenware_racks": {
+    "criteria": {
+      "has_ingot_iron": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/hammer": {
+    "criteria": {
+      "has_hammer": "2026-11-28 19:41:39 +0700"
     },
     "done": true
   },
@@ -831,9 +874,21 @@
     },
     "done": true
   },
+  "ironchest:recipes/decorations/chests/copper_iron_chest": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/chest": {
     "criteria": {
       "has_lots_of_items": "2026-11-28 19:33:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/summon_iron_golem": {
+    "criteria": {
+      "summoned_golem": "2026-11-28 19:41:48 +0700"
     },
     "done": true
   },
@@ -843,9 +898,21 @@
     },
     "done": true
   },
+  "farm_and_charm:recipes/seeder": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:recipes/cooking/baked_cod_stew": {
     "criteria": {
       "has_any_ingredient": "2026-11-28 19:30:02 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/bread_knife": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
     },
     "done": true
   },
@@ -867,15 +934,57 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/pumpkin_pie": {
+    "criteria": {
+      "has_pumpkin": "2026-11-28 19:39:49 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/iron_chair": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/light_blue_dye_from_blue_orchid": {
     "criteria": {
       "has_blue_orchid": "2026-11-28 19:33:11 +0700"
     },
     "done": true
   },
+  "minecraft:recipes/redstone/hopper": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
   "minecraft:husbandry/tame_an_animal": {
     "criteria": {
       "tamed_animal": "2026-11-28 19:24:35 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/faucet": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_boots": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "cookingforblockheads:recipes/decorations/tool_rack": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/tools/kitchen_shovel": {
+    "criteria": {
+      "has_ingot_iron": "2026-11-28 19:41:39 +0700"
     },
     "done": true
   },
@@ -897,9 +1006,27 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/iron_ingot_from_iron_block": {
+    "criteria": {
+      "has_iron_block": "2026-11-28 19:41:15 +0700"
+    },
+    "done": true
+  },
   "tensura:getcha_leathers": {
     "criteria": {
       "leather": "2026-11-28 19:34:01 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/drying/drying/sapling_to_dead_bush": {
+    "criteria": {
+      "has_sapling": "2026-11-28 19:38:05 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/tools/straw_hat_flower": {
+    "criteria": {
+      "has_ingot_iron": "2026-11-28 19:41:39 +0700"
     },
     "done": true
   },
@@ -909,9 +1036,57 @@
     },
     "done": true
   },
+  "naturescompass:natures_compass_sapling": {
+    "criteria": {
+      "has_sapling": "2026-11-28 19:38:05 +0700"
+    },
+    "done": true
+  },
+  "ironchest:recipes/decorations/chests/vanilla_iron_chest": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/iron_trapdoor": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/iron_cleaver": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/leather_boots": {
     "criteria": {
       "has_leather": "2026-11-28 19:34:01 +0700"
+    },
+    "done": true
+  },
+  "cookingforblockheads:recipes/decorations/white_fridge": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/combat/iron_knife": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/big_table": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/oil_block": {
+    "criteria": {
+      "has_ingot_iron": "2026-11-28 19:41:39 +0700"
     },
     "done": true
   },
@@ -921,9 +1096,33 @@
     },
     "done": true
   },
+  "kaleidoscope_cookery:recipes/decorations/oil": {
+    "criteria": {
+      "has_ingot_iron": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_chestplate": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
   "twilightforest:recipes/drying/beef_jerky": {
     "criteria": {
       "has_meat": "2026-11-28 19:34:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bucket": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
     },
     "done": true
   },
@@ -936,6 +1135,30 @@
   "kaleidoscope_cookery:recipes/food/raw_meatball": {
     "criteria": {
       "has_raw_meats": "2026-11-28 19:28:36 +0700"
+    },
+    "done": true
+  },
+  "minecraft:story/smelt_iron": {
+    "criteria": {
+      "iron": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/supply_cart": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "block_factorys_bosses:recipes/combat/cannonball": {
+    "criteria": {
+      "has_item": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/tools/iron_sickle": {
+    "criteria": {
+      "has_material_for_iron_sickle": "2026-11-28 19:41:39 +0700"
     },
     "done": true
   },
@@ -957,9 +1180,75 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/woodcutter": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_sword": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/iron_pickaxe": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/shield": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/iron_bars": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/tools/gold_kitchen_knife": {
+    "criteria": {
+      "has_ingot_iron": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/iron_table": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/feeding_trough": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
   "sophisticatedbackpacks:recipes/misc/upgrade_base": {
     "criteria": {
       "has_leather": "2026-11-28 19:34:01 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/end_bricks_stove": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/water_sprinkler": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/tool_rack": {
+    "criteria": {
+      "has_item": "2026-11-28 19:41:39 +0700"
     },
     "done": true
   },
@@ -969,9 +1258,75 @@
     },
     "done": true
   },
+  "minecraft:recipes/tools/iron_axe": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/crafting_bowl": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/tools/iron_kitchen_knife": {
+    "criteria": {
+      "has_ingot_iron": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/scarecrow": {
+    "criteria": {
+      "has_pumpkin": "2026-11-28 19:39:49 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/anvil": {
+    "criteria": {
+      "has_iron_block": "2026-11-28 19:41:15 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/iron_door": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/stone_bricks_stove": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:recipes/cooking/rabbit_stew": {
     "criteria": {
       "has_any_ingredient": "2026-11-28 19:24:35 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/stuffed_pumpkin_block": {
+    "criteria": {
+      "has_pumpkin": "2026-11-28 19:39:49 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/mining_station": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "constructionwand:recipes/tools/iron_wand": {
+    "criteria": {
+      "has_item": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/mud_bricks_stove": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
     },
     "done": true
   },
@@ -981,15 +1336,63 @@
     },
     "done": true
   },
+  "kaleidoscope_cookery:recipes/tools/diamond_kitchen_knife": {
+    "criteria": {
+      "has_ingot_iron": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/cooked_rabbit": {
     "criteria": {
       "has_rabbit": "2026-11-28 19:24:35 +0700"
     },
     "done": true
   },
+  "farm_and_charm:recipes/plow": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "naturescompass:natures_compass": {
+    "criteria": {
+      "has_recipe": "2026-11-28 19:38:05 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/shears": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/mincer": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/misc/white_dye_from_white_trillium": {
     "criteria": {
       "has_white_trillium": "2026-11-28 19:33:02 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/iron_block": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/decorations/cooking_pot": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/misc/trash_can": {
+    "criteria": {
+      "has_ingot_iron": "2026-11-28 19:41:39 +0700"
     },
     "done": true
   },
@@ -1029,9 +1432,27 @@
     },
     "done": true
   },
+  "bakery:recipes/granite_stove": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
   "tensura:start_smithing": {
     "criteria": {
       "schematic": "2026-11-28 19:34:12 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/lantern": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/iron_shovel": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
     },
     "done": true
   },
@@ -1041,15 +1462,57 @@
     },
     "done": true
   },
+  "naturescompass:natures_compass_log": {
+    "criteria": {
+      "has_recipe": "2026-11-28 19:38:05 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/roaster": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/misc/light_gray_dye_from_daisy": {
+    "criteria": {
+      "has_daisy": "2026-11-28 19:38:04 +0700"
+    },
+    "done": true
+  },
+  "ironchest:recipes/decorations/upgrades/copper_to_iron_chest_upgrade": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
   "twilightforest:recipes/drying/monster_jerky": {
     "criteria": {
       "has_meat": "2026-11-28 19:30:02 +0700"
     },
     "done": true
   },
+  "bakery:recipes/sandstone_stove": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/crossbow": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/orange_dye_from_orange_tulip": {
     "criteria": {
       "has_orange_tulip": "2026-11-28 19:32:59 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_spear": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
     },
     "done": true
   },
@@ -1071,6 +1534,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/heavy_weighted_pressure_plate": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:recipes/food/fried_egg_from_smoking": {
     "criteria": {
       "fried_egg": "2026-11-28 19:30:02 +0700"
@@ -1080,6 +1549,18 @@
   "minecraft:recipes/food/cake": {
     "criteria": {
       "has_egg": "2026-11-28 19:30:02 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/iron_leggings": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/small_cooking_pot": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
     },
     "done": true
   },
@@ -1095,15 +1576,57 @@
     },
     "done": true
   },
+  "block_factorys_bosses:recipes/misc/big_chain": {
+    "criteria": {
+      "has_item": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/cooked_chicken": {
     "criteria": {
       "has_chicken": "2026-11-28 19:28:36 +0700"
     },
     "done": true
   },
+  "bakery:recipes/kitchen_sink": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/white_magnolia_shrub": {
+    "criteria": {
+      "has_white_magnolia_sapling": "2026-11-28 19:38:05 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/minecart": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/iron_hoe": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/stockpot_lid": {
+    "criteria": {
+      "has_ingot_iron": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/arrow": {
     "criteria": {
       "has_feather": "2026-11-28 19:28:36 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/pumpkin_seeds": {
+    "criteria": {
+      "has_pumpkin": "2026-11-28 19:39:49 +0700"
     },
     "done": true
   },
@@ -1116,6 +1639,30 @@
   "regions_unexplored:recipes/misc/blue_dye_from_blue_lupine": {
     "criteria": {
       "has_blue_lupine": "2026-11-28 19:33:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chain": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/pumpkin_soup": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-28 19:39:49 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/red_nether_bricks_stove": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/smithing_table": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
     },
     "done": true
   },
@@ -1137,15 +1684,75 @@
     },
     "done": true
   },
+  "vanillabackport:recipes/decorations/lodestone": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/stockpot": {
+    "criteria": {
+      "has_ingot_iron": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "vanillabackport:recipes/food/pumpkin_pie": {
+    "criteria": {
+      "has_pumpkin": "2026-11-28 19:39:49 +0700"
+    },
+    "done": true
+  },
+  "bakery:recipes/cobblestone_stove": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
   "constructionwand:recipes/misc/core_angel": {
     "criteria": {
       "has_item": "2026-11-28 19:28:36 +0700"
     },
     "done": true
   },
+  "bakery:recipes/deepslate_stove": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:recipes/cooking/beef_stew": {
     "criteria": {
       "has_any_ingredient": "2026-11-28 19:34:01 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/bench": {
+    "criteria": {
+      "has_bench": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "ironchest:recipes/decorations/upgrades/iron_to_gold_chest_upgrade": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/redstone/pot": {
+    "criteria": {
+      "has_ingot_iron": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "farm_and_charm:recipes/chicken_coop": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/misc/magenta_dye_from_fireweed": {
+    "criteria": {
+      "has_fireweed": "2026-11-28 19:35:10 +0700"
     },
     "done": true
   },

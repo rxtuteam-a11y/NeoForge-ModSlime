@@ -45,8 +45,10 @@
     "criteria": {
       "willow_forest": "2026-11-28 18:40:22 +0700",
       "cold_river": "2026-11-28 18:40:39 +0700",
+      "redstone_caves": "2026-11-28 19:43:58 +0700",
       "shrubland": "2026-11-28 18:38:37 +0700",
       "spires": "2026-11-28 16:33:09 +0700",
+      "windswept_maple_forest": "2026-11-28 19:41:44 +0700",
       "tundra": "2026-11-28 16:43:40 +0700",
       "flower_fields": "2026-11-28 17:04:29 +0700",
       "gravel_beach": "2026-11-28 16:25:29 +0700",
@@ -57,7 +59,8 @@
       "icy_heights": "2026-11-28 16:38:54 +0700",
       "hyacinth_deeps": "2026-11-28 18:41:35 +0700",
       "prismachasm": "2026-11-28 17:16:52 +0700",
-      "boreal_taiga": "2026-11-28 19:24:41 +0700"
+      "boreal_taiga": "2026-11-28 19:24:41 +0700",
+      "ancient_delta": "2026-11-28 19:43:57 +0700"
     },
     "done": false
   },
@@ -67,6 +70,7 @@
       "cold_river": "2026-11-28 18:40:39 +0700",
       "shrubland": "2026-11-28 18:38:37 +0700",
       "spires": "2026-11-28 16:33:09 +0700",
+      "windswept_maple_forest": "2026-11-28 19:41:44 +0700",
       "tundra": "2026-11-28 16:43:40 +0700",
       "flower_fields": "2026-11-28 17:04:29 +0700",
       "gravel_beach": "2026-11-28 16:25:29 +0700",
@@ -1143,6 +1147,12 @@
     },
     "done": true
   },
+  "yungscavebiomes:recipes/building_blocks/brittle_sandstone": {
+    "criteria": {
+      "has_sand": "2026-11-28 19:41:52 +0700"
+    },
+    "done": true
+  },
   "royalvariations:rotten_king": {
     "criteria": {
       "royal_zombie": "2026-11-28 17:17:45 +0700"
@@ -1527,6 +1537,12 @@
     },
     "done": true
   },
+  "netherexp:recipes/basalt/slab": {
+    "criteria": {
+      "has_item": "2026-11-28 19:36:50 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/raw_gold": {
     "criteria": {
       "has_raw_gold_block": "2026-11-28 17:26:01 +0700"
@@ -1715,9 +1731,17 @@
   },
   "regions_unexplored:spelunker": {
     "criteria": {
-      "prismachasm": "2026-11-28 17:16:52 +0700"
+      "redstone_caves": "2026-11-28 19:43:58 +0700",
+      "prismachasm": "2026-11-28 17:16:52 +0700",
+      "ancient_delta": "2026-11-28 19:43:57 +0700"
     },
     "done": false
+  },
+  "lootr:50loot": {
+    "criteria": {
+      "opened_50": "2026-11-28 19:39:36 +0700"
+    },
+    "done": true
   },
   "kaleidoscope_cookery:recipes/tools/kitchen_shovel": {
     "criteria": {
@@ -1959,6 +1983,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/spruce_button_from_spruce_wood_woodcutting": {
+    "criteria": {
+      "has_spruce_wood": "2026-11-28 19:39:12 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/diamond_block": {
     "criteria": {
       "has_diamond": "2026-11-28 17:24:43 +0700"
@@ -1968,6 +1998,12 @@
   "cookingforblockheads:recipes/decorations/white_fridge": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:29:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_stairs_from_spruce_wood_woodcutting": {
+    "criteria": {
+      "has_spruce_wood": "2026-11-28 19:39:12 +0700"
     },
     "done": true
   },
@@ -2031,6 +2067,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/spruce_fence_from_spruce_wood_woodcutting": {
+    "criteria": {
+      "has_spruce_wood": "2026-11-28 19:39:12 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/polished_granite_stairs_from_granite_stonecutting": {
     "criteria": {
       "has_granite": "2026-11-28 17:48:04 +0700"
@@ -2076,6 +2118,12 @@
   "handcrafted:recipes/misc/spruce_desk": {
     "criteria": {
       "has_spruce_desk": "2026-11-28 16:56:51 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/grass_slab": {
+    "criteria": {
+      "has_grass_block": "2026-11-28 19:42:08 +0700"
     },
     "done": true
   },
@@ -2787,6 +2835,12 @@
     },
     "done": true
   },
+  "netherexp:recipes/basalt/stairs": {
+    "criteria": {
+      "has_item": "2026-11-28 19:36:50 +0700"
+    },
+    "done": true
+  },
   "bakery:recipes/end_bricks_stove": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:29:22 +0700"
@@ -2844,6 +2898,12 @@
   "royalvariations:royal_variations": {
     "criteria": {
       "royal_zombie": "2026-11-28 17:17:45 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/sandstone": {
+    "criteria": {
+      "has_sand": "2026-11-28 19:41:52 +0700"
     },
     "done": true
   },
@@ -2934,6 +2994,12 @@
   "minecraft:recipes/building_blocks/dark_oak_button_from_dark_oak_planks_woodcutting": {
     "criteria": {
       "has_dark_oak_planks": "2026-11-28 16:51:28 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/ladder_from_spruce_wood_woodcutting": {
+    "criteria": {
+      "has_spruce_wood": "2026-11-28 19:39:12 +0700"
     },
     "done": true
   },
@@ -3625,6 +3691,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/smooth_basalt": {
+    "criteria": {
+      "has_basalt": "2026-11-28 19:36:50 +0700"
+    },
+    "done": true
+  },
   "ironchest:recipes/decorations/chests/vanilla_dirt_chest": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:51:30 +0700"
@@ -4082,6 +4154,24 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/spruce_planks_from_spruce_wood_woodcutting": {
+    "criteria": {
+      "has_spruce_wood": "2026-11-28 19:39:12 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_slab_from_spruce_wood_woodcutting": {
+    "criteria": {
+      "has_spruce_wood": "2026-11-28 19:39:12 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_basalt": {
+    "criteria": {
+      "has_basalt": "2026-11-28 19:36:50 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/misc/iridescent_ring": {
     "criteria": {
       "has_prismarite_cluster": "2026-11-28 17:16:57 +0700"
@@ -4310,6 +4400,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/glass": {
+    "criteria": {
+      "has_smelts_to_glass": "2026-11-28 19:41:52 +0700"
+    },
+    "done": true
+  },
   "iceandfire:recipes/tools/dragonbone_shovel": {
     "criteria": {
       "has_item": "2026-11-28 16:59:36 +0700"
@@ -4418,6 +4514,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/bowl_from_spruce_wood_woodcutting": {
+    "criteria": {
+      "has_spruce_wood": "2026-11-28 19:39:12 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/andesite_wall_from_andesite_stonecutting": {
     "criteria": {
       "has_andesite": "2026-11-28 17:48:36 +0700"
@@ -4433,6 +4535,12 @@
   "netherexp:recipes/bone_blocks/bone_fence": {
     "criteria": {
       "has_item": "2026-11-28 16:50:03 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/basalt_warp_pad": {
+    "criteria": {
+      "has_basalt": "2026-11-28 19:36:50 +0700"
     },
     "done": true
   },
@@ -4559,6 +4667,12 @@
   "explorerscompass:explorers_compass_cobweb": {
     "criteria": {
       "has_cobweb": "2026-11-28 16:32:17 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/packed_ice": {
+    "criteria": {
+      "has_ice": "2026-11-28 19:36:28 +0700"
     },
     "done": true
   },
@@ -4904,6 +5018,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_basalt_from_basalt_stonecutting": {
+    "criteria": {
+      "has_basalt": "2026-11-28 19:36:50 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/white_wool_from_string": {
     "criteria": {
       "has_string": "2026-11-28 17:20:19 +0700"
@@ -5048,6 +5168,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/stick_from_spruce_wood_woodcutting": {
+    "criteria": {
+      "has_spruce_wood": "2026-11-28 19:39:12 +0700"
+    },
+    "done": true
+  },
   "handcrafted:recipes/misc/dark_oak_pillar_trim": {
     "criteria": {
       "has_dark_oak_pillar_trim": "2026-11-28 16:51:28 +0700"
@@ -5057,6 +5183,12 @@
   "minecraft:recipes/combat/golden_leggings": {
     "criteria": {
       "has_gold_ingot": "2026-11-28 17:25:43 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/basalt/wall": {
+    "criteria": {
+      "has_item": "2026-11-28 19:36:50 +0700"
     },
     "done": true
   },
