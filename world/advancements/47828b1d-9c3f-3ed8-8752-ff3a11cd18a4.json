@@ -11645,5 +11645,209 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/acacia_table": {
+    "criteria": {
+      "has_acacia_table": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/acacia_cupboard": {
+    "criteria": {
+      "has_acacia_cupboard": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/acacia_desk": {
+    "criteria": {
+      "has_acacia_desk": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/acacia_stairs": {
+    "criteria": {
+      "has_planks": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/cook_stool_acacia": {
+    "criteria": {
+      "has_wood": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/acacia_fancy_bed": {
+    "criteria": {
+      "has_acacia_fancy_bed": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/acacia_dining_bench": {
+    "criteria": {
+      "has_acacia_dining_bench": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/acacia_sign": {
+    "criteria": {
+      "has_planks": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/acacia_pillar_trim": {
+    "criteria": {
+      "has_acacia_pillar_trim": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/ladder_from_acacia_planks_woodcutting": {
+    "criteria": {
+      "has_acacia_planks": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/acacia_wine_rack_big": {
+    "criteria": {
+      "has_acacia_planks": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/acacia_pressure_plate": {
+    "criteria": {
+      "has_planks": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bowl_from_acacia_planks_woodcutting": {
+    "criteria": {
+      "has_acacia_planks": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/acacia_slab": {
+    "criteria": {
+      "has_planks": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/acacia_fence_from_acacia_planks_woodcutting": {
+    "criteria": {
+      "has_acacia_planks": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/acacia_fence": {
+    "criteria": {
+      "has_planks": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/acacia_button": {
+    "criteria": {
+      "has_planks": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/acacia_shelf": {
+    "criteria": {
+      "has_acacia_shelf": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/acacia_wine_rack_small": {
+    "criteria": {
+      "has_acacia_planks": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/acacia_stairs_from_acacia_planks_woodcutting": {
+    "criteria": {
+      "has_acacia_planks": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/acacia_chair": {
+    "criteria": {
+      "has_acacia_chair": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/acacia_door": {
+    "criteria": {
+      "has_planks": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/acacia_corner_trim": {
+    "criteria": {
+      "has_acacia_corner_trim": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/acacia_couch": {
+    "criteria": {
+      "has_acacia_couch": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/acacia_bench": {
+    "criteria": {
+      "has_acacia_bench": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/acacia_drawer": {
+    "criteria": {
+      "has_acacia_drawer": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/acacia_trapdoor": {
+    "criteria": {
+      "has_planks": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/acacia_side_table": {
+    "criteria": {
+      "has_acacia_side_table": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stick_from_acacia_planks_woodcutting": {
+    "criteria": {
+      "has_acacia_planks": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/acacia_nightstand": {
+    "criteria": {
+      "has_acacia_nightstand": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/acacia_fence_gate": {
+    "criteria": {
+      "has_planks": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/acacia_counter": {
+    "criteria": {
+      "has_acacia_counter": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/acacia_button_from_acacia_planks_woodcutting": {
+    "criteria": {
+      "has_acacia_planks": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/acacia_slab_from_acacia_planks_woodcutting": {
+    "criteria": {
+      "has_acacia_planks": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }

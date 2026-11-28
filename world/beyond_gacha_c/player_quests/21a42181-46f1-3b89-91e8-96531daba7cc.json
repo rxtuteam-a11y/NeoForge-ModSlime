@@ -1,6 +1,8 @@
 {
   "mxp": 0,
-  "completed": [],
+  "completed": [
+    "trbeyond:daily_day_5_cattledeer_3"
+  ],
   "repeatable_timers": {},
   "active": [
     {
@@ -166,7 +168,7 @@
     {
       "questId": "trbeyond:daily_day_5_cattledeer_3",
       "progress": {
-        "kill_cattledeer_5_3": 6
+        "kill_cattledeer_5_3": 9
       }
     }
   ]
