@@ -11875,5 +11875,11 @@
     },
     "done": true
   },
+  "friendsandfoes:adventure/activate_zombie_horse_trap": {
+    "criteria": {
+      "friendsandfoes:activate_zombie_horse_trap": "2026-11-28 20:04:02 +0700"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }
