@@ -53,6 +53,7 @@
       "muddy_river": "2026-11-24 04:12:52 +0700",
       "autumnal_maple_forest": "2026-11-24 04:15:49 +0700",
       "prismachasm": "2026-11-24 20:06:39 +0700",
+      "ancient_delta": "2026-11-28 16:52:42 +0700",
       "marsh": "2026-11-23 14:04:02 +0700",
       "willow_forest": "2026-11-23 14:04:03 +0700",
       "rocky_reef": "2026-11-24 03:33:18 +0700",
@@ -6657,6 +6658,7 @@
     "criteria": {
       "redstone_caves": "2026-11-24 11:13:59 +0700",
       "prismachasm": "2026-11-24 20:06:39 +0700",
+      "ancient_delta": "2026-11-28 16:52:42 +0700",
       "inferno": "2026-11-25 13:46:48 +0700"
     },
     "done": false
@@ -11832,6 +11834,18 @@
     },
     "done": true
   },
+  "tensura:recipes/food/cooked_charybdis_meat_from_campfire_cooking": {
+    "criteria": {
+      "has_raw_charybdis_meat": "2026-11-28 16:50:15 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/snow": {
+    "criteria": {
+      "has_snowball": "2026-11-28 16:57:39 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/pink_stained_glass": {
     "criteria": {
       "has_glass": "2026-11-28 16:02:44 +0700"
@@ -11853,6 +11867,12 @@
   "minecraft:recipes/building_blocks/cyan_stained_glass": {
     "criteria": {
       "has_glass": "2026-11-28 16:02:44 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_charybdis_meat_from_smelting": {
+    "criteria": {
+      "has_raw_charybdis_meat": "2026-11-28 16:50:15 +0700"
     },
     "done": true
   },
@@ -11880,6 +11900,12 @@
     },
     "done": true
   },
+  "tensura:recipes/food/cooked_charybdis_meat_from_smoking": {
+    "criteria": {
+      "has_raw_charybdis_meat": "2026-11-28 16:50:15 +0700"
+    },
+    "done": true
+  },
   "vinery:recipes/wine_box": {
     "criteria": {
       "has_glass": "2026-11-28 16:02:44 +0700"
@@ -11895,6 +11921,12 @@
   "minecraft:husbandry/plant_seed": {
     "criteria": {
       "nether_wart": "2026-11-28 16:03:45 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/snow_block": {
+    "criteria": {
+      "has_snowball": "2026-11-28 16:57:39 +0700"
     },
     "done": true
   },

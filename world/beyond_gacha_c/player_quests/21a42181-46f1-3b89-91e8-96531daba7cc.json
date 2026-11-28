@@ -165,7 +165,9 @@
     },
     {
       "questId": "trbeyond:daily_day_5_cattledeer_3",
-      "progress": {}
+      "progress": {
+        "kill_cattledeer_5_3": 6
+      }
     }
   ]
 }

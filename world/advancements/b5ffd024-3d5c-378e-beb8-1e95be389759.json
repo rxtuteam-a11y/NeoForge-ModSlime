@@ -5,6 +5,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/sandstone_wall_from_sandstone_stonecutting": {
+    "criteria": {
+      "has_sandstone": "2026-11-28 16:57:10 +0700"
+    },
+    "done": true
+  },
   "netherexp:recipes/misc/soul_torch_from_fossil_fuel": {
     "criteria": {
       "has_item": "2026-11-28 16:42:26 +0700"
@@ -14,6 +20,12 @@
   "netherexp:recipes/misc/soul_skeleton_skull_candle": {
     "criteria": {
       "has_item": "2026-11-28 16:42:26 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cut_sandstone": {
+    "criteria": {
+      "has_sandstone": "2026-11-28 16:57:10 +0700"
     },
     "done": true
   },
@@ -32,6 +44,12 @@
   "netherexp:recipes/shroomlights/shroomlight": {
     "criteria": {
       "has_item": "2026-11-28 16:42:26 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/sandstone_corner_trim": {
+    "criteria": {
+      "has_sandstone_corner_trim": "2026-11-28 16:57:10 +0700"
     },
     "done": true
   },
@@ -71,15 +89,39 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/cut_sandstone_from_sandstone_stonecutting": {
+    "criteria": {
+      "has_sandstone": "2026-11-28 16:57:10 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/campfire": {
     "criteria": {
       "has_the_recipe": "2026-11-28 16:42:26 +0700"
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/chiseled_sandstone_from_sandstone_stonecutting": {
+    "criteria": {
+      "has_sandstone": "2026-11-28 16:57:10 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/sandstone_slab_from_sandstone_stonecutting": {
+    "criteria": {
+      "has_sandstone": "2026-11-28 16:57:10 +0700"
+    },
+    "done": true
+  },
   "netherexp:recipes/shroomlights/nightspores": {
     "criteria": {
       "has_item": "2026-11-28 16:42:26 +0700"
+    },
+    "done": true
+  },
+  "yungscavebiomes:recipes/building_blocks/layered_sandstone_from_stonecutting": {
+    "criteria": {
+      "has_sandstone": "2026-11-28 16:57:10 +0700"
     },
     "done": true
   },
@@ -128,6 +170,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/sandstone_slab": {
+    "criteria": {
+      "has_sandstone": "2026-11-28 16:57:10 +0700"
+    },
+    "done": true
+  },
   "toms_storage:unlock_redstone": {
     "criteria": {
       "inv_changed-redstone": "2026-11-28 16:42:26 +0700"
@@ -137,6 +185,12 @@
   "iceandfire:recipes/misc/blindfold": {
     "criteria": {
       "has_item": "2026-11-28 16:42:26 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/smooth_sandstone": {
+    "criteria": {
+      "has_sandstone": "2026-11-28 16:57:10 +0700"
     },
     "done": true
   },
@@ -272,9 +326,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/sandstone_stairs": {
+    "criteria": {
+      "has_sandstone": "2026-11-28 16:57:10 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/orange_concrete_powder": {
     "criteria": {
       "has_sand": "2026-11-28 16:45:16 +0700"
+    },
+    "done": true
+  },
+  "yungscavebiomes:recipes/building_blocks/layered_sandstone": {
+    "criteria": {
+      "has_sandstone": "2026-11-28 16:57:10 +0700"
     },
     "done": true
   },
@@ -287,6 +353,12 @@
   "vinery:recipes/campfire": {
     "criteria": {
       "has_coal": "2026-11-28 16:42:26 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cut_sandstone_slab_from_sandstone_stonecutting": {
+    "criteria": {
+      "has_sandstone": "2026-11-28 16:57:10 +0700"
     },
     "done": true
   },
@@ -368,6 +440,12 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/sandstone_pillar_trim": {
+    "criteria": {
+      "has_sandstone_pillar_trim": "2026-11-28 16:57:10 +0700"
+    },
+    "done": true
+  },
   "netherexp:recipes/misc/soul_magma_block": {
     "criteria": {
       "has_item2": "2026-11-28 16:42:26 +0700"
@@ -377,6 +455,12 @@
   "vinery:recipes/grapevine_lattice": {
     "criteria": {
       "has_coal": "2026-11-28 16:42:26 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/sandstone_stairs_from_sandstone_stonecutting": {
+    "criteria": {
+      "has_sandstone": "2026-11-28 16:57:10 +0700"
     },
     "done": true
   },
@@ -444,6 +528,12 @@
   "minecraft:recipes/building_blocks/gray_concrete_powder": {
     "criteria": {
       "has_sand": "2026-11-28 16:45:16 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/sandstone_wall": {
+    "criteria": {
+      "has_sandstone": "2026-11-28 16:57:10 +0700"
     },
     "done": true
   },

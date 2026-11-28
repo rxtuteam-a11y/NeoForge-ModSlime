@@ -340,6 +340,7 @@
       "minecraft:cold_ocean": "2026-11-28 16:28:36 +0700",
       "minecraft:frozen_ocean": "2026-11-28 16:10:45 +0700",
       "minecraft:frozen_river": "2026-11-28 16:32:50 +0700",
+      "minecraft:deep_frozen_ocean": "2026-11-28 16:55:38 +0700",
       "minecraft:snowy_plains": "2026-11-28 16:25:25 +0700",
       "minecraft:windswept_gravelly_hills": "2026-11-28 16:42:04 +0700",
       "minecraft:snowy_taiga": "2026-11-28 16:25:21 +0700",
@@ -1067,6 +1068,18 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/spruce_counter": {
+    "criteria": {
+      "has_spruce_counter": "2026-11-28 16:56:51 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/leather_helmet": {
+    "criteria": {
+      "has_leather": "2026-11-28 16:53:36 +0700"
+    },
+    "done": true
+  },
   "farm_and_charm:recipes/cooking_pot": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:29:22 +0700"
@@ -1085,6 +1098,18 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/medium_quality_magic_crystal_blockfrom_medium_quality_magic_crystal": {
+    "criteria": {
+      "has_medium_quality_magic_crystal": "2026-11-28 16:52:11 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_button_from_spruce_log_woodcutting": {
+    "criteria": {
+      "has_spruce_log": "2026-11-28 16:56:42 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/raw_iron_block": {
     "criteria": {
       "has_raw_iron": "2026-11-28 16:42:37 +0700"
@@ -1094,6 +1119,12 @@
   "ironchest:recipes/decorations/upgrades/wood_to_iron_chest_upgrade": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:29:22 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/dark_oak_side_table": {
+    "criteria": {
+      "has_dark_oak_side_table": "2026-11-28 16:51:28 +0700"
     },
     "done": true
   },
@@ -1112,6 +1143,18 @@
   "minecraft:recipes/combat/iron_helmet": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:29:22 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/building_blocks/dragonforge_ice_brick": {
+    "criteria": {
+      "has_item": "2026-11-28 16:51:42 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_slab_from_spruce_log_woodcutting": {
+    "criteria": {
+      "has_spruce_log": "2026-11-28 16:56:42 +0700"
     },
     "done": true
   },
@@ -1139,6 +1182,24 @@
     },
     "done": true
   },
+  "minecraft:recipes/combat/leather_chestplate": {
+    "criteria": {
+      "has_leather": "2026-11-28 16:53:36 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_table": {
+    "criteria": {
+      "has_spruce_table": "2026-11-28 16:56:51 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/building_blocks/dragonforge_fire_brick": {
+    "criteria": {
+      "has_item": "2026-11-28 16:51:42 +0700"
+    },
+    "done": true
+  },
   "ironchest:recipes/decorations/chests/copper_iron_chest": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:29:22 +0700"
@@ -1154,6 +1215,12 @@
   "minecraft:recipes/building_blocks/mossy_cobblestone_stairs_from_mossy_cobblestone_stonecutting": {
     "criteria": {
       "has_mossy_cobblestone": "2026-11-28 16:46:48 +0700"
+    },
+    "done": true
+  },
+  "minecraft:adventure/sleep_in_bed": {
+    "criteria": {
+      "slept_in_bed": "2026-11-28 16:49:13 +0700"
     },
     "done": true
   },
@@ -1175,6 +1242,24 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/dark_oak_fancy_bed": {
+    "criteria": {
+      "has_dark_oak_fancy_bed": "2026-11-28 16:51:28 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/dark_oak_table": {
+    "criteria": {
+      "has_dark_oak_table": "2026-11-28 16:51:28 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/dirt_slab": {
+    "criteria": {
+      "has_dirt": "2026-11-28 16:51:30 +0700"
+    },
+    "done": true
+  },
   "handcrafted:recipes/misc/white_sheet": {
     "criteria": {
       "has_white_sheet": "2026-11-28 16:29:33 +0700"
@@ -1187,9 +1272,45 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/leather_horse_armor": {
+    "criteria": {
+      "has_leather": "2026-11-28 16:53:36 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_dining_bench": {
+    "criteria": {
+      "has_spruce_dining_bench": "2026-11-28 16:56:52 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_oak_stairs": {
+    "criteria": {
+      "has_planks": "2026-11-28 16:51:28 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/building_blocks/mossy_stone_from_blasting_mossy_cobblestone": {
     "criteria": {
       "has_mossy_cobblestone": "2026-11-28 16:46:48 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/farmer_chest_plate": {
+    "criteria": {
+      "has_leather": "2026-11-28 16:53:36 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/name_tag_from_monster_leather": {
+    "criteria": {
+      "has_monster_leather_d": "2026-11-28 16:50:14 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/flour_from_1_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-28 16:54:04 +0700"
     },
     "done": true
   },
@@ -1205,9 +1326,27 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/flour_from_2_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-28 16:54:04 +0700"
+    },
+    "done": true
+  },
   "bakery:recipes/iron_chair": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:29:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/spruce_button": {
+    "criteria": {
+      "has_planks": "2026-11-28 16:56:52 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/dark_oak_door": {
+    "criteria": {
+      "has_planks": "2026-11-28 16:51:28 +0700"
     },
     "done": true
   },
@@ -1220,6 +1359,18 @@
   "minecraft:recipes/redstone/comparator": {
     "criteria": {
       "has_quartz": "2026-11-28 16:32:26 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/cook_stool_spruce": {
+    "criteria": {
+      "has_wood": "2026-11-28 16:56:51 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_stairs_from_spruce_log_woodcutting": {
+    "criteria": {
+      "has_spruce_log": "2026-11-28 16:56:42 +0700"
     },
     "done": true
   },
@@ -1265,15 +1416,51 @@
     },
     "done": true
   },
+  "farmersdelight:recipes/cooking/pasta_with_meatballs": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-28 16:53:36 +0700"
+    },
+    "done": true
+  },
   "lootr:1barrel": {
     "criteria": {
       "opened_barrel": "2026-11-28 16:30:19 +0700"
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/chiseled_stone_bricks_from_stone_bricks_stonecutting": {
+    "criteria": {
+      "has_stone_bricks": "2026-11-28 16:51:42 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/stone_spear": {
     "criteria": {
       "has_cobblestone": "2026-11-28 16:42:40 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/farmer_boots": {
+    "criteria": {
+      "has_leather": "2026-11-28 16:53:36 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/pouch_c": {
+    "criteria": {
+      "has_monster_leather_c": "2026-11-28 16:51:45 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/misc/pouch_d": {
+    "criteria": {
+      "has_monster_leather_d": "2026-11-28 16:50:14 +0700"
+    },
+    "done": true
+  },
+  "tensura:getcha_leathers": {
+    "criteria": {
+      "leather": "2026-11-28 16:53:36 +0700"
     },
     "done": true
   },
@@ -1286,6 +1473,12 @@
   "minecraft:recipes/building_blocks/cobblestone_slab": {
     "criteria": {
       "has_cobblestone": "2026-11-28 16:42:40 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/ladder_from_spruce_planks_woodcutting": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-28 16:56:52 +0700"
     },
     "done": true
   },
@@ -1319,6 +1512,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/stick_from_dark_oak_planks_woodcutting": {
+    "criteria": {
+      "has_dark_oak_planks": "2026-11-28 16:51:28 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/iron_ingot_from_blasting_raw_iron": {
     "criteria": {
       "has_raw_iron": "2026-11-28 16:42:37 +0700"
@@ -1334,6 +1533,12 @@
   "minecraft:recipes/transportation/pale_oak_boat": {
     "criteria": {
       "in_water": "2026-11-28 16:30:06 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/leather_boots": {
+    "criteria": {
+      "has_leather": "2026-11-28 16:53:36 +0700"
     },
     "done": true
   },
@@ -1367,6 +1572,12 @@
     },
     "done": true
   },
+  "farmersdelight:recipes/food/pie_crust": {
+    "criteria": {
+      "has_wheat": "2026-11-28 16:54:04 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:recipes/combat/iron_knife": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:29:22 +0700"
@@ -1376,6 +1587,24 @@
   "vinery:recipes/big_table": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:29:22 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_corner_trim": {
+    "criteria": {
+      "has_spruce_corner_trim": "2026-11-28 16:56:52 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/wheat_dough_from_egg": {
+    "criteria": {
+      "has_wheat": "2026-11-28 16:54:04 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_desk": {
+    "criteria": {
+      "has_spruce_desk": "2026-11-28 16:56:51 +0700"
     },
     "done": true
   },
@@ -1421,9 +1650,27 @@
     },
     "done": true
   },
+  "vinery:recipes/dark_oak_wine_rack_big": {
+    "criteria": {
+      "has_dark_oak_planks": "2026-11-28 16:51:28 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/food/cattledeer_steak_from_smoking": {
+    "criteria": {
+      "has_cattledeer_beef": "2026-11-28 16:50:14 +0700"
+    },
+    "done": true
+  },
   "minecraft:story/obtain_armor": {
     "criteria": {
       "iron_chestplate": "2026-11-28 16:31:57 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/basket": {
+    "criteria": {
+      "has_wheat": "2026-11-28 16:54:04 +0700"
     },
     "done": true
   },
@@ -1475,6 +1722,12 @@
     },
     "done": true
   },
+  "twilightforest:recipes/drying/beef_jerky": {
+    "criteria": {
+      "has_meat": "2026-11-28 16:53:36 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/stone_axe": {
     "criteria": {
       "has_cobblestone": "2026-11-28 16:42:40 +0700"
@@ -1490,6 +1743,30 @@
   "minecraft:recipes/misc/bucket": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:29:22 +0700"
+    },
+    "done": true
+  },
+  "iceandfire:recipes/building_blocks/dragonforge_lightning_brick": {
+    "criteria": {
+      "has_item": "2026-11-28 16:51:42 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/spruce_sign": {
+    "criteria": {
+      "has_planks": "2026-11-28 16:56:51 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/cook_stool_dark_oak": {
+    "criteria": {
+      "has_wood": "2026-11-28 16:51:28 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/food/raw_meatball": {
+    "criteria": {
+      "has_raw_meats": "2026-11-28 16:53:36 +0700"
     },
     "done": true
   },
@@ -1517,15 +1794,51 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/spruce_fence_from_spruce_log_woodcutting": {
+    "criteria": {
+      "has_spruce_log": "2026-11-28 16:56:42 +0700"
+    },
+    "done": true
+  },
   "block_factorys_bosses:recipes/combat/cannonball": {
     "criteria": {
       "has_item": "2026-11-28 16:29:22 +0700"
     },
     "done": true
   },
+  "handcrafted:recipes/misc/dark_oak_bench": {
+    "criteria": {
+      "has_dark_oak_bench": "2026-11-28 16:51:28 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/transportation/socotra_boat": {
     "criteria": {
       "in_water": "2026-11-28 16:30:06 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_slab_from_spruce_planks_woodcutting": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-28 16:56:52 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/ladder_from_spruce_log_woodcutting": {
+    "criteria": {
+      "has_spruce_log": "2026-11-28 16:56:42 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_wood": {
+    "criteria": {
+      "has_log": "2026-11-28 16:56:42 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bone_meal": {
+    "criteria": {
+      "has_bone": "2026-11-28 16:50:03 +0700"
     },
     "done": true
   },
@@ -1559,6 +1872,12 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/dark_oak_drawer": {
+    "criteria": {
+      "has_dark_oak_drawer": "2026-11-28 16:51:28 +0700"
+    },
+    "done": true
+  },
   "chronodawn:recipes/transportation/ancient_time_wood_boat": {
     "criteria": {
       "in_water": "2026-11-28 16:30:06 +0700"
@@ -1568,6 +1887,36 @@
   "tensura:recipes/tools/iron_sickle": {
     "criteria": {
       "has_material_for_iron_sickle": "2026-11-28 16:29:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stick_from_spruce_planks_woodcutting": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-28 16:56:51 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/decorations/farmer_leggings": {
+    "criteria": {
+      "has_leather": "2026-11-28 16:53:36 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/dark_oak_couch": {
+    "criteria": {
+      "has_dark_oak_couch": "2026-11-28 16:51:28 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/dark_oak_pressure_plate": {
+    "criteria": {
+      "has_planks": "2026-11-28 16:51:28 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/flour_from_5_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-28 16:54:04 +0700"
     },
     "done": true
   },
@@ -1589,9 +1938,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/dark_oak_slab": {
+    "criteria": {
+      "has_planks": "2026-11-28 16:51:28 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/mangrove_boat": {
     "criteria": {
       "in_water": "2026-11-28 16:30:06 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/dark_oak_chair": {
+    "criteria": {
+      "has_dark_oak_chair": "2026-11-28 16:51:28 +0700"
     },
     "done": true
   },
@@ -1613,9 +1974,21 @@
     },
     "done": true
   },
+  "tensura:getcha_better_leathers": {
+    "criteria": {
+      "monster_leathers": "2026-11-28 16:50:14 +0700"
+    },
+    "done": true
+  },
   "bakery:recipes/iron_table": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:29:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_planks_from_spruce_log_woodcutting": {
+    "criteria": {
+      "has_spruce_log": "2026-11-28 16:56:42 +0700"
     },
     "done": true
   },
@@ -1625,9 +1998,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/bowl_from_dark_oak_planks_woodcutting": {
+    "criteria": {
+      "has_dark_oak_planks": "2026-11-28 16:51:28 +0700"
+    },
+    "done": true
+  },
   "twilightforest:recipes/transportation/canopy_boat": {
     "criteria": {
       "in_water": "2026-11-28 16:30:06 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_brick_slab_from_stone_bricks_stonecutting": {
+    "criteria": {
+      "has_stone_bricks": "2026-11-28 16:51:42 +0700"
     },
     "done": true
   },
@@ -1649,15 +2034,51 @@
     },
     "done": true
   },
+  "farmersdelight:recipes/food/mixed_salad": {
+    "criteria": {
+      "has_bowl": "2026-11-28 16:52:44 +0700"
+    },
+    "done": true
+  },
   "farm_and_charm:recipes/feeding_trough": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:29:22 +0700"
     },
     "done": true
   },
+  "handcrafted:recipes/misc/dark_oak_desk": {
+    "criteria": {
+      "has_dark_oak_desk": "2026-11-28 16:51:28 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_drawer": {
+    "criteria": {
+      "has_spruce_drawer": "2026-11-28 16:56:51 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/bone_broth": {
+    "criteria": {
+      "has_bone": "2026-11-28 16:50:03 +0700"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/misc/upgrade_base": {
+    "criteria": {
+      "has_leather": "2026-11-28 16:53:36 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/transportation/baobab_boat": {
     "criteria": {
       "in_water": "2026-11-28 16:30:06 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_oak_slab_from_dark_oak_planks_woodcutting": {
+    "criteria": {
+      "has_dark_oak_planks": "2026-11-28 16:51:28 +0700"
     },
     "done": true
   },
@@ -1673,6 +2094,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/spruce_trapdoor": {
+    "criteria": {
+      "has_planks": "2026-11-28 16:56:52 +0700"
+    },
+    "done": true
+  },
   "farm_and_charm:recipes/tool_rack": {
     "criteria": {
       "has_item": "2026-11-28 16:29:22 +0700"
@@ -1685,9 +2112,33 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/spruce_fancy_bed": {
+    "criteria": {
+      "has_spruce_fancy_bed": "2026-11-28 16:56:51 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/building_blocks/stonecutting/spruce_log/hollow_spruce_log": {
+    "criteria": {
+      "has_block": "2026-11-28 16:56:42 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/iron_axe": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:29:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_spruce_log_from_spruce_log_woodcutting": {
+    "criteria": {
+      "has_spruce_log": "2026-11-28 16:56:42 +0700"
+    },
+    "done": true
+  },
+  "artifacts:amateur_archaeologist": {
+    "criteria": {
+      "find_artifact": "2026-11-28 16:49:24 +0700"
     },
     "done": true
   },
@@ -1703,9 +2154,21 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/spruce_cupboard": {
+    "criteria": {
+      "has_spruce_cupboard": "2026-11-28 16:56:52 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/rabbit_stew_from_red_mushroom": {
     "criteria": {
       "has_cooked_rabbit": "2026-11-28 16:47:19 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_oak_button_from_dark_oak_planks_woodcutting": {
+    "criteria": {
+      "has_dark_oak_planks": "2026-11-28 16:51:28 +0700"
     },
     "done": true
   },
@@ -1723,6 +2186,8 @@
   },
   "minecraft:husbandry/balanced_diet": {
     "criteria": {
+      "beetroot_soup": "2026-11-28 16:52:44 +0700",
+      "bread": "2026-11-28 16:49:30 +0700",
       "cooked_rabbit": "2026-11-28 16:47:21 +0700"
     },
     "done": false
@@ -1775,9 +2240,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/dark_oak_fence_from_dark_oak_planks_woodcutting": {
+    "criteria": {
+      "has_dark_oak_planks": "2026-11-28 16:51:28 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/fletching_table": {
     "criteria": {
       "has_flint": "2026-11-28 16:32:23 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bottles_of_low_crystal": {
+    "criteria": {
+      "has_low_crystal": "2026-11-28 16:48:45 +0700"
     },
     "done": true
   },
@@ -1811,6 +2288,18 @@
     },
     "done": true
   },
+  "vinery:recipes/spruce_wine_rack_big": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-28 16:56:52 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_brick_stairs": {
+    "criteria": {
+      "has_stone_bricks": "2026-11-28 16:51:42 +0700"
+    },
+    "done": true
+  },
   "kaleidoscope_cookery:recipes/tools/diamond_kitchen_knife": {
     "criteria": {
       "has_ingot_iron": "2026-11-28 16:29:22 +0700"
@@ -1823,6 +2312,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/spruce_fence_from_spruce_planks_woodcutting": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-28 16:56:52 +0700"
+    },
+    "done": true
+  },
   "farm_and_charm:recipes/plow": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:29:22 +0700"
@@ -1832,6 +2327,12 @@
   "minecraft:recipes/tools/shears": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:29:22 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_shelf": {
+    "criteria": {
+      "has_spruce_shelf": "2026-11-28 16:56:52 +0700"
     },
     "done": true
   },
@@ -1849,7 +2350,10 @@
   },
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
-      "minecraft:phantom": "2026-11-28 16:34:18 +0700"
+      "minecraft:phantom": "2026-11-28 16:34:18 +0700",
+      "minecraft:stray": "2026-11-28 16:50:02 +0700",
+      "minecraft:zombie": "2026-11-28 16:55:16 +0700",
+      "minecraft:creeper": "2026-11-28 16:48:43 +0700"
     },
     "done": false
   },
@@ -1862,6 +2366,12 @@
   "minecraft:recipes/building_blocks/iron_block": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:29:22 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/spruce_wine_rack_small": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-28 16:56:52 +0700"
     },
     "done": true
   },
@@ -1889,9 +2399,21 @@
     },
     "done": true
   },
+  "vinery:recipes/grapevine_pot": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-28 16:56:52 +0700"
+    },
+    "done": true
+  },
   "eternal_starlight:recipes/transportation/northland_boat": {
     "criteria": {
       "in_water": "2026-11-28 16:30:06 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/bread": {
+    "criteria": {
+      "has_wheat": "2026-11-28 16:54:04 +0700"
     },
     "done": true
   },
@@ -1907,9 +2429,27 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/hay_block": {
+    "criteria": {
+      "has_wheat": "2026-11-28 16:54:04 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/granite": {
     "criteria": {
       "has_quartz": "2026-11-28 16:32:26 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/spruce_fence": {
+    "criteria": {
+      "has_planks": "2026-11-28 16:56:51 +0700"
+    },
+    "done": true
+  },
+  "vanillabackport:recipes/combat/saddle": {
+    "criteria": {
+      "has_leather": "2026-11-28 16:53:36 +0700"
     },
     "done": true
   },
@@ -1919,9 +2459,27 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/dark_oak_nightstand": {
+    "criteria": {
+      "has_dark_oak_nightstand": "2026-11-28 16:51:28 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/transportation/cypress_boat": {
     "criteria": {
       "in_water": "2026-11-28 16:30:06 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/flour_from_7_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-28 16:54:04 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/flour_from_6_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-28 16:54:04 +0700"
     },
     "done": true
   },
@@ -1937,9 +2495,39 @@
     },
     "done": true
   },
+  "vinery:recipes/dark_cherry_shelf": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-28 16:56:51 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/mossy_cobblestone_stairs": {
     "criteria": {
       "has_mossy_cobblestone": "2026-11-28 16:46:48 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/dark_oak_shelf": {
+    "criteria": {
+      "has_dark_oak_shelf": "2026-11-28 16:51:28 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cattledeer_steak_from_smelting": {
+    "criteria": {
+      "has_cattledeer_beef": "2026-11-28 16:50:14 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/dark_oak_dining_bench": {
+    "criteria": {
+      "has_dark_oak_dining_bench": "2026-11-28 16:51:28 +0700"
+    },
+    "done": true
+  },
+  "ironchest:recipes/decorations/chests/vanilla_dirt_chest": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 16:51:30 +0700"
     },
     "done": true
   },
@@ -1949,6 +2537,18 @@
       "opened_chest": "2026-11-28 16:31:54 +0700"
     },
     "done": false
+  },
+  "sophisticatedbackpacks:recipes/misc/backpack": {
+    "criteria": {
+      "has_leather": "2026-11-28 16:53:36 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_beef_from_smoking": {
+    "criteria": {
+      "has_beef": "2026-11-28 16:53:36 +0700"
+    },
+    "done": true
   },
   "eternal_starlight:recipes/transportation/jinglestem_raft": {
     "criteria": {
@@ -1968,9 +2568,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/spruce_pressure_plate": {
+    "criteria": {
+      "has_planks": "2026-11-28 16:56:51 +0700"
+    },
+    "done": true
+  },
   "tensura:start_smithing": {
     "criteria": {
       "schematic": "2026-11-28 16:29:25 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_pillar_trim": {
+    "criteria": {
+      "has_spruce_pillar_trim": "2026-11-28 16:56:52 +0700"
     },
     "done": true
   },
@@ -1992,9 +2604,21 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/stone_bricks_magic_engine": {
+    "criteria": {
+      "has_stone_bricks": "2026-11-28 16:51:42 +0700"
+    },
+    "done": true
+  },
   "dungeons_arise:find_abandoned_temple": {
     "criteria": {
       "location0": "2026-11-28 16:42:55 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_brick_slab": {
+    "criteria": {
+      "has_stone_bricks": "2026-11-28 16:51:42 +0700"
     },
     "done": true
   },
@@ -2004,15 +2628,45 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/item_frame": {
+    "criteria": {
+      "has_leather": "2026-11-28 16:53:36 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_stairs_from_spruce_planks_woodcutting": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-28 16:56:52 +0700"
+    },
+    "done": true
+  },
   "mowziesmobs:recipes/combat/spear": {
     "criteria": {
       "has_flint": "2026-11-28 16:32:23 +0700"
     },
     "done": true
   },
+  "handcrafted:recipes/misc/dark_oak_cupboard": {
+    "criteria": {
+      "has_dark_oak_cupboard": "2026-11-28 16:51:28 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/decorations/spruce_branch_from_spruce_log": {
+    "criteria": {
+      "has_log": "2026-11-28 16:56:42 +0700"
+    },
+    "done": true
+  },
   "farm_and_charm:recipes/roaster": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:29:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bowl_from_spruce_log_woodcutting": {
+    "criteria": {
+      "has_spruce_log": "2026-11-28 16:56:42 +0700"
     },
     "done": true
   },
@@ -2031,6 +2685,12 @@
   "twilightforest:recipes/drying/monster_jerky": {
     "criteria": {
       "has_meat": "2026-11-28 16:29:47 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_oak_stairs_from_dark_oak_planks_woodcutting": {
+    "criteria": {
+      "has_dark_oak_planks": "2026-11-28 16:51:28 +0700"
     },
     "done": true
   },
@@ -2070,15 +2730,39 @@
     },
     "done": true
   },
+  "netherexp:recipes/bone_blocks/bone_pike": {
+    "criteria": {
+      "has_item": "2026-11-28 16:50:03 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/dark_oak_sign": {
+    "criteria": {
+      "has_planks": "2026-11-28 16:51:28 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/tools/stone_shovel": {
     "criteria": {
       "has_cobblestone": "2026-11-28 16:42:40 +0700"
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/low_quality_magic_crystal_blockfrom_low_quality_magic_crystal": {
+    "criteria": {
+      "has_low_quality_magic_crystal": "2026-11-28 16:48:45 +0700"
+    },
+    "done": true
+  },
   "handcrafted:recipes/misc/phantom_trophy": {
     "criteria": {
       "has_phantom_trophy": "2026-11-28 16:34:50 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_beef": {
+    "criteria": {
+      "has_beef": "2026-11-28 16:53:36 +0700"
     },
     "done": true
   },
@@ -2097,6 +2781,12 @@
   "twilightforest:recipes/transportation/twilight_oak_boat": {
     "criteria": {
       "in_water": "2026-11-28 16:30:06 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/nether_salad": {
+    "criteria": {
+      "has_bowl": "2026-11-28 16:52:44 +0700"
     },
     "done": true
   },
@@ -2124,9 +2814,39 @@
     },
     "done": true
   },
+  "minecraft:recipes/combat/leather_leggings": {
+    "criteria": {
+      "has_leather": "2026-11-28 16:53:36 +0700"
+    },
+    "done": true
+  },
   "cookingforblockheads:recipes/decorations/white_oven": {
     "criteria": {
       "has_furnace": "2026-11-28 16:47:00 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/dark_oak_corner_trim": {
+    "criteria": {
+      "has_dark_oak_corner_trim": "2026-11-28 16:51:28 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bottles_of_medium_crystal": {
+    "criteria": {
+      "has_medium_crystal": "2026-11-28 16:52:11 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/stone_brick_wall": {
+    "criteria": {
+      "has_stone_bricks": "2026-11-28 16:51:42 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/dark_oak_fence_gate": {
+    "criteria": {
+      "has_planks": "2026-11-28 16:51:28 +0700"
     },
     "done": true
   },
@@ -2136,9 +2856,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/dark_oak_trapdoor": {
+    "criteria": {
+      "has_planks": "2026-11-28 16:51:28 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/transportation/eucalyptus_boat": {
     "criteria": {
       "in_water": "2026-11-28 16:30:06 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stick_from_spruce_log_woodcutting": {
+    "criteria": {
+      "has_spruce_log": "2026-11-28 16:56:42 +0700"
     },
     "done": true
   },
@@ -2148,9 +2880,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/cracked_stone_bricks": {
+    "criteria": {
+      "has_stone_bricks": "2026-11-28 16:51:42 +0700"
+    },
+    "done": true
+  },
   "lootr:1frame": {
     "criteria": {
       "looted_frame": "2026-11-28 16:31:23 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stone_brick_stairs_from_stone_bricks_stonecutting": {
+    "criteria": {
+      "has_stone_bricks": "2026-11-28 16:51:42 +0700"
     },
     "done": true
   },
@@ -2169,6 +2913,12 @@
   "minecraft:recipes/misc/bowl": {
     "criteria": {
       "has_mushroom_stew": "2026-11-28 16:31:23 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/dark_oak_wine_rack_small": {
+    "criteria": {
+      "has_dark_oak_planks": "2026-11-28 16:51:28 +0700"
     },
     "done": true
   },
@@ -2196,9 +2946,39 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/ladder_from_dark_oak_planks_woodcutting": {
+    "criteria": {
+      "has_dark_oak_planks": "2026-11-28 16:51:28 +0700"
+    },
+    "done": true
+  },
+  "netherexp:recipes/bone_blocks/bone_fence": {
+    "criteria": {
+      "has_item": "2026-11-28 16:50:03 +0700"
+    },
+    "done": true
+  },
   "chronodawn:recipes/transportation/time_wood_boat": {
     "criteria": {
       "in_water": "2026-11-28 16:30:06 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/dark_oak_counter": {
+    "criteria": {
+      "has_dark_oak_counter": "2026-11-28 16:51:28 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_stone_bricks": {
+    "criteria": {
+      "has_tag": "2026-11-28 16:51:42 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/dark_oak_button": {
+    "criteria": {
+      "has_planks": "2026-11-28 16:51:28 +0700"
     },
     "done": true
   },
@@ -2211,6 +2991,12 @@
   "twilightforest:recipes/transportation/transformation_boat": {
     "criteria": {
       "in_water": "2026-11-28 16:30:06 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/saddle_crafting": {
+    "criteria": {
+      "has_monster_leather_d": "2026-11-28 16:50:14 +0700"
     },
     "done": true
   },
@@ -2250,6 +3036,18 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/spruce_couch": {
+    "criteria": {
+      "has_spruce_couch": "2026-11-28 16:56:52 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bowl_from_spruce_planks_woodcutting": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-28 16:56:52 +0700"
+    },
+    "done": true
+  },
   "minecraft:husbandry/root": {
     "criteria": {
       "consumed_item": "2026-11-28 16:29:25 +0700"
@@ -2259,6 +3057,12 @@
   "minecraft:recipes/transportation/birch_boat": {
     "criteria": {
       "in_water": "2026-11-28 16:30:06 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/flour_from_8_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-28 16:54:04 +0700"
     },
     "done": true
   },
@@ -2274,6 +3078,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/stone_brick_wall_from_stone_bricks_stonecutting": {
+    "criteria": {
+      "has_stone_bricks": "2026-11-28 16:51:42 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_slab": {
+    "criteria": {
+      "has_planks": "2026-11-28 16:56:52 +0700"
+    },
+    "done": true
+  },
   "vanillabackport:recipes/decorations/lodestone": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 16:29:22 +0700"
@@ -2283,6 +3099,24 @@
   "kaleidoscope_cookery:recipes/decorations/stockpot": {
     "criteria": {
       "has_ingot_iron": "2026-11-28 16:29:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/flour_from_4_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-28 16:54:04 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/dark_oak_fence": {
+    "criteria": {
+      "has_planks": "2026-11-28 16:51:28 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/flour_from_3_wheat": {
+    "criteria": {
+      "has_wheat": "2026-11-28 16:54:04 +0700"
     },
     "done": true
   },
@@ -2298,9 +3132,27 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/spruce_planks": {
+    "criteria": {
+      "has_logs": "2026-11-28 16:56:42 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_nightstand": {
+    "criteria": {
+      "has_spruce_nightstand": "2026-11-28 16:56:52 +0700"
+    },
+    "done": true
+  },
   "chronodawn:recipes/transportation/dark_time_wood_boat": {
     "criteria": {
       "in_water": "2026-11-28 16:30:06 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_bench": {
+    "criteria": {
+      "has_spruce_bench": "2026-11-28 16:56:51 +0700"
     },
     "done": true
   },
@@ -2322,6 +3174,18 @@
     },
     "done": true
   },
+  "farmersdelight:recipes/cooking/beef_stew": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-28 16:53:36 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/straw_hat": {
+    "criteria": {
+      "has_wheat": "2026-11-28 16:54:04 +0700"
+    },
+    "done": true
+  },
   "twilightforest:recipes/transportation/dark_boat": {
     "criteria": {
       "in_water": "2026-11-28 16:30:06 +0700"
@@ -2334,9 +3198,27 @@
     },
     "done": true
   },
+  "lootr:10loot": {
+    "criteria": {
+      "opened_10": "2026-11-28 16:49:18 +0700"
+    },
+    "done": true
+  },
   "handcrafted:recipes/misc/bench": {
     "criteria": {
       "has_bench": "2026-11-28 16:29:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_button_from_spruce_planks_woodcutting": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-28 16:56:51 +0700"
+    },
+    "done": true
+  },
+  "netherexp:nether/overkill": {
+    "criteria": {
+      "overkill": "2026-11-28 16:57:59 +0700"
     },
     "done": true
   },
@@ -2346,15 +3228,51 @@
     },
     "done": true
   },
+  "farmersdelight:main/eat_nourishing_food": {
+    "criteria": {
+      "nourishment": "2026-11-28 16:52:44 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/food/cattledeer_steak_from_campfire_cooking": {
+    "criteria": {
+      "has_cattledeer_beef": "2026-11-28 16:50:14 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/spruce_door": {
+    "criteria": {
+      "has_planks": "2026-11-28 16:56:52 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/spruce_fence_gate": {
+    "criteria": {
+      "has_planks": "2026-11-28 16:56:51 +0700"
+    },
+    "done": true
+  },
   "kaleidoscope_cookery:recipes/redstone/pot": {
     "criteria": {
       "has_ingot_iron": "2026-11-28 16:29:22 +0700"
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/stripped_spruce_wood_from_spruce_log_woodcutting": {
+    "criteria": {
+      "has_spruce_log": "2026-11-28 16:56:42 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/iron_nugget_from_blasting": {
     "criteria": {
       "has_iron_chestplate": "2026-11-28 16:31:57 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_chair": {
+    "criteria": {
+      "has_spruce_chair": "2026-11-28 16:56:51 +0700"
     },
     "done": true
   },
@@ -2391,6 +3309,30 @@
   "regions_unexplored:recipes/transportation/willow_boat": {
     "criteria": {
       "in_water": "2026-11-28 16:30:06 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/spruce_stairs": {
+    "criteria": {
+      "has_planks": "2026-11-28 16:56:51 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/spruce_side_table": {
+    "criteria": {
+      "has_spruce_side_table": "2026-11-28 16:56:52 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/dark_oak_pillar_trim": {
+    "criteria": {
+      "has_dark_oak_pillar_trim": "2026-11-28 16:51:28 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_beef_from_campfire_cooking": {
+    "criteria": {
+      "has_beef": "2026-11-28 16:53:36 +0700"
     },
     "done": true
   },
