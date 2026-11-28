@@ -1,0 +1,14 @@
+{
+	version: 1
+	uuid: "21a4218146f13b8991e896531daba7cc"
+	name: "KazutoSama#21a42181"
+	lock: false
+	rewards_blocked: false
+	task_progress: { }
+	started: { }
+	completed: { }
+	repeatable: { }
+	completion_count: { }
+	claimed_rewards: { }
+	player_data: { }
+}
