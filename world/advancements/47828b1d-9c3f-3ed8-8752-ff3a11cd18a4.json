@@ -11653,12 +11653,6 @@
     },
     "done": true
   },
-  "handcrafted:recipes/misc/dripstone_pillar_trim": {
-    "criteria": {
-      "has_dripstone_pillar_trim": "2026-11-28 18:19:13 +0700"
-    },
-    "done": true
-  },
   "handcrafted:recipes/misc/acacia_cupboard": {
     "criteria": {
       "has_acacia_cupboard": "2026-11-28 17:06:32 +0700"
@@ -11743,12 +11737,6 @@
     },
     "done": true
   },
-  "handcrafted:recipes/misc/dripstone_corner_trim": {
-    "criteria": {
-      "has_dripstone_corner_trim": "2026-11-28 18:19:13 +0700"
-    },
-    "done": true
-  },
   "minecraft:recipes/decorations/acacia_fence": {
     "criteria": {
       "has_planks": "2026-11-28 17:06:32 +0700"
@@ -11760,12 +11748,6 @@
       "has_planks": "2026-11-28 17:06:32 +0700"
     },
     "done": true
-  },
-  "tensura:unholy_tourism": {
-    "criteria": {
-      "underworld_sands": "2026-11-28 17:17:12 +0700"
-    },
-    "done": false
   },
   "handcrafted:recipes/misc/acacia_shelf": {
     "criteria": {
@@ -11863,15 +11845,33 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/acacia_slab_from_acacia_planks_woodcutting": {
+    "criteria": {
+      "has_acacia_planks": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
   "tensura:hell": {
     "criteria": {
       "hell": "2026-11-28 17:17:11 +0700"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/acacia_slab_from_acacia_planks_woodcutting": {
+  "tensura:unholy_tourism": {
     "criteria": {
-      "has_acacia_planks": "2026-11-28 17:06:32 +0700"
+      "underworld_sands": "2026-11-28 17:17:12 +0700"
+    },
+    "done": false
+  },
+  "handcrafted:recipes/misc/dripstone_pillar_trim": {
+    "criteria": {
+      "has_dripstone_pillar_trim": "2026-11-28 18:19:13 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/dripstone_corner_trim": {
+    "criteria": {
+      "has_dripstone_corner_trim": "2026-11-28 18:19:13 +0700"
     },
     "done": true
   },

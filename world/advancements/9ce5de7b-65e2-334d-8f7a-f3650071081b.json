@@ -11931,9 +11931,9 @@
     },
     "done": true
   },
-  "tensura:build_body": {
+  "tensura:hell": {
     "criteria": {
-      "golems": "2026-11-28 17:30:03 +0700"
+      "hell": "2026-11-28 17:17:13 +0700"
     },
     "done": true
   },
@@ -11943,21 +11943,21 @@
     },
     "done": false
   },
-  "vinery:recipes/coarse_dirt_slab": {
-    "criteria": {
-      "has_coarse_dirt": "2026-11-28 17:35:38 +0700"
-    },
-    "done": true
-  },
   "tensura:recipes/misc/high_magisteel_bone_golem": {
     "criteria": {
       "has_daemon_core": "2026-11-28 17:28:08 +0700"
     },
     "done": true
   },
-  "tensura:hell": {
+  "tensura:build_body": {
     "criteria": {
-      "hell": "2026-11-28 17:17:13 +0700"
+      "golems": "2026-11-28 17:30:03 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/coarse_dirt_slab": {
+    "criteria": {
+      "has_coarse_dirt": "2026-11-28 17:35:38 +0700"
     },
     "done": true
   },

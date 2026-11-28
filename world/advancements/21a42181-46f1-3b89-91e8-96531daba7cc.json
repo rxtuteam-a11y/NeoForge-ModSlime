@@ -1942,6 +1942,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/lapis_lazuli_from_blasting_deepslate_lapis_ore": {
+    "criteria": {
+      "has_deepslate_lapis_ore": "2026-11-28 18:27:20 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/firework_rocket_simple": {
     "criteria": {
       "has_gunpowder": "2026-11-28 16:32:16 +0700"
@@ -2167,6 +2173,12 @@
   "twilightforest:recipes/drying/beef_jerky": {
     "criteria": {
       "has_meat": "2026-11-28 16:53:36 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_nugget_from_smelting": {
+    "criteria": {
+      "has_golden_helmet": "2026-11-28 18:25:18 +0700"
     },
     "done": true
   },
@@ -2977,6 +2989,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/lapis_lazuli_from_smelting_deepslate_lapis_ore": {
+    "criteria": {
+      "has_deepslate_lapis_ore": "2026-11-28 18:27:20 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/fletching_table": {
     "criteria": {
       "has_flint": "2026-11-28 16:32:23 +0700"
@@ -2998,6 +3016,12 @@
   "minecraft:recipes/tools/golden_pickaxe": {
     "criteria": {
       "has_gold_ingot": "2026-11-28 17:25:43 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/lapis_block": {
+    "criteria": {
+      "has_lapis_lazuli": "2026-11-28 18:27:33 +0700"
     },
     "done": true
   },
@@ -3112,6 +3136,12 @@
   "kaleidoscope_cookery:recipes/tools/diamond_kitchen_knife": {
     "criteria": {
       "has_ingot_iron": "2026-11-28 16:29:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_nugget_from_blasting": {
+    "criteria": {
+      "has_golden_helmet": "2026-11-28 18:25:18 +0700"
     },
     "done": true
   },
@@ -3526,6 +3556,12 @@
   "minecraft:recipes/misc/leather": {
     "criteria": {
       "has_rabbit_hide": "2026-11-28 16:46:09 +0700"
+    },
+    "done": true
+  },
+  "enhanced_ore_variety:recipes/misc/lapis_lazuli_from_smelting": {
+    "criteria": {
+      "TagKey[minecraft:item / minecraft:lapis_ores]": "2026-11-28 18:27:20 +0700"
     },
     "done": true
   },
@@ -4003,6 +4039,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/blue_dye": {
+    "criteria": {
+      "has_lapis_lazuli": "2026-11-28 18:27:33 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/decorations/hanging_prismarite": {
     "criteria": {
       "has_prismarite": "2026-11-28 17:16:57 +0700"
@@ -4252,6 +4294,12 @@
   "minecraft:recipes/building_blocks/polished_andesite_slab_from_andesite_stonecutting": {
     "criteria": {
       "has_andesite": "2026-11-28 17:48:36 +0700"
+    },
+    "done": true
+  },
+  "minecraft:story/enchant_item": {
+    "criteria": {
+      "enchanted_item": "2026-11-28 18:27:59 +0700"
     },
     "done": true
   },
@@ -4516,6 +4564,12 @@
   "vinery:recipes/straw_hat": {
     "criteria": {
       "has_wheat": "2026-11-28 16:54:04 +0700"
+    },
+    "done": true
+  },
+  "enhanced_ore_variety:recipes/misc/lapis_lazuli_from_blasting": {
+    "criteria": {
+      "TagKey[minecraft:item / minecraft:lapis_ores]": "2026-11-28 18:27:20 +0700"
     },
     "done": true
   },
