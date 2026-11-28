@@ -5,201 +5,316 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ModSlime Server</title>
 <meta name="description" content="Bật/tắt server NeoForge ModSlime, xem log và gõ lệnh ngay trên trình duyệt.">
+<meta name="theme-color" content="#0a0f0c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2372e07a'/%3E%3Crect x='17' y='24' width='9' height='9' rx='2' fill='%230a120d'/%3E%3Crect x='38' y='24' width='9' height='9' rx='2' fill='%230a120d'/%3E%3Crect x='26' y='41' width='12' height='5' rx='2' fill='%230a120d'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Chakra+Petch:wght@500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#0d1210; --bg2:#121a16; --card:#16201b; --card2:#1b2721; --line:#26362e;
-  --text:#e6efe9; --muted:#8fa69a; --faint:#5d7268;
-  --slime:#6fdc6f; --slime-d:#3fa84a; --slime-glow:rgba(111,220,111,.22);
-  --amber:#f2c14e; --red:#ff6b6b; --cyan:#6cc8e8; --violet:#b9a3ff;
-  --radius:14px; --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+  --bg:#080c0a; --bg2:#0d1310; --card:#111a15; --card2:#16221c; --line:#213029; --line2:#2c4136;
+  --text:#e8f1eb; --muted:#93a99c; --faint:#5f7469;
+  --slime:#72e07a; --slime-d:#3fae4f; --slime-glow:rgba(114,224,122,.28);
+  --amber:#f4c552; --red:#ff6f66; --cyan:#6fcbe9; --violet:#b9a6ff;
+  --radius:18px; --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
   --head:"Chakra Petch","Be Vietnam Pro",sans-serif;
+  --accent:var(--faint);
 }
 *{box-sizing:border-box}
 html,body{margin:0}
-body{background:radial-gradient(1200px 600px at 85% -10%,#1a2b21 0,transparent 60%),var(--bg);color:var(--text);
-  font:15px/1.5 "Be Vietnam Pro",system-ui,sans-serif;min-height:100vh}
-a{color:var(--slime)}
+body{color:var(--text);font:15px/1.55 "Be Vietnam Pro",system-ui,sans-serif;min-height:100vh;
+  background:
+    radial-gradient(900px 520px at 100% -8%,rgba(63,174,79,.16),transparent 62%),
+    radial-gradient(700px 460px at -10% 110%,rgba(111,203,233,.07),transparent 60%),
+    var(--bg);
+  background-attachment:fixed}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.35;z-index:0;
+  background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+  background-size:32px 32px;mask-image:radial-gradient(ellipse at 50% 0,#000 0,transparent 75%)}
+a{color:var(--slime);text-underline-offset:3px}
 button{font:inherit;cursor:pointer}
-.wrap{max-width:1180px;margin:0 auto;padding:20px 16px 48px}
-header{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:18px}
-.logo{width:44px;height:44px;border-radius:12px;background:linear-gradient(145deg,var(--slime),var(--slime-d));
-  box-shadow:0 0 0 3px #0b0f0d inset,0 6px 22px var(--slime-glow);display:grid;place-items:center}
-.logo i{width:10px;height:10px;background:#0b0f0d;border-radius:2px;display:inline-block;margin:0 3px}
-h1{font-family:var(--head);font-size:24px;letter-spacing:.5px;margin:0;line-height:1.1}
+svg.ic{width:18px;height:18px;flex:none;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.wrap{position:relative;z-index:1;max-width:1240px;margin:0 auto;padding:18px 16px 56px}
+
+/* ---------- Header ---------- */
+header{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:18px;padding:10px 12px;
+  background:rgba(13,19,16,.7);border:1px solid var(--line);border-radius:16px;backdrop-filter:blur(10px);position:sticky;top:10px;z-index:5}
+.logo{width:42px;height:42px;border-radius:13px;background:linear-gradient(150deg,#9af29f,var(--slime) 45%,var(--slime-d));
+  box-shadow:0 0 0 1px rgba(255,255,255,.18) inset,0 8px 24px var(--slime-glow);display:grid;place-items:center;position:relative;
+  animation:wobble 4s ease-in-out infinite}
+.logo i{position:absolute;top:13px;width:7px;height:7px;background:#08110b;border-radius:2px}
+.logo i:first-child{left:11px} .logo i:nth-child(2){right:11px}
+.logo b{position:absolute;bottom:11px;left:50%;width:10px;height:4px;margin-left:-5px;background:#08110b;border-radius:2px}
+@keyframes wobble{0%,100%{transform:scale(1,1)}50%{transform:scale(1.05,.95) translateY(1px)}}
+h1{font-family:var(--head);font-size:21px;letter-spacing:.6px;margin:0;line-height:1.1}
 h1 small{display:block;font:500 12.5px "Be Vietnam Pro";color:var(--muted);letter-spacing:0;margin-top:3px}
 .grow{flex:1}
-.pill{display:inline-flex;align-items:center;gap:8px;padding:7px 13px;border-radius:999px;background:var(--card);
-  border:1px solid var(--line);font-weight:600;font-size:13.5px;white-space:nowrap}
-.dot{width:9px;height:9px;border-radius:50%;background:var(--faint)}
-.st-online .dot{background:var(--slime);box-shadow:0 0 10px var(--slime)}
+.pill{display:inline-flex;align-items:center;gap:9px;padding:8px 14px;border-radius:999px;background:var(--card);
+  border:1px solid var(--line);font-weight:600;font-size:13.5px;white-space:nowrap;max-width:100%;overflow:hidden;text-overflow:ellipsis;transition:border-color .3s}
+.pill #stateText{overflow:hidden;text-overflow:ellipsis}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--faint);flex:none}
+.st-online{border-color:rgba(114,224,122,.45)} .st-online .dot{background:var(--slime);box-shadow:0 0 0 4px rgba(114,224,122,.15),0 0 12px var(--slime)}
 .st-booting .dot,.st-queued .dot,.st-stopping .dot{background:var(--amber);animation:pulse 1.1s infinite}
-.st-error .dot{background:var(--red)}
+.st-booting,.st-queued,.st-stopping{border-color:rgba(244,197,82,.4)}
+.st-error{border-color:rgba(255,111,102,.45)} .st-error .dot{background:var(--red)}
 @keyframes pulse{50%{opacity:.3}}
-.iconbtn{background:var(--card);border:1px solid var(--line);color:var(--text);border-radius:10px;padding:7px 12px;
-  transition:border-color .15s,background .15s}
+.iconbtn{display:inline-flex;align-items:center;gap:7px;background:var(--card);border:1px solid var(--line);color:var(--text);
+  border-radius:12px;padding:8px 13px;font-weight:600;font-size:14px;transition:border-color .15s,background .15s,transform .15s}
 .iconbtn:hover{border-color:var(--slime-d);background:var(--card2)}
+.iconbtn:hover svg{transform:rotate(45deg)} .iconbtn svg{transition:transform .3s}
 
-.grid{display:grid;grid-template-columns:340px 1fr;gap:16px}
-@media (max-width:900px){.grid{grid-template-columns:1fr}}
-.card{background:linear-gradient(180deg,var(--card),var(--bg2));border:1px solid var(--line);border-radius:var(--radius);padding:16px;
-  animation:rise .35s ease both}
-@keyframes rise{from{opacity:0;transform:translateY(6px)}}
-.card h2{font-family:var(--head);font-size:15px;text-transform:uppercase;letter-spacing:1.2px;color:var(--muted);margin:0 0 12px;
-  display:flex;align-items:center;gap:8px}
+/* ---------- Cards ---------- */
+.card{position:relative;background:linear-gradient(180deg,rgba(22,34,28,.92),rgba(13,19,16,.92));border:1px solid var(--line);
+  border-radius:var(--radius);padding:18px;animation:rise .45s cubic-bezier(.2,.7,.3,1) both;min-width:0}
+.card h2{font-family:var(--head);font-size:13px;text-transform:uppercase;letter-spacing:1.6px;color:var(--muted);margin:0 0 14px;
+  display:flex;align-items:center;gap:9px}
+.card h2 svg{color:var(--slime)}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}}
 .col{display:flex;flex-direction:column;gap:16px;min-width:0}
 
-.power{width:100%;border:0;border-radius:12px;padding:16px;font:700 18px var(--head);letter-spacing:1px;color:#0b120d;
-  background:linear-gradient(180deg,var(--slime),var(--slime-d));box-shadow:0 8px 26px var(--slime-glow);transition:transform .1s,filter .15s}
-.power:hover{filter:brightness(1.07)} .power:active{transform:translateY(1px)}
-.power.stop{background:linear-gradient(180deg,#ff8a7a,#d9473e);box-shadow:0 8px 26px rgba(255,107,107,.2);color:#1a0806}
-.power:disabled{filter:grayscale(.8) brightness(.6);cursor:not-allowed}
+/* Hero */
+.hero{display:grid;grid-template-columns:1.15fr 1fr;gap:18px;padding:22px;overflow:hidden;margin-bottom:16px;
+  border-color:var(--line2);background:
+    radial-gradient(600px 240px at 0 0,color-mix(in srgb,var(--accent) 16%,transparent),transparent 70%),
+    linear-gradient(180deg,rgba(22,34,28,.95),rgba(13,19,16,.95))}
+.hero::after{content:"";position:absolute;inset:0 0 auto 0;height:2px;background:linear-gradient(90deg,transparent,var(--accent),transparent);opacity:.8}
+body[data-state=online]{--accent:var(--slime)}
+body[data-state=booting],body[data-state=queued],body[data-state=stopping]{--accent:var(--amber)}
+body[data-state=error]{--accent:var(--red)}
+.hero-l,.hero-r{min-width:0;display:flex;flex-direction:column;gap:12px}
+.hero-r{border-left:1px solid var(--line);padding-left:18px}
+.kicker{font:600 12px var(--head);letter-spacing:1.8px;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:8px}
+.big-state{font:700 26px/1.15 var(--head);letter-spacing:.3px;margin:0}
+.power{width:100%;border:0;border-radius:14px;padding:17px 18px;font:700 18px var(--head);letter-spacing:1.2px;color:#07110a;
+  background:linear-gradient(180deg,#8bee92,var(--slime-d));box-shadow:0 10px 30px var(--slime-glow),0 0 0 1px rgba(255,255,255,.15) inset;
+  transition:transform .12s,filter .15s,box-shadow .2s;position:relative;overflow:hidden}
+.power::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.28) 50%,transparent 70%);
+  transform:translateX(-120%);transition:transform .7s}
+.power:hover:not(:disabled)::after{transform:translateX(120%)}
+.power:hover{filter:brightness(1.06)} .power:active{transform:translateY(1px) scale(.995)}
+.power.stop{background:linear-gradient(180deg,#ff9488,#d4443b);box-shadow:0 10px 30px rgba(255,111,102,.22),0 0 0 1px rgba(255,255,255,.15) inset;color:#1c0806}
+.power:disabled{filter:grayscale(.7) brightness(.62);cursor:not-allowed}
 .row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 .sub{color:var(--muted);font-size:13px}
-.hint{color:var(--faint);font-size:12.5px;margin-top:8px}
-select,input[type=text],input[type=password],input[type=url]{background:#0e1512;border:1px solid var(--line);color:var(--text);
-  border-radius:10px;padding:9px 11px;font:inherit;width:100%;outline:none;transition:border-color .15s}
-select:focus,input:focus{border-color:var(--slime-d)}
-label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
-.btn{background:var(--card2);border:1px solid var(--line);color:var(--text);border-radius:10px;padding:9px 13px;font-weight:600;font-size:14px;
-  transition:border-color .15s,background .15s,opacity .15s}
-.btn:hover{border-color:var(--slime-d)} .btn:disabled{opacity:.45;cursor:not-allowed}
+.hint{color:var(--faint);font-size:12.8px;margin-top:2px}
+.hint b{color:var(--muted)}
+select,input[type=text],input[type=password],input[type=url],textarea{background:#0a110d;border:1px solid var(--line);color:var(--text);
+  border-radius:11px;padding:10px 12px;font:inherit;width:100%;outline:none;transition:border-color .15s,box-shadow .15s}
+select:focus,input:focus,textarea:focus{border-color:var(--slime-d);box-shadow:0 0 0 3px rgba(63,174,79,.18)}
+input:disabled{opacity:.55}
+label{font-size:13px;color:var(--muted);display:block;margin:12px 0 6px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;background:var(--card2);border:1px solid var(--line2);color:var(--text);
+  border-radius:11px;padding:9px 14px;font-weight:600;font-size:14px;transition:border-color .15s,background .15s,opacity .15s,transform .1s}
+.btn:hover:not(:disabled){border-color:var(--slime-d);background:#1a2a22} .btn:active:not(:disabled){transform:translateY(1px)}
+.btn:disabled{opacity:.42;cursor:not-allowed}
 .btn.pri{background:var(--slime-d);border-color:var(--slime-d);color:#06100a}
-.btn.danger{border-color:#5a2a2a;color:#ffb3ad}
-.btn.sm{padding:6px 10px;font-size:13px}
+.btn.pri:hover:not(:disabled){background:var(--slime);border-color:var(--slime)}
+.btn.danger{border-color:#5b2b2b;color:#ffb3ad;background:rgba(255,111,102,.06)}
+.btn.danger:hover:not(:disabled){border-color:var(--red);background:rgba(255,111,102,.12)}
+.btn.sm{padding:6px 11px;font-size:13px;border-radius:10px}
+.btn.wide{flex:1}
 
-.addr{display:flex;align-items:center;gap:8px;background:#0e1512;border:1px dashed #2f4a3b;border-radius:10px;padding:10px 12px;
-  font:600 15px var(--mono);word-break:break-all}
-.addr span{flex:1}
-.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.stat{background:#0f1613;border:1px solid var(--line);border-radius:10px;padding:10px}
-.stat b{display:block;font:600 18px var(--head)}
-.stat small{color:var(--muted);font-size:12px}
-.steps{list-style:none;margin:12px 0 0;padding:0;display:flex;flex-direction:column;gap:6px;font-size:13.5px}
-.steps li{display:flex;gap:9px;align-items:center;color:var(--muted)}
+/* Address + download */
+.addr{display:flex;align-items:center;gap:10px;background:#0a110d;border:1px dashed #33503f;border-radius:13px;padding:12px 12px 12px 14px;
+  font:600 16px var(--mono);word-break:break-all}
+.addr span{flex:1;min-width:0}
+.dl{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:13px;text-decoration:none;color:var(--text);
+  background:linear-gradient(120deg,rgba(114,224,122,.12),rgba(111,203,233,.06));border:1px solid rgba(114,224,122,.28);transition:border-color .15s,transform .15s}
+.dl:hover{border-color:var(--slime);transform:translateY(-1px)}
+.dl .ico{width:36px;height:36px;border-radius:10px;background:var(--slime-d);color:#06100a;display:grid;place-items:center;flex:none}
+.dl b{display:block;font-size:14px} .dl small{color:var(--muted);font-size:12px}
+
+/* Stepper */
+.steps{list-style:none;margin:2px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px;font-size:12.5px}
+.steps li{display:flex;gap:7px;align-items:center;color:var(--faint);background:#0a110d;border:1px solid var(--line);border-radius:999px;padding:4px 10px 4px 8px}
 .steps li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--faint);flex:none}
-.steps li.done{color:var(--text)} .steps li.done::before{background:var(--slime)}
-.steps li.run{color:var(--amber)} .steps li.run::before{background:var(--amber);animation:pulse 1s infinite}
-.steps li.fail{color:var(--red)} .steps li.fail::before{background:var(--red)}
+.steps li.done{color:var(--text);border-color:rgba(114,224,122,.25)} .steps li.done::before{background:var(--slime)}
+.steps li.run{color:var(--amber);border-color:rgba(244,197,82,.4)} .steps li.run::before{background:var(--amber);animation:pulse 1s infinite}
+.steps li.fail{color:var(--red);border-color:rgba(255,111,102,.4)} .steps li.fail::before{background:var(--red)}
 
-.console{display:flex;flex-direction:column;min-height:560px;padding:0;overflow:hidden}
-.console .bar{display:flex;align-items:center;gap:8px;padding:12px 14px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+/* Stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
+.stat{display:flex;align-items:center;gap:12px;background:linear-gradient(180deg,rgba(22,34,28,.9),rgba(13,19,16,.9));border:1px solid var(--line);
+  border-radius:16px;padding:14px;animation:rise .45s .05s both;min-width:0}
+.stat .si{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;flex:none;background:rgba(114,224,122,.1);color:var(--slime)}
+.stat:nth-child(2) .si{background:rgba(111,203,233,.1);color:var(--cyan)}
+.stat:nth-child(3) .si{background:rgba(185,166,255,.1);color:var(--violet)}
+.stat:nth-child(4) .si{background:rgba(244,197,82,.1);color:var(--amber)}
+.stat b{display:block;font:600 19px/1.2 var(--head);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.stat small{color:var(--muted);font-size:12px}
+.stat>div{min-width:0}
+.players{display:flex;flex-wrap:wrap;gap:6px}
+.players:empty{display:none}
+.players span{display:inline-flex;align-items:center;gap:6px;background:#0a110d;border:1px solid var(--line);padding:4px 10px;border-radius:999px;font-size:13px}
+.players span::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--slime);box-shadow:0 0 8px var(--slime)}
+
+/* Main grid */
+.grid{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:16px;align-items:start}
+.console{display:flex;flex-direction:column;padding:0;overflow:hidden}
+.console .bar{display:flex;align-items:center;gap:10px;padding:12px 14px;border-bottom:1px solid var(--line);flex-wrap:wrap;background:rgba(10,17,13,.6)}
 .console .bar h2{margin:0}
-#log{flex:1;overflow:auto;margin:0;padding:12px 14px;font:12.5px/1.55 var(--mono);background:#0a0f0c;white-space:pre-wrap;
-  word-break:break-word;min-height:380px;max-height:62vh}
+.lights{display:flex;gap:6px;margin-right:4px} .lights i{width:10px;height:10px;border-radius:50%;background:#2a3a31}
+.lights i:nth-child(1){background:#ff6f66aa} .lights i:nth-child(2){background:#f4c552aa} .lights i:nth-child(3){background:#72e07aaa}
+.toggle{display:flex!important;gap:7px;align-items:center;margin:0!important;cursor:pointer;user-select:none}
+.toggle input{accent-color:var(--slime-d);width:15px;height:15px}
+#log{flex:1;overflow:auto;margin:0;padding:14px 16px;font:12.5px/1.6 var(--mono);background:#060a08;white-space:pre-wrap;
+  word-break:break-word;min-height:420px;height:58vh;max-height:680px;scrollbar-color:#2c4136 transparent}
 #log .w{color:var(--amber)} #log .e{color:var(--red)} #log .p{color:var(--cyan)} #log .c{color:var(--slime)}
-#log .j{color:var(--violet)} #log .d{color:#9fe59f;font-weight:600}
+#log .j{color:var(--violet)} #log .d{color:#a5f0aa;font-weight:600}
 #log .empty{color:var(--faint)}
 .cmd{display:flex;gap:8px;padding:12px 14px;border-top:1px solid var(--line);background:var(--bg2)}
 .cmd .prompt{font:700 15px var(--mono);color:var(--slime);align-self:center}
 .cmd input{font-family:var(--mono)}
-.quick{display:flex;gap:6px;flex-wrap:wrap;padding:0 14px 12px;background:var(--bg2)}
-.chip{background:#0f1613;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:4px 10px;font:12px var(--mono);
-  transition:color .15s,border-color .15s}
-.chip:hover{color:var(--slime);border-color:var(--slime-d)}
-.players{display:flex;flex-wrap:wrap;gap:6px}
-.players span{background:#0f1613;border:1px solid var(--line);padding:3px 9px;border-radius:8px;font-size:13px}
-.check{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;font-size:13.5px}
+.quick{display:flex;gap:6px;flex-wrap:wrap;padding:12px 14px 0;background:var(--bg2);border-top:1px solid var(--line)}
+.chip{background:#0a110d;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:4px 11px;font:12px var(--mono);
+  transition:color .15s,border-color .15s,background .15s}
+.chip:hover{color:var(--slime);border-color:var(--slime-d);background:rgba(114,224,122,.06)}
+.viewer{display:flex;gap:8px;align-items:center;padding:9px 14px;background:rgba(244,197,82,.07);border-top:1px solid rgba(244,197,82,.25);color:var(--amber);font-size:12.8px}
+
+/* Setup checklist */
+.setup{border-color:rgba(244,197,82,.35)}
+.check{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;font-size:13.5px}
 .check li{display:flex;gap:10px;align-items:flex-start}
-.check li i{font-style:normal;width:20px;height:20px;border-radius:6px;display:grid;place-items:center;flex:none;font-size:12px;
-  background:#0e1512;border:1px solid var(--line);color:var(--faint)}
+.check li i{font-style:normal;width:22px;height:22px;border-radius:7px;display:grid;place-items:center;flex:none;font-size:12px;
+  background:#0a110d;border:1px solid var(--line2);color:var(--faint)}
 .check li.ok i{background:var(--slime-d);border-color:var(--slime-d);color:#06100a}
 .check li.ok span{color:var(--muted)}
 .check li span small{display:block;color:var(--faint);font-size:12px}
-.viewer{padding:8px 14px;background:#1d1a0f;border-top:1px solid #3a3320;color:var(--amber);font-size:12.5px}
-.hist{list-style:none;padding:0;margin:10px 0 0;display:flex;flex-direction:column;gap:6px;font-size:12.5px;max-height:180px;overflow:auto}
-.hist li{display:flex;gap:8px;color:var(--muted)} .hist li b{color:var(--slime);font-weight:600} .hist li.bad b{color:var(--red)}
 
-.overlay{position:fixed;inset:0;background:rgba(3,6,4,.72);backdrop-filter:blur(3px);display:none;align-items:flex-start;justify-content:center;
+/* Backup history */
+.hist{list-style:none;padding:0;margin:12px 0 0;display:flex;flex-direction:column;gap:2px;font-size:12.5px;max-height:240px;overflow:auto}
+.hist:empty{display:none}
+.hist li{display:flex;gap:9px;color:var(--muted);padding:7px 8px;border-radius:9px}
+.hist li:nth-child(odd){background:rgba(255,255,255,.02)}
+.hist li b{color:var(--slime);font-weight:700} .hist li.bad b{color:var(--red)}
+.syncbox{background:#0a110d;border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin-top:12px}
+.syncbox .hint{margin:0}
+
+/* Modal */
+.overlay{position:fixed;inset:0;background:rgba(2,5,3,.74);backdrop-filter:blur(5px);display:none;align-items:flex-start;justify-content:center;
   padding:40px 16px;z-index:20;overflow:auto}
 .overlay.show{display:flex}
-.modal{width:100%;max-width:520px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;animation:rise .25s ease both}
-.modal h3{font-family:var(--head);margin:0 0 4px;font-size:20px}
-.modal ol{padding-left:20px;color:var(--muted);font-size:13.5px} .modal ol li{margin:4px 0}
-.modal code{font-family:var(--mono);background:#0e1512;padding:1px 5px;border-radius:5px;color:var(--text)}
-.tabs{display:flex;gap:6px;margin:12px 0 4px}
-.tabs button{flex:1;background:#0e1512;border:1px solid var(--line);color:var(--muted);border-radius:10px;padding:8px;font-weight:600;font-size:13px}
-.tabs button.on{border-color:var(--slime-d);color:var(--text);background:var(--card2)}
-#toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(20px);background:var(--card2);border:1px solid var(--line);
-  padding:10px 16px;border-radius:12px;opacity:0;transition:.25s;z-index:30;max-width:calc(100% - 32px);font-size:14px}
+.modal{width:100%;max-width:560px;background:linear-gradient(180deg,var(--card2),var(--card));border:1px solid var(--line2);border-radius:20px;padding:22px;
+  animation:rise .28s ease both;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.modal h3{font-family:var(--head);margin:0 0 6px;font-size:22px;display:flex;align-items:center;gap:10px}
+.modal h3 svg{color:var(--slime);width:22px;height:22px}
+.modal ol{padding-left:20px;color:var(--muted);font-size:13.5px} .modal ol li{margin:5px 0}
+.modal code{font-family:var(--mono);background:#0a110d;padding:1px 5px;border-radius:5px;color:var(--text)}
+.modal details{margin-top:14px;background:#0b130f;border:1px solid var(--line);border-radius:14px;padding:12px 14px}
+.modal details[open]{border-color:var(--line2)}
+.modal summary{cursor:pointer;font-weight:600;list-style:none;display:flex;align-items:center;gap:8px}
+.modal summary::-webkit-details-marker{display:none}
+.modal summary::after{content:"";margin-left:auto;width:8px;height:8px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg);transition:transform .2s}
+.modal details[open] summary::after{transform:rotate(-135deg)}
+.tabs{display:flex;gap:6px;margin:14px 0 4px;padding:4px;background:#0a110d;border:1px solid var(--line);border-radius:13px}
+.tabs button{flex:1;background:transparent;border:1px solid transparent;color:var(--muted);border-radius:10px;padding:8px;font-weight:600;font-size:13px;transition:.15s}
+.tabs button.on{border-color:var(--line2);color:var(--text);background:var(--card2)}
+#toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(20px);background:var(--card2);border:1px solid var(--line2);
+  padding:11px 18px;border-radius:14px;opacity:0;transition:.25s;z-index:30;max-width:calc(100% - 32px);font-size:14px;box-shadow:0 14px 40px rgba(0,0,0,.45);pointer-events:none}
 #toast.show{opacity:1;transform:translateX(-50%)}
 #toast.bad{border-color:#6a2c2c;color:#ffc1bb}
+footer{margin-top:22px;text-align:center;color:var(--faint);font-size:12.5px}
 .hide{display:none!important}
+
+@media (max-width:1000px){
+  .grid{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:760px){
+  .hero{grid-template-columns:1fr;padding:18px}
+  .hero-r{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:16px}
+  .big-state{font-size:22px}
+  header{position:static}
+  h1 small{display:none}
+  #log{height:52vh;min-height:320px}
+}
+@media (max-width:420px){
+  .stats{gap:8px} .stat{padding:11px;gap:9px} .stat .si{width:32px;height:32px}
+  .stat b{font-size:16px}
+  .iconbtn span{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></symbol>
+  <symbol id="i-game" viewBox="0 0 24 24"><path d="M6 11h4M8 9v4M15 12h.01M18 10h.01"/><rect x="2" y="6" width="20" height="12" rx="4"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="i-chip" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></symbol>
+  <symbol id="i-timer" viewBox="0 0 24 24"><path d="M10 2h4M12 14l3-3"/><circle cx="12" cy="14" r="8"/></symbol>
+  <symbol id="i-save" viewBox="0 0 24 24"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8M7 3v5h8"/></symbol>
+  <symbol id="i-term" viewBox="0 0 24 24"><path d="m4 17 6-6-6-6M12 19h8"/></symbol>
+  <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-2.12 6.36-6.36 2.12 2.12-6.36 6.36-2.12z"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-git" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="9" r="3"/><path d="M6 9v6M18 12c0 3-3 4-6 4H9"/></symbol>
+  <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></symbol>
+</svg>
 <div class="wrap">
   <header>
-    <div class="logo"><i></i><i></i></div>
+    <div class="logo"><i></i><i></i><b></b></div>
     <h1>MODSLIME SERVER<small>NeoForge 1.21.1 · 266 mod · bật/tắt ngay trên web</small></h1>
     <div class="grow"></div>
     <div id="statePill" class="pill"><span class="dot"></span><span id="stateText">Đang kiểm tra…</span></div>
-    <button class="iconbtn" id="btnSettings" title="Cài đặt">⚙ Cài đặt</button>
+    <button class="iconbtn" id="btnSettings" title="Cài đặt"><svg class="ic"><use href="#i-gear"/></svg><span>Cài đặt</span></button>
   </header>
 
-  <div class="grid">
-    <div class="col">
-      <section class="card hide" id="setupCard">
-        <h2>🧭 Thiết lập lần đầu</h2>
-        <ul class="check" id="setupList"></ul>
-        <button class="btn pri sm" id="btnSetupOpen" style="margin-top:10px">Mở cài đặt</button>
-      </section>
-
-      <section class="card">
-        <h2>⚡ Điều khiển</h2>
-        <button class="power" id="btnPower">▶ BẬT SERVER</button>
-        <div class="row" style="margin-top:10px" id="durRow">
-          <span class="sub" style="flex:none">Thời gian mở:</span>
-          <select id="duration" style="flex:1">
-            <option value="120">2 giờ</option><option value="240">4 giờ</option>
-            <option value="340" selected>~5 giờ 40 phút (tối đa)</option>
-          </select>
-        </div>
-        <ul class="steps hide" id="steps"></ul>
-        <div class="hint" id="powerHint">Bấm bật: GitHub dựng máy chủ, nạp world mới nhất và 266 mod (khoảng 3–5 phút).</div>
-        <div class="row hide" style="margin-top:10px" id="forceRow">
-          <button class="btn sm danger" id="btnCancel">Huỷ phiên ngay (không lưu)</button>
-          <a class="sub" id="runLink" target="_blank" rel="noopener">Xem trên GitHub ↗</a>
-        </div>
-      </section>
-
-      <section class="card">
-        <h2>🎮 Vào game</h2>
-        <div class="addr"><span id="mcAddr">—</span><button class="btn sm" id="btnCopy">Chép</button></div>
-        <div class="hint" id="addrHint">Minecraft Java 1.21.1 + bộ mod ModSlime → Multiplayer → Add Server.<br>
-          <a href="https://github.com/rxtuteam-a11y/NeoForge-ModSlime/releases/download/client-pack-latest/ModSlime-Client-Full.zip">Tải trọn gói mod + config cho người chơi</a>
-          (toàn bộ mod đã chỉnh cho máy chơi + mod nấu ăn + nhiệm vụ/cấu hình mới nhất) — giải nén chép đè vào thư mục instance.</div>
-        <div class="stats" style="margin-top:12px">
-          <div class="stat"><small>Người chơi</small><b id="sPlayers">—</b></div>
-          <div class="stat"><small>Đã chạy</small><b id="sUptime">—</b></div>
-          <div class="stat"><small>RAM Java</small><b id="sRam">—</b></div>
-          <div class="stat"><small>Tự tắt sau</small><b id="sLeft">—</b></div>
-        </div>
-        <div class="players" id="playerList" style="margin-top:10px"></div>
-      </section>
-
-      <section class="card">
-        <h2>💾 Lưu trữ</h2>
-        <div class="row">
-          <button class="btn" id="btnGit">Lưu lên GitHub</button>
-          <button class="btn" id="btnDrive">Lưu lên Google Drive</button>
-        </div>
-        <div class="hint" id="syncInfo">World tự lưu lên GitHub mỗi 10 phút và khi tắt server.</div>
-        <ul class="hist" id="hist"></ul>
-      </section>
+  <!-- Điều khiển + vào game -->
+  <section class="card hero">
+    <div class="hero-l">
+      <div class="kicker"><svg class="ic"><use href="#i-bolt"/></svg>Điều khiển server</div>
+      <p class="big-state" id="heroState">Đang kiểm tra…</p>
+      <button class="power" id="btnPower">▶ BẬT SERVER</button>
+      <div class="row" id="durRow">
+        <span class="sub" style="flex:none">Thời gian mở:</span>
+        <select id="duration" style="flex:1;min-width:160px">
+          <option value="120">2 giờ</option><option value="240">4 giờ</option>
+          <option value="340" selected>~5 giờ 40 phút (tối đa)</option>
+        </select>
+      </div>
+      <ul class="steps hide" id="steps"></ul>
+      <div class="hint" id="powerHint">Bấm bật: GitHub dựng máy chủ, nạp world mới nhất và 266 mod (khoảng 3–5 phút).</div>
+      <div class="row hide" id="forceRow">
+        <button class="btn sm danger" id="btnCancel">Huỷ phiên ngay (không lưu)</button>
+        <a class="sub" id="runLink" target="_blank" rel="noopener">Xem trên GitHub ↗</a>
+      </div>
     </div>
+    <div class="hero-r">
+      <div class="kicker"><svg class="ic"><use href="#i-game"/></svg>Vào game</div>
+      <div class="addr"><span id="mcAddr">—</span><button class="btn sm" id="btnCopy"><svg class="ic" style="width:15px;height:15px"><use href="#i-copy"/></svg>Chép</button></div>
+      <div class="hint" id="addrHint">Minecraft Java 1.21.1 + bộ mod ModSlime → Multiplayer → Add Server → dán địa chỉ trên.</div>
+      <a class="dl" href="https://github.com/rxtuteam-a11y/NeoForge-ModSlime/releases/download/client-pack-latest/ModSlime-Client-Full.zip">
+        <span class="ico"><svg class="ic"><use href="#i-down"/></svg></span>
+        <span><b>Tải trọn gói mod + config cho người chơi</b>
+        <small>Toàn bộ mod đã chỉnh cho máy chơi + mod nấu ăn + nhiệm vụ/cấu hình mới nhất — giải nén, chép đè vào thư mục instance.</small></span>
+      </a>
+      <div class="players" id="playerList"></div>
+    </div>
+  </section>
 
+  <!-- Thông số -->
+  <div class="stats">
+    <div class="stat"><span class="si"><svg class="ic"><use href="#i-users"/></svg></span><div><small>Người chơi</small><b id="sPlayers">—</b></div></div>
+    <div class="stat"><span class="si"><svg class="ic"><use href="#i-clock"/></svg></span><div><small>Đã chạy</small><b id="sUptime">—</b></div></div>
+    <div class="stat"><span class="si"><svg class="ic"><use href="#i-chip"/></svg></span><div><small>RAM Java</small><b id="sRam">—</b></div></div>
+    <div class="stat"><span class="si"><svg class="ic"><use href="#i-timer"/></svg></span><div><small>Tự tắt sau</small><b id="sLeft">—</b></div></div>
+  </div>
+
+  <div class="grid">
     <section class="card console">
       <div class="bar">
-        <h2>🖥 Console</h2>
+        <span class="lights"><i></i><i></i><i></i></span>
+        <h2><svg class="ic"><use href="#i-term"/></svg>Console</h2>
         <div class="grow"></div>
-        <label class="sub" style="margin:0;display:flex;gap:6px;align-items:center"><input type="checkbox" id="autoscroll" checked> Tự cuộn</label>
+        <label class="sub toggle"><input type="checkbox" id="autoscroll" checked> Tự cuộn</label>
         <button class="btn sm" id="btnClear">Xoá màn hình</button>
       </div>
       <pre id="log"><span class="empty">Log của server sẽ hiện ở đây khi server chạy.</span></pre>
-      <div class="viewer hide" id="viewerNote">👀 Chế độ chỉ xem. Nhập GitHub token của chủ server trong ⚙ Cài đặt để gõ lệnh, tắt và sao lưu.</div>
+      <div class="viewer hide" id="viewerNote"><svg class="ic"><use href="#i-eye"/></svg><span>Chế độ chỉ xem. Nhập GitHub token của chủ server trong Cài đặt để gõ lệnh, tắt và sao lưu.</span></div>
       <div class="quick" id="quick"></div>
       <form class="cmd" id="cmdForm" autocomplete="off">
         <span class="prompt">&gt;</span>
@@ -207,13 +322,32 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
         <button class="btn pri" type="submit">Gửi</button>
       </form>
     </section>
+
+    <div class="col">
+      <section class="card setup hide" id="setupCard">
+        <h2><svg class="ic"><use href="#i-compass"/></svg>Thiết lập lần đầu</h2>
+        <ul class="check" id="setupList"></ul>
+        <button class="btn pri sm" id="btnSetupOpen" style="margin-top:14px">Mở cài đặt</button>
+      </section>
+
+      <section class="card">
+        <h2><svg class="ic"><use href="#i-save"/></svg>Lưu trữ world</h2>
+        <div class="row">
+          <button class="btn wide" id="btnGit"><svg class="ic" style="width:16px;height:16px"><use href="#i-git"/></svg>Lưu lên GitHub</button>
+          <button class="btn wide" id="btnDrive"><svg class="ic" style="width:16px;height:16px"><use href="#i-cloud"/></svg>Lưu lên Google Drive</button>
+        </div>
+        <div class="syncbox"><div class="hint" id="syncInfo">World tự lưu lên GitHub mỗi 10 phút và khi tắt server. Chỉ giữ dữ liệu 5 phiên gần nhất.</div></div>
+        <ul class="hist" id="hist"></ul>
+      </section>
+    </div>
   </div>
+  <footer>ModSlime · server chạy trên GitHub Actions · world tự lưu mỗi 10 phút</footer>
 </div>
 
 <!-- Settings -->
 <div class="overlay" id="ovSettings">
   <div class="modal">
-    <h3>Cài đặt</h3>
+    <h3><svg class="ic"><use href="#i-gear"/></svg>Cài đặt</h3>
     <div class="sub">Không cần tài khoản. Ai mở trang cũng xem được log; chỉ người có GitHub token của chủ server mới bật/tắt, gõ lệnh và sao lưu được. Token chỉ lưu trên trình duyệt này.</div>
     <div class="tabs">
       <button data-mode="cloud" class="on">☁ Cloud (GitHub)</button>
@@ -234,42 +368,42 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
     </div>
     <div id="srvBox">
       <details id="srvDetails">
-        <summary style="cursor:pointer;margin-top:14px;font-weight:600">🔧 Cấu hình server trên GitHub (Playit, địa chỉ game, Google Drive)</summary>
+        <summary>🔧 Cấu hình server trên GitHub (Playit, địa chỉ game, Google Drive)</summary>
         <div class="sub" id="srvState" style="margin-top:8px">Đang đọc cấu hình…</div>
         <label>Playit SECRET_KEY <span class="sub">(phần sau SECRET_KEY= trong lệnh Docker của playit.gg)</span></label>
         <input type="password" id="sPlayit" placeholder="để trống = giữ nguyên" autocomplete="new-password" data-lpignore="true" data-1p-ignore>
         <label>Địa chỉ vào game <span class="sub">(địa chỉ tunnel Minecraft Java trên playit.gg)</span></label>
         <input type="text" id="sMcAddr" placeholder="vd: abc-def.joinmc.link" autocomplete="off">
         <label>Nội dung rclone.conf cho Google Drive <span class="sub">(tuỳ chọn)</span></label>
-        <textarea id="sRclone" rows="4" placeholder="[gdrive]&#10;type = drive&#10;token = {...}&#10;(để trống = giữ nguyên)" style="width:100%;background:#0e1512;border:1px solid var(--line);color:var(--text);border-radius:10px;padding:9px 11px;font:12px var(--mono)"></textarea>
+        <textarea id="sRclone" rows="4" placeholder="[gdrive]&#10;type = drive&#10;token = {...}&#10;(để trống = giữ nguyên)" style="font:12px var(--mono)"></textarea>
         <label>Thư mục Drive lưu backup</label>
         <input type="text" id="sDrivePath" placeholder="gdrive:ModSlime-Backups">
-        <div class="row" style="margin-top:10px"><button class="btn" id="btnSaveSrv" type="button">Lưu cấu hình lên GitHub</button></div>
-        <div class="hint">Secret được mã hoá ngay trong trình duyệt (libsodium) rồi mới gửi lên GitHub; không ai đọc lại được, kể cả trang này.</div>
+        <div class="row" style="margin-top:12px"><button class="btn" id="btnSaveSrv" type="button">Lưu cấu hình lên GitHub</button></div>
+        <div class="hint" style="margin-top:8px">Secret được mã hoá ngay trong trình duyệt (libsodium) rồi mới gửi lên GitHub; không ai đọc lại được, kể cả trang này.</div>
       </details>
     </div>
     <div id="shareBox">
       <details id="shareDetails">
-        <summary style="cursor:pointer;margin-top:14px;font-weight:600">📲 Cho thiết bị khác điều khiển server (không cần cài lại)</summary>
+        <summary>📲 Cho thiết bị khác điều khiển server (không cần cài lại)</summary>
         <div class="sub" style="margin-top:8px">Tạo link (hoặc mã QR) chứa quyền điều khiển. Máy khác mở link là bật/tắt, gõ lệnh được ngay.
           <b>Ai có link đều điều khiển được</b> — chỉ gửi cho người tin tưởng.</div>
         <label>Token dùng cho link</label>
         <input type="password" id="shareToken" placeholder="để trống = dùng token của máy này" autocomplete="off" data-lpignore="true" data-1p-ignore>
-        <div class="hint">Nên tạo <b>token riêng</b> cho bạn bè chỉ với quyền <b>Actions: Read and write</b> + <b>Contents: Read-only</b> (không có Secrets/Variables) và đặt ngày hết hạn. Muốn thu hồi thì xoá token đó trên GitHub.</div>
-        <div class="row" style="margin-top:10px">
+        <div class="hint" style="margin-top:8px">Nên tạo <b>token riêng</b> cho bạn bè chỉ với quyền <b>Actions: Read and write</b> + <b>Contents: Read-only</b> (không có Secrets/Variables) và đặt ngày hết hạn. Muốn thu hồi thì xoá token đó trên GitHub.</div>
+        <div class="row" style="margin-top:12px">
           <button class="btn" id="btnMakeShare" type="button">Tạo link chia sẻ</button>
           <button class="btn hide" id="btnCopyShare" type="button">Chép link</button>
         </div>
         <input type="text" id="shareLink" class="hide" readonly style="margin-top:8px;font:12px var(--mono)">
-        <div id="shareQr" class="hide" style="margin-top:10px;background:#fff;padding:10px;border-radius:10px;width:max-content;max-width:100%"></div>
+        <div id="shareQr" class="hide" style="margin-top:10px;background:#fff;padding:10px;border-radius:12px;width:max-content;max-width:100%"></div>
       </details>
     </div>
     <div id="localBox" class="hide">
       <label>Địa chỉ Web Panel (máy đang chạy app.py)</label>
       <input type="url" id="localUrl" placeholder="http://26.x.x.x:8080 hoặc http://localhost:8080">
-      <div class="hint">Trình duyệt chặn trang https gọi tới địa chỉ http. Nếu không kết nối được, mở thẳng địa chỉ Web Panel (vd. http://localhost:8080) — trang này có sẵn ở đó.</div>
+      <div class="hint" style="margin-top:8px">Trình duyệt chặn trang https gọi tới địa chỉ http. Nếu không kết nối được, mở thẳng địa chỉ Web Panel (vd. http://localhost:8080) — trang này có sẵn ở đó.</div>
     </div>
-    <div class="row" style="margin-top:16px;justify-content:flex-end">
+    <div class="row" style="margin-top:18px;justify-content:flex-end">
       <button class="btn" id="btnCloseSet">Đóng</button>
       <button class="btn pri" id="btnSaveSet">Lưu</button>
     </div>
@@ -457,6 +591,7 @@ label{font-size:13px;color:var(--muted);display:block;margin:10px 0 5px}
   function render() {
     const [st, label] = overallState();
     $("statePill").className = "pill st-" + st; $("stateText").textContent = label;
+    $("heroState").textContent = label; document.body.dataset.state = st || "unknown";
 
     const running = panel && panelReachable && (panel.server_state === "running" || panel.server_state === "starting");
     const cloudActive = ["queued", "booting", "online"].includes(cloud.state) && cfg.mode === "cloud";
