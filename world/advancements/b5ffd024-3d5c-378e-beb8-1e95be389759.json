@@ -563,6 +563,7 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
+      "minecraft:frozen_ocean": "2026-11-28 20:25:49 +0700",
       "minecraft:river": "2026-11-28 19:39:18 +0700",
       "minecraft:snowy_beach": "2026-11-28 17:15:50 +0700",
       "minecraft:windswept_savanna": "2026-11-28 17:35:16 +0700",
@@ -810,6 +811,18 @@
     },
     "done": true
   },
+  "regions_unexplored:recipes/transportation/maple_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/food/grilled_salmon": {
+    "criteria": {
+      "has_salmon": "2026-11-28 20:25:59 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/cooked_chicken_from_campfire_cooking": {
     "criteria": {
       "has_chicken": "2026-11-28 19:28:36 +0700"
@@ -894,6 +907,12 @@
     },
     "done": true
   },
+  "regions_unexplored:recipes/transportation/magnolia_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:recipes/cooking/chicken_soup": {
     "criteria": {
       "has_any_ingredient": "2026-11-28 19:28:36 +0700"
@@ -942,6 +961,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/transportation/cherry_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
+    },
+    "done": true
+  },
   "farm_and_charm:recipes/seeder": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 19:41:39 +0700"
@@ -951,6 +976,12 @@
   "twilightforest:recipes/building_blocks/stonecutting/stone/terrorcotta_arcs": {
     "criteria": {
       "has_block": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
+  "eternal_starlight:recipes/transportation/cradlewood_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
     },
     "done": true
   },
@@ -1074,6 +1105,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/cooked_salmon_from_campfire_cooking": {
+    "criteria": {
+      "has_salmon": "2026-11-28 20:25:59 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:recipes/cooking/pasta_with_meatballs": {
     "criteria": {
       "has_any_ingredient": "2026-11-28 19:34:01 +0700"
@@ -1122,6 +1159,12 @@
     },
     "done": true
   },
+  "eternal_starlight:recipes/transportation/torreya_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
+    },
+    "done": true
+  },
   "naturescompass:natures_compass_sapling": {
     "criteria": {
       "has_sapling": "2026-11-28 19:38:05 +0700"
@@ -1134,9 +1177,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/transportation/acacia_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/iron_trapdoor": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "eternal_starlight:recipes/transportation/lunar_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
     },
     "done": true
   },
@@ -1155,6 +1210,12 @@
   "minecraft:recipes/food/cooked_porkchop_from_smoking": {
     "criteria": {
       "has_porkchop": "2026-11-28 19:51:05 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/pale_oak_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
     },
     "done": true
   },
@@ -1188,6 +1249,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/transportation/jungle_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
+    },
+    "done": true
+  },
   "kaleidoscope_cookery:recipes/decorations/oil_block": {
     "criteria": {
       "has_ingot_iron": "2026-11-28 19:41:39 +0700"
@@ -1203,6 +1270,24 @@
   "farmersdelight:recipes/cooking/dog_food": {
     "criteria": {
       "has_any_ingredient": "2026-11-28 19:30:02 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/transportation/mining_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/transportation/pine_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
+    },
+    "done": true
+  },
+  "eternal_starlight:recipes/transportation/banyin_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
     },
     "done": true
   },
@@ -1254,6 +1339,12 @@
     },
     "done": true
   },
+  "twilightforest:recipes/transportation/mangrove_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
+    },
+    "done": true
+  },
   "minecraft:story/smelt_iron": {
     "criteria": {
       "iron": "2026-11-28 19:41:39 +0700"
@@ -1278,6 +1369,12 @@
     },
     "done": true
   },
+  "regions_unexplored:recipes/transportation/socotra_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/diorite_wall": {
     "criteria": {
       "has_diorite": "2026-11-28 20:08:50 +0700"
@@ -1287,6 +1384,30 @@
   "minecraft:recipes/decorations/stonecutter": {
     "criteria": {
       "has_stone": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/transportation/palm_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/spruce_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/transportation/dead_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
+    },
+    "done": true
+  },
+  "chronodawn:recipes/transportation/ancient_time_wood_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
     },
     "done": true
   },
@@ -1338,6 +1459,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/transportation/mangrove_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/polished_tuff_wall": {
     "criteria": {
       "has_polished_tuff": "2026-11-28 20:15:06 +0700"
@@ -1380,6 +1507,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/cooked_salmon_from_smoking": {
+    "criteria": {
+      "has_salmon": "2026-11-28 20:25:59 +0700"
+    },
+    "done": true
+  },
   "bakery:recipes/iron_table": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 19:41:39 +0700"
@@ -1389,6 +1522,12 @@
   "tensura:recipes/building_blocks/diorite_warp_pad": {
     "criteria": {
       "has_diorite": "2026-11-28 20:08:50 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/transportation/canopy_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
     },
     "done": true
   },
@@ -1413,6 +1552,12 @@
   "sophisticatedbackpacks:recipes/misc/upgrade_base": {
     "criteria": {
       "has_leather": "2026-11-28 19:34:01 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/transportation/baobab_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
     },
     "done": true
   },
@@ -1476,9 +1621,21 @@
     },
     "done": true
   },
+  "regions_unexplored:recipes/transportation/wisteria_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/building_blocks/mossy_stone": {
     "criteria": {
       "has_stone": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/transportation/sorting_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
     },
     "done": true
   },
@@ -1512,9 +1669,21 @@
     },
     "done": true
   },
+  "regions_unexplored:recipes/transportation/joshua_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
+    },
+    "done": true
+  },
   "bakery:recipes/stone_bricks_stove": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/dark_oak_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
     },
     "done": true
   },
@@ -1674,9 +1843,27 @@
     },
     "done": true
   },
+  "minecraft:recipes/transportation/bamboo_raft": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/stone_pressure_plate": {
     "criteria": {
       "has_stone": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/drying/salmon_jerky": {
+    "criteria": {
+      "has_meat": "2026-11-28 20:25:59 +0700"
+    },
+    "done": true
+  },
+  "eternal_starlight:recipes/transportation/northland_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
     },
     "done": true
   },
@@ -1689,6 +1876,18 @@
   "minecraft:recipes/building_blocks/polished_diorite_stairs_from_diorite_stonecutting": {
     "criteria": {
       "has_diorite": "2026-11-28 20:08:50 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/transportation/kapok_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/transportation/cypress_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
     },
     "done": true
   },
@@ -1716,6 +1915,12 @@
     },
     "done": true
   },
+  "eternal_starlight:recipes/transportation/jinglestem_raft": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/leather": {
     "criteria": {
       "has_rabbit_hide": "2026-11-28 19:24:35 +0700"
@@ -1737,6 +1942,12 @@
   "minecraft:recipes/decorations/lantern": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/transportation/larch_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
     },
     "done": true
   },
@@ -1830,9 +2041,21 @@
     },
     "done": true
   },
+  "eternal_starlight:recipes/transportation/scarlet_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
+    },
+    "done": true
+  },
   "handcrafted:recipes/misc/pillager_trophy": {
     "criteria": {
       "has_pillager_trophy": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/poplar_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
     },
     "done": true
   },
@@ -1878,6 +2101,18 @@
     },
     "done": true
   },
+  "regions_unexplored:recipes/transportation/blackwood_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/transportation/twilight_oak_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:recipes/food/fried_egg_from_smoking": {
     "criteria": {
       "fried_egg": "2026-11-28 19:30:02 +0700"
@@ -1887,6 +2122,12 @@
   "twilightforest:recipes/drying/pork_jerky": {
     "criteria": {
       "has_meat": "2026-11-28 19:51:05 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/transportation/time_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
     },
     "done": true
   },
@@ -1926,9 +2167,21 @@
     },
     "done": true
   },
+  "farmersdelight:recipes/cooking/fish_stew": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-28 20:25:59 +0700"
+    },
+    "done": true
+  },
   "block_factorys_bosses:recipes/misc/big_chain": {
     "criteria": {
       "has_item": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/transportation/eucalyptus_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
     },
     "done": true
   },
@@ -1992,9 +2245,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/food/cooked_salmon": {
+    "criteria": {
+      "has_salmon": "2026-11-28 20:25:59 +0700"
+    },
+    "done": true
+  },
   "twilightforest:recipes/building_blocks/stonecutting/stone/terrorcotta_curves": {
     "criteria": {
       "has_block": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
+  "chronodawn:recipes/transportation/time_wood_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
     },
     "done": true
   },
@@ -2010,9 +2275,21 @@
     },
     "done": true
   },
+  "regions_unexplored:recipes/transportation/palm_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/misc/blue_dye_from_blue_lupine": {
     "criteria": {
       "has_blue_lupine": "2026-11-28 19:33:01 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/transportation/transformation_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
     },
     "done": true
   },
@@ -2052,6 +2329,12 @@
     },
     "done": true
   },
+  "regions_unexplored:recipes/transportation/oak_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/polished_tuff_wall_from_polished_tuff_stonecutting": {
     "criteria": {
       "has_polished_tuff": "2026-11-28 20:15:06 +0700"
@@ -2064,9 +2347,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/transportation/birch_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/apple_from_silver_ingot": {
     "criteria": {
       "has_material": "2026-11-28 19:34:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/oak_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
     },
     "done": true
   },
@@ -2100,6 +2395,12 @@
     },
     "done": true
   },
+  "chronodawn:recipes/transportation/dark_time_wood_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
+    },
+    "done": true
+  },
   "constructionwand:recipes/misc/core_angel": {
     "criteria": {
       "has_item": "2026-11-28 19:28:36 +0700"
@@ -2112,6 +2413,12 @@
     },
     "done": true
   },
+  "regions_unexplored:recipes/transportation/redwood_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:recipes/cooking/beef_stew": {
     "criteria": {
       "has_any_ingredient": "2026-11-28 19:34:01 +0700"
@@ -2121,6 +2428,12 @@
   "minecraft:recipes/building_blocks/polished_andesite_stairs": {
     "criteria": {
       "has_polished_andesite": "2026-11-28 20:14:47 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/transportation/dark_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
     },
     "done": true
   },
@@ -2187,6 +2500,12 @@
   "farm_and_charm:recipes/chicken_coop": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "regions_unexplored:recipes/transportation/willow_boat": {
+    "criteria": {
+      "in_water": "2026-11-28 20:25:48 +0700"
     },
     "done": true
   },
