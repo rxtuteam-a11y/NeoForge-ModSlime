@@ -506,6 +506,12 @@
     },
     "done": true
   },
+  "tensura:b_rank": {
+    "criteria": {
+      "ep": "2026-11-28 17:42:41 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/purple_concrete_powder": {
     "criteria": {
       "has_sand": "2026-11-28 16:45:16 +0700"
