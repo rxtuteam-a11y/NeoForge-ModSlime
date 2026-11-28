@@ -11670,5 +11670,77 @@
     },
     "done": true
   },
+  "vinery:recipes/dark_oak_wine_rack_big": {
+    "criteria": {
+      "has_dark_oak_planks": "2026-11-28 07:35:11 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/dark_oak_wine_rack_small": {
+    "criteria": {
+      "has_dark_oak_planks": "2026-11-28 07:35:11 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/spruce_wine_rack_big": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-28 07:37:51 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/spruce_wine_rack_small": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-28 07:37:51 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/grapevine_pot": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-28 07:37:51 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/dark_cherry_shelf": {
+    "criteria": {
+      "has_spruce_planks": "2026-11-28 07:37:51 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/squid_ink_pasta": {
+    "criteria": {
+      "has_any_ingredient": "2026-11-28 07:44:18 +0700"
+    },
+    "done": true
+  },
+  "tensura_neb:queen_of_nightmares": {
+    "criteria": {
+      "luminous": "2026-11-28 07:48:35 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/decorations/wood/spruce_banister": {
+    "criteria": {
+      "has_item": "2026-11-28 09:15:46 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/decorations/spruce_cabinet": {
+    "criteria": {
+      "has_spruce_trapdoor": "2026-11-28 09:16:00 +0700"
+    },
+    "done": true
+  },
+  "tensura:recipes/building_blocks/spruce_tool_rack": {
+    "criteria": {
+      "has_spruce_slab": "2026-11-28 09:15:46 +0700"
+    },
+    "done": true
+  },
+  "twilightforest:recipes/decorations/wood/spruce_drying_rack": {
+    "criteria": {
+      "has_item": "2026-11-28 09:15:46 +0700"
+    },
+    "done": true
+  },
   "DataVersion": 3955
 }
