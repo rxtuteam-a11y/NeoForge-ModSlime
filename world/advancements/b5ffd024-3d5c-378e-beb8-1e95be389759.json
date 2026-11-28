@@ -793,6 +793,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/pure_magisteel_nugget_from_smelting_pure_magisteel_chestplate": {
+    "criteria": {
+      "has_pure_magisteel_chestplate": "2026-11-28 20:33:59 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/leather_helmet": {
     "criteria": {
       "has_leather": "2026-11-28 19:34:01 +0700"
@@ -847,6 +853,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/pure_magisteel_nugget_from_blasting_pure_magisteel_helmet": {
+    "criteria": {
+      "has_pure_magisteel_helmet": "2026-11-28 20:33:59 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/polished_diorite": {
     "criteria": {
       "has_diorite": "2026-11-28 20:08:50 +0700"
@@ -874,6 +886,12 @@
   "minecraft:recipes/combat/iron_helmet": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/black_sheet": {
+    "criteria": {
+      "has_black_sheet": "2026-11-28 20:31:22 +0700"
     },
     "done": true
   },
@@ -988,6 +1006,18 @@
   "minecraft:recipes/building_blocks/polished_tuff_stairs_from_polished_tuff_stonecutting": {
     "criteria": {
       "has_polished_tuff": "2026-11-28 20:15:06 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/dirt_slab": {
+    "criteria": {
+      "has_dirt": "2026-11-28 20:29:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/tuff_brick_stairs_from_tuff_stonecutting": {
+    "criteria": {
+      "has_tuff": "2026-11-28 20:29:04 +0700"
     },
     "done": true
   },
@@ -1177,6 +1207,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/black_wool_stairs": {
+    "criteria": {
+      "has_black_wool": "2026-11-28 20:31:22 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/transportation/acacia_boat": {
     "criteria": {
       "in_water": "2026-11-28 20:25:48 +0700"
@@ -1231,6 +1267,12 @@
     },
     "done": true
   },
+  "tensura:adamantite": {
+    "criteria": {
+      "items": "2026-11-28 20:30:44 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:recipes/combat/iron_knife": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 19:41:39 +0700"
@@ -1246,6 +1288,18 @@
   "handcrafted:recipes/misc/skeleton_trophy": {
     "criteria": {
       "has_skeleton_trophy": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/black_cushion": {
+    "criteria": {
+      "has_black_cushion": "2026-11-28 20:31:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/pure_magisteel_nugget_from_smelting_pure_magisteel_boots": {
+    "criteria": {
+      "has_pure_magisteel_boots": "2026-11-28 20:33:59 +0700"
     },
     "done": true
   },
@@ -1327,6 +1381,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/polished_tuff_slab_from_tuff_stonecutting": {
+    "criteria": {
+      "has_tuff": "2026-11-28 20:29:04 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/misc/magenta_dye_from_bleeding_heart": {
     "criteria": {
       "has_bleeding_heart": "2026-11-28 19:33:36 +0700"
@@ -1372,6 +1432,12 @@
   "regions_unexplored:recipes/transportation/socotra_boat": {
     "criteria": {
       "in_water": "2026-11-28 20:25:48 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_tuff_stairs_from_tuff_stonecutting": {
+    "criteria": {
+      "has_tuff": "2026-11-28 20:29:04 +0700"
     },
     "done": true
   },
@@ -1525,6 +1591,24 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/tuff_slab": {
+    "criteria": {
+      "has_tuff": "2026-11-28 20:29:04 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/tuff_brick_slab_from_tuff_stonecutting": {
+    "criteria": {
+      "has_tuff": "2026-11-28 20:29:04 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/polished_tuff_wall_from_tuff_stonecutting": {
+    "criteria": {
+      "has_tuff": "2026-11-28 20:29:04 +0700"
+    },
+    "done": true
+  },
   "twilightforest:recipes/transportation/canopy_boat": {
     "criteria": {
       "in_water": "2026-11-28 20:25:48 +0700"
@@ -1582,6 +1666,12 @@
   "farmersdelight:recipes/building_blocks/organic_compost_from_rotten_flesh": {
     "criteria": {
       "has_rotten_flesh": "2026-11-28 19:30:02 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/tuff_stairs_from_tuff_stonecutting": {
+    "criteria": {
+      "has_tuff": "2026-11-28 20:29:04 +0700"
     },
     "done": true
   },
@@ -1693,6 +1783,24 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/chiseled_tuff_bricks_from_tuff_stonecutting": {
+    "criteria": {
+      "has_tuff": "2026-11-28 20:29:04 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/black_wool_slab": {
+    "criteria": {
+      "has_black_wool": "2026-11-28 20:31:22 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/tuff_bricks_from_tuff_stonecutting": {
+    "criteria": {
+      "has_tuff": "2026-11-28 20:29:04 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/tuff_brick_wall_from_polished_tuff_stonecutting": {
     "criteria": {
       "has_polished_tuff": "2026-11-28 20:15:06 +0700"
@@ -1753,6 +1861,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/pure_magisteel_nugget_from_blasting_pure_magisteel_leggings": {
+    "criteria": {
+      "has_pure_magisteel_leggings": "2026-11-28 20:33:59 +0700"
+    },
+    "done": true
+  },
   "vinery:main/forbidden_fruit": {
     "criteria": {
       "apple": "2026-11-28 19:34:01 +0700"
@@ -1774,6 +1888,12 @@
   "minecraft:recipes/building_blocks/stone_slab": {
     "criteria": {
       "has_stone": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/black_carpet": {
+    "criteria": {
+      "has_black_wool": "2026-11-28 20:31:22 +0700"
     },
     "done": true
   },
@@ -1801,6 +1921,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/pure_magisteel_nugget_from_blasting_pure_magisteel_boots": {
+    "criteria": {
+      "has_pure_magisteel_boots": "2026-11-28 20:33:59 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/tuff_brick_wall_from_tuff_stonecutting": {
+    "criteria": {
+      "has_tuff": "2026-11-28 20:29:04 +0700"
+    },
+    "done": true
+  },
   "farm_and_charm:recipes/mincer": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 19:41:39 +0700"
@@ -1810,6 +1942,12 @@
   "regions_unexplored:recipes/misc/white_dye_from_white_trillium": {
     "criteria": {
       "has_white_trillium": "2026-11-28 19:33:02 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_tuff_from_tuff_stonecutting": {
+    "criteria": {
+      "has_tuff": "2026-11-28 20:29:04 +0700"
     },
     "done": true
   },
@@ -1867,6 +2005,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/tuff_slab_from_tuff_stonecutting": {
+    "criteria": {
+      "has_tuff": "2026-11-28 20:29:04 +0700"
+    },
+    "done": true
+  },
   "vanillabackport:recipes/combat/saddle": {
     "criteria": {
       "has_leather": "2026-11-28 19:34:01 +0700"
@@ -1900,6 +2044,18 @@
   "vinery:main/fruits_of_the_field": {
     "criteria": {
       "fruits_of_the_field": "2026-11-28 19:25:36 +0700"
+    },
+    "done": true
+  },
+  "ironchest:recipes/decorations/chests/vanilla_dirt_chest": {
+    "criteria": {
+      "has_iron_ingot": "2026-11-28 20:29:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/black_bed": {
+    "criteria": {
+      "has_black_wool": "2026-11-28 20:31:22 +0700"
     },
     "done": true
   },
@@ -1951,6 +2107,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/tuff_wall": {
+    "criteria": {
+      "has_tuff": "2026-11-28 20:29:04 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/polished_tuff_slab_from_polished_tuff_stonecutting": {
     "criteria": {
       "has_polished_tuff": "2026-11-28 20:15:06 +0700"
@@ -1972,6 +2134,12 @@
   "naturescompass:natures_compass_log": {
     "criteria": {
       "has_recipe": "2026-11-28 19:38:05 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/tuff_wall_from_tuff_stonecutting": {
+    "criteria": {
+      "has_tuff": "2026-11-28 20:29:04 +0700"
     },
     "done": true
   },
@@ -2050,6 +2218,12 @@
   "handcrafted:recipes/misc/pillager_trophy": {
     "criteria": {
       "has_pillager_trophy": "2026-11-28 20:08:30 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_tuff": {
+    "criteria": {
+      "has_tuff": "2026-11-28 20:29:04 +0700"
     },
     "done": true
   },
@@ -2221,6 +2395,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/tuff_stairs": {
+    "criteria": {
+      "has_tuff": "2026-11-28 20:29:04 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:recipes/cooking/noodle_soup": {
     "criteria": {
       "has_any_ingredient": "2026-11-28 19:51:05 +0700"
@@ -2230,6 +2410,12 @@
   "kaleidoscope_cookery:recipes/decorations/stockpot_lid": {
     "criteria": {
       "has_ingot_iron": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/painting": {
+    "criteria": {
+      "has_wool": "2026-11-28 20:31:22 +0700"
     },
     "done": true
   },
@@ -2317,6 +2503,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/black_banner": {
+    "criteria": {
+      "has_black_wool": "2026-11-28 20:31:22 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/smithing_table": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 19:41:39 +0700"
@@ -2362,6 +2554,12 @@
   "minecraft:recipes/transportation/oak_boat": {
     "criteria": {
       "in_water": "2026-11-28 20:25:48 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_tuff_from_tuff_stonecutting": {
+    "criteria": {
+      "has_tuff": "2026-11-28 20:29:04 +0700"
     },
     "done": true
   },
@@ -2461,6 +2659,12 @@
     },
     "done": true
   },
+  "tensura:recipes/building_blocks/tuff_warp_pad": {
+    "criteria": {
+      "has_tuff": "2026-11-28 20:29:04 +0700"
+    },
+    "done": true
+  },
   "ironchest:recipes/decorations/upgrades/iron_to_gold_chest_upgrade": {
     "criteria": {
       "has_iron_ingot": "2026-11-28 19:41:39 +0700"
@@ -2488,6 +2692,24 @@
   "kaleidoscope_cookery:recipes/redstone/pot": {
     "criteria": {
       "has_ingot_iron": "2026-11-28 19:41:39 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/pure_magisteel_nugget_from_smelting_pure_magisteel_helmet": {
+    "criteria": {
+      "has_pure_magisteel_helmet": "2026-11-28 20:33:59 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/pure_magisteel_nugget_from_blasting_pure_magisteel_chestplate": {
+    "criteria": {
+      "has_pure_magisteel_chestplate": "2026-11-28 20:33:59 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/pure_magisteel_nugget_from_smelting_pure_magisteel_leggings": {
+    "criteria": {
+      "has_pure_magisteel_leggings": "2026-11-28 20:33:59 +0700"
     },
     "done": true
   },
