@@ -46,7 +46,8 @@
       "flower_fields": "2026-11-28 19:32:18 +0700",
       "gravel_beach": "2026-11-28 19:47:45 +0700",
       "frozen_pine_taiga": "2026-11-28 16:39:24 +0700",
-      "magnolia_woodland": "2026-11-28 19:28:27 +0700"
+      "magnolia_woodland": "2026-11-28 19:28:27 +0700",
+      "inferno": "2026-11-28 20:37:53 +0700"
     },
     "done": false
   },
@@ -1117,6 +1118,12 @@
     },
     "done": true
   },
+  "regions_unexplored:spelunker": {
+    "criteria": {
+      "inferno": "2026-11-28 20:37:53 +0700"
+    },
+    "done": false
+  },
   "kaleidoscope_cookery:recipes/tools/kitchen_shovel": {
     "criteria": {
       "has_ingot_iron": "2026-11-28 19:41:39 +0700"
@@ -1987,6 +1994,12 @@
     },
     "done": true
   },
+  "vinery:main/grape_picker": {
+    "criteria": {
+      "has_red_grape": "2026-11-28 20:38:57 +0700"
+    },
+    "done": false
+  },
   "minecraft:recipes/redstone/stone_pressure_plate": {
     "criteria": {
       "has_stone": "2026-11-28 20:08:30 +0700"
@@ -2074,6 +2087,12 @@
   "eternal_starlight:recipes/transportation/jinglestem_raft": {
     "criteria": {
       "in_water": "2026-11-28 20:25:48 +0700"
+    },
+    "done": true
+  },
+  "vinery:recipes/red_grape_bag": {
+    "criteria": {
+      "has_red_grape": "2026-11-28 20:38:57 +0700"
     },
     "done": true
   },

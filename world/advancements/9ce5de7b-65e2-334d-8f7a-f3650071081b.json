@@ -12003,6 +12003,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/pale_oak_planks": {
+    "criteria": {
+      "has_log": "2026-11-28 20:44:48 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/misc/pink_dye_from_salmon_poppy_bush": {
     "criteria": {
       "has_salmon_poppy_bush": "2026-11-28 19:32:57 +0700"
@@ -12033,6 +12039,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/pale_oak_hanging_sign": {
+    "criteria": {
+      "has_stripped_logs": "2026-11-28 20:44:48 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/black_bed": {
     "criteria": {
       "has_black_wool": "2026-11-28 19:47:42 +0700"
@@ -12051,6 +12063,18 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/pale_oak_wood": {
+    "criteria": {
+      "has_log": "2026-11-28 20:45:00 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/pale_oak_shelf": {
+    "criteria": {
+      "has_stripped_pale_oak_log": "2026-11-28 20:44:48 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/misc/blue_dye_from_blue_lupine": {
     "criteria": {
       "has_blue_lupine": "2026-11-28 19:32:57 +0700"
@@ -12066,6 +12090,12 @@
   "minecraft:recipes/misc/light_gray_dye_from_azure_bluet": {
     "criteria": {
       "has_azure_bluet": "2026-11-28 19:05:47 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_pale_oak_wood": {
+    "criteria": {
+      "has_log": "2026-11-28 20:44:48 +0700"
     },
     "done": true
   },

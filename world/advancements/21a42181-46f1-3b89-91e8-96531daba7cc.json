@@ -43,44 +43,60 @@
   },
   "regions_unexplored:regions_explored": {
     "criteria": {
+      "silver_birch_forest": "2026-11-28 20:40:19 +0700",
+      "shrubland": "2026-11-28 18:38:37 +0700",
+      "windswept_maple_forest": "2026-11-28 19:41:44 +0700",
+      "magnolia_woodland": "2026-11-28 17:07:00 +0700",
+      "muddy_river": "2026-11-28 20:38:49 +0700",
+      "chalk_cliffs": "2026-11-28 17:34:07 +0700",
+      "prismachasm": "2026-11-28 17:16:52 +0700",
+      "boreal_taiga": "2026-11-28 19:24:41 +0700",
+      "ancient_delta": "2026-11-28 19:43:57 +0700",
       "willow_forest": "2026-11-28 18:40:22 +0700",
       "cold_river": "2026-11-28 18:40:39 +0700",
       "redstone_caves": "2026-11-28 19:43:58 +0700",
-      "shrubland": "2026-11-28 18:38:37 +0700",
+      "poppy_fields": "2026-11-28 20:39:31 +0700",
+      "baobab_savanna": "2026-11-28 20:41:55 +0700",
       "spires": "2026-11-28 16:33:09 +0700",
-      "windswept_maple_forest": "2026-11-28 19:41:44 +0700",
+      "grassland": "2026-11-28 20:45:08 +0700",
+      "prairie": "2026-11-28 20:45:12 +0700",
       "tundra": "2026-11-28 16:43:40 +0700",
       "flower_fields": "2026-11-28 17:04:29 +0700",
       "gravel_beach": "2026-11-28 16:25:29 +0700",
       "highland_fields": "2026-11-28 17:01:29 +0700",
       "frozen_pine_taiga": "2026-11-28 16:06:13 +0700",
-      "magnolia_woodland": "2026-11-28 17:07:00 +0700",
-      "chalk_cliffs": "2026-11-28 17:34:07 +0700",
+      "maple_forest": "2026-11-28 20:40:11 +0700",
       "icy_heights": "2026-11-28 16:38:54 +0700",
       "hyacinth_deeps": "2026-11-28 18:41:35 +0700",
-      "prismachasm": "2026-11-28 17:16:52 +0700",
-      "boreal_taiga": "2026-11-28 19:24:41 +0700",
-      "ancient_delta": "2026-11-28 19:43:57 +0700"
+      "clover_plains": "2026-11-28 20:39:04 +0700"
     },
     "done": false
   },
   "regions_unexplored:pioneer": {
     "criteria": {
       "willow_forest": "2026-11-28 18:40:22 +0700",
+      "silver_birch_forest": "2026-11-28 20:40:19 +0700",
       "cold_river": "2026-11-28 18:40:39 +0700",
       "shrubland": "2026-11-28 18:38:37 +0700",
+      "poppy_fields": "2026-11-28 20:39:31 +0700",
+      "baobab_savanna": "2026-11-28 20:41:55 +0700",
       "spires": "2026-11-28 16:33:09 +0700",
+      "grassland": "2026-11-28 20:45:08 +0700",
+      "prairie": "2026-11-28 20:45:12 +0700",
       "windswept_maple_forest": "2026-11-28 19:41:44 +0700",
       "tundra": "2026-11-28 16:43:40 +0700",
       "flower_fields": "2026-11-28 17:04:29 +0700",
       "gravel_beach": "2026-11-28 16:25:29 +0700",
       "highland_fields": "2026-11-28 17:01:29 +0700",
       "frozen_pine_taiga": "2026-11-28 16:06:13 +0700",
+      "maple_forest": "2026-11-28 20:40:11 +0700",
       "magnolia_woodland": "2026-11-28 17:07:00 +0700",
+      "muddy_river": "2026-11-28 20:38:49 +0700",
       "chalk_cliffs": "2026-11-28 17:34:07 +0700",
       "icy_heights": "2026-11-28 16:38:54 +0700",
       "hyacinth_deeps": "2026-11-28 18:41:35 +0700",
-      "boreal_taiga": "2026-11-28 19:24:41 +0700"
+      "boreal_taiga": "2026-11-28 19:24:41 +0700",
+      "clover_plains": "2026-11-28 20:39:04 +0700"
     },
     "done": false
   },
@@ -361,27 +377,33 @@
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "minecraft:cold_ocean": "2026-11-28 16:28:36 +0700",
-      "minecraft:flower_forest": "2026-11-28 19:21:49 +0700",
       "minecraft:snowy_slopes": "2026-11-28 17:15:27 +0700",
-      "minecraft:beach": "2026-11-28 18:40:41 +0700",
       "minecraft:forest": "2026-11-28 18:40:37 +0700",
       "minecraft:taiga": "2026-11-28 19:27:05 +0700",
-      "minecraft:river": "2026-11-28 17:00:37 +0700",
-      "minecraft:snowy_plains": "2026-11-28 16:25:25 +0700",
-      "minecraft:stony_shore": "2026-11-28 18:43:47 +0700",
-      "minecraft:snowy_taiga": "2026-11-28 16:25:21 +0700",
-      "minecraft:dripstone_caves": "2026-11-28 17:12:30 +0700",
-      "minecraft:frozen_peaks": "2026-11-28 17:16:06 +0700",
       "minecraft:deep_cold_ocean": "2026-11-28 18:42:54 +0700",
       "minecraft:ice_spikes": "2026-11-28 18:41:23 +0700",
       "minecraft:frozen_ocean": "2026-11-28 16:10:45 +0700",
       "minecraft:frozen_river": "2026-11-28 16:32:50 +0700",
       "minecraft:deep_frozen_ocean": "2026-11-28 16:55:38 +0700",
-      "minecraft:deep_dark": "2026-11-28 17:23:54 +0700",
+      "minecraft:ocean": "2026-11-28 20:44:03 +0700",
       "minecraft:cherry_grove": "2026-11-28 17:15:22 +0700",
       "minecraft:sunflower_plains": "2026-11-28 17:17:16 +0700",
-      "minecraft:windswept_gravelly_hills": "2026-11-28 16:42:04 +0700",
+      "minecraft:birch_forest": "2026-11-28 20:40:21 +0700",
+      "minecraft:windswept_hills": "2026-11-28 20:39:55 +0700",
       "minecraft:snowy_beach": "2026-11-28 16:32:45 +0700",
+      "minecraft:deep_lukewarm_ocean": "2026-11-28 20:44:48 +0700",
+      "minecraft:flower_forest": "2026-11-28 19:21:49 +0700",
+      "minecraft:beach": "2026-11-28 18:40:41 +0700",
+      "minecraft:river": "2026-11-28 17:00:37 +0700",
+      "minecraft:lukewarm_ocean": "2026-11-28 20:44:36 +0700",
+      "minecraft:snowy_plains": "2026-11-28 16:25:25 +0700",
+      "minecraft:stony_shore": "2026-11-28 18:43:47 +0700",
+      "minecraft:snowy_taiga": "2026-11-28 16:25:21 +0700",
+      "minecraft:dripstone_caves": "2026-11-28 17:12:30 +0700",
+      "minecraft:frozen_peaks": "2026-11-28 17:16:06 +0700",
+      "minecraft:deep_dark": "2026-11-28 17:23:54 +0700",
+      "minecraft:windswept_gravelly_hills": "2026-11-28 16:42:04 +0700",
+      "minecraft:savanna": "2026-11-28 20:41:47 +0700",
       "minecraft:plains": "2026-11-28 16:25:26 +0700"
     },
     "done": false
@@ -5210,6 +5232,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/coal": {
+    "criteria": {
+      "has_coal_block": "2026-11-28 20:46:14 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/cherry_planks": {
     "criteria": {
       "has_log": "2026-11-28 20:34:41 +0700"
@@ -5225,6 +5253,12 @@
   "regions_unexplored:recipes/decorations/cherry_shrub": {
     "criteria": {
       "has_cherry_sapling": "2026-11-28 20:35:49 +0700"
+    },
+    "done": true
+  },
+  "farmersdelight:recipes/cooking/apple_cider": {
+    "criteria": {
+      "has_apple": "2026-11-28 20:45:42 +0700"
     },
     "done": true
   },
@@ -5264,6 +5298,12 @@
     },
     "done": true
   },
+  "vinery:main/forbidden_fruit": {
+    "criteria": {
+      "apple": "2026-11-28 20:45:42 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/cherry_slab_from_cherry_log_woodcutting": {
     "criteria": {
       "has_cherry_log": "2026-11-28 20:34:41 +0700"
@@ -5279,6 +5319,12 @@
   "minecraft:recipes/building_blocks/cherry_fence_from_cherry_log_woodcutting": {
     "criteria": {
       "has_cherry_log": "2026-11-28 20:34:41 +0700"
+    },
+    "done": true
+  },
+  "kaleidoscope_cookery:recipes/food/apple_platter": {
+    "criteria": {
+      "has_ingredient": "2026-11-28 20:45:42 +0700"
     },
     "done": true
   },
@@ -5300,6 +5346,18 @@
     },
     "done": true
   },
+  "naturescompass:repair_natures_compass": {
+    "criteria": {
+      "has_item": "2026-11-28 20:36:53 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/apple_from_silver_ingot": {
+    "criteria": {
+      "has_material": "2026-11-28 20:45:42 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/cherry_planks_from_cherry_log_woodcutting": {
     "criteria": {
       "has_cherry_log": "2026-11-28 20:34:41 +0700"
@@ -5309,6 +5367,12 @@
   "twilightforest:recipes/building_blocks/stonecutting/cherry_log/hollow_cherry_log": {
     "criteria": {
       "has_block": "2026-11-28 20:34:41 +0700"
+    },
+    "done": true
+  },
+  "mortal_cultivation:recipes/building_blocks/oak_planks_from_spirit_log": {
+    "criteria": {
+      "has_log": "2026-11-28 20:41:03 +0700"
     },
     "done": true
   },
