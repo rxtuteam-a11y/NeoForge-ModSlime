@@ -11961,9 +11961,27 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/black_sheet": {
+    "criteria": {
+      "has_black_sheet": "2026-11-28 19:47:42 +0700"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/light_blue_dye_from_blue_orchid": {
     "criteria": {
       "has_blue_orchid": "2026-11-28 19:35:51 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/black_wool_stairs": {
+    "criteria": {
+      "has_black_wool": "2026-11-28 19:47:42 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/black_cushion": {
+    "criteria": {
+      "has_black_cushion": "2026-11-28 19:47:42 +0700"
     },
     "done": true
   },
@@ -11991,15 +12009,33 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/black_wool_slab": {
+    "criteria": {
+      "has_black_wool": "2026-11-28 19:47:42 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/misc/purple_dye_from_hyssop": {
     "criteria": {
       "has_hyssop": "2026-11-28 19:37:39 +0700"
     },
     "done": true
   },
+  "minecraft:recipes/decorations/black_carpet": {
+    "criteria": {
+      "has_black_wool": "2026-11-28 19:47:42 +0700"
+    },
+    "done": true
+  },
   "regions_unexplored:recipes/misc/white_dye_from_white_trillium": {
     "criteria": {
       "has_white_trillium": "2026-11-28 19:33:01 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/black_bed": {
+    "criteria": {
+      "has_black_wool": "2026-11-28 19:47:42 +0700"
     },
     "done": true
   },
@@ -12018,6 +12054,12 @@
   "regions_unexplored:recipes/misc/blue_dye_from_blue_lupine": {
     "criteria": {
       "has_blue_lupine": "2026-11-28 19:32:57 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/black_banner": {
+    "criteria": {
+      "has_black_wool": "2026-11-28 19:47:42 +0700"
     },
     "done": true
   },
