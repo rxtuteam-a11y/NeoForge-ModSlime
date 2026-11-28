@@ -1282,6 +1282,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/copper_nugget_from_blasting": {
+    "criteria": {
+      "has_copper_boots": "2026-11-28 18:18:33 +0700"
+    },
+    "done": true
+  },
   "farmersdelight:recipes/cooking/chicken_soup": {
     "criteria": {
       "has_any_ingredient": "2026-11-28 17:17:47 +0700"
@@ -2089,6 +2095,12 @@
   "minecraft:story/obtain_armor": {
     "criteria": {
       "iron_chestplate": "2026-11-28 16:31:57 +0700"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/copper_nugget_from_smelting": {
+    "criteria": {
+      "has_copper_boots": "2026-11-28 18:18:33 +0700"
     },
     "done": true
   },

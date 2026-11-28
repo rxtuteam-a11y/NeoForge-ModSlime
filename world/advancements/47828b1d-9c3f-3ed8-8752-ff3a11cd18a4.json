@@ -11653,6 +11653,12 @@
     },
     "done": true
   },
+  "handcrafted:recipes/misc/dripstone_pillar_trim": {
+    "criteria": {
+      "has_dripstone_pillar_trim": "2026-11-28 18:19:13 +0700"
+    },
+    "done": true
+  },
   "handcrafted:recipes/misc/acacia_cupboard": {
     "criteria": {
       "has_acacia_cupboard": "2026-11-28 17:06:32 +0700"
@@ -11734,6 +11740,12 @@
   "minecraft:recipes/building_blocks/acacia_fence_from_acacia_planks_woodcutting": {
     "criteria": {
       "has_acacia_planks": "2026-11-28 17:06:32 +0700"
+    },
+    "done": true
+  },
+  "handcrafted:recipes/misc/dripstone_corner_trim": {
+    "criteria": {
+      "has_dripstone_corner_trim": "2026-11-28 18:19:13 +0700"
     },
     "done": true
   },
